@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Free GST Purchase Register vs GSTR-2B reconciliation tool. Upload Excel files, reconcile invoices and download a multi-tab Excel report.">
+<meta name="theme-color" content="#0f172a">
+<title>GST Reconciliation Tool | Purchase Register vs GSTR-2B</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<style>
+:root{
+  --navy:#0f172a; --navy2:#172554; --blue:#2563eb; --blue2:#1d4ed8;
+  --cyan:#0891b2; --green:#059669; --amber:#d97706; --red:#dc2626;
+  --slate:#475569; --muted:#64748b; --line:#e2e8f0; --bg:#f5f7fb; --white:#fff;
+  --shadow:0 18px 45px rgba(15,23,42,.10); --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172033;background:var(--bg)}
+body:before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(circle at 10% 10%,rgba(37,99,235,.14),transparent 28%),
+    radial-gradient(circle at 90% 15%,rgba(8,145,178,.13),transparent 25%),
+    radial-gradient(circle at 70% 90%,rgba(16,185,129,.10),transparent 28%),
+    linear-gradient(135deg,#f8fbff 0%,#f3f6fb 48%,#eef7f7 100%);
+}
+a{color:inherit}
+.container{width:min(1180px,calc(100% - 32px));margin:auto}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
+.topbar-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:800}
+.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#38bdf8,#2563eb);display:grid;place-items:center;box-shadow:0 8px 20px rgba(37,99,235,.35)}
+.logo svg{width:24px;height:24px}
+.brand small{display:block;color:#cbd5e1;font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
+.nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.nav button,.nav a{border:0;background:transparent;color:#cbd5e1;padding:9px 11px;border-radius:9px;font-size:13px;font-weight:700;text-decoration:none;cursor:pointer}
+.nav button:hover,.nav a:hover{background:rgba(255,255,255,.08);color:#fff}
+.hero{padding:64px 0 36px}
+.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:stretch}
+.hero-card{border-radius:26px;padding:42px;background:linear-gradient(135deg,#0f172a,#172554 58%,#0e7490);color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.hero-card:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-100px;top:-130px;background:rgba(255,255,255,.08)}
+.eyebrow{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);border-radius:999px;color:#bae6fd;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.hero h1{font-size:clamp(32px,5vw,55px);line-height:1.02;margin:18px 0 16px;letter-spacing:-.04em;max-width:780px}
+.hero p{font-size:16px;line-height:1.7;color:#dbeafe;max-width:730px;margin:0 0 26px}
+.hero-actions{display:flex;gap:11px;flex-wrap:wrap}
+.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:800;font-size:13px;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{background:#fff;color:#1e3a8a}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.btn-soft{background:#e8eefc;color:#1e40af}
+.btn-red{background:#fee2e2;color:#991b1b}
+.hero-side{display:grid;gap:14px}
+.info-card{background:rgba(255,255,255,.90);border:1px solid rgba(226,232,240,.9);border-radius:20px;padding:22px;box-shadow:0 10px 30px rgba(15,23,42,.07)}
+.info-card .big{font-size:27px;font-weight:900;color:#0f172a}
+.info-card .label{color:var(--muted);font-size:12px;font-weight:700;margin-top:5px}
+.section{padding:22px 0}
+.section-title{font-size:25px;letter-spacing:-.02em;margin:0 0 7px;color:#0f172a}
+.section-sub{margin:0 0 20px;color:var(--muted);font-size:14px;line-height:1.65}
+.panel{background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 12px 34px rgba(15,23,42,.06)}
+.notice{display:flex;gap:13px;align-items:flex-start;padding:17px;border-radius:14px;margin-bottom:18px}
+.notice.important{background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12}
+.notice.security{background:#ecfeff;border:1px solid #a5f3fc;color:#164e63}
+.notice .icon{font-size:20px;line-height:1}
+.upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.upload-card{padding:24px}
+.step{display:flex;align-items:center;gap:10px;margin-bottom:13px}
+.stepno{width:32px;height:32px;border-radius:10px;background:#e0e7ff;color:#3730a3;display:grid;place-items:center;font-size:12px;font-weight:900}
+.step h3{margin:0;font-size:16px;color:#1e293b}
+.dropzone{border:2px dashed #cbd5e1;border-radius:15px;padding:26px;text-align:center;background:#f8fafc;transition:.2s}
+.dropzone.drag{border-color:#2563eb;background:#eff6ff}
+.dropzone input{display:block;width:100%;font-size:13px;color:#64748b}
+.dropzone strong{display:block;margin:8px 0 4px;color:#334155}
+.dropzone span{font-size:12px;color:#94a3b8}
+.status{font-size:12px;font-weight:700;margin-top:10px;min-height:18px}
+.status.ok{color:#047857}.status.err{color:#b91c1c}.status.info{color:#64748b}
+.sheet-row{display:none;align-items:center;gap:9px;margin-top:12px}
+.sheet-row label{font-size:12px;font-weight:800;color:#475569}
+.sheet-row select{border:1px solid #cbd5e1;border-radius:9px;padding:7px 9px;background:#fff;font-size:12px;flex:1}
+.run-panel{padding:20px;margin-top:20px;display:flex;justify-content:space-between;align-items:center;gap:18px;background:linear-gradient(135deg,#eff6ff,#ecfeff)}
+.run-panel strong{color:#0f172a}.run-panel p{margin:4px 0 0;color:#64748b;font-size:12px}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0}
+.metric{padding:18px;border-radius:15px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 24px rgba(15,23,42,.05)}
+.metric .k{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;font-weight:900}
+.metric .v{font-size:29px;font-weight:900;margin-top:5px}
+.metric.green{border-top:4px solid #10b981}.metric.green .v{color:#059669}
+.metric.amber{border-top:4px solid #f59e0b}.metric.amber .v{color:#d97706}
+.metric.red{border-top:4px solid #ef4444}.metric.red .v{color:#dc2626}
+.metric.blue{border-top:4px solid #3b82f6}.metric.blue .v{color:#2563eb}
+.results{display:none;overflow:hidden}
+.results-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap}
+.tabs{display:flex;gap:7px;flex-wrap:wrap}
+.tab{border:0;border-radius:9px;padding:8px 11px;font-size:11px;font-weight:900;cursor:pointer;background:#f1f5f9;color:#475569}
+.tab.active{background:#0f172a;color:#fff}
+.table-wrap{overflow:auto;max-height:540px}
+table{border-collapse:collapse;width:100%;font-size:11px;white-space:nowrap}
+th{position:sticky;top:0;background:#f8fafc;color:#475569;text-align:left;padding:11px;border-bottom:1px solid var(--line);z-index:2}
+td{padding:10px 11px;border-bottom:1px solid #f1f5f9;color:#334155}
+tr:hover td{background:#f8fafc}
+.badge{display:inline-block;padding:5px 8px;border-radius:7px;font-weight:900;font-size:10px}
+.b-green{background:#dcfce7;color:#166534}.b-amber{background:#fef3c7;color:#92400e}.b-red{background:#fee2e2;color:#991b1b}.b-blue{background:#dbeafe;color:#1e40af}
+.instructions{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.instruction-card{padding:20px}
+.instruction-card h3{margin:0 0 9px;font-size:15px;color:#0f172a}
+.instruction-card p,.instruction-card li{font-size:13px;line-height:1.7;color:#475569}
+.instruction-card ol,.instruction-card ul{padding-left:20px;margin:7px 0}
+.critical{border:2px solid #f59e0b;background:#fffbeb}
+.critical h3{color:#92400e}
+.faq{border-top:1px solid var(--line)}
+.faq-item{padding:16px 0;border-bottom:1px solid var(--line)}
+.faq-q{font-weight:900;color:#1e293b;font-size:14px}
+.faq-a{font-size:13px;line-height:1.7;color:#64748b;margin-top:6px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.contact-card{padding:22px}
+.contact-link{display:inline-flex;align-items:center;gap:9px;color:#1d4ed8;font-weight:800;text-decoration:none;margin-top:8px}
+.footer{margin-top:55px;background:#0f172a;color:#cbd5e1;padding:34px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
+.footer strong{color:#fff}.footer small{display:block;margin-top:6px;color:#94a3b8}
+.modal{display:none;position:fixed;inset:0;background:rgba(2,6,23,.65);z-index:100;padding:20px;overflow:auto}
+.modal-card{width:min(760px,100%);margin:30px auto;background:#fff;border-radius:20px;box-shadow:0 30px 80px rgba(0,0,0,.25);overflow:hidden}
+.modal-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
+.modal-head h2{margin:0;font-size:18px}.close{border:0;background:#f1f5f9;border-radius:9px;width:34px;height:34px;cursor:pointer;font-weight:900}
+.modal-body{padding:22px;max-height:70vh;overflow:auto}
+.modal-body p,.modal-body li{font-size:13px;line-height:1.75;color:#475569}
+.modal-body h3{font-size:15px;margin:18px 0 7px;color:#0f172a}
+.toast{position:fixed;right:20px;bottom:20px;z-index:150;background:#0f172a;color:#fff;padding:12px 16px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.2);display:none;font-size:12px;font-weight:800}
+.loading{display:none;align-items:center;gap:9px;color:#1e40af;font-weight:800;font-size:13px}
+.spinner{width:16px;height:16px;border:3px solid #bfdbfe;border-top-color:#2563eb;border-radius:50%;animation:spin .8s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@media(max-width:900px){.hero-grid,.upload-grid,.instructions,.contact{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.nav{display:none}.hero{padding-top:35px}}
+@media(max-width:560px){.container{width:min(100% - 20px,1180px)}.hero-card{padding:28px}.metrics{grid-template-columns:1fr}.run-panel{align-items:flex-start;flex-direction:column}.topbar-inner{min-height:62px}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container topbar-inner">
+    <div class="brand">
+      <div class="logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5M8 17h3"/></svg>
+      </div>
+      <div>GST Reconciliation <small>Purchase Register • GSTR-2B</small></div>
+    </div>
+    <nav class="nav">
+      <button onclick="scrollToId('tool')">Tool</button>
+      <button onclick="openModal('instructionsModal')">How to Use</button>
+      <button onclick="openModal('privacyModal')">Privacy</button>
+      <button onclick="scrollToId('contact')">Contact</button>
+    </nav>
+  </div>
+</div>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-card">
+      <span class="eyebrow">Free GST Utility</span>
+      <h1>Purchase Register vs GSTR-2B Reconciliation</h1>
+      <p>Upload your books and GSTR-2B data, run invoice-level reconciliation in your browser and download a structured Excel report with matched and unmatched records.</p>
+      <div class="hero-actions">
+        <button class="btn btn-primary" onclick="scrollToId('tool')">Launch Reconciliation</button>
+        <button class="btn btn-blue" onclick="downloadTemplates()">Download Excel Template</button>
+        <button class="btn btn-soft" onclick="openModal('instructionsModal')">View Instructions</button>
+      </div>
+    </div>
+    <div class="hero-side">
+      <div class="info-card"><div class="big">100% Browser Based</div><div class="label">Your uploaded workbook is processed locally in your browser in this version.</div></div>
+      <div class="info-card"><div class="big">Excel Output</div><div class="label">Download separate report tabs for Matched, Partial Matching, Not in 2B and Not in PR.</div></div>
+      <div class="info-card"><div class="big">Invoice-Level Checks</div><div class="label">GSTIN, document type, invoice number and tax values are considered during reconciliation.</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tool">
+<div class="container">
+  <h2 class="section-title">Start Reconciliation</h2>
+  <p class="section-sub">Before uploading, please follow the two mandatory data rules highlighted below.</p>
+
+  <div class="notice important">
+    <div class="icon">⚠️</div>
+    <div><strong>Mandatory Rule 1 — Document Type must match.</strong><br>
+      The <b>Invoice Type / Document Type</b> entered in Purchase Register and GSTR-2B must be the same. If GSTR-2B shows a <b>Credit Note</b>, the Purchase Register must also show <b>Credit Note</b>. The same rule applies to Debit Notes and Invoices. Reconciliation will be blocked if the same GSTIN + invoice reference is found with different document types.
+    </div>
+  </div>
+
+  <div class="notice important">
+    <div class="icon">➕</div>
+    <div><strong>Mandatory Rule 2 — Enter values as positive/non-negative amounts.</strong><br>
+      Do <b>not</b> enter negative numbers in Taxable Value, IGST, CGST or SGST. For Credit Notes and Debit Notes, enter the amounts as positive values and identify the document through the <b>Document Type</b> field. Use <b>0</b> only where a tax component is genuinely not applicable.
+    </div>
+  </div>
+
+  <div class="upload-grid">
+    <div class="panel upload-card">
+      <div class="step"><div class="stepno">1</div><h3>Purchase Register — Books</h3></div>
+      <div class="dropzone" id="prDrop">
+        <div style="font-size:28px">📘</div>
+        <strong>Select your Purchase Register file</strong>
+        <span>Excel (.xlsx/.xls) or CSV • Maximum recommended size 25 MB</span>
+        <input type="file" id="prFile" accept=".xlsx,.xls,.csv">
+      </div>
+      <div class="sheet-row" id="prSheetRow"><label>Sheet:</label><select id="prSheet"></select></div>
+      <div id="prStatus" class="status info">No file uploaded.</div>
+    </div>
+
+    <div class="panel upload-card">
+      <div class="step"><div class="stepno">2</div><h3>GSTR-2B — Portal Data</h3></div>
+      <div class="dropzone" id="gstrDrop">
+        <div style="font-size:28px">📊</div>
+        <strong>Select your GSTR-2B file</strong>
+        <span>Excel (.xlsx/.xls) or CSV • Maximum recommended size 25 MB</span>
+        <input type="file" id="gstrFile" accept=".xlsx,.xls,.csv">
+      </div>
+      <div class="sheet-row" id="gstrSheetRow"><label>Sheet:</label><select id="gstrSheet"></select></div>
+      <div id="gstrStatus" class="status info">No file uploaded.</div>
+    </div>
+  </div>
+
+  <div class="panel run-panel">
+    <div>
+      <strong>Ready to reconcile?</strong>
+      <p>The tool will validate your files first, including negative values and document-type consistency.</p>
+    </div>
+    <div style="display:flex;align-items:center;gap:14px;flex-wrap:wrap">
+      <div class="loading" id="loading"><span class="spinner"></span>Processing...</div>
+      <button class="btn btn-green" onclick="runPrecisionReconciliation()">Run Reconciliation</button>
+      <button class="btn btn-red" onclick="resetTool()">Reset</button>
+    </div>
+  </div>
+
+  <div class="metrics" id="dashboard">
+    <div class="metric green"><div class="k">Matched Invoices</div><div class="v" id="cMatched">0</div></div>
+    <div class="metric amber"><div class="k">Partial Matching</div><div class="v" id="cPartial">0</div></div>
+    <div class="metric red"><div class="k">Not in 2B</div><div class="v" id="cNotIn2B">0</div></div>
+    <div class="metric blue"><div class="k">Not in PR</div><div class="v" id="cNotInPR">0</div></div>
+  </div>
+
+  <div class="panel results" id="resultsContainer">
+    <div class="results-head">
+      <div>
+        <strong>Reconciliation Results</strong>
+        <div style="font-size:11px;color:#94a3b8;margin-top:3px">Review the invoice-level output before using the report for accounting/tax workings.</div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <div class="tabs">
+          <button class="tab active" id="btnTabALL" onclick="filterTable('ALL')">All</button>
+          <button class="tab" id="btnTabMatched" onclick="filterTable('Matched')">Matched</button>
+          <button class="tab" id="btnTabPartial" onclick="filterTable('Partial Matching')">Partial</button>
+          <button class="tab" id="btnTabNotIn2B" onclick="filterTable('Not in 2B')">Not in 2B</button>
+          <button class="tab" id="btnTabNotInPR" onclick="filterTable('Not in PR')">Not in PR</button>
+        </div>
+        <button class="btn btn-green" onclick="exportToExcel()">⬇ Download Excel Report</button>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr>
+          <th>Category</th><th>Vendor Name</th><th>GSTIN</th><th>Document Type</th>
+          <th>Invoice No (PR)</th><th>Invoice No (2B)</th><th>Date (PR)</th><th>Date (2B)</th>
+          <th>Taxable (PR)</th><th>Taxable (2B)</th><th>IGST (PR)</th><th>IGST (2B)</th>
+          <th>CGST (PR)</th><th>CGST (2B)</th><th>SGST (PR)</th><th>SGST (2B)</th>
+        </tr></thead>
+        <tbody id="resultTableBody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="instructions">
+<div class="container">
+  <h2 class="section-title">How to Use</h2>
+  <p class="section-sub">Follow these steps every time you perform a reconciliation.</p>
+  <div class="instructions">
+    <div class="panel instruction-card">
+      <h3>1. Download the Master Excel Template</h3>
+      <p>Use the <b>Download Excel Template</b> button. The workbook contains separate Purchase Register and GSTR-2B sheets plus an instruction sheet.</p>
+    </div>
+    <div class="panel instruction-card critical">
+      <h3>2. Mandatory: Keep Document Type identical</h3>
+      <p>If an invoice is shown as <b>Credit Note</b> in GSTR-2B, it must also be entered as <b>Credit Note</b> in the Purchase Register. Do not classify the same document as Invoice in one file and Credit Note in the other.</p>
+    </div>
+    <div class="panel instruction-card critical">
+      <h3>3. Mandatory: No negative values</h3>
+      <p>Enter Taxable Value, IGST, CGST and SGST as positive/non-negative amounts only. For Credit Notes or Debit Notes, enter positive amounts and use the Document Type field to identify the document. Do not use minus signs.</p>
+    </div>
+    <div class="panel instruction-card">
+      <h3>4. Upload the Purchase Register</h3>
+      <p>Upload .xlsx, .xls or .csv. If an Excel file contains multiple sheets, select the correct Purchase Register sheet after upload.</p>
+    </div>
+    <div class="panel instruction-card">
+      <h3>5. Upload GSTR-2B</h3>
+      <p>Upload the GSTR-2B workbook/CSV and select the correct sheet. The tool reads the columns from the selected sheet.</p>
+    </div>
+    <div class="panel instruction-card">
+      <h3>6. Check mandatory fields</h3>
+      <p>Use consistent GSTIN, Invoice Number, Document Type, Invoice Date, Taxable Value, IGST, CGST and SGST. Do not change column meanings between the two files.</p>
+    </div>
+    <div class="panel instruction-card">
+      <h3>7. Run Reconciliation</h3>
+      <p>The tool validates the data and then compares records using GSTIN, document type, invoice number and tax values. Close invoice-number variations can be considered in the second matching pass.</p>
+    </div>
+    <div class="panel instruction-card">
+      <h3>8. Review before relying on the result</h3>
+      <p>Matched records should still be reviewed against the source documents and your accounting/tax records. A reconciliation result is a working tool output and does not itself constitute a GST filing decision.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<div class="container panel" style="padding:24px">
+  <h2 class="section-title" style="font-size:21px">What this tool checks</h2>
+  <div class="instructions">
+    <div class="instruction-card" style="padding:8px 10px">
+      <ul>
+        <li>GSTIN-level invoice comparison</li>
+        <li>Document Type / Invoice Type consistency</li>
+        <li>Invoice number normalization and close matching</li>
+        <li>Taxable value comparison</li>
+      </ul>
+    </div>
+    <div class="instruction-card" style="padding:8px 10px">
+      <ul>
+        <li>IGST, CGST and SGST comparison</li>
+        <li>Matched invoice allocation without duplicate use</li>
+        <li>Purchase Register records not found in 2B</li>
+        <li>2B records not found in Purchase Register</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="section" id="contact">
+<div class="container">
+  <h2 class="section-title">Contact</h2>
+  <p class="section-sub">For questions or feedback about the GST Reconciliation Tool.</p>
+  <div class="contact">
+    <div class="panel contact-card">
+      <strong>✉ Email</strong><br>
+      <a class="contact-link" href="mailto:uday@gstreconciliation.in">uday@gstreconciliation.in</a>
+    </div>
+    <div class="panel contact-card">
+      <strong>☎ Mobile</strong><br>
+      <a class="contact-link" href="tel:+919052160079">+91 90521 60079</a>
+    </div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer class="footer">
+<div class="container footer-grid">
+  <div><strong>GST Reconciliation Tool</strong><small>Purchase Register vs GSTR-2B reconciliation utility</small></div>
+  <div style="text-align:right"><small>Contact: uday@gstreconciliation.in</small><small>© <span id="year"></span> GST Reconciliation Tool</small></div>
+</div>
+</footer>
+
+<div class="modal" id="instructionsModal" onclick="modalOutside(event,'instructionsModal')">
+ <div class="modal-card">
+  <div class="modal-head"><h2>How to Use the GST Reconciliation Tool</h2><button class="close" onclick="closeModal('instructionsModal')">×</button></div>
+  <div class="modal-body">
+   <div class="notice important"><div class="icon">⚠️</div><div><b>Mandatory:</b> Purchase Register and GSTR-2B must use the same Document Type for the same document. If 2B says Credit Note, PR must also say Credit Note.</div></div>
+   <div class="notice important"><div class="icon">➕</div><div><b>Mandatory:</b> Do not enter negative amounts. Enter taxable and tax values as positive/non-negative values, including Credit Notes and Debit Notes.</div></div>
+   <h3>Recommended workflow</h3>
+   <ol><li>Download the template.</li><li>Enter your data in the correct sheet/format.</li><li>Check GSTIN and invoice numbers.</li><li>Ensure Document Type is identical between PR and 2B.</li><li>Ensure there are no negative amounts.</li><li>Upload both files.</li><li>Run reconciliation.</li><li>Review results and download the Excel report.</li></ol>
+   <h3>Important</h3>
+   <p>Keep your source files unchanged. Use the reconciliation output as a working report and independently review exceptions before taking GST credit or filing decisions.</p>
+  </div>
+ </div>
+</div>
+
+<div class="modal" id="privacyModal" onclick="modalOutside(event,'privacyModal')">
+ <div class="modal-card">
+  <div class="modal-head"><h2>Privacy & Data Processing</h2><button class="close" onclick="closeModal('privacyModal')">×</button></div>
+  <div class="modal-body">
+   <h3>Browser-based processing</h3>
+   <p>In this version, the Purchase Register and GSTR-2B files are read and processed in your browser using JavaScript. The reconciliation results are stored in the browser's local IndexedDB storage for the current device/browser session.</p>
+   <h3>What you should do</h3>
+   <p>Do not upload files that you are not authorised to process. Keep downloaded reports secure and delete them from shared/public computers after use.</p>
+   <h3>Third-party libraries</h3>
+   <p>This website loads the SheetJS Excel-processing library from a public CDN. An internet connection is required for the library to load when the page is opened online.</p>
+  </div>
+ </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+let prData=[], gstrData=[], finalReport=[], currentFilter='ALL';
+let prWorkbook=null, gstrWorkbook=null;
+
+const REQUIRED_HEADERS = {
+  vendor:["vendor name","vendor","supplier name","trade name","legal name"],
+  gstin:["gstin","supplier gstin","vendor gstin"],
+  inv:["invoice number","invoice no","invoice no.","invoice number.","document number","doc no","document no"],
+  docType:["document type","invoice type","document type / invoice type","invoice type / document type"],
+  date:["invoice date","document date","date"],
+  taxable:["taxable value","taxable","taxable amount"],
+  igst:["igst","integrated tax"],
+  cgst:["cgst","central tax"],
+  sgst:["sgst","state tax","state/ut tax"]
+};
+
+document.getElementById('year').textContent=new Date().getFullYear();
+document.getElementById('prFile').addEventListener('change',e=>loadWorkbookFile(e,'PR'));
+document.getElementById('gstrFile').addEventListener('change',e=>loadWorkbookFile(e,'2B'));
+
+function scrollToId(id){document.getElementById(id).scrollIntoView({behavior:'smooth',block:'start'})}
+function openModal(id){document.getElementById(id).style.display='block';document.body.style.overflow='hidden'}
+function closeModal(id){document.getElementById(id).style.display='none';document.body.style.overflow=''}
+function modalOutside(e,id){if(e.target.id===id)closeModal(id)}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal('instructionsModal');closeModal('privacyModal')}});
+
+function toast(msg){
+  const el=document.getElementById('toast');el.textContent=msg;el.style.display='block';
+  clearTimeout(window.__toast);window.__toast=setTimeout(()=>el.style.display='none',3200);
+}
+
+function setupDrop(id,inputId,type){
+  const d=document.getElementById(id);
+  ['dragenter','dragover'].forEach(ev=>d.addEventListener(ev,e=>{e.preventDefault();d.classList.add('drag')}));
+  ['dragleave','drop'].forEach(ev=>d.addEventListener(ev,e=>{e.preventDefault();d.classList.remove('drag')}));
+  d.addEventListener('drop',e=>{
+    const f=e.dataTransfer.files[0]; if(!f)return;
+    const input=document.getElementById(inputId);
+    const dt=new DataTransfer();dt.items.add(f);input.files=dt.files;
+    loadWorkbookFile({target:input},type);
+  });
+}
+setupDrop('prDrop','prFile','PR'); setupDrop('gstrDrop','gstrFile','2B');
+
+function setStatus(type,msg,kind='info'){
+  const el=document.getElementById(type==='PR'?'prStatus':'gstrStatus');
+  el.textContent=msg;el.className='status '+kind;
+}
+
+function populateSheetSelect(type, names){
+  const row=document.getElementById(type==='PR'?'prSheetRow':'gstrSheetRow');
+  const sel=document.getElementById(type==='PR'?'prSheet':'gstrSheet');
+  sel.innerHTML='';
+  names.forEach((n,i)=>{const o=document.createElement('option');o.value=n;o.textContent=n;sel.appendChild(o)});
+  row.style.display=names.length>1?'flex':'none';
+  sel.onchange=()=>parseSelectedSheet(type);
+}
+
+function loadWorkbookFile(e,type){
+  const file=e.target.files[0]; if(!file)return;
+  const allowed=['xlsx','xls','csv']; const ext=file.name.split('.').pop().toLowerCase();
+  if(!allowed.includes(ext)){setStatus(type,'Unsupported file type. Use .xlsx, .xls or .csv.','err');return}
+  if(file.size>50*1024*1024){setStatus(type,'File is larger than 50 MB. Please use a smaller workbook.','err');return}
+  setStatus(type,'Reading workbook...','info');
+  const reader=new FileReader();
+  reader.onload=evt=>{
+    try{
+      const wb=XLSX.read(new Uint8Array(evt.target.result),{type:'array',cellDates:true});
+      if(!wb.SheetNames.length)throw new Error('No worksheet found.');
+      if(type==='PR')prWorkbook=wb;else gstrWorkbook=wb;
+      populateSheetSelect(type,wb.SheetNames);
+      parseSelectedSheet(type);
+    }catch(err){setStatus(type,'Unable to read file: '+err.message,'err')}
+  };
+  reader.onerror=()=>setStatus(type,'Unable to read the selected file.','err');
+  reader.readAsArrayBuffer(file);
+}
+
+function parseSelectedSheet(type){
+  const wb=type==='PR'?prWorkbook:gstrWorkbook;
+  if(!wb)return;
+  const sel=document.getElementById(type==='PR'?'prSheet':'gstrSheet');
+  const sheetName=sel.value||wb.SheetNames[0];
+  try{
+    const json=XLSX.utils.sheet_to_json(wb.Sheets[sheetName],{defval:"",raw:true});
+    if(!json.length)throw new Error('The selected sheet has no data rows.');
+    const normalized=json.map((r,i)=>({...r,__row:i+2}));
+    const validation=validateRows(normalized,type);
+    if(!validation.ok){
+      setStatus(type,validation.message,'err');
+      if(type==='PR')prData=[];else gstrData=[];
+      return;
+    }
+    if(type==='PR')prData=normalized;else gstrData=normalized;
+    setStatus(type,`Loaded ${json.length.toLocaleString()} records from "${sheetName}".`,'ok');
+  }catch(err){setStatus(type,'Unable to process sheet: '+err.message,'err')}
+}
+
+function findKey(row,keys){
+  const rowKeys=Object.keys(row);
+  for(const wanted of keys){
+    const exact=rowKeys.find(k=>String(k).trim().toLowerCase()===wanted);
+    if(exact!==undefined)return exact;
+  }
+  for(const wanted of keys){
+    const fuzzy=rowKeys.find(k=>String(k).trim().toLowerCase().includes(wanted));
+    if(fuzzy!==undefined)return fuzzy;
+  }
+  return null;
+}
+
+function validateRows(rows,type){
+  const sample=rows[0]||{};
+  const missing=[];
+  for(const group of ['gstin','inv','docType','date','taxable','igst','cgst','sgst']){
+    if(!findKey(sample,REQUIRED_HEADERS[group]))missing.push(group);
+  }
+  if(missing.length){
+    return {ok:false,message:`Required column(s) not found: ${missing.join(', ')}. Use the downloaded template or matching column names.`};
+  }
+  let negative=null, badDoc=null;
+  for(let i=0;i<rows.length;i++){
+    const x=extractFields(rows[i]);
+    if([x.taxable,x.igst,x.cgst,x.sgst].some(v=>v<0)){negative={row:i+2};break}
+    if(!['INVOICE','CREDIT NOTE','DEBIT NOTE'].includes(x.docType)){badDoc={row:i+2,value:x.docType};break}
+  }
+  if(negative)return {ok:false,message:`Negative amount found at row ${negative.row}. Enter taxable and tax values as positive/non-negative values only.`};
+  if(badDoc)return {ok:false,message:`Unrecognised Document Type "${badDoc.value}" at row ${badDoc.row}. Use Invoice, Credit Note or Debit Note.`};
+  return {ok:true};
+}
+
+function cleanGstin(g){return g?String(g).trim().toUpperCase().replace(/\s+/g,''):''}
+function cleanInvoiceNo(inv){
+  if(inv===null||inv===undefined)return '';
+  return String(inv).trim().toUpperCase().replace(/[^A-Z0-9]/g,'').replace(/^0+/,'');
+}
+function parseNum(v){
+  if(v===null||v===undefined||v==='')return 0;
+  if(typeof v==='number')return Number(v.toFixed(2));
+  const n=parseFloat(String(v).replace(/,/g,'').replace(/[₹$]/g,'').trim());
+  return isNaN(n)?0:Number(n.toFixed(2));
+}
+function formatDateString(v){
+  if(!v&&v!==0)return '';
+  if(v instanceof Date && !isNaN(v.getTime()))return v.toISOString().slice(0,10);
+  if(typeof v==='number'){
+    const d=XLSX.SSF.parse_date_code(v);
+    if(d)return `${d.y}-${String(d.m).padStart(2,'0')}-${String(d.d).padStart(2,'0')}`;
+  }
+  const s=String(v).trim();
+  if(/^\d{4}[-/]\d{1,2}[-/]\d{1,2}$/.test(s)){const a=s.split(/[-/]/);return `${a[0]}-${String(a[1]).padStart(2,'0')}-${String(a[2]).padStart(2,'0')}`}
+  const d=new Date(s);return isNaN(d.getTime())?s:d.toISOString().slice(0,10);
+}
+function normalizeDocType(v){
+  const s=String(v||'').trim().toUpperCase().replace(/\s+/g,' ');
+  if(!s)return 'INVOICE';
+  if(s.includes('CREDIT')||s==='CR'||s.includes('CREDIT NOTE'))return 'CREDIT NOTE';
+  if(s.includes('DEBIT')||s==='DR'||s.includes('DEBIT NOTE'))return 'DEBIT NOTE';
+  if(s==='INVOICE'||s.includes('TAX INVOICE')||s.includes('BILL'))return 'INVOICE';
+  return s;
+}
+function getValue(row,group){
+  const k=findKey(row,REQUIRED_HEADERS[group]);return k===null?'':row[k];
+}
+function extractFields(row){
+  const vendor=String(getValue(row,'vendor')||'Unknown Vendor').trim();
+  const gstin=cleanGstin(getValue(row,'gstin'));
+  const rawInv=String(getValue(row,'inv')??'').trim();
+  const docType=normalizeDocType(getValue(row,'docType'));
+  const rawDate=getValue(row,'date');
+  const taxable=parseNum(getValue(row,'taxable')),igst=parseNum(getValue(row,'igst')),cgst=parseNum(getValue(row,'cgst')),sgst=parseNum(getValue(row,'sgst'));
+  return {vendor,gstin,rawInv,cleanInv:cleanInvoiceNo(rawInv),docType,rawDate:rawDate instanceof Date?rawDate.toISOString().slice(0,10):String(rawDate??''),dateKey:formatDateString(rawDate),taxable,igst,cgst,sgst,totalTax:Number((igst+cgst+sgst).toFixed(2))};
+}
+function levenshtein(a,b){
+  const m=a.length,n=b.length;if(!m)return n;if(!n)return m;
+  let prev=Array.from({length:n+1},(_,i)=>i);
+  for(let i=1;i<=m;i++){const cur=[i];for(let j=1;j<=n;j++)cur[j]=a[i-1]===b[j-1]?prev[j-1]:Math.min(prev[j-1]+1,cur[j-1]+1,prev[j]+1);prev=cur}
+  return prev[n];
+}
+function isFuzzyInvoiceMatch(a,b){
+  if(!a||!b)return false;if(a===b)return true;
+  const maxLen=Math.max(a.length,b.length),dist=levenshtein(a,b);
+  return dist<=2 || (dist/maxLen<=.2);
+}
+
+function documentTypeMismatchCheck(parsedPR,parsed2B){
+  const a=new Map(),b=new Map();
+  parsedPR.forEach(x=>{if(x.gstin&&x.cleanInv)a.set(x.gstin+'|'+x.cleanInv,x)});
+  parsed2B.forEach(x=>{if(x.gstin&&x.cleanInv)b.set(x.gstin+'|'+x.cleanInv,x)});
+  const mismatches=[];
+  for(const [key,pr] of a.entries()){
+    const t=b.get(key);
+    if(t && pr.docType!==t.docType)mismatches.push({key,pr,t});
+  }
+  return mismatches;
+}
+
+async function runPrecisionReconciliation(){
+  if(!prData.length||!gstrData.length){alert('Please upload and successfully validate both Purchase Register and GSTR-2B files.');return}
+  const loading=document.getElementById('loading');loading.style.display='flex';
+  await new Promise(r=>setTimeout(r,50));
+  try{
+    const parsedPR=prData.map(r=>extractFields(r)).filter(r=>r.gstin);
+    const parsed2B=gstrData.map(r=>extractFields(r)).filter(r=>r.gstin);
+    const mismatches=documentTypeMismatchCheck(parsedPR,parsed2B);
+    if(mismatches.length){
+      const sample=mismatches.slice(0,5).map(x=>`${x.pr.gstin} / ${x.pr.rawInv}: PR=${x.pr.docType}, 2B=${x.t.docType}`).join('\n');
+      throw new Error(`Document Type mismatch found. Reconciliation is blocked.\n\n${sample}${mismatches.length>5?`\n…and ${mismatches.length-5} more.`:''}\n\nCorrect the Document Type in one of the files and upload again.`);
+    }
+    const map2BByGstin=new Map();
+    parsed2B.forEach((item,idx)=>{item._originalIndex=idx;if(!map2BByGstin.has(item.gstin))map2BByGstin.set(item.gstin,[]);map2BByGstin.get(item.gstin).push(item)});
+    finalReport=[];const matched2BIndices=new Set(),resolvedPRIndices=new Set();
+
+    parsedPR.forEach((pr,prIdx)=>{
+      const list=map2BByGstin.get(pr.gstin);if(!list)return;
+      for(const t2b of list){
+        if(matched2BIndices.has(t2b._originalIndex)||pr.docType!==t2b.docType)continue;
+        if(pr.cleanInv&&t2b.cleanInv&&pr.cleanInv===t2b.cleanInv){
+          const ok=Math.abs(pr.igst-t2b.igst)<=2&&Math.abs(pr.cgst-t2b.cgst)<=2&&Math.abs(pr.sgst-t2b.sgst)<=2&&Math.abs(pr.taxable-t2b.taxable)<=2;
+          if(ok){matched2BIndices.add(t2b._originalIndex);resolvedPRIndices.add(prIdx);finalReport.push({...pr,status:'Matched',t2bInv:t2b.rawInv,t2bDate:t2b.rawDate,t2bTaxable:t2b.taxable,t2bIgst:t2b.igst,t2bCgst:t2b.cgst,t2bSgst:t2b.sgst});break}
+        }
+      }
+    });
+
+    parsedPR.forEach((pr,prIdx)=>{
+      if(resolvedPRIndices.has(prIdx))return;
+      const list=map2BByGstin.get(pr.gstin);
+      if(!list){finalReport.push({...pr,status:'Not in 2B',t2bInv:'-',t2bDate:'-',t2bTaxable:0,t2bIgst:0,t2bCgst:0,t2bSgst:0});return}
+      let best=null,score=Infinity;
+      for(const t2b of list){
+        if(matched2BIndices.has(t2b._originalIndex)||pr.docType!==t2b.docType)continue;
+        const close=isFuzzyInvoiceMatch(pr.cleanInv,t2b.cleanInv),taxDiff=Math.abs(pr.totalTax-t2b.totalTax),taxableDiff=Math.abs(pr.taxable-t2b.taxable);
+        if(close||taxDiff<=5||taxableDiff<=5){
+          const s=taxDiff+(taxableDiff/100);
+          if(s<score){score=s;best=t2b}
+        }
+      }
+      if(best){
+        matched2BIndices.add(best._originalIndex);resolvedPRIndices.add(prIdx);
+        const exact=Math.abs(pr.totalTax-best.totalTax)<=2&&Math.abs(pr.taxable-best.taxable)<=2;
+        finalReport.push({...pr,status:exact?'Matched':'Partial Matching',t2bInv:best.rawInv,t2bDate:best.rawDate,t2bTaxable:best.taxable,t2bIgst:best.igst,t2bCgst:best.cgst,t2bSgst:best.sgst});
+      }else finalReport.push({...pr,status:'Not in 2B',t2bInv:'-',t2bDate:'-',t2bTaxable:0,t2bIgst:0,t2bCgst:0,t2bSgst:0});
+    });
+
+    parsed2B.forEach(t2b=>{
+      if(!matched2BIndices.has(t2b._originalIndex))finalReport.push({status:'Not in PR',vendor:t2b.vendor,gstin:t2b.gstin,docType:t2b.docType,rawInv:'-',rawDate:'-',taxable:0,igst:0,cgst:0,sgst:0,t2bInv:t2b.rawInv,t2bDate:t2b.rawDate,t2bTaxable:t2b.taxable,t2bIgst:t2b.igst,t2bCgst:t2b.cgst,t2bSgst:t2b.sgst});
+    });
+    renderResults(finalReport); toast(`Reconciliation completed: ${finalReport.length.toLocaleString()} output records.`);
+  }catch(err){alert(err.message||String(err))}
+  finally{loading.style.display='none'}
+}
+
+function filterTable(status){
+  currentFilter=status;
+  document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));
+  const map={'ALL':'btnTabALL','Matched':'btnTabMatched','Partial Matching':'btnTabPartial','Not in 2B':'btnTabNotIn2B','Not in PR':'btnTabNotInPR'};
+  document.getElementById(map[status]).classList.add('active');
+  renderResults(finalReport);
+}
+function badge(status){
+  if(status==='Matched')return '<span class="badge b-green">MATCHED</span>';
+  if(status==='Partial Matching')return '<span class="badge b-amber">PARTIAL</span>';
+  if(status==='Not in 2B')return '<span class="badge b-red">NOT IN 2B</span>';
+  return '<span class="badge b-blue">NOT IN PR</span>';
+}
+function esc(v){return String(v??'-').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+function renderResults(data){
+  const counts={Matched:0,'Partial Matching':0,'Not in 2B':0,'Not in PR':0};
+  data.forEach(r=>{if(counts[r.status]!==undefined)counts[r.status]++});
+  document.getElementById('cMatched').textContent=counts.Matched;
+  document.getElementById('cPartial').textContent=counts['Partial Matching'];
+  document.getElementById('cNotIn2B').textContent=counts['Not in 2B'];
+  document.getElementById('cNotInPR').textContent=counts['Not in PR'];
+  const rows=currentFilter==='ALL'?data:data.filter(r=>r.status===currentFilter);
+  document.getElementById('resultTableBody').innerHTML=rows.map(r=>`
+    <tr><td>${badge(r.status)}</td><td>${esc(r.vendor)}</td><td>${esc(r.gstin)}</td><td>${esc(r.docType)}</td>
+    <td>${esc(r.rawInv)}</td><td>${esc(r.t2bInv)}</td><td>${esc(r.rawDate)}</td><td>${esc(r.t2bDate)}</td>
+    <td>${r.taxable??0}</td><td>${r.t2bTaxable??0}</td><td>${r.igst??0}</td><td>${r.t2bIgst??0}</td>
+    <td>${r.cgst??0}</td><td>${r.t2bCgst??0}</td><td>${r.sgst??0}</td><td>${r.t2bSgst??0}</td></tr>`).join('');
+  document.getElementById('dashboard').style.display='grid';
+  document.getElementById('resultsContainer').style.display='block';
+}
+
+function autoWidth(ws){
+  const range=XLSX.utils.decode_range(ws['!ref']||'A1:A1');
+  ws['!cols']=Array.from({length:range.e.c+1},(_,c)=>{
+    let max=10;
+    for(let r=range.s.r;r<=Math.min(range.e.r,80);r++){
+      const cell=ws[XLSX.utils.encode_cell({r,c})];if(cell&&cell.v!==undefined)max=Math.max(max,String(cell.v).length+2);
+    }
+    return {wch:Math.min(max,32)};
+  });
+}
+function downloadTemplates(){
+  const wb=XLSX.utils.book_new();
+  const instructions=[
+    ['GST RECONCILIATION TOOL — MASTER TEMPLATE'],
+    ['Mandatory Rule 1','Document Type in Purchase Register and GSTR-2B must be the same. If 2B shows Credit Note, PR must also show Credit Note.'],
+    ['Mandatory Rule 2','Do not enter negative values. Enter Taxable Value, IGST, CGST and SGST as positive/non-negative amounts.'],
+    ['Document Types','Use Invoice, Credit Note or Debit Note.'],
+    ['Important','For Credit Notes and Debit Notes, enter positive amounts and identify the document in Document Type.'],
+    ['Suggested fields','Vendor Name, GSTIN, Invoice Number, Document Type, Invoice Date, Taxable Value, IGST, CGST, SGST.'],
+    ['Upload','Save/use the appropriate sheet as the Purchase Register or GSTR-2B input file.']
+  ];
+  const pr=[
+    {'Vendor Name':'ABC Supplier Pvt Ltd','GSTIN':'29ABCDE1234F1Z5','Invoice Number':'INV-2026-001','Document Type':'Invoice','Invoice Date':'2026-04-12','Taxable Value':10000,'IGST':1800,'CGST':0,'SGST':0},
+    {'Vendor Name':'XYZ Supplier Pvt Ltd','GSTIN':'27XYZAB5678G2Z1','Invoice Number':'CN-2026-009','Document Type':'Credit Note','Invoice Date':'2026-05-10','Taxable Value':5000,'IGST':900,'CGST':0,'SGST':0}
+  ];
+  const b2b=[
+    {'Vendor Name':'ABC Supplier Pvt Ltd','GSTIN':'29ABCDE1234F1Z5','Invoice Number':'INV2026001','Document Type':'Invoice','Invoice Date':'2026-04-12','Taxable Value':10000,'IGST':1800,'CGST':0,'SGST':0},
+    {'Vendor Name':'XYZ Supplier Pvt Ltd','GSTIN':'27XYZAB5678G2Z1','Invoice Number':'CN2026009','Document Type':'Credit Note','Invoice Date':'2026-05-10','Taxable Value':5000,'IGST':900,'CGST':0,'SGST':0}
+  ];
+  const ws0=XLSX.utils.aoa_to_sheet(instructions);ws0['!cols']=[{wch:24},{wch:100}];XLSX.utils.book_append_sheet(wb,ws0,'Instructions');
+  const ws1=XLSX.utils.json_to_sheet(pr);autoWidth(ws1);XLSX.utils.book_append_sheet(wb,ws1,'Purchase_Register');
+  const ws2=XLSX.utils.json_to_sheet(b2b);autoWidth(ws2);XLSX.utils.book_append_sheet(wb,ws2,'GSTR_2B');
+  XLSX.writeFile(wb,'GST_Reconciliation_Master_Template.xlsx');
+  toast('Master Excel template downloaded.');
+}
+function resetTool(){
+  prData=[];gstrData=[];finalReport=[];prWorkbook=null;gstrWorkbook=null;currentFilter='ALL';
+  document.getElementById('prFile').value='';document.getElementById('gstrFile').value='';
+  document.getElementById('prSheetRow').style.display='none';document.getElementById('gstrSheetRow').style.display='none';
+  setStatus('PR','No file uploaded.','info');setStatus('2B','No file uploaded.','info');
+  document.getElementById('dashboard').style.display='none';document.getElementById('resultsContainer').style.display='none';
+  document.getElementById('resultTableBody').innerHTML='';toast('Tool reset.');
+}
+function exportToExcel(){
+  if(!finalReport.length){alert('No reconciliation results available.');return}
+  const wb=XLSX.utils.book_new();
+  const headers=['RECON CATEGORY','VENDOR NAME','GSTIN','DOCUMENT TYPE','INVOICE NO (PR)','INVOICE NO (2B)','INVOICE DATE (PR)','INVOICE DATE (2B)','TAXABLE VALUE (PR)','TAXABLE VALUE (2B)','IGST (PR)','IGST (2B)','CGST (PR)','CGST (2B)','SGST (PR)','SGST (2B)'];
+  const groups=[
+    ['Matched','MATCHED'],['Partial Matching','PARTIAL MATCHING'],['Not in 2B','NOT IN 2B'],['Not in PR','NOT IN PR']
+  ];
+  groups.forEach(([status,sheet])=>{
+    const ds=finalReport.filter(r=>r.status===status);if(!ds.length)return;
+    const rows=[headers,...ds.map(r=>[r.status.toUpperCase(),r.vendor||'-',r.gstin||'-',r.docType||'-',r.rawInv||'-',r.t2bInv||'-',r.rawDate||'-',r.t2bDate||'-',r.taxable??0,r.t2bTaxable??0,r.igst??0,r.t2bIgst??0,r.cgst??0,r.t2bCgst??0,r.sgst??0,r.t2bSgst??0])];
+    const ws=XLSX.utils.aoa_to_sheet(rows);autoWidth(ws);XLSX.utils.book_append_sheet(wb,ws,sheet);
+  });
+  const summary=[
+    ['GST RECONCILIATION SUMMARY',''],
+    ['Matched Invoices',finalReport.filter(r=>r.status==='Matched').length],
+    ['Partial Matching',finalReport.filter(r=>r.status==='Partial Matching').length],
+    ['Not in 2B',finalReport.filter(r=>r.status==='Not in 2B').length],
+    ['Not in PR',finalReport.filter(r=>r.status==='Not in PR').length],
+    ['Generated On',new Date().toLocaleString()]
+  ];
+  const sws=XLSX.utils.aoa_to_sheet(summary);sws['!cols']=[{wch:28},{wch:22}];XLSX.utils.book_append_sheet(wb,sws,'SUMMARY');
+  XLSX.writeFile(wb,'GST_Reconciliation_Report.xlsx');toast('Excel reconciliation report downloaded.');
+}
+</script>
+</body>
+</html>
