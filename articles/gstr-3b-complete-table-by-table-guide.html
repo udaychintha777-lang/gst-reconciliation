@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GSTR-3B Return Filing: Complete Table-by-Table Guide</title>
+<meta name="description" content="Complete practical guide to GSTR-3B: every current table, what data to consider, where to get it, reconciliation checks, examples and risks of wrong reporting.">
+<style>
+:root{--n:#071c3d;--b:#1769e8;--ink:#10284e;--m:#5b6f89;--bg:#f5f9fe;--line:#dfe9f4;--g:#16834b;--w:#c78500}*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7}a{color:var(--b);text-decoration:none}.wrap{width:min(1120px,calc(100% - 32px));margin:auto}.top{background:var(--n);color:#fff;padding:15px 0}.topin{display:flex;justify-content:space-between;align-items:center}.brand{color:#fff;font-weight:900}.back{color:#dce9ff;font-size:13px}.hero{padding:52px 0 38px;background:linear-gradient(135deg,#eaf4ff,#fff);border-bottom:1px solid var(--line)}.tag{display:inline-block;background:#e2efff;color:#1259c5;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:850}.hero h1{font-size:44px;line-height:1.12;max-width:950px;margin:16px 0}.sub{font-size:18px;color:var(--m);max-width:900px}.grid{display:grid;grid-template-columns:1fr 280px;gap:24px;padding:30px 0 60px}article,.toc{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 8px 25px #0b3d7808}article{padding:32px}.toc{padding:19px;height:max-content;position:sticky;top:15px}.toc a{display:block;font-size:13px;padding:4px 0;color:#47617e}.toc strong{color:var(--b)}h2{font-size:27px;line-height:1.25;margin:38px 0 12px}h2:first-child{margin-top:0}h3{font-size:19px}.quick,.good,.warn,.info{padding:17px 19px;border-radius:10px;margin:18px 0}.quick{background:#eef7ff;border:1px solid #cfe4ff}.good{background:#effaf4;border-left:4px solid var(--g)}.warn{background:#fff8e7;border-left:4px solid var(--w)}.info{background:#f3f8ff;border-left:4px solid var(--b)}table{width:100%;border-collapse:collapse;margin:17px 0;font-size:13.5px}th,td{border:1px solid var(--line);padding:10px 11px;vertical-align:top;text-align:left}th{background:#edf5ff}.return th{background:#e8f2ff;text-align:center}.return td:not(:first-child){text-align:right;min-width:105px}.risk{background:#fff5f5;border:1px solid #f0d5d5;border-radius:9px;padding:12px;margin-top:12px}.risk b{color:#b33131}.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;justify-content:center;margin:20px 0}.step{background:#fff;border:1px solid #cfe0f3;border-radius:10px;padding:11px 13px;font-weight:750;font-size:13px;text-align:center}.arrow{font-size:19px;color:var(--b)}ul.check{list-style:none;padding:0}ul.check li{margin:7px 0;padding-left:25px;position:relative}ul.check li:before{content:"✓";position:absolute;left:0;color:var(--g);font-weight:900}.mini{font-size:12px;color:var(--m)}footer{background:var(--n);color:#dce8f7;padding:28px 0;font-size:12px}@media(max-width:850px){.grid{grid-template-columns:1fr}.toc{position:static}.hero h1{font-size:35px}article{padding:22px}.return{font-size:12px;display:block;overflow-x:auto;white-space:nowrap}.return table{min-width:760px}.flow{display:grid;grid-template-columns:1fr}.arrow{transform:rotate(90deg);justify-self:center}}
+</style></head><body>
+<header class="top"><div class="wrap topin"><a class="brand" href="https://gstreconciliation.in/">GST RECONCILIATION</a><a class="back" href="https://gstreconciliation.in/articles.html">← GST Knowledge</a></div></header>
+<section class="hero"><div class="wrap"><span class="tag">GST KNOWLEDGE • RETURN FILING</span><h1>GSTR-3B Return Filing: Complete Table-by-Table Guide</h1><p class="sub">What to enter in every table, where the data should come from, how to cross-check it, practical examples and the risks of reporting the wrong amount.</p></div></section>
+<main class="wrap grid"><article>
+<div class="quick"><b>Quick answer:</b> GSTR-3B is a summary return used to declare GST liabilities for a tax period and discharge those liabilities. It is not an invoice-matching return. The taxpayer must review the system-generated figures, reconcile them with books and other records, make appropriate corrections where required, pay the resulting liability and file the return. The GST Portal currently auto-populates specified tables using GSTR-1/1A and the system-generated GSTR-2B. </div>
+
+<h2 id="before">1. What should you prepare before filing?</h2>
+<p>Do not begin by simply copying the previous month's numbers. Prepare the period's sales, purchases, reverse-charge workings, ITC reconciliation, tax payments and previous-period adjustments first.</p>
+<table><tr><th>Working</th><th>What to check</th><th>Primary data source</th></tr>
+<tr><td>Outward supplies</td><td>Taxable, zero-rated, exempt/nil-rated, non-GST, RCM/Section 9(5), amendments and notes</td><td>Sales register + GSTR-1/1A</td></tr>
+<tr><td>ITC</td><td>Eligible ITC, reversals, blocked/ineligible credit and reclaim</td><td>Purchase register + GSTR-2B + applicable records</td></tr>
+<tr><td>RCM</td><td>Taxable value and tax liability; eligible credit after applicable conditions</td><td>Expense/RCM register + invoices + GSTR-2B where applicable</td></tr>
+<tr><td>Interest/late fee</td><td>Delayed tax and previous-period liabilities</td><td>Return history + payment records</td></tr>
+<tr><td>Payment</td><td>Credit ledger, cash ledger and utilisation/payment</td><td>GST Portal ledgers</td></tr></table>
+<div class="warn"><b>Do not treat auto-population as automatic approval.</b> System-generated values are assistance for filing and reconciliation; the taxpayer remains responsible for the return actually filed. </div>
+
+<h2 id="31">2. Table 3.1 — Details of outward supplies and inward supplies liable to reverse charge</h2>
+<table class="return"><tr><th>Row</th><th>Particulars</th><th>Total Taxable Value</th><th>IGST</th><th>CGST</th><th>SGST/UTGST</th><th>Cess</th></tr>
+<tr><td>(a)</td><td>Outward taxable supplies other than zero-rated, nil-rated and exempted</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>(b)</td><td>Outward taxable supplies to registered persons attracting reverse charge</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>(c)</td><td>Other outward supplies (nil rated, exempted)</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>(d)</td><td>Inward supplies liable to reverse charge</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>(e)</td><td>Non-GST outward supplies</td><td></td><td></td><td></td><td></td><td></td></tr></table>
+
+<h3>3.1(a) — Ordinary taxable outward supplies</h3>
+<p><b>Consider:</b> taxable domestic outward supplies other than the supplies separately covered by the other rows. Reconcile taxable value and tax with the sales register and filed GSTR-1/1A, including amendments and credit/debit notes affecting the period.</p><div class="risk"><b>Risk:</b> Under-reporting can create short-payment exposure and interest; over-reporting can cause excess tax payment and reconciliation problems.</div>
+
+<h3>3.1(b) — Outward supplies attracting reverse charge</h3>
+<p>This row concerns specified outward supplies where the recipient is liable to pay tax under reverse charge. Identify the transaction from the applicable GST provision/notification and ensure it is not accidentally treated as ordinary forward-charge turnover.</p><div class="risk"><b>Risk:</b> Wrong classification can shift the tax liability to the wrong person and create return mismatches.</div>
+
+<h3>3.1(c) — Nil-rated and exempt outward supplies</h3>
+<p>Use the outward-supply records to identify supplies that are nil-rated or exempt for the relevant tax period. Do not mix these with non-GST supplies merely because no GST is charged.</p><div class="risk"><b>Risk:</b> Misclassification can affect reporting, ITC apportionment/reversal analysis and reconciliation.</div>
+
+<h3>3.1(d) — Inward supplies liable to reverse charge</h3>
+<p>Identify inward supplies on which the recipient is liable to pay GST under reverse charge. Work from the RCM register, expense ledger, invoices and other applicable records. The GST Portal currently auto-populates this row from specified GSTR-2B data; review the amount against your own RCM workings. </p><div class="risk"><b>Risk:</b> Missing RCM can mean tax short-payment and interest; claiming ITC without satisfying the applicable conditions can create an additional issue.</div>
+
+<h3>3.1(e) — Non-GST outward supplies</h3>
+<p>Report outward supplies that are outside the GST levy/non-GST as applicable to the return's classification. Do not automatically put every exempt supply here.</p><div class="risk"><b>Risk:</b> Incorrect classification can distort turnover reporting and related reconciliation.</div>
+
+<h2 id="311">3. Table 3.1.1 — Supplies notified under Section 9(5)</h2>
+<p>This table is for specified supplies through electronic commerce operators where tax is payable by the ECO under Section 9(5), with separate reporting for the ECO and the registered person making the specified supplies.</p>
+<table class="return"><tr><th>Row</th><th>Description</th><th>Taxable Value</th><th>IGST</th><th>CGST</th><th>SGST/UTGST</th><th>Cess</th></tr>
+<tr><td>(i)</td><td>Taxable supplies on which ECO pays tax under Section 9(5)</td><td></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>(ii)</td><td>Taxable supplies made by registered person through ECO on which ECO is required to pay tax under Section 9(5)</td><td></td><td></td><td></td><td></td><td></td></tr></table>
+<p>The GST Portal guidance states that ECOs report applicable supplies in 3.1.1(i), while registered persons making specified supplies through ECOs report them in 3.1.1(ii). The ECO's liability in row (i) is paid in cash and the supplies are not included again in 3.1(a). </p>
+<div class="warn"><b>Double-reporting warning:</b> Do not include a Section 9(5) supply in 3.1(a) when it belongs in 3.1.1.</div>
+
+<h2 id="32">4. Table 3.2 — Inter-State supplies to specified recipients</h2>
+<table class="return"><tr><th>Category</th><th>Place of supply / State or UT</th><th>Taxable Value</th><th>IGST</th></tr>
+<tr><td>Unregistered persons</td><td></td><td></td><td></td></tr><tr><td>Composition taxable persons</td><td></td><td></td><td></td></tr><tr><td>UIN holders</td><td></td><td></td><td></td></tr></table>
+<p>This table captures relevant inter-State outward supplies to unregistered persons, composition taxable persons and UIN holders. The portal currently auto-drafts specified values from GSTR-1/1A. Review the state-wise figures against the sales register and filed statement. </p>
+<div class="risk"><b>Risk:</b> State-wise errors can cause reconciliation problems and may indicate incorrect place-of-supply or customer classification.</div>
+
+<h2 id="4">5. Table 4 — Eligible ITC</h2>
+<p>Table 4 is where the recipient reports eligible ITC, reversals and other ITC details. Do not simply take the total of the purchase register. First determine eligibility under the GST law, then account for restrictions/reversals.</p>
+<table class="return"><tr><th>Row</th><th>Particulars</th><th>IGST</th><th>CGST</th><th>SGST/UTGST</th><th>Cess</th></tr>
+<tr><td>4(A)(1)</td><td>Import of goods</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4(A)(2)</td><td>Import of services</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4(A)(3)</td><td>Inward supplies liable to reverse charge (other than above)</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4(A)(4)</td><td>Inward supplies from ISD</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4(A)(5)</td><td>All other ITC</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4(B)(1)</td><td>As per rules</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4(B)(2)</td><td>Others</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4(C)</td><td>Net ITC available (A minus B)</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4(D)(1)</td><td>ITC reclaimed which was reversed under 4(B)(2) in an earlier period</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>4(D)(2)</td><td>Ineligible ITC under Section 16(4) and ITC restricted due to place-of-supply rules</td><td></td><td></td><td></td><td></td></tr></table>
+
+<h3>4(A)(1) — Import of goods</h3><p>Use eligible ITC supported by import documentation, principally the Bill of Entry and applicable records. Cross-check with the system-generated data where available.</p><div class="risk"><b>Risk:</b> Claiming credit without valid import documentation or claiming an ineligible amount can result in reversal and related exposure.</div>
+
+<h3>4(A)(2) — Import of services</h3><p>Identify eligible import-of-service transactions and the applicable reverse-charge tax/payment position before taking credit. Keep agreements, invoices and payment/tax records as appropriate.</p><div class="risk"><b>Risk:</b> Incorrect place-of-supply, recipient-status or reverse-charge treatment can affect both liability and ITC.</div>
+
+<h3>4(A)(3) — Inward supplies liable to reverse charge</h3><p>Reconcile RCM liability with eligible ITC. The portal currently auto-populates this row from specified GSTR-2B data on a net basis. </p><div class="risk"><b>Risk:</b> Paying RCM but failing to report eligible credit, or taking credit without satisfying conditions, can distort both tax and ITC.</div>
+
+<h3>4(A)(4) — Inward supplies from ISD</h3><p>Use valid ISD documents/records for credit distributed to the registration. Reconcile the amount with the ISD data available to the recipient.</p><div class="risk"><b>Risk:</b> Wrong distribution or duplicate credit can result in excess ITC.</div>
+
+<h3>4(A)(5) — All other ITC</h3><p>This is the major operating bucket for eligible ITC from registered suppliers other than the separately identified categories. The GST Portal currently auto-populates this row on a net basis from specified GSTR-2B data. </p>
+<div class="flow"><div class="step">Purchase Register</div><div class="arrow">→</div><div class="step">GSTR-2B</div><div class="arrow">→</div><div class="step">Invoice review</div><div class="arrow">→</div><div class="step">Eligibility / Section 17 check</div><div class="arrow">→</div><div class="step">GSTR-3B ITC</div></div>
+<div class="good"><b>Important:</b> A GSTR-2B match is a strong reconciliation control, but the taxpayer must still apply the substantive ITC conditions and restrictions applicable to the transaction.</div>
+
+<h3>4(B)(1) — ITC reversal as per rules</h3><p>Use this row for reversals required under the applicable GST rules. Maintain a working showing the invoices/amounts and the reason for reversal.</p><div class="risk"><b>Risk:</b> Missing a required reversal can lead to excess ITC and subsequent tax/interest exposure.</div>
+
+<h3>4(B)(2) — Other ITC reversals</h3><p>Use for other reversals that are required to be reported here. Maintain a clear audit trail showing why the reversal was made and whether it may become eligible for reclaim later.</p>
+
+<h3>4(C) — Net ITC available</h3><p>Conceptually, this is the net amount after the applicable reversals in 4(B). Reconcile it to your ITC working before proceeding to payment/offset.</p>
+<div class="info"><b>Control:</b> 4(A) eligible credit − 4(B) reversals = 4(C) net ITC available, subject to the return's prescribed structure and values.</div>
+
+<h3>4(D)(1) — Reclaimed ITC</h3><p>Report eligible credit reclaimed after an earlier reversal where the conditions for reclaim are satisfied. Keep the original reversal and current reclaim linked in your working papers.</p>
+
+<h3>4(D)(2) — Ineligible ITC under specified restrictions</h3><p>The portal currently auto-populates specified ITC that is unavailable due to Section 16(4) and specified place-of-supply restrictions. Review the auto-populated amount and your own eligibility analysis. </p>
+
+<h2 id="5">6. Table 5 — Values of exempt, nil-rated and non-GST inward supplies</h2>
+<table class="return"><tr><th>Particulars</th><th>Inter-State</th><th>Intra-State</th></tr><tr><td>From composition taxable persons</td><td></td><td></td></tr><tr><td>Exempt, nil-rated and non-GST inward supplies</td><td></td><td></td></tr></table>
+<p>Use the purchase/expense records to identify relevant inward supplies and classify them correctly. This table is about inward supplies; do not confuse it with the outward-supply reporting in Table 3.1(c) and 3.1(e).</p>
+<div class="risk"><b>Risk:</b> Wrong classification can affect return analytics and may complicate ITC apportionment/reversal review.</div>
+
+<h2 id="51">7. Table 5.1 — Interest and late fee</h2>
+<table class="return"><tr><th>Particulars</th><th>Tax / Interest / Late Fee</th></tr><tr><td>Interest</td><td></td></tr><tr><td>Late fee</td><td></td></tr></table>
+<p>Review interest and late fee applicable to the return. For previous-period liabilities, provide the required tax-period breakup where applicable because it can affect system interest computation. The GST Portal provides a <b>RE-COMPUTE INTEREST</b> function where the taxpayer believes the system computation requires recomputation. </p>
+<div class="warn"><b>Practical control:</b> Keep a month-wise liability/payment schedule. Do not blindly accept or overwrite an interest amount without understanding the tax period and payment dates.</div>
+
+<h2 id="61">8. Table 6.1 — Payment of tax</h2>
+<p>After finalising liability and eligible credit, the taxpayer discharges the return liability using the prescribed electronic ledgers and payment mechanism.</p>
+<div class="flow"><div class="step">Final liability</div><div class="arrow">→</div><div class="step">Eligible ITC utilisation</div><div class="arrow">→</div><div class="step">Cash requirement</div><div class="arrow">→</div><div class="step">Offset / payment</div><div class="arrow">→</div><div class="step">File return</div></div>
+<p>Do not confuse <b>reporting the liability</b> with <b>discharging the liability</b>. The return declares the summary position; the payment/offset process actually discharges the amounts due.</p>
+<div class="risk"><b>Risk:</b> Wrong utilisation, insufficient cash balance, or failure to account for interest/other amounts can prevent correct discharge or leave an outstanding liability.</div>
+
+<h2 id="controls">9. Five reconciliations every accountant should perform</h2>
+<table><tr><th>Reconciliation</th><th>Purpose</th></tr>
+<tr><td>Sales Register ↔ GSTR-1/1A ↔ 3.1</td><td>Confirm outward liability is complete and correctly classified.</td></tr>
+<tr><td>GSTR-1/1A ↔ 3.2</td><td>Check state-wise specified inter-State supplies.</td></tr>
+<tr><td>Purchase Register ↔ GSTR-2B</td><td>Identify missing, excess, amended and unmatched invoice data.</td></tr>
+<tr><td>Eligible ITC working ↔ Table 4</td><td>Confirm blocked/reversed/ineligible amounts are excluded or reversed.</td></tr>
+<tr><td>3.1 + RCM + ITC ↔ payment/ledger</td><td>Confirm the return liability is actually discharged.</td></tr></table>
+
+<h2 id="wrong">10. What are the risks of wrong GSTR-3B reporting?</h2>
+<table><tr><th>Wrong entry</th><th>Possible practical consequence</th><th>Control</th></tr>
+<tr><td>Sales understated</td><td>Short-payment, interest and demand exposure depending on facts.</td><td>Reconcile sales register, GSTR-1/1A and books.</td></tr>
+<tr><td>Sales overstated</td><td>Excess tax payment and correction/reconciliation issues.</td><td>Invoice-level review.</td></tr>
+<tr><td>RCM omitted</td><td>Tax short-payment and interest exposure.</td><td>Monthly RCM register.</td></tr>
+<tr><td>Excess ITC claimed</td><td>Reversal, interest and other consequences depending on facts and applicable law.</td><td>GSTR-2B + books + eligibility review.</td></tr>
+<tr><td>Required ITC reversal missed</td><td>Excess credit remains in return.</td><td>Rule-wise reversal working.</td></tr>
+<tr><td>Wrong IGST/CGST/SGST classification</td><td>Tax/return mismatch and correction issues.</td><td>Place-of-supply review.</td></tr>
+<tr><td>3.1.1 supply duplicated in 3.1(a)</td><td>Potential duplicate liability reporting.</td><td>Section 9(5) separate check.</td></tr>
+</table>
+
+<h2 id="portal">11. What happens to auto-populated values on the GST Portal?</h2>
+<p>The GST Portal currently keeps auto-populated GSTR-3B values editable. However, the portal highlights certain downward edits to liability tables and upward edits to ITC tables and displays warning messages. The system also allows taxpayers to view the system-computed and edited values. </p>
+<div class="good"><b>Best practice:</b> Download/review the system-generated GSTR-3B summary, compare it with your workings, investigate every material difference, and retain the reconciliation before filing.</div>
+
+<h2 id="filing">12. Final filing checklist</h2>
+<ul class="check">
+<li>GSTR-1/1A has been reviewed/finalised as applicable.</li>
+<li>Sales register agrees with the return workings.</li>
+<li>RCM register has been checked.</li>
+<li>Purchase Register has been reconciled with GSTR-2B.</li>
+<li>Eligible ITC has been checked for restrictions and reversals.</li>
+<li>4(A), 4(B), 4(C) and 4(D) have been reviewed.</li>
+<li>Table 3.2 state-wise details have been checked.</li>
+<li>Section 9(5) transactions have been separately checked where applicable.</li>
+<li>Interest and late fee have been reviewed.</li>
+<li>Previous-period liability breakup has been provided where applicable.</li>
+<li>Preview of GSTR-3B has been checked before filing.</li>
+<li>Payment/offset has been verified.</li>
+<li>Filed return and supporting workings have been saved.</li>
+</ul>
+
+<h2 id="tool">13. Use reconciliation before finalising ITC</h2>
+<div class="good"><b>Don't wait until filing day to discover ITC differences.</b><br>Use an invoice-level reconciliation process during the month to identify missing invoices, value/tax differences, amendments, credit notes and other exceptions before finalising the ITC position.</div>
+<p><a href="https://gstreconciliation.in/reconciliation.html"><strong>→ Open GST ITC Reconciliation Tool</strong></a></p>
+
+<h2 id="summary">14. GSTR-3B in one view</h2>
+<table><tr><th>Section of return</th><th>Main question to ask</th></tr>
+<tr><td>3.1</td><td>What outward liability and RCM liability belongs to this period?</td></tr>
+<tr><td>3.1.1</td><td>Are there specified Section 9(5) ECO supplies?</td></tr>
+<tr><td>3.2</td><td>What relevant inter-State supplies were made to specified recipient categories?</td></tr>
+<tr><td>4</td><td>What ITC is genuinely eligible after restrictions/reversals?</td></tr>
+<tr><td>5</td><td>What relevant inward exempt/nil-rated/non-GST/composition supplies exist?</td></tr>
+<tr><td>5.1</td><td>Is interest/late fee applicable?</td></tr>
+<tr><td>6.1</td><td>How will the final liability be discharged?</td></tr>
+</table>
+
+<div class="warn"><b>Knowledge-purpose disclaimer:</b> This article is for general educational and practical understanding. GST law, rules, notifications, circulars, portal functionality and filing procedures can change. Verify the provisions and procedures applicable to the relevant tax period and the facts of the transaction before taking a final tax position.</div>
+<p class="mini">Prepared as a practical educational guide. The return structure and portal behaviour described above are based on current GST Portal guidance reviewed for this article.</p>
+</article>
+<aside class="toc"><h3>GSTR-3B Guide</h3><a href="#before">Before filing</a><a href="#31">Table 3.1</a><a href="#311">Table 3.1.1</a><a href="#32">Table 3.2</a><a href="#4">Table 4 — ITC</a><a href="#5">Table 5</a><a href="#51">Table 5.1</a><a href="#61">Table 6.1</a><a href="#controls">Reconciliations</a><a href="#wrong">Risks</a><a href="#portal">Portal auto-population</a><a href="#filing">Final checklist</a><a href="#tool"><strong>Reconciliation Tool →</strong></a></aside>
+</main>
+<footer><div class="wrap"><b>GST Reconciliation</b><br>Practical GST knowledge and tools. Verify the law applicable to the relevant tax period before taking a final position.</div></footer>
+</body></html>
