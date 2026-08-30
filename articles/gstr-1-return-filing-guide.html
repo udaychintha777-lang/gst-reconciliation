@@ -1,0 +1,314 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GSTR-1 Return Filing: Complete Practical Guide | GST Reconciliation</title>
+<meta name="description" content="Practical GSTR-1 table-by-table guide with source data, portal fields, examples, reconciliation checks and common risks.">
+<style>
+:root{--navy:#061a38;--navy2:#0b2b58;--blue:#1769e0;--blue2:#2563eb;--green:#16a05d;--ink:#152a4d;--muted:#65748b;--bg:#f5f8fc;--card:#fff;--line:#e2e8f0;--gold:#f4b942;--shadow:0 14px 38px rgba(20,45,85,.09);--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}a{color:inherit}.wrap{width:min(1180px,calc(100% - 32px));margin:auto}
+.nav{position:sticky;top:0;z-index:100;background:rgba(6,26,56,.98);color:#fff;border-bottom:1px solid rgba(255,255,255,.09)}.navin{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none;min-width:max-content}.logo{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,#45b7ff,#1d67e8);display:grid;place-items:center;box-shadow:0 8px 24px rgba(29,103,232,.3);font-weight:900;color:#fff}.brand strong{display:block;font-size:16px;letter-spacing:.01em}.brand small{display:block;color:#c5d4e7;font-size:11px;letter-spacing:.04em}.links{display:flex;gap:5px;align-items:center;flex-wrap:wrap}.links a,.links button{color:#d9e5f5;background:none;border:0;padding:9px 10px;border-radius:9px;font-weight:750;font-size:13px;text-decoration:none;cursor:pointer}.links a:hover,.links button:hover{background:rgba(255,255,255,.08);color:#fff}
+.hero-home{padding:48px 0 0;background:linear-gradient(180deg,#edf6ff 0%,#f7fbff 68%,#fff 100%);overflow:hidden}.hero-home-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:30px;align-items:center}.hero-home h1{font-size:clamp(38px,5.2vw,60px);line-height:1.05;margin:8px 0 18px;letter-spacing:-.045em;color:#17365f}.hero-home p{color:#344b6c;max-width:700px;font-size:17px;margin:0 0 20px}.hero-kicker{display:inline-flex;align-items:center;gap:8px;color:#1769e0;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.hero-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:28px 0 25px}.stat strong{display:block;color:#1769e0;font-size:24px;line-height:1.1}.stat span{display:block;color:#4c5d76;font-size:12px;margin-top:4px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:12px 18px;font-weight:800;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn-blue{background:var(--blue);color:#fff;box-shadow:0 7px 18px rgba(23,105,224,.2)}.btn-green{background:var(--green);color:#fff}.btn-light{background:#fff;color:var(--ink);border:1px solid #d5dfeb}.btn-outline{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.35)}.hero-art{width:100%;max-width:620px;justify-self:end}.hero-art img{display:block;width:100%;border-radius:26px;mix-blend-mode:multiply}.hero-disclaimer{margin-top:20px;padding:13px 16px;border:1px solid #f1c766;background:#fff7df;color:#5f4a14;border-radius:12px;font-size:13px}
+.search-panel{margin-top:22px;background:linear-gradient(135deg,#0a2b5a,#173d79);border-radius:16px;padding:17px;color:#fff;box-shadow:0 12px 28px rgba(6,26,56,.15)}.search-panel-title{font-weight:900;font-size:14px;margin-bottom:10px}.search-row{display:flex;gap:10px}.search-row input,.searchbar input,.searchbar select{flex:1;border:1px solid #cfd9e6;border-radius:11px;padding:13px 15px;font-size:15px;outline:none;background:#fff}.quick-tags{display:flex;gap:7px;flex-wrap:wrap;margin-top:9px}.quick-tags a{font-size:11px;color:#fff;background:rgba(255,255,255,.1);padding:5px 9px;border-radius:999px;text-decoration:none}
+.section{padding:42px 0}.section h2{font-size:30px;line-height:1.2;margin:0 0 8px;color:#172d50}.section-sub,.muted{color:var(--muted)}.cards{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);min-height:172px}.card h3{margin:8px 0 5px;font-size:15px}.card p{font-size:12px;margin:0 0 10px}.icon{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:#eaf3ff;color:var(--blue);font-size:20px}.card .btn{padding:8px 11px;font-size:11px}.highlight-tool{position:relative;background:linear-gradient(135deg,#071f46,#123e79);color:#fff;border-radius:22px;padding:28px;box-shadow:0 18px 44px rgba(8,42,86,.2);overflow:hidden}.highlight-tool:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-100px;top:-110px;background:rgba(68,178,255,.12)}.highlight-tool h2{color:#fff;margin-bottom:8px}.highlight-tool p{color:#d9e8fb;max-width:800px}.tool-points{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.tool-point{padding:11px 13px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);border-radius:12px;font-size:12px;color:#e6f0ff}.popular-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.popular-card{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}.popular-thumb{height:118px;background:linear-gradient(135deg,#eaf3ff,#eef7ff);display:grid;place-items:center;font-size:42px;color:#1769e0}.popular-body{padding:16px}.popular-body h3{margin:0 0 5px;font-size:15px}.popular-body p{margin:0 0 10px;font-size:12px;color:var(--muted)}.popular-body a{color:#1769e0;font-weight:850;text-decoration:none;font-size:12px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:22px;padding:24px;box-shadow:var(--shadow)}.searchbar{display:flex;gap:10px}.results{display:grid;gap:12px;margin-top:18px}.result{padding:18px;border:1px solid var(--line);border-radius:15px;background:#fff}.result h3{margin:0 0 5px;font-size:18px}.result p{margin:0;color:var(--muted)}.chips{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.chip{padding:6px 10px;border-radius:999px;background:#eef5ff;color:#1d4ed8;font-size:12px;font-weight:800}.ai{background:linear-gradient(135deg,#0b2d63,#1769e0);color:#fff;border-radius:22px;padding:28px}.ai h2{color:#fff}.ai textarea{width:100%;min-height:130px;border:0;border-radius:14px;padding:16px;font-size:16px;resize:vertical}.ai .answer{background:#fff;color:var(--ink);border-radius:16px;padding:22px;margin-top:16px;white-space:pre-wrap}.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.topic{background:#fff;border:1px solid var(--line);border-radius:15px;padding:17px;text-decoration:none}.topic strong{display:block}.topic span{color:var(--muted);font-size:13px}
+.article{max-width:900px;margin:42px auto;background:#fff;border:1px solid var(--line);border-radius:22px;padding:34px;box-shadow:var(--shadow)}.article h1{font-size:42px;line-height:1.15;margin:8px 0 18px}.article h2{margin-top:28px}.lead{font-size:18px;color:#42536c}.callout{border-left:4px solid var(--blue);padding:14px 18px;background:#f2f7ff;border-radius:10px;margin:20px 0}.example{border-left:4px solid var(--green);padding:14px 18px;background:#effaf4;border-radius:10px}.checklist li{margin:7px 0}.reference{margin-top:38px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:#748096}
+.section-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.section-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;text-decoration:none}.section-card strong{color:var(--blue)}.notice{margin:22px 0;padding:14px 18px;border:1px solid #f0c36b;background:#fff7df;color:#5f4a14;border-radius:14px;font-size:14px}.ad-slot{min-height:90px;border:1px dashed #d6deea;background:#fff;border-radius:14px;display:flex;align-items:center;justify-content:center;color:#9aa7b8;font-size:11px;margin:24px 0}.ad-slot:before{content:"Advertisement"}
+.footer{padding:34px 0;background:#061a38;color:#c5d2e2;margin-top:40px}.footer a{color:#fff}.small{font-size:12px}.hidden{display:none!important}
+@media(max-width:1050px){.cards{grid-template-columns:repeat(3,1fr)}.hero-home-grid{grid-template-columns:1fr}.hero-art{justify-self:center}.popular-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:900px){.links{display:none}.hero-stats{grid-template-columns:repeat(2,1fr)}.tool-points{grid-template-columns:repeat(2,1fr)}.topic-grid,.section-list{grid-template-columns:1fr 1fr}.article h1{font-size:32px}}
+@media(max-width:600px){.cards,.popular-grid,.topic-grid,.section-list{grid-template-columns:1fr}.search-row,.searchbar{flex-direction:column}.wrap{width:min(100% - 20px,1180px)}.article{padding:22px}.hero-home{padding-top:30px}.hero-home h1{font-size:40px}.hero-stats{gap:12px}.tool-points{grid-template-columns:1fr}.hero-actions .btn{width:100%}}
+
+:root{--article-blue:#1769e0;--article-navy:#172d50;--article-bg:#f6f8fc;--article-green:#0b7a55;--article-red:#b42318;--article-orange:#9a6700}
+body{background:var(--article-bg)}
+.article-wrap{max-width:1050px;margin:auto;padding:28px 18px 70px}
+.article-hero{background:linear-gradient(135deg,#172d50,#1769e0);color:white;border-radius:18px;padding:34px 34px 30px;margin:22px 0;box-shadow:0 14px 35px rgba(23,45,80,.18)}
+.article-hero .eyebrow{font-size:12px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.article-hero h1{font-size:38px;line-height:1.14;margin:10px 0 12px;color:#fff}
+.article-hero p{font-size:16px;line-height:1.65;margin:0;max-width:850px;color:#eef5ff}
+.meta-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.meta{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:7px 11px;border-radius:999px;font-size:12px}
+.toc{background:#fff;border:1px solid #e5eaf2;border-radius:14px;padding:20px 22px;margin:22px 0}
+.toc strong{color:var(--article-navy)}
+.toc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 25px;margin-top:12px}
+.toc a{color:#1769e0;text-decoration:none;font-size:14px}
+.section{background:#fff;border:1px solid #e5eaf2;border-radius:16px;padding:26px;margin:22px 0;box-shadow:0 5px 18px rgba(20,45,80,.05)}
+.section h2{color:var(--article-navy);font-size:26px;margin:0 0 12px}
+.section h3{color:var(--article-navy);font-size:19px;margin:25px 0 10px}
+.lead{font-size:15px;line-height:1.75;color:#46566d}
+.info{border-left:4px solid #1769e0;background:#eef5ff;padding:15px 17px;border-radius:8px;margin:18px 0;line-height:1.65}
+.data{border-left:4px solid var(--article-green);background:#ecfdf5;padding:15px 17px;border-radius:8px;margin:18px 0;line-height:1.65}
+.risk{border-left:4px solid var(--article-red);background:#fff1f0;padding:15px 17px;border-radius:8px;margin:18px 0;line-height:1.65}
+.warn{border-left:4px solid var(--article-orange);background:#fff8e8;padding:15px 17px;border-radius:8px;margin:18px 0;line-height:1.65}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:13px}
+th{background:#172d50;color:#fff;text-align:left;padding:11px;border:1px solid #dfe5ee}
+td{padding:11px;border:1px solid #dfe5ee;vertical-align:top;line-height:1.55}
+tr:nth-child(even) td{background:#f8fafc}
+.portal{border:1px solid #cfd8e6;border-radius:12px;overflow:hidden;background:#fff;margin:18px 0;box-shadow:0 8px 22px rgba(20,45,80,.08)}
+.portal-head{background:#17365d;color:#fff;padding:11px 15px;display:flex;justify-content:space-between;gap:10px;font-size:12px}
+.portal-body{padding:18px}
+.portal-title{font-weight:800;color:#172d50;margin-bottom:14px}
+.portal-tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid #dbe2ec;padding-bottom:10px}
+.portal-tab{padding:7px 10px;background:#f1f4f8;border-radius:6px;font-size:11px}
+.portal-tab.active{background:#1769e0;color:#fff}
+.field-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:15px}
+.field{border:1px solid #dce3ec;border-radius:7px;padding:10px;background:#fff}
+.field label{display:block;font-size:10px;color:#64748b;margin-bottom:4px}
+.field div{font-size:12px;color:#172d50;min-height:15px}
+.portal-note{font-size:11px;color:#64748b;margin-top:12px}
+.step{display:grid;grid-template-columns:40px 1fr;gap:12px;margin:15px 0}
+.step-no{width:40px;height:40px;border-radius:50%;background:#1769e0;color:#fff;display:grid;place-items:center;font-weight:800}
+.mapping{background:#f8fafc;border-radius:12px;padding:15px;margin:15px 0}
+.checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.check{padding:10px 12px;border:1px solid #dfe5ee;border-radius:9px;background:#fff;font-size:13px}
+.sources{font-size:12px;color:#5b687a;line-height:1.7}
+@media(max-width:700px){
+.article-hero{padding:25px 20px}.article-hero h1{font-size:30px}
+.toc-grid,.field-grid,.checklist{grid-template-columns:1fr}
+.section{padding:20px 16px}table{font-size:12px;display:block;overflow-x:auto;white-space:normal}
+}
+
+.live-shot{position:relative;border:1px solid #cbd5e1;border-radius:14px;background:#eef2f7;padding:0;overflow:hidden;box-shadow:0 12px 30px rgba(20,45,80,.12);margin:20px 0}
+.shot-browser{height:38px;background:#e5e7eb;display:flex;align-items:center;gap:7px;padding:0 12px;color:#475569;font-size:11px}
+.shot-browser .dot{width:8px;height:8px;border-radius:50%;background:#94a3b8}
+.address{margin-left:10px;background:#fff;border:1px solid #d7dde7;border-radius:5px;padding:6px 10px;flex:1;overflow:hidden;white-space:nowrap}
+.shot-content{position:relative;min-height:390px;background:#f7f9fc;padding:18px 22px 28px}
+.shot-top{background:#17365d;color:#fff;padding:13px 16px;border-radius:8px;display:flex;justify-content:space-between;font-size:12px}
+.shot-block{background:#fff;border:1px solid #dce3ec;border-radius:10px;margin-top:14px;padding:16px}
+.shot-title{font-size:13px;font-weight:800;color:#172d50;margin-bottom:12px}
+.shot-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.shot-card{position:relative;border:1px solid #d9e1eb;border-radius:8px;padding:14px;background:#fff;min-height:70px}
+.shot-card.active{border:2px solid #1769e0;background:#f4f8ff}
+.shot-card b{display:block;font-size:12px;color:#172d50}.shot-card small{color:#64748b;font-size:10px}.shot-card span{position:absolute;right:8px;top:8px;width:20px;height:20px;border-radius:50%;background:#1769e0;color:#fff;display:grid;place-items:center;font-size:10px;font-weight:800}
+.shot-callout{position:absolute;background:#fff8e8;border:2px solid #f0a000;border-radius:9px;padding:10px 12px;font-size:11px;line-height:1.45;box-shadow:0 8px 18px rgba(20,45,80,.12);max-width:250px}
+.c1{right:28px;top:122px}.c2{left:35px;bottom:20px}.c3{right:30px;bottom:20px}
+@media(max-width:700px){.shot-cards{grid-template-columns:1fr 1fr}.shot-callout{position:relative;right:auto;left:auto;top:auto;bottom:auto;margin-top:10px;max-width:none}.shot-content{padding:14px}.shot-browser{font-size:9px}.address{display:none}}
+</style>
+</head>
+<body>
+<nav class="nav">
+ <div class="wrap navin">
+  <a class="brand" href="/index.html"><div class="logo">GST</div><div><strong>GST Reconciliation</strong><small>Practical GST Tools & Knowledge</small></div></a>
+  <div class="links"><a href="/index.html">Home</a><a href="/reconciliation.html">Reconciliation</a><a href="/articles.html">GST Knowledge</a><a href="/resources.html">Resources</a></div>
+ </div>
+</nav>
+
+<main class="article-wrap">
+<section class="article-hero">
+<section class="section portal-photo-section">
+<h2>See the GSTR-1 screen before you start</h2>
+<p class="lead">The visual below follows the current GSTR-1 portal structure described by GSTN. It is an annotated teaching reconstruction, not a screenshot of a taxpayer's live logged-in account. For the actual current portal screen, use the official GSTN manual linked below.</p>
+
+<div class="live-shot">
+  <div class="shot-browser">
+    <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+    <span class="address">gst.gov.in → Returns Dashboard → GSTR-1 → Prepare Online</span>
+  </div>
+  <div class="shot-content">
+    <div class="shot-top"><b>FORM GSTR-1</b><span>Return period: August 2026</span></div>
+    <div class="shot-block">
+      <div class="shot-title">ADD RECORD DETAILS</div>
+      <div class="shot-cards">
+        <div class="shot-card active"><b>4. B2B, SEZ, DE</b><small>Invoice Details</small><span>①</span></div>
+        <div class="shot-card"><b>5. B2C (Large)</b><small>Outward supplies</small><span>②</span></div>
+        <div class="shot-card"><b>6. Exports</b><small>Export / SEZ details</small><span>③</span></div>
+        <div class="shot-card"><b>7. B2C Others</b><small>Other B2C supplies</small><span>④</span></div>
+        <div class="shot-card"><b>12. HSN</b><small>HSN/SAC summary</small><span>⑤</span></div>
+        <div class="shot-card"><b>13. Documents</b><small>Documents issued</small><span>⑥</span></div>
+      </div>
+    </div>
+    <div class="shot-callout c1"><b>① Start here for B2B invoices.</b><br>Use the final sales register and validate GSTIN before reporting.</div>
+    <div class="shot-callout c2"><b>⑤ HSN is not just a total.</b><br>Prepare HSN/SAC-wise taxable value, quantity/UQC and tax from your working.</div>
+    <div class="shot-callout c3"><b>⑥ Document series check.</b><br>Compare invoice ranges and cancelled documents with your invoice register.</div>
+  </div>
+</div>
+
+<div class="info"><strong>Why this is important:</strong> GSTN's GSTR-1 enhancement advisory says the portal groups new details under <b>ADD RECORD DETAILS</b> and amendments under <b>AMEND RECORD DETAILS</b>, with the add section expanded by default. citeturn3search0</div>
+
+<p><a class="btn btn-blue" href="https://tutorial.gst.gov.in/downloads/news/gstr_1_advisory.pdf" target="_blank" rel="noopener">Open official GSTN GSTR-1 advisory</a>
+<a class="btn" href="https://tutorial.gst.gov.in/downloads/news/advisoryonhsnandgstr1.pdf" target="_blank" rel="noopener">Open official HSN/GSTR-1 guidance</a></p>
+</section>
+
+ <div class="eyebrow">GST Practical Guide • Return Filing</div>
+ <h1>GSTR-1 Return Filing: Complete Table-by-Table Practical Guide</h1>
+ <p>Learn what each GSTR-1 table is for, which accounting data should be considered, what fields need to be checked, how to reconcile the return and what errors can create mismatches.</p>
+ <div class="meta-row"><span class="meta">Table-by-table</span><span class="meta">Practical examples</span><span class="meta">Books → GST Portal</span><span class="meta">Risk checks</span></div>
+</section>
+
+<section class="toc">
+ <strong>In this guide</strong>
+ <div class="toc-grid">
+  <a href="#before">1. Data required before filing</a><a href="#workflow">2. Practical filing workflow</a>
+  <a href="#table4">3. Table 4 – B2B supplies</a><a href="#table5">4. Table 5 – B2C Large</a>
+  <a href="#table6">5. Table 6 – Exports / SEZ / deemed exports</a><a href="#table7">6. Table 7 – B2C Others</a>
+  <a href="#table8">7. Table 8 – Nil / Exempt / Non-GST</a><a href="#table9">8. Table 9 – Notes</a>
+  <a href="#table12">9. Table 12 – HSN/SAC</a><a href="#table13">10. Table 13 – Documents issued</a>
+  <a href="#recon">11. Reconciliation before filing</a><a href="#check">12. Final checklist</a>
+ </div>
+</section>
+
+<section class="section" id="before">
+<h2>1. What should you keep ready before opening GSTR-1?</h2>
+<p class="lead">Do not start by typing directly into the portal. First prepare the source reports and classify transactions. This makes the portal work a validation exercise rather than a data-entry exercise.</p>
+<table><thead><tr><th>Source report</th><th>What to extract</th><th>Why it matters</th></tr></thead><tbody>
+<tr><td>Sales Register</td><td>Invoice no., date, customer GSTIN, taxable value, rate, IGST/CGST/SGST, invoice value, POS</td><td>Main source for invoice-level outward supplies.</td></tr>
+<tr><td>Customer Master</td><td>GSTIN, legal/trade name, state</td><td>Helps classify B2B/B2C and validate recipient details.</td></tr>
+<tr><td>Credit/Debit Note Register</td><td>Original invoice reference, note number/date, taxable value and tax</td><td>Required for note reporting and amendments.</td></tr>
+<tr><td>Export / SEZ Register</td><td>Shipping/export details, recipient type, LUT/payment status</td><td>Supports zero-rated supply reporting.</td></tr>
+<tr><td>HSN/SAC Summary</td><td>HSN/SAC, description, UQC, quantity, taxable value and tax</td><td>Required for Table 12.</td></tr>
+<tr><td>Invoice Series Register</td><td>Nature of document, serial number range, cancelled documents</td><td>Required for Table 13 and completeness checks.</td></tr>
+</tbody></table>
+<div class="data"><strong>DATA TO CONSIDER:</strong> Use the final approved sales register after accounting review. Do not rely only on the GST ledger or bank receipts to prepare GSTR-1.</div>
+</section>
+
+<section class="section" id="workflow">
+<h2>2. Practical workflow</h2>
+<div class="step"><div class="step-no">1</div><div><strong>Extract</strong><br>Download the final sales register and related note/export/HSN reports.</div></div>
+<div class="step"><div class="step-no">2</div><div><strong>Classify</strong><br>Separate B2B, B2C, export, SEZ, deemed export, exempt/nil/non-GST and notes.</div></div>
+<div class="step"><div class="step-no">3</div><div><strong>Validate</strong><br>Check GSTIN, invoice number, date, POS, tax rate and tax amounts.</div></div>
+<div class="step"><div class="step-no">4</div><div><strong>Reconcile</strong><br>Compare GSTR-1 totals with the books and e-invoice data where applicable.</div></div>
+<div class="step"><div class="step-no">5</div><div><strong>Prepare and preview</strong><br>Generate the GSTR-1 summary and review before filing.</div></div>
+</section>
+
+<section class="section" id="table4">
+<h2>3. Table 4 – B2B supplies</h2>
+<p class="lead">This is one of the most important invoice-level sections. It covers taxable outward supplies to registered recipients, with separate treatment for specified categories such as reverse charge and e-commerce supplies.</p>
+
+<div class="portal">
+ <div class="portal-head"><span>Illustrative GST Portal view</span><span>Table 4A, 4B, 4C, 4D, 4E, 4F</span></div>
+ <div class="portal-body">
+  <div class="portal-title">4A, 4B, 4C, 4D, 4E, 4F – B2B, SEZ, DE Invoices</div>
+  <div class="portal-tabs"><span class="portal-tab active">Recipient wise count</span><span class="portal-tab">Document wise details</span></div>
+  <div class="field-grid">
+   <div class="field"><label>Recipient GSTIN</label><div>29ABCDE1234F1Z5</div></div>
+   <div class="field"><label>Invoice No.</label><div>INV/2026/00125</div></div>
+   <div class="field"><label>Invoice Date</label><div>15-08-2026</div></div>
+   <div class="field"><label>Invoice Value</label><div>₹11,80,000</div></div>
+   <div class="field"><label>Taxable Value</label><div>₹10,00,000</div></div>
+   <div class="field"><label>IGST</label><div>₹1,80,000</div></div>
+  </div>
+  <div class="portal-note">Illustrative reconstruction for explanation — not a live GST Portal screenshot.</div>
+ </div>
+</div>
+
+<table><thead><tr><th>Portal field</th><th>What data should be filled</th><th>Take it from</th><th>Control / risk</th></tr></thead><tbody>
+<tr><td>Recipient GSTIN</td><td>Valid GSTIN of registered recipient</td><td>Customer master + invoice</td><td>Wrong GSTIN can credit the invoice to the wrong recipient.</td></tr>
+<tr><td>Invoice number</td><td>Exact invoice/document number</td><td>Sales register</td><td>Check duplicates and special characters as applicable.</td></tr>
+<tr><td>Invoice date</td><td>Date on the tax invoice</td><td>Invoice / sales register</td><td>Do not substitute the accounting posting date.</td></tr>
+<tr><td>Invoice value</td><td>Total invoice value including applicable GST</td><td>Invoice</td><td>Should reconcile to the invoice total.</td></tr>
+<tr><td>Taxable value</td><td>Value on which GST is charged</td><td>Tax calculation / invoice</td><td>Must reconcile with tax rate and tax amount.</td></tr>
+<tr><td>Tax amounts</td><td>IGST or CGST + SGST/UTGST as applicable</td><td>Invoice / tax ledger</td><td>Check POS and tax type before reporting.</td></tr>
+<tr><td>Place of Supply</td><td>Relevant State/UT where required</td><td>Invoice + POS determination</td><td>Wrong POS can cause IGST vs CGST/SGST classification errors.</td></tr>
+</tbody></table>
+<div class="data"><strong>Practical example:</strong> Taxable value ₹10,00,000 + IGST ₹1,80,000 = invoice value ₹11,80,000. If the customer is registered and the transaction belongs in B2B, the invoice should be mapped to the appropriate B2B section with these values.</div>
+<div class="risk"><strong>RISK:</strong> A B2B invoice incorrectly reported under B2C can create recipient-side ITC visibility problems and reconciliation differences.</div>
+</section>
+
+<section class="section" id="table5">
+<h2>4. Table 5 – B2C Large</h2>
+<p class="lead">Use the current portal rules and applicable threshold for the relevant tax period. Classify the transaction using recipient status, place of supply and invoice value rather than simply using a generic “B2C” ledger.</p>
+<table><thead><tr><th>Check</th><th>What to verify</th><th>Risk if wrong</th></tr></thead><tbody>
+<tr><td>Recipient status</td><td>Unregistered recipient</td><td>Incorrect B2B/B2C classification.</td></tr>
+<tr><td>Inter-state nature</td><td>Supplier State vs Place of Supply</td><td>Wrong table and tax treatment.</td></tr>
+<tr><td>Invoice value</td><td>Apply the threshold relevant to the return period</td><td>Invoice may be reported in the wrong B2C section.</td></tr>
+</tbody></table>
+</section>
+
+<section class="section" id="table6">
+<h2>5. Table 6 – Exports, SEZ and deemed exports</h2>
+<table><thead><tr><th>Category</th><th>Data to consider</th><th>Key control</th></tr></thead><tbody>
+<tr><td>Exports</td><td>Export invoice, recipient/location details, taxable value, tax payment/LUT status as applicable</td><td>Reconcile with export documentation and accounting records.</td></tr>
+<tr><td>SEZ supplies</td><td>SEZ recipient details, invoice, taxable value and tax treatment</td><td>Verify recipient status and zero-rated treatment.</td></tr>
+<tr><td>Deemed exports</td><td>Relevant invoice and supporting classification</td><td>Maintain documentary support for the classification.</td></tr>
+</tbody></table>
+</section>
+
+<section class="section" id="table7">
+<h2>6. Table 7 – B2C Others</h2>
+<p class="lead">This section is generally consolidated rather than recipient-GSTIN-wise. Your working should therefore aggregate transactions only after classification and validation.</p>
+<div class="mapping"><strong>Recommended working:</strong> Sales Register → filter unregistered customers → classify intra/inter-state → apply applicable B2C rules → aggregate → reconcile taxable value and tax with books.</div>
+</section>
+
+<section class="section" id="table8">
+<h2>7. Table 8 – Nil-rated, exempted and non-GST supplies</h2>
+<table><thead><tr><th>Category</th><th>Data to consider</th><th>Do not do this</th></tr></thead><tbody>
+<tr><td>Nil-rated</td><td>Supplies taxable at nil rate under the applicable classification</td><td>Do not classify merely because no tax was charged.</td></tr>
+<tr><td>Exempt</td><td>Supplies specifically exempt under the applicable notification</td><td>Do not assume every non-taxable transaction is exempt.</td></tr>
+<tr><td>Non-GST</td><td>Supplies outside GST scope as applicable</td><td>Do not mix non-GST and exempt supplies without classification.</td></tr>
+</tbody></table>
+</section>
+
+<section class="section" id="table9">
+<h2>8. Table 9 – Credit / Debit Notes</h2>
+<p class="lead">Build a separate note register. Each note should be linked back to the original invoice and the tax impact should be checked before uploading.</p>
+<table><thead><tr><th>Field</th><th>What to consider</th></tr></thead><tbody>
+<tr><td>Original invoice</td><td>Original document number/date and recipient details where required.</td></tr>
+<tr><td>Note number/date</td><td>Exact credit/debit note details.</td></tr>
+<tr><td>Taxable value and tax</td><td>Actual adjustment supported by the note.</td></tr>
+<tr><td>Reason / commercial support</td><td>Maintain documentation supporting the adjustment.</td></tr>
+</tbody></table>
+<div class="risk"><strong>Reconciliation risk:</strong> A note posted in books but omitted from GSTR-1 can cause turnover and tax differences. A duplicate note can create an incorrect reduction/increase.</div>
+</section>
+
+<section class="section" id="table12">
+<h2>9. Table 12 – HSN/SAC summary</h2>
+<p class="lead">Prepare this from the HSN/SAC-wise sales report, not by manually adding invoice totals at the last minute.</p>
+<table><thead><tr><th>Data</th><th>What should be considered</th></tr></thead><tbody>
+<tr><td>HSN/SAC</td><td>Correct classification of the goods/services supplied.</td></tr>
+<tr><td>Description</td><td>Relevant product/service description.</td></tr>
+<tr><td>UQC & quantity</td><td>Applicable quantitative details for goods.</td></tr>
+<tr><td>Taxable value</td><td>Aggregate taxable value for the relevant HSN/SAC and rate.</td></tr>
+<tr><td>Tax amounts</td><td>IGST / CGST / SGST/UTGST / cess as applicable.</td></tr>
+</tbody></table>
+<div class="info"><strong>Current portal point:</strong> GSTN's April 2025 advisory states that Table 12 is bifurcated into B2B and B2C tabs, and provides a downloadable HSN/SAC list. It also states that Table 13 document details became mandatory from the May 2025 return period. citeturn1search15</div>
+</section>
+
+<section class="section" id="table13">
+<h2>10. Table 13 – Documents issued</h2>
+<p class="lead">Prepare a document-series working from the invoice register. Capture the relevant document type, serial range and cancelled documents as applicable.</p>
+<div class="data"><strong>Practical control:</strong> Compare opening/closing invoice sequences with the accounting system and identify gaps before filing.</div>
+</section>
+
+<section class="section" id="recon">
+<h2>11. Reconciliation before filing</h2>
+<table><thead><tr><th>Reconciliation</th><th>What to compare</th><th>Purpose</th></tr></thead><tbody>
+<tr><td>Books vs GSTR-1</td><td>Taxable value and tax by category</td><td>Find omitted/duplicate/misclassified invoices.</td></tr>
+<tr><td>GSTR-1 vs e-invoice</td><td>Applicable e-invoice documents</td><td>Identify missing or duplicate reporting.</td></tr>
+<tr><td>GSTR-1 vs GSTR-3B</td><td>Outward tax liability</td><td>Prevent return-to-return mismatch.</td></tr>
+<tr><td>GSTR-1 vs customer reconciliation</td><td>B2B invoice visibility</td><td>Reduce recipient-side mismatch queries.</td></tr>
+</tbody></table>
+<div class="info">GSTN states that e-invoice details are auto-populated into specified GSTR-1 tables for applicable taxpayers, and taxpayers should review the auto-populated details before filing. citeturn1search16</div>
+</section>
+
+<section class="section" id="check">
+<h2>12. Final pre-filing checklist</h2>
+<div class="checklist">
+<div class="check">✓ Sales register locked and reviewed</div>
+<div class="check">✓ B2B GSTINs validated</div>
+<div class="check">✓ B2B/B2C classification checked</div>
+<div class="check">✓ Place of Supply reviewed</div>
+<div class="check">✓ Credit/debit notes reconciled</div>
+<div class="check">✓ Export/SEZ transactions checked</div>
+<div class="check">✓ HSN/SAC summary reconciled</div>
+<div class="check">✓ Document series checked</div>
+<div class="check">✓ E-invoice data reviewed where applicable</div>
+<div class="check">✓ GSTR-1 vs books reconciled</div>
+<div class="check">✓ GSTR-1 vs GSTR-3B liability checked</div>
+<div class="check">✓ Draft summary reviewed before filing</div>
+</div>
+</section>
+
+<section class="section">
+<h2>Official / further reading</h2>
+<div class="sources">
+• GSTN / GST Portal guidance should be treated as the primary source for the current portal workflow and field behaviour.<br>
+• ClearTax and TaxGuru were reviewed for presentation ideas such as step-by-step sections, portal visuals, practical examples, tables and “what to enter” explanations. This article does not reproduce their text or design.<br>
+• Current GSTN guidance referenced above includes Table 12 enhancements and Table 13 mandatory reporting. citeturn1search15
+</div>
+</section>
+</main>
+
+<footer class="footer"><div class="wrap"><strong>GST Reconciliation</strong><div class="small" style="margin-top:8px">Practical GST tools and knowledge.</div></div></footer>
+</body>
+</html>
