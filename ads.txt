@@ -1,0 +1,1 @@
+# Add the exact ads.txt line provided by your approved Google AdSense account here.

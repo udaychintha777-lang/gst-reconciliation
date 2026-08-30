@@ -1,0 +1,8 @@
+{
+  "name": "GST Reconciliation",
+  "short_name": "GST Reconciliation",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#071a33",
+  "background_color": "#f5f8fc"
+}
