@@ -3,33 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Free GST reconciliation tool to compare Purchase Register with GSTR-2B. Reconcile GST invoices in your browser, identify matched and unmatched records, and download an Excel report.">
-<meta name="keywords" content="GST reconciliation tool, GSTR-2B reconciliation, purchase register vs GSTR-2B, GST ITC reconciliation, GST reconciliation Excel, GSTR 2B matching">
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<meta name="author" content="GST Reconciliation Tool">
+<meta name="description" content="Free GST Purchase Register vs GSTR-2B reconciliation tool. Upload Excel files, reconcile invoices and download a multi-tab Excel report.">
 <meta name="theme-color" content="#0f172a">
-<link rel="canonical" href="https://gstreconciliation.in/">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://gstreconciliation.in/">
-<meta property="og:title" content="Free GST Reconciliation Tool | Purchase Register vs GSTR-2B">
-<meta property="og:description" content="Reconcile Purchase Register and GSTR-2B invoice data in your browser and download an Excel reconciliation report.">
-<meta property="og:site_name" content="GST Reconciliation Tool">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GST Reconciliation Tool | Purchase Register vs GSTR-2B">
-<meta name="twitter:description" content="Free browser-based GST Purchase Register and GSTR-2B reconciliation tool with Excel report download.">
-<title>Free GST Reconciliation Tool | Purchase Register vs GSTR-2B</title>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"GST Reconciliation Tool",
-  "url":"https://gstreconciliation.in/",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web Browser",
-  "description":"Free browser-based tool for reconciling Purchase Register data with GSTR-2B and downloading an Excel reconciliation report.",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
-}
-</script>
+<title>GST Reconciliation Tool | Purchase Register vs GSTR-2B</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
 :root{
@@ -155,21 +131,6 @@ tr:hover td{background:#f8fafc}
 @media(max-width:900px){.hero-grid,.upload-grid,.instructions,.contact{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.nav{display:none}.hero{padding-top:35px}}
 @media(max-width:560px){.container{width:min(100% - 20px,1180px)}.hero-card{padding:28px}.metrics{grid-template-columns:1fr}.run-panel{align-items:flex-start;flex-direction:column}.topbar-inner{min-height:62px}}
 </style>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is a GST reconciliation tool?","acceptedAnswer":{"@type":"Answer","text":"A GST reconciliation tool compares purchase data in your books with GST-related data such as GSTR-2B and highlights matching and exception records."}},
-    {"@type":"Question","name":"Can I reconcile Purchase Register with GSTR-2B in Excel?","acceptedAnswer":{"@type":"Answer","text":"Yes. This website lets you upload supported Excel or CSV files, perform the comparison in the browser and download the reconciliation results as an Excel report."}},
-    {"@type":"Question","name":"Does this tool upload my GST files to a server?","acceptedAnswer":{"@type":"Answer","text":"In the current version, the reconciliation files are processed locally in your browser."}}
-  ]
-}
-</script>
-
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NBKTXWJ20G');</script>
 </head>
 <body>
 
@@ -183,8 +144,6 @@ tr:hover td{background:#f8fafc}
     </div>
     <nav class="nav">
       <button onclick="scrollToId('tool')">Tool</button>
-      <button onclick="scrollToId('guide')">GST 2B Guide</button>
-      <button onclick="scrollToId('faq')">FAQ</button>
       <button onclick="openModal('instructionsModal')">How to Use</button>
       <button onclick="openModal('privacyModal')">Privacy</button>
       <button onclick="scrollToId('contact')">Contact</button>
@@ -370,45 +329,6 @@ tr:hover td{background:#f8fafc}
         <li>2B records not found in Purchase Register</li>
       </ul>
     </div>
-  </div>
-</div>
-</section>
-
-<section class="section" id="guide">
-<div class="container">
-  <h2 class="section-title">GST 2B Reconciliation Guide</h2>
-  <p class="section-sub">Understand the basic process of reconciling your Purchase Register with GSTR-2B before deciding the eligible input tax credit (ITC) for your working papers.</p>
-  <div class="instructions">
-    <div class="panel instruction-card">
-      <h3>What is GSTR-2B reconciliation?</h3>
-      <p>GSTR-2B reconciliation is the process of comparing purchase invoices recorded in your books with the documents appearing in GSTR-2B. The comparison helps identify invoices that match, invoices with differences, and purchase records that are not appearing in GSTR-2B.</p>
-    </div>
-    <div class="panel instruction-card">
-      <h3>Why reconcile Purchase Register with GSTR-2B?</h3>
-      <p>A reconciliation can help the accounts and tax team identify missing supplier invoices, duplicate records, invoice-number differences and tax-value differences before preparing GST workings. The output should be reviewed with the underlying invoices and GST records.</p>
-    </div>
-    <div class="panel instruction-card">
-      <h3>What does this tool compare?</h3>
-      <p>The tool uses supplier GSTIN, document type, invoice number and tax-related values to compare records. It reports matched invoices, partial/value differences, Purchase Register records not found in 2B and 2B records not found in the Purchase Register.</p>
-    </div>
-    <div class="panel instruction-card">
-      <h3>How to use the reconciliation result</h3>
-      <p>Review exceptions against your books, supplier invoices and GST portal data. The downloaded Excel report is a reconciliation working paper; it should not by itself be treated as a GST return or as conclusive evidence of ITC eligibility.</p>
-    </div>
-  </div>
-</div>
-</section>
-
-<section class="section" id="faq">
-<div class="container panel" style="padding:24px">
-  <h2 class="section-title">GST Reconciliation FAQ</h2>
-  <p class="section-sub">Common questions about Purchase Register and GSTR-2B reconciliation.</p>
-  <div class="faq">
-    <div class="faq-item"><div class="faq-q">What is a GST reconciliation tool?</div><div class="faq-a">A GST reconciliation tool compares purchase data in your books with GST-related data such as GSTR-2B and highlights matching and exception records.</div></div>
-    <div class="faq-item"><div class="faq-q">Can I reconcile Purchase Register with GSTR-2B in Excel?</div><div class="faq-a">Yes. This website lets you upload supported Excel or CSV files, perform the comparison in the browser and download the reconciliation results as an Excel report.</div></div>
-    <div class="faq-item"><div class="faq-q">Does this tool upload my GST files to a server?</div><div class="faq-a">In the current version, the reconciliation files are processed locally in your browser. You should still use the tool only for files you are authorised to process and keep downloaded reports secure.</div></div>
-    <div class="faq-item"><div class="faq-q">What should I do when an invoice is missing from GSTR-2B?</div><div class="faq-a">Review the invoice and supplier filing status, compare the relevant GST records and follow your organisation's GST reconciliation process before making any ITC decision.</div></div>
-    <div class="faq-item"><div class="faq-q">Can invoice numbers be slightly different between the two files?</div><div class="faq-a">The tool normalizes invoice references and can consider close invoice-number variations during its matching process, but exceptions should always be reviewed against the source documents.</div></div>
   </div>
 </div>
 </section>
@@ -665,59 +585,119 @@ function documentTypeMismatchCheck(parsedPR,parsed2B){
   return mismatches;
 }
 
+async function daysBetween(a,b){
+  if(!a||!b)return null;
+  const da=new Date(a),db=new Date(b);
+  if(Number.isNaN(da.getTime())||Number.isNaN(db.getTime()))return null;
+  return Math.abs(Math.round((da-db)/86400000));
+}
+function normPartyName(v){return String(v||'').toUpperCase().replace(/[^A-Z0-9]/g,'').replace(/PRIVATE|LIMITED|PVT|LTD|LLP|ENTERPRISES|ENTERPRISE|INDIA/g,'');}
+function invoiceSimilarity(a,b){
+  a=String(a||'');b=String(b||'');
+  if(!a||!b)return 0;
+  if(a===b)return 1;
+  const m=Math.max(a.length,b.length);
+  let prev=Array.from({length:b.length+1},(_,i)=>i);
+  for(let i=1;i<=a.length;i++){
+    const cur=[i];
+    for(let j=1;j<=b.length;j++)cur[j]=Math.min(cur[j-1]+1,prev[j]+1,prev[j-1]+(a[i-1]===b[j-1]?0:1));
+    prev=cur;
+  }
+  return m?Math.max(0,1-prev[b.length]/m):0;
+}
+function candidateScore(pr,t){
+  const gstinExact=!!pr.gstin&&!!t.gstin&&pr.gstin===t.gstin;
+  const partyExact=!!normPartyName(pr.vendor)&&!!normPartyName(t.vendor)&&normPartyName(pr.vendor)===normPartyName(t.vendor);
+  const invSim=invoiceSimilarity(pr.cleanInv,t.cleanInv);
+  const dateDiff=daysBetween(pr.rawDate,t.rawDate);
+  const dateScore=dateDiff===null?0:(dateDiff===0?1:Math.max(0,1-dateDiff/30));
+  const taxDiff=Math.abs(pr.totalTax-t.totalTax);
+  const taxableDiff=Math.abs(pr.taxable-t.taxable);
+  const taxScore=pr.totalTax===0&&t.totalTax===0?1:Math.max(0,1-taxDiff/Math.max(100,Math.abs(pr.totalTax),Math.abs(t.totalTax)));
+  const taxableScore=pr.taxable===0&&t.taxable===0?1:Math.max(0,1-taxableDiff/Math.max(100,Math.abs(pr.taxable),Math.abs(t.taxable)));
+  if(pr.docType!==t.docType)return {score:-1,confidence:0,reason:'Document type mismatch'};
+  if(gstinExact){
+    const score=invSim*0.48+taxScore*0.22+taxableScore*0.18+dateScore*0.12;
+    return {score,confidence:Math.round(score*100),reason:invSim===1&&dateDiff===0?'Exact invoice, date and tax match':`GSTIN match; invoice similarity ${Math.round(invSim*100)}%; date difference ${dateDiff===null?'N/A':dateDiff+' days'}`};
+  }
+  if(partyExact){
+    const score=invSim*0.45+taxScore*0.25+taxableScore*0.20+dateScore*0.10;
+    return {score,confidence:Math.round(score*100),reason:`Supplier name match; invoice similarity ${Math.round(invSim*100)}%; date difference ${dateDiff===null?'N/A':dateDiff+' days'}`};
+  }
+  return {score:-1,confidence:0,reason:''};
+}
 async function runPrecisionReconciliation(){
   if(!prData.length||!gstrData.length){alert('Please upload and successfully validate both Purchase Register and GSTR-2B files.');return}
   const loading=document.getElementById('loading');loading.style.display='flex';
   await new Promise(r=>setTimeout(r,50));
   try{
-    const parsedPR=prData.map(r=>extractFields(r)).filter(r=>r.gstin);
-    const parsed2B=gstrData.map(r=>extractFields(r)).filter(r=>r.gstin);
-    const mismatches=documentTypeMismatchCheck(parsedPR,parsed2B);
-    if(mismatches.length){
-      const sample=mismatches.slice(0,5).map(x=>`${x.pr.gstin} / ${x.pr.rawInv}: PR=${x.pr.docType}, 2B=${x.t.docType}`).join('\n');
-      throw new Error(`Document Type mismatch found. Reconciliation is blocked.\n\n${sample}${mismatches.length>5?`\n…and ${mismatches.length-5} more.`:''}\n\nCorrect the Document Type in one of the files and upload again.`);
-    }
-    const map2BByGstin=new Map();
-    parsed2B.forEach((item,idx)=>{item._originalIndex=idx;if(!map2BByGstin.has(item.gstin))map2BByGstin.set(item.gstin,[]);map2BByGstin.get(item.gstin).push(item)});
+    const parsedPR=prData.map(r=>extractFields(r));
+    const parsed2B=gstrData.map(r=>extractFields(r));
+    const map2B=new Map();
+    parsed2B.forEach((x,i)=>{x._originalIndex=i;if(x.gstin){if(!map2B.has(x.gstin))map2B.set(x.gstin,[]);map2B.get(x.gstin).push(x)}});
     finalReport=[];const matched2BIndices=new Set(),resolvedPRIndices=new Set();
 
+    // PASS 1: strict exact match — highest confidence
     parsedPR.forEach((pr,prIdx)=>{
-      const list=map2BByGstin.get(pr.gstin);if(!list)return;
+      let list=pr.gstin?map2B.get(pr.gstin)||[]:[];
       for(const t2b of list){
         if(matched2BIndices.has(t2b._originalIndex)||pr.docType!==t2b.docType)continue;
-        if(pr.cleanInv&&t2b.cleanInv&&pr.cleanInv===t2b.cleanInv){
-          const ok=Math.abs(pr.igst-t2b.igst)<=2&&Math.abs(pr.cgst-t2b.cgst)<=2&&Math.abs(pr.sgst-t2b.sgst)<=2&&Math.abs(pr.taxable-t2b.taxable)<=2;
-          if(ok){matched2BIndices.add(t2b._originalIndex);resolvedPRIndices.add(prIdx);finalReport.push({...pr,status:'Matched',t2bInv:t2b.rawInv,t2bDate:t2b.rawDate,t2bTaxable:t2b.taxable,t2bIgst:t2b.igst,t2bCgst:t2b.cgst,t2bSgst:t2b.sgst});break}
+        if(pr.cleanInv&&t2b.cleanInv&&pr.cleanInv===t2b.cleanInv&&Math.abs(pr.igst-t2b.igst)<=2&&Math.abs(pr.cgst-t2b.cgst)<=2&&Math.abs(pr.sgst-t2b.sgst)<=2&&Math.abs(pr.taxable-t2b.taxable)<=2){
+          matched2BIndices.add(t2b._originalIndex);resolvedPRIndices.add(prIdx);
+          finalReport.push({...pr,status:'Matched',matchConfidence:100,matchReason:'Exact invoice + GSTIN + tax/value match',t2bInv:t2b.rawInv,t2bDate:t2b.rawDate,t2bTaxable:t2b.taxable,t2bIgst:t2b.igst,t2bCgst:t2b.cgst,t2bSgst:t2b.sgst});break;
         }
       }
     });
 
+    // PASS 2: GSTIN-based intelligent matching with invoice similarity + 30-day date window
     parsedPR.forEach((pr,prIdx)=>{
       if(resolvedPRIndices.has(prIdx))return;
-      const list=map2BByGstin.get(pr.gstin);
-      if(!list){finalReport.push({...pr,status:'Not in 2B',t2bInv:'-',t2bDate:'-',t2bTaxable:0,t2bIgst:0,t2bCgst:0,t2bSgst:0});return}
-      let best=null,score=Infinity;
+      const list=pr.gstin?map2B.get(pr.gstin)||[]:[];
+      let best=null,bestMeta=null,second=-1;
       for(const t2b of list){
-        if(matched2BIndices.has(t2b._originalIndex)||pr.docType!==t2b.docType)continue;
-        const close=isFuzzyInvoiceMatch(pr.cleanInv,t2b.cleanInv),taxDiff=Math.abs(pr.totalTax-t2b.totalTax),taxableDiff=Math.abs(pr.taxable-t2b.taxable);
-        if(close||taxDiff<=5||taxableDiff<=5){
-          const s=taxDiff+(taxableDiff/100);
-          if(s<score){score=s;best=t2b}
+        if(matched2BIndices.has(t2b._originalIndex))continue;
+        const meta=candidateScore(pr,t2b); if(meta.score<0)continue;
+        const dateDiff=daysBetween(pr.rawDate,t2b.rawDate);
+        if(dateDiff!==null&&dateDiff>30)continue;
+        if(meta.score> (bestMeta?.score??-1)){second=bestMeta?.score??-1;best=t2b;bestMeta=meta}else if(meta.score>second)second=meta.score;
+      }
+      if(best&&bestMeta){
+        const ambiguous=second>=0&&bestMeta.score-second<0.05;
+        const exactTax=Math.abs(pr.totalTax-best.totalTax)<=2&&Math.abs(pr.taxable-best.taxable)<=2;
+        if(bestMeta.score>=0.86&&!ambiguous&&exactTax){
+          matched2BIndices.add(best._originalIndex);resolvedPRIndices.add(prIdx);
+          finalReport.push({...pr,status:'Matched',matchConfidence:bestMeta.confidence,matchReason:bestMeta.reason,t2bInv:best.rawInv,t2bDate:best.rawDate,t2bTaxable:best.taxable,t2bIgst:best.igst,t2bCgst:best.cgst,t2bSgst:best.sgst});return;
+        }
+        if(bestMeta.score>=0.60&&!ambiguous){
+          matched2BIndices.add(best._originalIndex);resolvedPRIndices.add(prIdx);
+          finalReport.push({...pr,status:'Partial Matching',matchConfidence:bestMeta.confidence,matchReason:bestMeta.reason,t2bInv:best.rawInv,t2bDate:best.rawDate,t2bTaxable:best.taxable,t2bIgst:best.igst,t2bCgst:best.cgst,t2bSgst:best.sgst});return;
         }
       }
-      if(best){
-        matched2BIndices.add(best._originalIndex);resolvedPRIndices.add(prIdx);
-        const exact=Math.abs(pr.totalTax-best.totalTax)<=2&&Math.abs(pr.taxable-best.taxable)<=2;
-        finalReport.push({...pr,status:exact?'Matched':'Partial Matching',t2bInv:best.rawInv,t2bDate:best.rawDate,t2bTaxable:best.taxable,t2bIgst:best.igst,t2bCgst:best.cgst,t2bSgst:best.sgst});
-      }else finalReport.push({...pr,status:'Not in 2B',t2bInv:'-',t2bDate:'-',t2bTaxable:0,t2bIgst:0,t2bCgst:0,t2bSgst:0});
+      // PASS 3 below handles missing GSTIN/name fallback
+      finalReport.push({...pr,_needsFallback:true});
     });
 
-    parsed2B.forEach(t2b=>{
-      if(!matched2BIndices.has(t2b._originalIndex))finalReport.push({status:'Not in PR',vendor:t2b.vendor,gstin:t2b.gstin,docType:t2b.docType,rawInv:'-',rawDate:'-',taxable:0,igst:0,cgst:0,sgst:0,t2bInv:t2b.rawInv,t2bDate:t2b.rawDate,t2bTaxable:t2b.taxable,t2bIgst:t2b.igst,t2bCgst:t2b.cgst,t2bSgst:t2b.sgst});
-    });
+    // PASS 3: supplier-name fallback where GSTIN is unavailable
+    for(let i=0;i<finalReport.length;i++){
+      const row=finalReport[i]; if(!row._needsFallback)continue;
+      let best=null,bestMeta=null,second=-1;
+      for(const t2b of parsed2B){
+        if(matched2BIndices.has(t2b._originalIndex)||row.docType!==t2b.docType)continue;
+        const meta=candidateScore({...row,gstin:''},t2b); if(meta.score<0)continue;
+        const dateDiff=daysBetween(row.rawDate,t2b.rawDate); if(dateDiff!==null&&dateDiff>30)continue;
+        if(meta.score>(bestMeta?.score??-1)){second=bestMeta?.score??-1;best=t2b;bestMeta=meta}else if(meta.score>second)second=meta.score;
+      }
+      if(best&&bestMeta&&! (second>=0&&bestMeta.score-second<0.05) && bestMeta.score>=0.72){
+        matched2BIndices.add(best._originalIndex);
+        row.status=bestMeta.score>=0.88?'Matched':'Partial Matching';row.matchConfidence=bestMeta.confidence;row.matchReason=bestMeta.reason;
+        row.t2bInv=best.rawInv;row.t2bDate=best.rawDate;row.t2bTaxable=best.taxable;row.t2bIgst=best.igst;row.t2bCgst=best.cgst;row.t2bSgst=best.sgst;
+      }else{row.status='Not in 2B';row.matchConfidence=0;row.matchReason='No sufficiently reliable supplier-name fallback match';row.t2bInv='-';row.t2bDate='-';row.t2bTaxable=0;row.t2bIgst=0;row.t2bCgst=0;row.t2bSgst=0}
+      delete row._needsFallback;
+    }
+
+    parsed2B.forEach(t2b=>{if(!matched2BIndices.has(t2b._originalIndex))finalReport.push({status:'Not in PR',vendor:t2b.vendor,gstin:t2b.gstin,docType:t2b.docType,rawInv:'-',rawDate:'-',taxable:0,igst:0,cgst:0,sgst:0,t2bInv:t2b.rawInv,t2bDate:t2b.rawDate,t2bTaxable:t2b.taxable,t2bIgst:t2b.igst,t2bCgst:t2b.cgst,t2bSgst:t2b.sgst,matchConfidence:0,matchReason:'No corresponding Purchase Register record'});});
     renderResults(finalReport); toast(`Reconciliation completed: ${finalReport.length.toLocaleString()} output records.`);
-  }catch(err){alert(err.message||String(err))}
-  finally{loading.style.display='none'}
+  }catch(err){alert(err.message||String(err))} finally{loading.style.display='none'}
 }
 
 function filterTable(status){
