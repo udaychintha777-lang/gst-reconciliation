@@ -350,5 +350,39 @@ function goSearch(){
   if(q) location.href='/articles.html?q='+encodeURIComponent(q);
 }
 </script>
+
+<script>
+/* GST Knowledge update: keep homepage clean by showing only selected articles.
+   The original homepage markup and all existing features remain unchanged. */
+(function(){
+  const grid=document.querySelector('.popular-section .article-grid');
+  if(!grid) return;
+  grid.innerHTML=`
+    <a class="article" href="/articles/gstr-1-complete-table-by-table-guide.html">
+      <div class="thumb"><div style="height:100%;display:grid;place-items:center;font-size:22px;font-weight:900;color:#176bea;background:#eef5ff">GSTR-1</div></div>
+      <div class="article-body"><h3>GSTR-1 Return Filing</h3><p>Complete practical table-by-table guide to GSTR-1.</p><span class="read">Read article →</span></div>
+    </a>
+    <a class="article" href="/articles/gstr-3b-complete-table-by-table-guide.html">
+      <div class="thumb"><div style="height:100%;display:grid;place-items:center;font-size:22px;font-weight:900;color:#176bea;background:#eef5ff">GSTR-3B</div></div>
+      <div class="article-body"><h3>GSTR-3B Return Filing</h3><p>Complete table-by-table practical guide to GSTR-3B.</p><span class="read">Read article →</span></div>
+    </a>
+    <a class="article" href="/articles/gstr-9-complete-table-by-table-guide.html">
+      <div class="thumb"><div style="height:100%;display:grid;place-items:center;font-size:22px;font-weight:900;color:#176bea;background:#eef5ff">GSTR-9</div></div>
+      <div class="article-body"><h3>GSTR-9 Annual Return</h3><p>Practical guide to GSTR-9 annual return filing.</p><span class="read">Read article →</span></div>
+    </a>
+    <a class="article" href="/articles/gstr-9c-complete-guide.html">
+      <div class="thumb"><div style="height:100%;display:grid;place-items:center;font-size:22px;font-weight:900;color:#176bea;background:#eef5ff">GSTR-9C</div></div>
+      <div class="article-body"><h3>GSTR-9C Complete Guide</h3><p>Turnover, tax and ITC reconciliation explained.</p><span class="read">Read article →</span></div>
+    </a>
+    <a class="article" href="/articles/gstr-7-complete-table-by-table-guide.html">
+      <div class="thumb"><div style="height:100%;display:grid;place-items:center;font-size:22px;font-weight:900;color:#176bea;background:#eef5ff">GSTR-7</div></div>
+      <div class="article-body"><h3>GSTR-7 Return Filing</h3><p>Practical guide to GST TDS return filing.</p><span class="read">Read article →</span></div>
+    </a>
+    <a class="article" href="/articles/isd-gstr-6-complete-guide.html">
+      <div class="thumb"><div style="height:100%;display:grid;place-items:center;font-size:22px;font-weight:900;color:#176bea;background:#eef5ff">ISD</div></div>
+      <div class="article-body"><h3>ISD / GSTR-6</h3><p>ITC distribution and ISD return filing guide.</p><span class="read">Read article →</span></div>
+    </a>`;
+})();
+</script>
 </body>
 </html>
