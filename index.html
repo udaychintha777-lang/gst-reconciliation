@@ -159,8 +159,6 @@ a{text-decoration:none;color:inherit}
     </nav>
     <div class="nav-actions">
       <button class="icon-btn" type="button" aria-label="Search" onclick="document.getElementById('homeSearch').focus()">⌕</button>
-      <button class="icon-btn" type="button" aria-label="Notifications">♧</button>
-      <button class="theme" type="button" aria-label="Toggle theme" onclick="toggleTheme()">☀</button>
     </div>
   </div>
 </header>
@@ -307,6 +305,20 @@ a{text-decoration:none;color:inherit}
   </div></div>
 </section>
 
+<section class="extra" id="resources">
+  <div class="wrap"><div class="extra-card">
+    <h2>GST Resources</h2>
+    <p>Practical calendars, checklists, templates, return workings and quick-reference material for day-to-day GST work.</p>
+    <div class="topic-grid" style="margin-top:18px">
+      <a class="topic" href="/resources.html#calendars"><strong>Compliance Calendars</strong><span>Monthly, quarterly and annual GST compliance planning.</span></a>
+      <a class="topic" href="/resources.html#checklists"><strong>GST Checklists</strong><span>Practical checklists for returns, ITC, reconciliation, audit and notices.</span></a>
+      <a class="topic" href="/resources.html#templates"><strong>Working Templates</strong><span>Useful formats for reconciliation and GST working papers.</span></a>
+      <a class="topic" href="/resources.html#reference"><strong>Quick Reference</strong><span>Forms, return types, common terms and practical reference material.</span></a>
+    </div>
+    <p style="margin-top:18px"><a class="btn btn-blue" href="/resources.html">Open GST Resources →</a></p>
+  </div></div>
+</section>
+
 <section class="extra" id="ask">
   <div class="wrap"><div class="extra-card">
     <h2>Ask GST AI</h2>
@@ -336,9 +348,6 @@ a{text-decoration:none;color:inherit}
 function goSearch(){
   const q=document.getElementById('homeSearch').value.trim();
   if(q) location.href='/articles.html?q='+encodeURIComponent(q);
-}
-function toggleTheme(){
-  document.body.classList.toggle('dark-preview');
 }
 </script>
 </body>
