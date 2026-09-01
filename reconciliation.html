@@ -3,9 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Free GST Purchase Register vs GSTR-2B reconciliation tool. Upload Excel files, reconcile invoices and download a multi-tab Excel report.">
+<meta name="description" content="Free GST Reconciliation Tool to compare Purchase Register vs GSTR-2B. Match GSTIN, invoice number, date and tax values, find mismatches and download an Excel reconciliation report.">
 <meta name="theme-color" content="#0f172a">
-<title>GST Reconciliation Tool | Purchase Register vs GSTR-2B</title>
+<title>Free GST Reconciliation Tool | GSTR-2B vs Purchase Register</title>
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="author" content="GST Reconciliation Tool">
+<link rel="canonical" href="https://gstreconciliation.in/reconciliation.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free GST Reconciliation Tool | GSTR-2B vs Purchase Register">
+<meta property="og:description" content="Reconcile Purchase Register with GSTR-2B, identify matched and unmatched invoices, review GST tax differences and export the reconciliation report to Excel.">
+<meta property="og:url" content="https://gstreconciliation.in/reconciliation.html">
+<meta property="og:site_name" content="GST Reconciliation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Free GST Reconciliation Tool | GSTR-2B vs Purchase Register">
+<meta name="twitter:description" content="Free browser-based GST reconciliation tool for Purchase Register vs GSTR-2B invoice matching and Excel reporting.">
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 <style>
 :root{
@@ -130,7 +142,50 @@ tr:hover td{background:#f8fafc}
 @keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:900px){.hero-grid,.upload-grid,.instructions,.contact{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.nav{display:none}.hero{padding-top:35px}}
 @media(max-width:560px){.container{width:min(100% - 20px,1180px)}.hero-card{padding:28px}.metrics{grid-template-columns:1fr}.run-panel{align-items:flex-start;flex-direction:column}.topbar-inner{min-height:62px}}
+
+/* SEO content: visible, useful information around the existing tool */
+.seo-wrap{padding:8px 0 10px}.seo-intro{font-size:16px;line-height:1.8;color:#334155;max-width:950px}.seo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.seo-card{padding:21px}.seo-card h3{margin:0 0 8px;font-size:17px;color:#0f172a}.seo-card p,.seo-card li{font-size:14px;line-height:1.7;color:#475569}.seo-card ul{padding-left:19px;margin:10px 0 0}.keyword-strip{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.keyword-pill{display:inline-block;padding:7px 10px;border-radius:999px;background:#eff6ff;border:1px solid #dbeafe;color:#1d4ed8;font-size:12px;font-weight:800}.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.workflow .stepbox{padding:19px;background:#fff;border:1px solid var(--line);border-radius:16px}.workflow .num{font-weight:900;color:#2563eb;font-size:12px;text-transform:uppercase;letter-spacing:.05em}.workflow h3{font-size:16px;margin:7px 0}.workflow p{font-size:13px;line-height:1.65;color:#64748b;margin:0}.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.result-box{padding:18px;border-radius:16px;border:1px solid var(--line);background:#fff}.result-box strong{display:block;font-size:15px;color:#0f172a;margin-bottom:6px}.result-box span{font-size:13px;line-height:1.6;color:#64748b}.faq-list{display:grid;gap:10px;margin-top:16px}.faq-list details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px 17px}.faq-list summary{cursor:pointer;font-weight:800;color:#172033}.faq-list p{margin:10px 0 2px;color:#475569;font-size:14px;line-height:1.7}.related-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.related-links a{display:block;text-decoration:none;padding:17px;background:#fff;border:1px solid var(--line);border-radius:14px;color:#1d4ed8;font-weight:800}.related-links small{display:block;color:#64748b;font-weight:500;line-height:1.5;margin-top:5px}@media(max-width:900px){.seo-grid,.workflow,.result-grid,.related-links{grid-template-columns:1fr 1fr}}@media(max-width:560px){.seo-grid,.workflow,.result-grid,.related-links{grid-template-columns:1fr}}
 </style>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"SoftwareApplication",
+  "name":"Free GST Reconciliation Tool",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web Browser",
+  "url":"https://gstreconciliation.in/reconciliation.html",
+  "description":"Browser-based GST reconciliation tool for comparing Purchase Register with GSTR-2B and exporting invoice-level reconciliation results.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://gstreconciliation.in/"},
+    {"@type":"ListItem","position":2,"name":"GST Reconciliation Tool","item":"https://gstreconciliation.in/reconciliation.html"}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"What is a GST Reconciliation Tool?","acceptedAnswer":{"@type":"Answer","text":"A GST Reconciliation Tool compares purchase records with GST portal data such as GSTR-2B and identifies matched, unmatched and differing invoice records."}},
+    {"@type":"Question","name":"How do I reconcile my Purchase Register with GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"Upload the Purchase Register and relevant GSTR-2B file, select the required sheets if prompted, run reconciliation and review the matched and exception categories."}},
+    {"@type":"Question","name":"What is the difference between Purchase Register and GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"The Purchase Register represents purchase transactions recorded in your books, while GSTR-2B contains auto-drafted input tax credit information made available from GST data for the relevant period."}},
+    {"@type":"Question","name":"What does Not in GSTR-2B mean?","acceptedAnswer":{"@type":"Answer","text":"It means a Purchase Register record did not have a corresponding record identified in the uploaded GSTR-2B data and should be investigated."}},
+    {"@type":"Question","name":"What does Not in Purchase Register mean?","acceptedAnswer":{"@type":"Answer","text":"It means a GSTR-2B record did not have a corresponding Purchase Register record identified by the reconciliation process."}},
+    {"@type":"Question","name":"What is a partial match in GST reconciliation?","acceptedAnswer":{"@type":"Answer","text":"A partial match indicates that a related invoice has been identified but one or more compared details differ or require review."}},
+    {"@type":"Question","name":"Can I download the GST reconciliation report in Excel?","acceptedAnswer":{"@type":"Answer","text":"Yes. After reconciliation, the tool provides an Excel export containing reconciliation categories and invoice-level comparison information."}},
+    {"@type":"Question","name":"Is this GST reconciliation tool free?","acceptedAnswer":{"@type":"Answer","text":"This reconciliation tool is provided as a free browser-based utility."}},
+    {"@type":"Question","name":"Can I use Excel for GSTR-2B reconciliation?","acceptedAnswer":{"@type":"Answer","text":"Yes. The tool is designed around workbook-based reconciliation and provides Excel template and export functionality."}},
+    {"@type":"Question","name":"Does the tool replace professional GST review?","acceptedAnswer":{"@type":"Answer","text":"No. Reconciliation software helps identify data relationships and exceptions. Taxability, ITC eligibility and filing decisions should be independently reviewed."}}
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -155,9 +210,9 @@ tr:hover td{background:#f8fafc}
 <section class="hero">
   <div class="container hero-grid">
     <div class="hero-card">
-      <span class="eyebrow">Free GST Utility</span>
-      <h1>Purchase Register vs GSTR-2B Reconciliation</h1>
-      <p>Upload your books and GSTR-2B data, run invoice-level reconciliation in your browser and download a structured Excel report with matched and unmatched records.</p>
+      <span class="eyebrow">Free GST Reconciliation Tool</span>
+      <h1>Free GST Reconciliation Tool – Purchase Register vs GSTR-2B</h1>
+      <p>Reconcile your Purchase Register with GSTR-2B online using invoice-level GST matching. Compare supplier GSTIN, invoice number, document type, invoice date and taxable and tax values to identify matched invoices, partial matches, invoices not in GSTR-2B and invoices not in your Purchase Register. Download the reconciliation results as an Excel report.</p>
       <div class="hero-actions">
         <button class="btn btn-primary" onclick="scrollToId('tool')">Launch Reconciliation</button>
         <button class="btn btn-blue" onclick="downloadTemplates()">Download Excel Template</button>
@@ -172,10 +227,52 @@ tr:hover td{background:#f8fafc}
   </div>
 </section>
 
+<section class="section seo-wrap">
+<div class="container">
+  <h2 class="section-title">Free GST Reconciliation Tool</h2>
+  <p class="seo-intro">This free GST Reconciliation Tool helps businesses, accountants and tax professionals reconcile <strong>Purchase Register vs GSTR-2B</strong> invoice by invoice. Upload the Purchase Register and GSTR-2B files, select the required sheets and run the reconciliation to identify matched invoices, partial matches, missing invoices and differences in taxable value and GST. The tool is designed for practical monthly <strong>GSTR-2B reconciliation</strong> and <strong>GST ITC reconciliation</strong> before reviewing input tax credit.</p>
+  <div class="keyword-strip">
+    <span class="keyword-pill">GST Reconciliation Tool</span><span class="keyword-pill">Free GST Reconciliation Tool</span><span class="keyword-pill">GSTR-2B Reconciliation</span><span class="keyword-pill">Purchase Register vs GSTR-2B</span><span class="keyword-pill">GSTR-2B vs Purchase Register</span><span class="keyword-pill">GST ITC Reconciliation</span><span class="keyword-pill">GST Invoice Matching</span>
+  </div>
+  <div class="seo-grid">
+    <div class="panel seo-card"><h3>What is GST reconciliation?</h3><p>GST reconciliation is the process of comparing purchase records in your books with supplier-reported invoice data available in GSTR-2B. It helps you identify records that agree, records that need investigation and invoices appearing on one side but not the other.</p></div>
+    <div class="panel seo-card"><h3>Why reconcile Purchase Register with GSTR-2B?</h3><p>Differences can arise because of invoice number variations, document type differences, tax value differences, supplier filing timing or missing entries in the books. A structured reconciliation makes these exceptions easier to review before GST return and ITC decisions.</p></div>
+    <div class="panel seo-card"><h3>What does this tool compare?</h3><ul><li>Supplier GSTIN</li><li>Document type and invoice number</li><li>Invoice date</li><li>Taxable value</li><li>IGST, CGST and SGST</li><li>Matched invoice allocation without duplicate use</li></ul></div>
+  </div>
+</div>
+</section>
+
+<section class="section seo-wrap">
+<div class="container">
+  <h2 class="section-title">How to Reconcile Purchase Register with GSTR-2B</h2>
+  <p class="section-sub">A simple four-step workflow for monthly GST invoice reconciliation.</p>
+  <div class="workflow">
+    <div class="stepbox"><div class="num">Step 1</div><h3>Upload Purchase Register</h3><p>Prepare your purchase data in the supported Excel or CSV structure and upload the Purchase Register file.</p></div>
+    <div class="stepbox"><div class="num">Step 2</div><h3>Upload GSTR-2B</h3><p>Upload the GSTR-2B workbook downloaded from the GST portal and select the relevant sheet when required.</p></div>
+    <div class="stepbox"><div class="num">Step 3</div><h3>Run GST Reconciliation</h3><p>The existing reconciliation engine compares invoice and tax information and assigns a reconciliation status.</p></div>
+    <div class="stepbox"><div class="num">Step 4</div><h3>Review & Download</h3><p>Review the reconciliation dashboard and invoice-level results, then download the Excel reconciliation report.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section seo-wrap">
+<div class="container">
+  <h2 class="section-title">GST Reconciliation Results Explained</h2>
+  <p class="section-sub">The tool separates reconciliation results so that exceptions can be reviewed efficiently.</p>
+  <div class="result-grid">
+    <div class="result-box"><strong>Matched</strong><span>Records where the relevant Purchase Register and GSTR-2B details are successfully matched.</span></div>
+    <div class="result-box"><strong>Partial Matching</strong><span>Records where a related invoice is identified but one or more comparison values require review.</span></div>
+    <div class="result-box"><strong>Not in GSTR-2B</strong><span>Purchase Register records for which a corresponding GSTR-2B record was not identified.</span></div>
+    <div class="result-box"><strong>Not in Purchase Register</strong><span>GSTR-2B records for which a corresponding Purchase Register record was not identified.</span></div>
+  </div>
+  <div class="notice security" style="margin-top:18px"><div class="icon">🔎</div><div><strong>Review before taking an ITC decision.</strong><br>Reconciliation results are a working review tool. Verify invoices, supplier records, tax treatment and applicable GST provisions before claiming, reversing or carrying forward input tax credit.</div></div>
+</div>
+</section>
+
 <section class="section" id="tool">
 <div class="container">
-  <h2 class="section-title">Start Reconciliation</h2>
-  <p class="section-sub">Before uploading, please follow the two mandatory data rules highlighted below.</p>
+  <h2 class="section-title">Reconcile Purchase Register with GSTR-2B</h2>
+  <p class="section-sub">Upload your Purchase Register and GSTR-2B to perform invoice-level GST reconciliation and generate an Excel reconciliation report.</p>
 
   <div class="notice important">
     <div class="icon">⚠️</div>
@@ -329,6 +426,48 @@ tr:hover td{background:#f8fafc}
         <li>2B records not found in Purchase Register</li>
       </ul>
     </div>
+  </div>
+</div>
+</section>
+
+<section class="section seo-wrap">
+<div class="container">
+  <h2 class="section-title">Who Can Use This GST Reconciliation Tool?</h2>
+  <p class="seo-intro">The tool can be useful for <strong>chartered accountants, accountants, tax professionals, finance teams and GST-registered businesses</strong> that regularly compare purchase records with GSTR-2B. It is particularly useful where invoice-level review is required and the reconciliation output needs to be exported to Excel for further checking or vendor follow-up.</p>
+  <div class="seo-grid">
+    <div class="panel seo-card"><h3>For CA & Tax Professionals</h3><p>Use the reconciliation workflow to review client Purchase Registers against GSTR-2B and isolate invoices requiring follow-up.</p></div>
+    <div class="panel seo-card"><h3>For Accounts Teams</h3><p>Compare purchase records and portal data before completing the monthly GST review and maintain an Excel working report of exceptions.</p></div>
+    <div class="panel seo-card"><h3>For GST & ITC Review</h3><p>Use the matched and unmatched classifications as one input into the broader review of eligible and ineligible input tax credit.</p></div>
+  </div>
+</div>
+</section>
+
+<section class="section seo-wrap" id="gst-reconciliation-faq">
+<div class="container">
+  <h2 class="section-title">GST Reconciliation Tool – Frequently Asked Questions</h2>
+  <div class="faq-list">
+    <details><summary>What is a GST Reconciliation Tool?</summary><p>A GST Reconciliation Tool compares purchase records with GST portal data such as GSTR-2B and identifies matched, unmatched and differing invoice records. It reduces manual invoice-by-invoice comparison and produces a structured reconciliation result for review.</p></details>
+    <details><summary>How do I reconcile my Purchase Register with GSTR-2B?</summary><p>Upload the Purchase Register and the relevant GSTR-2B file, select the required sheets if prompted, run the reconciliation and review the matched and exception categories. The results can then be exported to Excel for further analysis.</p></details>
+    <details><summary>What is the difference between Purchase Register and GSTR-2B?</summary><p>The Purchase Register represents purchase transactions recorded in your books, while GSTR-2B contains the static, auto-drafted input tax credit information made available from supplier filings and other GST data for the relevant period. Reconciliation compares the two datasets to identify differences.</p></details>
+    <details><summary>What does “Not in GSTR-2B” mean?</summary><p>It means a Purchase Register record did not have a corresponding record identified in the uploaded GSTR-2B data. The reason may require investigation, such as supplier filing timing, invoice details or differences between the two datasets.</p></details>
+    <details><summary>What does “Not in Purchase Register” mean?</summary><p>It means a GSTR-2B record did not have a corresponding Purchase Register record identified by the reconciliation process. The item should be reviewed against the books and source documents.</p></details>
+    <details><summary>What is a partial match in GST reconciliation?</summary><p>A partial match indicates that a related invoice has been identified but one or more compared details differ or require review. The exact result should be checked against the source documents before any accounting or ITC decision.</p></details>
+    <details><summary>Can I download the GST reconciliation report in Excel?</summary><p>Yes. After reconciliation, the tool provides an Excel export containing the reconciliation categories and invoice-level comparison information, including Purchase Register and GSTR-2B values.</p></details>
+    <details><summary>Is this GST reconciliation tool free?</summary><p>This reconciliation tool is provided as a free browser-based utility. You can use the available upload, reconciliation and Excel export functions without changing the existing reconciliation workflow.</p></details>
+    <details><summary>Can I use Excel for GSTR-2B reconciliation?</summary><p>Yes. The tool is designed around workbook-based reconciliation and provides Excel template and export functionality. Always use the required input structure and keep the original source files unchanged.</p></details>
+    <details><summary>Does the tool replace professional GST review?</summary><p>No. Reconciliation software helps identify data relationships and exceptions. Taxability, eligibility of ITC, reversals, blocked credits and filing decisions should be independently reviewed under the applicable GST provisions and source documents.</p></details>
+  </div>
+</div>
+</section>
+
+<section class="section seo-wrap">
+<div class="container">
+  <h2 class="section-title">Related GST Resources</h2>
+  <p class="section-sub">Explore more GST compliance and knowledge resources on this website.</p>
+  <div class="related-links">
+    <a href="/">GST Reconciliation Home<small>GST reconciliation tools and resources</small></a>
+    <a href="/articles.html">GST Knowledge & Articles<small>Guides and practical GST articles</small></a>
+    <a href="/compliance.html">GST Compliance Calendar<small>GST due dates and compliance tracking</small></a>
   </div>
 </div>
 </section>
