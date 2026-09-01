@@ -1,0 +1,36 @@
+name: Update GST Articles and Sitemap
+
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "articles/**"
+      - "articles.html"
+      - "scripts/generate_site.py"
+      - ".github/workflows/auto-update-gst-site.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Generate article index and sitemap
+        run: python scripts/generate_site.py
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add articles.html sitemap.xml
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Auto-update GST articles and sitemap"
+            git push
+          fi
