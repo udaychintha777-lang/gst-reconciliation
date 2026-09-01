@@ -45,7 +45,7 @@ button,input,select{font:inherit}.wrap{width:min(1404px,calc(100% - 132px));marg
 <header class="nav"><div class="wrap nav-in">
 <a class="brand" href="/"><span class="logo"><svg width="25" height="25" viewBox="0 0 32 32"><rect x="7" y="3" width="18" height="26" rx="2.5" fill="white"/><path d="M11 9h10M11 13h10M11 18h3M17 18h4M11 22h10" stroke="#2474E9" stroke-width="1.8" stroke-linecap="round"/></svg></span><span><span class="brand-title">GST RECONCILIATION</span><span class="brand-sub">Your GST Knowledge &amp; Compliance Partner</span></span></a>
 <nav class="nav-links"><a href="/">Home</a><a href="/articles.html">GST Knowledge</a><a href="/gst-act.html">GST Act</a><a class="active" href="/compliance.html">Compliance</a><a href="/articles.html">Resources</a><a href="/#tools">GST Tools</a></nav>
-<div><button class="theme" onclick="toggleTheme()">☀</button></div></div></header>
+<div></div></div></header>
 
 <main>
 <section class="hero"><div class="wrap"><div class="crumb"><a href="/">Home</a> &nbsp;›&nbsp; GST Compliance</div><div class="hero-grid"><div>
@@ -58,10 +58,52 @@ button,input,select{font:inherit}.wrap{width:min(1404px,calc(100% - 132px));marg
 
 <section class="section"><div class="wrap"><div class="section-title"><div><h2>GST Compliance Areas</h2><p>Choose a topic to understand the requirement, practical checks, common exceptions and next steps.</p></div></div><div class="compliance-grid"><article class="module"><div class="ico i-blue">📅</div><h3>Compliance Calendar</h3><p>Track recurring GST filing and payment obligations by month and taxpayer profile.</p><a href="#calendar">Explore →</a></article><article class="module"><div class="ico i-green">☑</div><h3>Monthly Checklist</h3><p>Work through a practical pre-filing and post-filing checklist.</p><a href="#checklist">Explore →</a></article><article class="module"><div class="ico i-purple">🧾</div><h3>Returns</h3><p>GSTR-1, GSTR-3B, annual return and return-reconciliation controls.</p><a href="#returns">Explore →</a></article><article class="module"><div class="ico i-orange">🔄</div><h3>ITC Compliance</h3><p>Eligibility, 2B/IMS reconciliation, reversals, blocked credit and reclaim.</p><a href="#itc">Explore →</a></article><article class="module"><div class="ico i-teal">🚚</div><h3>E-Invoice & E-Way Bill</h3><p>Applicability, document controls, reconciliation and common exceptions.</p><a href="#einvoice">Explore →</a></article><article class="module"><div class="ico i-gold">₹</div><h3>Payments & Liability</h3><p>Tax payment, ledgers, challans, interest and late-fee controls.</p><a href="#payments">Explore →</a></article><article class="module"><div class="ico i-red">⚖</div><h3>Notices & Orders</h3><p>Understand notices, demands, replies, rectification and case tracking.</p><a href="#notices">Explore →</a></article><article class="module"><div class="ico i-cyan">🏢</div><h3>Registration</h3><p>Registration, amendments, additional places, cancellation and revocation.</p><a href="#registration">Explore →</a></article><article class="module"><div class="ico i-indigo">🔍</div><h3>Reconciliation & Controls</h3><p>Books-to-return, ITC, e-invoice, e-way bill and payment reconciliations.</p><a href="#reconciliation">Explore →</a></article><article class="module"><div class="ico i-slate">📊</div><h3>Annual Compliance</h3><p>Year-end review of turnover, ITC, returns, ledgers, notices and disclosures.</p><a href="#annual">Explore →</a></article></div></div></section>
 
-<section class="section alt" id="calendar"><div class="wrap"><div class="section-title"><div><h2>📅 GST Compliance Calendar</h2><p>Planning view only. Actual dates can change by notification, extension, taxpayer category or State/UT.</p></div></div>
-<div class="calendar-box"><div class="controls"><select class="control"><option>FY 2026-27</option><option>FY 2025-26</option><option>FY 2024-25</option></select><select class="control"><option>Regular taxpayer</option><option>QRMP taxpayer</option><option>Composition taxpayer</option><option>Other / special registration</option></select><select class="control"><option>August 2026</option><option>September 2026</option><option>October 2026</option><option>November 2026</option></select></div>
-<div class="table-wrap"><table><thead><tr><th>Typical timing</th><th>Compliance</th><th>Applicability</th><th>What to review</th><th>Planning</th></tr></thead><tbody><tr><td><strong>11th</strong></td><td>GSTR-1</td><td>Monthly filers</td><td>Outward supplies / amendments</td><td><span class="status s-blue">Review</span></td></tr><tr><td><strong>13th</strong></td><td>IFF / QRMP statement</td><td>Where applicable</td><td>B2B invoice reporting</td><td><span class="status s-blue">Review</span></td></tr><tr><td><strong>20th</strong></td><td>GSTR-3B</td><td>Monthly filers</td><td>Summary liability, ITC & payment</td><td><span class="status s-blue">Review</span></td></tr><tr><td><strong>22nd / 24th</strong></td><td>GSTR-3B under QRMP</td><td>Where applicable</td><td>State/UT and scheme dependent</td><td><span class="status s-blue">Review</span></td></tr><tr><td><strong>As applicable</strong></td><td>E-Invoice / IRN</td><td>Where applicable</td><td>Report covered documents within prescribed time</td><td><span class="status s-blue">Review</span></td></tr><tr><td><strong>As applicable</strong></td><td>E-Way Bill</td><td>Where applicable</td><td>Generate / update before or during movement as prescribed</td><td><span class="status s-blue">Review</span></td></tr></tbody></table></div>
-<div class="note"><strong>Important:</strong> Calendar entries are planning prompts, not a legal due-date notification. Verify the applicable return period, taxpayer category and any CBIC/GSTN extension or special notification before acting.</div></div></div></section>
+
+<section class="section alt" id="calendar"><div class="wrap">
+<div class="section-title"><div>
+<h2>📅 GST Compliance Calendar</h2>
+<p>Stay updated with important GST return filing, payment and compliance deadlines. Filter the calendar based on your financial year, taxpayer profile and compliance type.</p>
+</div></div>
+
+<div class="calendar-box">
+<div class="controls">
+<select id="gstFY" class="control">
+<option value="2026-27">FY 2026-27</option>
+<option value="2027-28">FY 2027-28</option>
+</select>
+<select id="gstMonth" class="control"></select>
+<select id="gstProfile" class="control">
+<option value="all">All taxpayer profiles</option>
+<option value="regular">Regular / Monthly</option>
+<option value="qrmp">QRMP</option>
+<option value="composition">Composition</option>
+<option value="isd">ISD</option>
+<option value="tds">GST TDS</option>
+<option value="tcs">GST TCS</option>
+<option value="special">Special / Other</option>
+</select>
+<select id="gstType" class="control">
+<option value="all">All compliance types</option>
+<option value="return">Returns / Statements</option>
+<option value="payment">Payments</option>
+<option value="annual">Annual</option>
+<option value="event">Event-based</option>
+<option value="system">Other GST controls</option>
+</select>
+<button class="btn secondary small" type="button" onclick="gstShowNext7()">Next 7 Days</button>
+<button class="btn secondary small" type="button" onclick="gstDownloadCSV()">⬇ Download CSV</button>
+</div>
+
+<div id="gstCalendarSummary" style="margin:0 0 15px;color:#5b6f91;font-size:13px;font-weight:700"></div>
+<div class="table-wrap"><table>
+<thead><tr><th>Date</th><th>Compliance</th><th>Applicability</th><th>What to review</th><th>Planning / status</th></tr></thead>
+<tbody id="gstCalendarRows"></tbody>
+</table></div>
+
+<div class="note" style="margin-top:9px">
+<strong>Disclaimer:</strong> Due dates are provided for general information and compliance planning. Due dates may be extended or changed by the Government/GST authorities. Please verify the latest GST Portal, CBIC notification or applicable Government notification before filing or making payment.
+</div>
+</div></div></section>
 
 <section class="section" id="checklist"><div class="wrap"><div class="section-title"><div><h2>☑ Monthly GST Compliance Checklist</h2><p>Tick each item as you complete your monthly review. Progress is saved in this browser.</p></div><button class="btn secondary small" onclick="resetChecklist()">Reset Checklist</button></div>
 <div class="check-grid"><div class="check-card"><div class="progress-row"><span>Monthly completion</span><span id="progressText">0 / 12</span></div><div class="progress"><span id="progressBar"></span></div><div class="checklist"><div class="check"><input type="checkbox" id="c1"><label for="c1">Reconcile sales register with GSTR-1</label></div><div class="check"><input type="checkbox" id="c2"><label for="c2">Reconcile GSTR-1 with GSTR-3B</label></div><div class="check"><input type="checkbox" id="c3"><label for="c3">Reconcile purchase register with GSTR-2B / applicable IMS data</label></div><div class="check"><input type="checkbox" id="c4"><label for="c4">Review ITC eligibility and blocked credit</label></div><div class="check"><input type="checkbox" id="c5"><label for="c5">Review ITC reversals and reclaims</label></div><div class="check"><input type="checkbox" id="c6"><label for="c6">Check RCM liability and payment</label></div><div class="check"><input type="checkbox" id="c7"><label for="c7">Reconcile e-invoice data with books / returns</label></div><div class="check"><input type="checkbox" id="c8"><label for="c8">Reconcile e-way bills with relevant movement records</label></div><div class="check"><input type="checkbox" id="c9"><label for="c9">Check credit notes, debit notes and amendments</label></div><div class="check"><input type="checkbox" id="c10"><label for="c10">Verify tax liability and electronic ledgers</label></div><div class="check"><input type="checkbox" id="c11"><label for="c11">Check interest / late fee exposure, where applicable</label></div><div class="check"><input type="checkbox" id="c12"><label for="c12">Save filed returns, challans and supporting workings</label></div></div></div>
@@ -145,7 +187,97 @@ button,input,select{font:inherit}.wrap{width:min(1404px,calc(100% - 132px));marg
 
 <footer class="footer"><div class="wrap footer-grid"><div><h3>GST RECONCILIATION</h3><p>Practical GST knowledge, compliance guidance and tools. <a href="/">Return to Home</a></p></div><div><p>Official portal: <a href="https://www.gst.gov.in/" target="_blank" rel="noopener">gst.gov.in</a></p></div></div></footer>
 
+<script src="gst-compliance-data.js"></script>
 <script>
+
+/* ===== Dynamic GST Compliance Calendar ===== */
+(function(){
+  const $=id=>document.getElementById(id);
+  const names=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  function pad(n){return String(n).padStart(2,'0')}
+  function dkey(d){return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate())}
+  function pretty(d){return d.toLocaleDateString('en-IN',{day:'numeric',month:'short',year:'numeric'})}
+  function monthLabel(y,m){return names[m]+' '+y}
+  function profileLabel(p){return ({regular:'Regular / Monthly',qrmp:'QRMP',composition:'Composition',isd:'ISD',tds:'GST TDS',tcs:'GST TCS',special:'Special / Other'})[p]||p}
+  function typeLabel(t){return ({return:'Returns / Statements',payment:'Payments',annual:'Annual',event:'Event-based',system:'Other GST controls'})[t]||t}
+  function dueDateFor(y,m,day){return new Date(y,m,day)}
+  function build(){
+    const rules=window.GST_COMPLIANCE_RULES||[];
+    const overrides=window.GST_COMPLIANCE_OVERRIDES||{};
+    const out=[];
+    for(const r of rules){
+      const months=r.months||Array.from({length:12},(_,i)=>i);
+      for(let y=2026;y<=2028;y++){
+        for(const m of months){
+          if(y===2026 && m<3) continue;
+          if(y===2028 && m>2) continue;
+          if(r.quarterEndOnly && ![2,5,8,11].includes(m)) continue;
+          if(r.quarterFirstTwoOnly && ![0,1,3,4,6,7,9,10].includes(m)) continue;
+          const day=typeof r.day==='number'?r.day:null;
+          if(day===null) continue;
+          const dt=dueDateFor(y,m,day);
+          const key=dkey(dt);
+          let e={date:dt,name:r.name,profile:r.profile,type:r.type,review:r.review,normalDate:pretty(dt),status:'Normal due date'};
+          if(overrides[key]){
+            const ov=overrides[key];
+            e.date=ov.date?new Date(ov.date+'T00:00:00'):dt;
+            e.status=ov.status||'Extended / Updated';
+            e.review=(ov.review||r.review)+' '+(ov.note||'');
+          }
+          out.push(e);
+        }
+      }
+    }
+    // Add annual planning events.
+    const annual=window.GST_ANNUAL_RULES||[];
+    for(const a of annual){
+      for(let y=2026;y<=2027;y++){
+        const dt=new Date(y,a.month,a.day);
+        if(dt>=new Date(2026,3,1)&&dt<=new Date(2028,2,31))
+          out.push({date:dt,name:a.name,profile:a.profile,type:a.type,review:a.review,normalDate:pretty(dt),status:'Annual planning'});
+      }
+    }
+    return out.sort((a,b)=>a.date-b.date);
+  }
+  function filtered(){
+    const fy=$('gstFY').value, mo=$('gstMonth').value, p=$('gstProfile').value, t=$('gstType').value;
+    let [y,m]=mo.split('-').map(Number);
+    return build().filter(e=>e.date.getFullYear()===y&&e.date.getMonth()===m&&(p==='all'||e.profile===p)&&(t==='all'||e.type===t));
+  }
+  function render(){
+    const list=filtered(), tbody=$('gstCalendarRows');
+    $('gstCalendarSummary').textContent=`${list.length} compliance item(s) shown • ${monthLabel(list.length?list[0].date.getFullYear():Number($('gstMonth').value.split('-')[0]), list.length?list[0].date.getMonth():Number($('gstMonth').value.split('-')[1]))}`;
+    tbody.innerHTML=list.length?list.map(e=>{
+      const now=new Date();now.setHours(0,0,0,0); const x=new Date(e.date);x.setHours(0,0,0,0);
+      const diff=Math.round((x-now)/86400000);
+      const cls=diff<0?'s-blue':diff<=3?'s-blue':'s-blue';
+      const label=diff<0?'Past':diff===0?'Due today':diff<=3?'Due soon':e.status;
+      return `<tr><td><strong>${pretty(e.date)}</strong>${e.status!=='Normal due date'?`<br><small style="color:#ed8a16">Normal: ${e.normalDate}</small>`:''}</td><td><strong>${e.name}</strong><br><small style="color:#5b6f91">${typeLabel(e.type)}</small></td><td>${profileLabel(e.profile)}</td><td>${e.review}</td><td><span class="status ${cls}">${label}</span></td></tr>`;
+    }).join(''):'<tr><td colspan="5" style="color:#5b6f91">No compliance item is available for the selected filters.</td></tr>';
+  }
+  function populateMonths(){
+    const fy=$('gstFY').value, start=Number(fy.slice(0,4)), sel=$('gstMonth'); sel.innerHTML='';
+    for(let i=3;i<15;i++){const idx=(i%12), y=start+(i>=12?1:0), o=document.createElement('option');o.value=`${y}-${idx}`;o.textContent=monthLabel(y,idx);sel.appendChild(o)}
+    const now=new Date(), cur=`${now.getFullYear()}-${now.getMonth()}`;
+    if([...sel.options].some(o=>o.value===cur)) sel.value=cur;
+    render();
+  }
+  window.gstShowNext7=function(){
+    const all=build(), now=new Date(); now.setHours(0,0,0,0);
+    const list=all.filter(e=>e.date>=now).slice(0,7);
+    const tbody=$('gstCalendarRows'); $('gstFY').value=list[0]?((list[0].date.getFullYear()>=2027)?'2027-28':'2026-27'):$('gstFY').value;
+    $('gstCalendarSummary').textContent='Next 7 upcoming GST compliance items';
+    tbody.innerHTML=list.map(e=>`<tr><td><strong>${pretty(e.date)}</strong></td><td><strong>${e.name}</strong><br><small style="color:#5b6f91">${typeLabel(e.type)}</small></td><td>${profileLabel(e.profile)}</td><td>${e.review}</td><td><span class="status s-blue">${e.status}</span></td></tr>`).join('');
+  };
+  window.gstDownloadCSV=function(){
+    const list=filtered(); let csv='Date,Compliance,Profile,Type,Review,Status\\n';
+    list.forEach(e=>csv+=`"${pretty(e.date)}","${e.name}","${profileLabel(e.profile)}","${typeLabel(e.type)}","${String(e.review).replaceAll('"','""')}","${e.status}"\\n`);
+    const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='GST-Compliance-Calendar.csv';a.click();URL.revokeObjectURL(a.href);
+  };
+  $('gstFY').addEventListener('change',populateMonths);$('gstMonth').addEventListener('change',render);$('gstProfile').addEventListener('change',render);$('gstType').addEventListener('change',render);
+  populateMonths();
+})();
+
 const checks=[...document.querySelectorAll('.check input')];
 function updateChecklist(){const done=checks.filter(x=>x.checked).length,total=checks.length;document.getElementById('progressText').textContent=done+' / '+total;document.getElementById('progressBar').style.width=(done/total*100)+'%';document.getElementById('heroScore').textContent=Math.round(done/total*100)+'%';checks.forEach(x=>x.closest('.check').classList.toggle('done',x.checked));localStorage.setItem('gstComplianceChecklist',JSON.stringify(checks.map(x=>x.checked)));}
 function loadChecklist(){try{const saved=JSON.parse(localStorage.getItem('gstComplianceChecklist')||'[]');checks.forEach((x,i)=>x.checked=!!saved[i]);}catch(e){}updateChecklist();}
