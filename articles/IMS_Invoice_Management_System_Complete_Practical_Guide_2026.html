@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IMS Invoice Management System under GST | Complete Practical Guide</title>
+<meta name="description" content="Complete practical guide to GST Invoice Management System (IMS): accept, reject, pending, no action, amendments, GSTR-2B impact, recomputation, practical examples, reconciliation and FAQs.">
+<meta name="keywords" content="IMS GST, Invoice Management System, GST IMS, IMS GSTR 2B, accept reject invoice GST, IMS reconciliation, GSTR 2B IMS, GST practical guide">
+<link rel="canonical" href="https://gstreconciliation.in/articles/ims-invoice-management-system-complete-practical-guide.html">
+<meta property="og:title" content="IMS Invoice Management System under GST | Complete Practical Guide">
+<meta property="og:description" content="Understand GST IMS practically: supplier reporting, recipient actions, GSTR-2B impact, recomputation, amendments, exceptions and monthly controls.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://gstreconciliation.in/articles/ims-invoice-management-system-complete-practical-guide.html">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NBKTXWJ20G');
+</script>
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+
+<style>
+:root{--blue:#0b57d0;--dark:#10233f;--muted:#5c6b7a;--bg:#f5f8fc;--line:#dce5ef;--green:#16834b;--orange:#b45f06;--red:#b42318}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:#182433;background:var(--bg);line-height:1.7}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.hero{background:linear-gradient(135deg,#082b63,#0b57d0);color:#fff;padding:58px 28px 48px}
+.hero-inner{max-width:1180px;margin:auto}
+.kicker{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.86}
+h1{font-size:clamp(32px,5vw,54px);line-height:1.08;margin:12px 0 18px}
+.hero p{max-width:900px;font-size:18px;opacity:.94;margin:0}
+.hero-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px}
+.hero-card{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:14px;padding:17px}
+.hero-card strong{display:block;font-size:22px;margin-bottom:4px}
+.layout{max-width:1180px;margin:30px auto;display:grid;grid-template-columns:245px minmax(0,1fr);gap:28px;padding:0 18px}
+.toc{position:sticky;top:18px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;max-height:calc(100vh - 36px);overflow:auto}
+.toc h3{margin:0 0 10px;color:var(--dark)}
+.toc a{display:block;font-size:14px;padding:6px 0}
+main{min-width:0}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;margin-bottom:22px;box-shadow:0 3px 14px rgba(16,35,63,.035)}
+h2{color:var(--dark);font-size:30px;line-height:1.25;margin:0 0 16px}
+h3{color:#183b68;font-size:21px;margin:24px 0 10px}
+h4{color:#183b68;margin:18px 0 8px}
+p{margin:10px 0}
+ul,ol{padding-left:23px}
+li{margin:7px 0}
+.note,.warning,.success{padding:16px 18px;border-radius:12px;margin:18px 0;border-left:5px solid}
+.note{background:#eef5ff;border-color:var(--blue)}
+.warning{background:#fff5eb;border-color:var(--orange)}
+.success{background:#edf9f2;border-color:var(--green)}
+.danger{background:#fff0ef;border-left:5px solid var(--red);padding:16px 18px;border-radius:12px;margin:18px 0}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px;background:#fff}
+th,td{border:1px solid var(--line);padding:11px 12px;vertical-align:top;text-align:left}
+th{background:#eef4fb;color:#16375f}
+.badge{display:inline-block;padding:3px 9px;border-radius:999px;font-size:12px;font-weight:700}
+.green{background:#e8f6ee;color:#12653b}.red{background:#fde9e7;color:#9d241b}.amber{background:#fff1df;color:#8a4c08}.blue{background:#e8f1ff;color:#174fba}
+.flow{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin:20px 0}
+.flow div{background:#f0f5fb;border:1px solid var(--line);border-radius:10px;padding:12px;text-align:center;font-weight:700;font-size:13px}
+.example{background:#f8fafc;border:1px dashed #b8c7d8;border-radius:12px;padding:17px;margin:16px 0}
+.checklist li::marker{color:var(--green)}
+footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);font-size:13px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto;max-height:none}.hero-grid{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.card{padding:20px}h2{font-size:25px}.hero{padding:40px 20px}.layout{padding:0 10px}}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Article",
+ "headline":"IMS Invoice Management System under GST | Complete Practical Guide",
+ "description":"A practical guide to Invoice Management System under GST, including recipient actions, GSTR-2B impact, recomputation, amendments and reconciliation.",
+ "mainEntityOfPage":{"@type":"WebPage","@id":"https://gstreconciliation.in/articles/ims-invoice-management-system-complete-practical-guide.html"},
+ "publisher":{"@type":"Organization","name":"GST Reconciliation"},
+ "author":{"@type":"Organization","name":"GST Reconciliation"},
+ "about":["Invoice Management System","GSTR-2B","Input Tax Credit","GST reconciliation"]
+}
+</script>
+</head>
+<body>
+
+<header class="hero">
+<div class="hero-inner">
+<div class="kicker">Practical GST Guide</div>
+<h1>IMS under GST: Complete Invoice Management System Guide</h1>
+<p>Understand how the Invoice Management System works, what to accept, reject or keep pending, how IMS affects GSTR-2B and GSTR-3B, and how an accounts team can operate the process every month without losing or wrongly claiming ITC.</p>
+<div class="hero-grid">
+<div class="hero-card"><strong>IMS</strong>Review supplier-reported records</div>
+<div class="hero-card"><strong>GSTR-2B</strong>Use the resulting ITC statement</div>
+<div class="hero-card"><strong>GSTR-3B</strong>Take eligible ITC after legal review</div>
+</div>
+</div>
+</header>
+
+<div class="layout">
+<nav class="toc">
+<h3>On this page</h3>
+<a href="#meaning">1. What is IMS?</a>
+<a href="#why">2. Why IMS matters</a>
+<a href="#flow">3. IMS → GSTR-2B flow</a>
+<a href="#actions">4. Accept / Reject / Pending / No Action</a>
+<a href="#when-reject">5. When to reject</a>
+<a href="#pending">6. Pending and carry-forward</a>
+<a href="#recompute">7. Recompute GSTR-2B</a>
+<a href="#amendments">8. Amendments & credit notes</a>
+<a href="#exceptions">9. Records outside IMS</a>
+<a href="#working">10. Monthly working procedure</a>
+<a href="#examples">11. Practical examples</a>
+<a href="#reconciliation">12. Reconciliation format</a>
+<a href="#controls">13. Internal controls</a>
+<a href="#mistakes">14. Common mistakes</a>
+<a href="#faq">15. FAQs</a>
+<a href="#sources">16. References</a>
+</nav>
+
+<main>
+
+<section class="card" id="meaning">
+<h2>1. What is IMS under GST?</h2>
+<p><strong>Invoice Management System (IMS)</strong> is a GST portal facility through which a recipient can review records reported by suppliers in their outward-supply returns and take an action on those records before the recipient finalises the related GSTR-3B.</p>
+<p>The key purpose is not simply to create another report. IMS gives the recipient a structured way to communicate how supplier-reported records should be treated for the recipient's ITC workflow.</p>
+<div class="note"><strong>Remember:</strong> IMS and GSTR-2B are not the same. IMS is the action/review layer; GSTR-2B is the system-generated ITC statement. Your accounting team should use IMS actions together with books, invoice documents and the GST law—not treat an IMS status alone as proof that ITC is legally eligible.</div>
+<p>GSTN introduced IMS from the GSTR-2B return period of October 2024. The first draft GSTR-2B based on IMS actions was generated for October 2024 on 14 November 2024. </p>
+</section>
+
+<section class="card" id="why">
+<h2>2. Why IMS is important for accounts teams</h2>
+<p>Before IMS, the recipient generally discovered supplier mismatches while reconciling purchase records with GSTR-2B. IMS adds an earlier operational layer where the recipient can identify records that should not be treated as accepted, or should be kept pending until the issue is resolved.</p>
+<ul>
+<li>It helps identify invoices that do not belong to the recipient.</li>
+<li>It helps manage supplier errors before ITC is finally considered.</li>
+<li>It provides a process for dealing with amendments and credit notes.</li>
+<li>It affects what appears in the recipient's draft/recomputed GSTR-2B for the relevant period.</li>
+<li>It gives the purchase/accounts team a defined review point before GSTR-3B.</li>
+</ul>
+<div class="warning"><strong>Important:</strong> Do not make “accept everything” the default internal policy merely because no action is deemed accepted for GSTR-2B generation. A no-action record can still be wrong, duplicated, unrelated to the business or legally ineligible.</div>
+</section>
+
+<section class="card" id="flow">
+<h2>3. The complete IMS → GSTR-2B → GSTR-3B flow</h2>
+<div class="flow">
+<div>Supplier reports<br>GSTR-1 / 1A / IFF</div>
+<div>Record appears<br>in recipient IMS</div>
+<div>Recipient reviews<br>invoice & evidence</div>
+<div>Accept / Reject / Pending / No Action</div>
+<div>GSTR-2B is generated or recomputed</div>
+<div>Eligible ITC is reviewed for GSTR-3B</div>
+</div>
+<p>GSTN states that supplier records reported through GSTR-1/1A/IFF populate the recipient's IMS for action. At GSTR-2B generation, accepted records form part of the available ITC flow, rejected records are excluded, and pending records are carried in IMS rather than included for that month's GSTR-2B. No-action records are treated as deemed accepted at GSTR-2B generation. </p>
+<div class="success"><strong>Practical rule:</strong> The correct sequence for an accounts team is <em>supplier data → IMS review → books reconciliation → ITC eligibility review → GSTR-2B → GSTR-3B</em>. Do not reverse this into “GSTR-2B amount = automatic ITC”.</div>
+</section>
+
+<section class="card" id="actions">
+<h2>4. What do Accept, Reject, Pending and No Action mean?</h2>
+<table>
+<tr><th>IMS status</th><th>Practical meaning</th><th>Effect on GSTR-2B</th><th>What the team should do</th></tr>
+<tr><td><span class="badge green">Accept</span></td><td>The recipient accepts the supplier-reported record.</td><td>Accepted records can form part of GSTR-2B ITC available, subject to the applicable rules and system treatment.</td><td>Accept only after reasonable verification of supplier, invoice, receipt/service and tax details.</td></tr>
+<tr><td><span class="badge red">Reject</span></td><td>The record does not pertain to the recipient or is materially erroneous and cannot appropriately be handled by a credit/debit note or correction.</td><td>Rejected records are not considered for GSTR-2B generation.</td><td>Use carefully. Keep evidence and reason for rejection.</td></tr>
+<tr><td><span class="badge amber">Pending</span></td><td>The recipient needs more time or clarification before deciding.</td><td>Pending records are not considered for that month's GSTR-2B and remain in IMS for later action.</td><td>Use as an exception queue, not as a permanent parking area.</td></tr>
+<tr><td><span class="badge blue">No Action</span></td><td>No action has been taken by the recipient.</td><td>No-action records are treated as deemed accepted when GSTR-2B is generated.</td><td>Do not rely on no action as a substitute for reconciliation.</td></tr>
+</table>
+<p>These effects are described in GSTN's IMS advisory and FAQs. </p>
+</section>
+
+<section class="card" id="when-reject">
+<h2>5. When should an invoice be rejected?</h2>
+<p>GSTN specifically cautions that rejection should be done carefully because a rejected invoice will not provide ITC to the recipient through the IMS-driven GSTR-2B flow. GSTN identifies a record as a candidate for rejection where it does not pertain to the recipient, or where the error is so significant that the situation cannot appropriately be handled through a credit/debit note. </p>
+<h3>Good candidates for rejection</h3>
+<ul>
+<li>Invoice belongs to a different GSTIN of the same group.</li>
+<li>Supplier has incorrectly reported your GSTIN and the transaction is not yours.</li>
+<li>Completely fictitious or duplicate invoice with no underlying supply.</li>
+<li>Material reporting error where the record cannot reasonably be corrected through the appropriate supplier document.</li>
+</ul>
+<h3>Do not reject merely because</h3>
+<ul>
+<li>Invoice number has a minor formatting difference that can be reconciled.</li>
+<li>Books have not yet been updated even though the purchase is genuine.</li>
+<li>Goods/service receipt confirmation is pending and your internal process needs more time.</li>
+<li>Taxable value differs slightly and the supplier can issue an appropriate correction/document.</li>
+</ul>
+<div class="danger"><strong>High-risk mistake:</strong> Do not reject an invoice simply to remove a mismatch from the reconciliation report. Rejection can prevent the related ITC from flowing into GSTR-2B. First determine whether the problem is a genuine non-recipient transaction, a supplier amendment issue, a timing issue, a book-posting issue or an eligibility issue.</div>
+</section>
+
+<section class="card" id="pending">
+<h2>6. How should Pending be used?</h2>
+<p>Pending is useful when the recipient cannot responsibly accept or reject a record yet. For example, the purchase department may need to confirm whether the material was actually received, or the vendor may need to clarify an incorrect GSTIN, invoice number or taxable value.</p>
+<p>GSTN states that pending records are not considered for GSTR-2B for that month and remain in IMS for further action in subsequent months. </p>
+<h3>But Pending is not available in every situation</h3>
+<p>GSTN identifies restrictions for certain credit-note and amendment scenarios, including original credit notes, certain upward credit-note amendments, certain downward credit-note amendments, and certain downward invoice/debit-note amendments where the original was accepted and the relevant GSTR-3B has already been filed. </p>
+</section>
+
+<section class="card" id="recompute">
+<h2>7. What happens if you change an IMS action after GSTR-2B is generated?</h2>
+<p>The process does not necessarily end on the 14th. GSTN states that the recipient can continue to take action on records after GSTR-2B generation and, where required, <strong>recompute GSTR-2B</strong> before filing the relevant GSTR-3B. After filing GSTR-3B for the period, further action for that month's IMS records is not available. </p>
+<ol>
+<li>GSTR-2B is generated.</li>
+<li>An invoice is later identified as wrongly accepted/no-action.</li>
+<li>The recipient takes the appropriate IMS action.</li>
+<li>The recipient recomputes the relevant GSTR-2B.</li>
+<li>The updated GSTR-2B is used in the remaining GSTR-3B review.</li>
+</ol>
+<div class="note"><strong>Operational control:</strong> Your monthly close should have a defined cut-off before GSTR-3B filing. The person who changes IMS actions should communicate the change to the person preparing the ITC working.</div>
+</section>
+
+<section class="card" id="amendments">
+<h2>8. Amendments, credit notes and debit notes</h2>
+<p>IMS becomes particularly important when the supplier changes a document. The team should not treat every amendment as a new independent invoice. Always identify the original document and determine what changed.</p>
+<table>
+<tr><th>Situation</th><th>What to check</th><th>Practical response</th></tr>
+<tr><td>Invoice amendment</td><td>Original vs revised GSTIN, invoice number, date, value, tax, POS.</td><td>Identify whether the amendment corrects the existing transaction or creates a material mismatch.</td></tr>
+<tr><td>Debit note</td><td>Underlying supply and additional tax.</td><td>Verify commercial document and tax impact before accepting.</td></tr>
+<tr><td>Credit note</td><td>Whether the underlying purchase/ITC was already reversed or adjusted.</td><td>Do not ignore the ITC reduction merely because the original invoice was previously reconciled.</td></tr>
+<tr><td>Incorrectly rejected invoice</td><td>Whether it is genuinely your invoice and legally eligible.</td><td>GSTN says it can be accepted again in IMS before filing GSTR-3B, followed by recomputation of GSTR-2B.</td></tr>
+</table>
+<p>GSTN's October 2024 additional FAQ specifically explains that an erroneously rejected invoice can be accepted again before GSTR-3B filing and the updated GSTR-2B recomputed. </p>
+</section>
+
+<section class="card" id="exceptions">
+<h2>9. Not every GSTR-2B record comes through IMS</h2>
+<p>This is one of the most important concepts for users working with IMS and GSTR-2B.</p>
+<p>GSTN's IMS FAQ states that certain records are not made available in IMS but can directly flow to GSTR-2B. These include documents flowing from <strong>GSTR-5 and GSTR-6, ICEGATE documents, RCM records, specified documents where ITC is ineligible due to place-of-supply or section 16(4) restrictions, and documents subject to Rule 37A reversal treatment</strong>. </p>
+<div class="warning"><strong>Therefore:</strong> “IMS has no invoice” does not automatically mean “GSTR-2B will have no corresponding record.” Your GSTR-2B reconciliation must also cover imports, ISD, RCM and other system-generated categories.</div>
+</section>
+
+<section class="card" id="working">
+<h2>10. Practical monthly IMS working procedure</h2>
+<h3>Step 1 — Download your purchase register</h3>
+<p>Close the purchase register for the period as far as practicable. Keep supplier GSTIN, invoice number, invoice date, taxable value, IGST, CGST, SGST/UTGST, cess, purchase type, project/location and booking status.</p>
+<h3>Step 2 — Open IMS and identify exceptions</h3>
+<p>Do not begin by accepting everything. First identify invoices that are clearly unrelated, duplicated, materially incorrect or awaiting business confirmation.</p>
+<h3>Step 3 — Match IMS records with books</h3>
+<p>Use at least supplier GSTIN + invoice number as the primary key, with invoice date and tax values as secondary controls.</p>
+<h3>Step 4 — Investigate exceptions</h3>
+<table>
+<tr><th>Exception</th><th>Likely reason</th><th>Action</th></tr>
+<tr><td>IMS invoice, not in books</td><td>Late booking / unrecorded purchase / wrong GSTIN</td><td>Check PO, GRN, invoice and site records before deciding.</td></tr>
+<tr><td>Books invoice, not in IMS</td><td>Supplier has not filed / filing missed cut-off / wrong GSTIN</td><td>Follow up with supplier and track next GSTR-2B.</td></tr>
+<tr><td>Tax value mismatch</td><td>Supplier reporting error / debit-credit note / book error</td><td>Compare source invoice and supplier filing; do not blindly reject.</td></tr>
+<tr><td>Duplicate</td><td>Duplicate invoice or duplicate booking</td><td>Verify underlying supply and accounting entries.</td></tr>
+<tr><td>Wrong GSTIN</td><td>Supplier selected another registration</td><td>Ask supplier to correct; reject only after confirming it is not your transaction/appropriate correction route.</td></tr>
+</table>
+<h3>Step 5 — Decide IMS action</h3>
+<p>Use Accept, Reject or Pending based on evidence. Understand that no action is treated as deemed accepted for GSTR-2B generation. </p>
+<h3>Step 6 — Reconcile GSTR-2B</h3>
+<p>After generation, download GSTR-2B and reconcile it to the final purchase register. Include ISD, RCM and import categories separately.</p>
+<h3>Step 7 — Perform legal ITC review</h3>
+<p>Check section 16 conditions, blocked credits, time limits, business-use requirements, reversals and other applicable provisions. GSTR-2B is not a substitute for the recipient's legal eligibility review. </p>
+<h3>Step 8 — Prepare GSTR-3B</h3>
+<p>Use the eligible ITC after reconciliation and legal review. GSTN states that specified GSTR-2B values feed the relevant GSTR-3B ITC fields, while the taxpayer remains responsible for reviewing and correcting the return where required. </p>
+</section>
+
+<section class="card" id="examples">
+<h2>11. Practical examples</h2>
+
+<div class="example">
+<h3>Example 1 — Invoice belongs to another GSTIN</h3>
+<p>A group has GSTIN-A and GSTIN-B. Supplier accidentally reports a ₹2,00,000 invoice against GSTIN-A, but the goods were purchased and received by GSTIN-B.</p>
+<p><strong>Correct approach:</strong> GSTIN-A should not claim ITC merely because the invoice appears. Investigate and have the supplier correct the reporting. If the record genuinely does not pertain to GSTIN-A, rejection may be appropriate after internal verification.</p>
+</div>
+
+<div class="example">
+<h3>Example 2 — Genuine invoice not booked yet</h3>
+<p>Supplier reports an invoice in IMS, but the accounts team has not received the invoice from the site.</p>
+<p><strong>Do not automatically reject.</strong> Check GRN, PO, delivery proof and site records. If the purchase is genuine but documentation is pending, use the appropriate workflow and keep an audit trail.</p>
+</div>
+
+<div class="example">
+<h3>Example 3 — Wrongly rejected genuine invoice</h3>
+<p>An employee rejects a genuine invoice by mistake. Before filing GSTR-3B, the team identifies the error.</p>
+<p><strong>GSTN guidance:</strong> the recipient can accept the invoice again in IMS and recompute the relevant GSTR-2B before filing GSTR-3B. </p>
+</div>
+
+<div class="example">
+<h3>Example 4 — Supplier files after the cut-off</h3>
+<p>The supplier files its document after the relevant GSTR-2B cut-off. The invoice may not appear in the expected month's GSTR-2B.</p>
+<p><strong>Correct approach:</strong> do not conclude that the supplier has not filed solely from one month's GSTR-2B. Check the supplier filing period and the next open GSTR-2B. GSTN explains that supplier-filed documents flow into the next open GSTR-2B based on the applicable cut-off. </p>
+</div>
+</section>
+
+<section class="card" id="reconciliation">
+<h2>12. Recommended IMS + GSTR-2B reconciliation format</h2>
+<table>
+<tr><th>Field</th><th>Purpose</th></tr>
+<tr><td>Supplier GSTIN</td><td>Primary supplier identification</td></tr>
+<tr><td>Supplier name</td><td>Commercial verification</td></tr>
+<tr><td>Invoice / document number</td><td>Primary document matching key</td></tr>
+<tr><td>Invoice date</td><td>Date and period control</td></tr>
+<tr><td>Taxable value</td><td>Value reconciliation</td></tr>
+<tr><td>IGST / CGST / SGST / Cess</td><td>Tax reconciliation</td></tr>
+<tr><td>Books status</td><td>Booked / not booked / duplicate / error</td></tr>
+<tr><td>IMS status</td><td>Accepted / rejected / pending / no action</td></tr>
+<tr><td>GSTR-2B status</td><td>Available / not available / reversal / ineligible</td></tr>
+<tr><td>ITC eligibility</td><td>Eligible / ineligible / partial / pending review</td></tr>
+<tr><td>Reason / action</td><td>Supplier follow-up and audit trail</td></tr>
+<tr><td>Owner & follow-up date</td><td>Exception management</td></tr>
+</table>
+<div class="success"><strong>Best practice:</strong> Keep IMS status and ITC eligibility as separate columns. An invoice can be accepted in IMS but still require a separate legal eligibility assessment.</div>
+</section>
+
+<section class="card" id="controls">
+<h2>13. Internal financial controls for IMS</h2>
+<ul class="checklist">
+<li>Maintain a documented monthly IMS review owner for each GSTIN.</li>
+<li>Do not permit blanket rejection of invoices without supporting reason.</li>
+<li>Require purchase/site confirmation for disputed invoices.</li>
+<li>Maintain a rejected/pending exception register.</li>
+<li>Track supplier corrections and the month in which the corrected record is expected.</li>
+<li>Perform a final IMS review before GSTR-3B preparation.</li>
+<li>Document all post-GSTR-2B recomputations and their impact on the ITC working.</li>
+<li>Reconcile GSTR-2B separately for B2B, ISD, RCM and imports.</li>
+<li>Maintain evidence for high-value ITC: invoice, PO, GRN/service proof, payment records where relevant and accounting entry.</li>
+<li>Have a second-level review for unusual rejection, large ITC reversals and major month-on-month changes.</li>
+</ul>
+</section>
+
+<section class="card" id="mistakes">
+<h2>14. Common IMS mistakes</h2>
+<ol>
+<li><strong>Accepting everything automatically:</strong> No action is deemed accepted for GSTR-2B generation, but that does not make every invoice legally eligible.</li>
+<li><strong>Rejecting to make reconciliation look clean:</strong> A rejection can remove the ITC flow. Resolve the underlying issue instead.</li>
+<li><strong>Ignoring pending records:</strong> Pending is a temporary exception state and should have an owner and follow-up date.</li>
+<li><strong>Not recomputing GSTR-2B:</strong> If an IMS action changes after initial generation, check whether recomputation is required before GSTR-3B.</li>
+<li><strong>Ignoring records outside IMS:</strong> Imports, ISD, RCM and other specified records require separate review.</li>
+<li><strong>Treating GSTR-2B as final legal eligibility:</strong> Other ITC restrictions still need self-assessment.</li>
+<li><strong>Not preserving an audit trail:</strong> Keep evidence for why a record was accepted, rejected or kept pending.</li>
+</ol>
+</section>
+
+<section class="card" id="faq">
+<h2>15. Frequently Asked Questions</h2>
+
+<h3>Is IMS mandatory?</h3>
+<p>GSTN's October 2024 additional FAQ states that taking action on IMS records is not mandatory for GSTR-2B generation; records with no action are treated as accepted for generation. However, an organisation may still need an internal review process to prevent wrong ITC. </p>
+
+<h3>What happens if I take no action in IMS?</h3>
+<p>No-action records are treated as deemed accepted when GSTR-2B is generated. </p>
+
+<h3>Can I reject a genuine invoice by mistake and correct it?</h3>
+<p>GSTN states that an erroneously rejected invoice can be accepted again before filing GSTR-3B, followed by recomputation of the updated GSTR-2B. </p>
+
+<h3>Can I take action after GSTR-2B is generated?</h3>
+<p>Yes. GSTN states that recipients can take action after the 14th and recompute GSTR-2B until the relevant GSTR-3B is filed. </p>
+
+<h3>Does every GSTR-2B invoice appear in IMS?</h3>
+<p>No. GSTN lists several categories that do not appear in IMS but can directly flow to GSTR-2B, including specified GSTR-5/GSTR-6 records, ICEGATE documents and RCM records. </p>
+
+<h3>Does acceptance in IMS mean ITC is automatically eligible?</h3>
+<p>No. IMS status is not a replacement for the recipient's legal ITC eligibility assessment. GSTN specifically cautions that there can be other situations where ITC is not available and the taxpayer must self-assess and reverse or restrict such credit in GSTR-3B. </p>
+
+<h3>Can I edit GSTR-2B itself?</h3>
+<p>No. GSTR-2B is a read-only static statement. Errors or omissions should be addressed through supplier correction, IMS action where applicable, reconciliation and the relevant return process. </p>
+
+<h3>Should Pending be used for every mismatch?</h3>
+<p>No. Pending is a useful exception status, but GSTN restricts pending action for specified credit-note and amendment situations. </p>
+
+<h3>What should I do when an invoice is in books but not in IMS?</h3>
+<p>Check supplier filing status, reporting period, cut-off timing, GSTIN and document details. Track the invoice for the next applicable GSTR-2B rather than assuming it is permanently missing.</p>
+
+<h3>What is the best way to use IMS in a large company?</h3>
+<p>Use IMS as an exception-management workflow connected to purchase register reconciliation. Assign invoice review to the purchase/accounts owner, escalation to the tax team and final ITC review to the responsible GST return preparer.</p>
+</section>
+
+<section class="card" id="sources">
+<h2>16. GSTN references and related reading</h2>
+<p>For the legal framework and section-wise explanations, use the <a href="https://gstreconciliation.in/gst-act.html">GST Act Section Wise Guide</a> on this website.</p>
+<ul>
+<li><a href="https://tutorial.gst.gov.in/downloads/news/final_faqs_on_ims_22_09_2024.pdf">GSTN – FAQs on Invoice Management System (IMS)</a></li>
+<li><a href="https://tutorial.gst.gov.in/downloads/news/additional_faqs_ims_17_10_2024.pdf">GSTN – Additional FAQs on IMS dated 17 October 2024</a></li>
+<li><a href="https://tutorial.gst.gov.in/downloads/news/revised_advisory_on_ims.pdf">GSTN – Revised IMS Advisory</a></li>
+<li><a href="https://tutorial.gst.gov.in/userguide/returns/FAQ_gstr2b.htm">GSTN – GSTR-2B FAQs</a></li>
+</ul>
+<div class="note"><strong>How to use this guide:</strong> First understand the IMS action, then reconcile the document with books, then determine ITC eligibility and finally prepare GSTR-3B. The portal's system treatment and applicable GST law should always be checked for the relevant tax period.</div>
+</section>
+
+</main>
+</div>
+
+<footer>
+<p><strong>GST Reconciliation</strong> — Practical GST learning and reconciliation resource. This article is for educational and workflow guidance and should not be treated as a substitute for professional advice or verification of the law applicable to a specific tax period.</p>
+</footer>
+</body>
+</html>
