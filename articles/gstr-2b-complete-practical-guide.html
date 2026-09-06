@@ -1,0 +1,561 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GSTR-2B Complete Guide: ITC Reconciliation, Tables, Matching & Practical Issues</title>
+<meta name="description" content="Complete practical GSTR-2B guide explaining every important section, ITC available and not available, B2B invoices, credit notes, amendments, RCM, imports, IMS, 2B vs purchase register reconciliation, mismatch handling, GSTR-3B reporting, practical examples, controls and FAQs.">
+<meta name="keywords" content="GSTR 2B, GSTR-2B complete guide, GSTR 2B reconciliation, GSTR 2B vs purchase register, GSTR 2B ITC, GSTR 2B mismatch, GSTR 2B download, GSTR 2B explained, GSTR 2B invoice matching, GSTR 2B credit note, GSTR 2B amendment, GSTR 2B RCM, GSTR 2B import, GSTR 2B IMS, GSTR 2B practical guide, GSTR 3B ITC reconciliation, missing in 2B">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GSTR-2B Complete Guide: ITC Reconciliation, Tables, Matching & Practical Issues">
+<meta property="og:description" content="A practical, user-friendly GSTR-2B guide explaining how to read 2B, reconcile it with books, handle mismatches, understand ITC availability, IMS, RCM and imports, and prepare GSTR-3B.">
+<meta property="og:url" content="https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html">
+<meta property="og:site_name" content="GST Reconciliation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GSTR-2B Complete Guide: ITC Reconciliation, Tables, Matching & Practical Issues">
+<meta name="twitter:description" content="Complete practical guide to GSTR-2B, ITC reconciliation, invoice matching, amendments, credit notes, RCM, imports, IMS and GSTR-3B working.">
+<meta name="author" content="GST Reconciliation">
+
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NBKTXWJ20G');
+</script>
+
+<!-- Google AdSense -->
+<script async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
+  crossorigin="anonymous"></script>
+
+<style>
+:root{--ink:#172033;--muted:#5f6b7a;--line:#e5e9f0;--soft:#f6f8fb;--brand:#0b5cab;--brand2:#083f78;--good:#147a4b;--warn:#9a6500;--danger:#a52a2a}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.65}
+.wrap{max-width:1180px;margin:auto;padding:0 22px}.hero{background:linear-gradient(135deg,#073b70,#0b67b5);color:#fff;padding:58px 0 48px}.eyebrow{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.86}.hero h1{font-size:42px;line-height:1.12;margin:12px 0}.hero p{font-size:18px;max-width:900px;margin:0;opacity:.94}.pill{display:inline-block;margin:18px 7px 0 0;padding:7px 12px;border:1px solid rgba(255,255,255,.3);border-radius:20px;font-size:13px}
+.layout{display:grid;grid-template-columns:250px 1fr;gap:34px;margin-top:34px}.toc{position:sticky;top:18px;height:max-content;border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}.toc strong{display:block;margin-bottom:10px}.toc a{display:block;color:var(--brand);text-decoration:none;font-size:14px;padding:5px 0}.content h2{font-size:28px;margin:40px 0 12px;padding-top:10px}.content h3{font-size:20px;margin:28px 0 8px}.content p{margin:10px 0}.lead{font-size:18px}.note,.warning,.danger,.success{padding:16px 18px;border-radius:12px;margin:18px 0}.note{background:#eef6ff;border-left:4px solid var(--brand)}.warning{background:#fff7e8;border-left:4px solid #d99a1c}.danger{background:#fff0f0;border-left:4px solid #c44}.success{background:#eefaf4;border-left:4px solid #2a9a65}
+table{width:100%;border-collapse:collapse;margin:16px 0 24px;font-size:14px}th,td{border:1px solid var(--line);padding:11px 12px;vertical-align:top}th{background:#f2f5f9;text-align:left}tr:nth-child(even) td{background:#fbfcfe}
+.steps{counter-reset:step;display:grid;gap:12px;margin:16px 0}.step{position:relative;padding:15px 18px 15px 55px;background:var(--soft);border:1px solid var(--line);border-radius:12px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:16px;top:14px;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;text-align:center;line-height:26px;font-weight:700}
+.example{border:1px solid #dce4ef;border-radius:12px;padding:17px;margin:18px 0;background:#fcfdff}.example b{color:var(--brand2)}.formula{font-family:Consolas,monospace;background:#101827;color:#fff;padding:13px 15px;border-radius:9px;overflow:auto}
+.badge{display:inline-block;padding:3px 8px;border-radius:12px;background:#eaf2ff;color:#0b5cab;font-size:12px;font-weight:700}.internal{color:var(--brand);font-weight:700;text-decoration:none}.small{font-size:13px;color:var(--muted)}
+footer{margin-top:60px;background:#101827;color:#dce5f0;padding:35px 0}.refbox{background:#f8fafc;border:1px solid var(--line);border-radius:14px;padding:18px;margin:18px 0}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto}.hero h1{font-size:32px}}
+@media print{.toc{display:none}.layout{display:block}.hero{background:#fff;color:#000;padding:20px 0}.hero p{color:#333}}
+</style>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@graph":[
+  {
+   "@type":"Article",
+   "@id":"https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html#article",
+   "headline":"GSTR-2B Complete Guide: ITC Reconciliation, Tables, Matching & Practical Issues",
+   "description":"Complete practical GSTR-2B guide covering ITC availability, B2B invoices, credit notes, amendments, RCM, imports, IMS, reconciliation and GSTR-3B working.",
+   "url":"https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html",
+   "mainEntityOfPage":{"@type":"WebPage","@id":"https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html"},
+   "publisher":{"@type":"Organization","name":"GST Reconciliation","url":"https://gstreconciliation.in/"},
+   "inLanguage":"en-IN",
+   "articleSection":"GST Reconciliation",
+   "keywords":["GSTR-2B","GSTR-2B reconciliation","ITC reconciliation","GSTR-3B","IMS"]
+  },
+  {
+   "@type":"BreadcrumbList",
+   "@id":"https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html#breadcrumb",
+   "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://gstreconciliation.in/"},
+    {"@type":"ListItem","position":2,"name":"GST Articles","item":"https://gstreconciliation.in/articles.html"},
+    {"@type":"ListItem","position":3,"name":"GSTR-2B Complete Practical Guide","item":"https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html"}
+   ]
+  },
+  {
+   "@type":"FAQPage",
+   "@id":"https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html#faqs",
+   "mainEntity":[
+    {"@type":"Question","name":"What is GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"GSTR-2B is a static, auto-drafted input tax credit statement generated from supplier, ISD and specified import data. It helps the recipient review ITC for GSTR-3B, but it does not replace the taxpayer's own eligibility assessment."}},
+    {"@type":"Question","name":"Do I have to file GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"No. GSTR-2B is a read-only ITC statement. The taxpayer uses it as a reconciliation and ITC working input and reports the relevant figures in GSTR-3B."}},
+    {"@type":"Question","name":"Does every invoice in GSTR-2B automatically qualify for ITC?","acceptedAnswer":{"@type":"Answer","text":"No. GSTR-2B indicates system-generated ITC availability based on specified data and scenarios. The taxpayer must separately check the conditions and restrictions under GST law and identify other ineligible credit."}},
+    {"@type":"Question","name":"Why is an invoice in my books but missing from GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"Common reasons include supplier not filing or filing after the relevant cut-off, wrong GSTIN, invoice reporting error, amendment, timing differences, or the document appearing in a later GSTR-2B. The exception should be tracked and followed up with the supplier."}},
+    {"@type":"Question","name":"Can I edit GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"No. GSTR-2B is read-only. Errors or omissions must be resolved through the supplier or other applicable source system; the recipient should not manually alter GSTR-2B."}},
+    {"@type":"Question","name":"What is the difference between GSTR-2A and GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"GSTR-2A is a dynamic statement that can change as suppliers upload or amend information. GSTR-2B is a static statement generated for a tax period using defined cut-off rules and is designed as a basis for ITC review."}},
+    {"@type":"Question","name":"What should I do when GSTR-2B is higher than my purchase register?","acceptedAnswer":{"@type":"Answer","text":"Do not claim the difference automatically. Identify unmatched supplier invoices, check whether they belong to the GSTIN and accounting period, investigate duplicate or wrong reporting, and assess legal eligibility before claiming ITC."}},
+    {"@type":"Question","name":"What should I do when my purchase register is higher than GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"Separate the unmatched invoices into timing differences, supplier filing issues, GSTIN or invoice-number errors, ineligible items and other exceptions. Follow up with suppliers and carry eligible missing credits into the appropriate period after they become available, subject to the applicable law and time limits."}},
+    {"@type":"Question","name":"Is RCM included in GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"Certain inward supplies liable to reverse charge reported by suppliers can appear in GSTR-2B, while reverse-charge tax on import of services is not part of GSTR-2B and is handled separately by the recipient."}},
+    {"@type":"Question","name":"Does GSTR-2B include imports?","acceptedAnswer":{"@type":"Answer","text":"GSTR-2B includes specified import-of-goods information received from ICEGATE, including imports from overseas and supplies from SEZ units/developers through the relevant Bill of Entry data. Import of services under RCM is handled separately."}},
+    {"@type":"Question","name":"What is IMS and how does it affect GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"The Invoice Management System provides recipient actions on relevant records. From the October 2024 GSTR-2B period, IMS actions can affect the draft/recomputed GSTR-2B. Action is not mandatory; records with no action are treated according to the system rules. Recipients should review records carefully before filing GSTR-3B."}},
+    {"@type":"Question","name":"How should I reconcile GSTR-2B with books?","acceptedAnswer":{"@type":"Answer","text":"Match supplier GSTIN, document number, document date, taxable value and tax amounts between the purchase register and GSTR-2B. Classify differences as matched, value mismatch, missing in 2B, extra in 2B, duplicate, amendment, credit note, RCM or other exception, then determine eligibility and the action required."}}
+   ]
+  }
+ ]
+}
+</script>
+</head>
+
+<body>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">GST Reconciliation • GSTR-2B Complete Practical Guide</div>
+<h1>GSTR-2B Complete Guide: ITC Reconciliation, Tables, Matching & Practical Issues</h1>
+<p>A practical, step-by-step GSTR-2B guide for accountants, finance teams, tax professionals and business owners. Learn what GSTR-2B actually means, how it is generated, how to read every important section, how to reconcile it with your Purchase Register, how to handle missing or mismatched invoices, how IMS affects the statement, and how to use the final working correctly for GSTR-3B.</p>
+<span class="pill">Complete 2B guide</span><span class="pill">Invoice-wise reconciliation</span><span class="pill">ITC eligibility</span><span class="pill">IMS explained</span><span class="pill">Practical examples</span><span class="pill">GSTR-3B working</span>
+</div></header>
+
+<div class="wrap layout">
+<aside class="toc"><strong>On this page</strong>
+<a href="#meaning">1. What is GSTR-2B?</a>
+<a href="#why">2. Why GSTR-2B matters</a>
+<a href="#generation">3. How GSTR-2B is generated</a>
+<a href="#cutoff">4. Cut-off dates & timing</a>
+<a href="#download">5. View & download 2B</a>
+<a href="#structure">6. Structure of GSTR-2B</a>
+<a href="#table3">7. Table 3 – ITC Available</a>
+<a href="#table4">8. Table 4 – ITC Not Available</a>
+<a href="#imports">9. Imports & ICEGATE</a>
+<a href="#ims">10. IMS and GSTR-2B</a>
+<a href="#eligibility">11. 2B vs legal ITC eligibility</a>
+<a href="#recon">12. 2B vs Purchase Register</a>
+<a href="#matching">13. Matching methodology</a>
+<a href="#issues">14. Practical issues</a>
+<a href="#3b">15. GSTR-2B to GSTR-3B</a>
+<a href="#examples">16. Worked examples</a>
+<a href="#controls">17. Internal controls</a>
+<a href="#checklist">18. Monthly checklist</a>
+<a href="#faq">19. FAQs</a>
+<a href="#references">20. References</a>
+</aside>
+
+<main class="content">
+<nav aria-label="Breadcrumb" class="small" style="margin-bottom:18px">
+<a class="internal" href="/">Home</a> → <a class="internal" href="/articles.html">GST Articles</a> → GSTR-2B Complete Practical Guide
+</nav>
+
+<section id="meaning"><h2>1. What is GSTR-2B?</h2>
+<p class="lead"><b>GSTR-2B is a system-generated, static statement that tells a registered taxpayer what inward-supply and specified import information has been reported into the GST system for that taxpayer and, under the system's specified scenarios, whether the related ITC is shown as available or not available.</b></p>
+<p>In simple language, think of GSTR-2B as your <b>monthly or quarterly purchase-side GST information statement</b>. It is not a return that you file. You do not enter your purchase invoices into GSTR-2B yourself. Instead, the statement is created from information reported by suppliers, Input Service Distributors (ISDs), certain other reporting sources and specified import data.</p>
+<p>The GST Portal describes GSTR-2B as an auto-drafted ITC statement and says it should be used by taxpayers to take the right ITC in the relevant sections of GSTR-3B. It is read-only and cannot be manually edited by the recipient.</p>
+<div class="note"><b>The most important concept:</b> GSTR-2B is not the same thing as your Purchase Register, and it is not a final legal certificate that every amount shown can be claimed. Your correct ITC working comes from <b>Books + GSTR-2B + supplier/document verification + GST law eligibility + reversals/reclaims + RCM/import checks</b>.</div>
+<p>If you understand that one principle, most GSTR-2B problems become much easier to control.</p>
+<h3>What GSTR-2B is — and what it is not</h3>
+<table><tr><th>GSTR-2B is</th><th>GSTR-2B is not</th></tr>
+<tr><td>A system-generated ITC statement.</td><td>A return that the recipient has to file.</td></tr>
+<tr><td>A source of supplier-reported invoice, debit-note, credit-note, ISD and specified import information.</td><td>Your complete Purchase Register.</td></tr>
+<tr><td>A static statement for a specified tax period based on cut-off rules.</td><td>A live statement that changes every time a supplier files something.</td></tr>
+<tr><td>An important input for GSTR-3B ITC working.</td><td>A substitute for checking Section 16, Section 17, blocked credit, reversals and other legal conditions.</td></tr>
+</table>
+<p>For the legal background of ITC and the underlying provisions, use the <a class="internal" href="/gst-act.html">GST Act — Section Wise Guide</a>.</p>
+</section>
+
+<section id="why"><h2>2. Why GSTR-2B is important in practical GST work</h2>
+<p>Many businesses make one of two opposite mistakes. Some claim every amount appearing in 2B without checking eligibility. Others reject every invoice missing from 2B without understanding supplier filing and timing. Both approaches can produce errors.</p>
+<div class="steps">
+<div class="step"><b>It helps identify supplier-reported ITC.</b> You can see documents that suppliers/ISDs have reported against your GSTIN and specified import information received through the system.</div>
+<div class="step"><b>It supports GSTR-3B preparation.</b> Several GSTR-3B ITC and RCM-related values are system-populated using GSTR-2B data.</div>
+<div class="step"><b>It creates a supplier compliance control.</b> If a genuine purchase is in your books but not in 2B, you can identify the supplier/document as an exception and follow up.</div>
+<div class="step"><b>It helps detect duplicates and credit-note effects.</b> Document-level matching can identify duplicate claims, amendments, credit notes and tax differences.</div>
+<div class="step"><b>It provides an audit trail.</b> Downloading and preserving period-wise 2B files helps support the ITC reconciliation performed for each tax period.</div>
+</div>
+<div class="warning"><b>Do not use the rule “2B = ITC claim”.</b> The correct rule is closer to: <b>2B = important system evidence → reconcile → determine legal eligibility → apply reversals/restrictions → claim the correct amount.</b></div>
+</section>
+
+<section id="generation"><h2>3. How GSTR-2B is generated</h2>
+<p>GSTR-2B is generated from information furnished by specified reporting parties. The GST Portal FAQ identifies supplier/other source data such as GSTR-1/1A, GSTR-5, GSTR-6 and specified import data received from ICEGATE. The precise documents included depend on the applicable reporting mechanism and cut-off for the statement.</p>
+<table><tr><th>Source</th><th>What can flow into GSTR-2B</th><th>Recipient's practical action</th></tr>
+<tr><td>Supplier GSTR-1 / GSTR-1A / applicable IFF data</td><td>B2B invoices, debit notes, credit notes, amendments and specified ECO records.</td><td>Match supplier GSTIN, document number, date, taxable value and tax.</td></tr>
+<tr><td>Supplier GSTR-5</td><td>Relevant supplies reported by a non-resident taxable person.</td><td>Check supplier, document and eligibility.</td></tr>
+<tr><td>ISD GSTR-6</td><td>ISD invoices, amendments and credit-note information.</td><td>Reconcile with ISD documents and distribution records.</td></tr>
+<tr><td>ICEGATE</td><td>Specified import-of-goods and SEZ Bill of Entry information.</td><td>Match BoE, port, date, taxable value and IGST.</td></tr>
+</table>
+<p>The key point is that <b>the recipient does not control the original upload</b>. If a supplier enters the wrong GSTIN, invoice number, tax amount or document type, your 2B may be wrong even though your books are correct.</p>
+</section>
+
+<section id="cutoff"><h2>4. GSTR-2B cut-off dates, generation and timing</h2>
+<p>For ordinary monthly recipients, GSTR-2B is made available for the tax period on the <b>14th day of the succeeding month</b>. Quarterly recipients also receive the relevant statement after the quarter according to the prescribed generation cycle. The important operational concept is the <b>cut-off window</b>: a supplier document does not necessarily appear in the 2B month corresponding to the invoice date.</p>
+<table><tr><th>Situation</th><th>What the accountant should understand</th></tr>
+<tr><td>Invoice dated in the month but supplier files later</td><td>The invoice can appear in a later 2B depending on when the supplier files and the applicable cut-off.</td></tr>
+<tr><td>Supplier files before the relevant cut-off</td><td>The document may be included in the relevant 2B period.</td></tr>
+<tr><td>Supplier files after the cut-off</td><td>The document may move to the next open 2B.</td></tr>
+<tr><td>Supplier amends an earlier invoice</td><td>The amendment can affect the 2B period in which the amendment is reflected; do not assume the original invoice period will be rewritten.</td></tr>
+</table>
+<div class="example"><b>Practical example:</b> Your supplier issues an invoice in April but files it in a later GSTR-1 that falls within the cut-off for May 2B. The invoice can therefore appear in May 2B rather than April 2B. The invoice date and the 2B period are not automatically the same thing.</div>
+<p>The GST Portal provides cut-off information in the GSTR-2B advisory. Always review the relevant period's system advisory when investigating a timing difference.</p>
+</section>
+
+<section id="download"><h2>5. How to view and download GSTR-2B</h2>
+<p>GSTR-2B is available through the GST Portal for eligible taxpayer types. The portal route is generally:</p>
+<div class="formula">Login → Services → Returns → Returns Dashboard → File Returns → GSTR-2B Tile → Select period → View / Download</div>
+<div class="steps">
+<div class="step"><b>Select the correct GSTIN.</b> This is critical for businesses having multiple registrations. Never reconcile one GSTIN's 2B against another GSTIN's books.</div>
+<div class="step"><b>Select the correct return period.</b> Check whether you are dealing with monthly or quarterly reporting.</div>
+<div class="step"><b>Review the summary first.</b> Look at ITC Available and ITC Not Available before opening individual documents.</div>
+<div class="step"><b>Download the detailed data.</b> Preserve Excel/JSON or other available downloads used for your reconciliation.</div>
+<div class="step"><b>Keep the same source file for your working.</b> If you refresh or re-download after an IMS recomputation or later system change, clearly identify which version was used for filing.</div>
+</div>
+<p>For large datasets, the portal provides search/download functionality. The GST Portal FAQ states that individual table-wise Excel downloads are available when the total number of documents across tables is up to 1,000; for larger volumes, advance search or the entire file can be used.</p>
+<div class="warning"><b>File-control tip:</b> Name your downloaded files systematically, for example <b>GSTIN_FY_Period_GSTR2B_Download_Date</b>. This prevents a common audit problem where the reconciliation was performed using a file that cannot later be identified.</div>
+</section>
+
+<section id="structure"><h2>6. Understand the structure of GSTR-2B before reconciling</h2>
+<p>Do not start reconciliation by opening thousands of invoice rows randomly. First understand the summary structure.</p>
+<table><tr><th>Area</th><th>Meaning</th><th>How to use it</th></tr>
+<tr><td>Table 3 – ITC Available</td><td>System-generated summary of credit shown as available, with Part A and Part B components.</td><td>Use as a starting point for eligible ITC and reversals, then perform your own legal review.</td></tr>
+<tr><td>Table 4 – ITC Not Available</td><td>System-generated summary of specified ITC not available under the scenarios identified by the system.</td><td>Do not include such credit in the relevant eligible ITC claim merely because it appears in the detailed data.</td></tr>
+<tr><td>Document-level details</td><td>Invoice, debit note, credit note, amendment, ISD, RCM and import details as applicable.</td><td>Use for invoice-wise reconciliation.</td></tr>
+<tr><td>Advisory / cut-off information</td><td>Explains generation and cut-off treatment.</td><td>Use when a supplier filing appears in an unexpected period.</td></tr>
+</table>
+<div class="note"><b>Best practice:</b> Reconcile the <b>summary to the detailed data</b> and then reconcile the <b>detailed data to your books</b>. A summary-only review can hide duplicate, amendment and supplier-level exceptions.</div>
+</section>
+
+<section id="table3"><h2>7. Table 3 — ITC Available: how to read it</h2>
+<p>Table 3 is the main ITC-available summary. The GST Portal describes Part A as credit that may be availed in the relevant GSTR-3B tables and Part B as credit that is to be reversed in the relevant GSTR-3B table.</p>
+<h3>Table 3 Part A Section I — All other ITC from registered persons other than RCM</h3>
+<p>This is usually the largest section for a normal business. It can contain supplier-reported B2B invoices, debit notes, amendments and specified ECO documents where the system shows the credit as available.</p>
+<table><tr><th>Document type</th><th>What you should check</th></tr>
+<tr><td>B2B Invoice</td><td>GSTIN, invoice number, invoice date, taxable value, IGST/CGST/SGST, place of supply and whether the purchase actually belongs to your business.</td></tr>
+<tr><td>B2B Debit Note</td><td>Original reference, tax increase, document date and whether the additional credit is valid and eligible.</td></tr>
+<tr><td>Invoice Amendment</td><td>Compare original and amended details; identify whether the change increases or reduces ITC.</td></tr>
+<tr><td>Debit Note Amendment</td><td>Check original debit note and the differential effect.</td></tr>
+<tr><td>ECO Document</td><td>Identify the applicable e-commerce mechanism and reconcile with the underlying transaction records.</td></tr>
+</table>
+
+<h3>Table 3 Part A Section II — Inward supplies from ISD</h3>
+<p>These are credits distributed through an Input Service Distributor. Reconcile them with the ISD invoice and your internal allocation records. If the ISD has amended a document, do not treat the amended figure as a completely new invoice without checking the original.</p>
+
+<h3>Table 3 Part A Section III — Inward supplies liable to reverse charge</h3>
+<p>This section contains specified RCM supplies reported by suppliers. It is particularly important because <b>the tax liability and ITC are two separate steps</b>.</p>
+<div class="formula">Supplier reports RCM → appears in 2B where applicable → determine RCM liability → pay RCM → assess ITC eligibility → report eligible ITC in GSTR-3B</div>
+<div class="warning"><b>Do not treat an RCM entry in 2B as “free ITC”.</b> The recipient may have to discharge the RCM tax first, and the credit is subject to the applicable conditions.</div>
+
+<h3>Table 3 Part A Section IV — Import of goods</h3>
+<p>This section contains specified IGST paid on import of goods based on Bill of Entry data received from ICEGATE, including relevant SEZ imports. Reconcile it with customs records and the Bill of Entry rather than only with the purchase ledger.</p>
+
+<h3>Table 3 Part B — Credit notes and amendments</h3>
+<p>Credit notes and their amendments can reduce ITC. This is one of the most commonly misunderstood areas because a credit note may appear separately from the original invoice. Your reconciliation should link the credit note to the original purchase wherever possible.</p>
+</section>
+
+<section id="table4"><h2>8. Table 4 — ITC Not Available: what it means</h2>
+<p>Table 4 shows specified scenarios where ITC is not available in the system-generated statement. The GST Portal identifies, among others, invoices/debit notes affected by the Section 16(4) time restriction and certain place-of-supply situations.</p>
+<table><tr><th>Area</th><th>Practical meaning</th><th>Action</th></tr>
+<tr><td>Table 4 Part A Section I</td><td>Specified non-available ITC relating to registered-person supplies other than RCM.</td><td>Do not simply move it into eligible ITC. Investigate the reason and legal position.</td></tr>
+<tr><td>Table 4 Part A Section II</td><td>Specified non-available ISD credit.</td><td>Review the ISD document and reason for non-availability.</td></tr>
+<tr><td>Table 4 Part A Section III</td><td>Specified non-available RCM credit.</td><td>RCM tax may still need to be paid; ITC availability must be assessed separately.</td></tr>
+<tr><td>Table 4 Part B</td><td>Credit notes and amendments relating to not-available credit.</td><td>Understand the reversal/reduction impact and avoid duplicate adjustments.</td></tr>
+</table>
+<div class="danger"><b>Very important:</b> The GST system's “ITC Not Available” classification is not a complete list of every possible legal reason why ITC may be unavailable. For example, other provisions can restrict credit. You must independently review the GST Act, Rules and transaction facts.</div>
+<p>For the underlying legal provisions, see the <a class="internal" href="/gst-act.html">GST Act Section Wise Guide</a> and your detailed <a class="internal" href="/articles/input-tax-credit-itc-complete-guide.html">Input Tax Credit Practical Guide</a>.</p>
+</section>
+
+<section id="imports"><h2>9. Imports and ICEGATE: how to handle missing import ITC</h2>
+<p>GSTR-2B contains specified import-of-goods information received from ICEGATE. This includes relevant imports from overseas and inward supplies of goods from SEZ units/developers through Bill of Entry information.</p>
+<table><tr><th>Import record</th><th>Reconciliation source</th><th>Control</th></tr>
+<tr><td>Overseas import</td><td>Bill of Entry + ICEGATE + customs records + books</td><td>Match BoE number/date, port, taxable value and IGST.</td></tr>
+<tr><td>SEZ goods</td><td>BoE / customs records + purchase records</td><td>Verify GSTIN and IGST details.</td></tr>
+<tr><td>BoE amendment</td><td>Original and amended BoE</td><td>Check differential effect rather than duplicating the import.</td></tr>
+<tr><td>GSTIN amendment</td><td>Incorrect GSTIN entry + corrected GSTIN entry</td><td>Ensure reversal and new credit are not both claimed.</td></tr>
+</table>
+<h3>If import IGST is not appearing</h3>
+<div class="steps">
+<div class="step"><b>Check the BoE.</b> Confirm port code, BoE number, date, GSTIN and IGST amount.</div>
+<div class="step"><b>Check the reference date.</b> Import data can take time to move from ICEGATE to the GST system.</div>
+<div class="step"><b>Use the GST Portal's Search BoE functionality where applicable.</b></div>
+<div class="step"><b>Do not create a fake supplier invoice in the Purchase Register merely to force a match.</b> Keep the customs/BoE evidence as the source document.</div>
+</div>
+<p>Import of services under RCM is different: the GST Portal's GSTR-2B guidance states that reverse-charge credit on import of services is not part of GSTR-2B and continues to be handled separately in GSTR-3B.</p>
+</section>
+
+<section id="ims"><h2>10. Invoice Management System (IMS) and GSTR-2B</h2>
+<p>IMS is important for businesses performing serious invoice-level reconciliation because it introduces recipient actions on relevant records. GSTN's IMS FAQs state that IMS was launched from the October 2024 GSTR-2B period and that the first draft GSTR-2B based on IMS actions was made available for the October 2024 period.</p>
+<h3>What actions can mean in practice</h3>
+<table><tr><th>Situation</th><th>Practical meaning</th></tr>
+<tr><td>Accept / no action</td><td>The record can flow according to the system rules into the draft/recomputed 2B.</td></tr>
+<tr><td>Reject</td><td>Should be used carefully where the record does not pertain to the recipient or has an error that cannot appropriately be handled through a credit/debit-note route.</td></tr>
+<tr><td>Change action later</td><td>GSTN FAQs allow changes/recomputation within the permitted process before the relevant GSTR-3B is filed.</td></tr>
+<tr><td>Credit note received</td><td>Review the commercial and accounting effect; do not reject a genuine credit note merely because it reduces ITC.</td></tr>
+</table>
+<div class="warning"><b>Practical control:</b> Never delegate IMS action blindly to someone who only compares invoice numbers. The reviewer should understand whether the invoice belongs to the company, whether the tax is correct, whether the purchase is genuine, and whether the credit note/amendment is valid.</div>
+<p>IMS does not remove the need for a Purchase Register reconciliation. Instead, it gives the recipient another control layer between supplier reporting and final ITC claim.</p>
+</section>
+
+<section id="eligibility"><h2>11. GSTR-2B availability is not the same as legal ITC eligibility</h2>
+<p>This distinction is essential. A taxpayer should not say, “The invoice is in 2B, therefore ITC is definitely allowed.” GSTN itself cautions that there may be other scenarios in which ITC is not available even though the system does not classify the credit as unavailable.</p>
+<div class="formula">2B Availability → Invoice verification → Section 16 conditions → Section 17 restrictions / blocked credit → Business-use test → Time limit → Reversal/reclaim review → Final eligible ITC</div>
+<h3>Questions to ask before claiming an invoice</h3>
+<table><tr><th>Question</th><th>Why it matters</th></tr>
+<tr><td>Does the invoice belong to our GSTIN?</td><td>Wrong GSTIN can produce a false match.</td></tr>
+<tr><td>Did we actually receive the goods/services?</td><td>Books/2B alone should not replace transaction verification.</td></tr>
+<tr><td>Is the invoice genuine and correctly reported?</td><td>Duplicate or erroneous reporting must be investigated.</td></tr>
+<tr><td>Is ITC legally eligible?</td><td>2B does not identify every blocked or restricted credit category.</td></tr>
+<tr><td>Is the time limit satisfied?</td><td>Time-barred ITC cannot be claimed merely because an invoice appears in a statement.</td></tr>
+<tr><td>Is there a credit note or reversal?</td><td>Net eligible credit may be lower than invoice-level gross credit.</td></tr>
+<tr><td>Is RCM applicable?</td><td>RCM tax payment and ITC treatment need separate review.</td></tr>
+<tr><td>Is there a POS/tax-type issue?</td><td>Wrong IGST/CGST/SGST or POS can make the apparent credit unusable or require correction.</td></tr>
+</table>
+</section>
+
+<section id="recon"><h2>12. How to reconcile GSTR-2B with your Purchase Register</h2>
+<p>A professional 2B reconciliation should not be limited to comparing the grand total of ITC. The real control happens at the <b>document level</b>.</p>
+<h3>The recommended reconciliation flow</h3>
+<div class="formula">Purchase Register → Clean master data → GSTR-2B import → Invoice matching → Value/tax validation → Exception classification → Supplier follow-up → Eligibility review → GSTR-3B ITC working</div>
+<table><tr><th>Field</th><th>Primary matching purpose</th></tr>
+<tr><td>Supplier GSTIN</td><td>Ensures the invoice belongs to the correct supplier and registration.</td></tr>
+<tr><td>Invoice / document number</td><td>Primary document identifier; normalize spaces, slashes and common formatting differences carefully.</td></tr>
+<tr><td>Invoice date</td><td>Helps identify period and duplicate/amendment issues.</td></tr>
+<tr><td>Taxable value</td><td>Identifies commercial value differences.</td></tr>
+<tr><td>IGST</td><td>Checks inter-State/import tax amount.</td></tr>
+<tr><td>CGST + SGST/UTGST</td><td>Checks intra-State tax reporting.</td></tr>
+<tr><td>Document type</td><td>Separates invoice, debit note, credit note and amendment effects.</td></tr>
+<tr><td>RCM flag</td><td>Prevents ordinary ITC and RCM from being mixed.</td></tr>
+</table>
+<h3>Suggested reconciliation status codes</h3>
+<table><tr><th>Status</th><th>Meaning</th><th>Action</th></tr>
+<tr><td><span class="badge">Matched</span></td><td>Key fields agree within the defined tolerance.</td><td>Proceed to legal eligibility review.</td></tr>
+<tr><td><span class="badge">Value Mismatch</span></td><td>Document exists but taxable value or tax differs.</td><td>Compare invoice, 2B and accounting entry; investigate.</td></tr>
+<tr><td><span class="badge">Missing in 2B</span></td><td>Purchase Register document is absent from 2B.</td><td>Check supplier filing, GSTIN, cut-off and later periods.</td></tr>
+<tr><td><span class="badge">Extra in 2B</span></td><td>2B has a document not found in books.</td><td>Investigate unrecorded purchase, wrong GSTIN or supplier error.</td></tr>
+<tr><td><span class="badge">Duplicate</span></td><td>Same document appears more than once or has been duplicated in books.</td><td>Trace original/amendment and prevent double claim.</td></tr>
+<tr><td><span class="badge">Credit Note</span></td><td>Supplier credit note reduces the purchase/ITC position.</td><td>Link to original invoice and account for reduction.</td></tr>
+<tr><td><span class="badge">Amendment</span></td><td>Supplier has changed a previously reported document.</td><td>Compare original vs amended record and take only the correct net effect.</td></tr>
+<tr><td><span class="badge">RCM</span></td><td>Reverse-charge transaction.</td><td>Track tax payment separately from ITC claim.</td></tr>
+<tr><td><span class="badge">Import</span></td><td>Bill of Entry/SEZ import.</td><td>Match customs data rather than supplier invoice.</td></tr>
+</table>
+</section>
+
+<section id="matching"><h2>13. A practical invoice-matching method anyone can follow</h2>
+<p>If you are doing the reconciliation in Excel, ERP or a GST reconciliation tool, use a structured matching hierarchy instead of manually checking every row.</p>
+<div class="steps">
+<div class="step"><b>Step 1 — Standardise GSTIN.</b> Convert GSTIN to a consistent text format and remove accidental spaces.</div>
+<div class="step"><b>Step 2 — Standardise invoice number.</b> Keep the original number but create a matching key that handles harmless formatting differences such as extra spaces where appropriate.</div>
+<div class="step"><b>Step 3 — Match GSTIN + invoice number.</b> This should identify the majority of normal B2B transactions.</div>
+<div class="step"><b>Step 4 — Validate tax amounts.</b> A document match does not mean the value is correct. Compare taxable value and each tax component.</div>
+<div class="step"><b>Step 5 — Check date and document type.</b> Distinguish an invoice from a credit note or amendment.</div>
+<div class="step"><b>Step 6 — Apply tolerance carefully.</b> Small rounding differences may be acceptable for an internal matching rule, but material differences must be investigated.</div>
+<div class="step"><b>Step 7 — Separate legal eligibility from matching.</b> A matched invoice can still be blocked, restricted, time-barred or otherwise ineligible.</div>
+<div class="step"><b>Step 8 — Create an exception report.</b> Send only genuine exceptions to the purchase/vendor team instead of asking them to review every invoice.</div>
+</div>
+<div class="note"><b>Best practice:</b> Never overwrite the original GSTR-2B file. Import it into your reconciliation working and preserve the original downloaded file as evidence.</div>
+</section>
+
+<section id="issues"><h2>14. Most common practical GSTR-2B issues and how to solve them</h2>
+
+<h3>Issue 1 — Purchase invoice is in books but missing from 2B</h3>
+<p>First check whether the supplier filed the invoice in the correct GSTIN and whether the filing falls inside the relevant 2B cut-off. Then check later 2B periods. Ask the supplier for filing evidence only after checking your own data.</p>
+<div class="example"><b>Recommended exception note:</b> “Invoice INV-104 dated 18-Apr, supplier GSTIN XXXXX, recorded in books on 22-Apr, absent in April 2B. Supplier filing/cut-off to be verified. Recheck May 2B before final ITC decision.”</div>
+
+<h3>Issue 2 — Invoice appears in 2B but is not in books</h3>
+<p>This can indicate an unrecorded purchase, wrong GSTIN used by another entity, supplier error, duplicate reporting or an invoice received but not yet processed. Do not claim it merely because it exists in 2B.</p>
+
+<h3>Issue 3 — Invoice number differs slightly</h3>
+<p>Examples include spaces, hyphens, leading zeros or different punctuation. Your matching logic can normalise harmless formatting, but the original invoice should still be verified before treating it as a match.</p>
+
+<h3>Issue 4 — Taxable value matches but tax does not</h3>
+<p>Check tax rate, place of supply, amendment, credit/debit note and whether one tax component was entered incorrectly. A value-only match is not sufficient.</p>
+
+<h3>Issue 5 — GSTR-2B shows a credit note</h3>
+<p>Find the original invoice and determine whether ITC was already claimed. If yes, ensure the credit-note reduction is accounted for and not ignored. If the credit note is genuine, rejecting it in IMS merely to preserve ITC can create a separate compliance problem.</p>
+
+<h3>Issue 6 — Same invoice appears through original and amendment</h3>
+<p>Do not add the original and amended values together blindly. Understand the differential effect. GSTN guidance explains that summary amendment values represent the difference between amended and original values, while document details show the revised document information.</p>
+
+<h3>Issue 7 — 2B contains negative values</h3>
+<p>Negative values can arise from amendments or other document adjustments. Never treat a negative row as an ordinary purchase. Trace the original document and understand the net effect on ITC.</p>
+
+<h3>Issue 8 — RCM appears in 2B</h3>
+<p>Separate the <b>tax liability</b> from the <b>ITC</b>. Confirm that RCM tax is correctly identified and paid as required before taking eligible credit.</p>
+
+<h3>Issue 9 — Import IGST is missing</h3>
+<p>Reconcile the Bill of Entry and ICEGATE data. Check reference dates and use the GST Portal's Bill of Entry search functionality where applicable. Do not fabricate a supplier invoice to make the import appear in a purchase register.</p>
+
+<h3>Issue 10 — ITC appears available but is legally blocked</h3>
+<p>This is one of the most important controls. GSTR-2B cannot identify every possible legal restriction. Maintain a separate blocked-ITC and eligibility working.</p>
+
+<h3>Issue 11 — Supplier files after cut-off</h3>
+<p>The invoice can appear in a later 2B. Keep a “Missing in current 2B — carry forward for monitoring” status rather than permanently writing off the credit.</p>
+
+<h3>Issue 12 — Multiple GST registrations</h3>
+<p>Every GSTIN must have a separate reconciliation. A supplier may have correctly reported an invoice to GSTIN A when your accounts team expected GSTIN B. This is a GSTIN master-data problem, not merely a reconciliation problem.</p>
+</section>
+
+<section id="3b"><h2>15. How GSTR-2B connects with GSTR-3B</h2>
+<p>GSTR-2B is an important source for system auto-population in GSTR-3B. The GST Portal identifies auto-population for several GSTR-3B fields, including 3.1(d), 4A(1), 4A(3), 4A(4), 4A(5) and 4D(2), subject to the applicable system logic and period.</p>
+<table><tr><th>GSTR-3B area</th><th>GSTR-2B relationship</th><th>Accountant's control</th></tr>
+<tr><td>3.1(d)</td><td>Specified inward supplies liable to RCM.</td><td>Reconcile RCM taxable value and tax with the RCM register.</td></tr>
+<tr><td>4A(1)</td><td>Specified import-of-goods ITC.</td><td>Match with BoE/ICEGATE records.</td></tr>
+<tr><td>4A(3)</td><td>Specified RCM ITC on inward supplies.</td><td>Confirm RCM tax payment and eligibility.</td></tr>
+<tr><td>4A(4)</td><td>ISD ITC.</td><td>Match ISD records.</td></tr>
+<tr><td>4A(5)</td><td>Other eligible ITC from registered-person supplies, after system treatment of relevant notes/amendments.</td><td>Reconcile to Purchase Register and apply legal eligibility.</td></tr>
+<tr><td>4D(2)</td><td>Specified ITC identified as not available under the system rules.</td><td>Do not claim it as ordinary eligible ITC; investigate any additional legal restrictions separately.</td></tr>
+</table>
+<div class="danger"><b>Portal auto-population is a control, not an approval.</b> If your approved working differs from the portal value, investigate the difference. Do not change the return merely to make it agree with the portal or ignore a difference merely because the portal permits editing.</div>
+<p>The GST Portal also states that the auto-populated GSTR-3B values can be edited, with edited fields highlighted. The correct approach is to maintain a documented reason and reconciliation for any difference.</p>
+</section>
+
+<section id="examples"><h2>16. Worked practical examples</h2>
+
+<div class="example"><b>Example 1 — Invoice in books, missing from 2B.</b><br>
+Purchase Register: ₹5,00,000 + GST ₹90,000. April 2B: not found.<br>
+<b>Correct approach:</b> Check supplier GSTIN, invoice number, supplier filing date and May/next 2B. If the supplier has not reported it, follow up. Do not mark the invoice permanently ineligible solely because it is absent from one 2B.</div>
+
+<div class="example"><b>Example 2 — 2B higher than books.</b><br>
+2B shows GST ₹2,00,000 for Supplier A. Books show ₹1,50,000.<br>
+<b>Correct approach:</b> Identify the ₹50,000 difference invoice-wise. It may be an unrecorded invoice, debit note, amendment or supplier error. Do not claim the ₹50,000 until the transaction and eligibility are established.</div>
+
+<div class="example"><b>Example 3 — Invoice matches but ITC is blocked.</b><br>
+Invoice is correctly reported and appears in 2B for GST ₹36,000. The expense is nevertheless a category for which ITC is restricted under the applicable GST provisions.<br>
+<b>Correct approach:</b> Mark “Matched — Ineligible” rather than “Matched — Claim”.</div>
+
+<div class="example"><b>Example 4 — Credit note after original ITC claim.</b><br>
+Original invoice ITC = ₹1,00,000. Supplier later reports a credit note reducing tax by ₹20,000.<br>
+<b>Correct approach:</b> Link the credit note to the original invoice, determine the correct reduction and ensure the same ₹20,000 is not ignored or reversed twice.</div>
+
+<div class="example"><b>Example 5 — RCM.</b><br>
+A supplier-reported RCM transaction appears in 2B with tax ₹18,000.<br>
+<b>Correct approach:</b> Identify the RCM liability, ensure payment/reporting is correct, then separately determine whether ₹18,000 is eligible for ITC. Do not treat the 2B appearance as the payment itself.</div>
+
+<div class="example"><b>Example 6 — Import.</b><br>
+Books show import IGST ₹3,60,000 but the amount is absent from 2B.<br>
+<b>Correct approach:</b> Check BoE, GSTIN, reference date and ICEGATE/GST Portal status. Keep customs evidence and investigate the data flow before deciding the ITC treatment.</div>
+
+<div class="example"><b>Example 7 — Wrong GSTIN.</b><br>
+Supplier reports your company's invoice to GSTIN A instead of GSTIN B.<br>
+<b>Correct approach:</b> Do not claim it under GSTIN B simply because the purchase belongs to the company. The supplier needs to correct the reporting as permitted, and the recipient should preserve the correction trail.</div>
+</section>
+
+<section id="controls"><h2>17. Internal controls for a professional GSTR-2B process</h2>
+<table><tr><th>Control</th><th>Responsible activity</th><th>Evidence to preserve</th></tr>
+<tr><td>GSTIN master control</td><td>Verify supplier and recipient GSTIN mapping before reconciliation.</td><td>Approved GSTIN master.</td></tr>
+<tr><td>2B download control</td><td>Download each period and preserve the original file.</td><td>Original 2B Excel/JSON and download log.</td></tr>
+<tr><td>Invoice matching</td><td>Match supplier GSTIN + document number and validate values/tax.</td><td>Invoice-level reconciliation.</td></tr>
+<tr><td>Missing 2B control</td><td>Follow up with suppliers and monitor future 2B periods.</td><td>Exception tracker and vendor responses.</td></tr>
+<tr><td>Extra 2B control</td><td>Investigate invoices not in books.</td><td>Exception resolution note.</td></tr>
+<tr><td>Credit-note control</td><td>Link credit notes to original invoices and verify ITC reduction.</td><td>Credit-note mapping.</td></tr>
+<tr><td>Amendment control</td><td>Review original vs amended values and calculate net effect.</td><td>Amendment comparison.</td></tr>
+<tr><td>RCM control</td><td>Reconcile 2B RCM with expense/RCM register and payment.</td><td>RCM register + payment evidence.</td></tr>
+<tr><td>Import control</td><td>Match BoE/ICEGATE with 2B and books.</td><td>BoE and import reconciliation.</td></tr>
+<tr><td>Eligibility control</td><td>Review blocked, restricted, time-barred and otherwise ineligible ITC.</td><td>Eligibility/reversal working.</td></tr>
+<tr><td>IMS control</td><td>Review accept/reject actions before GSTR-3B.</td><td>IMS exception/action report.</td></tr>
+<tr><td>3B control</td><td>Compare final ITC working with portal auto-population.</td><td>GSTR-2B → GSTR-3B bridge.</td></tr>
+</table>
+</section>
+
+<section id="checklist"><h2>18. Monthly GSTR-2B reconciliation checklist</h2>
+<div class="success"><ul>
+<li>Correct GSTIN selected before downloading 2B.</li>
+<li>Correct monthly/quarterly period selected.</li>
+<li>Original GSTR-2B file downloaded and preserved.</li>
+<li>2B summary reviewed before invoice-level reconciliation.</li>
+<li>Purchase Register is closed or clearly identified as provisional.</li>
+<li>Supplier GSTIN and invoice-number matching completed.</li>
+<li>Taxable value and tax components checked.</li>
+<li>Missing-in-2B invoices identified and monitored.</li>
+<li>Extra-in-2B invoices investigated.</li>
+<li>Duplicate invoices identified.</li>
+<li>Credit notes linked to original invoices.</li>
+<li>Amendments reviewed for differential effect.</li>
+<li>RCM transactions separately reconciled.</li>
+<li>Import IGST/BoE records separately reconciled.</li>
+<li>IMS actions reviewed where applicable.</li>
+<li>Blocked/restricted/time-barred ITC separately reviewed.</li>
+<li>Rule-based reversals and reclaims incorporated.</li>
+<li>GSTR-2B total reconciled to the invoice-level working.</li>
+<li>GSTR-2B working reconciled to GSTR-3B.</li>
+<li>All material exceptions have an owner and resolution status.</li>
+<li>Final reconciliation and supporting evidence approved before filing.</li>
+</ul></div>
+</section>
+
+<section id="faq"><h2>19. Frequently asked questions about GSTR-2B</h2>
+
+<h3>What is GSTR-2B?</h3>
+<p>GSTR-2B is a static, auto-drafted ITC statement generated from specified supplier, ISD and import information. It is primarily used as a purchase-side ITC control and as an input to GSTR-3B preparation.</p>
+
+<h3>Do I have to file GSTR-2B?</h3>
+<p>No. GSTR-2B is a read-only statement. You do not file it. You use it to review and reconcile ITC and related transactions.</p>
+
+<h3>Can I edit or add an invoice to GSTR-2B?</h3>
+<p>No. The recipient cannot manually add or edit an invoice in GSTR-2B. If an invoice is missing or incorrect, resolve the issue through the supplier/reporting source or the applicable correction mechanism.</p>
+
+<h3>What is the difference between GSTR-2A and GSTR-2B?</h3>
+<p>GSTR-2A is dynamic and can change as suppliers upload or amend information. GSTR-2B is a static statement generated using defined cut-off rules for a tax period. For controlled ITC reconciliation, 2B provides the period-based statement used for GSTR-3B working.</p>
+
+<h3>Does every invoice in GSTR-2B qualify for ITC?</h3>
+<p>No. You still have to test legal eligibility, including applicable conditions, restrictions, blocked credits, time limits, place-of-supply issues, business-use requirements and reversals. GSTN specifically cautions that other legal restrictions may exist beyond the scenarios identified by the system.</p>
+
+<h3>Why is my invoice missing from GSTR-2B?</h3>
+<p>Common reasons are supplier non-filing, filing after the relevant cut-off, wrong GSTIN, incorrect document reporting, amendment, timing difference or the invoice appearing in a later GSTR-2B. Check the next open 2B before concluding that the credit is permanently unavailable.</p>
+
+<h3>Why is an invoice in 2B but not in my Purchase Register?</h3>
+<p>It may be an unrecorded purchase, a document received but not booked, supplier error, wrong GSTIN or duplicate reporting. Investigate before claiming ITC.</p>
+
+<h3>What if GSTR-2B is higher than my books?</h3>
+<p>Reconcile the excess invoice-wise. Never claim the excess simply because the portal shows it. Establish that the purchase belongs to the business, is recorded or appropriately supported, and is legally eligible.</p>
+
+<h3>What if my Purchase Register is higher than GSTR-2B?</h3>
+<p>Classify the difference as timing, supplier filing issue, GSTIN/document-number error, amendment, ineligible item or other exception. Follow up with the supplier and monitor subsequent 2B periods where appropriate.</p>
+
+<h3>Is RCM included in GSTR-2B?</h3>
+<p>Specified supplier-reported RCM supplies can appear in GSTR-2B. However, reverse-charge tax on import of services is not part of GSTR-2B and is handled separately by the recipient. Always distinguish the RCM liability from the subsequent ITC.</p>
+
+<h3>Does GSTR-2B contain import data?</h3>
+<p>Yes, specified import-of-goods information is received from ICEGATE, including relevant Bill of Entry information for imports and SEZ supplies. Import of services under RCM is handled separately.</p>
+
+<h3>What is IMS and why should I care?</h3>
+<p>IMS gives recipients a structured mechanism to review relevant supplier records and take actions that can affect the draft/recomputed GSTR-2B. It should be treated as an additional reconciliation control, not as a replacement for books, invoice verification and ITC eligibility analysis.</p>
+
+<h3>Should I reconcile GSTR-2B with books every month?</h3>
+<p>Yes. GSTN advises taxpayers to reconcile GSTR-2B with their own records and books, avoid double credit, reverse credit as required and ensure RCM tax is paid. A monthly process is much safer than trying to reconstruct several years of mismatches later.</p>
+
+<h3>Can I claim ITC if an invoice is missing from 2B?</h3>
+<p>The answer depends on the applicable GST provisions and the facts of the transaction. Do not use absence from 2B as the only legal test, and do not claim without a documented eligibility analysis. Supplier reporting, statutory conditions and applicable time limits should all be considered.</p>
+
+<h3>What should I do with a credit note in 2B?</h3>
+<p>Link it to the original invoice, determine whether the original ITC was claimed, assess the commercial/accounting impact and ensure the reduction is reflected correctly without duplicate reversal.</p>
+
+<h3>How should I treat amendments in 2B?</h3>
+<p>Compare the original and amended document. GSTN explains that amendment summaries can represent the differential amount, while document details show the revised information. Your reconciliation should therefore focus on the net effect rather than simply adding both rows.</p>
+
+<h3>How can I use GSTR-2B for GSTR-3B?</h3>
+<p>Use the 2B as the starting system-generated input, reconcile it with books, apply legal eligibility and reversals, review RCM/import/ISD separately, compare the approved working with portal auto-population and document any differences before filing.</p>
+
+</section>
+
+<section id="references"><h2>20. GST legal and practical references</h2>
+<p>This article is designed around a practical internal knowledge-base model. The primary legal explanation on this website should remain the <a class="internal" href="/gst-act.html">GST Act — Section Wise Guide</a>, with topic-specific articles linked around it.</p>
+<div class="refbox"><table><tr><th>Topic</th><th>Internal reference</th><th>Status</th></tr>
+<tr><td>CGST Act section-wise provisions</td><td><a class="internal" href="/gst-act.html">GST Act — Section Wise Guide</a></td><td><span class="badge">Available</span></td></tr>
+<tr><td>Input Tax Credit</td><td><a class="internal" href="/articles/input-tax-credit-itc-complete-guide.html">Input Tax Credit Practical Guide</a></td><td><span class="badge">Available</span></td></tr>
+<tr><td>GSTR-3B</td><td><a class="internal" href="/articles/gstr-3b-complete-practical-guide.html">GSTR-3B Complete Practical Guide</a></td><td><span class="badge">Available</span></td></tr>
+<tr><td>GSTR-1</td><td><a class="internal" href="/articles/gstr-1-complete-guide.html">GSTR-1 Complete Practical Guide</a></td><td><span class="badge">Use actual URL if different</span></td></tr>
+<tr><td>RCM</td><td><a class="internal" href="/reverse-charge-mechanism-rcm-gst.html">Reverse Charge Mechanism Practical Guide</a></td><td><span class="badge">Available</span></td></tr>
+</table></div>
+
+<h3>Official GST Portal material used for the concepts in this article</h3>
+<p>The GST Portal's GSTR-2B FAQ and advisory explain that GSTR-2B is a static auto-drafted ITC statement, its generation/cut-off approach, its tables, download facilities, import data, ITC-not-available scenarios and its relationship with GSTR-3B. The GST Portal's IMS FAQs explain the October 2024 introduction of IMS-linked GSTR-2B processing and the recipient action/recomputation process.</p>
+
+<div class="note"><b>Recommended working architecture:</b> <b>Purchase Register → GSTR-2B → Invoice matching → Exception resolution → ITC eligibility → RCM/import/ISD review → Reversal/reclaim → GSTR-3B → Post-filing reconciliation.</b> Following this chain is much safer than simply comparing two grand totals.</div>
+
+<h3>Important distinction for users</h3>
+<p>A reconciliation result such as <b>“Matched”</b> answers the question <i>“Does my document agree with the system data?”</i>. It does not automatically answer <i>“Is the ITC legally claimable?”</i>. Your GST working should therefore maintain separate columns for <b>reconciliation status</b> and <b>ITC eligibility status</b>.</p>
+
+<table><tr><th>Reconciliation status</th><th>Eligibility status</th><th>Final action</th></tr>
+<tr><td>Matched</td><td>Eligible</td><td>Consider in eligible ITC working.</td></tr>
+<tr><td>Matched</td><td>Ineligible</td><td>Do not claim; document reason.</td></tr>
+<tr><td>Missing in 2B</td><td>Potentially eligible</td><td>Track supplier/cut-off and applicable legal treatment.</td></tr>
+<tr><td>Value mismatch</td><td>Unknown</td><td>Investigate before claim.</td></tr>
+<tr><td>Credit note</td><td>Eligible after netting</td><td>Reduce/adjust as applicable and avoid duplicate reversal.</td></tr>
+<tr><td>Amendment</td><td>Eligible after correction</td><td>Use net differential effect.</td></tr>
+<tr><td>RCM</td><td>Eligible after tax/payment conditions</td><td>Pay RCM and separately verify ITC.</td></tr>
+</table>
+</section>
+
+<section aria-label="Related GST guides">
+<h2>Related GST reconciliation resources</h2>
+<p>Continue your GST compliance research with the <a class="internal" href="/articles/gstr-3b-complete-practical-guide.html">GSTR-3B Complete Practical Guide</a>, the <a class="internal" href="/articles/input-tax-credit-itc-complete-guide.html">Input Tax Credit Practical Guide</a>, the <a class="internal" href="/reverse-charge-mechanism-rcm-gst.html">Reverse Charge Mechanism Guide</a> and the <a class="internal" href="/gst-act.html">GST Act Section Wise Guide</a>.</p>
+</section>
+
+<div class="note"><b>Disclaimer:</b> This guide is for educational and practical working purposes. GST law, rules, notifications, circulars, advisories, return forms, IMS functionality and portal processes can change. Apply the provisions and portal procedure relevant to the specific tax period and transaction, and maintain appropriate supporting records.</div>
+</main></div>
+
+<footer><div class="wrap"><b>GST Reconciliation</b><br>Practical GST knowledge, reconciliation resources and compliance tools.</div></footer>
+</body>
+</html>
