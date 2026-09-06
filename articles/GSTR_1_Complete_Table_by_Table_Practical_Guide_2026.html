@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GSTR-1 Return Filing Guide: Complete Table-wise Explanation, Examples & Mistakes</title>
+<meta name="description" content="Complete practical GSTR-1 return filing guide covering every major table, B2B, B2C, exports, credit notes, advances, HSN, documents issued, e-commerce supplies, GSTR-1A, reconciliation, corrections and filing controls.">
+<meta name="keywords" content="GSTR 1, GSTR-1 return filing, GSTR 1 table wise, GSTR 1 filing, GSTR 1 guide, GSTR 1 B2B, GSTR 1 B2C, GSTR 1 export, GSTR 1 HSN, GSTR 1 credit note, GSTR 1A, GSTR 1 mistakes, GSTR 1 reconciliation, GSTR 1 due date, GST return filing">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<link rel="canonical" href="https://gstreconciliation.in/articles/gstr-1-complete-table-by-table-guide.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="GSTR-1 Return Filing Guide: Complete Table-wise Explanation, Examples & Mistakes">
+<meta property="og:description" content="A practical GSTR-1 guide covering B2B, B2C, exports, credit notes, advances, HSN, documents issued, e-commerce supplies, GSTR-1A, reconciliation and filing controls.">
+<meta property="og:url" content="https://gstreconciliation.in/articles/gstr-1-complete-table-by-table-guide.html">
+<meta property="og:site_name" content="GST Reconciliation">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="GSTR-1 Return Filing Guide: Complete Table-wise Explanation, Examples & Mistakes">
+<meta name="twitter:description" content="Practical GSTR-1 table-wise guide with examples, reconciliation controls, GSTR-1A corrections and common filing mistakes.">
+<meta name="author" content="GST Reconciliation">
+<style>
+:root{--ink:#172033;--muted:#5f6b7a;--line:#e5e9f0;--soft:#f6f8fb;--brand:#0b5cab;--brand2:#083f78;--good:#147a4b;--warn:#9a6500;--danger:#a52a2a}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);line-height:1.65}
+.wrap{max-width:1180px;margin:auto;padding:0 22px}.hero{background:linear-gradient(135deg,#073b70,#0b67b5);color:#fff;padding:58px 0 48px}.eyebrow{font-size:13px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;opacity:.86}.hero h1{font-size:42px;line-height:1.12;margin:12px 0}.hero p{font-size:18px;max-width:900px;margin:0;opacity:.94}.pill{display:inline-block;margin:18px 7px 0 0;padding:7px 12px;border:1px solid rgba(255,255,255,.3);border-radius:20px;font-size:13px}
+.layout{display:grid;grid-template-columns:250px 1fr;gap:34px;margin-top:34px}.toc{position:sticky;top:18px;height:max-content;border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}.toc strong{display:block;margin-bottom:10px}.toc a{display:block;color:var(--brand);text-decoration:none;font-size:14px;padding:5px 0}.content h2{font-size:28px;margin:40px 0 12px;padding-top:10px}.content h3{font-size:20px;margin:28px 0 8px}.content p{margin:10px 0}.lead{font-size:18px}.note,.warning,.danger,.success{padding:16px 18px;border-radius:12px;margin:18px 0}.note{background:#eef6ff;border-left:4px solid var(--brand)}.warning{background:#fff7e8;border-left:4px solid #d99a1c}.danger{background:#fff0f0;border-left:4px solid #c44}.success{background:#eefaf4;border-left:4px solid #2a9a65}
+table{width:100%;border-collapse:collapse;margin:16px 0 24px;font-size:14px}th,td{border:1px solid var(--line);padding:11px 12px;vertical-align:top}th{background:#f2f5f9;text-align:left}tr:nth-child(even) td{background:#fbfcfe}
+.steps{counter-reset:step;display:grid;gap:12px;margin:16px 0}.step{position:relative;padding:15px 18px 15px 55px;background:var(--soft);border:1px solid var(--line);border-radius:12px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:16px;top:14px;width:26px;height:26px;border-radius:50%;background:var(--brand);color:#fff;text-align:center;line-height:26px;font-weight:700}
+.example{border:1px solid #dce4ef;border-radius:12px;padding:17px;margin:18px 0;background:#fcfdff}.example b{color:var(--brand2)}.formula{font-family:Consolas,monospace;background:#101827;color:#fff;padding:13px 15px;border-radius:9px;overflow:auto}
+.badge{display:inline-block;padding:3px 8px;border-radius:12px;background:#eaf2ff;color:#0b5cab;font-size:12px;font-weight:700}.internal{color:var(--brand);font-weight:700;text-decoration:none}.small{font-size:13px;color:var(--muted)}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.card{border:1px solid var(--line);border-radius:12px;padding:17px;background:#fff}.card h3{margin-top:0}
+footer{margin-top:60px;background:#101827;color:#dce5f0;padding:35px 0}.refbox{background:#f8fafc;border:1px solid var(--line);border-radius:14px;padding:18px;margin:18px 0}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto}.hero h1{font-size:32px}.grid2{grid-template-columns:1fr}}
+@media print{.toc{display:none}.layout{display:block}.hero{background:#fff;color:#000;padding:20px 0}.hero p{color:#333}}
+</style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org","@graph":[
+ {"@type":"Article","@id":"https://gstreconciliation.in/articles/gstr-1-complete-table-by-table-guide.html#article",
+ "headline":"GSTR-1 Return Filing Guide: Complete Table-wise Explanation, Examples & Mistakes",
+ "description":"Practical GSTR-1 return filing guide covering B2B, B2C, exports, credit/debit notes, advances, HSN, documents issued, e-commerce supplies, GSTR-1A and filing controls.",
+ "url":"https://gstreconciliation.in/articles/gstr-1-complete-table-by-table-guide.html",
+ "mainEntityOfPage":{"@type":"WebPage","@id":"https://gstreconciliation.in/articles/gstr-1-complete-table-by-table-guide.html"},
+ "publisher":{"@type":"Organization","name":"GST Reconciliation","url":"https://gstreconciliation.in/"},
+ "inLanguage":"en-IN","articleSection":"GST Returns",
+ "keywords":["GSTR-1","GSTR 1 return filing","GSTR-1 table-wise","GSTR-1A","GSTR-1 HSN","GSTR-1 reconciliation"]},
+ {"@type":"BreadcrumbList","@id":"https://gstreconciliation.in/articles/gstr-1-complete-table-by-table-guide.html#breadcrumb",
+ "itemListElement":[
+ {"@type":"ListItem","position":1,"name":"Home","item":"https://gstreconciliation.in/"},
+ {"@type":"ListItem","position":2,"name":"GST Articles","item":"https://gstreconciliation.in/articles.html"},
+ {"@type":"ListItem","position":3,"name":"GSTR-1 Return Filing Guide","item":"https://gstreconciliation.in/articles/gstr-1-complete-table-by-table-guide.html"}]},
+ {"@type":"FAQPage","@id":"https://gstreconciliation.in/articles/gstr-1-complete-table-by-table-guide.html#faqs",
+ "mainEntity":[
+ {"@type":"Question","name":"What is GSTR-1?","acceptedAnswer":{"@type":"Answer","text":"GSTR-1 is the statement of outward supplies furnished by eligible registered taxpayers for the applicable tax period."}},
+ {"@type":"Question","name":"What is reported in GSTR-1?","acceptedAnswer":{"@type":"Answer","text":"GSTR-1 generally contains invoice and summary details of outward supplies, exports, credit and debit notes, advances, amendments, HSN/SAC summary, documents issued and specified e-commerce related supplies, as applicable."}},
+ {"@type":"Question","name":"What is GSTR-1A?","acceptedAnswer":{"@type":"Answer","text":"GSTR-1A is an optional amendment facility for the same tax period, available after GSTR-1 and before filing GSTR-3B, subject to the portal and applicable rules."}},
+ {"@type":"Question","name":"What is the due date of GSTR-1?","acceptedAnswer":{"@type":"Answer","text":"The general statutory due date is the 11th of the succeeding month for monthly filers and the 13th of the month following the quarter for quarterly filers, subject to notifications or extensions."}},
+ {"@type":"Question","name":"Is Table 13 of GSTR-1 mandatory?","acceptedAnswer":{"@type":"Answer","text":"GSTN has made Table 13, documents issued, mandatory from the May 2025 return period where applicable."}},
+ {"@type":"Question","name":"Does GSTR-1 contain ITC?","acceptedAnswer":{"@type":"Answer","text":"GSTR-1 is primarily an outward-supply statement. Purchase-side ITC is dealt with through other return and reconciliation processes, particularly GSTR-3B and GSTR-2B."}}
+ ]}
+]
+}
+</script>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">GST Reconciliation • GSTR-1 Return Filing Guide</div>
+<h1>GSTR-1 Return Filing Guide: Complete Table-wise Explanation, Examples & Common Mistakes</h1>
+<p>A practical GSTR-1 guide for accountants, finance teams, tax professionals and business owners. Understand B2B and B2C reporting, exports, credit/debit notes, advances, amendments, HSN/SAC, documents issued, e-commerce supplies, GSTR-1A and the controls needed to reconcile books with the GST portal.</p>
+<span class="pill">Table-wise</span><span class="pill">Practical examples</span><span class="pill">B2B / B2C / Export</span><span class="pill">GSTR-1A</span><span class="pill">Books ↔ GSTR-1 ↔ 3B</span><span class="pill">Internal GST references</span>
+</div></header>
+
+<div class="wrap layout">
+<aside class="toc"><strong>On this page</strong>
+<a href="#meaning">1. What is GSTR-1?</a><a href="#applicability">2. Who files GSTR-1?</a><a href="#duedate">3. Due date & filing frequency</a>
+<a href="#workflow">4. Monthly / quarterly workflow</a><a href="#sources">5. Documents & data required</a>
+<a href="#tables">6. GSTR-1 table-wise map</a><a href="#b2b">7. B2B reporting</a><a href="#b2c">8. B2C reporting</a>
+<a href="#exports">9. Exports & SEZ</a><a href="#notes">10. Credit/debit notes</a><a href="#advances">11. Advances</a>
+<a href="#amendments">12. Amendments</a><a href="#hsn">13. HSN/SAC Table 12</a><a href="#docs">14. Documents issued</a>
+<a href="#eco">15. E-commerce / Section 9(5)</a><a href="#gstr1a">16. GSTR-1A</a><a href="#einvoice">17. E-invoice & auto-population</a>
+<a href="#mistakes">18. Wrong entries & impact</a><a href="#correction">19. Corrections after filing</a>
+<a href="#industry">20. Industry examples</a><a href="#controls">21. Internal controls</a><a href="#checklist">22. Filing checklist</a>
+<a href="#references">23. GST references</a><a href="#faqs">24. GSTR-1 FAQs</a>
+</aside>
+
+<main class="content">
+<nav aria-label="Breadcrumb" class="small" style="margin-bottom:18px">
+<a class="internal" href="/">Home</a> → <a class="internal" href="/articles.html">GST Articles</a> → GSTR-1 Return Filing Guide
+</nav>
+
+<section id="meaning"><h2>1. What is GSTR-1 and why is it important?</h2>
+<p class="lead"><b>GSTR-1 is the statement of outward supplies in which an eligible registered taxpayer reports the relevant sales and other outward-supply information for the applicable tax period.</b></p>
+<p>Think of GSTR-1 as the detailed outward-supply data layer of GST compliance. It is not simply a sales summary. Depending on the transaction, it can contain invoice-level B2B information, specified B2C supplies, exports, SEZ supplies, credit and debit notes, advances, amendments, HSN/SAC summaries, documents issued and specified e-commerce related information.</p>
+<p>This means a good GSTR-1 process should begin with the <b>sales register and source documents</b>, not with the GST portal. The portal is where the return is filed; the books and transaction documents are what establish the underlying working.</p>
+<div class="note"><b>Golden rule:</b> Close the sales data → classify every transaction → determine place of supply → validate GSTIN/customer status → prepare table-wise GSTR-1 → reconcile totals with books → review e-invoice/portal data → file → reconcile GSTR-1 with GSTR-3B.</div>
+<p>For the underlying statutory provisions, use your <a class="internal" href="/gst-act.html">GST Act — Section Wise Guide</a>.</p>
+</section>
+
+<section id="applicability"><h2>2. Who is required to file GSTR-1?</h2>
+<p>GSTR-1 is generally furnished by normal and casual registered taxpayers making outward supplies of goods or services or both, subject to the exclusions and special return mechanisms prescribed under GST.</p>
+<table><tr><th>Taxpayer / category</th><th>GSTR-1 treatment</th><th>Practical point</th></tr>
+<tr><td>Regular taxpayer</td><td>Generally files GSTR-1</td><td>Monthly or quarterly frequency may apply.</td></tr>
+<tr><td>Casual taxable person</td><td>Generally files the applicable outward-supply statement</td><td>Check the registration period and portal availability.</td></tr>
+<tr><td>Composition taxpayer</td><td>Does not file normal GSTR-1</td><td>Composition has its own compliance mechanism.</td></tr>
+<tr><td>ISD</td><td>Does not use GSTR-1 for ISD distribution</td><td>ISD return mechanism applies.</td></tr>
+<tr><td>TDS / TCS categories</td><td>Use their prescribed returns</td><td>Do not assume every GSTIN files GSTR-1.</td></tr>
+</table>
+<div class="warning"><b>Important:</b> Applicability should be tested against the taxpayer's registration status, nature of activity and the return framework applicable for the relevant period.</div>
+</section>
+
+<section id="duedate"><h2>3. GSTR-1 due date and filing frequency</h2>
+<table><tr><th>Filing frequency</th><th>General GSTR-1 due date</th><th>Practical explanation</th></tr>
+<tr><td>Monthly</td><td>11th of the succeeding month</td><td>Example: January GSTR-1 is generally due on 11 February.</td></tr>
+<tr><td>Quarterly / QRMP</td><td>13th of the month following the quarter</td><td>Example: April–June quarterly GSTR-1 is generally due on 13 July.</td></tr>
+</table>
+<p>These are the general timelines; the Government can extend dates for specified classes or periods. Always check the applicable notification and GST portal for the tax period concerned.</p>
+<h3>QRMP and Invoice Furnishing Facility</h3>
+<p>Eligible quarterly filers may use the <b>Invoice Furnishing Facility (IFF)</b> for the first two months of a quarter if they want to report specified B2B invoices and related documents earlier so that recipients can receive the corresponding information without waiting for the quarterly GSTR-1.</p>
+<div class="note"><b>Do not confuse:</b> IFF is an optional facility for eligible quarterly filers; it does not turn the taxpayer into a monthly GSTR-1 filer.</div>
+</section>
+
+<section id="workflow"><h2>4. The practical GSTR-1 monthly / quarterly workflow</h2>
+<div class="steps">
+<div class="step"><b>Freeze the sales register.</b> Ensure invoices, debit notes, credit notes, exports, advances and amendments for the period are captured.</div>
+<div class="step"><b>Classify every supply.</b> Identify B2B, B2C, export, SEZ, deemed export, nil/exempt/non-GST and e-commerce categories as applicable.</div>
+<div class="step"><b>Check GSTIN and customer status.</b> A wrong GSTIN can move a transaction into the wrong reporting category and create recipient-side reconciliation problems.</div>
+<div class="step"><b>Determine place of supply and tax type.</b> Check whether IGST or CGST/SGST applies and whether the transaction is genuinely inter-State.</div>
+<div class="step"><b>Prepare table-wise data.</b> Do not upload everything into one generic sales bucket.</div>
+<div class="step"><b>Reconcile e-invoice data.</b> Compare IRP-generated information with the sales register and identify missing, cancelled or amended documents.</div>
+<div class="step"><b>Review HSN/SAC and documents issued.</b> Table 12 and Table 13 should be independently checked rather than completed at the last minute.</div>
+<div class="step"><b>Generate and review GSTR-1 summary.</b> Compare taxable value and tax totals with the approved books.</div>
+<div class="step"><b>File GSTR-1 and preserve evidence.</b> Save the filed return/ARN, final working and exception notes.</div>
+<div class="step"><b>Reconcile with GSTR-3B.</b> GSTR-1 outward liability should agree with the corresponding approved GSTR-3B working after considering timing and permitted differences.</div>
+</div></section>
+
+<section id="sources"><h2>5. Documents and data required before preparing GSTR-1</h2>
+<table><tr><th>Source</th><th>What to extract</th><th>Why it matters</th></tr>
+<tr><td>Sales register</td><td>Invoice number/date, customer GSTIN, taxable value, rate, tax, POS, document type</td><td>Primary source for outward-supply reporting.</td></tr>
+<tr><td>Credit/debit note register</td><td>Original invoice reference, note number/date, taxable and tax adjustment</td><td>Prevents double reporting or missed adjustments.</td></tr>
+<tr><td>Export documentation</td><td>Shipping bill / bill of export, recipient, port, tax treatment, invoice data</td><td>Supports export reporting and refund/LUT processes.</td></tr>
+<tr><td>SEZ documents</td><td>Recipient status, endorsement/supporting documents and tax treatment</td><td>Determines correct SEZ reporting.</td></tr>
+<tr><td>E-invoice data</td><td>IRN, invoice number/date, recipient GSTIN, taxable value and tax</td><td>Identifies portal/source-data differences.</td></tr>
+<tr><td>Advance register</td><td>Advances received, tax treatment and later adjustment</td><td>Important for applicable service transactions and adjustments.</td></tr>
+<tr><td>HSN/SAC master</td><td>HSN/SAC, description, UQC, quantity, rate and value</td><td>Supports Table 12 accuracy.</td></tr>
+<tr><td>Document series register</td><td>Invoices, credit notes, debit notes, cancelled documents and series</td><td>Supports Table 13 completeness.</td></tr>
+</table>
+</section>
+
+<section id="tables"><h2>6. GSTR-1 table-wise map — understand the return before filing</h2>
+<table><tr><th>Table / area</th><th>What it broadly captures</th><th>Main control</th></tr>
+<tr><td>Basic details</td><td>GSTIN, legal/trade name and tax period</td><td>Confirm correct GSTIN and period.</td></tr>
+<tr><td>4A / 4B / 4C / 6B / 6C</td><td>Specified B2B supplies and related categories</td><td>Recipient GSTIN, invoice and tax type.</td></tr>
+<tr><td>5</td><td>Specified B2C inter-State supplies, including the applicable threshold/category logic</td><td>POS, recipient status and invoice value/category.</td></tr>
+<tr><td>6A</td><td>Exports</td><td>Export type, invoice and shipping/bill-of-export details.</td></tr>
+<tr><td>6B / 6C</td><td>Specified SEZ supplies, depending on tax-payment treatment</td><td>SEZ status and tax treatment.</td></tr>
+<tr><td>7</td><td>Specified B2C other supplies / consolidated reporting</td><td>State-wise and tax-rate classification.</td></tr>
+<tr><td>8</td><td>Nil-rated, exempt and non-GST outward supplies</td><td>Do not mix exempt with non-GST without checking classification.</td></tr>
+<tr><td>9A / 9B</td><td>Specified amendments and credit/debit notes, including registered/unregistered categories as applicable</td><td>Original document reference and correct period.</td></tr>
+<tr><td>10</td><td>Specified amendments to B2C details</td><td>Link amended figure to original reporting.</td></tr>
+<tr><td>11</td><td>Advances received and their adjustment, where applicable</td><td>Track receipt and subsequent invoice/adjustment.</td></tr>
+<tr><td>12</td><td>HSN/SAC-wise summary of outward supplies</td><td>Reconcile HSN summary to sales data.</td></tr>
+<tr><td>13</td><td>Documents issued</td><td>Reconcile invoice/note series with books.</td></tr>
+<tr><td>14 / 15</td><td>Specified e-commerce operator / Section 9(5) related reporting introduced in the return structure</td><td>Check the applicable nature of supply and ECO role.</td></tr>
+</table>
+<div class="warning"><b>Table numbering can evolve:</b> GST portal labels and functionality can change through notifications and portal updates. Use the table applicable to the relevant tax period rather than copying an old return format.</div>
+</section>
+
+<section id="b2b"><h2>7. B2B reporting — the most important invoice-level area</h2>
+<p>A B2B supply is generally a supply to a registered recipient and is reported with invoice-level information. The recipient GSTIN becomes a critical field because the recipient may use the reported data for reconciliation and ITC-related processes.</p>
+<table><tr><th>Field</th><th>What to verify</th><th>Common failure</th></tr>
+<tr><td>Recipient GSTIN</td><td>Correct GSTIN and active/valid status as relevant to the invoice date</td><td>One digit wrong or old GSTIN used.</td></tr>
+<tr><td>Invoice number</td><td>Exactly matches source invoice and document series</td><td>Slash, hyphen, zero or series difference.</td></tr>
+<tr><td>Invoice date</td><td>Correct date and tax period</td><td>Invoice posted in wrong month.</td></tr>
+<tr><td>Taxable value</td><td>Agrees with invoice and books</td><td>Discount/freight/rounding treated inconsistently.</td></tr>
+<tr><td>Tax rate</td><td>Correct rate for supply</td><td>Wrong rate creates recipient mismatch.</td></tr>
+<tr><td>Tax type</td><td>IGST vs CGST/SGST</td><td>Wrong POS causes wrong tax type.</td></tr>
+<tr><td>Place of supply</td><td>Correct State and applicable statutory rule</td><td>Billing State assumed to be POS without analysis.</td></tr>
+</table>
+<div class="example"><b>Example — B2B invoice:</b> A Telangana supplier invoices a Karnataka registered customer for ₹10,00,000 taxable value at 18%. Before filing, verify customer GSTIN, POS Karnataka, IGST ₹1,80,000, invoice number/date and whether the invoice has already been reported through e-invoice data.</div>
+</section>
+
+<section id="b2c"><h2>8. B2C reporting — do not treat every consumer invoice the same</h2>
+<p>B2C reporting depends on whether the recipient is registered, whether the supply is inter-State or intra-State, the invoice value and the specific reporting rules applicable to the tax period.</p>
+<div class="grid2">
+<div class="card"><h3>B2C Large / specified inter-State category</h3><p>Check whether the invoice falls within the applicable inter-State B2C reporting threshold/category. Such transactions may require invoice-level reporting.</p></div>
+<div class="card"><h3>B2C Other</h3><p>Other specified consumer supplies are generally reported in the applicable consolidated/state-wise structure, subject to the return rules and portal format.</p></div>
+</div>
+<div class="warning"><b>Practical control:</b> Never decide B2C reporting solely from the customer name. Determine registration status, POS, supply value and applicable table logic.</div>
+</section>
+
+<section id="exports"><h2>9. Exports and SEZ supplies</h2>
+<table><tr><th>Transaction</th><th>What to verify</th><th>Practical risk</th></tr>
+<tr><td>Export with payment of IGST</td><td>Export invoice, shipping/bill-of-export details, tax amount and return reporting</td><td>Invoice/port details mismatch can affect refund processing.</td></tr>
+<tr><td>Export under LUT/bond</td><td>LUT/bond status and correct zero-rated reporting</td><td>Incorrect tax treatment may create unnecessary liability or refund issues.</td></tr>
+<tr><td>Supply to SEZ with payment</td><td>SEZ recipient status, endorsement/support and tax treatment</td><td>Wrong classification may affect recipient/refund documentation.</td></tr>
+<tr><td>Supply to SEZ without payment</td><td>Eligibility for zero-rated treatment and supporting documents</td><td>Missing endorsement/support can become a documentation issue.</td></tr>
+</table>
+<div class="example"><b>Example:</b> A Hyderabad manufacturer exports goods under LUT. The sales register, export invoice, shipping bill and GSTR-1 should tell the same story. If the invoice is reported as a normal domestic B2B sale, the books may still balance while the GST reporting is wrong.</div>
+</section>
+
+<section id="notes"><h2>10. Credit notes and debit notes</h2>
+<p>Credit/debit note reporting needs a strong link between the original invoice, the adjustment document and the reason for adjustment. The note should not be treated as an independent sales transaction.</p>
+<table><tr><th>Control</th><th>Question</th></tr>
+<tr><td>Original invoice</td><td>Which original supply is being adjusted?</td></tr>
+<tr><td>Note number/date</td><td>Is the document number unique and within the correct series?</td></tr>
+<tr><td>Taxable value</td><td>Does the adjustment agree with the accounting entry?</td></tr>
+<tr><td>Tax amount</td><td>Is the CGST/SGST/IGST adjustment correct?</td></tr>
+<tr><td>Recipient category</td><td>Was the original supply B2B, B2C or another category?</td></tr>
+<tr><td>Amendment</td><td>Is the original GSTR-1 entry itself being amended?</td></tr>
+</table>
+<div class="danger"><b>Common error:</b> Reporting a credit note without checking whether the original invoice was reported under the correct GSTIN, tax type and period can create a mismatch on both sides.</div>
+</section>
+
+<section id="advances"><h2>11. Advances received — when and how they affect GSTR-1</h2>
+<p>Advance reporting should be analysed according to the nature of supply and the applicable time-of-supply rules. The important practical point is to maintain a clear bridge between <b>advance received → tax treatment → later invoice → adjustment</b>.</p>
+<div class="formula">Advance register → Applicable tax treatment → GSTR-1 advance reporting (where required) → Invoice issued → Advance adjusted → Reconciliation</div>
+<div class="example"><b>Example:</b> A service provider receives ₹5,00,000 advance in one period and raises the final invoice later. The accounting and GST working should track the advance, applicable tax treatment and eventual adjustment rather than reporting the invoice and advance independently as two taxable sales.</div>
+</section>
+
+<section id="amendments"><h2>12. Amendments — how to correct an earlier GSTR-1 entry</h2>
+<p>GSTR-1 has amendment mechanisms for specified previously reported details. The correct amendment table depends on the nature of the original reporting and the type of correction.</p>
+<table><tr><th>Original error</th><th>Typical correction thought process</th></tr>
+<tr><td>Wrong GSTIN</td><td>Trace original invoice, identify recipient impact and use the applicable amendment mechanism.</td></tr>
+<tr><td>Wrong taxable value/tax</td><td>Compare invoice, books and original GSTR-1 before amending.</td></tr>
+<tr><td>Wrong POS</td><td>Reassess place of supply and tax type before making the amendment.</td></tr>
+<tr><td>Invoice omitted</td><td>Determine whether it can be added through the same-period facility or subsequent permitted reporting.</td></tr>
+<tr><td>Wrong invoice number/date</td><td>Correct the original record using the appropriate amendment facility.</td></tr>
+</table>
+<div class="note"><b>Best practice:</b> Maintain a GSTR-1 amendment register containing original value, corrected value, reason, supporting document, period and reviewer approval.</div>
+</section>
+
+<section id="hsn"><h2>13. Table 12 — HSN/SAC-wise summary</h2>
+<p>Table 12 is a frequent source of filing errors because it is often prepared after all invoice-level reporting is completed. It should instead be generated from the same controlled sales data used for the return.</p>
+<p>GSTN has enhanced Table 12 so that HSN reporting is separated into <b>B2B Supplies</b> and <b>B2C Supplies</b>, with facilities such as an updated HSN/SAC list and searchable product master functionality. The applicable HSN digit requirement depends on the prescribed turnover/category rules.</p>
+<table><tr><th>Check</th><th>What to reconcile</th></tr>
+<tr><td>HSN/SAC</td><td>Correct code for the goods/services supplied.</td></tr>
+<tr><td>Description</td><td>Consistent product/service description.</td></tr>
+<tr><td>UQC</td><td>Correct unit for goods where quantity reporting applies.</td></tr>
+<tr><td>Quantity</td><td>Agree with source sales data where required.</td></tr>
+<tr><td>Taxable value</td><td>Aggregate by HSN/SAC and reconcile to outward supply data.</td></tr>
+<tr><td>Rate</td><td>Do not combine incompatible rates into a single line.</td></tr>
+<tr><td>Tax</td><td>IGST/CGST/SGST totals should reconcile with the relevant sales working.</td></tr>
+</table>
+<div class="warning"><b>2025 portal enhancement:</b> GSTN advised that Table 12 is bifurcated into B2B and B2C tabs and that a “Download HSN Codes List” facility is available. Use the current portal functionality rather than an old offline template.</div>
+</section>
+
+<section id="docs"><h2>14. Table 13 — Documents issued</h2>
+<p>Table 13 is not a decorative table. It is a control bridge between the document series maintained by the business and the documents reported through GST compliance.</p>
+<p>GSTN made reporting in Table 13 mandatory from the <b>May 2025 return period</b> where the relevant conditions apply. Where B2B/B2C supplies are reported, the portal requires the applicable document details to be completed before filing.</p>
+<table><tr><th>Document</th><th>Reconciliation</th></tr>
+<tr><td>Invoices</td><td>Opening series + additions − cancellations should reconcile with closing series / actual documents.</td></tr>
+<tr><td>Credit notes</td><td>Serial series should agree with the note register.</td></tr>
+<tr><td>Debit notes</td><td>Serial series should agree with the note register.</td></tr>
+<tr><td>Cancelled documents</td><td>Cancellation should be supported by the document register.</td></tr>
+</table>
+<div class="example"><b>Control example:</b> If the ERP shows invoice numbers 1001–1100 and 5 cancellations, the finance team should be able to explain the 100 issued/active documents and the cancelled series before filing Table 13.</div>
+</section>
+
+<section id="eco"><h2>15. E-commerce and Section 9(5) related reporting</h2>
+<p>The GSTR-1 structure includes reporting for specified supplies involving electronic commerce operators and supplies covered by the Section 9(5) mechanism. The exact reporting depends on the taxpayer's role and the nature of the supply.</p>
+<table><tr><th>Question</th><th>Control</th></tr>
+<tr><td>Is the taxpayer the supplier or ECO?</td><td>Identify the legal role before selecting the table.</td></tr>
+<tr><td>Does Section 9(5) apply?</td><td>Check the notified categories and current provisions.</td></tr>
+<tr><td>Who is liable to pay GST?</td><td>Do not assume the supplier and ECO always have the same liability.</td></tr>
+<tr><td>Is the same transaction already reported elsewhere?</td><td>Check for duplicate reporting.</td></tr>
+</table>
+<div class="danger"><b>Common mistake:</b> Treating every online sale as a Section 9(5) transaction. The mechanism applies only to specified categories covered by the law.</div>
+</section>
+
+<section id="gstr1a"><h2>16. GSTR-1A — the same-period correction opportunity</h2>
+<p><b>GSTR-1A</b> is an important addition to the practical GSTR-1 workflow. It provides an optional facility to amend or add specified records for the same tax period after GSTR-1 has been filed and before the corresponding GSTR-3B is filed, subject to the portal and applicable rules.</p>
+<table><tr><th>Question</th><th>Practical answer</th></tr>
+<tr><td>Is GSTR-1A compulsory?</td><td>No. It is an optional correction facility.</td></tr>
+<tr><td>When is it available?</td><td>For monthly filers, from the later of the GSTR-1 due date or actual GSTR-1 filing date until GSTR-3B filing for the same period. Quarterly filers have the corresponding quarterly framework.</td></tr>
+<tr><td>Can it be filed after GSTR-3B?</td><td>No, the same-period GSTR-1A facility is not available after GSTR-3B is filed.</td></tr>
+<tr><td>Does it replace later amendments?</td><td>No. The normal permitted amendment mechanisms for earlier periods continue separately.</td></tr>
+</table>
+<div class="example"><b>Example:</b> A monthly taxpayer files GSTR-1 and later notices that one B2B invoice was omitted. If GSTR-3B for that period has not yet been filed and the GSTR-1A facility is available, the taxpayer can evaluate whether the omission can be corrected through GSTR-1A rather than carrying the error forward.</div>
+</section>
+
+<section id="einvoice"><h2>17. E-invoice and GSTR-1 auto-population</h2>
+<p>For taxpayers covered by e-invoicing, invoice details generated through the Invoice Registration Portal can flow into specified GSTR-1 tables. This can reduce manual entry, but it does <b>not</b> remove the need for reconciliation.</p>
+<table><tr><th>Source</th><th>Control question</th></tr>
+<tr><td>ERP sales register</td><td>Was the invoice actually accounted for?</td></tr>
+<tr><td>IRP / e-invoice data</td><td>Was IRN generated, cancelled or amended?</td></tr>
+<tr><td>GSTR-1 auto-population</td><td>Did the invoice appear in the expected table?</td></tr>
+<tr><td>Final GSTR-1</td><td>Does the filed return agree with the approved sales register?</td></tr>
+</table>
+<div class="warning"><b>Important:</b> Auto-population is not a substitute for review. An incorrect source invoice can simply create an incorrect auto-populated return entry.</div>
+</section>
+
+<section id="mistakes"><h2>18. Common GSTR-1 mistakes and their impact</h2>
+<table><tr><th>Wrong entry</th><th>Possible impact</th><th>Control</th></tr>
+<tr><td>Wrong customer GSTIN</td><td>Recipient mismatch and possible ITC/reconciliation issues.</td><td>Validate GSTIN before upload.</td></tr>
+<tr><td>Wrong POS</td><td>Wrong IGST vs CGST/SGST and state reporting.</td><td>Independent POS review.</td></tr>
+<tr><td>Invoice omitted</td><td>Outward liability and recipient data may be understated.</td><td>Sales register ↔ GSTR-1 reconciliation.</td></tr>
+<tr><td>Duplicate invoice</td><td>Overstatement of turnover/tax and recipient mismatch.</td><td>Invoice-number duplicate check.</td></tr>
+<tr><td>Wrong tax rate</td><td>Tax difference and recipient mismatch.</td><td>Rate master + invoice review.</td></tr>
+<tr><td>Credit note missed</td><td>Turnover/tax overstated.</td><td>Credit note register reconciliation.</td></tr>
+<tr><td>Wrong B2B/B2C classification</td><td>Incorrect table and customer reporting.</td><td>GSTIN/status based classification.</td></tr>
+<tr><td>Export reported as domestic</td><td>Refund/zero-rated compliance issues.</td><td>Export document reconciliation.</td></tr>
+<tr><td>HSN mismatch</td><td>Table 12 mismatch and compliance risk.</td><td>HSN master and summary reconciliation.</td></tr>
+<tr><td>Table 13 incomplete</td><td>Portal filing validation issue.</td><td>Document-series control.</td></tr>
+<tr><td>E-invoice not reconciled</td><td>Missing or duplicate portal data.</td><td>ERP ↔ IRP ↔ GSTR-1 reconciliation.</td></tr>
+<tr><td>GSTR-1 filed but 3B not reconciled</td><td>Tax liability difference may remain undetected.</td><td>Mandatory post-filing bridge.</td></tr>
+</table>
+</section>
+
+<section id="correction"><h2>19. What happens if GSTR-1 contains a wrong figure?</h2>
+<p>The correction route depends on the nature of the error, whether GSTR-1 is filed, whether GSTR-3B has been filed, the relevant tax period and the specific amendment mechanism available.</p>
+<table><tr><th>Situation</th><th>Practical approach</th></tr>
+<tr><td>Before filing GSTR-1</td><td>Correct the source working and portal entry before final submission.</td></tr>
+<tr><td>GSTR-1 filed, GSTR-3B not filed</td><td>Evaluate GSTR-1A where available and appropriate.</td></tr>
+<tr><td>GSTR-3B already filed</td><td>Use the permitted subsequent-period amendment/correction mechanism and assess tax/interest consequences.</td></tr>
+<tr><td>Wrong GSTIN</td><td>Correct the recipient reporting and reconcile the recipient impact.</td></tr>
+<tr><td>Understated tax</td><td>Quantify short-payment, determine interest and complete the permitted correction/payment process.</td></tr>
+<tr><td>Overstated tax</td><td>Determine the permitted correction/refund/adjustment route based on the facts.</td></tr>
+</table>
+<div class="danger"><b>Never simply overwrite the accounting records.</b> Keep an amendment register showing the original entry, corrected entry, reason, document evidence, return period and approval.</div>
+</section>
+
+<section id="industry"><h2>20. Practical GSTR-1 examples across industries</h2>
+<div class="example"><b>Construction / infrastructure:</b> A contractor raises running account bills to a registered project owner. The finance team should reconcile RA bill, tax invoice, GSTIN, POS, retention/other deductions, debit/credit notes and GSTR-1 before the return is filed.</div>
+<div class="example"><b>Manufacturing:</b> A factory has hundreds of B2B invoices and e-invoices. The safest workflow is ERP sales register → IRP data → GSTR-1 B2B → HSN summary → GSTR-3B liability.</div>
+<div class="example"><b>IT / software services:</b> A service provider invoices customers in several States and overseas. Place of supply, export/zero-rated classification, customer GSTIN and invoice period should be separately reviewed.</div>
+<div class="example"><b>Real estate:</b> Customer advances, later invoices and credit notes can create timing differences. Maintain an advance-to-invoice bridge rather than relying only on the ledger closing balance.</div>
+<div class="example"><b>Hospitality:</b> A hotel may have registered corporate customers, consumers, exports/SEZ-type cases in limited situations and e-commerce channels. Customer status and POS should drive classification.</div>
+<div class="example"><b>E-commerce seller:</b> Separate ordinary outward supplies from transactions where a specific ECO/Section 9(5) mechanism applies. Do not classify every marketplace sale under Section 9(5).</div>
+</section>
+
+<section id="controls"><h2>21. Internal controls for a professional GSTR-1 process</h2>
+<table><tr><th>Control</th><th>Responsible activity</th><th>Evidence</th></tr>
+<tr><td>Sales completeness</td><td>Accounts compares ERP sales ledger with invoice register.</td><td>Sales reconciliation.</td></tr>
+<tr><td>GSTIN validation</td><td>Preparer validates customer GSTIN/status.</td><td>Validation report / master approval.</td></tr>
+<tr><td>POS review</td><td>Reviewer checks inter-State vs intra-State classification.</td><td>Exception report.</td></tr>
+<tr><td>E-invoice reconciliation</td><td>Accounts compares ERP invoices with IRP records.</td><td>IRN reconciliation.</td></tr>
+<tr><td>Credit/debit notes</td><td>Accounts reconciles note register with GSTR-1.</td><td>Note reconciliation.</td></tr>
+<tr><td>HSN review</td><td>Reviewer checks Table 12 totals and code mapping.</td><td>HSN summary working.</td></tr>
+<tr><td>Document series</td><td>Accounts reconciles Table 13 with document register.</td><td>Series reconciliation.</td></tr>
+<tr><td>GSTR-1 review</td><td>Preparer enters; reviewer verifies; authorised signatory files.</td><td>Pre-filing checklist.</td></tr>
+<tr><td>GSTR-1 vs 3B</td><td>Tax team reconciles outward tax after filing.</td><td>Return-to-return bridge.</td></tr>
+</table>
+</section>
+
+<section id="checklist"><h2>22. Final GSTR-1 filing checklist</h2>
+<div class="success"><ul>
+<li>Sales register is complete and period is frozen.</li>
+<li>All invoice series are accounted for.</li>
+<li>Customer GSTINs are validated.</li>
+<li>B2B/B2C classification is reviewed.</li>
+<li>Place of supply and tax type are checked.</li>
+<li>Exports and SEZ supplies are reconciled with supporting documents.</li>
+<li>Credit/debit notes are reconciled.</li>
+<li>Advances and adjustments are reviewed where applicable.</li>
+<li>Amendments are linked to original reporting.</li>
+<li>Table 12 HSN/SAC summary agrees with outward supplies.</li>
+<li>Table 13 documents issued agrees with document registers.</li>
+<li>Section 9(5)/ECO reporting is separately checked where applicable.</li>
+<li>E-invoice data is reconciled with ERP and GSTR-1.</li>
+<li>GSTR-1 summary agrees with the approved sales working.</li>
+<li>GSTR-1A opportunity is considered before filing GSTR-3B if an error is identified.</li>
+<li>Filed return, ARN and final working papers are preserved.</li>
+<li>GSTR-1 is reconciled with GSTR-3B after filing.</li>
+</ul></div>
+</section>
+
+<section id="references"><h2>23. GST legal and practical references</h2>
+<p>This article uses <b>GST Reconciliation as the primary explanatory reference library</b>. The purpose is to connect each concept to the site's GST Act section-wise material instead of sending readers to a different explanatory website for every basic provision.</p>
+<div class="refbox"><table><tr><th>Topic</th><th>Internal reference</th><th>Status</th></tr>
+<tr><td>CGST Act section-wise provisions</td><td><a class="internal" href="/gst-act.html">GST Act — Section Wise Guide</a></td><td><span class="badge">Available</span></td></tr>
+<tr><td>GSTR-2B reconciliation</td><td><a class="internal" href="/articles/gstr-2b-reconciliation-complete-guide.html">GSTR-2B Reconciliation Guide</a></td><td><span class="badge">Available / verify URL</span></td></tr>
+<tr><td>GSTR-3B return</td><td><a class="internal" href="/articles/gstr-3b-complete-practical-guide.html">GSTR-3B Practical Guide</a></td><td><span class="badge">Available</span></td></tr>
+<tr><td>GST compliance workflow</td><td><a class="internal" href="/compliance.html">GST Compliance Centre</a></td><td><span class="badge">Available</span></td></tr>
+<tr><td>GSTR-1 / GSTR-1A</td><td>This article</td><td><span class="badge">Current guide</span></td></tr>
+</table></div>
+<h3>Core legal areas to understand</h3>
+<table><tr><th>Provision / area</th><th>Why it matters to GSTR-1</th></tr>
+<tr><td>Section 37</td><td>Core statutory provision for furnishing outward-supply details.</td></tr>
+<tr><td>Section 31</td><td>Invoice and document timing/content affects the source data reported.</td></tr>
+<tr><td>Section 10 / special taxpayer provisions</td><td>Helps determine whether the normal GSTR-1 framework applies.</td></tr>
+<tr><td>Section 12 / 13</td><td>Time-of-supply analysis can determine the period in which a transaction belongs.</td></tr>
+<tr><td>Section 15</td><td>Taxable value affects the amounts reported.</td></tr>
+<tr><td>IGST Act place-of-supply provisions</td><td>Critical for IGST vs CGST/SGST and export/inter-State reporting.</td></tr>
+<tr><td>Rule 59</td><td>Form and manner of furnishing outward-supply details and related filing restrictions.</td></tr>
+</table>
+<div class="note"><b>Recommended website architecture:</b> Article → GST Act Section → Rule → Notification / Advisory → Table-wise explanation → Practical example → Reconciliation control. This turns the website into a connected GST knowledge base rather than a collection of isolated articles.</div>
+</section>
+
+<section aria-label="Related GST guides">
+<h2>Related GST return filing resources</h2>
+<p>Continue with the <a class="internal" href="/articles/gstr-1-gstr-1a-practical-guide.html">GSTR-1 &amp; GSTR-1A practical guide</a>, the <a class="internal" href="/articles/gstr-3b-complete-practical-guide.html">GSTR-3B Return Filing Guide</a>, the <a class="internal" href="/articles/gstr-2b-reconciliation-complete-guide.html">GSTR-2B Reconciliation Guide</a> and the <a class="internal" href="/compliance.html">GST Compliance Centre</a>.</p>
+</section>
+
+<section><h2>Quick reference: GSTR-1 in one view</h2>
+<table><tr><th>Area</th><th>Main question</th></tr>
+<tr><td>B2B</td><td>Is the recipient GSTIN, invoice and tax classification correct?</td></tr>
+<tr><td>B2C</td><td>Is the consumer transaction in the correct reporting category and State/POS?</td></tr>
+<tr><td>Exports / SEZ</td><td>Is the zero-rated / SEZ treatment supported by the underlying documents?</td></tr>
+<tr><td>Notes</td><td>Is every credit/debit note linked to the correct original supply?</td></tr>
+<tr><td>Advances</td><td>Has the applicable advance and later adjustment been tracked?</td></tr>
+<tr><td>Amendments</td><td>Can every change be traced to the original GSTR-1 entry?</td></tr>
+<tr><td>HSN</td><td>Does Table 12 reconcile with the outward supply register?</td></tr>
+<tr><td>Documents</td><td>Does Table 13 reconcile with invoice/note series?</td></tr>
+<tr><td>ECO / 9(5)</td><td>Does the transaction actually fall within the specified mechanism?</td></tr>
+<tr><td>GSTR-1A</td><td>Was any same-period error identified before GSTR-3B filing?</td></tr>
+<tr><td>GSTR-3B</td><td>Does the final outward tax reconcile with the return liability?</td></tr>
+</table></section>
+
+<section id="faqs"><h2>24. Frequently asked questions about GSTR-1</h2>
+<h3>What is GSTR-1?</h3><p>GSTR-1 is the statement of outward supplies furnished by eligible registered taxpayers for the applicable tax period.</p>
+<h3>Is GSTR-1 a tax payment return?</h3><p>GSTR-1 is primarily the statement of outward supplies. The actual summary liability and payment process is dealt with through the applicable return, including GSTR-3B for normal taxpayers.</p>
+<h3>What is the general due date of GSTR-1?</h3><p>The general due date is the 11th of the succeeding month for monthly filers and the 13th of the month following the quarter for quarterly filers, subject to notifications or extensions.</p>
+<h3>Can quarterly filers use IFF?</h3><p>Eligible QRMP taxpayers may use IFF for specified supplies in the first two months of a quarter. It is an optional facility.</p>
+<h3>What is GSTR-1A?</h3><p>GSTR-1A is an optional same-period amendment/addition facility available after GSTR-1 and before filing GSTR-3B for the same tax period, subject to the applicable portal framework.</p>
+<h3>Can GSTR-1A be filed after GSTR-3B?</h3><p>No. The same-period GSTR-1A facility is not available after GSTR-3B for that period has been filed.</p>
+<h3>Is Table 13 mandatory?</h3><p>GSTN made Table 13, documents issued, mandatory from the May 2025 return period where applicable. The portal can validate the table before filing.</p>
+<h3>Does GSTR-1 contain purchase ITC?</h3><p>No. GSTR-1 is an outward-supply statement. Purchase-side ITC is dealt with through the relevant ITC and return processes.</p>
+<h3>Does e-invoice automatically make GSTR-1 correct?</h3><p>No. E-invoice data can auto-populate specified GSTR-1 tables, but the taxpayer should reconcile ERP, IRP and final GSTR-1 data.</p>
+<h3>What are the most common GSTR-1 mistakes?</h3><p>Common failures include wrong GSTIN, wrong POS, duplicate invoices, omitted invoices, wrong tax rate, incorrect B2B/B2C classification, missed credit notes, incorrect export/SEZ treatment, HSN errors and incomplete document-series reporting.</p>
+<h3>How should GSTR-1 be reconciled with GSTR-3B?</h3><p>Compare taxable turnover and tax liability category-wise, investigate timing differences, amendments and notes, and ensure the final outward liability in GSTR-3B is supported by the approved GSTR-1 working.</p>
+</section>
+
+<div class="note"><b>Disclaimer:</b> This guide is for educational and practical working purposes. GST law, rules, notifications, circulars, advisories, return forms and portal functionality can change. Apply the law and procedure relevant to the specific tax period, transaction and taxpayer category.</div>
+</main></div>
+
+<footer><div class="wrap"><b>GST Reconciliation</b><br>Practical GST knowledge, reconciliation resources and compliance tools.</div></footer>
+</body></html>
