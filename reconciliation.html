@@ -7,7 +7,10 @@
 <meta name="theme-color" content="#0f172a">
 <title>Free GST Reconciliation Tool | Purchase Register vs GSTR-2B Matching & Excel Report</title>
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<meta name="keywords" content="GST reconciliation tool, GSTR-2B reconciliation, purchase register vs GSTR-2B, GSTR-2B vs purchase register, GST ITC reconciliation, GST invoice matching, GST 2B reconciliation, purchase register reconciliation, GST mismatch report, GSTR-2B Excel reconciliation">
+<meta name="keywords" content="GST reconciliation tool, GSTR-2B reconciliation, purchase register vs GSTR-2B, GSTR-2B vs purchase register, GST ITC reconciliation, GST invoice matching, GST 2B reconciliation, purchase register reconciliation, GST mismatch report, GSTR-2B Excel reconciliation, GST invoice reconciliation online, input tax credit reconciliation, GST reconciliation Excel, GSTR-2B mismatch report, purchase register reconciliation tool">
+<meta name="application-name" content="GST Reconciliation Tool">
+<meta name="apple-mobile-web-app-title" content="GST Reconciliation Tool">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="author" content="GST Reconciliation Tool">
 <link rel="canonical" href="https://gstreconciliation.in/reconciliation.html">
 <meta property="og:type" content="website">
@@ -24,11 +27,15 @@
 window.GST_GA4_ID = 'G-NBKTXWJ20G';
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-if(window.GST_GA4_ID && window.GST_GA4_ID !== 'G-NBKTXWJ20G'){
-  var gas=document.createElement('script'); gas.async=true; gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID); document.head.appendChild(gas);
-  gtag('js', new Date()); gtag('config', window.GST_GA4_ID, {anonymize_ip:true});
+if(window.GST_GA4_ID){
+  var gas=document.createElement('script');
+  gas.async=true;
+  gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);
+  document.head.appendChild(gas);
+  gtag('js', new Date());
+  gtag('config', window.GST_GA4_ID, {anonymize_ip:true});
 }
-function gstAnalytics(eventName, params){ try{ if(window.GST_GA4_ID && window.GST_GA4_ID !== 'G-NBKTXWJ20G' && typeof gtag==='function') gtag('event', eventName, params||{}); }catch(e){} }
+function gstAnalytics(eventName, params){ try{ if(window.GST_GA4_ID && typeof gtag==='function') gtag('event', eventName, params||{}); }catch(e){} }
 </script>
 <!-- Google AdSense: site connection code for gstreconciliation.in -->
 <meta name="google-adsense-account" content="ca-pub-8493595246856929">
@@ -160,7 +167,14 @@ tr:hover td{background:#f8fafc}
 @media(max-width:560px){.container{width:min(100% - 20px,1180px)}.hero-card{padding:28px}.metrics{grid-template-columns:1fr}.run-panel{align-items:flex-start;flex-direction:column}.topbar-inner{min-height:62px}}
 
 /* SEO content: visible, useful information around the existing tool */
-.seo-wrap{padding:8px 0 10px}.seo-intro{font-size:16px;line-height:1.8;color:#334155;max-width:950px}.seo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.seo-card{padding:21px}.seo-card h3{margin:0 0 8px;font-size:17px;color:#0f172a}.seo-card p,.seo-card li{font-size:14px;line-height:1.7;color:#475569}.seo-card ul{padding-left:19px;margin:10px 0 0}.keyword-strip{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.keyword-pill{display:inline-block;padding:7px 10px;border-radius:999px;background:#eff6ff;border:1px solid #dbeafe;color:#1d4ed8;font-size:12px;font-weight:800}.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.workflow .stepbox{padding:19px;background:#fff;border:1px solid var(--line);border-radius:16px}.workflow .num{font-weight:900;color:#2563eb;font-size:12px;text-transform:uppercase;letter-spacing:.05em}.workflow h3{font-size:16px;margin:7px 0}.workflow p{font-size:13px;line-height:1.65;color:#64748b;margin:0}.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.result-box{padding:18px;border-radius:16px;border:1px solid var(--line);background:#fff}.result-box strong{display:block;font-size:15px;color:#0f172a;margin-bottom:6px}.result-box span{font-size:13px;line-height:1.6;color:#64748b}.faq-list{display:grid;gap:10px;margin-top:16px}.faq-list details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px 17px}.faq-list summary{cursor:pointer;font-weight:800;color:#172033}.faq-list p{margin:10px 0 2px;color:#475569;font-size:14px;line-height:1.7}.related-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.related-links a{display:block;text-decoration:none;padding:17px;background:#fff;border:1px solid var(--line);border-radius:14px;color:#1d4ed8;font-weight:800}.related-links small{display:block;color:#64748b;font-weight:500;line-height:1.5;margin-top:5px}@media(max-width:900px){.seo-grid,.workflow,.result-grid,.related-links{grid-template-columns:1fr 1fr}}@media(max-width:560px){.seo-grid,.workflow,.result-grid,.related-links{grid-template-columns:1fr}}
+.seo-wrap{padding:8px 0 10px}.seo-intro{font-size:16px;line-height:1.8;color:#334155;max-width:none;width:100%}.seo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.seo-card{padding:21px}.seo-card h3{margin:0 0 8px;font-size:17px;color:#0f172a}.seo-card p,.seo-card li{font-size:14px;line-height:1.7;color:#475569}.seo-card ul{padding-left:19px;margin:10px 0 0}.keyword-strip{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.keyword-pill{display:inline-block;padding:7px 10px;border-radius:999px;background:#eff6ff;border:1px solid #dbeafe;color:#1d4ed8;font-size:12px;font-weight:800}.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.workflow .stepbox{padding:19px;background:#fff;border:1px solid var(--line);border-radius:16px}.workflow .num{font-weight:900;color:#2563eb;font-size:12px;text-transform:uppercase;letter-spacing:.05em}.workflow h3{font-size:16px;margin:7px 0}.workflow p{font-size:13px;line-height:1.65;color:#64748b;margin:0}.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.result-box{padding:18px;border-radius:16px;border:1px solid var(--line);background:#fff}.result-box strong{display:block;font-size:15px;color:#0f172a;margin-bottom:6px}.result-box span{font-size:13px;line-height:1.6;color:#64748b}/* Content alignment polish: use the full content column without artificial right-side gaps. */
+.seo-wrap > .container > .seo-intro,
+.seo-wrap > .container > .seo-grid,
+.seo-wrap > .container > .workflow,
+.seo-wrap > .container > .keyword-strip,
+.seo-wrap > .container > .faq-list{width:100%;max-width:none}
+.seo-card p,.seo-card li,.workflow p,.faq-list p{max-width:none}
+.faq-list{display:grid;gap:10px;margin-top:16px}.faq-list details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px 17px}.faq-list summary{cursor:pointer;font-weight:800;color:#172033}.faq-list p{margin:10px 0 2px;color:#475569;font-size:14px;line-height:1.7}.related-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.related-links a{display:block;text-decoration:none;padding:17px;background:#fff;border:1px solid var(--line);border-radius:14px;color:#1d4ed8;font-weight:800}.related-links small{display:block;color:#64748b;font-weight:500;line-height:1.5;margin-top:5px}@media(max-width:900px){.seo-grid,.workflow,.result-grid,.related-links{grid-template-columns:1fr 1fr}}@media(max-width:560px){.seo-grid,.workflow,.result-grid,.related-links{grid-template-columns:1fr}}
 </style>
 <script type="application/ld+json">
 {
@@ -332,6 +346,42 @@ tr:hover td{background:#f8fafc}
   "description":"Browser-based Purchase Register vs GSTR-2B reconciliation tool for GST invoice matching, partial matching, missing invoice checks and Excel reporting.",
   "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
 }</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebApplication",
+  "name":"GST Reconciliation Tool",
+  "url":"https://gstreconciliation.in/reconciliation.html",
+  "applicationCategory":"BusinessApplication",
+  "operatingSystem":"Web Browser",
+  "browserRequirements":"Requires JavaScript and a modern web browser",
+  "description":"Free browser-based GST reconciliation tool to compare Purchase Register with GSTR-2B, identify matched invoices, partial matches, missing records, duplicates and review exceptions, and download an Excel reconciliation report.",
+  "featureList":["Purchase Register vs GSTR-2B reconciliation","Invoice number normalization","GSTIN and document type matching","Taxable value and GST comparison","Exception and duplicate review","Professional Excel report"],
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"HowTo",
+  "name":"How to reconcile Purchase Register with GSTR-2B",
+  "description":"Use the GST Reconciliation Tool to upload source files, review detected columns, run reconciliation and download the result report.",
+  "step":[
+    {"@type":"HowToStep","name":"Prepare files","text":"Prepare the Purchase Register and relevant GSTR-2B Excel workbooks."},
+    {"@type":"HowToStep","name":"Upload files","text":"Upload the Purchase Register and GSTR-2B files into the corresponding upload areas."},
+    {"@type":"HowToStep","name":"Review data mapping","text":"Review automatically detected fields and correct mappings if required."},
+    {"@type":"HowToStep","name":"Run reconciliation","text":"Choose the value tolerance and date window, then run reconciliation."},
+    {"@type":"HowToStep","name":"Review exceptions","text":"Review matched, partial, missing, duplicate and review-required records."},
+    {"@type":"HowToStep","name":"Download report","text":"Download the professional Excel reconciliation report for working and follow-up."}
+  ]
+}
+</script>
+<style>
+/* Professional reconciliation v5 enhancements */
+.priority-strip{display:grid;grid-template-columns:minmax(280px,1fr) repeat(3,minmax(130px,180px));gap:12px;align-items:center;margin:14px 0;padding:14px 16px;border:1px solid #dbe5ee;border-radius:16px;background:linear-gradient(135deg,#f8fbff,#eef6fb)}
+.priority-strip>div:first-child{display:flex;flex-direction:column;gap:4px}.priority-strip>div:first-child span{font-size:12px;color:#64748b;line-height:1.45}.priority-stat{background:#fff;border:1px solid #dbe5ee;border-radius:12px;padding:10px 12px;text-align:center}.priority-stat strong{display:block;font-size:20px;color:#0f172a}.priority-stat small{color:#64748b;font-weight:700}.report-row-click{cursor:pointer}.report-row-click:hover{outline:2px solid #cbd5e1;outline-offset:-2px;background:#f8fbff}.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.detail-item{padding:11px 12px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc}.detail-item small{display:block;color:#64748b;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}.detail-item b{display:block;color:#0f172a;font-size:13px;word-break:break-word}.detail-reason{margin-top:14px;padding:14px;border-radius:12px;background:#f8fbff;border:1px solid #dbeafe}.detail-reason p{margin:6px 0 12px;line-height:1.5;color:#334155}.detail-reason strong{font-size:12px;color:#0f172a}@media(max-width:800px){.priority-strip{grid-template-columns:1fr 1fr}.priority-strip>div:first-child{grid-column:1/-1}.detail-grid{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 
@@ -426,6 +476,19 @@ tr:hover td{background:#f8fafc}
 </div>
 </section>
 
+<section class="section seo-wrap" id="gst-reconciliation-use-cases">
+<div class="container">
+  <h2 class="section-title">GSTR-2B Reconciliation for Monthly GST ITC Working</h2>
+  <p class="seo-intro">Use this GST reconciliation tool to move from raw Excel files to a structured invoice-level exception review. It is designed for monthly Purchase Register vs GSTR-2B reconciliation, GST invoice matching, supplier follow-up and preparation of working papers before the final GST return and ITC review.</p>
+  <div class="seo-grid">
+    <div class="panel seo-card"><h3>Purchase Register vs GSTR-2B</h3><p>Compare supplier GSTIN, document type, invoice number, date, taxable value and GST components. The engine uses progressively stronger matching levels instead of treating every similar invoice as an exact match.</p></div>
+    <div class="panel seo-card"><h3>Find GSTR-2B mismatches</h3><p>Identify invoices recorded in the books but not found in GSTR-2B, documents appearing in GSTR-2B but not in the Purchase Register, value differences, date differences and records needing manual review.</p></div>
+    <div class="panel seo-card"><h3>GST reconciliation Excel report</h3><p>Download a structured workbook containing the executive summary, invoice-wise reconciliation, matched and exception categories, vendor summary, exceptions, data quality checks and matching methodology.</p></div>
+  </div>
+  <div class="notice security" style="margin-top:18px"><div class="icon">⚡</div><div><strong>Designed for practical accounts and tax teams.</strong><br>Keep the source workbooks on your computer, run the reconciliation in the browser, then use the exception queues to focus review time where it matters.</div></div>
+</div>
+</section>
+
 <section class="section" id="tool">
 <div class="container">
   <h2 class="section-title">GST Reconciliation — Simple, Accurate & Professional</h2>
@@ -512,8 +575,17 @@ tr:hover td{background:#f8fafc}
       <div class="report-health"><div class="score" id="v4HealthScore">0%</div><small id="v4HealthText">Overall matched coverage</small></div>
     </div>
     <div class="report-actionbar">
-      <div class="report-tip">One Excel report • Summary + reconciliation + exceptions + vendor analysis</div>
-      <button class="btn btn-blue report-download" id="v4Download">⬇ Download Excel Report</button>
+      <div class="report-tip">Professional Excel report • Summary + invoice matching + exception queue + vendor analysis + data quality</div>
+      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end">
+        <button class="btn btn-soft" id="v4Priority">Prioritise Exceptions</button>
+        <button class="btn btn-blue report-download" id="v4Download">⬇ Download Professional Excel Report</button>
+      </div>
+    </div>
+    <div class="priority-strip" id="v4PriorityStrip">
+      <div><b>Review priority</b><span>After reconciliation, use this queue to start with records most likely to require accounting or supplier follow-up.</span></div>
+      <div class="priority-stat"><strong id="v4HighPriority">0</strong><small>High priority</small></div>
+      <div class="priority-stat"><strong id="v4ExceptionGST">₹0</strong><small>Exception GST</small></div>
+      <div class="priority-stat"><strong id="v4ExceptionRate">0%</strong><small>Exception rate</small></div>
     </div>
 
     <div class="report-kpis">
@@ -774,6 +846,31 @@ function scrollToId(id){
   const top=el.getBoundingClientRect().top + window.pageYOffset - 88;
   window.scrollTo({top:Math.max(0,top), behavior:'auto'});
 }
+
+/* Modal controls used by the top navigation and View Instructions buttons. */
+function openModal(id){
+  const modal=document.getElementById(id);
+  if(!modal) return;
+  modal.style.display='block';
+  document.body.style.overflow='hidden';
+}
+function closeModal(id){
+  const modal=document.getElementById(id);
+  if(!modal) return;
+  modal.style.display='none';
+  const anyOpen=Array.from(document.querySelectorAll('.modal')).some(m=>m.style.display==='block');
+  if(!anyOpen) document.body.style.overflow='';
+}
+function modalOutside(event,id){
+  if(event.target===event.currentTarget) closeModal(id);
+}
+document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'){
+    document.querySelectorAll('.modal').forEach(modal=>{
+      if(modal.style.display==='block') closeModal(modal.id);
+    });
+  }
+});
 function downloadTemplates(){
   gstAnalytics('gst_template_download',{template_type:'purchase_register_and_gstr_2b'});
   if(!window.XLSX){ alert('Excel library is still loading. Please wait a moment and try again.'); return; }
@@ -1308,7 +1405,7 @@ function downloadTemplates(){
 
   function clearUploadedData(showToast=false){
     state.prRaw=[]; state.b2bRaw=[]; state.pr=[]; state.b2b=[]; state.report=[];
-    state.maps={PR:{},B2B:{}}; state.files={PR:null,B2B:null}; state.workbooks={PR:null,B2B:null}; state.selectedSheets={PR:null,B2B:null}; state.filter='ALL';
+    state.maps={PR:{},B2B:{}}; state.files={PR:null,B2B:null}; state.workbooks={PR:null,B2B:null}; state.selectedSheets={PR:null,B2B:null}; state.filter='ALL';state.priorityMode=false;
     if($('v2PRFile')) $('v2PRFile').value='';
     if($('v2B2BFile')) $('v2B2BFile').value='';
     if($('v2PRMapping')) $('v2PRMapping').style.display='none';
@@ -1614,9 +1711,43 @@ function downloadTemplates(){
     return 'Open details and review candidate';
   }
 
+  function priorityScore(r){
+    if(!r)return 0;
+    if(r.status==='REVIEW REQUIRED')return 95;
+    if(r.status==='DUPLICATE / POSSIBLE DUPLICATE')return 90;
+    if(r.status==='PARTIAL MATCHING'){
+      const gst=Math.abs((r.pr?.totalTax||0)-(r.b2b?.totalTax||0));
+      return Math.min(88,65+Math.round(Math.min(23,gst/1000)));
+    }
+    if(r.status==='NOT IN 2B')return 75;
+    if(r.status==='NOT IN PURCHASE REGISTER')return 70;
+    return 10;
+  }
+  function showMatchDetails(r){
+    if(!r||!$('matchDetailBody'))return;
+    const fields=[
+      ['Status',displayStatus(r.status)],['Confidence',`${r.confidence||0}%`],['Priority',priorityScore(r)>=85?'High':priorityScore(r)>=70?'Medium':'Low'],
+      ['Vendor',r.vendor||'-'],['Supplier GSTIN',r.gstin||'-'],['Document Type',r.docType||'-'],
+      ['Purchase Register Invoice',r.prInv||'-'],['GSTR-2B Invoice',r.b2bInv||'-'],
+      ['PR Date',displayDate(r.prDate)],['2B Date',displayDate(r.t2bDate)],
+      ['PR Taxable Value','₹'+money(r.prTaxable||0)],['2B Taxable Value','₹'+money(r.t2bTaxable||0)],
+      ['PR Total GST','₹'+money(r.pr?.totalTax||0)],['2B Total GST','₹'+money(r.b2b?.totalTax||0)],
+      ['2B Source Sheet',r.t2bSourceSheet||'-'],['2B ITC Availability',r.t2bItcAvailability||'-']
+    ];
+    $('matchDetailBody').innerHTML=`<div class="detail-grid">${fields.map(x=>`<div class="detail-item"><small>${esc(x[0])}</small><b>${esc(x[1])}</b></div>`).join('')}</div><div class="detail-reason"><b>Engine assessment</b><p>${esc(r.reason||'No additional reason recorded.')}</p><strong>Recommended next step</strong><p>${esc(rowAction(r))}</p></div>`;
+    openModal('matchDetailModal');
+  }
+
   function render(){
     const c=counts();$('v2Dashboard').style.display='block';
     const matched=c.exact,totalPR=state.pr.length,total2B=state.b2b.length;
+    const exceptions=state.report.filter(r=>!['EXACT MATCH','SAFE MATCH'].includes(r.status));
+    const highPriority=exceptions.filter(r=>priorityScore(r)>=85).length;
+    const exceptionGST=exceptions.reduce((sum,r)=>sum+(r.pr?.totalTax||r.b2b?.totalTax||0),0);
+    const exceptionRate=state.report.length?Math.round((exceptions.length/state.report.length)*100):0;
+    if($('v4HighPriority'))$('v4HighPriority').textContent=highPriority.toLocaleString();
+    if($('v4ExceptionGST'))$('v4ExceptionGST').textContent='₹'+money(exceptionGST);
+    if($('v4ExceptionRate'))$('v4ExceptionRate').textContent=exceptionRate+'%';
     const coverage=totalPR?Math.round((matched/totalPR)*100):0;
     $('v4HealthScore').textContent=coverage+'%';
     $('v4HealthText').textContent=coverage>=90?'High matched coverage':coverage>=70?'Good coverage — review exceptions':'Exceptions need attention';
@@ -1667,8 +1798,9 @@ function downloadTemplates(){
     else if(state.filter!=='ALL')rows=rows.filter(r=>r.status===state.filter);
     const q=(($('v4Search')?.value)||'').trim().toLowerCase();
     if(q)rows=rows.filter(r=>rowSearchText(r).includes(q));
-    $('v4TableCount').textContent=rows.length.toLocaleString()+' record'+(rows.length===1?'':'s')+' shown';
-    $('v4Body').innerHTML=rows.map(r=>`<tr>
+    if(state.priorityMode)rows=[...rows].sort((a,b)=>priorityScore(b)-priorityScore(a));
+    $('v4TableCount').textContent=rows.length.toLocaleString()+' record'+(rows.length===1?'':'s')+' shown'+(state.priorityMode?' • prioritised':'');
+    $('v4Body').innerHTML=rows.map((r,ri)=>`<tr class="report-row-click" data-row-index="${state.report.indexOf(r)}" title="Click to view invoice reconciliation details">
       <td><span class="status-pill2 ${statusClass2(r.status)}">${esc(displayStatus(r.status))}</span></td>
       <td>${esc(r.vendor||'-')}</td><td>${esc(r.gstin||'-')}</td><td>${esc(r.docType||'-')}</td>
       <td>${esc(r.prInv||'-')}</td><td>${esc(r.b2bInv||'-')}</td>
@@ -1681,6 +1813,7 @@ function downloadTemplates(){
       <td class="num">₹${money(r.prCess||0)}</td><td class="num">₹${money(r.t2bCess||0)}</td>
       <td>${esc(r.t2bSourceSheet||'-')}</td><td>${esc(r.t2bItcAvailability||'-')}</td>
     </tr>`).join('') || `<tr><td colspan="22"><div class="report-empty">No records match this category/search. Try another category or clear the search.</div></td></tr>`;
+    $('v4Body').querySelectorAll('tr.report-row-click').forEach(tr=>tr.addEventListener('click',()=>{const r=state.report[Number(tr.dataset.rowIndex)];showMatchDetails(r)}));
   }
 
   function countNegative(rows,type){
@@ -1711,7 +1844,18 @@ function downloadTemplates(){
       if(typeof XLSX==='undefined'){alert('The Excel report component is not available. Please refresh this page and try again.');return}
       if(!state.report.length){alert('Please complete reconciliation before downloading the report.');return}
       const book=XLSX.utils.book_new();
+      const usedSheetNames=new Set();
       const add=(name,rows,freeze=true)=>{
+        // Excel worksheet names must be unique and cannot exceed 31 characters.
+        // Keep the requested name where possible and automatically disambiguate
+        // any collision so an export can never fail because of a duplicate sheet.
+        const base=String(name||'Sheet').replace(/[\\/:?*\[\]]/g,' ').trim().slice(0,31)||'Sheet';
+        let finalName=base, n=2;
+        while(usedSheetNames.has(finalName) || book.SheetNames.includes(finalName)){
+          const suffix=` (${n++})`;
+          finalName=(base.slice(0,31-suffix.length)+suffix);
+        }
+        usedSheetNames.add(finalName);
         const ws=XLSX.utils.aoa_to_sheet(rows);
         const range=XLSX.utils.decode_range(ws['!ref']||'A1:A1');
         const border={top:{style:'thin',color:{rgb:'D7E1EA'}},bottom:{style:'thin',color:{rgb:'D7E1EA'}},left:{style:'thin',color:{rgb:'D7E1EA'}},right:{style:'thin',color:{rgb:'D7E1EA'}}};
@@ -1722,7 +1866,7 @@ function downloadTemplates(){
         ws['!cols']=Array.from({length:range.e.c+1},(_,c)=>{let max=12;for(let r=0;r<=Math.min(range.e.r,150);r++){const cell=ws[XLSX.utils.encode_cell({r,c})];if(cell&&cell.v!==undefined)max=Math.max(max,String(cell.v).length+2)}return {wch:Math.min(Math.max(max,12),34)}});
         ws['!rows']=[{hpt:28}];
         if(freeze)ws['!freeze']={xSplit:0,ySplit:1};
-        XLSX.utils.book_append_sheet(book,ws,name.slice(0,31));
+        XLSX.utils.book_append_sheet(book,ws,finalName);
       };
       const c=counts(), generated=new Date().toLocaleString('en-IN');
       const prTax=state.pr.reduce((s,r)=>s+(r.totalTax||0),0), bTax=state.b2b.reduce((s,r)=>s+(r.totalTax||0),0);
@@ -1734,13 +1878,32 @@ function downloadTemplates(){
       const headers=['STATUS','CONFIDENCE %','VENDOR','GSTIN','DOCUMENT TYPE','PR INVOICE NO.','2B INVOICE NO.','PR INVOICE DATE','2B INVOICE DATE','PR TAXABLE VALUE','2B TAXABLE VALUE','PR IGST','2B IGST','PR CGST','2B CGST','PR SGST','2B SGST','PR CESS','2B CESS','PR TOTAL GST','2B TOTAL GST','PR SOURCE ROW','2B SOURCE ROW'];
       const toRow=r=>[displayStatus(r.status),r.confidence,r.vendor||'',r.gstin||'',r.docType||'',r.prInv||'-',r.b2bInv||'-',displayDate(r.prDate),displayDate(r.t2bDate),r.prTaxable||0,r.t2bTaxable||0,r.prIgst||0,r.t2bIgst||0,r.prCgst||0,r.t2bCgst||0,r.prSgst||0,r.t2bSgst||0,r.prCess||0,r.t2bCess||0,r.pr?.totalTax||0,r.b2b?.totalTax||0,r.pr?.sourceRow||'',r.b2b?.sourceRow||''];
       add('ALL RECONCILIATION',[headers,...state.report.map(toRow)]);
-      [['EXACT MATCH','MATCHED'],['SAFE MATCH','MATCHED'],['PARTIAL MATCHING','PARTIAL MATCHING'],['NOT IN 2B','NOT IN 2B'],['NOT IN PURCHASE REGISTER','NOT IN PURCHASE REGISTER'],['REVIEW REQUIRED','REVIEW REQUIRED'],['DUPLICATE / POSSIBLE DUPLICATE','DUPLICATE']].forEach(([status,sheet])=>{const rr=state.report.filter(r=>r.status===status);if(rr.length)add(sheet,[headers,...rr.map(toRow)])});
+      // EXACT MATCH and SAFE MATCH are both displayed as "Matched" in the UI,
+      // so they must share one Excel worksheet rather than attempting to create
+      // the same MATCHED worksheet twice.
+      [
+        {statuses:['EXACT MATCH','SAFE MATCH'],sheet:'MATCHED'},
+        {statuses:['PARTIAL MATCHING'],sheet:'PARTIAL MATCHING'},
+        {statuses:['NOT IN 2B'],sheet:'NOT IN 2B'},
+        {statuses:['NOT IN PURCHASE REGISTER'],sheet:'NOT IN PURCHASE REGISTER'},
+        {statuses:['REVIEW REQUIRED'],sheet:'REVIEW REQUIRED'},
+        {statuses:['DUPLICATE / POSSIBLE DUPLICATE'],sheet:'DUPLICATE'}
+      ].forEach(({statuses,sheet})=>{
+        const rr=state.report.filter(r=>statuses.includes(r.status));
+        if(rr.length)add(sheet,[headers,...rr.map(toRow)]);
+      });
       const vm=new Map();state.report.forEach(r=>{const k=(r.gstin||'')+'|'+(r.vendor||'Unknown');if(!vm.has(k))vm.set(k,{vendor:r.vendor||'Unknown',gstin:r.gstin||'',rows:0,matched:0,partial:0,not2b:0,notpr:0,review:0,dup:0,prgst:0,bgst:0});const x=vm.get(k);x.rows++;x.prgst+=r.pr?.totalTax||0;x.bgst+=r.b2b?.totalTax||0;if(r.status==='EXACT MATCH'||r.status==='SAFE MATCH')x.matched++;else if(r.status==='PARTIAL MATCHING')x.partial++;else if(r.status==='NOT IN 2B')x.not2b++;else if(r.status==='NOT IN PURCHASE REGISTER')x.notpr++;else if(r.status==='REVIEW REQUIRED')x.review++;else if(r.status==='DUPLICATE / POSSIBLE DUPLICATE')x.dup++});
       add('VENDOR SUMMARY',[['VENDOR','GSTIN','RESULT ROWS','MATCHED','PARTIAL','NOT IN 2B','NOT IN PURCHASE REGISTER','REVIEW','DUPLICATE','PR GST','2B GST','GST GAP'],...Array.from(vm.values()).sort((a,b)=>b.prgst-a.prgst).map(x=>[x.vendor,x.gstin,x.rows,x.matched,x.partial,x.not2b,x.notpr,x.review,x.dup,x.prgst,x.bgst,round2(x.prgst-x.bgst)])]);
       const exceptions=state.report.filter(r=>!['EXACT MATCH','SAFE MATCH'].includes(r.status));
       add('EXCEPTIONS',[['STATUS','VENDOR','GSTIN','PR INVOICE NO.','2B INVOICE NO.','PR DATE','2B DATE','PR TAXABLE','2B TAXABLE','PR TOTAL GST','2B TOTAL GST','REASON','RECOMMENDED ACTION'],...exceptions.map(r=>[displayStatus(r.status),r.vendor||'',r.gstin||'',r.prInv||'-',r.b2bInv||'-',displayDate(r.prDate),displayDate(r.t2bDate),r.prTaxable||0,r.t2bTaxable||0,r.pr?.totalTax||0,r.b2b?.totalTax||0,r.reason||'',rowAction(r)])]);
       const qpr=validateAndParse(state.prRaw,'PR').quality,qb=validateAndParse(state.b2bRaw,'B2B').quality;
       add('DATA QUALITY',[['CHECK','PURCHASE REGISTER','GSTR-2B'],['Rows',qpr.rows,qb.rows],['Blank GSTIN',qpr.blankGstin,qb.blankGstin],['Blank Invoice Number',qpr.blankInv,qb.blankInv],['Blank Date',qpr.blankDate,qb.blankDate],['Duplicate GSTIN + Doc Type + Invoice',qpr.duplicateKeys,qb.duplicateKeys],['Unrecognised Document Type',qpr.invalidDocType,qb.invalidDocType],['Negative Numeric Values',countNegative(state.prRaw,'PR'),countNegative(state.b2bRaw,'B2B')]]);
+      const priorityRows=[...state.report].filter(r=>!['EXACT MATCH','SAFE MATCH'].includes(r.status)).sort((a,b)=>priorityScore(b)-priorityScore(a));
+      add('REVIEW QUEUE',[['PRIORITY','STATUS','VENDOR','GSTIN','PR INVOICE NO.','2B INVOICE NO.','PR TOTAL GST','2B TOTAL GST','CONFIDENCE %','REASON','RECOMMENDED ACTION'],...priorityRows.map(r=>[priorityScore(r)>=85?'HIGH':priorityScore(r)>=70?'MEDIUM':'LOW',displayStatus(r.status),r.vendor||'',r.gstin||'',r.prInv||'-',r.b2bInv||'-',r.pr?.totalTax||0,r.b2b?.totalTax||0,r.confidence||0,r.reason||'',rowAction(r)])]);
+      const supplierActions=new Map();
+      priorityRows.forEach(r=>{const key=(r.gstin||'')+'|'+(r.vendor||'Unknown');if(!supplierActions.has(key))supplierActions.set(key,{vendor:r.vendor||'Unknown',gstin:r.gstin||'',exceptions:0,high:0,prgst:0,bgst:0});const x=supplierActions.get(key);x.exceptions++;if(priorityScore(r)>=85)x.high++;x.prgst+=r.pr?.totalTax||0;x.bgst+=r.b2b?.totalTax||0});
+      add('SUPPLIER ACTIONS',[['VENDOR','GSTIN','EXCEPTION RECORDS','HIGH PRIORITY','PR GST','2B GST','GST GAP','FOLLOW-UP'],...Array.from(supplierActions.values()).sort((a,b)=>b.prgst-a.prgst).map(x=>[x.vendor,x.gstin,x.exceptions,x.high,x.prgst,x.bgst,round2(x.prgst-x.bgst),'Review supplier/book exceptions and supporting documents'])]);
+      add('CONTROL SUMMARY',[['CONTROL','RESULT'],['Reconciliation run date/time',generated],['Difference tolerance','₹'+money(state.settings.diffTol)],['Date matching window',state.settings.dateWindow+' day(s)'],['Purchase Register rows',state.pr.length],['GSTR-2B rows',state.b2b.length],['Matched rows',c.exact],['Exception rows',state.report.length-c.exact],['High-priority exception rows',priorityRows.filter(r=>priorityScore(r)>=85).length],['Exception GST','₹'+money(priorityRows.reduce((a,r)=>a+(r.pr?.totalTax||r.b2b?.totalTax||0),0))],['Browser processing','Source files processed locally in the browser'],['Important limitation','Reconciliation classification is a working control; verify invoices, tax treatment and applicable GST provisions before final ITC decisions.']]);
       add('MATCH LOGIC',[['RULE','TREATMENT'],['Exact Match','Strong match using supplier GSTIN, document type, normalized invoice number and configured value/tax/date checks.'],['Partial Matching','A reliable related record is identified, but one or more compared details require review.'],['Invoice Normalization','Case, spaces and punctuation are normalized and leading zeros are removed.'],['Date Window','Configured date window is used for document date comparison.'],['Fuzzy Matching','Used conservatively as a review aid; ambiguous candidates remain for review.'],['Duplicate Protection','A GSTR-2B record is allocated only once.']]);
       const filename='GST_Reconciliation_Report.xlsx';
       let directWorked=false;
@@ -1774,6 +1937,7 @@ function downloadTemplates(){
   $('v2Reset').addEventListener('click',reset);
   $('v4Download').addEventListener('click',exportProfessionalReport);
   $('v4Search').addEventListener('input',renderTable);
+  if($('v4Priority'))$('v4Priority').addEventListener('click',()=>{state.priorityMode=!state.priorityMode;$('v4Priority').textContent=state.priorityMode?'Normal Order':'Prioritise Exceptions';renderTable()});
 })();
 </script>
 
