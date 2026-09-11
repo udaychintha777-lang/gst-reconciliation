@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GST LUT (Letter of Undertaking) – Export Without Payment of IGST</title>
+<meta name="description" content="GST LUT explained completely: eligibility, Form RFD-11, Rule 96A, filing procedure, export invoices, GSTR-1, GSTR-3B, payment-realisation conditions, documents, common mistakes and practical examples.">
+<meta name="keywords" content="GST LUT, LUT under GST, Letter of Undertaking GST, GST RFD-11, LUT filing, export without payment of IGST, Rule 96A, LUT for export of services, LUT for export of goods, GST export LUT">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://gstreconciliation.in/articles/GST_LUT_Letter_of_Undertaking_Complete_Guide.html">
+
+<!-- Google tag -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-NBKTXWJ20G');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+
+<style>
+:root{--blue:#0b63ce;--blue2:#084b9a;--ink:#17324d;--muted:#5c6b7a;--bg:#f4f8fc;--card:#fff;--line:#dce7f2;--green:#087443;--greenbg:#eaf8f0;--amber:#a15c00;--amberbg:#fff6e5;--red:#a52b2b;--redbg:#fff0f0;--shadow:0 10px 30px rgba(20,60,100,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.72}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1220px;margin:auto;padding:0 22px}
+.hero{background:linear-gradient(135deg,#084b9a,#0b63ce 58%,#1786e8);color:#fff;padding:62px 0 48px}
+.badge{display:inline-block;padding:7px 12px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.12);font-size:12px;font-weight:800;letter-spacing:.08em}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:18px 0 15px;max-width:980px}
+.hero p{font-size:19px;max-width:920px;color:#eaf4ff;margin:0}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}
+.stat{background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.22);border-radius:16px;padding:18px}
+.stat strong{display:block;font-size:22px;color:#fff}
+.stat span{font-size:13px;color:#dbeaff}
+.layout{display:grid;grid-template-columns:260px minmax(0,1fr);gap:28px;align-items:start;padding:30px 0 70px}
+.toc{position:sticky;top:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.toc h3{margin:0 0 12px;font-size:15px}
+.toc a{display:block;padding:6px 0;font-size:13px;color:#31516f}
+.content{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;margin-bottom:22px;box-shadow:var(--shadow)}
+h2{font-size:30px;line-height:1.2;margin:0 0 16px}
+h3{font-size:21px;margin:24px 0 10px}
+h4{font-size:17px;margin:18px 0 8px}
+p{margin:10px 0}
+ul,ol{padding-left:23px}
+li{margin:7px 0}
+.lead{font-size:17px;color:#3d566d}
+.note,.warn,.success,.danger{border-radius:14px;padding:16px 18px;margin:18px 0;border-left:5px solid}
+.note{background:#eef6ff;border-color:var(--blue)}
+.warn{background:var(--amberbg);border-color:#d88700}
+.success{background:var(--greenbg);border-color:var(--green)}
+.danger{background:var(--redbg);border-color:var(--red)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mini{border:1px solid var(--line);border-radius:14px;padding:17px;background:#fbfdff}
+.mini strong{display:block;margin-bottom:5px}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:9px;margin:20px 0}
+.flow .step{background:#f7fbff;border:1px solid #cfe0f2;border-radius:12px;padding:15px;text-align:center;position:relative;font-size:13px}
+.flow .step strong{display:block;color:var(--blue);font-size:14px;margin-bottom:4px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:11px 12px;vertical-align:top}
+th{background:#edf5fc;text-align:left;color:#234766}
+tr:nth-child(even) td{background:#fbfdff}
+.kpi{font-size:27px;font-weight:800;color:var(--blue)}
+.tag{display:inline-block;background:#edf5ff;color:#0b63ce;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:700;margin:3px}
+.code{background:#172536;color:#e9f4ff;border-radius:12px;padding:16px;overflow:auto;font-family:Consolas,monospace;font-size:13px}
+.check{display:grid;grid-template-columns:26px 1fr;gap:8px;margin:8px 0}
+.check b{color:var(--green)}
+.faq{border-top:1px solid var(--line);padding:18px 0}
+.faq:first-of-type{border-top:0}
+.small{font-size:13px;color:var(--muted)}
+footer{background:#12263a;color:#dce9f5;padding:34px 0}
+footer p{color:#b9c9d7;font-size:13px}
+@media(max-width:950px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto}.stats{grid-template-columns:repeat(2,1fr)}.flow{grid-template-columns:1fr 1fr}.grid3{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.wrap{padding:0 15px}.hero{padding:42px 0 35px}.stats,.grid2,.grid3,.flow{grid-template-columns:1fr}h2{font-size:25px}.card{padding:20px}table{font-size:12px}}
+
+.related-wrap{margin-top:4px}
+.related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}
+.related-card{display:block;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;transition:.18s;box-shadow:0 5px 18px rgba(20,60,100,.05)}
+.related-card:hover{transform:translateY(-2px);text-decoration:none;border-color:#b9d3ec;box-shadow:0 10px 24px rgba(20,60,100,.10)}
+.related-card strong{display:block;color:var(--blue);font-size:16px;margin-bottom:6px}
+.related-card span{display:block;color:var(--muted);font-size:13px;line-height:1.55}
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}
+.contact-card{background:#fbfdff;border:1px solid var(--line);border-radius:14px;padding:20px}
+.contact-card strong{display:block;font-size:14px;margin-bottom:6px}
+.contact-card a{font-size:17px;font-weight:700}
+@media(max-width:620px){.related-grid,.contact-grid{grid-template-columns:1fr}}
+
+</style>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Article",
+ "headline":"GST LUT (Letter of Undertaking) – Export Without Payment of IGST",
+ "description":"A practical and detailed explanation of GST LUT, Form RFD-11, Rule 96A, filing, export invoices, compliance, payment realisation and common mistakes.",
+ "mainEntityOfPage":{"@type":"WebPage","@id":"https://gstreconciliation.in/articles/GST_LUT_Letter_of_Undertaking_Complete_Guide.html"},
+ "publisher":{"@type":"Organization","name":"GST Reconciliation"}
+}
+</script>
+</head>
+<body>
+
+<header class="hero">
+<div class="wrap">
+<span class="badge">GST EXPORT • LETTER OF UNDERTAKING</span>
+<h1>GST LUT (Letter of Undertaking): Export Without Payment of IGST</h1>
+<p>A complete practical explanation of LUT under GST — who can use it, how Form GST RFD-11 works, when to file it, how export invoices and returns should be reported, what happens to ITC, payment-realisation conditions, and how to avoid common compliance mistakes.</p>
+<div class="stats">
+<div class="stat"><strong>RFD-11</strong><span>Form used for the LUT undertaking</span></div>
+<div class="stat"><strong>Rule 96A</strong><span>Core rule for export without IGST</span></div>
+<div class="stat"><strong>Zero-rated supply</strong><span>Export can be made without charging IGST</span></div>
+<div class="stat"><strong>ITC refund</strong><span>Eligible unutilised ITC can be claimed through the refund route</span></div>
+</div>
+</div>
+</header>
+
+<div class="wrap layout">
+<aside class="toc">
+<h3>On this page</h3>
+<a href="#meaning">1. What is GST LUT?</a>
+<a href="#why">2. Why is LUT required?</a>
+<a href="#zero">3. Zero-rated vs exempt</a>
+<a href="#eligibility">4. Who can file LUT?</a>
+<a href="#bond">5. LUT vs bond</a>
+<a href="#validity">6. Validity and timing</a>
+<a href="#procedure">7. How to file LUT</a>
+<a href="#rfd11">8. Form RFD-11 explained</a>
+<a href="#invoice">9. Export invoice requirements</a>
+<a href="#returns">10. GSTR-1 and GSTR-3B</a>
+<a href="#goods">11. LUT for export of goods</a>
+<a href="#services">12. LUT for export of services</a>
+<a href="#realisation">13. Payment realisation</a>
+<a href="#itc">14. ITC and refund after LUT</a>
+<a href="#documents">15. Documents and records</a>
+<a href="#mistakes">16. Common mistakes</a>
+<a href="#examples">17. Practical examples</a>
+<a href="#industries">18. Industry situations</a>
+<a href="#comparison">19. LUT vs payment of IGST</a>
+<a href="#checklist">20. Compliance checklist</a>
+<a href="#faq">21. FAQs</a>
+</aside>
+
+<main class="content">
+
+<section class="card" id="meaning">
+<h2>What is GST LUT?</h2>
+<p class="lead"><strong>LUT</strong> means <strong>Letter of Undertaking</strong>. Under GST, an eligible registered person can furnish an LUT in <strong>Form GST RFD-11</strong> and supply goods or services for export <strong>without payment of Integrated GST (IGST)</strong>.</p>
+<p>This is particularly useful for exporters because the exporter does not have to first pay IGST on the export invoice and then wait to claim a refund of that IGST. Instead, the export is made without payment of IGST, subject to the conditions attached to the LUT and the export provisions.</p>
+
+<div class="note"><strong>Simple way to understand it:</strong> LUT is not a tax exemption. The underlying export remains a <strong>zero-rated supply</strong>. LUT is the undertaking that allows an eligible exporter to make the zero-rated supply without paying IGST at the time of export.</div>
+
+<div class="grid3">
+<div class="mini"><strong>Without LUT</strong><span>Depending on the permitted route, exporter may pay IGST and subsequently seek refund of the tax paid.</span></div>
+<div class="mini"><strong>With LUT</strong><span>Exporter supplies without charging/collecting IGST on the export supply and may pursue refund of eligible accumulated ITC.</span></div>
+<div class="mini"><strong>Main compliance</strong><span>Export conditions, invoice reporting, return reporting and realisation requirements must be properly monitored.</span></div>
+</div>
+</section>
+
+<section class="card" id="why">
+<h2>Why is LUT required under GST?</h2>
+<p>GST treats exports and qualifying supplies to SEZ units/developers as zero-rated supplies. The law provides a mechanism for making such supplies without payment of IGST, subject to the prescribed undertaking or bond requirements.</p>
+<p>The LUT therefore performs a practical compliance function: it gives the exporter a route to keep IGST from becoming an immediate cash outflow on eligible zero-rated supplies.</p>
+<div class="flow">
+<div class="step"><strong>1. Export order</strong>Goods/services are supplied to an overseas customer.</div>
+<div class="step"><strong>2. LUT</strong>Eligible exporter furnishes RFD-11.</div>
+<div class="step"><strong>3. Invoice</strong>Invoice carries the export-under-LUT endorsement.</div>
+<div class="step"><strong>4. Reporting</strong>Export details are reported in the applicable GST returns.</div>
+<div class="step"><strong>5. ITC refund</strong>Eligible accumulated ITC may be claimed under the refund mechanism.</div>
+</div>
+</section>
+
+<section class="card" id="zero">
+<h2>Zero-rated supply is not the same as exempt supply</h2>
+<p>This distinction is one of the most important concepts when understanding LUT.</p>
+<table>
+<tr><th>Point</th><th>Zero-rated export</th><th>Exempt / nil-rated supply</th></tr>
+<tr><td>Basic concept</td><td>Taxable supply given special zero-rating treatment.</td><td>Supply on which GST is exempted or nil-rated under the applicable provisions.</td></tr>
+<tr><td>ITC relationship</td><td>Eligible ITC can generally be retained subject to the zero-rated supply rules and may be refundable where conditions are satisfied.</td><td>ITC treatment follows the rules applicable to exempt supplies.</td></tr>
+<tr><td>LUT relevance</td><td>Yes, where the exporter chooses the route of export without payment of IGST.</td><td>LUT is not a general mechanism for making exempt supplies.</td></tr>
+<tr><td>Refund possibility</td><td>Eligible unutilised ITC may be refundable under the applicable refund provisions.</td><td>Refund treatment is different and cannot be assumed merely because the supply is exempt.</td></tr>
+</table>
+<div class="warn"><strong>Important:</strong> Do not describe an LUT export as an “exempt export”. The better description is <strong>zero-rated supply made without payment of IGST under LUT</strong>.</div>
+</section>
+
+<section class="card" id="eligibility">
+<h2>Who can file GST LUT?</h2>
+<p>The LUT facility is intended for registered persons who intend to supply goods or services for export without payment of IGST, subject to the eligibility conditions prescribed under the GST law and notifications.</p>
+<h3>Typical eligible exporters</h3>
+<div class="grid2">
+<div class="mini"><strong>Exporters of goods</strong>Manufacturers, traders and other registered businesses exporting taxable goods outside India.</div>
+<div class="mini"><strong>Exporters of services</strong>IT/ITES companies, consultants, engineers, professional service providers, BPO/KPO businesses and other service exporters satisfying the export-of-service conditions.</div>
+<div class="mini"><strong>Businesses making SEZ supplies</strong>Suppliers making qualifying zero-rated supplies to SEZ units/developers, where the applicable conditions are met.</div>
+<div class="mini"><strong>Businesses with accumulated ITC</strong>Exporters who prefer to avoid an upfront IGST cash outflow and use the eligible ITC refund mechanism.</div>
+</div>
+<h3>Who should be careful before using LUT?</h3>
+<ul>
+<li>A person who does not actually satisfy the conditions for zero-rated supply cannot make a domestic supply “zero-rated” merely by filing an LUT.</li>
+<li>Export-of-service conditions must be examined separately. Receipt of money from a foreign customer alone does not automatically establish export of services.</li>
+<li>The exporter must monitor the Rule 96A conditions relating to export and receipt of consideration.</li>
+<li>Any disqualification or restriction applicable under the prevailing GST provisions should be checked before relying on LUT.</li>
+</ul>
+</section>
+
+<section class="card" id="bond">
+<h2>LUT vs Bond: what is the difference?</h2>
+<p>Rule 96A provides for a <strong>bond or Letter of Undertaking</strong> for export without payment of integrated tax. The LUT route is the commonly used mechanism for eligible exporters who can furnish an LUT instead of a bond.</p>
+<table>
+<tr><th>Point</th><th>LUT</th><th>Bond</th></tr>
+<tr><td>Purpose</td><td>Undertaking to comply with export conditions without upfront IGST.</td><td>Security/undertaking mechanism where bond is required.</td></tr>
+<tr><td>Common users</td><td>Eligible registered exporters satisfying LUT conditions.</td><td>Persons who are not eligible for LUT or fall within circumstances requiring bond.</td></tr>
+<tr><td>Form</td><td>Form GST RFD-11.</td><td>Bond documentation as prescribed, with applicable security/bank guarantee requirements where relevant.</td></tr>
+<tr><td>Practical burden</td><td>Generally simpler for eligible exporters.</td><td>Higher documentation/security requirements can arise.</td></tr>
+</table>
+<div class="success"><strong>Practical point:</strong> Filing an LUT does not mean that a business has obtained a tax exemption. It is a compliance undertaking that enables the specified zero-rated supply route without payment of IGST.</div>
+</section>
+
+<section class="card" id="validity">
+<h2>GST LUT validity and when should it be filed?</h2>
+<p>The LUT is generally valid for the <strong>financial year in which it is furnished</strong>. An exporter should therefore plan the LUT before commencing the relevant export supplies for that period rather than waiting until after invoices have already been issued.</p>
+<h3>Should LUT be filed before the first export?</h3>
+<p><strong>Yes.</strong> Rule 96A requires the bond or LUT to be furnished <strong>prior to export</strong> when using the export-without-payment-of-IGST route.</p>
+<div class="note"><strong>Compliance habit:</strong> Treat LUT renewal as an annual pre-export control. Before the first export invoice of the new financial year, verify that the applicable LUT has been furnished and the acknowledgement/ARN is available in the records.</div>
+
+<table>
+<tr><th>Situation</th><th>Recommended control</th></tr>
+<tr><td>New exporter</td><td>Complete GST registration and confirm eligibility before using the LUT route.</td></tr>
+<tr><td>Existing exporter starting a new financial year</td><td>Furnish the applicable LUT before making exports under the LUT route.</td></tr>
+<tr><td>LUT already filed but export has not started</td><td>Keep the ARN/acknowledgement and approved/furnished details with the export compliance records.</td></tr>
+<tr><td>Export made without a valid LUT</td><td>Do not assume the export is automatically protected by an old LUT; evaluate the tax and procedural consequences promptly.</td></tr>
+</table>
+</section>
+
+<section class="card" id="procedure">
+<h2>How to file GST LUT on the GST Portal</h2>
+<p>The practical filing route is through the GST Portal under the LUT facility. The exact screen labels can change as portal functionality is updated, but the compliance sequence is broadly as follows.</p>
+
+<div class="flow">
+<div class="step"><strong>Step 1</strong>Login to GST Portal using the relevant GSTIN.</div>
+<div class="step"><strong>Step 2</strong>Go to <b>Services → User Services → Furnish Letter of Undertaking (LUT)</b> or the corresponding LUT option shown on the portal.</div>
+<div class="step"><strong>Step 3</strong>Select the relevant period/financial year and provide the required declarations and authorised-signatory details.</div>
+<div class="step"><strong>Step 4</strong>Submit the LUT using the permitted authentication method.</div>
+<div class="step"><strong>Step 5</strong>Save the ARN/acknowledgement and LUT copy for the export compliance file.</div>
+</div>
+
+<h3>What should be checked before submission?</h3>
+<ul>
+<li>Correct GSTIN and legal name.</li>
+<li>Correct authorised signatory.</li>
+<li>Eligibility for LUT.</li>
+<li>Previous compliance under the export-without-payment route.</li>
+<li>Whether export-of-service conditions are actually satisfied for service exports.</li>
+<li>Whether the business has a system to monitor export realisation and Rule 96A timelines.</li>
+</ul>
+
+<div class="success"><strong>Online acceptance:</strong> CBIC has clarified that an LUT furnished online in Form GST RFD-11 is deemed accepted when the acknowledgement bearing the ARN is generated online, subject to the applicable eligibility requirements.</div>
+</section>
+
+<section class="card" id="rfd11">
+<h2>Form GST RFD-11 explained</h2>
+<p>Form GST RFD-11 is the prescribed form associated with the bond/LUT requirement under Rule 96A.</p>
+<table>
+<tr><th>Field / area</th><th>What it represents</th></tr>
+<tr><td>GSTIN</td><td>GST registration number of the exporter furnishing the undertaking.</td></tr>
+<tr><td>Name</td><td>Legal name of the registered person.</td></tr>
+<tr><td>Type of document</td><td>Indicates whether the document is a bond or Letter of Undertaking.</td></tr>
+<tr><td>Declaration</td><td>Undertaking to comply with the prescribed export conditions and pay tax/interest where the relevant conditions are not fulfilled.</td></tr>
+<tr><td>Authorised signatory</td><td>Person authorised to furnish the undertaking on behalf of the registered person.</td></tr>
+</table>
+<p>The online GST Portal workflow may present the fields in a guided format rather than as a paper-like form. Always retain the final acknowledgement and submitted details.</p>
+</section>
+
+<section class="card" id="invoice">
+<h2>Export invoice under LUT: what should the invoice say?</h2>
+<p>An export invoice made under LUT should clearly communicate that the supply is being made for export without payment of IGST.</p>
+<div class="code">SUPPLY MEANT FOR EXPORT UNDER BOND OR LETTER OF UNDERTAKING WITHOUT PAYMENT OF IGST</div>
+<p>The export invoice also needs to contain the applicable invoice particulars and export-specific information prescribed under the GST invoice rules.</p>
+
+<div class="grid2">
+<div class="mini"><strong>For export of goods</strong>Pay attention to exporter/recipient details, destination, export-related document references, invoice value, currency, HSN and other applicable particulars.</div>
+<div class="mini"><strong>For export of services</strong>Ensure the recipient, place-of-supply analysis, nature of service, invoice details, foreign currency/consideration records and export-of-service conditions are properly documented.</div>
+</div>
+
+<div class="warn"><strong>Common error:</strong> Do not simply print “LUT” on an invoice and assume that is sufficient. The prescribed export endorsement and the substantive export conditions both matter.</div>
+</section>
+
+<section class="card" id="returns">
+<h2>How LUT exports are reported in GSTR-1 and GSTR-3B</h2>
+<p>Filing LUT does not remove the requirement to report exports in GST returns. The export transactions must continue to be correctly declared in the relevant return tables.</p>
+
+<h3>GSTR-1</h3>
+<p>Export invoices are reported in the applicable export sections of GSTR-1. For goods, the export invoice information is also relevant to customs-system matching. For services, the applicable export-of-services reporting needs to be accurate.</p>
+
+<h3>GSTR-3B</h3>
+<p>Zero-rated outward supplies are reported in the relevant GSTR-3B table. The fact that the invoice has no IGST payable does not mean the export is omitted from the return.</p>
+
+<table>
+<tr><th>Control</th><th>What to reconcile</th></tr>
+<tr><td>Invoice vs GSTR-1</td><td>Invoice number, date, taxable value, recipient/export details and amendments.</td></tr>
+<tr><td>GSTR-1 vs GSTR-3B</td><td>Zero-rated supply values should be consistently reported, subject to the applicable return structure.</td></tr>
+<tr><td>Goods exports</td><td>Invoice details should align with shipping bill/export records and customs data.</td></tr>
+<tr><td>Services exports</td><td>Invoice, agreement/work order, recipient details, service evidence and payment-realisation records should tell the same story.</td></tr>
+</table>
+</section>
+
+<section class="card" id="goods">
+<h2>GST LUT for export of goods</h2>
+<p>For goods exporters, the LUT route means the export invoice is issued without payment of IGST, while the goods are exported under the applicable customs/export procedure.</p>
+<h3>Typical process</h3>
+<ol>
+<li>Furnish valid LUT before export.</li>
+<li>Issue export invoice with the correct LUT endorsement.</li>
+<li>Prepare shipping bill and export documentation.</li>
+<li>Export the goods within the applicable Rule 96A time condition.</li>
+<li>Report the export correctly in GSTR-1 and other applicable records.</li>
+<li>Maintain shipping bill, export general manifest/export report and related evidence.</li>
+<li>Where eligible, calculate and claim refund of unutilised ITC attributable to zero-rated supplies.</li>
+</ol>
+
+<div class="note"><strong>Important distinction:</strong> The LUT route and the customs procedure are related but not identical. LUT deals with the GST route for export without payment of IGST; customs clearance and export documentation remain separate compliance requirements.</div>
+</section>
+
+<section class="card" id="services">
+<h2>GST LUT for export of services</h2>
+<p>Service exporters need additional care because an export of services must satisfy the statutory conditions for export of services. LUT alone cannot convert an ordinary domestic service into an export.</p>
+<h3>Core export-of-service checks</h3>
+<ul>
+<li>The supplier is located in India.</li>
+<li>The recipient is located outside India.</li>
+<li>The place of supply is outside India, subject to the statutory rules and exceptions.</li>
+<li>Payment is received by the supplier in convertible foreign exchange or as otherwise permitted by the applicable law.</li>
+<li>The supplier and recipient are not merely establishments of the same person where the law treats the transaction differently.</li>
+</ul>
+
+<div class="grid2">
+<div class="mini"><strong>Example: IT services</strong>A company in India provides software development services to an overseas customer, the place-of-supply and other export conditions are satisfied, and consideration is received as required. LUT can be used for the zero-rated supply route.</div>
+<div class="mini"><strong>Example: Indian customer with foreign payment</strong>A customer located in India pays in foreign currency. Foreign currency by itself does not make the transaction an export of service; recipient location and all statutory conditions must be examined.</div>
+</div>
+</section>
+
+<section class="card" id="realisation">
+<h2>Payment realisation and Rule 96A: the most important LUT condition</h2>
+<p>One of the most misunderstood parts of LUT compliance is the consequence of failing to satisfy the export/payment conditions within the prescribed period.</p>
+
+<table>
+<tr><th>Type of supply</th><th>Rule 96A condition</th><th>Practical control</th></tr>
+<tr><td>Export of goods</td><td>If goods are not exported within the prescribed period from the date of export invoice, the tax and interest consequences under Rule 96A can arise.</td><td>Track invoice date → customs export date → shipping bill/EGM evidence.</td></tr>
+<tr><td>Export of services</td><td>If payment for services is not received within the prescribed period from the date of invoice, tax and interest consequences can arise, subject to the further period allowed by the Commissioner.</td><td>Track invoice date → realisation date → FIRC/FIRA/bank advice/eBRC and related evidence.</td></tr>
+</table>
+
+<div class="danger"><strong>Do not ignore ageing.</strong> An export invoice can remain outstanding in the accounting system while the Rule 96A deadline approaches. Exporters should maintain a separate LUT realisation ageing report rather than relying only on accounts receivable ageing.</div>
+
+<h3>Useful LUT monitoring fields</h3>
+<table>
+<tr><th>Field</th><th>Why it matters</th></tr>
+<tr><td>Invoice number/date</td><td>Starting point for the Rule 96A clock.</td></tr>
+<tr><td>Export date / shipping bill date</td><td>Confirms completion of goods export.</td></tr>
+<tr><td>Customer</td><td>Useful for follow-up and reconciliation.</td></tr>
+<tr><td>Invoice value</td><td>Helps quantify exposure.</td></tr>
+<tr><td>Realisation date</td><td>Critical for service-export monitoring.</td></tr>
+<tr><td>Bank reference / FIRC / equivalent evidence</td><td>Supports proof of receipt.</td></tr>
+<tr><td>Days outstanding</td><td>Allows exception reporting before the statutory deadline.</td></tr>
+<tr><td>Tax + interest exposure</td><td>Useful for escalation where conditions may not be fulfilled.</td></tr>
+</table>
+</section>
+
+<section class="card" id="itc">
+<h2>What happens to ITC when export is made under LUT?</h2>
+<p>Using LUT does not mean that eligible input tax credit disappears. Zero-rated supply rules permit an exporter to use eligible ITC in accordance with the GST law and claim refund of eligible unutilised ITC, subject to the statutory formula, restrictions and documentary requirements.</p>
+
+<div class="flow">
+<div class="step"><strong>Purchase</strong>Eligible inputs/input services create ITC.</div>
+<div class="step"><strong>Export under LUT</strong>Zero-rated supply is made without IGST.</div>
+<div class="step"><strong>ITC remains</strong>Eligible credit is reflected in the electronic credit ledger.</div>
+<div class="step"><strong>Refund calculation</strong>Eligible refund is calculated under the applicable formula.</div>
+<div class="step"><strong>RFD-01</strong>Refund application is filed with required statements/supporting records.</div>
+</div>
+
+<h3>Does every ITC amount become refundable?</h3>
+<p><strong>No.</strong> Refund is subject to the applicable provisions, formula, restrictions, net ITC definition, turnover calculation, tax-period data and other conditions. Certain credits may be restricted or excluded depending on the law applicable to the claim.</p>
+
+<div class="note"><strong>Practical reconciliation:</strong> Before filing an LUT refund claim, reconcile purchase register, GSTR-2B/eligible ITC, GSTR-3B credit, export invoices and the refund working. A mismatch can create avoidable notices or delays.</div>
+</section>
+
+<section class="card" id="documents">
+<h2>Documents and records to maintain for LUT compliance</h2>
+<p>There is no substitute for a clean export audit trail. The exact documents vary by goods/services and the refund route, but a well-controlled exporter should maintain the following.</p>
+
+<div class="grid3">
+<div class="mini"><strong>LUT records</strong>RFD-11 acknowledgement/ARN, submitted LUT details and authorised-signatory records.</div>
+<div class="mini"><strong>Invoices</strong>Export invoices, invoice amendments, credit/debit notes and currency details.</div>
+<div class="mini"><strong>Goods export</strong>Shipping bills, export reports/EGM evidence, transport and customs documents.</div>
+<div class="mini"><strong>Services export</strong>Agreement, statement of work, deliverables, invoices, correspondence and service evidence.</div>
+<div class="mini"><strong>Bank records</strong>Bank advice, inward remittance evidence, FIRC/FIRA/equivalent documents and reconciliation with invoices.</div>
+<div class="mini"><strong>GST returns</strong>GSTR-1, GSTR-3B, refund applications and supporting refund workings.</div>
+</div>
+
+<h3>Recommended export master reconciliation</h3>
+<table>
+<tr><th>Source</th><th>Match against</th></tr>
+<tr><td>Sales ledger</td><td>Export invoice register</td></tr>
+<tr><td>Export invoice register</td><td>GSTR-1</td></tr>
+<tr><td>GSTR-1</td><td>GSTR-3B</td></tr>
+<tr><td>Goods export register</td><td>Shipping bill/customs evidence</td></tr>
+<tr><td>Service export register</td><td>Bank realisation records</td></tr>
+<tr><td>ITC ledger</td><td>GSTR-2B, purchase register and GSTR-3B</td></tr>
+<tr><td>Refund working</td><td>RFD-01 and supporting statements</td></tr>
+</table>
+</section>
+
+<section class="card" id="mistakes">
+<h2>Common GST LUT mistakes and how to prevent them</h2>
+
+<h3>1. Filing LUT after the export</h3>
+<p>Rule 96A contemplates furnishing the LUT before export. Build a pre-export control rather than trying to correct the position after invoices have been issued.</p>
+
+<h3>2. Treating LUT as an exemption</h3>
+<p>LUT does not make the export an exempt supply. It facilitates zero-rated supply without payment of IGST.</p>
+
+<h3>3. Incorrect invoice endorsement</h3>
+<p>Export invoices should carry the applicable prescribed endorsement for supply under bond/LUT without payment of IGST.</p>
+
+<h3>4. Reporting exports incorrectly in GSTR-1</h3>
+<p>Invoice-level export data should be checked for value, invoice number, date and applicable export details.</p>
+
+<h3>5. Assuming foreign currency automatically proves export of services</h3>
+<p>The export-of-service conditions must be satisfied as a whole. Currency alone is not the test.</p>
+
+<h3>6. Not tracking service-export realisation</h3>
+<p>A receivable ageing report is not enough. Maintain a dedicated LUT/Rule 96A ageing tracker.</p>
+
+<h3>7. Filing refund without reconciling ITC</h3>
+<p>Refund workings should be tied to books, GST returns and eligible ITC records.</p>
+
+<h3>8. Using the wrong GSTIN</h3>
+<p>LUT is GSTIN-specific. A group company with multiple GST registrations should maintain separate LUT records and controls for each relevant registration.</p>
+
+<h3>9. Ignoring amendments</h3>
+<p>Export invoice amendments can affect GSTR-1, customs records, accounts receivable and refund calculations. Maintain a controlled amendment trail.</p>
+</section>
+
+<section class="card" id="examples">
+<h2>Practical GST LUT examples</h2>
+
+<h3>Example 1: Export of software services</h3>
+<p>ABC Technologies Private Limited provides software development services to a US customer. The contract, recipient location, place-of-supply position and other export conditions are satisfied. ABC furnishes LUT and raises invoices without IGST.</p>
+<div class="success"><strong>Result:</strong> ABC can use the LUT route instead of paying IGST upfront, while eligible accumulated ITC may be considered for refund subject to the refund provisions.</div>
+
+<h3>Example 2: Goods exported before the Rule 96A time limit</h3>
+<p>A manufacturer raises an export invoice and the goods leave India within the prescribed Rule 96A period. The shipping bill and export evidence are available and the transaction is correctly reported in GST returns.</p>
+<div class="success"><strong>Result:</strong> The core LUT export condition relating to export of goods is satisfied, subject to the other applicable requirements.</div>
+
+<h3>Example 3: Service invoice remains unpaid</h3>
+<p>An Indian service provider issues an export invoice but the foreign customer has not paid within the prescribed Rule 96A period. The finance team notices the invoice only through ordinary receivables ageing.</p>
+<div class="danger"><strong>Risk:</strong> The business must immediately evaluate Rule 96A consequences, the reason for non-realisation and whether any further period is available/allowed. The issue should not be left unresolved.</div>
+
+<h3>Example 4: Indian customer pays in foreign currency</h3>
+<p>An Indian company receives payment in foreign currency from a customer located in India. The finance team assumes that the payment makes the service an export.</p>
+<div class="warn"><strong>Conclusion:</strong> Currency of payment is not sufficient. Recipient location and all statutory export-of-service conditions must be examined.</div>
+
+<h3>Example 5: Multiple GST registrations</h3>
+<p>A company has GST registrations in several States. One registration makes export supplies while another registration mainly serves domestic customers.</p>
+<div class="note"><strong>Control:</strong> Maintain LUT and export compliance separately for each GSTIN that makes relevant zero-rated supplies. Do not assume that an LUT filed for one GSTIN automatically covers another registration.</div>
+</section>
+
+<section class="card" id="industries">
+<h2>GST LUT for different industries</h2>
+<table>
+<tr><th>Industry</th><th>Typical LUT use</th><th>Main compliance focus</th></tr>
+<tr><td>IT / software</td><td>Export of software development, SaaS, support or technology services.</td><td>Export-of-service conditions, agreements, invoices and foreign remittance reconciliation.</td></tr>
+<tr><td>Consulting</td><td>Consulting/advisory services to overseas customers.</td><td>Place of supply, recipient status, scope of work and realisation evidence.</td></tr>
+<tr><td>Engineering</td><td>Engineering/design/project services for overseas customers.</td><td>Contract, deliverables, service location and payment evidence.</td></tr>
+<tr><td>Manufacturing</td><td>Physical goods exported outside India.</td><td>Shipping bills, customs records, invoice matching and ITC refund.</td></tr>
+<tr><td>Trading</td><td>Merchant exports/trading exports.</td><td>Purchase-sale linkage, export documentation and margin reconciliation.</td></tr>
+<tr><td>BPO / KPO</td><td>Outsourced services to overseas clients.</td><td>Export-of-service conditions, invoice ageing and realisation.</td></tr>
+<tr><td>Professional services</td><td>Legal, accounting, architecture, design and similar services where export conditions are satisfied.</td><td>Recipient location, place of supply, engagement records and payment evidence.</td></tr>
+</table>
+</section>
+
+<section class="card" id="comparison">
+<h2>LUT route vs paying IGST and claiming refund</h2>
+<p>For eligible zero-rated supplies, businesses often evaluate two commercial GST approaches: exporting without payment of IGST under LUT or paying IGST and claiming refund of the IGST paid, where that route is legally available.</p>
+
+<table>
+<tr><th>Factor</th><th>Export under LUT</th><th>Export on payment of IGST</th></tr>
+<tr><td>Upfront IGST cash outflow</td><td>Generally avoided.</td><td>IGST is paid first.</td></tr>
+<tr><td>Refund focus</td><td>Potential refund of eligible unutilised ITC.</td><td>Refund of IGST paid on eligible exports through the applicable mechanism.</td></tr>
+<tr><td>Working capital</td><td>Often more favourable where significant export turnover exists.</td><td>Can involve temporary cash blockage until refund.</td></tr>
+<tr><td>ITC accumulation</td><td>Can accumulate and require refund management.</td><td>May reduce accumulated ITC depending on the transaction mix.</td></tr>
+<tr><td>Compliance</td><td>LUT + export + realisation + refund controls.</td><td>Export + tax payment + refund matching and related controls.</td></tr>
+</table>
+
+<div class="note"><strong>Decision principle:</strong> The better route depends on cash flow, ITC accumulation, transaction type, export documentation and the refund mechanism available for the particular supply. LUT is not automatically “better” in every situation; it is often valuable because it avoids an upfront IGST cash outflow.</div>
+</section>
+
+<section class="card" id="checklist">
+<h2>GST LUT compliance checklist</h2>
+<div class="check"><b>✓</b><div>Confirm the supply actually qualifies as a zero-rated export/qualifying SEZ supply.</div></div>
+<div class="check"><b>✓</b><div>Confirm LUT eligibility before using the route.</div></div>
+<div class="check"><b>✓</b><div>Furnish Form GST RFD-11 before export.</div></div>
+<div class="check"><b>✓</b><div>Save the ARN/acknowledgement and submitted LUT record.</div></div>
+<div class="check"><b>✓</b><div>Use the correct export invoice endorsement.</div></div>
+<div class="check"><b>✓</b><div>Report export invoices correctly in GSTR-1.</div></div>
+<div class="check"><b>✓</b><div>Report zero-rated supplies correctly in GSTR-3B.</div></div>
+<div class="check"><b>✓</b><div>For goods, reconcile invoices with shipping bills/customs export evidence.</div></div>
+<div class="check"><b>✓</b><div>For services, verify export-of-service conditions and maintain realisation evidence.</div></div>
+<div class="check"><b>✓</b><div>Monitor Rule 96A deadlines separately from ordinary receivables ageing.</div></div>
+<div class="check"><b>✓</b><div>Reconcile export turnover across books, GSTR-1 and GSTR-3B.</div></div>
+<div class="check"><b>✓</b><div>Reconcile ITC before preparing a refund claim.</div></div>
+<div class="check"><b>✓</b><div>Maintain invoice, contract, bank, customs and GST records together.</div></div>
+<div class="check"><b>✓</b><div>Maintain separate LUT records for separate GST registrations.</div></div>
+</section>
+
+<section class="card" id="faq">
+<h2>GST LUT FAQs</h2>
+
+<div class="faq"><h3>What is LUT in GST?</h3><p>LUT is a Letter of Undertaking furnished in Form GST RFD-11 by an eligible registered person to make qualifying exports without payment of IGST, subject to the applicable conditions.</p></div>
+
+<div class="faq"><h3>Is LUT mandatory for every exporter?</h3><p>No. LUT is relevant when an eligible exporter chooses the route of making zero-rated supplies without payment of IGST. The exact route and eligibility should be evaluated for the particular transaction.</p></div>
+
+<div class="faq"><h3>What is the form number for LUT?</h3><p>The prescribed form is <strong>Form GST RFD-11</strong>.</p></div>
+
+<div class="faq"><h3>When should LUT be filed?</h3><p>The LUT/bond is required to be furnished prior to export when the exporter uses the export-without-payment-of-IGST route under Rule 96A.</p></div>
+
+<div class="faq"><h3>How long is a GST LUT valid?</h3><p>The LUT is generally valid for the financial year in which it is furnished.</p></div>
+
+<div class="faq"><h3>Does LUT mean GST is exempt?</h3><p>No. Export is a zero-rated supply. LUT provides the route to make the supply without payment of IGST, subject to the applicable rules.</p></div>
+
+<div class="faq"><h3>Can an exporter claim ITC refund after filing LUT?</h3><p>Yes, eligible unutilised ITC may be refundable under the applicable zero-rated refund provisions, subject to the statutory formula, restrictions and documentation.</p></div>
+
+<div class="faq"><h3>Can LUT be used for export of services?</h3><p>Yes, provided the transaction qualifies as export of services and the other LUT and Rule 96A conditions are satisfied.</p></div>
+
+<div class="faq"><h3>Is foreign currency receipt alone enough to establish export of services?</h3><p>No. All statutory conditions for export of services must be satisfied. The recipient's location and place-of-supply analysis are important.</p></div>
+
+<div class="faq"><h3>What happens if export of services is not realised within the prescribed period?</h3><p>Rule 96A can require payment of the applicable tax along with interest, subject to the further period that may be allowed by the Commissioner and the other facts of the case.</p></div>
+
+<div class="faq"><h3>What happens if goods are not exported within the prescribed period?</h3><p>The tax and interest consequences specified in Rule 96A can arise. The exporter should immediately evaluate the position rather than leaving the transaction open.</p></div>
+
+<div class="faq"><h3>Does LUT cover all GST registrations of a company?</h3><p>No. GST compliance is registration-specific. A business with multiple GSTINs should maintain the LUT and export records for each relevant registration.</p></div>
+
+<div class="faq"><h3>Can LUT be filed after issuing an export invoice?</h3><p>The safe compliance approach is to furnish the LUT before export, because Rule 96A requires the bond/LUT prior to export when using this route.</p></div>
+
+<div class="faq"><h3>Do exports under LUT have to be shown in GSTR-1?</h3><p>Yes. Export transactions continue to be reported in the applicable GST return tables even though IGST is not charged under the LUT route.</p></div>
+
+<div class="faq"><h3>Does an LUT remove the need to maintain export documents?</h3><p>No. The LUT does not replace invoice, customs, contract, bank, return and other evidence. A complete audit trail is important for both GST compliance and refund claims.</p></div>
+
+<div class="faq"><h3>Is LUT the same as a GST refund application?</h3><p>No. LUT is the undertaking that enables export without payment of IGST. A refund application, such as RFD-01 for eligible ITC refund, is a separate process.</p></div>
+</section>
+
+<section class="card">
+<h2>Final takeaway</h2>
+<p>GST LUT is best understood as a <strong>working-capital and compliance mechanism for zero-rated exports</strong>. It allows an eligible registered exporter to make qualifying exports without paying IGST upfront, while preserving the possibility of claiming eligible ITC refund under the applicable refund provisions.</p>
+<p>The strongest LUT compliance system is not just “file RFD-11 once”. It connects <strong>LUT → export invoice → GSTR-1 → GSTR-3B → customs/bank evidence → Rule 96A monitoring → ITC reconciliation → refund working</strong>.</p>
+<div class="success"><strong>For finance teams:</strong> maintain a GSTIN-wise LUT register, export invoice register, Rule 96A ageing report and ITC/refund reconciliation. This converts LUT from a form-filing exercise into a controlled export-tax process.</div>
+<p>For related GST concepts, explore the <a href="../gst-act.html">GST Act and Rules reference</a>, <a href="../compliance.html">GST compliance resources</a> and other practical GST articles available on this website.</p>
+</section>
+
+
+<section class="card related-wrap" id="related-resources">
+<h2>More Useful GST Resources</h2>
+<p class="lead">Continue exploring practical GST tools, compliance resources and detailed explanations available on this website.</p>
+<div class="related-grid">
+  <a class="related-card" href="../">
+    <strong>GST Reconciliation Tool</strong>
+    <span>Reconcile Purchase Register with GSTR-2B and identify invoice-level ITC mismatches.</span>
+  </a>
+  <a class="related-card" href="../articles.html">
+    <strong>GST Articles & Practical Guides</strong>
+    <span>Explore detailed GST explanations, practical examples, compliance concepts and tax guides.</span>
+  </a>
+  <a class="related-card" href="../compliance.html">
+    <strong>GST Compliance Resources</strong>
+    <span>Useful GST compliance information, filing requirements and practical tracking resources.</span>
+  </a>
+  <a class="related-card" href="../gst-act.html">
+    <strong>GST Act & Rules Reference</strong>
+    <span>Browse the GST Act and related rule provisions for deeper conceptual understanding.</span>
+  </a>
+  <a class="related-card" href="../reconciliation.html">
+    <strong>GSTR-2B Reconciliation</strong>
+    <span>Use the reconciliation workflow to compare purchase records with GSTR-2B data.</span>
+  </a>
+  <a class="related-card" href="../gst-reconciliation-tool.html">
+    <strong>GST Reconciliation Utility</strong>
+    <span>Open the dedicated reconciliation tool and work through invoice matching and exceptions.</span>
+  </a>
+</div>
+</section>
+
+<section class="card" id="contact">
+<h2>Contact</h2>
+<p class="lead">Have a question, suggestion, correction or feedback about this GST article or the GST Reconciliation website? You can contact me directly.</p>
+<div class="contact-grid">
+  <div class="contact-card">
+    <strong>✉ Email</strong>
+    <a href="mailto:uday@gstreconciliation.in">uday@gstreconciliation.in</a>
+  </div>
+  <div class="contact-card">
+    <strong>☎ Mobile</strong>
+    <a href="tel:+919052160079">+91 90521 60079</a>
+  </div>
+</div>
+</section>
+
+</main>
+</div>
+
+<footer>
+<div class="wrap">
+<strong>GST Reconciliation</strong>
+<p>Contact: <a href="mailto:uday@gstreconciliation.in" style="color:#dce9f5">uday@gstreconciliation.in</a> &nbsp;|&nbsp; <a href="tel:+919052160079" style="color:#dce9f5">+91 90521 60079</a></p>
+<p>This article is intended for educational and practical compliance understanding. GST provisions, portal workflows, forms and procedures may be amended. For a live transaction, verify the applicable law, notifications, circulars and portal functionality before acting.</p>
+</div>
+</footer>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',()=>{
+    try{gtag('event','gst_lut_article_section_view',{section:a.getAttribute('href').slice(1)});}catch(e){}
+  });
+});
+</script>
+</body>
+</html>
