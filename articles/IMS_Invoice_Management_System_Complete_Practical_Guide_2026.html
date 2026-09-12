@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IMS Invoice Management System under GST | Complete Practical Guide</title>
+<title>GST IMS Invoice Management System 2026: Accept, Reject, Pending & GSTR-2B Guide</title>
 <meta name="description" content="Complete practical guide to GST Invoice Management System (IMS): accept, reject, pending, no action, amendments, GSTR-2B impact, recomputation, practical examples, reconciliation and FAQs.">
 <meta name="keywords" content="IMS GST, Invoice Management System, GST IMS, IMS GSTR 2B, accept reject invoice GST, IMS reconciliation, GSTR 2B IMS, GST practical guide">
 <link rel="canonical" href="https://gstreconciliation.in/articles/ims-invoice-management-system-complete-practical-guide.html">
@@ -68,6 +68,10 @@ th{background:#eef4fb;color:#16375f}
 footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);font-size:13px}
 @media(max-width:900px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto;max-height:none}.hero-grid{grid-template-columns:1fr}.flow{grid-template-columns:1fr 1fr}}
 @media(max-width:560px){.card{padding:20px}h2{font-size:25px}.hero{padding:40px 20px}.layout{padding:0 10px}}
+
+/* 2026 professional refresh */
+.update-strip{max-width:1180px;margin:18px auto 0;padding:0 18px}.update-box{background:linear-gradient(135deg,#0b63ce,#084b9a);color:#fff;border-radius:16px;padding:18px 22px;box-shadow:0 12px 28px rgba(8,75,154,.18)}.update-box strong{display:block;font-size:16px;margin-bottom:6px}.update-box span{opacity:.96;line-height:1.6;font-size:14px}.decision{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:18px 0;background:#fff}.decision table{margin:0}.decision th{background:#17324d;color:#fff}.tag{display:inline-block;padding:4px 9px;border-radius:999px;font-size:12px;font-weight:800;margin-right:4px}.tag-green{background:#e8f6ee;color:#12653b}.tag-red{background:#fde9e7;color:#9d241b}.tag-amber{background:#fff1df;color:#8a4c08}.tag-blue{background:#e8f1ff;color:#174fba}.footer-wrap{max-width:1180px;margin:34px auto 0;padding:0 18px}.footer-card{background:linear-gradient(145deg,#102f4c,#0b63ce);color:#fff;border-radius:20px;padding:28px;box-shadow:0 16px 40px rgba(8,75,154,.18)}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}.footer-card h3{margin:0 0 10px;font-size:18px}.footer-card p,.footer-card li{color:rgba(255,255,255,.84);line-height:1.65;font-size:13px}.footer-card a{color:#fff;text-decoration:underline;text-underline-offset:3px}.footer-bottom{margin-top:20px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:rgba(255,255,255,.72);font-size:12px}.source-note{font-size:12px;color:var(--muted);background:#f7fafc;border-left:4px solid var(--blue);padding:13px 15px;border-radius:8px;margin-top:18px}
+@media(max-width:760px){.footer-grid{grid-template-columns:1fr}.update-strip{padding:0 10px}.footer-wrap{padding:0 10px}}
 </style>
 
 <script type="application/ld+json">
@@ -77,7 +81,7 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
  "headline":"IMS Invoice Management System under GST | Complete Practical Guide",
  "description":"A practical guide to Invoice Management System under GST, including recipient actions, GSTR-2B impact, recomputation, amendments and reconciliation.",
  "mainEntityOfPage":{"@type":"WebPage","@id":"https://gstreconciliation.in/articles/ims-invoice-management-system-complete-practical-guide.html"},
- "publisher":{"@type":"Organization","name":"GST Reconciliation"},
+ "dateModified":"2026-09-12","publisher":{"@type":"Organization","name":"GST Reconciliation"},
  "author":{"@type":"Organization","name":"GST Reconciliation"},
  "about":["Invoice Management System","GSTR-2B","Input Tax Credit","GST reconciliation"]
 }
@@ -87,7 +91,7 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
 
 <header class="hero">
 <div class="hero-inner">
-<div class="kicker">Practical GST Guide</div>
+<div class="kicker">GST PRACTICAL GUIDE • 2026</div>
 <h1>IMS under GST: Complete Invoice Management System Guide</h1>
 <p>Understand how the Invoice Management System works, what to accept, reject or keep pending, how IMS affects GSTR-2B and GSTR-3B, and how an accounts team can operate the process every month without losing or wrongly claiming ITC.</p>
 <div class="hero-grid">
@@ -97,6 +101,7 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
 </div>
 </div>
 </header>
+<div class="update-strip"><div class="update-box"><strong>2026 update: IMS has evolved beyond the original Accept / Reject / Pending framework.</strong><span>This guide now incorporates the GSTN changes introduced from the October 2025 tax period, including expanded Pending scenarios, the “Amount of ITC to be reduced” facility, remarks for specified Reject/Pending actions, and the 2026 GSTN IMS offline-tool development. Always apply the functionality relevant to the tax period under review.</span></div></div>
 
 <div class="layout">
 <nav class="toc">
@@ -108,15 +113,15 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
 <a href="#when-reject">5. When to reject</a>
 <a href="#pending">6. Pending and carry-forward</a>
 <a href="#recompute">7. Recompute GSTR-2B</a>
-<a href="#amendments">8. Amendments & credit notes</a>
-<a href="#exceptions">9. Records outside IMS</a>
-<a href="#working">10. Monthly working procedure</a>
-<a href="#examples">11. Practical examples</a>
-<a href="#reconciliation">12. Reconciliation format</a>
-<a href="#controls">13. Internal controls</a>
-<a href="#mistakes">14. Common mistakes</a>
-<a href="#faq">15. FAQs</a>
-<a href="#sources">16. References</a>
+<a href="#latest-2026">8. 2026 IMS updates</a><a href="#portal-procedure">9. Practical portal procedure</a><a href="#amendments">10. Amendments & credit notes</a>
+<a href="#exceptions">11. Records outside IMS</a>
+<a href="#working">12. Monthly working procedure</a>
+<a href="#examples">13. Practical examples</a>
+<a href="#reconciliation">14. Reconciliation format</a>
+<a href="#controls">15. Internal controls</a>
+<a href="#mistakes">16. Common mistakes</a>
+<a href="#faq">17. FAQs</a>
+<a href="#sources">18. Related resources</a>
 </nav>
 
 <main>
@@ -209,6 +214,22 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
 <div class="note"><strong>Operational control:</strong> Your monthly close should have a defined cut-off before GSTR-3B filing. The person who changes IMS actions should communicate the change to the person preparing the ITC working.</div>
 </section>
 
+
+<section class="card" id="latest-2026">
+<div class="kicker">Latest functionality</div>
+<h2>8. 2026 IMS updates you should know</h2>
+<p>The original IMS framework introduced Accept, Reject, Pending and No Action. GSTN subsequently expanded the functionality from the <strong>October 2025 tax period</strong>, and the GST portal also introduced an <strong>IMS offline tool facility in 2026</strong>. The practical impact is that an accounts team should no longer rely only on the older “accept/reject normal invoices” workflow.</p>
+<div class="decision"><table><tr><th>Change</th><th>What it means in practice</th></tr><tr><td><span class="tag tag-amber">Pending expanded</span></td><td>Pending became available for specified credit notes and amendment scenarios, subject to GSTN's conditions.</td></tr><tr><td><span class="tag tag-blue">ITC reduction</span></td><td>For specified records such as credit notes/amendments, the recipient can declare the amount of ITC to be reduced, including situations where ITC was already reversed or not availed.</td></tr><tr><td><span class="tag tag-blue">Remarks</span></td><td>Recipient remarks can be provided while taking Reject or Pending action on applicable records.</td></tr><tr><td><span class="tag tag-green">Offline IMS</span></td><td>GSTN introduced an IMS offline-tool facility in 2026. Use the latest GST Portal utility/instructions applicable to the period and version before processing bulk actions.</td></tr></table></div>
+<div class="note"><strong>Important:</strong> The October 2025 enhancements apply prospectively from the October 2025 tax period. Do not retroactively apply the newer Pending/ITC-reduction workflow to an older period merely because the same record type appears today.</div>
+</section>
+
+<section class="card" id="portal-procedure">
+<div class="kicker">Do it on the portal</div>
+<h2>9. Practical IMS review procedure — from login to GSTR-3B</h2>
+<ol><li>Log in to the GST Portal with the relevant GSTIN.</li><li>Open <strong>Services → Returns → Invoice Management System (IMS) Dashboard</strong>.</li><li>Select the relevant tax period and open the inward-supply records.</li><li>Download IMS details where required for the working paper and filter high-value or exception records first.</li><li>For every material record, compare supplier GSTIN, document number/date, taxable value, tax amount and the underlying purchase/GRN/service evidence.</li><li>Choose <strong>Accept, Reject or Pending</strong> only after deciding what the record means for your books and reconciliation.</li><li>For applicable Reject/Pending cases, record a clear remark explaining the exception.</li><li>For applicable credit-note/amendment cases, separately determine whether ITC was actually availed and what amount, if any, needs to be reduced.</li><li>If an action is changed after draft GSTR-2B generation, use <strong>Compute/Recompute GSTR-2B</strong> before relying on the revised statement.</li><li>Reconcile the resulting GSTR-2B with the purchase register and perform the separate legal ITC eligibility check.</li><li>Prepare GSTR-3B only after resolving material IMS exceptions and documenting any reversals/deferments.</li></ol>
+<div class="good"><strong>Best practice:</strong> IMS should be treated as an exception-management layer between supplier data and your ITC working—not as a substitute for purchase-register reconciliation or the legal ITC test.</div>
+</section>
+
 <section class="card" id="amendments">
 <h2>8. Amendments, credit notes and debit notes</h2>
 <p>IMS becomes particularly important when the supplier changes a document. The team should not treat every amendment as a new independent invoice. Always identify the original document and determine what changed.</p>
@@ -257,7 +278,7 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
 </section>
 
 <section class="card" id="examples">
-<h2>11. Practical examples</h2>
+<h2>13. Practical examples</h2>
 
 <div class="example">
 <h3>Example 1 — Invoice belongs to another GSTIN</h3>
@@ -305,7 +326,7 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
 </section>
 
 <section class="card" id="controls">
-<h2>13. Internal financial controls for IMS</h2>
+<h2>15. Internal financial controls for IMS</h2>
 <ul class="checklist">
 <li>Maintain a documented monthly IMS review owner for each GSTIN.</li>
 <li>Do not permit blanket rejection of invoices without supporting reason.</li>
@@ -321,7 +342,7 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
 </section>
 
 <section class="card" id="mistakes">
-<h2>14. Common IMS mistakes</h2>
+<h2>16. Common IMS mistakes</h2>
 <ol>
 <li><strong>Accepting everything automatically:</strong> No action is deemed accepted for GSTR-2B generation, but that does not make every invoice legally eligible.</li>
 <li><strong>Rejecting to make reconciliation look clean:</strong> A rejection can remove the ITC flow. Resolve the underlying issue instead.</li>
@@ -334,7 +355,7 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
 </section>
 
 <section class="card" id="faq">
-<h2>15. Frequently Asked Questions</h2>
+<h2>17. Frequently Asked Questions</h2>
 
 <h3>Is IMS mandatory?</h3>
 <p>GSTN's October 2024 additional FAQ states that taking action on IMS records is not mandatory for GSTR-2B generation; records with no action are treated as accepted for generation. However, an organisation may still need an internal review process to prevent wrong ITC. </p>
@@ -368,22 +389,24 @@ footer{max-width:1180px;margin:0 auto;padding:20px 18px 60px;color:var(--muted);
 </section>
 
 <section class="card" id="sources">
-<h2>16. GSTN references and related reading</h2>
-<p>For the legal framework and section-wise explanations, use the <a href="https://gstreconciliation.in/gst-act.html">GST Act Section Wise Guide</a> on this website.</p>
-<ul>
-<li><a href="https://tutorial.gst.gov.in/downloads/news/final_faqs_on_ims_22_09_2024.pdf">GSTN – FAQs on Invoice Management System (IMS)</a></li>
-<li><a href="https://tutorial.gst.gov.in/downloads/news/additional_faqs_ims_17_10_2024.pdf">GSTN – Additional FAQs on IMS dated 17 October 2024</a></li>
-<li><a href="https://tutorial.gst.gov.in/downloads/news/revised_advisory_on_ims.pdf">GSTN – Revised IMS Advisory</a></li>
-<li><a href="https://tutorial.gst.gov.in/userguide/returns/FAQ_gstr2b.htm">GSTN – GSTR-2B FAQs</a></li>
-</ul>
-<div class="note"><strong>How to use this guide:</strong> First understand the IMS action, then reconcile the document with books, then determine ITC eligibility and finally prepare GSTR-3B. The portal's system treatment and applicable GST law should always be checked for the relevant tax period.</div>
+<h2>18. Related GST resources and source note</h2>
+<p>Use these internal guides together with the IMS workflow:</p>
+<ul><li><a href="https://gstreconciliation.in/articles/ITC_Not_Appearing_in_GSTR_2B_What_to_Do_Complete_Practical_Guide_2026.html">ITC Not Appearing in GSTR-2B — What to Do?</a></li><li><a href="https://gstreconciliation.in/articles/Rule_37A_GST_ITC_Reversal_Reavailment_Complete_Practical_Guide.html">Rule 37A — ITC Reversal & Re-availment</a></li><li><a href="https://gstreconciliation.in/articles/GST_DRC_01C_ITC_Mismatch_What_to_Do_Practical_Guide.html">DRC-01C for ITC Mismatch — What to Do?</a></li><li><a href="https://gstreconciliation.in/gst-reconciliation-tool.html">GST Reconciliation Tool</a></li><li><a href="https://gstreconciliation.in/gst-act.html">GST Act — Section-wise Guide</a></li></ul>
+<div class="source-note"><strong>Official source basis:</strong> GSTN's IMS FAQs, Revised IMS Advisory and the October 2025 FAQ on new IMS changes. GSTN's portal news also records the introduction of an IMS offline tool in 2026. The exact portal screen, utility version and available actions can change; always use the latest GST Portal functionality for the relevant tax period.</div>
 </section>
 
 </main>
 </div>
 
-<footer>
-<p><strong>GST Reconciliation</strong> — Practical GST learning and reconciliation resource. This article is for educational and workflow guidance and should not be treated as a substitute for professional advice or verification of the law applicable to a specific tax period.</p>
-</footer>
+
+<div class="footer-wrap">
+<footer class="footer-card">
+<div class="footer-grid">
+<div><h3>GSTReconciliation.in</h3><p>Practical GST guides, reconciliation workflows and accounting-focused explanations designed for finance teams, accountants and GST practitioners.</p><p><strong>Practical next step:</strong> Download your IMS details, reconcile them with the purchase register, document exceptions and complete the ITC review before GSTR-3B.</p></div>
+<div><h3>Continue Your GST Learning</h3><ul><li><a href="https://gstreconciliation.in/articles.html#articles">GST Knowledge Hub</a></li><li><a href="https://gstreconciliation.in/gst-reconciliation-tool.html">GSTR-2B Reconciliation Tool</a></li><li><a href="https://gstreconciliation.in/compliance.html">GST Compliance Resources</a></li></ul></div>
+<div><h3>Need to connect?</h3><p>Email: <a href="mailto:uday@gstreconciliation.in">uday@gstreconciliation.in</a><br>Phone: <a href="tel:+919052160079">+91 90521 60079</a></p><p><a href="https://gstreconciliation.in/">GSTReconciliation.in</a> · <a href="https://gstreconciliation.in/privacy.html">Privacy</a></p></div>
+</div>
+<div class="footer-bottom"><span>© 2026 GSTReconciliation.in</span><span>Educational and workflow guidance only. Verify the law and portal functionality applicable to the relevant tax period.</span></div>
+</footer></div>
 </body>
 </html>
