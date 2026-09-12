@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GST DRC-01C for ITC Mismatch: What to Do? Complete Practical Guide</title>
+<meta name="description" content="Practical guide to GST DRC-01C for ITC mismatch: understand GSTR-2B vs GSTR-3B differences, reconcile timing differences, reversals, reclaims, imports and RCM, and file Part B correctly.">
+<link rel="canonical" href="https://gstreconciliation.in/articles/GST_DRC_01C_ITC_Mismatch_What_to_Do_Practical_Guide.html">
+<meta property="og:title" content="GST DRC-01C for ITC Mismatch: What to Do? Complete Practical Guide">
+<meta property="og:description" content="Practical DRC-01C response guide with portal procedure, mismatch cases, DRC-03, reconciliation and checklist.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://gstreconciliation.in/articles/GST_DRC_01C_ITC_Mismatch_What_to_Do_Practical_Guide.html">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());gtag('config','G-NBKTXWJ20G');
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+<style>
+:root{
+ --blue:#0b63ce;--blue2:#084b9a;--ink:#17324d;--muted:#5c6b7a;--bg:#f4f8fc;--card:#fff;
+ --line:#dce7f2;--green:#087f5b;--orange:#b35c00;--red:#b42318;--purple:#6842c2;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}
+a{color:var(--blue);text-decoration:none}a:hover{text-decoration:underline}
+.hero{background:linear-gradient(135deg,#073d80,#0b63ce 58%,#2788ee);color:#fff;padding:56px 22px 46px}
+.hero-inner{max-width:1200px;margin:auto}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:7px 12px;border-radius:999px;font-size:13px;font-weight:800}
+.hero h1{font-size:clamp(31px,5vw,52px);line-height:1.1;margin:17px 0 13px;max-width:1050px}
+.hero p{max-width:940px;font-size:18px;opacity:.97;margin:0 0 24px}
+.hero-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:1100px}
+.hero-stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:15px;border-radius:12px}
+.hero-stat b{display:block;font-size:19px}.hero-stat span{font-size:13px;opacity:.92}
+.hero-image{max-width:1200px;margin:26px auto 0;border-radius:18px;overflow:hidden;border:1px solid rgba(255,255,255,.25);box-shadow:0 16px 45px rgba(0,0,0,.18)}
+.hero-image img{display:block;width:100%;height:auto}
+.layout{max-width:1200px;margin:28px auto;display:grid;grid-template-columns:260px 1fr;gap:24px;padding:0 18px}
+.toc{position:sticky;top:16px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px;box-shadow:0 5px 18px rgba(24,62,95,.06);max-height:calc(100vh - 32px);overflow:auto}
+.toc h3{font-size:15px;margin:0 0 10px}.toc a{display:block;padding:5px 0;font-size:12.5px;color:#38536d}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:30px;margin-bottom:22px;box-shadow:0 5px 18px rgba(24,62,95,.05)}
+.card h2{font-size:28px;line-height:1.25;margin:0 0 16px;color:#123e68}.card h3{font-size:20px;margin:25px 0 9px;color:#174f82}
+.lead{font-size:17px;color:#40566b}
+.note,.warning,.success,.decision,.danger{padding:16px 18px;border-radius:12px;margin:18px 0;border-left:5px solid}
+.note{background:#eef6ff;border-color:#0b63ce}.warning{background:#fff5e9;border-color:#d97706}
+.success{background:#edf9f4;border-color:#087f5b}.decision{background:#f2f0ff;border-color:#6842c2}
+.danger{background:#fff0f0;border-color:#b42318}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.mini{border:1px solid var(--line);border-radius:12px;padding:17px;background:#fbfdff}
+.mini b{display:block;margin-bottom:5px;color:#123e68}.mini p{margin:0}
+.pill{display:inline-block;padding:4px 9px;border-radius:999px;background:#edf5fc;color:#174f82;font-size:12px;font-weight:800;margin:2px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:10px 11px;vertical-align:top}th{background:#edf5fc;color:#163f65;text-align:left}
+tr:nth-child(even) td{background:#fbfdff}
+ol,ul{padding-left:24px}li{margin:7px 0}
+.check,.xlist{list-style:none;padding-left:0}.check li,.xlist li{padding-left:28px;position:relative}
+.check li:before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}.xlist li:before{content:"✕";position:absolute;left:0;color:var(--red);font-weight:900}
+.example{border:1px dashed #9eb8d2;background:#f9fcff;padding:17px 18px;border-radius:12px;margin:16px 0}
+.example strong{color:#123e68}
+.formula{background:#101f35;color:#fff;padding:18px;border-radius:12px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;overflow:auto;margin:16px 0}
+.flow{display:flex;align-items:stretch;gap:8px;flex-wrap:wrap;margin:18px 0}
+.flow .step{flex:1 1 150px;min-width:140px;border:1px solid var(--line);background:#fbfdff;border-radius:13px;padding:15px;text-align:center}
+.flow .arrow{align-self:center;font-size:25px;font-weight:900;color:var(--blue)}
+.timeline{border-left:3px solid #0b63ce;padding-left:20px;margin:18px 0}.timeline .item{margin:0 0 20px;position:relative}
+.timeline .item:before{content:"";position:absolute;width:11px;height:11px;border-radius:50%;background:#0b63ce;left:-27px;top:8px}
+.kicker{font-size:12px;text-transform:uppercase;letter-spacing:.08em;font-weight:800;color:#0b63ce}
+.small{font-size:13px;color:var(--muted)}
+.hero-inline-img{width:100%;border-radius:14px;border:1px solid var(--line);display:block;margin:15px 0}
+.visual{border:1px solid var(--line);background:#fbfdff;border-radius:14px;padding:16px;margin:18px 0}
+.visual-title{font-weight:800;color:#123e68;margin-bottom:10px}
+.matrix td:first-child,.matrix th:first-child{font-weight:700}
+.tag{display:inline-block;background:#eaf7f2;color:#087f5b;border-radius:999px;padding:3px 8px;font-size:12px;font-weight:800}
+.footer{background:#092c4e;color:#dbeaf8;margin-top:35px}.footer-inner{max-width:1200px;margin:auto;padding:38px 22px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:24px}.footer a{color:#dbeaf8}.footer h3{color:#fff;margin-top:0}
+.disclaimer{border-top:1px solid rgba(255,255,255,.18);margin-top:25px;padding-top:18px;font-size:12px;color:#b9cede}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.toc{position:relative;top:auto;max-height:none}.hero-grid{grid-template-columns:repeat(2,1fr)}.grid2,.grid3,.grid4,.footer-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.hero{padding:42px 16px}.hero-grid{grid-template-columns:1fr}.card{padding:21px}table{display:block;overflow-x:auto}.hero h1{font-size:32px}.flow .arrow{display:none}}
+
+.compact-visual{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:16px 0;padding:12px;border:1px solid var(--line);border-radius:13px;background:#fbfdff}
+.compact-visual .cv{border:1px solid var(--line);border-radius:10px;padding:10px;text-align:center;font-size:12px;font-weight:800;color:#174f82;background:#fff}
+.compact-visual .cv span{display:block;font-size:20px;margin-bottom:3px}
+.doc-table td:first-child{font-weight:800;color:#123e68}
+.doc-badge{display:inline-block;padding:3px 8px;border-radius:999px;font-size:11px;font-weight:800;margin-right:4px;background:#edf5fc;color:#174f82}
+.case-box{border-left:4px solid #6842c2;background:#f7f4ff;border-radius:12px;padding:15px 17px;margin:16px 0}
+@media(max-width:900px){.compact-visual{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.compact-visual{grid-template-columns:1fr}}
+
+.refund-deadline{overflow-x:auto;margin:18px 0}.refund-deadline table{width:100%;border-collapse:collapse;font-size:.92rem}.refund-deadline th,.refund-deadline td{border:1px solid var(--line,#dce7f2);padding:10px;vertical-align:top}.refund-deadline th{background:#eef5fc;text-align:left}.refund-deadline .urgent{font-weight:700}.annex-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:18px 0}.annex-card{border:1px solid var(--line,#dce7f2);border-radius:12px;padding:16px;background:#fff}.annex-card h4{margin:0 0 8px;color:var(--blue,#0b63ce)}.data-chip{display:inline-block;padding:5px 8px;border-radius:999px;background:#eef5fc;margin:3px;font-size:.82rem}.mini-note{padding:12px 14px;border-left:4px solid var(--blue,#0b63ce);background:#f5f9fd;border-radius:8px;margin:14px 0}.doc-table{overflow-x:auto}.doc-table table{width:100%;border-collapse:collapse}.doc-table th,.doc-table td{border:1px solid var(--line,#dce7f2);padding:9px;vertical-align:top}.doc-table th{background:#f0f6fc;text-align:left}.flow-small{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.flow-small span{padding:8px 11px;border:1px solid var(--line,#dce7f2);border-radius:8px;background:#fff;font-weight:600}.flow-small b{align-self:center}.@media(max-width:800px){.annex-grid{grid-template-columns:1fr}.refund-deadline table,.doc-table table{min-width:760px}}
+
+.hero-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0}
+.hero-stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:14px}
+.hero-stat b{display:block;font-size:20px}.hero-stat span{font-size:12px;opacity:.9}
+.case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.case{border:1px solid var(--line);border-radius:14px;padding:18px;background:#fff}
+.case h3{margin-top:0}.decision{border-left:5px solid var(--blue);background:#eef6ff;padding:16px;border-radius:10px}
+.good{border-left:5px solid #1b8a4b;background:#eefaf2;padding:16px;border-radius:10px}
+.warn{border-left:5px solid #d27b00;background:#fff7e8;padding:16px;border-radius:10px}
+.bad{border-left:5px solid #c53939;background:#fff0f0;padding:16px;border-radius:10px}
+.codebox{background:#102033;color:#eaf3ff;border-radius:12px;padding:16px;overflow:auto;font-family:Consolas,monospace;font-size:13px}
+.smallnote{font-size:13px;color:var(--muted)}
+@media(max-width:800px){.hero-stat-grid,.case-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div class="hero-inner">
+<div class="badge">PRACTICAL GST PORTAL GUIDE</div>
+<h1>GST DRC-01C for ITC Mismatch: What to Do? Complete Practical Guide</h1>
+<p class="hero-sub">Understand why DRC-01C is generated, how to reconcile the difference between ITC available and ITC claimed, what to select in Part B, when to pay through DRC-03, and how to respond without blindly changing your GST return.</p>
+<div class="hero-stat-grid">
+<div class="hero-stat"><b>DRC-01C</b><span>ITC mismatch intimation</span></div>
+<div class="hero-stat"><b>Part A</b><span>System-generated difference</span></div>
+<div class="hero-stat"><b>Part B</b><span>Taxpayer response</span></div>
+<div class="hero-stat"><b>DRC-03</b><span>Payment route where required</span></div>
+</div>
+</div>
+</div>
+
+<div class="layout">
+<aside class="toc">
+<div class="toc-title">On this page</div>
+<a href="#start">Before you respond</a>
+<a href="#meaning">1. What is DRC-01C?</a>
+<a href="#why">2. Why can the mismatch happen?</a>
+<a href="#workflow">3. 15-minute diagnostic workflow</a>
+<a href="#portal">4. Portal procedure — Part B</a>
+<a href="#reasons">5. What reason should I select?</a>
+<a href="#cases">6. Practical mismatch situations</a>
+<a href="#example">7. Worked reconciliation</a>
+<a href="#drc03">8. When should DRC-03 be used?</a>
+<a href="#mistakes">9. Common mistakes</a>
+<a href="#controls">10. Monthly control system</a>
+<a href="#checklist">11. Final checklist</a>
+<a href="#faq">12. FAQs</a>
+<a href="#related">Related guides</a>
+</aside>
+
+<main class="content">
+
+<section class="card" id="start">
+<h2>Before you respond to DRC-01C</h2>
+<div class="warn"><b>Do not treat DRC-01C as a simple “pay the difference” notice.</b><br>
+First identify what created the difference. A mismatch can arise from timing, reversals, reclaims, import IGST, RCM treatment, amendments, credit notes or a genuine excess claim.</div>
+<p>Download the DRC-01C Part A and prepare a period-wise reconciliation before selecting a response. GSTN's official manual states that Part A displays the intimation and Part B is used to provide the taxpayer's response. </p>
+</section>
+
+<section class="card" id="meaning">
+<h2>1. What is GST DRC-01C?</h2>
+<p>DRC-01C is an automated <b>ITC mismatch intimation</b> generated by the GST system when the system detects a material difference between ITC available in the relevant auto-generated data and ITC claimed in GSTR-3B/3BQ beyond the configured criteria.</p>
+<p>GSTN's functionality note explains that the system compares the relevant ITC figures for each return period and can generate DRC-01C where the difference crosses the configured threshold. </p>
+<div class="decision"><b>Important:</b> The exact trigger threshold is configurable/system-driven. Do not build your internal reconciliation around a permanently fixed rupee or percentage number unless the applicable GSTN communication for that period specifies it.</div>
+<h3>What happens after receiving it?</h3>
+<ol>
+<li>Part A shows the system-generated mismatch/intimation.</li>
+<li>You must examine the underlying GSTR-2B/GSTR-3B figures and your books.</li>
+<li>Part B allows you to respond by providing a DRC-03 payment reference, an explanation for the difference, or both.</li>
+<li>If the previous DRC-01C response is not filed, GSTN states that subsequent GSTR-1/IFF filing can be blocked. </li>
+</ol>
+</section>
+
+<section class="card" id="why">
+<h2>2. Why can the ITC mismatch happen?</h2>
+<div class="case-grid">
+<div class="case"><h3>Supplier timing</h3><p>Invoice belongs to your books, but supplier reported it in a later period. The purchase register and the system-generated statement can therefore fall into different periods.</p></div>
+<div class="case"><h3>Previous-period ITC</h3><p>Eligible ITC from an earlier period may have been claimed in the current GSTR-3B. Your ledger and invoice ageing should prove the timing.</p></div>
+<div class="case"><h3>ITC reversal</h3><p>Rule-based or business-specific reversals may create movement between eligible ITC and reversal tables. Do not compare only one gross number.</p></div>
+<div class="case"><h3>Reclaim</h3><p>ITC reversed earlier and reclaimed later can create a difference if your reconciliation does not track the reversal/reclaim chain.</p></div>
+<div class="case"><h3>Import IGST</h3><p>Import goods ITC has a separate data trail involving Bill of Entry/ICEGATE. Reconcile imports separately rather than forcing them into supplier invoice matching.</p></div>
+<div class="case"><h3>RCM</h3><p>RCM ITC follows a different liability/payment trail. GSTN has also made changes to how RCM is considered in the DRC-01C computation. </p></div>
+<div class="case"><h3>Credit notes/amendments</h3><p>Original invoices, credit notes and amendments can change net ITC. GSTR-2B itself presents net effects in relevant ITC tables. </p></div>
+<div class="case"><h3>Genuine excess claim</h3><p>The reconciliation may ultimately show that ITC was actually claimed in excess. In that case, correction/payment may be required rather than an explanation based on timing.</p></div>
+</div>
+</section>
+
+<section class="card" id="workflow">
+<h2>3. A 15-minute diagnostic workflow</h2>
+<table>
+<tr><th>Step</th><th>What to check</th><th>Output</th></tr>
+<tr><td>1</td><td>Download DRC-01C Part A</td><td>System mismatch amount</td></tr>
+<tr><td>2</td><td>Download GSTR-2B for the relevant period</td><td>Available ITC working</td></tr>
+<tr><td>3</td><td>Open filed GSTR-3B</td><td>Actual ITC claimed</td></tr>
+<tr><td>4</td><td>Compare purchase register</td><td>Book-side invoice population</td></tr>
+<tr><td>5</td><td>Check previous-period claims</td><td>Timing difference</td></tr>
+<tr><td>6</td><td>Check reversals/reclaims</td><td>Net movement</td></tr>
+<tr><td>7</td><td>Check import/RCM/ISD separately</td><td>Special-category adjustments</td></tr>
+<tr><td>8</td><td>Classify every rupee of the difference</td><td>Explanation or payment</td></tr>
+</table>
+<p>GSTN advises taxpayers to reconcile GSTR-2B with their own records and books and ensure that credit is not availed twice and that required reversals are made. </p>
+</section>
+
+<section class="card" id="portal">
+<h2>4. How to file DRC-01C Part B on the GST portal</h2>
+<p>The official GSTN procedure is:</p>
+<ol>
+<li>Login to <b>gst.gov.in</b>.</li>
+<li>Go to <b>Services → Returns → Return Compliance</b>, or use the Return Compliance link on the dashboard.</li>
+<li>In the <b>ITC Mismatch (DRC-01C)</b> tile, click <b>VIEW</b>.</li>
+<li>Open the pending DRC-01C using the reference number, return period or status search.</li>
+<li>Open the relevant reference number.</li>
+<li>Review <b>Part A</b> and the mismatch amount.</li>
+<li>In <b>Part B</b>, choose the appropriate response path: provide a DRC-03 ARN, provide the reason/explanation, or provide both.</li>
+<li>Save the response.</li>
+<li>Select the declaration, authorised signatory and place.</li>
+<li>Click <b>FILE GST DRC-01C</b>.</li>
+</ol>
+<p>GSTN's manual confirms that Part B has a payment-reference section and a reason-for-difference section, and that DRC-03 can be opened from the DRC-01C screen where payment is required. </p>
+<div class="good"><b>Practical tip:</b> Keep your reconciliation working ready before opening the portal. The portal response is the final communication; your detailed invoice-level reconciliation should be retained in your records.</div>
+</section>
+
+<section class="card" id="reasons">
+<h2>5. What reason should I select in Part B?</h2>
+<p>GSTN provides reason options and allows an explanation where the listed reason does not fully describe the difference. GSTN's FAQ says there are four listed reason options, with an “other reasons” route and a limited explanation field. </p>
+<table>
+<tr><th>Actual situation</th><th>Practical response approach</th></tr>
+<tr><td>Timing difference</td><td>Explain the period difference and retain invoice/2B/return reconciliation.</td></tr>
+<tr><td>Reversal already made</td><td>Show where and when the reversal was reported and reconcile the amount.</td></tr>
+<tr><td>Reclaim after earlier reversal</td><td>Show the original reversal and later eligible reclaim as one audit trail.</td></tr>
+<tr><td>Import IGST</td><td>Reconcile with Bill of Entry/ICEGATE records and the relevant GSTR-3B reporting.</td></tr>
+<tr><td>RCM</td><td>Reconcile tax paid under RCM and corresponding ITC separately.</td></tr>
+<tr><td>Credit note/amendment</td><td>Link original invoice, amendment/credit note and net ITC impact.</td></tr>
+<tr><td>Genuine excess ITC</td><td>Quantify the excess and consider DRC-03/payment or correction required under the facts.</td></tr>
+<tr><td>Other genuine reason</td><td>Select the applicable “other” route and explain the specific reconciliation in the permitted field.</td></tr>
+</table>
+<div class="warn"><b>Do not choose a convenient reason merely to remove the portal alert.</b> The explanation should be supported by your books, returns and reconciliation.</div>
+</section>
+
+<section class="card" id="cases">
+<h2>6. Practical mismatch situations — what should you do?</h2>
+
+<h3>Case 1 — Supplier filed the invoice late</h3>
+<p><b>Situation:</b> Purchase register records the invoice in April, but supplier's filing causes it to appear in a later GSTR-2B.</p>
+<p><b>Action:</b> Trace the invoice number, supplier GSTIN and filing period. Do not treat a timing difference as an unexplained permanent excess. Document when the invoice became visible and when ITC was actually claimed.</p>
+
+<h3>Case 2 — You claimed an earlier-period eligible invoice in the current month</h3>
+<p><b>Situation:</b> The current GSTR-3B contains eligible ITC that was not claimed in the original period.</p>
+<p><b>Action:</b> Maintain a “previous-period ITC claimed” schedule. The schedule should show invoice, original 2B period, claim period, tax amount and eligibility.</p>
+
+<h3>Case 3 — ITC was reversed earlier and reclaimed later</h3>
+<p><b>Action:</b> Do not count the reclaim as a completely new invoice population. Link the reversal and reclaim. GSTN's GSTR-3B guidance states that reclaimable reversals reported in 4(B)(2) can subsequently be reclaimed in 4(A)(5), with the reclaim disclosed in 4(D)(1). </p>
+
+<h3>Case 4 — Rule 37A movement</h3>
+<p><b>Action:</b> Maintain a Rule 37A tracker showing supplier invoice, original claim, reversal, supplier filing status and later reclaim. This prevents the same ITC from being treated as both an unexplained excess and a valid reclaim.</p>
+
+<h3>Case 5 — Import IGST is the difference</h3>
+<p><b>Action:</b> Reconcile Bill of Entry-wise. Keep BOE number/date, port, taxable value, IGST, ICEGATE/GSTR-2B appearance and GSTR-3B claim in one schedule. GSTR-2B includes import information received from ICEGATE. </p>
+
+<h3>Case 6 — RCM ITC is involved</h3>
+<p><b>Action:</b> Reconcile the RCM liability and ITC separately. GSTN's functionality note specifically records that ITC on RCM supplies in 4A(3) was excluded from the DRC-01C mismatch computation when the enhancement was introduced. </p>
+
+<h3>Case 7 — Credit note reduced ITC</h3>
+<p><b>Action:</b> Match the credit note/amendment to the original invoice and calculate the net effect. Do not compare gross invoice ITC with net GSTR-2B ITC.</p>
+
+<h3>Case 8 — Genuine excess ITC was actually claimed</h3>
+<div class="bad"><b>Do not manufacture a timing explanation.</b> Quantify the actual excess, check whether any part was already reversed, and determine the appropriate correction/payment treatment. GSTN provides DRC-03 specifically as a route for voluntary payment, including a cause-of-payment option for mismatch between GSTR-2B and GSTR-3B. </div>
+
+<h3>Case 9 — Your books agree but portal figures look different</h3>
+<p><b>Action:</b> Download the underlying GSTR-2B and compare document-level data. Check amendments, credit notes, negative values, ISD, imports and supplier filing timing before concluding that the portal is wrong.</p>
+
+<h3>Case 10 — Previous DRC-01C was ignored</h3>
+<div class="bad"><b>Action immediately.</b> GSTN states that an unresolved previous-period DRC-01C response can prevent filing of the subsequent GSTR-1/IFF. </div>
+</section>
+
+<section class="card" id="example">
+<h2>7. Worked example — reconcile before responding</h2>
+<p>Assume the system indicates a mismatch of <b>₹3,50,000</b>. Do not immediately pay ₹3,50,000.</p>
+<table>
+<tr><th>Component identified</th><th>Amount</th><th>Conclusion</th></tr>
+<tr><td>Previous-period eligible ITC claimed now</td><td>₹1,20,000</td><td>Timing difference — support with tracker</td></tr>
+<tr><td>Import IGST supported by BOE</td><td>₹80,000</td><td>Special-category reconciliation</td></tr>
+<tr><td>RCM-related movement</td><td>₹60,000</td><td>Reconcile separately</td></tr>
+<tr><td>Eligible reclaim after documented reversal</td><td>₹50,000</td><td>Link reversal and reclaim</td></tr>
+<tr><td>Actual unexplained/excess claim</td><td>₹40,000</td><td>Evaluate correction/payment</td></tr>
+<tr><th>Total difference explained</th><th>₹3,50,000</th><th>Fully classified</th></tr>
+</table>
+<p>The lesson is simple: <b>DRC-01C response should be driven by a reconciliation, not by the amount displayed on the screen.</b></p>
+</section>
+
+<section class="card" id="drc03">
+<h2>8. When should DRC-03 be used?</h2>
+<p>Use the payment route when your reconciliation shows that an amount is genuinely payable or when the facts require voluntary payment of the discrepancy. GSTN's DRC-03 manual includes <b>“Mismatch between FORM GSTR-2B and FORM GSTR-3B”</b> as a cause of payment. </p>
+<p>In DRC-01C Part B, GSTN allows the taxpayer to enter and validate the DRC-03 ARN. It is not mandatory to enter an ARN if the taxpayer is responding through the explanation route instead. </p>
+<div class="decision"><b>Best practice:</b> If you are paying only a portion, reconcile and document exactly why the remaining difference is explained before filing the response.</div>
+</section>
+
+<section class="card" id="mistakes">
+<h2>9. Common mistakes while responding</h2>
+<ul>
+<li>Paying the entire mismatch without reconciliation.</li>
+<li>Assuming every difference is a supplier mismatch.</li>
+<li>Ignoring previous-period ITC.</li>
+<li>Ignoring reversals and reclaims.</li>
+<li>Combining import IGST with normal supplier invoices.</li>
+<li>Using RCM ITC as an unexplained difference.</li>
+<li>Giving a vague explanation without an amount-wise working.</li>
+<li>Selecting a reason but leaving the explanation field incomplete where the portal requires explanation.</li>
+<li>Forgetting to file Part B after saving the response.</li>
+<li>Ignoring the alert until the next GSTR-1/IFF filing is blocked.</li>
+</ul>
+</section>
+
+<section class="card" id="controls">
+<h2>10. Monthly control system to prevent DRC-01C surprises</h2>
+<table>
+<tr><th>Control</th><th>Frequency</th><th>Responsible team</th></tr>
+<tr><td>Purchase register vs GSTR-2B</td><td>Monthly</td><td>Accounts/AP</td></tr>
+<tr><td>2B vs GSTR-3B ITC bridge</td><td>Before filing</td><td>GST team</td></tr>
+<tr><td>Previous-period ITC tracker</td><td>Monthly</td><td>GST team</td></tr>
+<tr><td>Reversal/reclaim tracker</td><td>Monthly</td><td>Tax + accounts</td></tr>
+<tr><td>Import BOE reconciliation</td><td>Monthly</td><td>Import/GST team</td></tr>
+<tr><td>RCM reconciliation</td><td>Monthly</td><td>Tax team</td></tr>
+<tr><td>DRC-01C pending check</td><td>Every return cycle</td><td>Tax manager</td></tr>
+</table>
+<p>GSTN itself advises reconciliation of GSTR-2B with books and records and stresses avoiding duplicate credit and making required reversals. </p>
+</section>
+
+<section class="card" id="checklist">
+<h2>11. Final DRC-01C response checklist</h2>
+<div class="good">
+<ul>
+<li>☐ DRC-01C Part A downloaded and reviewed.</li>
+<li>☐ GSTR-2B for the relevant period downloaded.</li>
+<li>☐ Filed GSTR-3B verified.</li>
+<li>☐ Purchase register reconciled.</li>
+<li>☐ Previous-period ITC checked.</li>
+<li>☐ Reversals and reclaims checked.</li>
+<li>☐ Import IGST separately reconciled.</li>
+<li>☐ RCM separately reconciled.</li>
+<li>☐ Credit notes/amendments checked.</li>
+<li>☐ Every rupee of the difference classified.</li>
+<li>☐ DRC-03 payment made only where actually required.</li>
+<li>☐ Correct Part B reason selected.</li>
+<li>☐ Explanation entered where required.</li>
+<li>☐ Declaration, authorised signatory and place completed.</li>
+<li>☐ DRC-01C Part B successfully filed.</li>
+<li>☐ ARN/acknowledgement and reconciliation working saved in the GST file.</li>
+</ul>
+</div>
+</section>
+
+<section class="card" id="faq">
+<h2>12. Frequently asked questions</h2>
+<h3>Does receiving DRC-01C automatically mean I have wrongly claimed ITC?</h3>
+<p>No. It is an automated mismatch intimation. First reconcile the difference and identify its cause.</p>
+<h3>Can I explain the difference instead of paying?</h3>
+<p>Yes, where the difference is genuinely explainable and supported. GSTN's Part B allows a reason/explanation response. </p>
+<h3>Do I have to file DRC-03 for every DRC-01C?</h3>
+<p>No. GSTN's manual states that Part B can be filed with the explanation route, the DRC-03 ARN route, or both. </p>
+<h3>What if only part of the difference is actually payable?</h3>
+<p>Classify the full difference first. Pay the amount that is actually payable and explain the balance with supporting reconciliation.</p>
+<h3>Can previous-period ITC create the difference?</h3>
+<p>Yes. Timing differences should be separately tracked and supported rather than mixed with current-period supplier mismatches.</p>
+<h3>Can import IGST be part of the reconciliation?</h3>
+<p>Yes. GSTR-2B includes import information received from ICEGATE, so imports should be reconciled separately. </p>
+<h3>Can RCM ITC create confusion?</h3>
+<p>Yes. RCM has a separate liability/payment trail, and GSTN's DRC-01C functionality has specific treatment for RCM in its computation. </p>
+<h3>What happens if I do not respond?</h3>
+<p>GSTN states that if the response for the previous DRC-01C is not filed, subsequent GSTR-1/IFF filing can be restricted. </p>
+<h3>Can I correct a filed GSTR-3B later?</h3>
+<p>GSTRN's GSTR-3B manual states that amendment of a filed GSTR-3B is not allowed. Therefore, investigate the mismatch carefully before filing the original return. </p>
+<h3>Should I blindly follow the auto-populated GSTR-3B values?</h3>
+<p>No. GSTN states that system-generated values are for assistance and are editable; the taxpayer remains responsible for the correctness of the filed return. </p>
+<h3>How should I maintain evidence?</h3>
+<p>Keep the DRC-01C Part A, GSTR-2B, filed GSTR-3B, purchase register, reversal/reclaim tracker, import/RCM workings and the final Part B response/ARN together.</p>
+<h3>What is the safest approach?</h3>
+<p><b>Reconcile → classify → decide → respond → preserve evidence.</b> Do not work backwards from the portal's mismatch amount.</p>
+</section>
+
+
+<section class="card" id="related">
+<h2>Related GST guides and tools</h2>
+<p>Continue your GST working from the related practical resources available within GSTReconciliation.in:</p>
+<div class="grid3">
+<div class="mini"><b>ITC Not Appearing in GSTR-2B</b><p><a href="https://gstreconciliation.in/articles/ITC_Not_Appearing_in_GSTR_2B_What_to_Do_Complete_Practical_Guide.html">Diagnose supplier, timing and portal-side ITC differences</a></p></div>
+<div class="mini"><b>Rule 37A ITC Reversal</b><p><a href="https://gstreconciliation.in/articles/Rule_37A_GST_ITC_Reversal_Reavailment_Complete_Practical_Guide.html">Understand reversal and later re-availment</a></p></div>
+<div class="mini"><b>180 Days ITC Rule</b><p><a href="https://gstreconciliation.in/articles/180_Days_Payment_Rule_ITC_Complete_Explanation.html">Handle payment-linked ITC reversals</a></p></div>
+<div class="mini"><b>GSTR-2B Practical Guide</b><p><a href="https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html">Understand the auto-drafted ITC statement</a></p></div>
+<div class="mini"><b>GSTR-3B Practical Guide</b><p><a href="https://gstreconciliation.in/articles/GSTR_3B_Complete_Practical_Guide_2026.html">Understand ITC reporting and reversals</a></p></div>
+<div class="mini"><b>GST Reconciliation Tool</b><p><a href="https://gstreconciliation.in/reconciliation.html">Reconcile purchase register and GSTR-2B</a></p></div>
+</div>
+</section>
+
+
+<section class="card">
+<h2>Final takeaway — respond like a GST reviewer</h2>
+<p class="lead">A strong DRC-01C response is not simply an explanation typed into the portal. It is a traceable reconciliation that explains every material difference.</p>
+<div class="flow">
+<div class="step"><b>Part A</b><br/>Understand what the system flagged</div><div class="arrow">→</div>
+<div class="step"><b>Reconcile</b><br/>2B, 3B, books and special categories</div><div class="arrow">→</div>
+<div class="step"><b>Classify</b><br/>Timing, reversal, reclaim or excess</div><div class="arrow">→</div>
+<div class="step"><b>Decide</b><br/>Explanation, DRC-03 or both</div><div class="arrow">→</div>
+<div class="step"><b>Respond</b><br/>File Part B correctly</div><div class="arrow">→</div>
+<div class="step"><b>Evidence</b><br/>Preserve the complete audit trail</div>
+</div>
+<p>If another accountant can open the file later and reproduce the DRC-01C response from the underlying returns, ledgers, invoices and reconciliation, the compliance process is professionally controlled.</p>
+</section>
+
+<section class="card">
+<h2>A practical next step</h2>
+<p>If your organisation receives DRC-01C notices regularly, create a permanent <b>2B → 3B ITC bridge</b> before every return filing. Track timing differences, reversals, reclaims, imports and RCM separately. That converts DRC-01C from a surprise notice into a control report.</p>
+<p><a class="btn" href="https://gstreconciliation.in/reconciliation.html">Open GST Reconciliation Tool</a></p>
+</section>
+
+<section class="card">
+<h2>Source note</h2>
+<p>This article's portal procedure and DRC-01C functionality are based on official GSTN guidance, including the GST Portal Return Compliance manual, GSTN DRC-01C FAQ and GSTN guidance for GSTR-2B/GSTR-3B/DRC-03. Portal labels and functionality can change; users should follow the interface and instructions applicable to the relevant tax period.</p>
+</section>
+
+</main>
+</div>
+
+<footer class="footer">
+<div class="footer-inner">
+<div class="footer-grid">
+<div><h3>GSTReconciliation.in</h3><p>GST knowledge, practical tax explanations and tools designed for accountants, finance teams, tax professionals and businesses.</p></div>
+<div><h3>GST Guides</h3><p><a href="https://gstreconciliation.in/articles.html">All GST Articles</a></p><p><a href="https://gstreconciliation.in/reconciliation.html">GST Reconciliation Tool</a></p></div>
+<div><h3>Practical Topics</h3><p><a href="https://gstreconciliation.in/articles/gstr-2b-complete-practical-guide.html">GSTR-2B</a></p><p><a href="https://gstreconciliation.in/articles/GSTR_3B_Complete_Practical_Guide_2026.html">GSTR-3B</a></p></div>
+<div><h3>For Finance Teams</h3><p><a href="mailto:uday@gstreconciliation.in">uday@gstreconciliation.in</a></p><p>+91 90521 60079</p></div>
+</div>
+<div class="disclaimer">This article is intended for practical educational purposes. GST law, notifications, circulars, portal functionality and case law can change. Apply the provisions applicable to the transaction, period and facts of the particular case and obtain professional advice where required.</div>
+</div>
+</footer>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Article",
+ "headline":"GST DRC-01C for ITC Mismatch: What to Do? Complete Practical Guide",
+ "description":"Practical guide to GST DRC-01C, GSTR-2B vs GSTR-3B mismatch reconciliation, Part B response and DRC-03.",
+ "author":{"@type":"Person","name":"Uday Kumar"},
+ "publisher":{"@type":"Organization","name":"GSTReconciliation.in","url":"https://gstreconciliation.in/"},
+ "mainEntityOfPage":{"@type":"WebPage","@id":"https://gstreconciliation.in/articles/GST_DRC_01C_ITC_Mismatch_What_to_Do_Practical_Guide.html"}
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"FAQPage",
+ "mainEntity":[
+ {"@type":"Question","name":"Does receiving DRC-01C automatically mean I have wrongly claimed ITC?","acceptedAnswer":{"@type":"Answer","text":"No. It is an automated mismatch intimation. First reconcile the difference and identify its cause."}},
+ {"@type":"Question","name":"Do I have to file DRC-03 for every DRC-01C?","acceptedAnswer":{"@type":"Answer","text":"No. GSTN's Part B allows a payment reference, an explanation, or both."}},
+ {"@type":"Question","name":"What happens if I do not respond to DRC-01C?","acceptedAnswer":{"@type":"Answer","text":"GSTN states that an unresolved previous-period DRC-01C response can restrict subsequent GSTR-1/IFF filing."}}
+ ]
+}
+</script>
+</body></html>
