@@ -1,29 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Free online GST Reconciliation Tool for Purchase Register vs GSTR-2B reconciliation. Match GST invoices, compare GSTIN, invoice number, document type, date, taxable value and GST, identify partial matches and missing invoices, and download an Excel reconciliation report.">
-<meta name="theme-color" content="#0f172a">
-<title>Free GST Reconciliation Tool | Purchase Register vs GSTR-2B Matching & Excel Report</title>
-<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
-<meta name="keywords" content="GST reconciliation tool, GSTR-2B reconciliation, purchase register vs GSTR-2B, GSTR-2B vs purchase register, GST ITC reconciliation, GST invoice matching, GST 2B reconciliation, purchase register reconciliation, GST mismatch report, GSTR-2B Excel reconciliation, GST invoice reconciliation online, input tax credit reconciliation, GST reconciliation Excel, GSTR-2B mismatch report, purchase register reconciliation tool">
-<meta name="application-name" content="GST Reconciliation Tool">
-<meta name="apple-mobile-web-app-title" content="GST Reconciliation Tool">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="author" content="GST Reconciliation Tool">
-<link rel="canonical" href="https://gstreconciliation.in/reconciliation.html">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Free GST Reconciliation Tool | Purchase Register vs GSTR-2B">
-<meta property="og:description" content="Reconcile Purchase Register vs GSTR-2B online with invoice-level GST matching. Review matched, partial, missing and exception invoices and download a professional Excel reconciliation report.">
-<meta property="og:url" content="https://gstreconciliation.in/reconciliation.html">
-<meta property="og:site_name" content="GST Reconciliation">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Free GST Reconciliation Tool | Purchase Register vs GSTR-2B">
-<meta name="twitter:description" content="Free online GST reconciliation tool for Purchase Register vs GSTR-2B invoice matching, GST ITC reconciliation, partial matching, missing invoice checks and professional Excel reporting.">
 
-<!-- Google Analytics 4 -->
-<script>
+<html lang="en" style="box-sizing: border-box; scroll-behavior: smooth; --navy: #123a68; --navy2: #0e3158; --blue: #1677e8; --blue2: #eaf4ff; --line: #dce7f2; --muted: #61738a; --ink: #16365d; --bg: #f5f9fd; --green: #18a66a; --greenbg: #e8faf2; --amber: #f4a51c; --amberbg: #fff6df; --red: #e5484d; --redbg: #fff0f1; --purple: #7b52d7; --shadow: 0 7px 22px rgba(18,58,104,.08); background:#f5f9fd;">
+<head style="box-sizing: border-box">
+<meta charset="utf-8" style="box-sizing: border-box"/>
+<meta content="width=device-width, initial-scale=1" name="viewport" style="box-sizing: border-box"/>
+<title style="box-sizing: border-box">GST Reconciliation Tool | GSTR-2B vs Purchase Register | Free ITC Matching</title>
+<meta content="GST reconciliation tool to match a Purchase Register with GSTR-2B Excel at invoice level. Review exact, partial and probable matches, mismatches, missing invoices, duplicates and tax variances, then download an Excel reconciliation workpaper." name="description" style="box-sizing: border-box"/>
+<link href="https://gstreconciliation.in/reconciliation.html" rel="canonical" style="box-sizing: border-box"/>
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js" style="box-sizing: border-box"></script>
+<script style="box-sizing: border-box">
 window.GST_GA4_ID = 'G-NBKTXWJ20G';
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
@@ -37,809 +25,777 @@ if(window.GST_GA4_ID){
 }
 function gstAnalytics(eventName, params){ try{ if(window.GST_GA4_ID && typeof gtag==='function') gtag('event', eventName, params||{}); }catch(e){} }
 </script>
-<!-- Google AdSense: site connection code for gstreconciliation.in -->
-<meta name="google-adsense-account" content="ca-pub-8493595246856929">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/xlsx-js-style@1.2.0/dist/xlsx.bundle.js"></script>
+<meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/><meta content="website" property="og:type"/><meta content="Free GST Reconciliation Tool | GSTR-2B vs Purchase Register" property="og:title"/><meta content="Invoice-level GST ITC reconciliation between Purchase Register and GSTR-2B with exception review and Excel workpaper export." property="og:description"/><meta content="https://gstreconciliation.in/reconciliation.html" property="og:url"/><meta content="GSTReconciliation.in" property="og:site_name"/><meta content="summary" name="twitter:card"/><meta content="Free GST Reconciliation Tool | GSTR-2B vs Purchase Register" name="twitter:title"/><meta content="Match Purchase Register with GSTR-2B, review ITC exceptions and export an Excel reconciliation workpaper." name="twitter:description"/><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebApplication", "@id": "https://gstreconciliation.in/reconciliation.html#app", "name": "GST ITC Reconciliation Tool", "url": "https://gstreconciliation.in/reconciliation.html", "applicationCategory": "BusinessApplication", "operatingSystem": "Any modern web browser", "description": "Browser-based GST reconciliation application for matching Purchase Register data with GSTR-2B and reviewing ITC exceptions.", "offers": {"@type": "Offer", "price": "0", "priceCurrency": "INR"}, "featureList": ["Purchase Register vs GSTR-2B reconciliation", "Invoice-level GST ITC matching", "Exact, partial and probable match review", "Mismatch and tax variance identification", "In PR but not in GSTR-2B review", "In GSTR-2B but not in PR review", "Duplicate record detection", "Excel reconciliation workpaper export"]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "GSTReconciliation.in", "item": "https://gstreconciliation.in/"}, {"@type": "ListItem", "position": 2, "name": "GST Reconciliation Tool", "item": "https://gstreconciliation.in/reconciliation.html"}]}, {"@type": "WebSite", "name": "GSTReconciliation.in", "url": "https://gstreconciliation.in/"}]}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is a GST reconciliation tool?", "acceptedAnswer": {"@type": "Answer", "text": "A GST reconciliation tool compares purchase or input-tax records with GST portal data such as GSTR-2B and produces document-level matching and exception results for review."}}, {"@type": "Question", "name": "What does GSTR-2B reconciliation mean?", "acceptedAnswer": {"@type": "Answer", "text": "It means comparing the GSTR-2B documents and tax amounts with the taxpayer's own purchase records to identify matched documents, differences and missing records before ITC reporting decisions are finalised."}}, {"@type": "Question", "name": "Can I reconcile GSTR-2B Excel with a Purchase Register?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. This tool is designed around an Excel Purchase Register and the GSTR-2B workbook downloaded from the GST portal, followed by invoice-level matching and exception review."}}, {"@type": "Question", "name": "What should I do when an invoice is in the Purchase Register but not in GSTR-2B?", "acceptedAnswer": {"@type": "Answer", "text": "Treat it as an exception for investigation. Check supplier filing, GSTIN, invoice details, period differences and other applicable GST conditions before deciding the ITC treatment."}}, {"@type": "Question", "name": "What is a tax amount mismatch?", "acceptedAnswer": {"@type": "Answer", "text": "It is a situation where a document can be related between the two datasets but the taxable value or GST amount differs. The difference should be reviewed against the invoice, supplier filing and accounting entry."}}, {"@type": "Question", "name": "Why is supplier GSTIN important in reconciliation?", "acceptedAnswer": {"@type": "Answer", "text": "Supplier GSTIN is a key identifier that helps distinguish documents from different suppliers and reduces false matches where invoice numbers are similar."}}, {"@type": "Question", "name": "Is this GST reconciliation tool free and do I need to sign up?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. The GST reconciliation tool is 100% free to use, does not require sign-up, and can be used for reconciliation as many times as needed."}}]}</script><style>@media (max-width:760px){#seo-content>div>div{grid-template-columns:1fr!important;}#seo-content [style*="grid-template-columns:repeat(4,1fr)"]{grid-template-columns:1fr!important;}#seo-content [style*="grid-template-columns:repeat(2,1fr)"]{grid-template-columns:1fr!important;}#seo-content{width:calc(100% - 20px)!important;}#seo-content h2{font-size:23px!important;} .tool-access-note{align-items:flex-start!important;} }</style>
 <style>
-:root{
-  --navy:#0f172a; --navy2:#172554; --blue:#2563eb; --blue2:#1d4ed8;
-  --cyan:#0891b2; --green:#059669; --amber:#d97706; --red:#dc2626;
-  --slate:#475569; --muted:#64748b; --line:#e2e8f0; --bg:#f5f7fb; --white:#fff;
-  --shadow:0 18px 45px rgba(15,23,42,.10); --radius:18px;
+/* Professional footer upgrade — visual only */
+.gstpro-footer{
+  margin-top:64px;
+  background:linear-gradient(135deg,#0b1f3a 0%,#123a68 58%,#0d5ea8 100%);
+  color:#fff;
+  border-top:1px solid rgba(255,255,255,.12);
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
 }
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172033;background:var(--bg)}
-body:before{
-  content:"";position:fixed;inset:0;z-index:-2;
-  background:
-    radial-gradient(circle at 10% 10%,rgba(37,99,235,.14),transparent 28%),
-    radial-gradient(circle at 90% 15%,rgba(8,145,178,.13),transparent 25%),
-    radial-gradient(circle at 70% 90%,rgba(16,185,129,.10),transparent 28%),
-    linear-gradient(135deg,#f8fbff 0%,#f3f6fb 48%,#eef7f7 100%);
-}
-a{color:inherit}
-.container{width:min(1180px,calc(100% - 32px));margin:auto}
-.topbar{position:sticky;top:0;z-index:50;background:rgba(15,23,42,.94);backdrop-filter:blur(14px);color:#fff;border-bottom:1px solid rgba(255,255,255,.08)}
-.topbar-inner{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{display:flex;align-items:center;gap:12px;font-weight:800}
-.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,#38bdf8,#2563eb);display:grid;place-items:center;box-shadow:0 8px 20px rgba(37,99,235,.35)}
-.logo svg{width:24px;height:24px}
-.brand small{display:block;color:#cbd5e1;font-weight:500;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-top:2px}
-.nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
-.nav button,.nav a{border:0;background:transparent;color:#cbd5e1;padding:9px 11px;border-radius:9px;font-size:13px;font-weight:700;text-decoration:none;cursor:pointer}
-.nav button:hover,.nav a:hover{background:rgba(255,255,255,.08);color:#fff}
-.hero{padding:64px 0 36px}
-.hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:28px;align-items:stretch}
-.hero-card{border-radius:26px;padding:42px;background:linear-gradient(135deg,#0f172a,#172554 58%,#0e7490);color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
-.hero-card:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;right:-100px;top:-130px;background:rgba(255,255,255,.08)}
-.eyebrow{display:inline-flex;align-items:center;gap:7px;padding:7px 11px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);border-radius:999px;color:#bae6fd;font-size:12px;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
-.hero h1{font-size:clamp(32px,5vw,55px);line-height:1.02;margin:18px 0 16px;letter-spacing:-.04em;max-width:780px}
-.hero p{font-size:16px;line-height:1.7;color:#dbeafe;max-width:730px;margin:0 0 26px}
-.hero-actions{display:flex;gap:11px;flex-wrap:wrap}
-.btn{border:0;border-radius:11px;padding:12px 17px;font-weight:800;font-size:13px;cursor:pointer;transition:.2s;display:inline-flex;align-items:center;justify-content:center;gap:8px}
-.btn:hover{transform:translateY(-1px)}
-.btn-primary{background:#fff;color:#1e3a8a}
-.btn-blue{background:var(--blue);color:#fff}
-.btn-green{background:var(--green);color:#fff}
-.btn-soft{background:#e8eefc;color:#1e40af}
-.btn-red{background:#fee2e2;color:#991b1b}
-.hero-side{display:grid;gap:14px}
-.info-card{background:rgba(255,255,255,.90);border:1px solid rgba(226,232,240,.9);border-radius:20px;padding:22px;box-shadow:0 10px 30px rgba(15,23,42,.07)}
-.info-card .big{font-size:27px;font-weight:900;color:#0f172a}
-.info-card .label{color:var(--muted);font-size:12px;font-weight:700;margin-top:5px}
-.section{padding:22px 0}
-.section-title{font-size:25px;letter-spacing:-.02em;margin:0 0 7px;color:#0f172a}
-.section-sub{margin:0 0 20px;color:var(--muted);font-size:14px;line-height:1.65}
-.panel{background:rgba(255,255,255,.94);border:1px solid var(--line);border-radius:var(--radius);box-shadow:0 12px 34px rgba(15,23,42,.06)}
-.notice{display:flex;gap:13px;align-items:flex-start;padding:17px;border-radius:14px;margin-bottom:18px}
-.notice.important{background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12}
-.notice.security{background:#ecfeff;border:1px solid #a5f3fc;color:#164e63}
-.notice .icon{font-size:20px;line-height:1}
-.upload-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}.sheet-choice{margin:10px 0 6px;padding:11px 12px;border:1px solid #dbeafe;border-radius:12px;background:#f8fbff}.sheet-choice label{display:block;font-size:11px;font-weight:900;color:#1e3a8a;margin-bottom:5px}.sheet-choice select{width:100%;padding:9px 10px;border:1px solid #bfdbfe;border-radius:9px;background:#fff;color:#0f172a;font-weight:700}.sheet-choice small{display:block;margin-top:6px;color:#64748b;font-size:11px;line-height:1.5}.method-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.method-card{padding:16px;border:1px solid #e2e8f0;border-radius:15px;background:linear-gradient(180deg,#fff,#f8fbff)}.method-card .method-tag{display:inline-block;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:.05em;padding:5px 8px;border-radius:999px;background:#eff6ff;color:#1d4ed8;margin-bottom:8px}.method-card h4{margin:0 0 5px;color:#0f172a}.method-card p{margin:0;color:#64748b;font-size:13px;line-height:1.6}@media(max-width:700px){.method-grid{grid-template-columns:1fr}}
-
-.upload-card{padding:24px}
-.step{display:flex;align-items:center;gap:10px;margin-bottom:13px}
-.stepno{width:32px;height:32px;border-radius:10px;background:#e0e7ff;color:#3730a3;display:grid;place-items:center;font-size:12px;font-weight:900}
-.step h3{margin:0;font-size:16px;color:#1e293b}
-.dropzone{border:2px dashed #cbd5e1;border-radius:15px;padding:26px;text-align:center;background:#f8fafc;transition:.2s}
-.dropzone.drag{border-color:#2563eb;background:#eff6ff}
-.dropzone input{display:block;width:100%;font-size:13px;color:#64748b}
-.dropzone strong{display:block;margin:8px 0 4px;color:#334155}
-.dropzone span{font-size:12px;color:#94a3b8}
-.status{font-size:12px;font-weight:700;margin-top:10px;min-height:18px}
-.status.ok{color:#047857}.status.err{color:#b91c1c}.status.info{color:#64748b}
-.sheet-row{display:none;align-items:center;gap:9px;margin-top:12px}
-.sheet-row label{font-size:12px;font-weight:800;color:#475569}
-.sheet-row select{border:1px solid #cbd5e1;border-radius:9px;padding:7px 9px;background:#fff;font-size:12px;flex:1}
-.run-panel{padding:20px;margin-top:20px;display:flex;justify-content:space-between;align-items:center;gap:18px;background:linear-gradient(135deg,#eff6ff,#ecfeff)}
-.run-panel strong{color:#0f172a}.run-panel p{margin:4px 0 0;color:#64748b;font-size:12px}
-.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:20px 0}
-.metric{padding:18px;border-radius:15px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 24px rgba(15,23,42,.05)}
-.metric .k{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;font-weight:900}
-.metric .v{font-size:29px;font-weight:900;margin-top:5px}
-.metric.green{border-top:4px solid #10b981}.metric.green .v{color:#059669}
-.metric.amber{border-top:4px solid #f59e0b}.metric.amber .v{color:#d97706}
-.metric.red{border-top:4px solid #ef4444}.metric.red .v{color:#dc2626}
-.metric.blue{border-top:4px solid #3b82f6}.metric.blue .v{color:#2563eb}
-.results{display:none;overflow:hidden}
-.results-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap}
-.tabs{display:flex;gap:7px;flex-wrap:wrap}
-.tab{border:0;border-radius:9px;padding:8px 11px;font-size:11px;font-weight:900;cursor:pointer;background:#f1f5f9;color:#475569}
-.tab.active{background:#0f172a;color:#fff}
-.table-wrap{overflow:auto;max-height:540px}
-table{border-collapse:collapse;width:100%;font-size:11px;white-space:nowrap}
-th{position:sticky;top:0;background:#f8fafc;color:#475569;text-align:left;padding:11px;border-bottom:1px solid var(--line);z-index:2}
-td{padding:10px 11px;border-bottom:1px solid #f1f5f9;color:#334155}
-tr:hover td{background:#f8fafc}
-.badge{display:inline-block;padding:5px 8px;border-radius:7px;font-weight:900;font-size:10px}
-.b-green{background:#dcfce7;color:#166534}.b-amber{background:#fef3c7;color:#92400e}.b-red{background:#fee2e2;color:#991b1b}.b-blue{background:#dbeafe;color:#1e40af}
-.instructions{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.instruction-card{padding:20px}
-.instruction-card h3{margin:0 0 9px;font-size:15px;color:#0f172a}
-.instruction-card p,.instruction-card li{font-size:13px;line-height:1.7;color:#475569}
-.instruction-card ol,.instruction-card ul{padding-left:20px;margin:7px 0}
-.critical{border:2px solid #f59e0b;background:#fffbeb}
-.critical h3{color:#92400e}
-.faq{border-top:1px solid var(--line)}
-.faq-item{padding:16px 0;border-bottom:1px solid var(--line)}
-.faq-q{font-weight:900;color:#1e293b;font-size:14px}
-.faq-a{font-size:13px;line-height:1.7;color:#64748b;margin-top:6px}
-.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.contact-card{padding:22px}
-.contact-link{display:inline-flex;align-items:center;gap:9px;color:#1d4ed8;font-weight:800;text-decoration:none;margin-top:8px}
-.footer{margin-top:55px;background:#0f172a;color:#cbd5e1;padding:34px 0}
-.footer-grid{display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}
-.footer strong{color:#fff}.footer small{display:block;margin-top:6px;color:#94a3b8}
-.modal{display:none;position:fixed;inset:0;background:rgba(2,6,23,.65);z-index:100;padding:20px;overflow:auto}
-.modal-card{width:min(760px,100%);margin:30px auto;background:#fff;border-radius:20px;box-shadow:0 30px 80px rgba(0,0,0,.25);overflow:hidden}
-.modal-head{padding:18px 20px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center}
-.modal-head h2{margin:0;font-size:18px}.close{border:0;background:#f1f5f9;border-radius:9px;width:34px;height:34px;cursor:pointer;font-weight:900}
-.modal-body{padding:22px;max-height:70vh;overflow:auto}
-.modal-body p,.modal-body li{font-size:13px;line-height:1.75;color:#475569}
-.modal-body h3{font-size:15px;margin:18px 0 7px;color:#0f172a}
-.toast{position:fixed;right:20px;bottom:20px;z-index:150;background:#0f172a;color:#fff;padding:12px 16px;border-radius:12px;box-shadow:0 12px 30px rgba(0,0,0,.2);display:none;font-size:12px;font-weight:800}
-.loading{display:none;align-items:center;gap:9px;color:#1e40af;font-weight:800;font-size:13px}
-.spinner{width:16px;height:16px;border:3px solid #bfdbfe;border-top-color:#2563eb;border-radius:50%;animation:spin .8s linear infinite}
-@keyframes spin{to{transform:rotate(360deg)}}
-@media(max-width:900px){.hero-grid,.upload-grid,.instructions,.contact{grid-template-columns:1fr}.metrics{grid-template-columns:1fr 1fr}.nav{display:none}.hero{padding-top:35px}}
-@media(max-width:560px){.container{width:min(100% - 20px,1180px)}.hero-card{padding:28px}.metrics{grid-template-columns:1fr}.run-panel{align-items:flex-start;flex-direction:column}.topbar-inner{min-height:62px}}
-
-/* SEO content: visible, useful information around the existing tool */
-.seo-wrap{padding:8px 0 10px}.seo-intro{font-size:16px;line-height:1.8;color:#334155;max-width:none;width:100%}.seo-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.seo-card{padding:21px}.seo-card h3{margin:0 0 8px;font-size:17px;color:#0f172a}.seo-card p,.seo-card li{font-size:14px;line-height:1.7;color:#475569}.seo-card ul{padding-left:19px;margin:10px 0 0}.keyword-strip{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.keyword-pill{display:inline-block;padding:7px 10px;border-radius:999px;background:#eff6ff;border:1px solid #dbeafe;color:#1d4ed8;font-size:12px;font-weight:800}.workflow{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.workflow .stepbox{padding:19px;background:#fff;border:1px solid var(--line);border-radius:16px}.workflow .num{font-weight:900;color:#2563eb;font-size:12px;text-transform:uppercase;letter-spacing:.05em}.workflow h3{font-size:16px;margin:7px 0}.workflow p{font-size:13px;line-height:1.65;color:#64748b;margin:0}.result-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:18px}.result-box{padding:18px;border-radius:16px;border:1px solid var(--line);background:#fff}.result-box strong{display:block;font-size:15px;color:#0f172a;margin-bottom:6px}.result-box span{font-size:13px;line-height:1.6;color:#64748b}/* Content alignment polish: use the full content column without artificial right-side gaps. */
-.seo-wrap > .container > .seo-intro,
-.seo-wrap > .container > .seo-grid,
-.seo-wrap > .container > .workflow,
-.seo-wrap > .container > .keyword-strip,
-.seo-wrap > .container > .faq-list{width:100%;max-width:none}
-.seo-card p,.seo-card li,.workflow p,.faq-list p{max-width:none}
-.faq-list{display:grid;gap:10px;margin-top:16px}.faq-list details{background:#fff;border:1px solid var(--line);border-radius:13px;padding:15px 17px}.faq-list summary{cursor:pointer;font-weight:800;color:#172033}.faq-list p{margin:10px 0 2px;color:#475569;font-size:14px;line-height:1.7}.related-links{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.related-links a{display:block;text-decoration:none;padding:17px;background:#fff;border:1px solid var(--line);border-radius:14px;color:#1d4ed8;font-weight:800}.related-links small{display:block;color:#64748b;font-weight:500;line-height:1.5;margin-top:5px}@media(max-width:900px){.seo-grid,.workflow,.result-grid,.related-links{grid-template-columns:1fr 1fr}}@media(max-width:560px){.seo-grid,.workflow,.result-grid,.related-links{grid-template-columns:1fr}}
+.gstpro-footer .ft-wrap{max-width:1180px;margin:0 auto;padding:44px 28px 22px}
+.gstpro-footer .ft-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.2fr;gap:38px}
+.gstpro-footer .ft-brand{display:flex;align-items:center;gap:11px;margin-bottom:15px}
+.gstpro-footer .ft-mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(145deg,#fff,#dbeafe);display:grid;place-items:center;color:#1261a0;font-weight:900;font-size:15px;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.gstpro-footer .ft-name{font-size:20px;font-weight:800;letter-spacing:-.3px}
+.gstpro-footer .ft-tag{font-size:12px;color:#b9d4ee;margin-top:2px}
+.gstpro-footer .ft-desc{max-width:430px;color:#d8e7f5;line-height:1.7;font-size:13.5px;margin:0}
+.gstpro-footer h4{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#9ec9ed;margin:4px 0 15px;font-weight:800}
+.gstpro-footer a{color:#e8f3fc;text-decoration:none;font-size:13.5px;display:block;margin:10px 0;transition:color .18s,transform .18s}
+.gstpro-footer a:hover{color:#fff;transform:translateX(2px)}
+.gstpro-footer .ft-contact{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:16px 17px}
+.gstpro-footer .ft-contact p{margin:7px 0;color:#dcebf7;font-size:13px;line-height:1.55}
+.gstpro-footer .ft-contact strong{color:#fff}
+.gstpro-footer .ft-bottom{margin-top:34px;padding-top:18px;border-top:1px solid rgba(255,255,255,.13);display:flex;justify-content:space-between;align-items:center;gap:18px;color:#abc7df;font-size:12px}
+.gstpro-footer .ft-legal{display:flex;gap:18px;flex-wrap:wrap}
+.gstpro-footer .ft-legal a{display:inline;font-size:12px;color:#abc7df;margin:0}
+.gstpro-footer .ft-note{color:#9dbbd4}
+@media(max-width:850px){.gstpro-footer .ft-grid{grid-template-columns:1fr 1fr}.gstpro-footer .ft-bottom{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.gstpro-footer .ft-grid{grid-template-columns:1fr}.gstpro-footer .ft-wrap{padding:34px 20px 18px}}
 </style>
-<script type="application/ld+json">
+
+
+<style id="reconciliation-alignment-fix">
+/* =========================================================
+   Reconciliation UI alignment refinement
+   Visual/CSS only — reconciliation JavaScript is untouched.
+   ========================================================= */
+
+/* Detected-field mapping */
+.mapping-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  column-gap:18px !important;
+  row-gap:7px !important;
+}
+.mapping-row{
+  display:grid !important;
+  grid-template-columns:minmax(145px,0.95fr) minmax(150px,1.05fr) !important;
+  align-items:center !important;
+  gap:9px !important;
+  min-width:0 !important;
+  padding:3px 0 !important;
+}
+.mapping-row label{
+  display:block !important;
+  min-width:0 !important;
+  margin:0 !important;
+  color:#234665 !important;
+  font-size:11px !important;
+  font-weight:650 !important;
+  line-height:1.25 !important;
+  white-space:normal !important;
+}
+.mapping-row select{
+  display:block !important;
+  width:100% !important;
+  min-width:0 !important;
+  height:32px !important;
+  padding:5px 28px 5px 9px !important;
+  border:1px solid #c8d8e7 !important;
+  border-radius:7px !important;
+  background:#fff !important;
+  color:#183b5b !important;
+  font:500 11px/1.2 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
+  box-sizing:border-box !important;
+}
+
+/* Dynamic financial summary cards */
+#v4Financial{
+  align-items:stretch !important;
+}
+#v4Financial .summary-item{
+  min-width:0 !important;
+  min-height:76px !important;
+  padding:10px 11px !important;
+  border:1px solid #e0e9f1 !important;
+  border-radius:8px !important;
+  background:#fbfdff !important;
+  display:flex !important;
+  flex-direction:column !important;
+  justify-content:flex-start !important;
+  gap:3px !important;
+  box-sizing:border-box !important;
+}
+#v4Financial .summary-item b{
+  display:block !important;
+  color:#234867 !important;
+  font-size:10.5px !important;
+  line-height:1.35 !important;
+  font-weight:800 !important;
+  margin:0 !important;
+}
+#v4Financial .summary-item span{
+  display:block !important;
+  color:#123a68 !important;
+  font-size:14px !important;
+  line-height:1.25 !important;
+  font-weight:900 !important;
+  margin:1px 0 0 !important;
+  font-variant-numeric:tabular-nums !important;
+}
+#v4Financial .summary-item small{
+  display:block !important;
+  color:#708297 !important;
+  font-size:9px !important;
+  line-height:1.35 !important;
+  margin:0 !important;
+}
+
+/* Dynamic exception action rows */
+#v4Actions .action-item{
+  display:grid !important;
+  grid-template-columns:28px minmax(0,1fr) auto !important;
+  align-items:center !important;
+  gap:9px !important;
+  min-width:0 !important;
+  padding:9px 10px !important;
+  border:1px solid #e0e8f0 !important;
+  border-radius:8px !important;
+  background:#fbfdff !important;
+  box-sizing:border-box !important;
+}
+#v4Actions .action-no{
+  width:28px !important;
+  height:28px !important;
+  border-radius:8px !important;
+  display:grid !important;
+  place-items:center !important;
+  background:#edf5ff !important;
+  color:#1767b8 !important;
+  font-size:11px !important;
+  font-weight:900 !important;
+  box-sizing:border-box !important;
+}
+#v4Actions .action-item > div:nth-child(2){
+  min-width:0 !important;
+}
+#v4Actions .action-item b{
+  display:block !important;
+  color:#1a3d60 !important;
+  font-size:11px !important;
+  line-height:1.3 !important;
+  margin:0 !important;
+}
+#v4Actions .action-item span{
+  display:block !important;
+  color:#718398 !important;
+  font-size:9.5px !important;
+  line-height:1.4 !important;
+  margin-top:2px !important;
+}
+#v4Actions .action-count{
+  min-width:30px !important;
+  text-align:right !important;
+  color:#183b61 !important;
+  font-size:14px !important;
+  line-height:1 !important;
+  font-weight:900 !important;
+  font-variant-numeric:tabular-nums !important;
+}
+
+/* Result interpretation cards generated by JavaScript */
+#v4LearnGrid .learning-card{
+  min-width:0 !important;
+  padding:10px 11px !important;
+  border:1px solid #dfe8f1 !important;
+  border-radius:8px !important;
+  background:#fff !important;
+  box-sizing:border-box !important;
+}
+#v4LearnGrid .lc-top{
+  display:flex !important;
+  align-items:center !important;
+  gap:7px !important;
+  min-width:0 !important;
+}
+#v4LearnGrid .learning-icon{
+  width:27px !important;
+  height:27px !important;
+  flex:none !important;
+  display:grid !important;
+  place-items:center !important;
+  border-radius:7px !important;
+  background:#edf5ff !important;
+  font-size:13px !important;
+}
+#v4LearnGrid .lc-top b{
+  color:#193e61 !important;
+  font-size:10.5px !important;
+  line-height:1.3 !important;
+}
+#v4LearnGrid .learning-card p{
+  margin:7px 0 0 !important;
+  color:#6a7d91 !important;
+  font-size:9.5px !important;
+  line-height:1.5 !important;
+}
+
+/* Invoice table readability/alignment */
+.report-table{
+  table-layout:auto !important;
+}
+.report-table th,
+.report-table td{
+  vertical-align:middle !important;
+  line-height:1.35 !important;
+}
+.report-table td{
+  padding:7px 8px !important;
+  color:#294963 !important;
+}
+.report-table td.num{
+  text-align:right !important;
+  font-variant-numeric:tabular-nums !important;
+  white-space:nowrap !important;
+}
+.report-table td:nth-child(1){
+  text-align:center !important;
+}
+.report-table td:nth-child(3),
+.report-table td:nth-child(7),
+.report-table td:nth-child(8){
+  white-space:nowrap !important;
+}
+.status-pill2{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-width:78px !important;
+  line-height:1.15 !important;
+}
+
+/* Invoice detail modal */
+#matchDetailModal .modal-card{
+  max-width:900px !important;
+  padding:24px !important;
+}
+#matchDetailBody{
+  margin-top:14px !important;
+}
+#matchDetailBody .detail-grid{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:9px 12px !important;
+}
+#matchDetailBody .detail-item{
+  min-width:0 !important;
+  padding:10px 11px !important;
+  border:1px solid #e0e8f0 !important;
+  border-radius:8px !important;
+  background:#fbfdff !important;
+  display:flex !important;
+  flex-direction:column !important;
+  gap:3px !important;
+  box-sizing:border-box !important;
+}
+#matchDetailBody .detail-item small{
+  display:block !important;
+  color:#71849a !important;
+  font-size:9.5px !important;
+  line-height:1.25 !important;
+  font-weight:700 !important;
+  margin:0 !important;
+}
+#matchDetailBody .detail-item b{
+  display:block !important;
+  color:#173d61 !important;
+  font-size:11.5px !important;
+  line-height:1.35 !important;
+  font-weight:850 !important;
+  overflow-wrap:anywhere !important;
+  margin:0 !important;
+}
+#matchDetailBody .detail-reason{
+  margin-top:13px !important;
+  padding:13px 14px !important;
+  border:1px solid #d7e6f4 !important;
+  border-radius:9px !important;
+  background:#f5f9fd !important;
+  box-sizing:border-box !important;
+}
+#matchDetailBody .detail-reason b,
+#matchDetailBody .detail-reason strong{
+  display:block !important;
+  color:#173e63 !important;
+  font-size:11.5px !important;
+  line-height:1.35 !important;
+}
+#matchDetailBody .detail-reason p{
+  margin:4px 0 11px !important;
+  color:#61768b !important;
+  font-size:10.5px !important;
+  line-height:1.55 !important;
+}
+
+/* Prevent result headings and controls from collapsing on narrower screens */
+.results-head,
+.result-actions,
+.table-head,
+.report-tools{
+  min-width:0 !important;
+}
+.results-head > *,
+.result-actions > *,
+.table-head > *{
+  min-width:0 !important;
+}
+
+@media(max-width:900px){
+  .mapping-grid{grid-template-columns:1fr !important;}
+  #v4Financial{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+  #v4LearnGrid{grid-template-columns:repeat(2,minmax(0,1fr)) !important;}
+}
+@media(max-width:620px){
+  .mapping-row{grid-template-columns:1fr !important;gap:4px !important;}
+  #v4Financial,
+  #v4LearnGrid,
+  #matchDetailBody .detail-grid{grid-template-columns:1fr !important;}
+  #v4Actions .action-item{grid-template-columns:28px minmax(0,1fr) !important;}
+  #v4Actions .action-count{grid-column:2;text-align:left !important;margin-top:-3px;}
+}
+</style>
+
+
+<style id="mapping-alignment-final-fix">
+/* Final detected-column layout:
+   four aligned columns = label | control | label | control.
+   The matching engine remains untouched. */
+.mapping-grid{
+  display:grid !important;
+  grid-template-columns:minmax(125px,1fr) minmax(150px,1.12fr) minmax(125px,1fr) minmax(150px,1.12fr) !important;
+  column-gap:12px !important;
+  row-gap:8px !important;
+  align-items:center !important;
+  width:100% !important;
+  box-sizing:border-box !important;
+}
+.mapping-grid .mapping-row{
+  display:contents !important;
+}
+.mapping-grid .mapping-row label{
+  display:block !important;
+  width:auto !important;
+  min-width:0 !important;
+  margin:0 !important;
+  padding:5px 0 !important;
+  color:#234665 !important;
+  font-size:10.5px !important;
+  line-height:1.25 !important;
+  font-weight:750 !important;
+  white-space:normal !important;
+  overflow-wrap:anywhere !important;
+  box-sizing:border-box !important;
+}
+.mapping-grid .mapping-row select{
+  display:block !important;
+  width:100% !important;
+  min-width:0 !important;
+  max-width:100% !important;
+  height:32px !important;
+  margin:0 !important;
+  padding:5px 27px 5px 9px !important;
+  border:1px solid #c8d8e7 !important;
+  border-radius:7px !important;
+  background:#fff !important;
+  color:#183b5b !important;
+  font:500 10.5px/1.2 Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif !important;
+  box-sizing:border-box !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+}
+
+/* Give the mapping area a little more breathing room without changing its card. */
+#v2PRMapping,
+#v2B2BMapping{
+  overflow:visible !important;
+}
+#v2PRMap,
+#v2B2BMap{
+  overflow:visible !important;
+}
+
+/* On smaller widths, keep the same clean two-column label/control pattern. */
+@media(max-width:1050px){
+  .mapping-grid{
+    grid-template-columns:minmax(120px,1fr) minmax(145px,1fr) !important;
+    column-gap:14px !important;
+    row-gap:8px !important;
+  }
+}
+@media(max-width:620px){
+  .mapping-grid{
+    grid-template-columns:minmax(112px,1fr) minmax(140px,1.25fr) !important;
+    column-gap:10px !important;
+  }
+}
+</style>
+
+
+<script type="application/ld+json" id="gstReconciliationSoftwareSchema">
 {
   "@context":"https://schema.org",
   "@type":"SoftwareApplication",
-  "name":"Free GST Reconciliation Tool",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web Browser",
-  "url":"https://gstreconciliation.in/reconciliation.html",
-  "description":"Browser-based GST reconciliation tool for comparing Purchase Register with GSTR-2B and exporting invoice-level reconciliation results.",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"BreadcrumbList",
-  "itemListElement":[
-    {"@type":"ListItem","position":1,"name":"Home","item":"https://gstreconciliation.in/"},
-    {"@type":"ListItem","position":2,"name":"GST Reconciliation Tool","item":"https://gstreconciliation.in/reconciliation.html"}
-  ]
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebPage",
-  "name":"Free GST Reconciliation Tool – Purchase Register vs GSTR-2B",
-  "url":"https://gstreconciliation.in/reconciliation.html",
-  "description":"Free online GST reconciliation tool for comparing Purchase Register with GSTR-2B, reviewing invoice mismatches and exporting reconciliation results to Excel.",
-  "isPartOf":{"@type":"WebSite","url":"https://gstreconciliation.in/"}
-}
-</script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"What is a GST Reconciliation Tool?","acceptedAnswer":{"@type":"Answer","text":"A GST Reconciliation Tool compares purchase records with GST portal data such as GSTR-2B and identifies matched, unmatched and differing invoice records."}},
-    {"@type":"Question","name":"How do I reconcile my Purchase Register with GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"Upload the Purchase Register and relevant GSTR-2B file, the tool automatically reads the relevant transaction sheets, run reconciliation and review the matched and exception categories."}},
-    {"@type":"Question","name":"What is the difference between Purchase Register and GSTR-2B?","acceptedAnswer":{"@type":"Answer","text":"The Purchase Register represents purchase transactions recorded in your books, while GSTR-2B contains auto-drafted input tax credit information made available from GST data for the relevant period."}},
-    {"@type":"Question","name":"What does Not in GSTR-2B mean?","acceptedAnswer":{"@type":"Answer","text":"It means a Purchase Register record did not have a corresponding record identified in the uploaded GSTR-2B data and should be investigated."}},
-    {"@type":"Question","name":"What does Not in Purchase Register mean?","acceptedAnswer":{"@type":"Answer","text":"It means a GSTR-2B record did not have a corresponding Purchase Register record identified by the reconciliation process."}},
-    {"@type":"Question","name":"What is a partial match in GST reconciliation?","acceptedAnswer":{"@type":"Answer","text":"A partial match indicates that a related invoice has been identified but one or more compared details differ or require review."}},
-    {"@type":"Question","name":"Can I download the GST reconciliation report in Excel?","acceptedAnswer":{"@type":"Answer","text":"Yes. After reconciliation, the tool provides an Excel export containing reconciliation categories and invoice-level comparison information."}},
-    {"@type":"Question","name":"Is this GST reconciliation tool free?","acceptedAnswer":{"@type":"Answer","text":"This reconciliation tool is provided as a free browser-based utility."}},
-    {"@type":"Question","name":"Can I use Excel for GSTR-2B reconciliation?","acceptedAnswer":{"@type":"Answer","text":"Yes. The tool is designed around workbook-based reconciliation and provides Excel template and export functionality."}},
-    {"@type":"Question","name":"Does the tool replace professional GST review?","acceptedAnswer":{"@type":"Answer","text":"No. Reconciliation software helps identify data relationships and exceptions. Taxability, ITC eligibility and filing decisions should be independently reviewed."}} ,
-    {"@type":"Question","name":"What is the difference between Matched and Partial Matching?","acceptedAnswer":{"@type":"Answer","text":"Matched indicates a strong relationship within the configured checks, while Partial Matching indicates a related invoice was found but one or more compared details require review."}},
-    {"@type":"Question","name":"Can I upload the same Excel workbook in both upload boxes?","acceptedAnswer":{"@type":"Answer","text":"Yes. In standard Excel format the Purchase Register box reads only the Purchase Register sheet and the GSTR-2B box automatically reads the transaction/detail sheets from the GST Portal workbook."}},
-    {"@type":"Question","name":"Can I correct the detected column mapping?","acceptedAnswer":{"@type":"Answer","text":"Yes. The Field Mapping section shows detected columns and allows the user to select another source column before reconciliation."}}
-  ]
-}
-</script>
-
-<style id="recon-v2-style">
-/* v2 professional reconciliation UI */
-.recon-v2{margin-top:18px}
-.v2-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.v2-card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:18px;box-shadow:0 8px 24px rgba(15,23,42,.05)}
-.v2-card h3{margin:0 0 6px;color:#0f172a;font-size:16px}
-.v2-muted{font-size:12px;color:#64748b;line-height:1.6}
-.file-status{margin-top:10px;font-size:12px;font-weight:800}
-.file-status.ok{color:#047857}.file-status.warn{color:#b45309}.file-status.err{color:#b91c1c}
-.mapping{margin-top:14px;display:none}
-.mapping-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.mapping-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:center}
-.mapping-row label{font-size:11px;font-weight:800;color:#475569}
-.mapping-row select{width:100%;padding:8px;border:1px solid #cbd5e1;border-radius:8px;background:#fff;font-size:11px}
-.v2-toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-.v2-toolbar select,.v2-toolbar input{padding:9px 10px;border:1px solid #cbd5e1;border-radius:9px;font-size:12px;background:#fff}
-.v2-dashboard{display:none;margin-top:18px}
-.v2-kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:10px}
-.v2-kpi{background:#fff;border:1px solid #e2e8f0;border-radius:13px;padding:14px}
-.v2-kpi .label{font-size:10px;text-transform:uppercase;letter-spacing:.06em;color:#64748b;font-weight:900}
-.v2-kpi .value{font-size:23px;font-weight:900;margin-top:4px;color:#0f172a}
-.v2-kpi.green{border-top:4px solid #10b981}.v2-kpi.amber{border-top:4px solid #f59e0b}.v2-kpi.red{border-top:4px solid #ef4444}
-.v2-kpi.blue{border-top:4px solid #3b82f6}.v2-kpi.purple{border-top:4px solid #8b5cf6}.v2-kpi.slate{border-top:4px solid #64748b}
-.v2-summary{display:grid;grid-template-columns:1.2fr .8fr;gap:16px;margin-top:14px}
-.v2-table-wrap{overflow:auto;max-height:560px;border:1px solid #e2e8f0;border-radius:12px}
-.v2-table{width:100%;border-collapse:collapse;font-size:11px;white-space:nowrap}
-.v2-table th{position:sticky;top:0;background:#f8fafc;padding:10px;border-bottom:1px solid #e2e8f0;text-align:left;z-index:2}
-.v2-table td{padding:9px 10px;border-bottom:1px solid #f1f5f9}
-.v2-table tr:hover td{background:#f8fafc}
-.status-pill{display:inline-block;padding:5px 8px;border-radius:7px;font-weight:900;font-size:9px}
-.s-exact{background:#dcfce7;color:#166534}.s-diff{background:#fef3c7;color:#92400e}.s-missing2b{background:#fee2e2;color:#991b1b}
-.s-missingpr{background:#dbeafe;color:#1e40af}.s-duplicate{background:#ede9fe;color:#6d28d9}.s-review{background:#ffedd5;color:#9a3412}
-.v2-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}
-.v2-tab{border:0;padding:8px 10px;border-radius:8px;background:#f1f5f9;color:#475569;font-size:10px;font-weight:900;cursor:pointer}
-.v2-tab.active{background:#0f172a;color:#fff}
-.v2-note{padding:12px 14px;border-radius:10px;background:#f8fafc;border:1px solid #e2e8f0;font-size:11px;line-height:1.6;color:#475569}
-.v2-note strong{color:#0f172a}
-.v2-checks{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.check-item{padding:10px;border-radius:10px;background:#f8fafc;font-size:11px}
-.check-item.ok{border-left:3px solid #10b981}.check-item.warn{border-left:3px solid #f59e0b}.check-item.err{border-left:3px solid #ef4444}
-.match-detail{font-size:10px;color:#64748b;max-width:420px;white-space:normal}
-@media(max-width:1000px){.v2-kpis{grid-template-columns:repeat(3,1fr)}.v2-summary{grid-template-columns:1fr}}
-@media(max-width:700px){.v2-grid,.mapping-grid,.v2-checks{grid-template-columns:1fr}.v2-kpis{grid-template-columns:1fr 1fr}.mapping-row{grid-template-columns:1fr}.v2-table-wrap{max-height:480px}}
-
-.mode-card{margin-bottom:16px}
-.mode-head{display:flex;justify-content:space-between;gap:18px;align-items:center}
-.mode-switch{display:flex;gap:8px;flex-wrap:wrap}
-.mode-btn{border:1px solid #cbd5e1;background:#fff;color:#334155;border-radius:10px;padding:10px 14px;font-weight:900;cursor:pointer}
-.mode-btn.active{background:#0f172a;color:#fff;border-color:#0f172a}
-.mode-help{margin-top:14px;padding:12px 14px;border-radius:10px;background:#f8fafc;border:1px solid #e2e8f0;color:#475569;font-size:12px;line-height:1.55}
-@media(max-width:800px){.mode-head{flex-direction:column;align-items:stretch}}
-
-.report-head{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 24px;margin-bottom:14px;border:1px solid #dbe4ef;border-radius:16px;background:linear-gradient(135deg,#ffffff,#f8fbff);box-shadow:0 6px 24px rgba(15,23,42,.06)}
-.report-head h2{margin:2px 0 5px;font-size:25px;color:#0f172a}
-.report-head p{margin:0;color:#64748b;font-size:12px;max-width:760px}
-.report-eyebrow{font-size:10px;font-weight:950;letter-spacing:.12em;color:#0f766e}
-.report-guide{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:14px}
-.report-guide>div{display:grid;grid-template-columns:10px 1fr;column-gap:8px;padding:12px 13px;border:1px solid #e2e8f0;border-radius:12px;background:#fff}
-.report-guide small{grid-column:2;color:#64748b;font-size:10px;line-height:1.4;margin-top:2px}
-.guide-dot{width:9px;height:9px;border-radius:50%;margin-top:4px;background:#94a3b8}
-.guide-dot.exact{background:#10b981}.guide-dot.diff{background:#f59e0b}.guide-dot.missing{background:#ef4444}.guide-dot.review{background:#6366f1}
-.v2-table-wrap{border-radius:12px}
-.v2-table th{position:sticky;top:0;z-index:2;background:#0f172a;color:#fff;font-size:10px;white-space:nowrap}
-.v2-table td{font-size:10px;vertical-align:top}
-.v2-tab{font-weight:850}
-@media(max-width:900px){.report-guide{grid-template-columns:1fr 1fr}.report-head{align-items:flex-start;flex-direction:column}}
-@media(max-width:600px){.report-guide{grid-template-columns:1fr}}
-</style>
-<style id="recon-customer-style-old">
-/* Professional reconciliation report and mapping UX */
-.upload-helper{display:flex;gap:9px;align-items:flex-start;margin-top:10px;padding:10px 12px;border-radius:10px;background:#f8fafc;border:1px solid #e2e8f0;color:#64748b;font-size:11px;line-height:1.5}
-.mapping-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:9px}.mapping-badge{font-size:10px;font-weight:900;padding:5px 8px;border-radius:999px;background:#dcfce7;color:#166534}.mapping-badge.warn{background:#fef3c7;color:#92400e}
-.report-shell{margin-top:18px}.report-top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:24px;border-radius:18px;background:linear-gradient(135deg,#0f172a,#172554 62%,#0e7490);color:#fff;box-shadow:0 16px 35px rgba(15,23,42,.16)}
-.report-top h2{margin:3px 0 6px;font-size:28px;letter-spacing:-.02em}.report-top p{margin:0;color:#cbd5e1;font-size:12px;line-height:1.6;max-width:720px}.report-top .eyebrow2{font-size:10px;font-weight:900;letter-spacing:.12em;color:#93c5fd}.report-health{min-width:190px;padding:16px 18px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.08);border-radius:14px;text-align:center}.report-health .score{font-size:34px;font-weight:950;line-height:1}.report-health small{display:block;margin-top:5px;color:#cbd5e1;font-size:10px}
-.report-actionbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin:12px 0}.report-download{font-size:13px;padding:13px 18px}.report-tip{font-size:11px;color:#64748b}
-.report-kpis{display:grid;grid-template-columns:repeat(8,1fr);gap:10px}.report-kpi{background:#fff;border:1px solid #e2e8f0;border-radius:13px;padding:13px;min-height:84px}.report-kpi .rk-label{font-size:9px;font-weight:900;color:#64748b;text-transform:uppercase;letter-spacing:.06em;line-height:1.25}.report-kpi .rk-value{font-size:24px;font-weight:950;color:#0f172a;margin-top:6px}.report-kpi.green{border-top:4px solid #10b981}.report-kpi.amber{border-top:4px solid #f59e0b}.report-kpi.red{border-top:4px solid #ef4444}.report-kpi.blue{border-top:4px solid #3b82f6}.report-kpi.purple{border-top:4px solid #8b5cf6}.report-kpi.slate{border-top:4px solid #64748b}
-.report-overview{display:grid;grid-template-columns:1.25fr .75fr;gap:14px;margin-top:14px}.report-card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:18px;box-shadow:0 7px 22px rgba(15,23,42,.04)}.report-card h3{margin:0 0 5px;font-size:15px;color:#0f172a}.report-card .sub{font-size:11px;color:#64748b;line-height:1.5;margin-bottom:12px}.summary-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.summary-item{padding:11px 12px;border-radius:10px;background:#f8fafc;border:1px solid #edf2f7}.summary-item b{display:block;font-size:11px;color:#334155}.summary-item span{display:block;margin-top:4px;font-size:15px;font-weight:900;color:#0f172a}.summary-item small{display:block;margin-top:3px;color:#64748b;font-size:10px;line-height:1.35}
-.action-list{display:grid;gap:8px}.action-item{display:grid;grid-template-columns:28px 1fr auto;gap:9px;align-items:start;padding:10px;border-radius:10px;background:#f8fafc;border:1px solid #edf2f7}.action-no{width:24px;height:24px;border-radius:8px;background:#e0e7ff;color:#3730a3;display:grid;place-items:center;font-size:10px;font-weight:900}.action-item b{font-size:11px;color:#1e293b}.action-item span{display:block;color:#64748b;font-size:10px;line-height:1.45;margin-top:2px}.action-count{font-size:12px;font-weight:900;color:#0f172a}
-.category-bar{margin-top:14px;padding:14px 16px;background:#fff;border:1px solid #e2e8f0;border-radius:16px}.category-head{display:flex;justify-content:space-between;gap:12px;align-items:center;flex-wrap:wrap;margin-bottom:10px}.category-head h3{margin:0;font-size:15px}.category-head p{margin:0;font-size:10px;color:#64748b}.report-tabs{display:flex;gap:7px;flex-wrap:wrap}.report-tab{border:1px solid #e2e8f0;background:#f8fafc;color:#475569;border-radius:9px;padding:8px 10px;font-size:10px;font-weight:900;cursor:pointer}.report-tab.active{background:#0f172a;color:#fff;border-color:#0f172a}.report-tab .n{opacity:.72;margin-left:4px}
-.report-tools{display:flex;justify-content:space-between;gap:10px;align-items:center;flex-wrap:wrap;margin:12px 0}.report-search{min-width:260px;flex:1;padding:10px 12px;border:1px solid #cbd5e1;border-radius:10px;font-size:11px}.report-count{font-size:10px;color:#64748b;font-weight:800}.report-table-wrap{overflow:auto;max-height:590px;border:1px solid #e2e8f0;border-radius:13px}.report-table{width:100%;border-collapse:separate;border-spacing:0;font-size:10px;white-space:nowrap}.report-table th{position:sticky;top:0;z-index:3;background:#0f172a;color:#fff;padding:11px 10px;text-align:left;font-size:9px;text-transform:uppercase;letter-spacing:.04em}.report-table td{padding:10px;border-bottom:1px solid #eef2f7;color:#334155;vertical-align:middle}.report-table tr:hover td{background:#f8fbff}.report-table .num{text-align:right;font-variant-numeric:tabular-nums}.status-pill2{display:inline-flex;align-items:center;padding:5px 8px;border-radius:999px;font-size:9px;font-weight:950}.p-match{background:#dcfce7;color:#166534}.p-partial{background:#fef3c7;color:#92400e}.p-not2b{background:#fee2e2;color:#991b1b}.p-notpr{background:#dbeafe;color:#1e40af}.p-review{background:#ede9fe;color:#6d28d9}.p-dup{background:#ffedd5;color:#9a3412}.view-btn{border:1px solid #cbd5e1;background:#fff;color:#1d4ed8;border-radius:7px;padding:5px 8px;font-size:9px;font-weight:900;cursor:pointer}.view-btn:hover{background:#eff6ff}
-.detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.detail-box{padding:11px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc}.detail-box b{display:block;font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:.05em}.detail-box span{display:block;font-size:12px;font-weight:800;color:#0f172a;margin-top:4px;word-break:break-word}.detail-reason{margin-top:12px;padding:13px;border-radius:10px;background:#fff7ed;border:1px solid #fed7aa;color:#7c2d12;font-size:12px;line-height:1.6}.detail-action{margin-top:10px;padding:13px;border-radius:10px;background:#ecfeff;border:1px solid #a5f3fc;color:#164e63;font-size:12px;line-height:1.6}.report-empty{padding:35px;text-align:center;color:#64748b;font-size:12px}
-.seo-long{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:16px}.seo-long .panel{padding:20px}.seo-long h3{margin:0 0 7px;font-size:15px}.seo-long p,.seo-long li{font-size:13px;line-height:1.7;color:#475569}.seo-long ul{padding-left:18px;margin:8px 0 0}.mismatch-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}.mismatch-card{padding:15px;border:1px solid #e2e8f0;border-radius:13px;background:#fff}.mismatch-card b{font-size:12px;color:#0f172a}.mismatch-card p{font-size:12px;line-height:1.6;color:#64748b;margin:5px 0 0}
-@media(max-width:1150px){.report-kpis{grid-template-columns:repeat(4,1fr)}}
-
-.learning-panel{margin-top:14px;background:linear-gradient(135deg,#f8fbff,#ffffff);border:1px solid #dbe7f3;border-radius:16px;padding:18px;box-shadow:0 8px 24px rgba(15,23,42,.05)}
-.learning-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:14px}.learning-head h3{margin:4px 0 5px;color:#0f172a;font-size:17px}.learning-head p{margin:0;color:#64748b;font-size:11px;line-height:1.6}.learning-badge{background:#e0f2fe;color:#075985;border:1px solid #bae6fd;border-radius:999px;padding:8px 11px;font-size:10px;font-weight:900;white-space:nowrap}.learning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.learning-card{background:#fff;border:1px solid #e2e8f0;border-radius:13px;padding:14px}.learning-card .lc-top{display:flex;align-items:center;gap:8px;margin-bottom:7px}.learning-icon{width:28px;height:28px;border-radius:9px;display:grid;place-items:center;background:#eff6ff;color:#1d4ed8;font-weight:950}.learning-card b{font-size:11px;color:#0f172a}.learning-card p{margin:0;color:#64748b;font-size:10.5px;line-height:1.55}.learning-card strong{color:#334155}
-@media(max-width:900px){.learning-grid{grid-template-columns:1fr}.learning-head{flex-direction:column}.learning-badge{white-space:normal}}
-@media(max-width:900px){.report-overview{grid-template-columns:1fr}.report-top{align-items:flex-start;flex-direction:column}.report-health{width:100%;text-align:left}.seo-long{grid-template-columns:1fr 1fr}}
-@media(max-width:700px){.report-kpis{grid-template-columns:1fr 1fr}.summary-grid,.detail-grid,.mismatch-grid,.seo-long{grid-template-columns:1fr}.report-search{min-width:100%}.report-table-wrap{max-height:500px}}
-</style>
-
-<style id="recon-customer-style">
-.customer-upload-intro{background:linear-gradient(135deg,#ffffff,#f8fbff)}
-#uploadOptions{scroll-margin-top:92px}
-.upload-simple-note{margin-top:14px;padding:12px 14px;border:1px solid #dbe5f0;border-radius:12px;background:#f8fafc;color:#475569;font-size:12px;line-height:1.55}
-.report-shell{background:#f7f9fc;border:1px solid #dfe6ef;border-radius:20px;padding:18px}
-.report-top{background:linear-gradient(135deg,#0f172a,#1e293b);border-radius:18px;padding:24px;color:#fff;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.report-top h2{color:#fff;font-size:24px;margin:5px 0 7px}.report-top p{color:#cbd5e1;max-width:760px;margin:0;line-height:1.55}.report-health{min-width:150px;text-align:center;border:1px solid rgba(255,255,255,.18);border-radius:16px;padding:15px;background:rgba(255,255,255,.06)}.report-health .score{font-size:34px;font-weight:950}.report-health small{color:#cbd5e1}
-.report-actionbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:14px 0}.report-tip{font-size:12px;color:#64748b}.report-download{font-weight:900}
-.report-kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.report-kpi{background:#fff;border:1px solid #e2e8f0;border-radius:14px;padding:15px;min-height:82px}.report-kpi .rk-label{font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:#64748b;font-weight:900}.report-kpi .rk-value{font-size:24px;font-weight:950;color:#0f172a;margin-top:5px}.report-kpi.green{border-top:4px solid #10b981}.report-kpi.amber{border-top:4px solid #f59e0b}.report-kpi.red{border-top:4px solid #ef4444}.report-kpi.blue{border-top:4px solid #3b82f6}.report-kpi.purple{border-top:4px solid #8b5cf6}.report-kpi.slate{border-top:4px solid #64748b}
-.report-overview{display:grid;grid-template-columns:1.1fr .9fr;gap:14px;margin-top:14px}.report-card{background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:18px}.report-card h3{margin:0;color:#0f172a}.report-card .sub{font-size:11px;color:#64748b;margin:5px 0 13px;line-height:1.5}.summary-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}.summary-item{border:1px solid #edf2f7;border-radius:12px;padding:11px;background:#fbfdff}.summary-item b{display:block;font-size:10px;color:#64748b}.summary-item span{display:block;font-size:17px;font-weight:900;color:#0f172a;margin-top:3px}.summary-item small{display:block;font-size:10px;color:#94a3b8;margin-top:2px}
-.action-list{display:flex;flex-direction:column;gap:8px}.action-item{display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;border:1px solid #e8edf3;border-radius:12px;padding:10px}.action-no{width:28px;height:28px;border-radius:9px;background:#f1f5f9;display:grid;place-items:center;font-weight:900;color:#334155}.action-item b{font-size:11px}.action-item span{display:block;font-size:10px;color:#64748b;margin-top:2px;line-height:1.35}.action-count{font-size:15px;font-weight:950;color:#0f172a}
-.category-bar{margin-top:14px;background:#fff;border:1px solid #e2e8f0;border-radius:16px;padding:18px}.category-head{display:flex;justify-content:space-between;align-items:center;gap:10px}.category-head h3{margin:0}.category-head p{margin:4px 0 0;font-size:11px;color:#64748b}.report-tabs{display:flex;gap:7px;flex-wrap:wrap;margin:15px 0 10px}.report-tab{border:1px solid #dbe3ec;background:#f8fafc;color:#334155;border-radius:999px;padding:8px 11px;font-size:10px;font-weight:900;cursor:pointer}.report-tab.active{background:#0f172a;color:#fff;border-color:#0f172a}.report-tab .n{margin-left:4px;opacity:.7}.report-tools{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:10px}.report-search{width:340px;max-width:100%;padding:10px 12px;border:1px solid #dbe3ec;border-radius:10px}.report-table-wrap{overflow:auto;border:1px solid #e2e8f0;border-radius:12px;max-height:580px}.report-table{width:100%;min-width:1750px;border-collapse:collapse;font-size:11px;white-space:nowrap}.report-table th{position:sticky;top:0;background:#0f172a;color:#fff;padding:10px;text-align:left;font-size:10px;z-index:2}.report-table td{padding:10px;border-bottom:1px solid #eef2f6}.report-table tr:hover td{background:#f8fbff}.view-btn{border:1px solid #cbd5e1;background:#fff;border-radius:8px;padding:6px 10px;font-size:10px;font-weight:900;cursor:pointer}.status-pill2{display:inline-block;padding:5px 8px;border-radius:999px;font-size:9px;font-weight:950}.p-match{background:#dcfce7;color:#166534}.p-partial{background:#fef3c7;color:#92400e}.p-not2b{background:#fee2e2;color:#991b1b}.p-notpr{background:#dbeafe;color:#1d4ed8}.p-review{background:#ede9fe;color:#6d28d9}.p-dup{background:#e2e8f0;color:#334155}
-@media(max-width:900px){.report-overview{grid-template-columns:1fr}.report-kpis{grid-template-columns:repeat(2,1fr)}.report-top{align-items:flex-start;flex-direction:column}.report-actionbar{align-items:flex-start;flex-direction:column}}
-@media(max-width:600px){.report-kpis{grid-template-columns:1fr}.summary-grid{grid-template-columns:1fr}.report-tools{flex-direction:column;align-items:stretch}.report-search{width:100%}}
-</style>
-<script type="application/ld+json">{
-  "@context":"https://schema.org",
-  "@type":"SoftwareApplication",
-  "name":"Free GST Reconciliation Tool",
-  "applicationCategory":"BusinessApplication",
-  "operatingSystem":"Web Browser",
-  "url":"https://gstreconciliation.in/reconciliation.html",
-  "description":"Browser-based Purchase Register vs GSTR-2B reconciliation tool for GST invoice matching, partial matching, missing invoice checks and Excel reporting.",
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
-}</script>
-
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"WebApplication",
-  "name":"GST Reconciliation Tool",
+  "name":"GST ITC Reconciliation Tool",
   "url":"https://gstreconciliation.in/reconciliation.html",
   "applicationCategory":"BusinessApplication",
   "operatingSystem":"Web Browser",
-  "browserRequirements":"Requires JavaScript and a modern web browser",
-  "description":"Free browser-based GST reconciliation tool to compare Purchase Register with GSTR-2B, identify matched invoices, partial matches, missing records, duplicates and review exceptions, and download an Excel reconciliation report.",
-  "featureList":["Purchase Register vs GSTR-2B reconciliation","Invoice number normalization","GSTIN and document type matching","Taxable value and GST comparison","Exception and duplicate review","Professional Excel report"],
-  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"}
+  "browserRequirements":"Requires a modern browser with JavaScript enabled",
+  "description":"Free GST reconciliation tool for invoice-level matching of a Purchase Register with GSTR-2B, exception review and Excel reconciliation workpaper export.",
+  "offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},
+  "featureList":[
+    "Purchase Register vs GSTR-2B reconciliation",
+    "Invoice-level GST ITC matching",
+    "Exact, partial and probable match review",
+    "Mismatch and tax variance identification",
+    "In Purchase Register but not in GSTR-2B review",
+    "In GSTR-2B but not in Purchase Register review",
+    "Duplicate record review",
+    "Supplier-wise exception analysis",
+    "Excel reconciliation workpaper export"
+  ],
+  "publisher":{
+    "@type":"Organization",
+    "name":"GSTReconciliation.in",
+    "url":"https://gstreconciliation.in/"
+  }
 }
 </script>
-<script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"HowTo",
-  "name":"How to reconcile Purchase Register with GSTR-2B",
-  "description":"Use the GST Reconciliation Tool to upload source files, review detected columns, run reconciliation and download the result report.",
-  "step":[
-    {"@type":"HowToStep","name":"Prepare files","text":"Prepare the Purchase Register and relevant GSTR-2B Excel workbooks."},
-    {"@type":"HowToStep","name":"Upload files","text":"Upload the Purchase Register and GSTR-2B files into the corresponding upload areas."},
-    {"@type":"HowToStep","name":"Review data mapping","text":"Review automatically detected fields and correct mappings if required."},
-    {"@type":"HowToStep","name":"Run reconciliation","text":"Choose the value tolerance and date window, then run reconciliation."},
-    {"@type":"HowToStep","name":"Review exceptions","text":"Review matched, partial, missing, duplicate and review-required records."},
-    {"@type":"HowToStep","name":"Download report","text":"Download the professional Excel reconciliation report for working and follow-up."}
-  ]
-}
-</script>
-<style>
-/* Professional reconciliation v5 enhancements */
-.priority-strip{display:grid;grid-template-columns:minmax(280px,1fr) repeat(3,minmax(130px,180px));gap:12px;align-items:center;margin:14px 0;padding:14px 16px;border:1px solid #dbe5ee;border-radius:16px;background:linear-gradient(135deg,#f8fbff,#eef6fb)}
-.priority-strip>div:first-child{display:flex;flex-direction:column;gap:4px}.priority-strip>div:first-child span{font-size:12px;color:#64748b;line-height:1.45}.priority-stat{background:#fff;border:1px solid #dbe5ee;border-radius:12px;padding:10px 12px;text-align:center}.priority-stat strong{display:block;font-size:20px;color:#0f172a}.priority-stat small{color:#64748b;font-weight:700}.report-row-click{cursor:pointer}.report-row-click:hover{outline:2px solid #cbd5e1;outline-offset:-2px;background:#f8fbff}.detail-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.detail-item{padding:11px 12px;border:1px solid #e2e8f0;border-radius:10px;background:#f8fafc}.detail-item small{display:block;color:#64748b;font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.04em;margin-bottom:4px}.detail-item b{display:block;color:#0f172a;font-size:13px;word-break:break-word}.detail-reason{margin-top:14px;padding:14px;border-radius:12px;background:#f8fbff;border:1px solid #dbeafe}.detail-reason p{margin:6px 0 12px;line-height:1.5;color:#334155}.detail-reason strong{font-size:12px;color:#0f172a}@media(max-width:800px){.priority-strip{grid-template-columns:1fr 1fr}.priority-strip>div:first-child{grid-column:1/-1}.detail-grid{grid-template-columns:1fr}}
-</style>
+
 </head>
-<body>
-
-<div class="topbar">
-  <div class="container topbar-inner">
-    <div class="brand">
-      <div class="logo">
-        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M4 5h16v14H4z"/><path d="M8 9h8M8 13h5M8 17h3"/></svg>
-      </div>
-      <div>GST Reconciliation <small>Purchase Register • GSTR-2B</small></div>
-    </div>
-    <nav class="nav">
-      <button onclick="scrollToId('uploadOptions')">Tool</button>
-      <button onclick="openModal('instructionsModal')">How to Use</button>
-      <button onclick="openModal('privacyModal')">Privacy</button>
-      <button onclick="scrollToId('contact')">Contact</button>
-    </nav>
-  </div>
+<body style='box-sizing: border-box; margin: 0; background: linear-gradient(180deg,#f8fbff 0,#f3f8fd 100%); color: #183858; font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size: 14px; line-height: 1.55; margin:0; background:#f5f9fd; color:#183858; font-family:Inter,Segoe UI,Arial,sans-serif;'>
+<header class="topbar" style="box-sizing:border-box;height:78px;background:rgba(255,255,255,.98);border-bottom:1px solid #d9e5f0;display:flex;align-items:center;position:sticky;top:0;z-index:50;box-shadow:0 3px 18px rgba(18,58,104,.07);backdrop-filter:blur(10px)"><div class="topbar-inner" style="box-sizing:border-box;width:min(1180px,calc(100% - 34px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:22px">
+<div class="brand" style="box-sizing:border-box;display:flex;align-items:center;gap:12px;min-width:220px"><div class="brandmark" style="box-sizing:border-box;width:42px;height:42px;border-radius:12px;background:linear-gradient(145deg,#0c4f9e,#2388ef);display:grid;place-items:center;color:#fff;font-weight:950;box-shadow:0 8px 20px rgba(22,119,232,.25);position:relative;overflow:hidden"><span style="font-size:12px;letter-spacing:-.3px">GST</span><span style="position:absolute;right:5px;bottom:5px;width:7px;height:7px;border-radius:50%;background:#8ed0ff;box-shadow:0 0 0 2px rgba(255,255,255,.18)"></span></div><div style="box-sizing:border-box"><div class="brandname" style="box-sizing:border-box;font-weight:950;letter-spacing:-.8px;color:#123a68;font-size:21px;line-height:1">GSTReconciliation<span style="color:#1677e8">.in</span></div><div class="brandtag" style="box-sizing:border-box;font-size:10px;color:#718399;margin-top:5px;letter-spacing:.12px">GST ITC · Invoice Matching · Review</div></div></div>
+<nav class="nav" style="box-sizing:border-box;display:flex;align-items:center;gap:5px;background:#f5f9fd;border:1px solid #e0eaf3;padding:4px;border-radius:12px">
+<button onclick="scrollToId('tool')" style="box-sizing:border-box;font:inherit;cursor:pointer;border:0;background:#fff;color:#145a9e;font-weight:850;padding:9px 13px;border-radius:9px;box-shadow:0 1px 4px rgba(18,58,104,.08);display:flex;align-items:center;gap:7px"><span style="width:20px;height:20px;border-radius:6px;background:#eaf4ff;color:#1677e8;display:grid;place-items:center;font-size:11px">⌂</span><span>Tool</span></button>
+<button onclick="scrollToId('guide')" style="box-sizing:border-box;font:inherit;cursor:pointer;border:0;background:transparent;color:#315574;font-weight:750;padding:9px 13px;border-radius:9px;display:flex;align-items:center;gap:7px"><span style="width:20px;height:20px;border-radius:6px;background:#eaf4ff;color:#1677e8;display:grid;place-items:center;font-size:10px">✓</span><span>Workflow</span></button>
+<button onclick="scrollToId('knowledge')" style="box-sizing:border-box;font:inherit;cursor:pointer;border:0;background:transparent;color:#315574;font-weight:750;padding:9px 13px;border-radius:9px;display:flex;align-items:center;gap:7px"><span style="width:20px;height:20px;border-radius:6px;background:#eef7f4;color:#17845d;display:grid;place-items:center;font-size:10px">▤</span><span>GST Knowledge</span></button>
+<button onclick="openModal('instructionsModal')" style="box-sizing:border-box;font:inherit;cursor:pointer;border:0;background:transparent;color:#315574;font-weight:750;padding:9px 13px;border-radius:9px;display:flex;align-items:center;gap:7px"><span style="width:20px;height:20px;border-radius:6px;background:#f1edff;color:#7653c8;display:grid;place-items:center;font-size:10px">i</span><span>About</span></button>
+</nav></div></header>
+<main style="box-sizing: border-box">
+<section class="hero" style="box-sizing: border-box; padding: 28px 0 20px"><div class="wrap hero-grid" style="box-sizing: border-box; width: min(1180px,calc(100% - 34px)); margin: auto; display: grid; grid-template-columns: 1.02fr .98fr; gap: 22px; align-items: stretch">
+<div class="hero-copy" style="box-sizing: border-box; padding: 15px 12px 8px 4px">
+<div class="eyebrow" style="box-sizing: border-box; font-size: 11px; text-transform: uppercase; letter-spacing: .16em; color: #1677e8; font-weight: 900; margin-bottom: 9px">GST ITC CONTROL WORKPAPER</div>
+<h1 style="box-sizing: border-box; font-size: 39px; line-height: 1.07; letter-spacing: -1.7px; color: #123a68; margin: 0 0 10px; font-weight: 900">GST ITC Reconciliation</h1>
+<h2 style="box-sizing: border-box; font-size: 23px; line-height: 1.2; color: #183b64; margin: 0 0 11px; font-weight: 800">Match your Purchase Register with GSTR-2B</h2>
+<p style="box-sizing: border-box; font-size: 15px; color: #5e7187; max-width: 650px; margin: 0 0 18px">Bring your books and GST portal data into one invoice-level review. Identify matched records, differences, missing documents and exceptions before the reconciliation is used for ITC working or return review.</p>
+<div class="tool-access-note" role="note" aria-label="Tool access and usage" style="box-sizing:border-box;display:flex;align-items:center;gap:10px;margin:0 0 18px;max-width:650px;padding:10px 13px;border:1px solid #d7e5f2;border-radius:10px;background:#fbfdff;color:#315574;font-size:12.5px;line-height:1.5;">
+  <span aria-hidden="true" style="box-sizing:border-box;width:24px;height:24px;border-radius:7px;background:#edf5ff;color:#1769c2;display:grid;place-items:center;font-weight:900;flex:none;">✓</span>
+  <span><strong style="color:#163d66;">100% free to use</strong> · No sign-up required · Reconcile your files as many times as needed.</span>
 </div>
-
-<main>
-<section class="hero">
-  <div class="container hero-grid">
-    <div class="hero-card">
-      <span class="eyebrow">Free GST Reconciliation Tool</span>
-      <h1>Free GST Reconciliation Tool – Purchase Register vs GSTR-2B</h1>
-      <p>Reconcile your Purchase Register with GSTR-2B online using invoice-level GST matching. Compare supplier GSTIN, invoice number, document type, invoice date and taxable and tax values to identify matched invoices, partial matches, invoices not in GSTR-2B and invoices not in your Purchase Register. Download the reconciliation results as an Excel report.</p>
-      <div class="hero-actions">
-        <button class="btn btn-primary" onclick="scrollToId('uploadOptions')">Launch Reconciliation</button>
-        <button class="btn btn-blue" onclick="downloadTemplates()">Download Excel Template</button>
-        <button class="btn btn-soft" onclick="openModal('instructionsModal')">View Instructions</button>
-      </div>
-    </div>
-    <div class="hero-side">
-      <div class="info-card"><div class="big">100% Browser Based</div><div class="label">Your uploaded workbook is processed locally in your browser.</div></div>
-      <div class="info-card"><div class="big">Excel Output</div><div class="label">One professional Excel report with an Executive Summary, category-wise reconciliation sheets, vendor summary, exceptions, data quality and match logic.</div></div>
-      <div class="info-card"><div class="big">Invoice-Level Checks</div><div class="label">GSTIN, document type, invoice number and tax values are considered during reconciliation.</div></div>
-    </div>
-  </div>
-</section>
-
-<section class="section seo-wrap">
-<div class="container">
-  <h2 class="section-title">Free GST Reconciliation Tool</h2>
-  <p class="seo-intro">This free online GST Reconciliation Tool helps businesses, accountants and tax professionals reconcile <strong>Purchase Register vs GSTR-2B</strong> invoice by invoice and review GST invoice matching results before ITC workings. Upload the Purchase Register and GSTR-2B files, let the tool read the relevant transaction sheets and run the reconciliation to identify matched invoices, partial matches, missing invoices and differences in taxable value and GST. The tool is designed for practical monthly <strong>GSTR-2B reconciliation</strong> and <strong>GST ITC reconciliation</strong> before reviewing input tax credit.</p>
-  <div class="keyword-strip">
-    <span class="keyword-pill">GST Reconciliation Tool</span><span class="keyword-pill">Free GST Reconciliation Tool</span><span class="keyword-pill">GSTR-2B Reconciliation</span><span class="keyword-pill">Purchase Register vs GSTR-2B</span><span class="keyword-pill">GSTR-2B vs Purchase Register</span><span class="keyword-pill">GST ITC Reconciliation</span><span class="keyword-pill">GST Invoice Matching</span>
-  </div>
-  <div class="seo-grid">
-    <div class="panel seo-card"><h3>What is GST reconciliation?</h3><p>GST reconciliation is the process of comparing purchase records in your books with supplier-reported invoice data available in GSTR-2B. It helps you identify records that agree, records that need investigation and invoices appearing on one side but not the other.</p></div>
-    <div class="panel seo-card"><h3>Why reconcile Purchase Register with GSTR-2B?</h3><p>Differences can arise because of invoice number variations, document type differences, tax value differences, supplier filing timing or missing entries in the books. A structured reconciliation makes these exceptions easier to review before GST return and ITC decisions.</p></div>
-    <div class="panel seo-card"><h3>What does this tool compare?</h3><ul><li>Supplier GSTIN</li><li>Document type and invoice number</li><li>Invoice date</li><li>Taxable value</li><li>IGST, CGST and SGST</li><li>Matched invoice allocation without duplicate use</li></ul></div>
-  </div>
+<div class="hero-points" style="box-sizing: border-box; display: grid; grid-template-columns: repeat(4,1fr); gap: 10px">
+<div class="hero-point" style="box-sizing: border-box; display: flex; gap: 8px; align-items: center; color: #2a4a6e; font-size: 12px; font-weight: 750"><span class="point-icon" style="box-sizing: border-box; width: 31px; height: 31px; border-radius: 9px; background: #edf5ff; display: grid; place-items: center; color: #145da8; flex: none">▤</span>Invoice-level matching</div>
+<div class="hero-point" style="box-sizing: border-box; display: flex; gap: 8px; align-items: center; color: #2a4a6e; font-size: 12px; font-weight: 750"><span class="point-icon" style="box-sizing: border-box; width: 31px; height: 31px; border-radius: 9px; background: #edf5ff; display: grid; place-items: center; color: #145da8; flex: none">▥</span>Exception analysis</div>
+<div class="hero-point" style="box-sizing: border-box; display: flex; gap: 8px; align-items: center; color: #2a4a6e; font-size: 12px; font-weight: 750"><span class="point-icon" style="box-sizing: border-box; width: 31px; height: 31px; border-radius: 9px; background: #edf5ff; display: grid; place-items: center; color: #145da8; flex: none">◈</span>Review controls</div>
+<div class="hero-point" style="box-sizing: border-box; display: flex; gap: 8px; align-items: center; color: #2a4a6e; font-size: 12px; font-weight: 750"><span class="point-icon" style="box-sizing: border-box; width: 31px; height: 31px; border-radius: 9px; background: #edf5ff; display: grid; place-items: center; color: #145da8; flex: none">⇩</span>Excel workpaper</div>
 </div>
-</section>
-
-
-
-<section class="section seo-wrap">
-<div class="container">
-  <h2 class="section-title">GST Reconciliation Results Explained</h2>
-  <p class="section-sub">The tool separates reconciliation results so that exceptions can be reviewed efficiently.</p>
-  <div class="result-grid">
-    <div class="result-box"><strong>Matched</strong><span>Records where the relevant Purchase Register and GSTR-2B details are successfully matched.</span></div>
-    <div class="result-box"><strong>Partial Matching</strong><span>Records where a related invoice is identified but one or more comparison values require review.</span></div>
-    <div class="result-box"><strong>Not in GSTR-2B</strong><span>Purchase Register records for which a corresponding GSTR-2B record was not identified.</span></div>
-    <div class="result-box"><strong>Not in Purchase Register</strong><span>GSTR-2B records for which a corresponding Purchase Register record was not identified.</span></div>
-  </div>
-  <div class="notice security" style="margin-top:18px"><div class="icon">🔎</div><div><strong>Review before taking an ITC decision.</strong><br>Reconciliation results are a working review tool. Verify invoices, supplier records, tax treatment and applicable GST provisions before claiming, reversing or carrying forward input tax credit.</div></div>
 </div>
-</section>
-
-
-<section class="section seo-wrap" id="gst-reconciliation-guide">
-<div class="container">
-  <h2 class="section-title">GST Reconciliation Guide: Purchase Register vs GSTR-2B</h2>
-  <p class="seo-intro">GST reconciliation is more than finding an invoice number in two Excel files. A useful <strong>GSTR-2B reconciliation</strong> process should show what matched, what partially matched, what is missing from GSTR-2B, what appears in GSTR-2B but not in the Purchase Register, and which records need manual review. This tool is designed around that practical monthly workflow.</p>
-  <div class="seo-long">
-    <div class="panel"><h3>Why businesses reconcile GSTR-2B</h3><p>Purchase Register data comes from the books or ERP, while GSTR-2B provides the GST portal-side view of reported documents. Comparing both helps the accounts and tax team identify invoice omissions, supplier reporting differences, document-number variations, tax-value differences and records that need follow-up.</p></div>
-    <div class="panel"><h3>How the reconciliation works</h3><p>The engine first looks for a strong GSTIN + document type + normalized document number relationship. It then checks taxable value, GST components and date within the selected tolerance/window. Less certain relationships are kept in Partial Matching or Review Required instead of being silently treated as exact matches.</p></div>
-    <div class="panel"><h3>Built for monthly GST working</h3><p>Use the result categories to move from a large raw Excel file to a focused exception list. Matched records can be separated from invoices that need supplier follow-up, book verification, duplicate checking or document-level review.</p></div>
-  </div>
-  <h3 style="margin:24px 0 7px;color:#0f172a">Common GSTR-2B reconciliation differences</h3>
-  <div class="mismatch-grid">
-    <div class="mismatch-card"><b>Invoice number variation</b><p>Spacing, punctuation, case or leading zeros can make two references look different even when they represent the same document. The tool normalizes common formatting differences.</p></div>
-    <div class="mismatch-card"><b>Taxable value difference</b><p>The invoice may be identified, but taxable values may differ between the books and portal-side data. Such records are placed in Partial Matching when the relationship is sufficiently strong.</p></div>
-    <div class="mismatch-card"><b>GST component difference</b><p>IGST, CGST, SGST or Cess may differ. The report shows the difference so the reviewer can compare the source invoice and accounting entry.</p></div>
-    <div class="mismatch-card"><b>Invoice in books but not in 2B</b><p>This can require checking supplier reporting, the relevant GSTR-2B period, document details and the accounting period. The tool does not assume the reason.</p></div>
-    <div class="mismatch-card"><b>Invoice in 2B but not in books</b><p>Verify whether the purchase has been recorded, whether it belongs to the business and period under review, and whether the document is a duplicate or other exception.</p></div>
-    <div class="mismatch-card"><b>Duplicate records</b><p>Repeated GSTIN + document references can create allocation issues. The reconciliation engine prevents the same GSTR-2B row from being used for multiple Purchase Register rows.</p></div>
-  </div>
+<div class="hero-flow" style="box-sizing: border-box; background: #fff; border: 1px solid #d9e6f2; border-radius: 13px; padding: 18px; box-shadow: var(--shadow); display: flex; flex-direction: column; justify-content: center">
+<div class="flow-row" style="box-sizing: border-box; display: grid; grid-template-columns: 1fr 55px 1fr; align-items: center; gap: 8px">
+<div class="flow-box" style="box-sizing: border-box; background: linear-gradient(180deg,#f8fbff,#f1f7fd); border: 1px solid #e3edf6; border-radius: 12px; padding: 18px 12px; text-align: center; min-height: 130px; display: flex; flex-direction: column; justify-content: center; align-items: center"><div class="flow-icon" style="box-sizing: border-box; width: 45px; height: 45px; border-radius: 12px; background: #fff; border: 1px solid #dce8f4; color: #124e91; display: grid; place-items: center; margin-bottom: 7px">▤</div><strong style="box-sizing: border-box; color: #123a68; font-size: 13px">Purchase Register</strong><span style="box-sizing: border-box; color: #66788e; font-size: 11px">Your books / ERP</span></div>
+<div class="arrow" style="box-sizing: border-box; font-size: 27px; text-align: center; color: #166bd0; font-weight: 800">⇄</div>
+<div class="flow-box" style="box-sizing: border-box; background: linear-gradient(180deg,#f8fbff,#f1f7fd); border: 1px solid #e3edf6; border-radius: 12px; padding: 18px 12px; text-align: center; min-height: 130px; display: flex; flex-direction: column; justify-content: center; align-items: center"><div class="flow-icon" style="box-sizing: border-box; width: 45px; height: 45px; border-radius: 12px; background: #fff; border: 1px solid #dce8f4; color: #124e91; display: grid; place-items: center; margin-bottom: 7px">▥</div><strong style="box-sizing: border-box; color: #123a68; font-size: 13px">GSTR-2B</strong><span style="box-sizing: border-box; color: #66788e; font-size: 11px">GST portal data</span></div>
 </div>
-</section>
-
-<section class="section seo-wrap" id="gst-reconciliation-use-cases">
-<div class="container">
-  <h2 class="section-title">GSTR-2B Reconciliation for Monthly GST ITC Working</h2>
-  <p class="seo-intro">Use this GST reconciliation tool to move from raw Excel files to a structured invoice-level exception review. It is designed for monthly Purchase Register vs GSTR-2B reconciliation, GST invoice matching, supplier follow-up and preparation of working papers before the final GST return and ITC review.</p>
-  <div class="seo-grid">
-    <div class="panel seo-card"><h3>Purchase Register vs GSTR-2B</h3><p>Compare supplier GSTIN, document type, invoice number, date, taxable value and GST components. The engine uses progressively stronger matching levels instead of treating every similar invoice as an exact match.</p></div>
-    <div class="panel seo-card"><h3>Find GSTR-2B mismatches</h3><p>Identify invoices recorded in the books but not found in GSTR-2B, documents appearing in GSTR-2B but not in the Purchase Register, value differences, date differences and records needing manual review.</p></div>
-    <div class="panel seo-card"><h3>GST reconciliation Excel report</h3><p>Download a structured workbook containing the executive summary, invoice-wise reconciliation, matched and exception categories, vendor summary, exceptions, data quality checks and matching methodology.</p></div>
-  </div>
-  <div class="notice security" style="margin-top:18px"><div class="icon">⚡</div><div><strong>Designed for practical accounts and tax teams.</strong><br>Keep the source workbooks on your computer, run the reconciliation in the browser, then use the exception queues to focus review time where it matters.</div></div>
+<div class="confidence" style="box-sizing: border-box; margin-top: 14px; border: 1px solid #bce9d7; background: linear-gradient(90deg,#eafaf3,#e1f8ef); border-radius: 11px; padding: 10px 13px; color: #126842; display: flex; gap: 10px; align-items: center"><div style="font-size: 22px; box-sizing: border-box">◉</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; color: #117044">Clear differences. Confident review.</strong><span style="box-sizing: border-box; font-size: 11px; color: #437563">Use the result categories to focus accounting and supplier follow-up on records that actually need attention.</span></div></div>
 </div>
-</section>
-
-<section class="section" id="tool">
-<div class="container">
-  <h2 class="section-title">GST Reconciliation — Simple, Accurate & Professional</h2>
-  <p class="section-sub">Upload your actual Purchase Register and GSTR-2B workbooks. The tool keeps the workflow simple: upload two files, let the system identify the relevant data, run invoice-level reconciliation and download one professional report. It separates Matched, Partial Matching, Not in 2B, Not in Purchase Register and Review Required records.</p>
-
-  <div class="notice security">
-    <div class="icon">🔒</div>
-    <div><strong>Browser-only processing.</strong><br>
-      Files are processed locally in this browser. No purchase register or GSTR-2B data is sent to the GST Reconciliation website by this tool.
-    </div>
-  </div>
-
-  <div class="notice important">
-    <div class="icon">🎯</div>
-    <div><strong>Accuracy-first matching.</strong><br>
-      Exact GSTIN + normalized document number + tax/value checks are treated as deterministic. Fuzzy matches are never silently promoted to exact matches; ambiguous or materially different records go to <b>Review Required</b>.
-    </div>
-  </div>
-
-  <div class="v2-card mode-card customer-upload-intro">
-    <div class="mode-head">
-      <div>
-        <h3 style="margin:0">Upload Your Files</h3>
-        <div class="v2-muted">Upload your Purchase Register and GSTR-2B. The tool automatically reads the correct worksheet and identifies the required columns.</div>
-      </div>
-      <button type="button" class="btn btn-blue" onclick="downloadTemplates()">⬇ Download Excel Format</button>
-    </div>
-    <div class="upload-simple-note"><b>Two easy ways to upload:</b> <b>① Direct GST Portal upload</b> — upload the original GSTR-2B Excel downloaded from the GST Portal and the tool automatically identifies its transaction sheets. <b>② Excel Template upload</b> — download the template, enter your data in the <b>Purchase Register</b> and <b>GSTR 2B</b> sheets, then upload the same workbook. If a workbook contains multiple sheets, the tool lets you choose exactly which sheet should be considered.</div>
-  </div>
-
-  <div class="v2-grid recon-v2" id="uploadOptions">
-    <div class="v2-card">
-      <div class="upload-title-row"><h3>① Purchase Register</h3><span class="source-tag">BOOKS / ERP</span></div>
-      <div class="v2-muted">Upload your purchase register in Excel or CSV. If the workbook contains a standard Purchase Register sheet, it will be used automatically.</div>
-      <div class="file-picker"><input type="file" id="v2PRFile" accept=".xlsx,.xls,.csv"></div>
-      <div id="v2PRSheetWrap" class="sheet-choice" style="display:none"><label>Choose the sheet to use</label><select id="v2PRSheet"></select><small>If you uploaded the combined template, select <b>Purchase Register</b>. If your workbook has several sheets, choose the sheet containing your purchase data.</small></div>
-      <div id="v2PRStatus" class="file-status">No file selected.</div><div class="upload-helper">📌 <span>The relevant purchase table and columns are identified automatically. You can review the detected fields below.</span></div>
-      <div id="v2PRMapping" class="mapping">
-        <div class="mapping-head"><div class="v2-muted"><b>Detected columns</b> — Purchase Register fields detected automatically. You can correct a field if required.</div><span id="v2PRMapBadge" class="mapping-badge">Ready</span></div>
-        <div id="v2PRMap" class="mapping-grid"></div>
-      </div>
-    </div>
-
-    <div class="v2-card">
-      <div class="upload-title-row"><h3>② GSTR-2B — GST Portal</h3><span class="source-tag">GST PORTAL</span></div>
-      <div class="v2-muted">Upload the GSTR-2B workbook downloaded from the GST Portal. The tool automatically reads all transaction and detail sheets in the GSTR-2B workbook, including invoices, amendments, debit/credit notes, ECO, ISD and import tables.</div>
-      <div class="file-picker"><input type="file" id="v2B2BFile" accept=".xlsx,.xls,.csv"></div>
-      <div id="v2B2BSheetWrap" class="sheet-choice" style="display:none"><label>Choose the sheet to use</label><select id="v2B2BSheet"></select><small>For the downloaded GST Portal workbook, the tool normally reads the populated transaction sheets automatically. For the Excel template, select <b>GSTR 2B</b>.</small></div>
-      <div id="v2B2BStatus" class="file-status">No file selected.</div><div class="upload-helper">📌 <span>The portal workbook is read automatically, including all populated transaction/detail sheets.</span></div>
-      <div id="v2B2BMapping" class="mapping">
-        <div class="mapping-head"><div class="v2-muted"><b>Detected columns</b> — The tool has identified these fields for reconciliation. For GST Portal files they are normalised automatically; for template/custom files you can correct a field if required.</div><span id="v2B2BMapBadge" class="mapping-badge">Ready</span></div>
-        <div id="v2B2BMap" class="mapping-grid"></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="v2-card" style="margin-top:16px">
-    <div class="v2-toolbar">
-      <label style="font-size:11px;font-weight:900;color:#334155">Difference tolerance ₹
-        <input id="v2DiffTol" type="number" min="0" step="0.01" value="2" title="Maximum difference applied to taxable value and each GST component">
-      </label>
-      <label style="font-size:11px;font-weight:900;color:#334155">Date matching
-        <select id="v2DateWindow">
-          <option value="0">Exact date</option>
-          <option value="3">±3 days</option>
-          <option value="7" selected>±7 days</option>
-          <option value="15">±15 days</option>
-          <option value="30">±30 days</option>
-        </select>
-      </label>
-      <button class="btn btn-green" id="v2Run">Run Accurate Reconciliation</button>
-      <button class="btn btn-red" id="v2Reset">Reset</button>
-    </div>
-    <div class="v2-muted" style="margin-top:10px">One tolerance is used consistently for taxable value and IGST/CGST/SGST/Cess differences. Date matching is controlled separately because invoice/document dates can legitimately vary between source records.</div>
-  </div>
-
-  <div id="v2Dashboard" class="v2-dashboard report-shell">
-    <div class="report-top">
-      <div>
-        <div class="eyebrow2">RECONCILIATION SUMMARY</div>
-        <h2>GST Reconciliation Results</h2>
-        <p>A clear view of what matched, what differs and what needs attention. Learn what each result means and review the full Purchase Register and GSTR-2B fields side by side.</p>
-      </div>
-      <div class="report-health"><div class="score" id="v4HealthScore">0%</div><small id="v4HealthText">Overall matched coverage</small></div>
-    </div>
-    <div class="report-actionbar">
-      <div class="report-tip">Professional Excel report • Summary + invoice matching + exception queue + vendor analysis + data quality</div>
-      <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end">
-        <button class="btn btn-soft" id="v4Priority">Prioritise Exceptions</button>
-        <button class="btn btn-blue report-download" id="v4Download">⬇ Download Professional Excel Report</button>
-      </div>
-    </div>
-    <div class="priority-strip" id="v4PriorityStrip">
-      <div><b>Review priority</b><span>After reconciliation, use this queue to start with records most likely to require accounting or supplier follow-up.</span></div>
-      <div class="priority-stat"><strong id="v4HighPriority">0</strong><small>High priority</small></div>
-      <div class="priority-stat"><strong id="v4ExceptionGST">₹0</strong><small>Exception GST</small></div>
-      <div class="priority-stat"><strong id="v4ExceptionRate">0%</strong><small>Exception rate</small></div>
-    </div>
-
-    <div class="report-kpis">
-      <div class="report-kpi slate"><div class="rk-label">Purchase Register</div><div class="rk-value" id="v4KPR">0</div></div>
-      <div class="report-kpi slate"><div class="rk-label">GSTR-2B</div><div class="rk-value" id="v4K2B">0</div></div>
-      <div class="report-kpi green"><div class="rk-label">Matched</div><div class="rk-value" id="v4KMatched">0</div></div>
-      <div class="report-kpi amber"><div class="rk-label">Partial Matching</div><div class="rk-value" id="v4KPartial">0</div></div>
-      <div class="report-kpi red"><div class="rk-label">Not in 2B</div><div class="rk-value" id="v4KNot2B">0</div></div>
-      <div class="report-kpi blue"><div class="rk-label">Not in Purchase Register</div><div class="rk-value" id="v4KNotPR">0</div></div>
-      <div class="report-kpi purple"><div class="rk-label">Review Required</div><div class="rk-value" id="v4KReview">0</div></div>
-      <div class="report-kpi slate"><div class="rk-label">Duplicate / Possible</div><div class="rk-value" id="v4KDuplicate">0</div></div>
-    </div>
-
-    <div class="report-overview">
-      <div class="report-card">
-        <h3>ITC & GST Value Overview</h3>
-        <div class="sub">Amounts are shown from the uploaded source data. This is a reconciliation view, not an ITC eligibility decision.</div>
-        <div id="v4Financial" class="summary-grid"></div>
-      </div>
-      <div class="report-card">
-        <h3>What Needs Attention?</h3>
-        <div class="sub">Start with exceptions that can affect the monthly GST working.</div>
-        <div id="v4Actions" class="action-list"></div>
-      </div>
-    </div>
-
-    <div class="learning-panel" id="v4Learn">
-      <div class="learning-head"><div><span class="eyebrow2">LEARN FROM YOUR RECONCILIATION</span><h3>What your results are telling you</h3><p>Use these practical explanations to understand the exception before you decide what action is required.</p></div><div class="learning-badge">Practical GST working guide</div></div>
-      <div class="learning-grid" id="v4LearnGrid"></div>
-    </div>
-
-    <div class="category-bar">
-      <div class="category-head"><div><h3>Invoice-wise Reconciliation</h3><p>Compare the complete Purchase Register and GSTR-2B details side by side. Use the categories to focus on exceptions.</p></div><div id="v4TableCount" class="report-count">0 records</div></div>
-      <div class="report-tabs" id="v4Tabs"></div>
-      <div class="report-tools"><input id="v4Search" class="report-search" placeholder="Search invoice number, vendor, GSTIN or document type…"><div class="report-count"></div></div>
-      <div class="report-table-wrap">
-        <table class="report-table">
-          <thead><tr>
-            <th>Status</th><th>Vendor</th><th>GSTIN</th><th>Doc Type</th>
-            <th>PR Invoice No.</th><th>2B Invoice No.</th><th>PR Invoice Date</th><th>2B Invoice Date</th>
-            <th>PR Invoice Value</th><th>2B Invoice Value</th><th>PR Taxable Value</th><th>2B Taxable Value</th>
-            <th>PR IGST</th><th>2B IGST</th><th>PR CGST</th><th>2B CGST</th><th>PR SGST</th><th>2B SGST</th><th>PR Cess</th><th>2B Cess</th>
-            <th>2B Source Sheet</th><th>2B ITC Availability</th>
-          </tr></thead>
-          <tbody id="v4Body"></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
+</div></section>
+<div class="steps" style="box-sizing: border-box; border-top: 1px solid #d9e5f0; border-bottom: 1px solid #d9e5f0; background: #fff"><div class="steps-inner" style="box-sizing: border-box; width: min(1180px,calc(100% - 34px)); margin: auto; display: grid; grid-template-columns: repeat(4,1fr)">
+<div class="step active" style="box-sizing: border-box; min-height: 67px; display: flex; align-items: center; gap: 11px; padding: 9px 14px; border-right: 1px solid #d9e5f0; position: relative; background: #eaf4ff"><div class="stepno" style="box-sizing: border-box; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: #1677e8; color: #fff; font-weight: 900; flex: none">1</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; color: #153b65; font-size: 12px">Upload Data</strong><small style="box-sizing: border-box; color: #718197; font-size: 10px">Purchase Register &amp; GSTR-2B</small></div></div>
+<div class="step" style="box-sizing: border-box; min-height: 67px; display: flex; align-items: center; gap: 11px; padding: 9px 14px; border-right: 1px solid #d9e5f0; position: relative"><div class="stepno" style="box-sizing: border-box; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: #dce5ee; color: #3c536b; font-weight: 900; flex: none">2</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; color: #153b65; font-size: 12px">Configure</strong><small style="box-sizing: border-box; color: #718197; font-size: 10px">Matching parameters</small></div></div>
+<div class="step" style="box-sizing: border-box; min-height: 67px; display: flex; align-items: center; gap: 11px; padding: 9px 14px; border-right: 1px solid #d9e5f0; position: relative"><div class="stepno" style="box-sizing: border-box; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: #dce5ee; color: #3c536b; font-weight: 900; flex: none">3</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; color: #153b65; font-size: 12px">Run Reconciliation</strong><small style="box-sizing: border-box; color: #718197; font-size: 10px">Compare &amp; analyse</small></div></div>
+<div class="step" style="box-sizing: border-box; min-height: 67px; display: flex; align-items: center; gap: 11px; padding: 9px 14px; border-right: 0; position: relative"><div class="stepno" style="box-sizing: border-box; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; background: #dce5ee; color: #3c536b; font-weight: 900; flex: none">4</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; color: #153b65; font-size: 12px">View Results</strong><small style="box-sizing: border-box; color: #718197; font-size: 10px">Review &amp; export</small></div></div>
+</div></div>
+<section class="section" id="tool" style="box-sizing: border-box; padding: 18px 0"><div class="wrap" style="box-sizing: border-box; width: min(1180px,calc(100% - 34px)); margin: auto">
+<div class="card" style="box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 11px; box-shadow: 0 3px 13px rgba(18,58,104,.045)">
+<div class="section-head" style="box-sizing: border-box; padding: 15px 18px; display: flex; justify-content: space-between; align-items: center; gap: 15px; border-bottom: 1px solid #e5edf5"><div style="box-sizing: border-box"><h2 style="box-sizing: border-box; margin: 0; color: #123a68; font-size: 19px; letter-spacing: -.3px">Upload Source Data</h2><p style="box-sizing: border-box; margin: 3px 0 0; color: #708197; font-size: 11px">Load the two source workbooks used for invoice-level reconciliation.</p></div><button class="mini-action" onclick="downloadExcelTemplate()" style="box-sizing:border-box;font:inherit;cursor:pointer;border:1px solid #cfe0f1;background:#fff;color:#155da8;border-radius:9px;padding:8px 12px;font-weight:850;font-size:11px;display:flex;align-items:center;gap:7px" type="button"><span style="width:20px;height:20px;border-radius:6px;background:#eaf4ff;display:grid;place-items:center;color:#1677e8">↓</span>Download Template</button></div>
+<div class="upload-grid" style="box-sizing: border-box; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; padding: 16px">
+<div class="upload-card" style="box-sizing: border-box; border: 1px solid #dbe8f4; border-radius: 10px; background: linear-gradient(180deg,#fbfdff,#f7fbff); padding: 15px">
+<div class="upload-title-row" style="box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 8px"><h3 style="box-sizing: border-box; font-size: 15px; color: #123a68; margin: 0">Purchase Register</h3><span class="source-tag" style="box-sizing: border-box; font-size: 9px; font-weight: 900; color: #55708d; background: #edf4fa; border: 1px solid #dbe7f0; border-radius: 999px; padding: 4px 7px">BOOKS / ERP</span></div>
+<div class="muted" style="box-sizing: border-box; color: #6b7e93; font-size: 11px">Use the purchase register maintained in your books. Existing Excel or CSV files can be used without rebuilding the workbook.</div>
+<div class="dropzone" style="box-sizing: border-box; margin-top: 13px; border: 1.5px dashed #b9cee3; background: #fbfdff; border-radius: 9px; min-height: 108px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 12px; position: relative"><input accept=".xlsx,.xls,.csv" id="v2PRFile" style="box-sizing: border-box; font: inherit; position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%" type="file"/><div style="box-sizing: border-box"><div class="drop-icon" style="box-sizing: border-box; font-size: 28px; color: #123a68; margin-bottom: 3px">⇧</div><strong style="box-sizing: border-box; display: block; color: #163b64; font-size: 12px">Click to upload or drag and drop</strong><span style="box-sizing: border-box; display: block; color: #718197; font-size: 10px">Excel file (.xlsx or .xls) or CSV</span></div></div>
+<div class="sheet-choice" id="v2PRSheetWrap" style="display: none; box-sizing: border-box; margin-top: 9px"><label style="box-sizing: border-box; display: block; font-size: 10px; font-weight: 800; color: #34526f; margin-bottom: 4px">Source sheet</label><select id="v2PRSheet" style="box-sizing: border-box; font: inherit; width: 100%; padding: 8px; border: 1px solid #cad9e7; border-radius: 7px; background: #fff; color: #183858"></select><small style="box-sizing: border-box; display: block; margin-top: 4px; color: #78899b; font-size: 9px">Select the sheet containing the purchase transaction table.</small></div>
+<div class="file-status" id="v2PRStatus" style="box-sizing: border-box; margin-top: 9px; padding: 8px 9px; border-radius: 7px; background: #f0f5f9; color: #63768a; font-size: 10px; min-height: 31px">No file selected.</div>
+<div class="upload-helper" style="box-sizing: border-box; margin-top: 9px; color: #6c7f94; font-size: 10px">Detected fields are shown after the file is read so the source can be checked before reconciliation.</div>
+<div class="mapping" id="v2PRMapping" style="box-sizing: border-box; display: none; margin-top: 10px; border-top: 1px solid #e3edf5; padding-top: 9px"><div class="mapping-head" style="box-sizing: border-box; display: flex; justify-content: space-between; gap: 10px; align-items: center"><div class="muted" style="box-sizing: border-box; color: #6b7e93; font-size: 11px"><b style="box-sizing: border-box">Detected columns</b> — Purchase Register fields identified from the uploaded source.</div><span class="mapping-badge" id="v2PRMapBadge" style="box-sizing: border-box; font-size: 9px; padding: 4px 7px; border-radius: 999px; background: #e8f7ef; color: #167048; font-weight: 900">Ready</span></div><div class="mapping-grid" id="v2PRMap" style="box-sizing: border-box; display: grid; grid-template-columns: repeat(2,1fr); gap: 6px; margin-top: 7px"></div></div>
 </div>
-</section>
-
-<section class="section" id="instructions">
-<div class="container">
-  <h2 class="section-title">How to Use</h2>
-  <p class="section-sub">Follow these steps every time you perform a reconciliation.</p>
-  <div class="instructions">
-    <div class="panel instruction-card">
-      <h3>1. Download the Master Excel Template</h3>
-      <p>Use the <b>Download Excel Format</b> button if you want a standard workbook. It contains separate <b>Purchase Register</b> and <b>GSTR 2B</b> sheets with the recommended headings.</p>
-    </div>
-    <div class="panel instruction-card critical">
-      <h3>2. Let the tool identify document-type differences</h3>
-      <p>Invoice, Credit Note and Debit Note are reconciled separately. If the same reference appears with a different document type, the tool flags the record for review instead of silently treating it as a match.</p>
-    </div>
-    <div class="panel instruction-card critical">
-      <h3>3. Preserve the source data</h3>
-      <p>Upload your source workbook without manually changing signs or invoice numbers just to satisfy the tool. The reconciliation engine reads the values and reports data-quality issues separately.</p>
-    </div>
-    <div class="panel instruction-card">
-      <h3>4. Upload the Purchase Register</h3>
-      <p>Upload .xlsx, .xls or .csv. If an Excel file contains multiple sheets, the tool identifies the strongest Purchase Register table automatically.</p>
-    </div>
-    <div class="panel instruction-card">
-      <h3>5. Upload GSTR-2B</h3>
-      <p>Upload the GSTR-2B workbook/CSV and select the correct sheet. The tool identifies the relevant columns automatically and shows them for confirmation.</p>
-    </div>
-    <div class="panel instruction-card">
-      <h3>6. Check mandatory fields</h3>
-      <p>Use consistent GSTIN, Invoice Number, Document Type, Invoice Date, Taxable Value, IGST, CGST and SGST. Do not change column meanings between the two files.</p>
-    </div>
-    <div class="panel instruction-card">
-      <h3>7. Run Reconciliation</h3>
-      <p>The tool validates the data and then compares records using GSTIN, document type, invoice number and tax values. Close invoice-number variations can be considered in the second matching pass.</p>
-    </div>
-    <div class="panel instruction-card">
-      <h3>8. Review before relying on the result</h3>
-      <p>Matched records should still be reviewed against the source documents and your accounting/tax records. A reconciliation result is a working tool output and does not itself constitute a GST filing decision.</p>
-    </div>
-  </div>
+<div class="upload-card" style="box-sizing: border-box; border: 1px solid #dbe8f4; border-radius: 10px; background: linear-gradient(180deg,#fbfdff,#f7fbff); padding: 15px">
+<div class="upload-title-row" style="box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 8px"><h3 style="box-sizing: border-box; font-size: 15px; color: #123a68; margin: 0">GSTR-2B</h3><span class="source-tag" style="box-sizing: border-box; font-size: 9px; font-weight: 900; color: #55708d; background: #edf4fa; border: 1px solid #dbe7f0; border-radius: 999px; padding: 4px 7px">GST PORTAL</span></div>
+<div class="muted" style="box-sizing: border-box; color: #6b7e93; font-size: 11px">Upload the GSTR-2B Excel workbook downloaded from the GST Portal. Populated transaction/detail sheets are read automatically.</div>
+<div class="dropzone" style="box-sizing: border-box; margin-top: 13px; border: 1.5px dashed #b9cee3; background: #fbfdff; border-radius: 9px; min-height: 108px; display: flex; align-items: center; justify-content: center; text-align: center; padding: 12px; position: relative"><input accept=".xlsx,.xls,.csv" id="v2B2BFile" style="box-sizing: border-box; font: inherit; position: absolute; inset: 0; opacity: 0; cursor: pointer; width: 100%; height: 100%" type="file"/><div style="box-sizing: border-box"><div class="drop-icon" style="box-sizing: border-box; font-size: 28px; color: #123a68; margin-bottom: 3px">⇧</div><strong style="box-sizing: border-box; display: block; color: #163b64; font-size: 12px">Click to upload or drag and drop</strong><span style="box-sizing: border-box; display: block; color: #718197; font-size: 10px">Excel file (.xlsx or .xls) or CSV</span></div></div>
+<div class="sheet-choice" id="v2B2BSheetWrap" style="display: none; box-sizing: border-box; margin-top: 9px"><label style="box-sizing: border-box; display: block; font-size: 10px; font-weight: 800; color: #34526f; margin-bottom: 4px">Source sheet</label><select id="v2B2BSheet" style="box-sizing: border-box; font: inherit; width: 100%; padding: 8px; border: 1px solid #cad9e7; border-radius: 7px; background: #fff; color: #183858"></select><small style="box-sizing: border-box; display: block; margin-top: 4px; color: #78899b; font-size: 9px">For a GST portal workbook, populated transaction sheets are normally detected automatically.</small></div>
+<div class="file-status" id="v2B2BStatus" style="box-sizing: border-box; margin-top: 9px; padding: 8px 9px; border-radius: 7px; background: #f0f5f9; color: #63768a; font-size: 10px; min-height: 31px">No file selected.</div>
+<div class="upload-helper" style="box-sizing: border-box; margin-top: 9px; color: #6c7f94; font-size: 10px">The reader supports transaction/detail sheets including B2B and amendment or note data where present.</div>
+<div class="mapping" id="v2B2BMapping" style="box-sizing: border-box; display: none; margin-top: 10px; border-top: 1px solid #e3edf5; padding-top: 9px"><div class="mapping-head" style="box-sizing: border-box; display: flex; justify-content: space-between; gap: 10px; align-items: center"><div class="muted" style="box-sizing: border-box; color: #6b7e93; font-size: 11px"><b style="box-sizing: border-box">Detected columns</b> — GSTR-2B fields identified and normalised for matching.</div><span class="mapping-badge" id="v2B2BMapBadge" style="box-sizing: border-box; font-size: 9px; padding: 4px 7px; border-radius: 999px; background: #e8f7ef; color: #167048; font-weight: 900">Ready</span></div><div class="mapping-grid" id="v2B2BMap" style="box-sizing: border-box; display: grid; grid-template-columns: repeat(2,1fr); gap: 6px; margin-top: 7px"></div></div>
 </div>
-</section>
-
-<section class="section">
-<div class="container panel" style="padding:24px">
-  <h2 class="section-title" style="font-size:21px">What this tool checks</h2>
-  <div class="instructions">
-    <div class="instruction-card" style="padding:8px 10px">
-      <ul>
-        <li>GSTIN-level invoice comparison</li>
-        <li>Document Type / Invoice Type consistency</li>
-        <li>Invoice number normalization and close matching</li>
-        <li>Taxable value comparison</li>
-      </ul>
-    </div>
-    <div class="instruction-card" style="padding:8px 10px">
-      <ul>
-        <li>IGST, CGST and SGST comparison</li>
-        <li>Matched invoice allocation without duplicate use</li>
-        <li>Purchase Register records not found in 2B</li>
-        <li>2B records not found in Purchase Register</li>
-      </ul>
-    </div>
-  </div>
 </div>
-</section>
-
-<section class="section seo-wrap">
-<div class="container">
-  <h2 class="section-title">Who Can Use This GST Reconciliation Tool?</h2>
-  <p class="seo-intro">The tool can be useful for <strong>chartered accountants, accountants, tax professionals, finance teams and GST-registered businesses</strong> that regularly compare purchase records with GSTR-2B. It is particularly useful where invoice-level review is required and the reconciliation output needs to be exported to Excel for further checking or vendor follow-up.</p>
-  <div class="seo-grid">
-    <div class="panel seo-card"><h3>For CA & Tax Professionals</h3><p>Use the reconciliation workflow to review client Purchase Registers against GSTR-2B and isolate invoices requiring follow-up.</p></div>
-    <div class="panel seo-card"><h3>For Accounts Teams</h3><p>Compare purchase records and portal data before completing the monthly GST review and maintain an Excel working report of exceptions.</p></div>
-    <div class="panel seo-card"><h3>For GST & ITC Review</h3><p>Use the matched and unmatched classifications as one input into the broader review of eligible and ineligible input tax credit.</p></div>
-  </div>
 </div>
-</section>
-
-<section class="section seo-wrap" id="gst-reconciliation-faq">
-<div class="container">
-  <section class="seo-wrap" style="margin-top:26px">
-  <h2 class="section-title">Free GSTR-2B Reconciliation Online — Learn What Your GST Data Is Telling You</h2>
-  <p class="seo-intro">Looking for a <strong>free GST reconciliation tool</strong>, <strong>GSTR-2B reconciliation software</strong>, <strong>Purchase Register vs GSTR-2B matching tool</strong> or an easy way to compare GST invoices in Excel? This page is designed to turn a monthly GST reconciliation into a clear review process. You can upload the original <strong>GSTR-2B downloaded from the GST Portal</strong>, use the Excel template, compare your Purchase Register with GSTR-2B invoice by invoice, understand mismatches and download a professional Excel report.</p>
-  <div class="seo-grid">
-    <div class="panel seo-card"><h3>Upload GSTR-2B directly from the GST Portal</h3><p>Do not rebuild the GST Portal workbook. Upload the original Excel file. The tool recognises populated transaction sheets such as B2B, B2BA, credit/debit note tables, ECO, ISD and import tables and converts their different portal headings into a common reconciliation structure.</p></div>
-    <div class="panel seo-card"><h3>Use the GST Reconciliation Excel Template</h3><p>If you prefer a controlled format, download the template. It contains <strong>Purchase Register</strong> and <strong>GSTR 2B</strong> sheets. Enter or paste your data, upload the same workbook and select the relevant sheet when the workbook contains more than one data sheet.</p></div>
-    <div class="panel seo-card"><h3>Understand every reconciliation result</h3><p>The result is more than a match percentage. Learn the difference between Matched, Partial Matching, Not in GSTR-2B, Not in Purchase Register, Review Required and Duplicate / Possible Duplicate so that your accounts or GST team knows what to investigate next.</p></div>
-  </div>
-  <div class="workflow">
-    <div class="stepbox"><div class="num">01 · Upload</div><h3>Choose your data method</h3><p>Upload the original portal GSTR-2B or use the standard Excel template. You can also use an existing workbook where the relevant sheet can be selected.</p></div>
-    <div class="stepbox"><div class="num">02 · Detect</div><h3>Check detected columns</h3><p>Review GSTIN, invoice number, document type, date, taxable value and GST columns before you run the reconciliation.</p></div>
-    <div class="stepbox"><div class="num">03 · Reconcile</div><h3>Match invoice relationships</h3><p>The engine first uses strong invoice identity and then controlled comparison logic for differences in numbering, date or values.</p></div>
-    <div class="stepbox"><div class="num">04 · Learn & act</div><h3>Read the exception</h3><p>Every exception is presented as a practical follow-up point, helping accounts teams understand what to check rather than simply showing a red status.</p></div>
-  </div>
-  <h3 style="margin:24px 0 8px">Common searches this GST reconciliation tool is designed to answer</h3>
-  <p class="seo-intro">How to reconcile GSTR-2B with Purchase Register? How to match purchase invoices with GSTR-2B? How to find invoices missing in GSTR-2B? How to identify invoices in GSTR-2B but not in books? How to reconcile GSTR-2B in Excel? How to compare GSTIN, invoice number, taxable value and GST tax amounts? How to identify partial GST invoice matches? This tool brings these monthly GST reconciliation questions into one browser-based workflow.</p>
-  <div class="keyword-strip"><span class="keyword-pill">GSTR-2B vs Purchase Register</span><span class="keyword-pill">Purchase Register Reconciliation</span><span class="keyword-pill">GST Invoice Matching</span><span class="keyword-pill">GST ITC Reconciliation</span><span class="keyword-pill">GSTR-2B Excel Tool</span><span class="keyword-pill">Missing Invoice in GSTR-2B</span><span class="keyword-pill">Partial GST Match</span><span class="keyword-pill">GST Mismatch Report</span></div>
-  <div class="panel seo-card" style="margin-top:16px"><h3>Who can use this online GST reconciliation tool?</h3><p>It is useful for <strong>chartered accountants, GST practitioners, tax consultants, accountants, finance teams, internal audit teams and businesses</strong> that perform monthly purchase-to-GSTR-2B checks. It is especially useful when the final working needs to be explained to another reviewer or exported to Excel for vendor follow-up.</p></div>
-</section>
-
-<h2 class="section-title">GST Reconciliation Tool – Frequently Asked Questions</h2>
-  <div class="faq-list">
-    <details><summary>What is a GST Reconciliation Tool?</summary><p>A GST Reconciliation Tool compares purchase records with GST portal data such as GSTR-2B and identifies matched, unmatched and differing invoice records. It reduces manual invoice-by-invoice comparison and produces a structured reconciliation result for review.</p></details>
-    <details><summary>How do I reconcile my Purchase Register with GSTR-2B?</summary><p>You have two options: upload the original GSTR-2B workbook downloaded from the GST Portal for automatic sheet detection, or download the Excel template and enter data into its Purchase Register and GSTR 2B sheets. Upload the files, check the detected columns, choose a sheet if the workbook contains multiple sheets, run reconciliation and review the matched and exception categories.</p></details>
-    <details><summary>What is the difference between Purchase Register and GSTR-2B?</summary><p>The Purchase Register represents purchase transactions recorded in your books, while GSTR-2B contains the static, auto-drafted input tax credit information made available from supplier filings and other GST data for the relevant period. Reconciliation compares the two datasets to identify differences.</p></details>
-    <details><summary>What does “Not in GSTR-2B” mean?</summary><p>It means a Purchase Register record did not have a corresponding record identified in the uploaded GSTR-2B data. The reason may require investigation, such as supplier filing timing, invoice details or differences between the two datasets.</p></details>
-    <details><summary>What does “Not in Purchase Register” mean?</summary><p>It means a GSTR-2B record did not have a corresponding Purchase Register record identified by the reconciliation process. The item should be reviewed against the books and source documents.</p></details>
-    <details><summary>What is a partial match in GST reconciliation?</summary><p>A partial match indicates that a related invoice has been identified but one or more compared details differ or require review. The exact result should be checked against the source documents before any accounting or ITC decision.</p></details>
-    <details><summary>Can I download the GST reconciliation report in Excel?</summary><p>Yes. After reconciliation, the tool provides an Excel export containing the reconciliation categories and invoice-level comparison information, including Purchase Register and GSTR-2B values.</p></details>
-    <details><summary>Is this GST reconciliation tool free?</summary><p>This reconciliation tool is provided as a free browser-based utility. You can use the available upload, reconciliation and Excel export functions without changing the existing reconciliation workflow.</p></details>
-    <details><summary>Can I use Excel for GSTR-2B reconciliation?</summary><p>Yes. The tool is designed around workbook-based reconciliation and provides Excel template and export functionality. Always use the required input structure and keep the original source files unchanged.</p></details>
-    <details><summary>Does the tool replace professional GST review?</summary><p>No. Reconciliation software helps identify data relationships and exceptions. Taxability, eligibility of ITC, reversals, blocked credits and filing decisions should be independently reviewed under the applicable GST provisions and source documents.</p></details>
-    <details><summary>What is the difference between Matched and Partial Matching?</summary><p>Matched means the reconciliation rules found a strong relationship and the compared values are within the configured tolerance. Partial Matching means a related invoice was identified, but one or more fields such as invoice reference, taxable value, GST amount or date require review.</p></details>
-    <details><summary>Why is an invoice shown as Not in 2B?</summary><p>It means the Purchase Register record did not receive a sufficiently reliable corresponding record from the uploaded GSTR-2B data. Check the supplier GSTIN, invoice number, document type, period and supplier reporting before concluding why it is missing.</p></details>
-    <details><summary>Why is an invoice shown as Not in Purchase Register?</summary><p>It means the uploaded GSTR-2B record did not receive a corresponding Purchase Register record. Review the books, purchase accounting, period and duplicate possibilities.</p></details>
-    <details><summary>Can I upload the same Excel template in both upload boxes?</summary><p>Yes. The downloadable template contains separate <strong>Purchase Register</strong> and <strong>GSTR 2B</strong> sheets. You may upload the same workbook in both upload boxes; when more than one sheet is present, the tool lets you select which sheet should be used for that side of the reconciliation.</p></details>
-    <details><summary>What happens if I replace an uploaded file?</summary><p>The previous data for that file is cleared so that the new upload does not accidentally remain in the next reconciliation.</p></details>
-    <details><summary>Does the tool read B2B, B2BA, CDNR and CDNRA from GSTR-2B?</summary><p>For a GST Portal workbook, the tool reads all transaction/detail sheets automatically, including B2B/B2BA, debit and credit notes, ECO, ISD, import tables and reversal/rejected tables. Summary sheets are not double-counted as transactions.</p></details>
-    <details><summary>Can I correct the detected column mapping?</summary><p>Yes. After a file is read, the Field Mapping section shows the detected columns. You can change a field to another worksheet column before running reconciliation.</p></details>
-    <details><summary>Is the Excel report only a list of matched invoices?</summary><p>No. The professional report includes an Executive Summary, All Reconciliation, Matched, Partial Matching, Not in 2B, Not in Purchase Register, Review Required, Duplicate, Vendor Summary, Exceptions, Data Quality and Match Logic sheets when those categories contain data.</p></details>
-    <details><summary>Does a Partial Matching result mean ITC must be rejected?</summary><p>No. Partial Matching is a reconciliation classification, not a legal conclusion on ITC eligibility. The underlying invoice, tax treatment, applicable GST provisions and other records should be reviewed separately.</p></details>
-
-  </div>
+<div class="card config" style="margin-top: 14px; box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 11px; box-shadow: 0 3px 13px rgba(18,58,104,.045); padding: 14px 16px"><div class="section-head" style="padding: 15px 18px; border-bottom: 1px solid #e5edf5; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 15px"><div style="box-sizing: border-box"><h2 style="box-sizing: border-box; margin: 0; color: #123a68; font-size: 19px; letter-spacing: -.3px">Matching Configuration</h2><p style="box-sizing: border-box; margin: 3px 0 0; color: #708197; font-size: 11px">Set the tolerance and date window used by the reconciliation engine.</p></div></div>
+<div class="config-row" style="box-sizing: border-box; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr auto auto; gap: 10px; align-items: end">
+<div class="field" style="box-sizing: border-box"><label style="box-sizing: border-box; display: block; font-size: 10px; font-weight: 900; color: #34526f; margin-bottom: 4px">Tax amount tolerance (₹)</label><input id="v2DiffTol" min="0" step="0.01" style="box-sizing: border-box; font: inherit; width: 100%; height: 38px; border: 1px solid #cbd9e6; border-radius: 7px; background: #fff; padding: 0 9px; color: #183858" type="number" value="2"/></div>
+<div class="field" style="box-sizing: border-box"><label style="box-sizing: border-box; display: block; font-size: 10px; font-weight: 900; color: #34526f; margin-bottom: 4px">Invoice date matching</label><select id="v2DateWindow" style="box-sizing: border-box; font: inherit; width: 100%; height: 38px; border: 1px solid #cbd9e6; border-radius: 7px; background: #fff; padding: 0 9px; color: #183858"><option style="box-sizing: border-box" value="0">Exact date</option><option style="box-sizing: border-box" value="3">±3 days</option><option selected="" style="box-sizing: border-box" value="7">±7 days</option><option style="box-sizing: border-box" value="15">±15 days</option><option style="box-sizing: border-box" value="30">±30 days</option></select></div>
+<div class="field" style="box-sizing: border-box"><label style="box-sizing: border-box; display: block; font-size: 10px; font-weight: 900; color: #34526f; margin-bottom: 4px">Invoice number</label><input disabled="" style="box-sizing: border-box; font: inherit; width: 100%; height: 38px; border: 1px solid #cbd9e6; border-radius: 7px; background: #fff; padding: 0 9px; color: #183858" value="Enabled"/></div>
+<div class="field" style="box-sizing: border-box"><label style="box-sizing: border-box; display: block; font-size: 10px; font-weight: 900; color: #34526f; margin-bottom: 4px">Supplier GSTIN</label><input disabled="" style="box-sizing: border-box; font: inherit; width: 100%; height: 38px; border: 1px solid #cbd9e6; border-radius: 7px; background: #fff; padding: 0 9px; color: #183858" value="Enabled"/></div>
+<button class="btn btn-primary" id="v2Run" style="box-sizing: border-box; font: inherit; cursor: pointer; height: 38px; border-radius: 7px; padding: 0 15px; border: 1px solid transparent; font-weight: 850; font-size: 11px; white-space: nowrap; background: #1476e4; color: #fff; box-shadow: 0 5px 13px rgba(20,118,228,.2)" type="button">▶ Run Reconciliation</button><button class="btn btn-secondary" id="v2Reset" style="box-sizing: border-box; font: inherit; cursor: pointer; height: 38px; border-radius: 7px; padding: 0 15px; border: 1px solid transparent; font-weight: 850; font-size: 11px; white-space: nowrap; background: #f5f8fb; border-color: #cfdae6; color: #3a5570" type="button">↻ Reset</button>
 </div>
-</section>
-
-<section class="section seo-wrap">
-<div class="container">
-  <h2 class="section-title">Related GST Resources</h2>
-  <p class="section-sub">Explore more GST compliance and knowledge resources on this website.</p>
-  <div class="related-links">
-    <a href="/">GST Reconciliation Home<small>GST reconciliation tools and resources</small></a>
-    <a href="/articles.html">GST Knowledge & Articles<small>Guides and practical GST articles</small></a>
-    <a href="/compliance.html">GST Compliance Calendar<small>GST due dates and compliance tracking</small></a>
-  </div>
+<div class="config-note" style="box-sizing: border-box; margin-top: 8px; font-size: 10px; color: #738398">The configured tolerance is applied to taxable value and individual GST components. Date matching is controlled separately.</div>
 </div>
-</section>
-
-<section class="section" id="contact">
-<div class="container">
-  <h2 class="section-title">Contact</h2>
-  <p class="section-sub">For questions or feedback about the GST Reconciliation Tool.</p>
-  <div class="contact">
-    <div class="panel contact-card">
-      <strong>✉ Email</strong><br>
-      <a class="contact-link" href="mailto:uday@gstreconciliation.in">uday@gstreconciliation.in</a>
-    </div>
-    <div class="panel contact-card">
-      <strong>☎ Mobile</strong><br>
-      <a class="contact-link" href="tel:+919052160079">+91 90521 60079</a>
-    </div>
-  </div>
+<div class="card results" id="v2Dashboard" style="box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 11px; box-shadow: 0 3px 13px rgba(18,58,104,.045); margin-top: 17px; display: none">
+<div class="results-head" style="box-sizing: border-box; padding: 17px 18px 11px; display: flex; justify-content: space-between; align-items: flex-start; gap: 15px"><div style="box-sizing: border-box"><div class="eyebrow" style="margin-bottom: 9px; box-sizing: border-box; font-size: 11px; text-transform: uppercase; letter-spacing: .16em; color: #1677e8; font-weight: 900">RECONCILIATION SUMMARY</div><h2 style="box-sizing: border-box; margin: 0; color: #123a68; font-size: 21px">Reconciliation Results</h2><p style="box-sizing: border-box; margin: 4px 0 0; color: #6b7e93; font-size: 11px; max-width: 720px">Review the relationship between your Purchase Register and GSTR-2B records, then move from summary to invoice-level exceptions.</p></div><div class="scorebox" style="box-sizing: border-box; text-align: center; min-width: 90px"><div class="score" id="v4HealthScore" style="box-sizing: border-box; font-size: 28px; font-weight: 900; color: #123a68">0%</div><small id="v4HealthText" style="box-sizing: border-box; font-size: 9px; color: #74869a">Overall matched coverage</small></div></div>
+<div class="result-actions" style="box-sizing: border-box; display: flex; justify-content: space-between; gap: 10px; padding: 0 18px 12px; align-items: center"><div class="tip" style="box-sizing: border-box; font-size: 10px; color: #718399">Workpaper includes summary, invoice matching, exception queue, supplier analysis and data-quality controls.</div><div style="display: flex; gap: 7px; flex-wrap: wrap; box-sizing: border-box"><button class="btn btn-soft" id="v4Priority" style="box-sizing: border-box; font: inherit; cursor: pointer; height: 38px; border-radius: 7px; padding: 0 15px; border: 1px solid transparent; font-weight: 850; font-size: 11px; white-space: nowrap; background: #edf5ff; border-color: #cfe2f7; color: #155a9f" type="button">Prioritise Review Items</button><button class="btn btn-green" id="v4Download" style="box-sizing: border-box; font: inherit; cursor: pointer; height: 38px; border-radius: 7px; padding: 0 15px; border: 1px solid transparent; font-weight: 850; font-size: 11px; white-space: nowrap; background: #19a66b; color: #fff" type="button">⇩ Download Excel Workpaper</button></div></div>
+<div class="priority-strip" id="v4PriorityStrip" style="box-sizing: border-box; margin: 0 18px 12px; border: 1px solid #dbe7f0; background: #f8fbfe; border-radius: 9px; padding: 9px 11px; display: grid; grid-template-columns: 1fr auto auto auto; gap: 16px; align-items: center"><div style="box-sizing: border-box"><b style="box-sizing: border-box; display: block; color: #183b63; font-size: 11px">Review queue</b><span style="box-sizing: border-box; color: #708297; font-size: 9px">Start with records most likely to require accounting or supplier follow-up.</span></div><div class="priority-stat" style="box-sizing: border-box; text-align: right"><strong id="v4HighPriority" style="box-sizing: border-box; display: block; color: #163b64; font-size: 16px">0</strong><small style="box-sizing: border-box; color: #77899b; font-size: 9px">High priority</small></div><div class="priority-stat" style="box-sizing: border-box; text-align: right"><strong id="v4ExceptionGST" style="box-sizing: border-box; display: block; color: #163b64; font-size: 16px">₹0</strong><small style="box-sizing: border-box; color: #77899b; font-size: 9px">Exception GST</small></div><div class="priority-stat" style="box-sizing: border-box; text-align: right"><strong id="v4ExceptionRate" style="box-sizing: border-box; display: block; color: #163b64; font-size: 16px">0%</strong><small style="box-sizing: border-box; color: #77899b; font-size: 9px">Exception rate</small></div></div>
+<div class="kpis" style="box-sizing: border-box; display: grid; grid-template-columns: repeat(8,1fr); gap: 8px; padding: 0 18px 14px">
+<div class="kpi" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff; min-height: 67px"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Purchase Register</div><div class="kpi-value" id="v4KPR" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #183a60; margin-top: 5px">0</div></div><div class="kpi" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff; min-height: 67px"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">GSTR-2B</div><div class="kpi-value" id="v4K2B" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #183a60; margin-top: 5px">0</div></div><div class="kpi green" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #ecfaf3; min-height: 67px; border-color: #c7ecd9"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Matched</div><div class="kpi-value" id="v4KMatched" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #0b8a56; margin-top: 5px">0</div></div><div class="kpi amber" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff8e7; min-height: 67px; border-color: #f4dfae"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Partial Matching</div><div class="kpi-value" id="v4KPartial" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #bd7900; margin-top: 5px">0</div></div><div class="kpi red" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff1f2; min-height: 67px; border-color: #f3c6c9"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Not in 2B</div><div class="kpi-value" id="v4KNot2B" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #d53a40; margin-top: 5px">0</div></div><div class="kpi blue" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #edf6ff; min-height: 67px; border-color: #cfe2f7"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Not in Purchase Register</div><div class="kpi-value" id="v4KNotPR" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #1c6ac5; margin-top: 5px">0</div></div><div class="kpi purple" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #f4efff; min-height: 67px; border-color: #ded2f7"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Review Required</div><div class="kpi-value" id="v4KReview" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #754ac5; margin-top: 5px">0</div></div><div class="kpi" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff; min-height: 67px"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Duplicate / Possible</div><div class="kpi-value" id="v4KDuplicate" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #183a60; margin-top: 5px">0</div></div>
 </div>
-</section>
+<div class="overview" style="box-sizing: border-box; display: grid; grid-template-columns: 1fr 1fr; gap: 12px; padding: 0 18px 14px"><div class="result-card" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 9px; background: #fff; padding: 13px"><h3 style="box-sizing: border-box; margin: 0; color: #183b64; font-size: 14px">ITC &amp; GST Value Overview</h3><div class="sub" style="box-sizing: border-box; color: #74869a; font-size: 10px; margin: 3px 0 9px">Amounts are shown from uploaded source data; the classification is not an ITC eligibility opinion.</div><div class="summary-grid" id="v4Financial" style="box-sizing: border-box; display: grid; grid-template-columns: repeat(3,1fr); gap: 7px"></div></div><div class="result-card" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 9px; background: #fff; padding: 13px"><h3 style="box-sizing: border-box; margin: 0; color: #183b64; font-size: 14px">Exceptions Requiring Review</h3><div class="sub" style="box-sizing: border-box; color: #74869a; font-size: 10px; margin: 3px 0 9px">Use the suggested actions to decide what should be checked in books, source documents or with the supplier.</div><div class="action-list" id="v4Actions" style="box-sizing: border-box; display: grid; gap: 7px"></div></div></div>
+<div class="learning" id="v4Learn" style="box-sizing: border-box; margin: 0 18px 14px; border-radius: 9px; background: #f5f9fd; border: 1px solid #dce8f2; padding: 13px"><div class="learning-head" style="box-sizing: border-box; display: flex; justify-content: space-between; gap: 15px; align-items: flex-start"><div style="box-sizing: border-box"><div class="eyebrow" style="margin: 0 0 2px; box-sizing: border-box; font-size: 11px; text-transform: uppercase; letter-spacing: .16em; color: #1677e8; font-weight: 900; margin-bottom: 9px">RESULT INTERPRETATION</div><h3 style="box-sizing: border-box; margin: 1px 0 3px; color: #173b63; font-size: 14px">What each result is telling you</h3><p style="box-sizing: border-box; margin: 0; color: #718398; font-size: 10px">Use the classification as a working control before deciding the accounting or GST action.</p></div><div class="learning-badge" style="box-sizing: border-box; background: #e9f2fb; color: #2b5a84; border: 1px solid #d2e2ef; border-radius: 999px; padding: 5px 8px; font-size: 9px; font-weight: 900">Practical review guide</div></div><div class="learning-grid" id="v4LearnGrid" style="box-sizing: border-box; display: grid; grid-template-columns: repeat(3,1fr); gap: 8px; margin-top: 10px"></div></div>
+<div class="table-section" style="box-sizing: border-box; border-top: 1px solid #e4edf5; padding: 14px 18px 18px"><div class="table-head" style="box-sizing: border-box; display: flex; justify-content: space-between; gap: 12px; align-items: center"><div style="box-sizing: border-box"><h3 style="box-sizing: border-box; margin: 0; color: #183b64; font-size: 15px">Invoice-level Reconciliation</h3><p style="box-sizing: border-box; margin: 2px 0 0; color: #74869a; font-size: 10px">Compare Purchase Register and GSTR-2B fields side by side.</p></div><div class="report-count" id="v4TableCount" style="box-sizing: border-box; font-size: 10px; color: #718398">0 records</div></div><div class="report-tabs" id="v4Tabs" style="box-sizing: border-box; display: flex; gap: 5px; overflow: auto; padding: 10px 0 3px"></div><div class="report-tools" style="box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 10px; margin: 11px 0"><input class="report-search" id="v4Search" placeholder="Search invoice number, vendor, GSTIN or document type…" style="box-sizing: border-box; font: inherit; width: 360px; max-width: 100%; height: 36px; border: 1px solid #cedce8; border-radius: 7px; padding: 0 10px; background: #fff"/><div class="report-count" style="box-sizing: border-box; font-size: 10px; color: #718398"></div></div><div class="report-table-wrap" style="box-sizing: border-box; border: 1px solid #dce7f0; border-radius: 8px; overflow: auto; max-height: 560px; background: #fff"><table class="report-table" style="box-sizing: border-box; width: 100%; min-width: 1800px; border-collapse: separate; border-spacing: 0; font-size: 9px"><thead style="box-sizing: border-box"><tr style="box-sizing: border-box"><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">Status</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">Vendor</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">GSTIN</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">Doc Type</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">PR Invoice No.</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B Invoice No.</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">PR Invoice Date</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B Invoice Date</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">PR Invoice Value</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B Invoice Value</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">PR Taxable Value</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B Taxable Value</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">PR IGST</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B IGST</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">PR CGST</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B CGST</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">PR SGST</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B SGST</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">PR Cess</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B Cess</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B Source Sheet</th><th style="box-sizing: border-box; position: sticky; top: 0; z-index: 2; background: #f1f6fa; color: #405c76; border-bottom: 1px solid #d5e2ec; padding: 8px; text-align: left; white-space: nowrap">2B ITC Availability</th></tr></thead><tbody id="v4Body" style="box-sizing: border-box"></tbody></table></div></div>
+</div>
+</div></section>
+<section class="guide" id="guide" style="box-sizing: border-box; padding: 28px 0"><div class="wrap" style="box-sizing: border-box; width: min(1180px,calc(100% - 34px)); margin: auto">
+<div class="section-head" style="padding: 15px 18px; border: 0; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 15px; border-bottom: 1px solid #e5edf5"><div style="box-sizing: border-box"><h2 style="box-sizing: border-box; margin: 0; color: #123a68; font-size: 19px; letter-spacing: -.3px">How the reconciliation works</h2><p style="box-sizing: border-box; margin: 3px 0 0; color: #708197; font-size: 11px">A practical view of what happens between file upload and the final workpaper.</p></div></div>
+<div class="guide-grid" style="box-sizing: border-box; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 13px">
+<div class="guide-card" style="box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 10px; padding: 15px; box-shadow: 0 3px 12px rgba(18,58,104,.04)"><div class="num" style="box-sizing: border-box; width: 27px; height: 27px; border-radius: 8px; background: #eaf4ff; color: #1769c5; display: grid; place-items: center; font-weight: 900; margin-bottom: 8px">1</div><h3 style="box-sizing: border-box; margin: 0 0 5px; color: #173b63; font-size: 14px">Source records are read</h3><p style="box-sizing: border-box; font-size: 11px; color: #667b91">The tool reads the uploaded Purchase Register and GSTR-2B workbooks and identifies the relevant transaction table or sheets.</p><ul style="box-sizing: border-box; padding-left: 17px; margin: 8px 0 0"><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Supplier GSTIN</li><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Invoice / document number</li><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Document type and date</li><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Taxable value and GST components</li></ul></div>
+<div class="guide-card" style="box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 10px; padding: 15px; box-shadow: 0 3px 12px rgba(18,58,104,.04)"><div class="num" style="box-sizing: border-box; width: 27px; height: 27px; border-radius: 8px; background: #eaf4ff; color: #1769c5; display: grid; place-items: center; font-weight: 900; margin-bottom: 8px">2</div><h3 style="box-sizing: border-box; margin: 0 0 5px; color: #173b63; font-size: 14px">Records are compared</h3><p style="box-sizing: border-box; font-size: 11px; color: #667b91">Invoice-level candidates are evaluated using supplier GSTIN, normalised document numbers, document type, dates and configured value/tax tolerances.</p><ul style="box-sizing: border-box; padding-left: 17px; margin: 8px 0 0"><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Exact / strong matches</li><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Partial or probable relationships</li><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Missing-side records</li><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Duplicate protection</li></ul></div>
+<div class="guide-card" style="box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 10px; padding: 15px; box-shadow: 0 3px 12px rgba(18,58,104,.04)"><div class="num" style="box-sizing: border-box; width: 27px; height: 27px; border-radius: 8px; background: #eaf4ff; color: #1769c5; display: grid; place-items: center; font-weight: 900; margin-bottom: 8px">3</div><h3 style="box-sizing: border-box; margin: 0 0 5px; color: #173b63; font-size: 14px">Exceptions become actionable</h3><p style="box-sizing: border-box; font-size: 11px; color: #667b91">Instead of only showing a match percentage, the result separates records into categories that can be reviewed by accounts and tax teams.</p><ul style="box-sizing: border-box; padding-left: 17px; margin: 8px 0 0"><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Vendor follow-up</li><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Book correction review</li><li style="box-sizing: border-box; font-size: 11px; color: #667b91">GSTR-2B timing checks</li><li style="box-sizing: border-box; font-size: 11px; color: #667b91">Supporting-document review</li></ul></div>
+</div>
+<div class="decision" style="box-sizing: border-box; background: #eff7ff; border: 1px solid #d0e4f7; border-radius: 10px; padding: 14px; margin-top: 13px"><strong style="box-sizing: border-box; color: #145a9e">Important decision point</strong><p style="box-sizing: border-box; margin: 4px 0 0">GSTR-2B is a static, auto-drafted ITC statement. Reconciliation is a control over differences; it does not by itself establish that every credit is legally eligible. Final ITC decisions should consider the GST law, invoice/supporting documents, reversals and other applicable conditions.</p></div>
+</div></section>
+<section class="guide" id="knowledge" style="box-sizing: border-box; padding: 28px 0"><div class="wrap" style="box-sizing: border-box; width: min(1180px,calc(100% - 34px)); margin: auto"><div class="section-head" style="padding: 15px 18px; border: 0; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 15px; border-bottom: 1px solid #e5edf5"><div style="box-sizing: border-box"><h2 style="box-sizing: border-box; margin: 0; color: #123a68; font-size: 19px; letter-spacing: -.3px">Read the result correctly</h2><p style="box-sizing: border-box; margin: 3px 0 0; color: #708197; font-size: 11px">Use the categories as a structured review queue rather than treating every exception as a tax error.</p></div></div><div class="guide-grid" style="box-sizing: border-box; display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 13px">
+<div class="guide-card" style="box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 10px; padding: 15px; box-shadow: 0 3px 12px rgba(18,58,104,.04)"><h3 style="box-sizing: border-box; margin: 0 0 5px; color: #173b63; font-size: 14px">Matched</h3><p style="box-sizing: border-box; font-size: 11px; color: #667b91">The compared records satisfy the configured matching logic. This is the starting point for routine review, not a substitute for ITC eligibility testing.</p></div>
+<div class="guide-card" style="box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 10px; padding: 15px; box-shadow: 0 3px 12px rgba(18,58,104,.04)"><h3 style="box-sizing: border-box; margin: 0 0 5px; color: #173b63; font-size: 14px">Partial / Review Required</h3><p style="box-sizing: border-box; font-size: 11px; color: #667b91">A related record exists but one or more fields differ. Check invoice number formatting, dates, taxable value, tax amounts, document type and amendments.</p></div>
+<div class="guide-card" style="box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 10px; padding: 15px; box-shadow: 0 3px 12px rgba(18,58,104,.04)"><h3 style="box-sizing: border-box; margin: 0 0 5px; color: #173b63; font-size: 14px">Not in 2B / Not in PR</h3><p style="box-sizing: border-box; font-size: 11px; color: #667b91">One source has a record that the other source does not. Investigate supplier filing timing, missed books entries, duplicates, amendments or source-data issues.</p></div>
+</div></div></section>
+<section class="bottom" style="box-sizing: border-box; background: #143c67; color: #fff; padding: 25px 0 21px; margin-top: 12px"><div class="wrap" style="box-sizing: border-box; width: min(1180px,calc(100% - 34px)); margin: auto"><h2 style="box-sizing: border-box; margin: 0 0 15px; font-size: 20px">How This Tool Helps</h2><div class="bottom-grid" style="box-sizing: border-box; display: grid; grid-template-columns: repeat(3,1fr); gap: 16px">
+<div class="bottom-item" style="box-sizing: border-box; display: flex; gap: 10px"><div class="bottom-icon" style="box-sizing: border-box; width: 34px; height: 34px; border-radius: 9px; background: rgba(255,255,255,.14); display: grid; place-items: center; flex: none">⇧</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; font-size: 12px">1. Bring source data together</strong><span style="box-sizing: border-box; display: block; font-size: 10px; color: #c5d7e9; margin-top: 2px">Upload the Purchase Register and GSTR-2B workbooks used for the period.</span></div></div>
+<div class="bottom-item" style="box-sizing: border-box; display: flex; gap: 10px"><div class="bottom-icon" style="box-sizing: border-box; width: 34px; height: 34px; border-radius: 9px; background: rgba(255,255,255,.14); display: grid; place-items: center; flex: none">⚙</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; font-size: 12px">2. Apply a consistent matching method</strong><span style="box-sizing: border-box; display: block; font-size: 10px; color: #c5d7e9; margin-top: 2px">Use document, GSTIN, date and value/tax parameters instead of manual invoice-by-invoice comparison.</span></div></div>
+<div class="bottom-item" style="box-sizing: border-box; display: flex; gap: 10px"><div class="bottom-icon" style="box-sizing: border-box; width: 34px; height: 34px; border-radius: 9px; background: rgba(255,255,255,.14); display: grid; place-items: center; flex: none">▥</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; font-size: 12px">3. Separate exceptions</strong><span style="box-sizing: border-box; display: block; font-size: 10px; color: #c5d7e9; margin-top: 2px">Focus the team's time on records that require investigation or supplier communication.</span></div></div>
+<div class="bottom-item" style="box-sizing: border-box; display: flex; gap: 10px"><div class="bottom-icon" style="box-sizing: border-box; width: 34px; height: 34px; border-radius: 9px; background: rgba(255,255,255,.14); display: grid; place-items: center; flex: none">▤</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; font-size: 12px">4. Build a review workpaper</strong><span style="box-sizing: border-box; display: block; font-size: 10px; color: #c5d7e9; margin-top: 2px">Export structured Excel sheets for internal review and follow-up.</span></div></div>
+<div class="bottom-item" style="box-sizing: border-box; display: flex; gap: 10px"><div class="bottom-icon" style="box-sizing: border-box; width: 34px; height: 34px; border-radius: 9px; background: rgba(255,255,255,.14); display: grid; place-items: center; flex: none">◷</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; font-size: 12px">5. Reduce repetitive checking</strong><span style="box-sizing: border-box; display: block; font-size: 10px; color: #c5d7e9; margin-top: 2px">Use the same reconciliation workflow across monthly source files.</span></div></div>
+<div class="bottom-item" style="box-sizing: border-box; display: flex; gap: 10px"><div class="bottom-icon" style="box-sizing: border-box; width: 34px; height: 34px; border-radius: 9px; background: rgba(255,255,255,.14); display: grid; place-items: center; flex: none">◈</div><div style="box-sizing: border-box"><strong style="box-sizing: border-box; display: block; font-size: 12px">6. Support GST controls</strong><span style="box-sizing: border-box; display: block; font-size: 10px; color: #c5d7e9; margin-top: 2px">Use the exceptions to support ITC review, reconciliation and supplier follow-up.</span></div></div>
+</div></div></section>
 </main>
-
-<footer class="footer">
-<div class="container footer-grid">
-  <div><strong>GST Reconciliation Tool</strong><small>Purchase Register vs GSTR-2B reconciliation utility</small></div>
-  <div style="text-align:right"><small>Contact: uday@gstreconciliation.in</small><small>© <span id="year"></span> GST Reconciliation Tool</small></div>
+<section id="seo-content" style="box-sizing:border-box; width:min(1180px,calc(100% - 34px)); margin:28px auto 0;">
+<div style="background:#ffffff;border:1px solid #d9e5f0;border-radius:18px;box-shadow:0 8px 24px rgba(18,58,104,.07);overflow:hidden;">
+<div style="padding:28px 30px 20px;background:linear-gradient(135deg,#f8fbff 0%,#eef6ff 100%);border-bottom:1px solid #dce7f2;">
+<div style="font-size:11px;text-transform:uppercase;letter-spacing:.14em;color:#1677e8;font-weight:900;margin-bottom:8px;">GST RECONCILIATION KNOWLEDGE</div>
+<h2 style="margin:0;color:#123a68;font-size:27px;line-height:1.2;">GST Reconciliation Tool — Purchase Register vs GSTR-2B</h2>
+<p style="margin:12px 0 0;color:#52677f;font-size:15px;max-width:900px;">Use this GST ITC reconciliation tool to compare your Purchase Register with the GSTR-2B data downloaded from the GST portal. The objective is not simply to mark invoices as matched or unmatched; it is to identify the documents and tax differences that require accounting, supplier or GST compliance review before ITC is relied upon.</p>
 </div>
+<div style="padding:26px 30px;display:grid;grid-template-columns:1.15fr .85fr;gap:24px;">
+<div>
+<h3 style="margin:0 0 10px;color:#173d68;font-size:20px;">What is GST reconciliation?</h3>
+<p style="margin:0 0 13px;color:#4d637a;">GST reconciliation is the process of comparing purchase and input-tax records maintained in the books with the tax information appearing in GSTR-2B. For each document, the reviewer checks supplier GSTIN, invoice number, invoice date, taxable value and GST amounts, then determines whether the record can be treated as matched or requires further investigation.</p>
+<p style="margin:0 0 13px;color:#4d637a;">GSTR-2B is a static, auto-drafted ITC statement. GSTN advises taxpayers to reconcile GSTR-2B with their own records and books, avoid duplicate ITC, make required reversals and ensure applicable reverse-charge tax is paid. This makes a structured purchase-register-to-GSTR-2B reconciliation an important control in monthly GST working.</p>
+<p style="margin:0;color:#4d637a;">This page is designed for CAs, accountants, tax teams, finance managers, internal auditors and businesses that need an invoice-level GST ITC matching workpaper rather than only a headline total.</p>
+</div>
+<div style="background:#f7fbff;border:1px solid #d9e8f7;border-radius:14px;padding:20px;">
+<h3 style="margin:0 0 12px;color:#173d68;font-size:18px;">Searches this tool is built to answer</h3>
+<ul style="margin:0;padding-left:19px;color:#536a81;line-height:1.9;">
+<li>GST reconciliation tool</li><li>GSTR-2B reconciliation tool</li><li>GSTR-2B vs purchase register matching</li><li>GST ITC reconciliation</li><li>Purchase register reconciliation</li><li>Invoice-level ITC matching</li><li>GSTR-2B Excel reconciliation</li><li>GST mismatch and missing invoice review</li>
+</ul>
+</div>
+</div>
+<div style="padding:0 30px 28px;">
+<h3 style="margin:0 0 14px;color:#173d68;font-size:20px;">How the GST reconciliation process works</h3>
+<div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px;">
+<div style="border:1px solid #dce7f2;border-radius:13px;padding:16px;background:#fff;"><b style="color:#1677e8;">01 · Prepare</b><p style="margin:7px 0 0;color:#60748a;font-size:13px;">Upload the Purchase Register and the GSTR-2B workbook for the period under review.</p></div>
+<div style="border:1px solid #dce7f2;border-radius:13px;padding:16px;background:#fff;"><b style="color:#1677e8;">02 · Normalise</b><p style="margin:7px 0 0;color:#60748a;font-size:13px;">Standardise key invoice fields so supplier GSTIN, invoice number, dates and tax values can be compared consistently.</p></div>
+<div style="border:1px solid #dce7f2;border-radius:13px;padding:16px;background:#fff;"><b style="color:#1677e8;">03 · Match</b><p style="margin:7px 0 0;color:#60748a;font-size:13px;">Classify records into match, partial/probable match, mismatch, missing-from-2B, missing-from-PR and duplicate categories.</p></div>
+<div style="border:1px solid #dce7f2;border-radius:13px;padding:16px;background:#fff;"><b style="color:#1677e8;">04 · Review</b><p style="margin:7px 0 0;color:#60748a;font-size:13px;">Prioritise tax differences and exceptions, investigate suppliers and retain the Excel workpaper for the GST review file.</p></div>
+</div>
+</div>
+<div style="padding:26px 30px;background:#fbfdff;border-top:1px solid #e1eaf3;">
+<h3 style="margin:0 0 12px;color:#173d68;font-size:20px;">Why invoice-level reconciliation matters</h3>
+<p style="margin:0 0 12px;color:#52677f;">A difference in the monthly ITC total does not tell the reviewer which supplier or invoice caused the difference. Invoice-level reconciliation converts that total into an actionable review list. A purchase invoice may exist in the books but not yet appear in GSTR-2B; a supplier may have reported a different taxable value or tax amount; an invoice may be duplicated in the purchase data; or a credit/debit note may require separate consideration.</p>
+<p style="margin:0;color:#52677f;">The reconciliation result should therefore be used as a working control, not as an automatic legal conclusion that every unmatched invoice is permanently ineligible. Eligibility also depends on the GST Act, Rules, nature of supply, documentation, timing, reversals and other applicable conditions.</p>
+</div>
+<div style="padding:26px 30px;">
+<h3 style="margin:0 0 14px;color:#173d68;font-size:20px;">Common GST reconciliation exceptions</h3>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;">
+<div style="padding:15px 16px;border-left:4px solid #18a66a;background:#f5fcf8;border-radius:8px;"><b>Exact Match</b><div style="color:#60748a;font-size:13px;margin-top:4px;">Core identifying fields and tax values align within the configured matching rules.</div></div>
+<div style="padding:15px 16px;border-left:4px solid #f4a51c;background:#fffaf0;border-radius:8px;"><b>Partial / Probable Match</b><div style="color:#60748a;font-size:13px;margin-top:4px;">A likely document relationship exists but one or more fields require human review.</div></div>
+<div style="padding:15px 16px;border-left:4px solid #e5484d;background:#fff5f5;border-radius:8px;"><b>Mismatch / Tax Variance</b><div style="color:#60748a;font-size:13px;margin-top:4px;">The document is identifiable but important values do not agree and should be investigated.</div></div>
+<div style="padding:15px 16px;border-left:4px solid #7b52d7;background:#faf7ff;border-radius:8px;"><b>In PR but not in GSTR-2B</b><div style="color:#60748a;font-size:13px;margin-top:4px;">A purchase record exists in the books but no corresponding record was found in the uploaded 2B data.</div></div>
+<div style="padding:15px 16px;border-left:4px solid #1677e8;background:#f4f9ff;border-radius:8px;"><b>In GSTR-2B but not in PR</b><div style="color:#60748a;font-size:13px;margin-top:4px;">A supplier-reported document appears in 2B but is not present in the uploaded Purchase Register.</div></div>
+<div style="padding:15px 16px;border-left:4px solid #52677f;background:#f7f9fb;border-radius:8px;"><b>Duplicate Records</b><div style="color:#60748a;font-size:13px;margin-top:4px;">Potential duplicate source records that can distort invoice counts or ITC totals.</div></div>
+</div>
+</div>
+<div style="padding:26px 30px;background:#f7fbff;border-top:1px solid #e1eaf3;">
+<h3 style="margin:0 0 12px;color:#173d68;font-size:20px;">Practical GST ITC reconciliation resources</h3>
+<p style="margin:0 0 15px;color:#52677f;">After completing the reconciliation, use the related GST learning resources on this website to understand the treatment of unmatched ITC and the next compliance step:</p>
+<div style="display:flex;flex-wrap:wrap;gap:10px;">
+<a href="/articles/GSTR3B_GSTR1_GSTR2B_Reconciliation_Complete_Practical_Guide_2026.html" style="text-decoration:none;color:#155da8;background:#fff;border:1px solid #cfe0f1;padding:10px 13px;border-radius:9px;font-weight:700;">GSTR-3B vs GSTR-1 vs GSTR-2B Reconciliation</a>
+<a href="/articles/ITC_Not_Appearing_in_GSTR_2B_What_to_Do_Complete_Practical_Guide.html" style="text-decoration:none;color:#155da8;background:#fff;border:1px solid #cfe0f1;padding:10px 13px;border-radius:9px;font-weight:700;">ITC Not Appearing in GSTR-2B</a>
+<a href="/articles/Rule_37A_GST_ITC_Reversal_Reavailment_Complete_Practical_Guide.html" style="text-decoration:none;color:#155da8;background:#fff;border:1px solid #cfe0f1;padding:10px 13px;border-radius:9px;font-weight:700;">Rule 37A ITC Reversal &amp; Re-availment</a>
+<a href="/articles/180_Days_Payment_Rule_ITC_Complete_Explanation.html" style="text-decoration:none;color:#155da8;background:#fff;border:1px solid #cfe0f1;padding:10px 13px;border-radius:9px;font-weight:700;">180-Day ITC Payment Rule</a>
+<a href="/articles/Blocked_ITC_Section_17_5_Complete_Practical_Guide_SEO_Enhanced.html" style="text-decoration:none;color:#155da8;background:#fff;border:1px solid #cfe0f1;padding:10px 13px;border-radius:9px;font-weight:700;">Blocked ITC under Section 17(5)</a>
+</div>
+</div>
+<div style="padding:28px 30px 30px;">
+<h3 style="margin:0 0 15px;color:#173d68;font-size:20px;">Frequently asked questions about GST reconciliation</h3>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+<details style="border:1px solid #dce7f2;border-radius:11px;padding:14px 16px;background:#fff;"><summary style="font-weight:800;color:#173d68;cursor:pointer;">What is a GST reconciliation tool?</summary><p style="color:#60748a;font-size:13px;margin:10px 0 0;">A GST reconciliation tool compares purchase or input-tax records with GST portal data such as GSTR-2B and produces document-level matching and exception results for review.</p></details>
+<details style="border:1px solid #dce7f2;border-radius:11px;padding:14px 16px;background:#fff;"><summary style="font-weight:800;color:#173d68;cursor:pointer;">What does GSTR-2B reconciliation mean?</summary><p style="color:#60748a;font-size:13px;margin:10px 0 0;">It means comparing the GSTR-2B documents and tax amounts with the taxpayer's own purchase records to identify matched documents, differences and missing records before ITC reporting decisions are finalised.</p></details>
+<details style="border:1px solid #dce7f2;border-radius:11px;padding:14px 16px;background:#fff;"><summary style="font-weight:800;color:#173d68;cursor:pointer;">Can I reconcile GSTR-2B Excel with a Purchase Register?</summary><p style="color:#60748a;font-size:13px;margin:10px 0 0;">Yes. This tool is designed around an Excel Purchase Register and the GSTR-2B workbook downloaded from the GST portal, followed by invoice-level matching and exception review.</p></details>
+<details style="border:1px solid #dce7f2;border-radius:11px;padding:14px 16px;background:#fff;"><summary style="font-weight:800;color:#173d68;cursor:pointer;">What should I do when an invoice is in the Purchase Register but not in GSTR-2B?</summary><p style="color:#60748a;font-size:13px;margin:10px 0 0;">Treat it as an exception for investigation. Check supplier filing, GSTIN, invoice details, period differences and other applicable GST conditions before deciding the ITC treatment.</p></details>
+<details style="border:1px solid #dce7f2;border-radius:11px;padding:14px 16px;background:#fff;"><summary style="font-weight:800;color:#173d68;cursor:pointer;">What is a tax amount mismatch?</summary><p style="color:#60748a;font-size:13px;margin:10px 0 0;">It is a situation where a document can be related between the two datasets but the taxable value or GST amount differs. The difference should be reviewed against the invoice, supplier filing and accounting entry.</p></details>
+<details style="border:1px solid #dce7f2;border-radius:11px;padding:14px 16px;background:#fff;"><summary style="font-weight:800;color:#173d68;cursor:pointer;">Why is supplier GSTIN important in reconciliation?</summary><p style="color:#60748a;font-size:13px;margin:10px 0 0;">Supplier GSTIN is a key identifier that helps distinguish documents from different suppliers and reduces false matches where invoice numbers are similar.</p></details>
+<details style="border:1px solid #dce7f2;border-radius:11px;padding:14px 16px;background:#fff;"><summary style="font-weight:800;color:#173d68;cursor:pointer;">Is this GST reconciliation tool free and do I need to sign up?</summary><p style="color:#60748a;font-size:13px;margin:10px 0 0;">Yes. The tool is 100% free to use, no sign-up is required, and you can run reconciliations as many times as needed.</p></details>
+</div>
+</div>
+<div style="padding:20px 30px;background:#123a68;color:#fff;">
+<div style="font-size:18px;font-weight:900;">Use the reconciliation as a control, then review the exceptions.</div>
+<div style="margin-top:6px;color:#d9e8f8;font-size:13px;">The tool helps organise the data and identify differences. Final ITC eligibility and GST treatment should be determined using the applicable law, rules, facts and supporting documents.</div>
+</div>
+</div></section>
+<section id="reconciliation-learning-hub" aria-labelledby="reconciliation-learning-title"
+  style="max-width:1180px;margin:42px auto 0;padding:0 22px 34px;">
+  <div style="border:1px solid #dce7f2;border-radius:18px;background:#fff;box-shadow:0 7px 22px rgba(18,58,104,.06);padding:28px;">
+    <div style="font-size:11px;font-weight:900;letter-spacing:.12em;text-transform:uppercase;color:#1769c2;margin-bottom:7px;">GST Reconciliation Learning Hub</div>
+    <h2 id="reconciliation-learning-title" style="margin:0;color:#163d66;font-size:27px;line-height:1.25;">GST Reconciliation: Tool, Process &amp; Practical Guides</h2>
+    <p style="margin:10px 0 22px;color:#60748a;max-width:900px;line-height:1.7;">
+      Use the reconciliation tool first, then use these practical guides to understand how GSTR-2B matching works,
+      how to investigate exceptions and how to turn the results into a review-ready GST ITC workpaper.
+    </p>
+
+    <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;">
+      <a href="/articles/gst-reconciliation-tool-complete-guide.html"
+         style="text-decoration:none;border:1px solid #dce7f2;border-radius:12px;padding:17px;background:#fbfdff;">
+        <strong style="display:block;color:#163d66;font-size:15px;">GST Reconciliation Tool: Complete Practical Guide</strong>
+        <span style="display:block;margin-top:6px;color:#657a90;font-size:12.5px;line-height:1.55;">
+          Understand Purchase Register vs GSTR-2B reconciliation, matching logic, result categories and workpaper controls.
+        </span>
+      </a>
+
+      <a href="/articles/gstr-2b-vs-purchase-register-reconciliation.html"
+         style="text-decoration:none;border:1px solid #dce7f2;border-radius:12px;padding:17px;background:#fbfdff;">
+        <strong style="display:block;color:#163d66;font-size:15px;">GSTR-2B vs Purchase Register: Step-by-Step Reconciliation</strong>
+        <span style="display:block;margin-top:6px;color:#657a90;font-size:12.5px;line-height:1.55;">
+          Follow the practical monthly workflow from source files and field checks to invoice-level exceptions.
+        </span>
+      </a>
+
+      <a href="/articles/gst-reconciliation-exceptions-mismatch-missing-invoices.html"
+         style="text-decoration:none;border:1px solid #dce7f2;border-radius:12px;padding:17px;background:#fbfdff;">
+        <strong style="display:block;color:#163d66;font-size:15px;">GST Reconciliation Exceptions: Mismatch, Missing Invoices &amp; Duplicates</strong>
+        <span style="display:block;margin-top:6px;color:#657a90;font-size:12.5px;line-height:1.55;">
+          Learn what each exception means and what accounts, tax and supplier teams should check next.
+        </span>
+      </a>
+
+      <a href="/articles/gst-itc-reconciliation-workpaper-controls.html"
+         style="text-decoration:none;border:1px solid #dce7f2;border-radius:12px;padding:17px;background:#fbfdff;">
+        <strong style="display:block;color:#163d66;font-size:15px;">GST ITC Reconciliation Workpaper &amp; Review Controls</strong>
+        <span style="display:block;margin-top:6px;color:#657a90;font-size:12.5px;line-height:1.55;">
+          Build a review trail around matched records, exceptions, supplier follow-up and GSTR-3B decision controls.
+        </span>
+      </a>
+    </div>
+
+    <div style="margin-top:17px;padding:14px 16px;border-radius:11px;background:#eef6ff;border-left:4px solid #1677e8;color:#4e6680;font-size:12.5px;line-height:1.6;">
+      Existing GST knowledge resources:
+      <a href="/articles/gstr-2b-complete-practical-guide.html" style="color:#1769c2;font-weight:800;">GSTR-2B Complete Guide</a>,
+      <a href="/articles/ITC_Not_Appearing_in_GSTR_2B_What_to_Do_Complete_Practical_Guide_2026.html" style="color:#1769c2;font-weight:800;">ITC Not Appearing in GSTR-2B</a>,
+      and
+      <a href="/articles/itc-under-gst.html" style="color:#1769c2;font-weight:800;">ITC under GST</a>.
+    </div>
+  </div>
+</section>
+
+<footer class="gstpro-footer" aria-label="GST Reconciliation website footer">
+  <div class="ft-wrap">
+    <div class="ft-grid">
+      <section>
+        <div class="ft-brand">
+          <div class="ft-mark">GST</div>
+          <div>
+            <div class="ft-name">GSTReconciliation.in</div>
+            <div class="ft-tag">GST ITC Reconciliation &amp; Invoice Matching</div>
+          </div>
+        </div>
+        <p class="ft-desc">
+          A practical GST reconciliation workspace for matching Purchase Register data
+          with GSTR-2B, reviewing invoice-level exceptions and preparing a structured
+          reconciliation workpaper.
+        </p>
+      </section>
+
+      <nav aria-label="Tool navigation">
+        <h4>Tool</h4>
+        <a href="reconciliation.html">GST Reconciliation</a>
+        <a href="gst-reconciliation-tool.html">Reconciliation Tool</a>
+        <a href="compliance.html">GST Compliance</a>
+      </nav>
+
+      <nav aria-label="GST knowledge">
+        <h4>GST Knowledge</h4>
+        <a href="articles.html">GST Articles</a>
+        <a href="gst-act.html">GST Act &amp; Rules</a>
+        <a href="index.html">GST Resources</a>
+      </nav>
+
+      <section>
+        <h4>Contact</h4>
+        <div class="ft-contact">
+          <p><strong>Finance &amp; GST Support</strong></p>
+          <p><a href="mailto:uday@gstreconciliation.in">uday@gstreconciliation.in</a></p>
+          <p><a href="tel:+919052160079">+91 90521 60079</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div class="ft-bottom">
+      <div>© 2026 GSTReconciliation.in. All rights reserved.</div>
+      <div class="ft-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <span class="ft-note">GST information is for educational and workflow support.</span>
+      </div>
+    </div>
+  </div>
 </footer>
-
-<div class="modal" id="instructionsModal" onclick="modalOutside(event,'instructionsModal')">
- <div class="modal-card">
-  <div class="modal-head"><h2>How to Use the GST Reconciliation Tool</h2><button class="close" onclick="closeModal('instructionsModal')">×</button></div>
-  <div class="modal-body">
-   <div class="notice important"><div class="icon">⚠️</div><div><b>Mandatory:</b> Purchase Register and GSTR-2B must use the same Document Type for the same document. If 2B says Credit Note, PR must also say Credit Note.</div></div>
-   <div class="notice important"><div class="icon">➕</div><div><b>Mandatory:</b> Do not enter negative amounts. Enter taxable and tax values as positive/non-negative values, including Credit Notes and Debit Notes.</div></div>
-   <h3>Recommended workflow</h3>
-   <ol><li>Download the template.</li><li>Enter your data in the correct sheet/format.</li><li>Check GSTIN and invoice numbers.</li><li>Ensure Document Type is identical between PR and 2B.</li><li>Ensure there are no negative amounts.</li><li>Upload both files.</li><li>Run reconciliation.</li><li>Review results and download the Excel report.</li></ol>
-   <h3>Important</h3>
-   <p>Keep your source files unchanged. Use the reconciliation output as a working report and independently review exceptions before taking GST credit or filing decisions.</p>
-  </div>
- </div>
+<div class="modal" id="formatGuideModal" onclick="modalOutside(event,'formatGuideModal')" style="box-sizing:border-box;display:none;position:fixed;inset:0;background:rgba(7,31,55,.55);z-index:120;padding:24px 14px;overflow:auto">
+<div class="modal-card" style="box-sizing:border-box;max-width:860px;margin:30px auto;background:#fff;border-radius:16px;border:1px solid #d7e3ee;box-shadow:0 24px 70px rgba(0,0,0,.22);overflow:hidden">
+<div style="box-sizing:border-box;padding:18px 20px;background:linear-gradient(135deg,#123a68,#1769c5);color:#fff;display:flex;justify-content:space-between;align-items:flex-start;gap:14px">
+<div><div style="font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;opacity:.8">SOURCE DATA GUIDE</div><h2 style="margin:3px 0 4px;font-size:21px;line-height:1.2">Prepare Your Files</h2><p style="margin:0;font-size:11px;line-height:1.5;color:#dbeaff">Simple instructions for the two files you need before starting reconciliation.</p></div>
+<button onclick="closeModal('formatGuideModal')" style="font:inherit;cursor:pointer;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.12);color:#fff;width:32px;height:32px;border-radius:8px;font-weight:900">×</button>
 </div>
-
-<div class="modal" id="privacyModal" onclick="modalOutside(event,'privacyModal')">
- <div class="modal-card">
-  <div class="modal-head"><h2>Privacy & Data Processing</h2><button class="close" onclick="closeModal('privacyModal')">×</button></div>
-  <div class="modal-body">
-   <h3>Browser-based processing</h3>
-   <p>Your Purchase Register and GSTR-2B files are read and processed locally in your browser using JavaScript. The reconciliation results are stored in the browser's local IndexedDB storage for the current device/browser session.</p>
-   <h3>What you should do</h3>
-   <p>Do not upload files that you are not authorised to process. Keep downloaded reports secure and delete them from shared/public computers after use.</p>
-   <h3>Third-party libraries</h3>
-   <p>This website loads the SheetJS Excel-processing library from a public CDN. An internet connection is required for the library to load when the page is opened online.</p>
-  </div>
- </div>
+<div style="box-sizing:border-box;padding:18px 20px">
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+<div style="border:1px solid #dce7f2;border-radius:12px;padding:15px;background:#f8fbff">
+<div style="font-size:11px;color:#1677e8;font-weight:900;text-transform:uppercase;letter-spacing:.08em">01 · Purchase Register</div>
+<h3 style="margin:5px 0 6px;color:#123a68;font-size:16px">Your books / ERP data</h3>
+<p style="margin:0 0 9px;color:#62778d;font-size:11px;line-height:1.55">Upload an Excel or CSV purchase register. The tool identifies the relevant columns from the uploaded source.</p>
+<div style="background:#fff;border:1px solid #e1ebf4;border-radius:8px;padding:10px"><b style="font-size:11px;color:#234766">Important fields</b><div style="font-size:10px;color:#667b91;line-height:1.7;margin-top:4px">Supplier GSTIN · Invoice Number · Document Type · Invoice Date · Taxable Value · IGST · CGST · SGST/UTGST · Cess · Reverse Charge</div></div>
+<div style="margin-top:9px;padding:8px 10px;border-left:3px solid #f4a51c;background:#fff8e8;color:#745817;font-size:10px;line-height:1.5">If your ERP export has different column names, upload it first. The tool attempts to identify common GST field names automatically.</div>
 </div>
-
-
-<div class="modal" id="matchDetailModal" onclick="modalOutside(event,'matchDetailModal')">
- <div class="modal-card" style="max-width:760px">
-  <div class="modal-head"><h2>Invoice Reconciliation Details</h2><button class="close" onclick="closeModal('matchDetailModal')">×</button></div>
-  <div class="modal-body" id="matchDetailBody"></div>
- </div>
+<div style="border:1px solid #dce7f2;border-radius:12px;padding:15px;background:#f8fbff">
+<div style="font-size:11px;color:#1677e8;font-weight:900;text-transform:uppercase;letter-spacing:.08em">02 · GSTR-2B</div>
+<h3 style="margin:5px 0 6px;color:#123a68;font-size:16px">GST portal workbook</h3>
+<p style="margin:0 0 9px;color:#62778d;font-size:11px;line-height:1.55">Upload the GSTR-2B Excel workbook downloaded from the GST portal. Keep the portal workbook structure intact wherever possible.</p>
+<div style="background:#fff;border:1px solid #e1ebf4;border-radius:8px;padding:10px"><b style="font-size:11px;color:#234766">Relevant transaction data</b><div style="font-size:10px;color:#667b91;line-height:1.7;margin-top:4px">B2B and applicable amendment / note sections · Supplier GSTIN · Document number · Document date · Taxable value · IGST · CGST · SGST/UTGST · Cess</div></div>
+<div style="margin-top:9px;padding:8px 10px;border-left:3px solid #1677e8;background:#f0f7ff;color:#315777;font-size:10px;line-height:1.5">The tool can read populated transaction sheets from the GSTR-2B workbook and retains the source-sheet information for review.</div>
 </div>
-
-<div class="toast" id="toast"></div>
-
-
-<script>
+</div>
+<div style="margin-top:14px;border:1px solid #dce7f2;border-radius:12px;padding:14px;background:#fff">
+<h3 style="margin:0 0 7px;color:#123a68;font-size:15px">Before you upload</h3>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:9px">
+<div style="padding:9px;background:#f6f9fc;border-radius:8px;color:#61758b;font-size:10px"><b style="color:#244a6d">Use the correct period</b><br/>Upload files relating to the same GSTIN and reconciliation period.</div>
+<div style="padding:9px;background:#f6f9fc;border-radius:8px;color:#61758b;font-size:10px"><b style="color:#244a6d">Avoid altered 2B data</b><br/>Prefer the original GSTR-2B workbook downloaded from the GST portal.</div>
+<div style="padding:9px;background:#f6f9fc;border-radius:8px;color:#61758b;font-size:10px"><b style="color:#244a6d">Check source fields</b><br/>After upload, review detected columns before running reconciliation.</div>
+</div></div>
+<div style="margin-top:14px;display:flex;justify-content:flex-end;gap:8px;align-items:center">
+<span style="font-size:10px;color:#718398;margin-right:auto">Want to use a ready-made Purchase Register format?</span>
+<button onclick="downloadExcelTemplate()" style="font:inherit;cursor:pointer;border:0;background:#1677e8;color:#fff;border-radius:9px;padding:10px 15px;font-weight:850;font-size:11px;box-shadow:0 5px 14px rgba(22,119,232,.2)">↓ Download Template</button>
+<button onclick="closeModal('formatGuideModal')" style="font:inherit;cursor:pointer;border:1px solid #d5e1ec;background:#f7fafc;color:#315574;border-radius:8px;padding:9px 13px;font-weight:800;font-size:11px">Close</button>
+</div>
+</div></div></div>
+<div class="modal" id="instructionsModal" onclick="modalOutside(event,'instructionsModal')" style="box-sizing: border-box; display: none; position: fixed; inset: 0; background: rgba(7,31,55,.55); z-index: 100; padding: 30px 16px; overflow: auto"><div class="modal-card" style="box-sizing: border-box; max-width: 760px; margin: 40px auto; background: #fff; border-radius: 12px; border: 1px solid #d7e3ee; box-shadow: 0 20px 60px rgba(0,0,0,.2); padding: 20px"><button class="close" onclick="closeModal('instructionsModal')" style="box-sizing: border-box; font: inherit; cursor: pointer; float: right; border: 0; background: #eef4f9; width: 31px; height: 31px; border-radius: 7px; color: #36536e; font-weight: 900">×</button><h2 style="box-sizing: border-box; margin: 0 0 7px; color: #123a68">Using the reconciliation tool</h2><p style="box-sizing: border-box; font-size: 12px; color: #60758b">Start with the two source workbooks, review detected fields, set the date and value tolerances, then run the reconciliation. The result is designed as a review workpaper.</p><ol style="box-sizing: border-box"><li style="box-sizing: border-box; font-size: 12px; color: #60758b">Upload the Purchase Register.</li><li style="box-sizing: border-box; font-size: 12px; color: #60758b">Upload the GSTR-2B workbook.</li><li style="box-sizing: border-box; font-size: 12px; color: #60758b">Review detected sheets and fields.</li><li style="box-sizing: border-box; font-size: 12px; color: #60758b">Set the matching parameters.</li><li style="box-sizing: border-box; font-size: 12px; color: #60758b">Run reconciliation and review each exception category.</li><li style="box-sizing: border-box; font-size: 12px; color: #60758b">Download the Excel workpaper for follow-up.</li></ol><p style="box-sizing: border-box; font-size: 12px; color: #60758b">Always validate the output against your books, source documents and applicable GST provisions before using it for final return or ITC decisions.</p></div></div>
+<div class="modal" id="privacyModal" onclick="modalOutside(event,'privacyModal')" style="box-sizing: border-box; display: none; position: fixed; inset: 0; background: rgba(7,31,55,.55); z-index: 100; padding: 30px 16px; overflow: auto"><div class="modal-card" style="box-sizing: border-box; max-width: 760px; margin: 40px auto; background: #fff; border-radius: 12px; border: 1px solid #d7e3ee; box-shadow: 0 20px 60px rgba(0,0,0,.2); padding: 20px"><button class="close" onclick="closeModal('privacyModal')" style="box-sizing: border-box; font: inherit; cursor: pointer; float: right; border: 0; background: #eef4f9; width: 31px; height: 31px; border-radius: 7px; color: #36536e; font-weight: 900">×</button><h2 style="box-sizing: border-box; margin: 0 0 7px; color: #123a68">Data processing</h2><p style="box-sizing: border-box; font-size: 12px; color: #60758b">The reconciliation engine runs in the browser. The selected source workbooks are read by the page for reconciliation and Excel generation. Review your organisation's own data-handling policies before using confidential files.</p></div></div>
+<div class="modal" id="matchDetailModal" onclick="modalOutside(event,'matchDetailModal')" style="box-sizing: border-box; display: none; position: fixed; inset: 0; background: rgba(7,31,55,.55); z-index: 100; padding: 30px 16px; overflow: auto"><div class="modal-card" style="box-sizing: border-box; max-width: 760px; margin: 40px auto; background: #fff; border-radius: 12px; border: 1px solid #d7e3ee; box-shadow: 0 20px 60px rgba(0,0,0,.2); padding: 20px"><button class="close" onclick="closeModal('matchDetailModal')" style="box-sizing: border-box; font: inherit; cursor: pointer; float: right; border: 0; background: #eef4f9; width: 31px; height: 31px; border-radius: 7px; color: #36536e; font-weight: 900">×</button><h2 style="box-sizing: border-box; margin: 0 0 7px; color: #123a68">Invoice detail</h2><div id="matchDetailBody" style="box-sizing: border-box"></div></div></div>
+<div class="toast" id="toast" style="box-sizing: border-box; position: fixed; right: 18px; bottom: 18px; background: #143c67; color: #fff; padding: 10px 13px; border-radius: 8px; box-shadow: 0 9px 24px rgba(0,0,0,.2); font-size: 11px; display: none; z-index: 150"></div>
+<script style="box-sizing: border-box">
 function scrollToId(id){
   const el=document.getElementById(id);
   if(!el) return;
@@ -871,7 +827,11 @@ document.addEventListener('keydown',event=>{
     });
   }
 });
-function downloadTemplates(){
+function openFormatGuide(){
+  gstAnalytics('gst_file_format_guide_opened',{source:'upload_source_data'});
+  openModal('formatGuideModal');
+}
+function downloadExcelTemplate(){
   gstAnalytics('gst_template_download',{template_type:'purchase_register_and_gstr_2b'});
   if(!window.XLSX){ alert('Excel library is still loading. Please wait a moment and try again.'); return; }
   const wb=XLSX.utils.book_new();
@@ -905,8 +865,7 @@ function downloadTemplates(){
   XLSX.writeFile(wb,'GST_Reconciliation_Input_Format.xlsx');
 }
 </script>
-
-<script>
+<script style="box-sizing: border-box">
 /* Browser-only, conservative, explainable reconciliation engine */
 (() => {
   const state = {
@@ -1940,6 +1899,4 @@ function downloadTemplates(){
   if($('v4Priority'))$('v4Priority').addEventListener('click',()=>{state.priorityMode=!state.priorityMode;$('v4Priority').textContent=state.priorityMode?'Normal Order':'Prioritise Exceptions';renderTable()});
 })();
 </script>
-
-</body>
-</html>
+</body></html>
