@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GSTR-3B Interest Calculation 2026 — Cash Ledger Benefit, Formula & Re-Compute Interest</title>
+<meta name="description" content="Complete practical guide to GSTR-3B interest calculation from January 2026: minimum Electronic Cash Ledger benefit, Rule 88B formula, previous-period liability, RE-COMPUTE INTEREST, worked examples and office SOP.">
+<link rel="canonical" href="https://gstreconciliation.in/articles/GSTR3B_Interest_Calculation_Cash_Ledger_Recompute_Practical_Guide_2026.html">
+<meta property="og:title" content="GSTR-3B Interest Calculation 2026 — Cash Ledger Benefit, Formula & Re-Compute Interest">
+<meta property="og:description" content="Understand exactly how GSTR-3B interest works, calculate it yourself, verify portal interest and implement a monthly office control.">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NBKTXWJ20G');</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+<style>
+:root{--blue:#0b63ce;--blue2:#084b9a;--ink:#17324d;--muted:#5c6b7a;--bg:#f4f8fc;--card:#fff;--line:#dce7f2;--green:#087f5b;--red:#b42318;--orange:#b54708}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.74}a{color:var(--blue);text-decoration:none}.hero{background:linear-gradient(135deg,#073d80,#0b63ce 58%,#2788ee);color:#fff;padding:58px 22px}.wrap{max-width:1200px;margin:auto}.badge{display:inline-block;padding:7px 13px;border-radius:999px;background:#ffffff20;border:1px solid #ffffff35;font-size:13px;font-weight:800}.hero h1{font-size:clamp(32px,5vw,50px);line-height:1.08;margin:18px 0 12px;max-width:1080px}.hero p{font-size:18px;max-width:970px}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}.stat{padding:16px;border:1px solid #ffffff35;background:#ffffff18;border-radius:12px}.layout{max-width:1200px;margin:30px auto;display:grid;grid-template-columns:265px 1fr;gap:28px}.toc{position:sticky;top:15px;align-self:start;background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}.toc a{display:block;padding:5px 0;font-size:14px}.content section,.card{background:#fff;border:1px solid var(--line);border-radius:15px;padding:30px;margin-bottom:22px;box-shadow:0 3px 12px #12385b0a}h2{color:var(--blue2);font-size:27px;margin-top:0}h3{color:#184d7d}.note,.warn,.good,.danger,.decision{padding:17px 19px;border-radius:12px;margin:18px 0}.note{background:#eef6ff;border-left:5px solid var(--blue)}.warn{background:#fff7ed;border-left:5px solid var(--orange)}.good{background:#ecfdf3;border-left:5px solid var(--green)}.danger{background:#fff1f2;border-left:5px solid var(--red)}.decision{background:#f8fafc;border:1px solid var(--line)}table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px}th,td{border:1px solid var(--line);padding:11px;vertical-align:top}th{background:#edf5ff;text-align:left}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.formula{font-size:18px;font-weight:800;text-align:center;background:#f7fbff;border:1px dashed #8db5df;border-radius:12px;padding:19px;margin:18px 0}.example{border:1px solid var(--line);border-radius:13px;padding:19px;margin:15px 0;background:#fbfdff}.step{display:grid;grid-template-columns:42px 1fr;gap:12px;margin:13px 0}.num{width:34px;height:34px;border-radius:50%;background:var(--blue);color:white;display:grid;place-items:center;font-weight:800}.footer{background:#102d46;color:#e9f2fa;padding:46px 22px}.footer h2{color:#fff}.footer a{color:#fff}.small{font-size:13px;color:#718096}@media(max-width:850px){.layout{grid-template-columns:1fr;margin:18px}.toc{position:relative}.stats,.grid{grid-template-columns:1fr 1fr}}@media(max-width:520px){.stats,.grid{grid-template-columns:1fr}.hero{padding:40px 18px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<span class="badge">GSTR-3B • INTEREST • RULE 88B • 2026 PORTAL CHANGE</span>
+<h1>GSTR-3B Interest Calculation 2026 — Cash Ledger Benefit, Formula & Re-Compute Interest</h1>
+<p><strong>A practical guide designed so an accounts or finance team can understand the concept, calculate interest independently, verify the GST Portal and implement a monthly control.</strong></p>
+<div class="stats"><div class="stat"><b>January 2026+</b><br>enhanced portal calculation</div><div class="stat"><b>Minimum ECL</b><br>cash-balance benefit explained</div><div class="stat"><b>Worked Examples</b><br>calculation step-by-step</div><div class="stat"><b>Office SOP</b><br>verify before filing</div></div>
+</div></header>
+
+<main class="layout">
+<aside class="toc"><strong>On this page</strong>
+<a href="#concept">1. Understand interest first</a><a href="#change">2. What changed in 2026</a><a href="#formula">3. Formula explained</a><a href="#minimum">4. Minimum cash balance</a><a href="#examples">5. Worked examples</a><a href="#previous">6. Previous-period liability</a><a href="#rcm">7. RCM interest</a><a href="#portal">8. GST Portal procedure</a><a href="#recompute">9. Re-Compute Interest</a><a href="#difference">10. Portal vs own calculation</a><a href="#situations">11. Practical situations</a><a href="#working">12. Office working paper</a><a href="#sop">13. Monthly SOP</a><a href="#faq">14. FAQs</a><a href="#related">15. Related guides</a>
+</aside>
+
+<div class="content">
+<section id="concept"><h2>1. First understand: when does GSTR-3B interest arise?</h2>
+<p>Interest is fundamentally linked to delayed payment of GST. It is different from late fee. A return may be filed late, tax may be paid late, or an earlier-period tax liability may be reported in a later return. These situations must not be mixed together.</p>
+<table><tr><th>Situation</th><th>What you should think about</th></tr>
+<tr><td>Current-period GSTR-3B filed late</td><td>Was tax payable in cash? How much cash liability remained unpaid after the due date?</td></tr>
+<tr><td>Earlier-period invoice reported now</td><td>Which earlier tax period did the liability actually belong to?</td></tr>
+<tr><td>RCM liability paid late</td><td>RCM is a cash-payment liability; analyse interest separately.</td></tr>
+<tr><td>Return late but cash was already in ECL</td><td>From January 2026, the portal's enhanced computation considers the minimum eligible cash balance in ECL during the relevant period.</td></tr>
+<tr><td>Return filed late</td><td>Late fee and interest are separate liabilities and use different bases.</td></tr></table>
+<div class="decision"><b>Office rule:</b> Never approve interest merely because an amount appears in Table 5.1. First understand <strong>which liability, which period, which cash balance and which delay</strong> produced that amount.</div>
+</section>
+
+<section id="change"><h2>2. What changed from the January 2026 tax period?</h2>
+<p>GSTN enhanced the interest computation in Table 5.1 of GSTR-3B from the January 2026 tax period. The important practical change is that the system provides the benefit of the <strong>minimum cash balance available in the Electronic Cash Ledger (ECL)</strong> from the due date of return filing until the date of tax payment/offset, in line with the proviso to Rule 88B(1).</p>
+<p>GSTN also enhanced the <strong>Tax Liability Breakup Table</strong>. Previous-period supplies reported through GSTR-1/GSTR-1A/IFF in the current period can feed the breakup used for interest computation.</p>
+<div class="good"><b>Why this matters:</b> If sufficient eligible cash was already lying in the Electronic Cash Ledger, the system should not mechanically calculate interest as though the entire cash liability remained economically unpaid for the whole delay period.</div>
+</section>
+
+<section id="formula"><h2>3. Revised interest formula — explained in plain language</h2>
+<div class="formula">Interest = (Net Tax Liability − Minimum Cash Balance in ECL) × Delay Days ÷ 365 × Applicable Interest Rate</div>
+<table><tr><th>Component</th><th>Meaning</th></tr>
+<tr><td>Net Tax Liability</td><td>The relevant liability to be discharged through cash after applicable credit utilisation for the computation.</td></tr>
+<tr><td>Minimum Cash Balance in ECL</td><td>The minimum eligible cash amount that remained available during the period from the due date to the date of debit/offset.</td></tr>
+<tr><td>Delay Days</td><td>The relevant number of days for which payment is delayed.</td></tr>
+<tr><td>Applicable Interest Rate</td><td>The statutory rate applicable to the liability. Do not hard-code a rate in your ERP without checking the provision applicable to the case.</td></tr></table>
+<div class="warn"><b>Do not confuse cash ledger with bank balance.</b> Money becomes relevant as Electronic Cash Ledger balance after successful GST challan payment is credited to the ledger. Your company's normal bank account balance does not count.</div>
+</section>
+
+<section id="minimum"><h2>4. What exactly does “minimum cash balance” mean?</h2>
+<p>This is the most important 2026 concept. The portal looks at the cash available during the relevant delay window. The benefit is based on the <strong>minimum</strong> balance, not simply the highest balance or the closing balance.</p>
+<div class="example"><h3>Simple timeline</h3>
+<p><b>Due date:</b> 20 February<br><b>ECL balance on 20 February:</b> ₹3,00,000<br><b>Balance falls to:</b> ₹2,00,000 on 24 February<br><b>Balance rises to:</b> ₹5,00,000 on 27 February<br><b>Tax offset:</b> 2 March</p>
+<p>The finance team should not simply use ₹5 lakh because that was the balance immediately before filing. The <strong>minimum relevant balance during the period</strong> must be examined.</p></div>
+<div class="note"><b>Major/minor head control:</b> Electronic Cash Ledger balances are maintained under IGST, CGST, SGST/UTGST and Cess with minor heads such as Tax, Interest, Penalty, Fee and Others. A balance under the wrong head should not be assumed to be freely usable for another liability.</div>
+</section>
+
+<section id="examples"><h2>5. Worked examples — calculate it yourself</h2>
+<div class="example"><h3>Example 1 — ₹10 lakh cash liability, ₹3 lakh minimum ECL</h3>
+<p>Net tax liability = ₹10,00,000<br>Minimum eligible ECL balance = ₹3,00,000<br>Interest-bearing amount = ₹7,00,000<br>Delay = 10 days<br>Assumed rate for illustration = 18% p.a.</p>
+<div class="formula">₹7,00,000 × 10 ÷ 365 × 18% = approximately ₹3,452</div>
+<p>If the ₹3 lakh qualifies for the cash-ledger benefit throughout the relevant window, interest is illustrated on ₹7 lakh rather than ₹10 lakh.</p></div>
+
+<div class="example"><h3>Example 2 — sufficient cash remained throughout</h3>
+<p>Cash liability = ₹4,00,000. Eligible ECL tax balance never falls below ₹4,00,000 between due date and offset date.</p>
+<p>Under the enhanced Rule 88B-based computation, the available minimum cash balance can eliminate the amount on which delayed-return interest would otherwise be computed, subject to the applicable statutory conditions and correct head.</p></div>
+
+<div class="example"><h3>Example 3 — cash balance fluctuates</h3>
+<p>Liability = ₹8,00,000. ECL is ₹6 lakh on due date, falls to ₹2 lakh during the delay and later rises to ₹8 lakh.</p>
+<p>The finance team should not use ₹6 lakh or ₹8 lakh merely because those balances existed on particular dates. The relevant <strong>minimum balance</strong> is the key portal parameter.</p></div>
+
+<div class="example"><h3>Example 4 — no cash in ECL until filing</h3>
+<p>Cash liability = ₹5,00,000. ECL tax balance = nil from due date until challan payment shortly before offset.</p>
+<p>There is effectively no minimum cash-balance benefit for the earlier portion merely because ₹5 lakh was deposited at the end.</p></div>
+</section>
+
+<section id="previous"><h2>6. Previous-period invoices reported in the current GSTR-3B</h2>
+<p>This needs separate attention. GSTN's Tax Liability Breakup Table captures supplies belonging to earlier tax periods but reported/discharged in the current return. The portal uses this breakup for interest computation.</p>
+<div class="example"><h3>Example</h3>
+<p>An invoice dated in April was missed and reported in GSTR-1/GSTR-1A later, with tax discharged in a subsequent GSTR-3B. The accounts team should not treat the tax as if it first arose in the later month merely because that is when it was reported. The tax-period breakup becomes important for interest.</p></div>
+<p>Before filing, reconcile:</p>
+<table><tr><th>Document date</th><th>Correct tax period</th><th>Reported in GSTR-1/1A</th><th>Tax paid in 3B</th><th>Interest review</th></tr>
+<tr><td>Invoice date</td><td>Month liability belongs to</td><td>Actual reporting period</td><td>Actual discharge period</td><td>Days / cash balance / portal breakup</td></tr></table>
+<div class="warn"><b>Common mistake:</b> Incorrectly accepting the portal's previous-period breakup without checking invoice dates can produce an incorrect interest result.</div>
+</section>
+
+<section id="rcm"><h2>7. Reverse Charge Mechanism (RCM) interest</h2>
+<p>RCM deserves a separate review because reverse-charge tax is discharged in cash. GSTN's GSTR-3B guidance states that interest for both reverse-charge and forward-charge related liabilities is declared in Table 5.1.</p>
+<p>For a delayed RCM liability, determine:</p>
+<div class="grid"><div class="card"><b>1. Correct liability period</b><br>When did the RCM tax become payable?</div><div class="card"><b>2. Actual cash discharge</b><br>When was it actually paid/offset?</div><div class="card"><b>3. Delay</b><br>What is the relevant interest period?</div><div class="card"><b>4. Portal breakup</b><br>Has the previous-period liability been correctly identified?</div></div>
+</section>
+
+<section id="portal"><h2>8. How to verify interest on the GST Portal</h2>
+<div class="step"><div class="num">1</div><div>Login and open the relevant <b>Return Dashboard</b>.</div></div>
+<div class="step"><div class="num">2</div><div>Select the financial year and return period.</div></div>
+<div class="step"><div class="num">3</div><div>Open <b>GSTR-3B → Prepare Online</b>.</div></div>
+<div class="step"><div class="num">4</div><div>Download <b>SYSTEM GENERATED GSTR-3B</b>. This PDF contains the system-computed details and interest information.</div></div>
+<div class="step"><div class="num">5</div><div>Open <b>Table 5.1 — Interest and Late Fee for Previous Tax Period</b>.</div></div>
+<div class="step"><div class="num">6</div><div>Compare portal interest with your internal interest working before confirmation.</div></div>
+<div class="note"><b>Important:</b> GSTN's user guide says system-generated values assist taxpayers, but the taxpayer remains responsible for ensuring the correctness of the return.</div>
+</section>
+
+<section id="recompute"><h2>9. RE-COMPUTE INTEREST — when and how to use it</h2>
+<p>GSTN provides a <strong>RE-COMPUTE INTEREST</strong> button in Table 5.1 when the taxpayer believes there is a discrepancy in system-computed interest.</p>
+<div class="step"><div class="num">1</div><div>Open Table 5.1.</div></div>
+<div class="step"><div class="num">2</div><div>Click <b>RE-COMPUTE INTEREST</b>.</div></div>
+<div class="step"><div class="num">3</div><div>The portal recomputes interest using the latest parameters. During recomputation, the GSTR-3B Save button may remain disabled.</div></div>
+<div class="step"><div class="num">4</div><div>After recomputation, download the updated <b>System Generated GSTR-3B PDF</b>.</div></div>
+<div class="step"><div class="num">5</div><div>Review the revised values and update/save Table 5.1 as required by the portal workflow.</div></div>
+<div class="good"><b>Useful portal point:</b> GSTN's current FAQ states that there is no limit on how many times the RE-COMPUTE INTEREST button can be used.</div>
+<div class="warn"><b>2026-specific reason this matters:</b> GSTN issued a separate advisory after identifying cases where the intended cash-balance benefit was not correctly reflected in system interest for affected periods. The recomputation facility was provided so taxpayers could refresh the calculation using updated parameters.</div>
+</section>
+
+<section id="difference"><h2>10. Portal interest vs your own calculation — what should accounts do?</h2>
+<table><tr><th>Result</th><th>Action</th></tr>
+<tr><td>Portal = internal working</td><td>Save working + system-generated PDF and proceed.</td></tr>
+<tr><td>Portal higher</td><td>Check ECL minimum balance, tax head, previous-period breakup and delay days; use recompute where appropriate.</td></tr>
+<tr><td>Portal lower</td><td>Do not blindly pay the lower number. Self-assess whether additional interest is legally payable.</td></tr>
+<tr><td>Portal breakup wrong</td><td>Review document dates and Tax Liability Breakup before filing.</td></tr>
+<tr><td>Recompute still differs</td><td>Preserve screenshots/PDF and calculation; obtain professional review for material amounts.</td></tr></table>
+<div class="decision"><b>Finance approval principle:</b> “Portal calculated it” should not be the final audit explanation. Keep the calculation logic and supporting ECL/tax-period data.</div>
+</section>
+
+<section id="situations"><h2>11. 20 practical situations</h2>
+<table><tr><th>#</th><th>Situation</th><th>Decision point</th></tr>
+<tr><td>1</td><td>3B filed late, tax payable in cash</td><td>Compute delay and ECL benefit.</td></tr>
+<tr><td>2</td><td>3B late, sufficient eligible cash already in ECL</td><td>Check minimum balance throughout relevant period.</td></tr>
+<tr><td>3</td><td>Cash deposited only one day before filing</td><td>Do not assume benefit existed from due date.</td></tr>
+<tr><td>4</td><td>ECL balance fluctuates</td><td>Use minimum relevant balance, not closing balance.</td></tr>
+<tr><td>5</td><td>Balance under wrong major/minor head</td><td>Check actual usability.</td></tr>
+<tr><td>6</td><td>Earlier invoice reported now</td><td>Verify tax-period breakup.</td></tr>
+<tr><td>7</td><td>Several earlier months included</td><td>Prepare month-wise liability working.</td></tr>
+<tr><td>8</td><td>RCM reported late</td><td>Calculate cash liability and interest separately.</td></tr>
+<tr><td>9</td><td>Portal interest looks excessive</td><td>Download PDF and recompute.</td></tr>
+<tr><td>10</td><td>Portal interest looks too low</td><td>Self-assess correct liability.</td></tr>
+<tr><td>11</td><td>February/March 2026 affected calculation</td><td>Use updated GSTN recomputation guidance.</td></tr>
+<tr><td>12</td><td>Recompute button used once</td><td>It can be used again if required.</td></tr>
+<tr><td>13</td><td>Negative liability exists</td><td>Check portal breakup rules; do not manually force a negative interest base.</td></tr>
+<tr><td>14</td><td>Return late but no tax liability</td><td>Separate late-fee issue from tax interest.</td></tr>
+<tr><td>15</td><td>ITC covers most output tax</td><td>Identify the actual cash liability.</td></tr>
+<tr><td>16</td><td>Interest and late fee mixed together</td><td>Separate calculation and statutory basis.</td></tr>
+<tr><td>17</td><td>Tax already paid through another mechanism</td><td>Reconcile before accepting duplicate liability.</td></tr>
+<tr><td>18</td><td>Tax Liability Breakup is incorrect</td><td>Correct/review before final filing where portal permits.</td></tr>
+<tr><td>19</td><td>System-generated PDF differs after recompute</td><td>Use the updated PDF for review.</td></tr>
+<tr><td>20</td><td>Material difference remains unresolved</td><td>Preserve evidence and obtain professional review before filing.</td></tr></table>
+</section>
+
+<section id="working"><h2>12. Ready-to-use GSTR-3B Interest Working Paper</h2>
+<table><tr><th>Field</th><th>What accounts should record</th></tr>
+<tr><td>GSTIN</td><td>Registration</td></tr><tr><td>Return period</td><td>Month/quarter</td></tr><tr><td>Due date</td><td>Statutory due date applicable</td></tr><tr><td>Offset/filing date</td><td>Actual date</td></tr><tr><td>Net cash liability</td><td>IGST / CGST / SGST / Cess</td></tr><tr><td>Minimum eligible ECL</td><td>Head-wise minimum during relevant period</td></tr><tr><td>Earlier-period liability</td><td>Period-wise breakup</td></tr><tr><td>Delay days</td><td>Calculated days</td></tr><tr><td>Applicable rate</td><td>Rate under relevant provision</td></tr><tr><td>Internal interest</td><td>Independent calculation</td></tr><tr><td>Portal interest</td><td>Table 5.1 / PDF</td></tr><tr><td>Difference</td><td>₹ and reason</td></tr><tr><td>Recompute used?</td><td>Yes/No + date</td></tr><tr><td>Reviewer</td><td>Name/approval</td></tr></table>
+</section>
+
+<section id="sop"><h2>13. Monthly office SOP before filing GSTR-3B</h2>
+<div class="step"><div class="num">1</div><div>Identify all previous-period invoices/debit notes reported in the current period.</div></div>
+<div class="step"><div class="num">2</div><div>Review the Tax Liability Breakup Table.</div></div>
+<div class="step"><div class="num">3</div><div>Download the Electronic Cash Ledger for the relevant delay period.</div></div>
+<div class="step"><div class="num">4</div><div>Determine the minimum eligible balance head-wise.</div></div>
+<div class="step"><div class="num">5</div><div>Independently calculate material interest liability.</div></div>
+<div class="step"><div class="num">6</div><div>Download System Generated GSTR-3B and compare Table 5.1.</div></div>
+<div class="step"><div class="num">7</div><div>If there is a discrepancy, review parameters and use RE-COMPUTE INTEREST where appropriate.</div></div>
+<div class="step"><div class="num">8</div><div>Save final PDF, internal calculation and reviewer approval in the monthly GST folder.</div></div>
+<div class="good"><b>Implementation target:</b> An auditor should be able to open one monthly folder and understand in five minutes why the interest paid in GSTR-3B was correct.</div>
+</section>
+
+<section id="faq"><h2>14. Frequently asked questions</h2>
+<h3>From when did the minimum cash-balance enhancement apply?</h3><p>GSTN announced it from the January 2026 tax period onward.</p>
+<h3>Does money in my bank account reduce GST interest?</h3><p>No. The relevant concept is eligible balance in the Electronic Cash Ledger, not the company's ordinary bank account.</p>
+<h3>Should I use the closing ECL balance?</h3><p>Not automatically. The enhanced computation is based on the minimum relevant balance during the prescribed period.</p>
+<h3>What if the portal interest is wrong?</h3><p>Review the system-generated PDF, tax-liability breakup and cash ledger, then use RE-COMPUTE INTEREST where appropriate.</p>
+<h3>Can RE-COMPUTE INTEREST be clicked more than once?</h3><p>Yes. GSTN's current FAQ says there is no limit on the number of recomputations.</p>
+<h3>Does portal calculation remove my responsibility?</h3><p>No. GSTN states that system-generated information is assistance; taxpayers remain responsible for correct reporting and self-assessment.</p>
+<h3>Are interest and late fee the same?</h3><p>No. Interest relates to delayed tax payment/liability; late fee relates to delayed return filing and is separately computed.</p>
+<h3>Does RCM also need interest review?</h3><p>Yes. GSTN's GSTR-3B guidance includes interest for reverse-charge as well as forward-charge related liabilities in Table 5.1.</p>
+<h3>Why is the Tax Liability Breakup important?</h3><p>It identifies liabilities relating to earlier periods and is used by the system for interest computation.</p>
+<h3>What should I retain for audit?</h3><p>System-generated GSTR-3B PDF, ECL extract, tax-liability breakup, independent interest working and reviewer approval.</p>
+</section>
+
+<section id="related"><h2>15. Continue Your GST Learning</h2>
+<div class="grid">
+<div class="card"><h3>GSTR-3B Complete Guide</h3><p>Understand the return structure, ITC, liability and filing process.</p><a href="GSTR_3B_Complete_Practical_Guide.html">Read the guide →</a></div>
+<div class="card"><h3>DRC-01C ITC Mismatch</h3><p>What to do when GSTR-2B and GSTR-3B create an ITC mismatch.</p><a href="GST_DRC_01C_ITC_Mismatch_What_to_Do_Practical_Guide.html">Read the guide →</a></div>
+<div class="card"><h3>Rule 37A</h3><p>Supplier GSTR-3B default, reversal and re-availment.</p><a href="Rule_37A_GST_ITC_Reversal_Reavailment_Complete_Practical_Guide.html">Read the guide →</a></div>
+<div class="card"><h3>180-Day ITC Rule</h3><p>Payment to supplier, reversal and re-availment controls.</p><a href="180_Days_Payment_Rule_ITC_Complete_Explanation.html">Read the guide →</a></div>
+</div>
+<h2>Final takeaway — do not treat Table 5.1 as a black box</h2>
+<p>The 2026 enhancement makes Electronic Cash Ledger history and the Tax Liability Breakup much more important to the accounts team. The correct professional process is:</p>
+<div class="formula">Identify liability → identify correct period → check ECL minimum balance → calculate independently → compare portal → recompute if required → save evidence → file</div>
+<div class="good"><b>Practical next step:</b> Add a “GSTR-3B Interest Review” tab to your monthly GST working. This turns interest from a portal surprise into a controlled monthly calculation.</div>
+<p class="small"><b>Official source basis:</b> GSTN Advisory on Interest Collection and Related Enhancements in GSTR-3B; GSTN Advisory on Re-Computation of Interest under Table 5.1; current GST Portal GSTR-3B User Guide/FAQ; and GST Portal Electronic Cash Ledger guidance. The statutory provision and rules should prevail if portal guidance and law differ.</p>
+<p class="small"><b>Disclaimer:</b> This article is for educational and practical GST/accounting guidance and is not legal advice. Rates, due dates and statutory treatment should be verified for the taxpayer and tax period concerned.</p>
+</section>
+</div></main>
+
+<footer class="footer"><div class="wrap">
+<h2>GSTReconciliation.in</h2>
+<p>Practical GST, ITC, reconciliation, compliance and accounting resources for finance professionals.</p>
+<div style="border-top:1px solid #ffffff28;margin-top:22px;padding-top:18px">
+<a href="https://gstreconciliation.in/">Home</a> &nbsp; • &nbsp;
+<a href="https://gstreconciliation.in/articles.html">GST Articles</a> &nbsp; • &nbsp;
+<a href="https://gstreconciliation.in/reconciliation.html">GST Reconciliation Tool</a> &nbsp; • &nbsp;
+<a href="https://gstreconciliation.in/compliance.html">GST Compliance</a>
+</div>
+<p><b>Contact</b><br><a href="mailto:uday@gstreconciliation.in">uday@gstreconciliation.in</a> &nbsp; | &nbsp; +91 90521 60079</p>
+<p class="small" style="color:#c8d6e4">© GSTReconciliation.in — Practical GST knowledge and tools.</p>
+</div></footer>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Article","headline":"GSTR-3B Interest Calculation 2026 — Cash Ledger Benefit, Formula & Re-Compute Interest","description":"Practical guide to GSTR-3B interest calculation from January 2026, minimum Electronic Cash Ledger benefit, Rule 88B formula and portal recomputation.","mainEntityOfPage":{"@type":"WebPage","@id":"https://gstreconciliation.in/articles/GSTR3B_Interest_Calculation_Cash_Ledger_Recompute_Practical_Guide_2026.html"},"author":{"@type":"Person","name":"Uday Kumar"},"publisher":{"@type":"Organization","name":"GSTReconciliation.in","url":"https://gstreconciliation.in/"}}
+</script>
+</body></html>
