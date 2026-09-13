@@ -463,6 +463,133 @@ function gstAnalytics(eventName, params){ try{ if(window.GST_GA4_ID && typeof gt
 }
 </script>
 
+<style>
+
+/* =========================================================
+   Final page-width / upload-card alignment refinement
+   Inspired by the GST Compliance Centre proportions.
+   Functionality and footer are unchanged.
+   ========================================================= */
+
+/* Use a centered content width similar to the Compliance Centre. */
+#tool > .wrap{
+  width:min(1200px,calc(100% - 40px)) !important;
+  max-width:1200px !important;
+  box-sizing:border-box !important;
+}
+
+/* Keep the upload area comfortably inside the centered card. */
+#tool .upload-grid{
+  grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+  gap:18px !important;
+  padding:16px !important;
+  box-sizing:border-box !important;
+}
+
+/* Cards must never force the parent wider than the page. */
+#tool .upload-card{
+  min-width:0 !important;
+  width:100% !important;
+  box-sizing:border-box !important;
+  overflow:hidden !important;
+}
+
+/* IMPORTANT:
+   Each upload card gets its own clean label | control layout.
+   This prevents the detected-column controls from spilling
+   outside the Purchase Register / GSTR-2B cards. */
+#tool .mapping-grid{
+  display:grid !important;
+  grid-template-columns:minmax(135px,0.9fr) minmax(0,1.1fr) !important;
+  column-gap:12px !important;
+  row-gap:8px !important;
+  width:100% !important;
+  max-width:100% !important;
+  box-sizing:border-box !important;
+  align-items:center !important;
+}
+
+#tool .mapping-grid .mapping-row{
+  display:contents !important;
+}
+
+#tool .mapping-grid .mapping-row label{
+  min-width:0 !important;
+  width:auto !important;
+  margin:0 !important;
+  padding:4px 0 !important;
+  white-space:normal !important;
+  overflow-wrap:anywhere !important;
+  box-sizing:border-box !important;
+  font-size:10.5px !important;
+  line-height:1.3 !important;
+}
+
+#tool .mapping-grid .mapping-row select{
+  min-width:0 !important;
+  width:100% !important;
+  max-width:100% !important;
+  height:34px !important;
+  box-sizing:border-box !important;
+  padding:5px 27px 5px 9px !important;
+  overflow:hidden !important;
+  text-overflow:ellipsis !important;
+}
+
+/* Let long detected-column headings wrap instead of pushing width. */
+#tool .mapping-head{
+  min-width:0 !important;
+  flex-wrap:wrap !important;
+}
+
+#tool .mapping-head > *{
+  min-width:0 !important;
+}
+
+#tool .mapping-head .muted{
+  flex:1 1 260px !important;
+}
+
+/* Avoid horizontal overflow anywhere in the tool area. */
+#tool,
+#tool .card,
+#tool .section-head,
+#tool .upload-grid,
+#tool .upload-card,
+#tool .mapping{
+  max-width:100% !important;
+  box-sizing:border-box !important;
+}
+
+#tool input,
+#tool select,
+#tool button{
+  max-width:100%;
+  box-sizing:border-box;
+}
+
+@media(max-width:900px){
+  #tool > .wrap{
+    width:calc(100% - 28px) !important;
+  }
+
+  #tool .upload-grid{
+    grid-template-columns:1fr !important;
+  }
+}
+
+@media(max-width:620px){
+  #tool > .wrap{
+    width:calc(100% - 20px) !important;
+  }
+
+  #tool .mapping-grid{
+    grid-template-columns:minmax(112px,0.9fr) minmax(0,1.1fr) !important;
+    column-gap:9px !important;
+  }
+}
+
+</style>
 </head>
 <body style='box-sizing: border-box; margin: 0; background: linear-gradient(180deg,#f8fbff 0,#f3f8fd 100%); color: #183858; font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size: 14px; line-height: 1.55; margin:0; background:#f5f9fd; color:#183858; font-family:Inter,Segoe UI,Arial,sans-serif;'>
 <header class="topbar" style="box-sizing:border-box;height:78px;background:rgba(255,255,255,.98);border-bottom:1px solid #d9e5f0;display:flex;align-items:center;position:sticky;top:0;z-index:50;box-shadow:0 3px 18px rgba(18,58,104,.07);backdrop-filter:blur(10px)"><div class="topbar-inner" style="box-sizing:border-box;width:min(1180px,calc(100% - 34px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:22px">
