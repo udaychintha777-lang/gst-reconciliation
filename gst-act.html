@@ -1,6 +1,418 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/styles.css"><title>GST Act Section Wise Guide | CGST Act Explained</title><meta name="description" content="Read the CGST Act section by section in simple language with practical explanations and examples.">
-<!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NBKTXWJ20G');</script>
-</head><body><nav class="nav"><div class="wrap navin"><a class="brand" href="/"><div class="logo">GST</div><div><strong>GST Reconciliation</strong><small>KNOWLEDGE • TOOLS • SOLUTIONS</small></div></a><div class="links"><a href="/">Home</a><a href="/reconciliation.html">Reconciliation</a><a href="/articles.html">GST Knowledge</a><a href="/questions.html">Questions & Answers</a><a href="/gst-act.html">GST Act (Sections)</a><a href="/#tools">GST Tools</a><a href="/#ask">Ask GST AI</a><a href="/#contact">Contact</a></div></div></nav>
-<section class="section"><div class="wrap"><h1>GST Act — Section Wise Guide</h1><p class="muted">Explore all 174 CGST Act sections with simple explanations. Historical/omitted provisions are labelled where relevant.</p><div class="notice"><strong>Important:</strong> The section guide is an educational explanation. Verify the wording, amendments, rules and notifications applicable to the relevant tax period before acting.</div><div class="panel"><div class="searchbar"><input id="sectionSearch" placeholder="Search section number or topic…" oninput="filterSections()"></div><div id="sectionResults" class="section-list" style="margin-top:18px"></div></div></div></section><footer class="footer"><div class="wrap"><strong>GST Reconciliation</strong><p class="small">Free GST knowledge, practical tools and learning resources.</p><p class="small">Knowledge purpose only. Verify the law, rules, notifications and circulars applicable to the relevant tax period before taking any action.</p></div></footer><script src="/app.js"></script><script>function filterSections(){const q=document.getElementById("sectionSearch").value.toLowerCase();document.querySelectorAll("#sectionResults .section-card").forEach(x=>x.style.display=x.textContent.toLowerCase().includes(q)?"block":"none")}loadData().then(renderSections)</script></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GST Legal Library | CGST Act, Rules, Notifications & Circulars</title>
+<meta name="description" content="GST Legal Library with section-wise CGST Act provisions, GST Rules, Schedules, Notifications, Circulars and Orders.">
+<link rel="stylesheet" href="/styles.css">
+<style>
+/* =========================================================
+   GST LEGAL LIBRARY — V3
+   Uses the same visual language as the GST Reconciliation page.
+   ========================================================= */
+:root{
+ --ll-navy:#06254d;--ll-navy2:#0b376f;--ll-blue:#1769e0;--ll-blue2:#2584f5;
+ --ll-green:#12a36b;--ll-text:#183252;--ll-muted:#64758d;--ll-line:#dce6f1;
+ --ll-bg:#f5f8fc;--ll-card:#fff;--ll-shadow:0 10px 30px rgba(12,43,80,.08);
+}
+*{box-sizing:border-box}
+body.legal-library-page{margin:0;background:var(--ll-bg);color:var(--ll-text);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.legal-library-page a{text-decoration:none}
+.ll-wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
+
+/* Header */
+.ll-nav{background:linear-gradient(180deg,#061d3b,#082b55);color:#fff;position:relative;z-index:20}
+.ll-nav-inner{height:66px;display:flex;align-items:center;gap:28px}
+.ll-brand{display:flex;align-items:center;gap:10px;color:#fff;min-width:max-content}
+.ll-logo{width:38px;height:38px;border-radius:9px;background:linear-gradient(145deg,#2b8df7,#1262d2);display:grid;place-items:center;font-weight:950;box-shadow:0 6px 18px rgba(0,0,0,.2)}
+.ll-brand-main{font-size:15px;font-weight:850;line-height:1.1}
+.ll-brand-sub{font-size:8px;letter-spacing:.13em;opacity:.72;margin-top:3px}
+.ll-nav-links{display:flex;align-items:center;gap:22px;margin-left:auto}
+.ll-nav-links a{color:#e8f1fb;font-size:11px;font-weight:700;white-space:nowrap;padding:23px 0 20px;border-bottom:3px solid transparent}
+.ll-nav-links a:hover,.ll-nav-links a.active{color:#fff;border-bottom-color:#2c8df5}
+.ll-search-icon{font-size:18px;color:#eaf3ff;margin-left:2px}
+
+/* Hero */
+.ll-hero{position:relative;overflow:hidden;background:linear-gradient(135deg,#edf7ff 0%,#f9fcff 58%,#eaf4ff 100%);border-bottom:1px solid #dce7f3}
+.ll-hero:before{content:"";position:absolute;width:430px;height:430px;border-radius:50%;right:-120px;top:-235px;background:rgba(45,132,238,.09)}
+.ll-hero:after{content:"";position:absolute;width:300px;height:300px;border-radius:50%;left:-185px;bottom:-225px;background:rgba(18,163,107,.06)}
+.ll-hero-inner{position:relative;z-index:1;padding:46px 0 34px}
+.ll-eyebrow{font-size:11px;font-weight:900;letter-spacing:.1em;color:#1769e0;text-transform:uppercase}
+.ll-hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:38px;align-items:center}
+.ll-hero h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(43px,5.2vw,65px);line-height:.98;letter-spacing:-.045em;color:#153a67;margin:8px 0 14px}
+.ll-hero-copy{font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:1.48;color:#435a75;max-width:740px;margin:0}
+.ll-law-illustration{position:relative;height:225px;display:flex;align-items:center;justify-content:center}
+.ll-books{display:flex;flex-direction:column;gap:7px;transform:rotate(-1deg)}
+.ll-book{height:38px;width:215px;border-radius:8px 12px 12px 8px;color:#fff;font-weight:900;font-size:13px;display:flex;align-items:center;padding-left:17px;box-shadow:0 6px 13px rgba(0,0,0,.13)}
+.ll-book:nth-child(1){background:#123f74}.ll-book:nth-child(2){background:#0ca36b;margin-left:-12px}.ll-book:nth-child(3){background:#164b82;margin-left:-22px}.ll-book:nth-child(4){background:#0d9865;margin-left:-30px}
+.ll-scale{font-size:68px;line-height:1;margin-left:-15px;filter:drop-shadow(0 5px 5px rgba(0,0,0,.1));color:#d99c2d}
+.ll-scale-label{position:absolute;right:0;top:7px;color:#6a8eb7;font-weight:900;font-size:12px;line-height:1.2;text-align:center;letter-spacing:.04em}
+
+/* Stats */
+.ll-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:11px;margin-top:27px}
+.ll-stat{min-height:78px;border:1px solid #d7e6f7;background:rgba(255,255,255,.72);border-radius:14px;padding:12px 14px;display:flex;align-items:center;gap:11px}
+.ll-stat-icon{font-size:22px;color:#1769e0;width:29px;text-align:center}
+.ll-stat strong{display:block;color:#155fc7;font-size:24px;line-height:1}
+.ll-stat span{display:block;color:#46617e;font-size:10px;font-weight:800;margin-top:5px}
+.ll-stat small{display:block;color:#8a98aa;font-size:9px;margin-top:2px}
+
+/* Search */
+.ll-search-panel{margin-top:19px;background:linear-gradient(135deg,#06275a,#0e4b8d);padding:14px;border-radius:17px;box-shadow:0 15px 30px rgba(8,42,88,.2)}
+.ll-search-row{display:flex;gap:8px;background:#fff;border-radius:11px;padding:5px}
+.ll-search-row input{flex:1;min-width:0;border:0;outline:0;padding:11px 13px;font-size:14px;color:#233c5d}
+.ll-search-row button{border:0;border-radius:9px;background:#1b78ed;color:#fff;font-weight:850;padding:0 22px;cursor:pointer}
+.ll-popular{display:flex;align-items:center;gap:7px;flex-wrap:wrap;padding:9px 2px 0;color:#e7f2ff;font-size:10px}
+.ll-chip{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.1);border-radius:999px;color:#fff;padding:5px 9px;cursor:pointer;font-size:10px}
+
+/* Main */
+.ll-main{padding:32px 0 46px}
+.ll-heading{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:14px}
+.ll-heading h2{font-family:Georgia,"Times New Roman",serif;margin:0;font-size:27px;color:#17365f}
+.ll-heading p{margin:4px 0 0;color:#6a7b91;font-size:12px}
+.ll-heading .count{background:#fff;border:1px solid var(--ll-line);border-radius:10px;padding:8px 11px;color:#4d6684;font-size:11px;font-weight:800}
+
+/* Categories */
+.ll-category-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:10px;margin-bottom:28px}
+.ll-category{background:#fff;border:1px solid var(--ll-line);border-radius:15px;padding:15px 13px;min-height:148px;box-shadow:0 5px 18px rgba(12,43,80,.04);display:flex;flex-direction:column;transition:.16s ease}
+.ll-category.active{border-color:#4a9bf5;box-shadow:0 9px 25px rgba(23,105,224,.12);background:linear-gradient(180deg,#f9fcff,#fff)}
+.ll-category.disabled{opacity:.72}
+.ll-category:hover:not(.disabled){transform:translateY(-2px)}
+.ll-cat-icon{font-size:25px;margin-bottom:10px;color:#1769e0}
+.ll-category strong{font-size:13px;color:#19395e}
+.ll-category p{font-size:10px;color:#718198;line-height:1.35;margin:4px 0 0}
+.ll-category .cat-bottom{margin-top:auto;display:flex;align-items:end;justify-content:space-between;gap:5px}
+.ll-category .cat-count{color:#1769e0;font-size:20px;font-weight:900}
+.ll-category .cat-label{font-size:9px;color:#7b8da4;margin-bottom:2px}
+.ll-category .cat-button{border-radius:8px;background:#e9f2fd;color:#42617f;padding:7px 8px;font-size:9px;font-weight:900}
+.ll-category.active .cat-button{background:#1c78ed;color:#fff}
+
+/* Workspace */
+.ll-workspace{display:grid;grid-template-columns:255px minmax(0,1fr);gap:17px;align-items:start}
+.ll-sidebar{background:#fff;border:1px solid var(--ll-line);border-radius:15px;box-shadow:var(--ll-shadow);overflow:hidden;position:sticky;top:82px}
+.ll-side-head{padding:16px 15px 12px;border-bottom:1px solid #e8eef5}
+.ll-side-head strong{font-family:Georgia,"Times New Roman",serif;font-size:15px;color:#18395f}
+.ll-side-head small{display:block;color:#7b8ca1;font-size:10px;margin-top:3px}
+.ll-chapters{padding:7px;max-height:600px;overflow:auto}
+.ll-chapter{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;border:0;background:transparent;border-radius:9px;text-align:left;padding:8px 9px;color:#3f5875;font-size:10px;font-weight:750;cursor:pointer}
+.ll-chapter:hover{background:#f2f7fd;color:#1769e0}
+.ll-chapter.active{background:#e5f1ff;color:#135abf}
+.ll-chapter span:last-child{font-weight:900;color:#8a9aae}
+.ll-clear{border:0;background:none;color:#1769e0;font-size:10px;font-weight:900;padding:10px 15px 14px;cursor:pointer}
+
+/* Section list */
+.ll-results-head{display:flex;align-items:end;justify-content:space-between;gap:10px;margin-bottom:10px}
+.ll-results-head h2{font-family:Georgia,"Times New Roman",serif;font-size:25px;color:#17365f;margin:0}
+.ll-results-head p{font-size:11px;color:#708198;margin:4px 0 0}
+.ll-result-count{background:#fff;border:1px solid var(--ll-line);padding:8px 10px;border-radius:9px;font-size:10px;font-weight:850;color:#5b708a}
+.ll-chapter-block{margin-bottom:18px}
+.ll-chapter-title{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#eaf4ff;border:1px solid #d7e7f9;border-radius:11px 11px 8px 8px;padding:10px 13px;color:#24496f}
+.ll-chapter-title strong{font-family:Georgia,"Times New Roman",serif;font-size:14px}
+.ll-chapter-title span{font-size:9px;font-weight:900;color:#66809d}
+.ll-section-list{background:#fff;border:1px solid var(--ll-line);border-top:0;border-radius:0 0 11px 11px;overflow:hidden}
+.ll-section-row{display:grid;grid-template-columns:92px minmax(0,1fr) 70px 94px;gap:10px;align-items:center;padding:11px 12px;border-top:1px solid #edf1f5;color:#203b5d}
+.ll-section-row:first-child{border-top:0}
+.ll-section-row:hover{background:#f8fbff}
+.ll-sec-no{font-size:10px;font-weight:950;color:#155fc7}
+.ll-sec-title{font-size:11px;font-weight:700;line-height:1.35}
+.ll-status{justify-self:start;border-radius:999px;background:#e8faf2;color:#148051;padding:4px 7px;font-size:8px;font-weight:950;text-transform:uppercase}
+.ll-status.history{background:#fff5d9;color:#86631c}
+.ll-read{color:#1769e0;font-size:9px;font-weight:900;text-align:right}
+.ll-empty{background:#fff;border:1px dashed #cbd8e7;border-radius:13px;padding:32px;text-align:center;color:#718097;font-size:12px}
+.ll-empty strong{display:block;color:#304a69;margin-bottom:4px}
+
+/* Feature strip */
+.ll-features{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:22px;background:#fff;border:1px solid var(--ll-line);border-radius:15px;overflow:hidden}
+.ll-feature{display:flex;gap:10px;padding:17px 15px;border-right:1px solid #e7edf4}
+.ll-feature:last-child{border-right:0}
+.ll-feature-icon{width:35px;height:35px;border-radius:50%;background:#e9f3ff;display:grid;place-items:center;color:#1769e0;flex:0 0 auto}
+.ll-feature strong{display:block;font-size:11px;color:#23415f}
+.ll-feature p{font-size:9px;color:#74859a;line-height:1.35;margin:3px 0 0}
+
+/* Info / notice */
+.ll-info-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:12px;margin-top:17px}
+.ll-info-card{background:#fff;border:1px solid var(--ll-line);border-radius:14px;padding:16px}
+.ll-info-card h3{font-family:Georgia,"Times New Roman",serif;color:#1d3e64;margin:0 0 5px;font-size:16px}
+.ll-info-card p,.ll-info-card li{font-size:10px;line-height:1.55;color:#6b7d92}
+.ll-info-card ul{margin:7px 0 0;padding-left:17px}
+.ll-notice{margin-top:13px;border:1px solid #f0d18d;background:#fff9e9;border-radius:11px;padding:12px 14px;color:#66511f;font-size:9px;line-height:1.55}
+
+/* Footer — aligned to reconciliation page content structure */
+.ll-footer{background:linear-gradient(180deg,#061f3f,#051a34);color:#fff;margin-top:0}
+.ll-footer-main{display:grid;grid-template-columns:1.45fr .8fr .9fr .8fr;gap:38px;padding:38px 0 30px}
+.ll-footer-brand{display:flex;gap:11px;align-items:center}
+.ll-footer-logo{width:40px;height:40px;border-radius:9px;background:#1577e8;display:grid;place-items:center;font-weight:950}
+.ll-footer-brand strong{font-size:16px}
+.ll-footer-brand span{display:block;font-size:8px;letter-spacing:.13em;opacity:.7;margin-top:2px}
+.ll-footer-description{font-size:10px;line-height:1.55;color:#b8c9dd;max-width:360px;margin:13px 0 15px}
+.ll-social{display:flex;gap:8px}
+.ll-social a{width:30px;height:30px;border-radius:50%;background:#173d66;color:#fff;display:grid;place-items:center;font-size:10px;font-weight:900}
+.ll-footer h4{font-size:10px;text-transform:none;margin:0 0 12px;color:#fff}
+.ll-footer-links{display:flex;flex-direction:column;gap:7px}
+.ll-footer-links a{font-size:10px;color:#b9c9db}
+.ll-footer-links a:hover{color:#fff}
+.ll-footer-tag{border-left:1px solid rgba(255,255,255,.18);padding-left:25px;color:#54a4f8;font-family:Georgia,"Times New Roman",serif;font-size:16px;line-height:1.15}
+.ll-footer-tag:after{content:"";display:block;width:28px;height:2px;background:#1e82ee;margin-top:13px}
+.ll-footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding:12px 0;display:flex;justify-content:space-between;gap:15px;align-items:center;color:#9fb2c9;font-size:9px}
+.ll-footer-bottom a{color:#b9c9db}
+
+/* Responsive */
+@media(max-width:1050px){
+ .ll-hero-grid{grid-template-columns:1fr}.ll-law-illustration{display:none}
+ .ll-category-grid{grid-template-columns:repeat(3,1fr)}
+ .ll-workspace{grid-template-columns:220px minmax(0,1fr)}
+ .ll-footer-main{grid-template-columns:1.3fr 1fr 1fr}
+ .ll-footer-tag{display:none}
+}
+@media(max-width:820px){
+ .ll-nav-links{display:none}.ll-nav-inner{justify-content:space-between}
+ .ll-stats{grid-template-columns:repeat(2,1fr)}
+ .ll-workspace{grid-template-columns:1fr}.ll-sidebar{position:static}
+ .ll-chapters{display:grid;grid-template-columns:1fr 1fr;max-height:310px}
+ .ll-section-row{grid-template-columns:80px minmax(0,1fr) 60px 75px}
+ .ll-features{grid-template-columns:1fr 1fr}.ll-feature:nth-child(2){border-right:0}.ll-feature:nth-child(-n+2){border-bottom:1px solid #e7edf4}
+ .ll-footer-main{grid-template-columns:1fr 1fr}
+}
+@media(max-width:600px){
+ .ll-wrap{width:min(100% - 24px,1180px)}
+ .ll-hero-inner{padding:32px 0 25px}.ll-hero h1{font-size:42px}
+ .ll-stats{grid-template-columns:1fr 1fr}.ll-stat{min-height:70px}
+ .ll-category-grid{grid-template-columns:1fr 1fr}
+ .ll-search-row button{padding:0 14px}
+ .ll-popular span:first-child{display:none}
+ .ll-section-row{grid-template-columns:70px minmax(0,1fr)}.ll-status,.ll-read{display:none}
+ .ll-features{grid-template-columns:1fr}.ll-feature{border-right:0!important;border-bottom:1px solid #e7edf4}.ll-feature:last-child{border-bottom:0}
+ .ll-info-grid{grid-template-columns:1fr}
+ .ll-footer-main{grid-template-columns:1fr;gap:24px;padding:30px 0 22px}
+ .ll-footer-bottom{flex-direction:column;align-items:flex-start}
+}
+</style>
+</head>
+
+<body class="legal-library-page">
+
+<!-- NAVIGATION: intentionally follows the GST Reconciliation page structure -->
+<header class="ll-nav">
+<div class="ll-wrap ll-nav-inner">
+<a class="ll-brand" href="/">
+<div class="ll-logo">GST</div>
+<div><div class="ll-brand-main">GST Reconciliation</div><div class="ll-brand-sub">SIMPLE • ACCURATE • COMPLIANT</div></div>
+</a>
+<nav class="ll-nav-links">
+<a href="/">Home</a>
+<a href="/reconciliation.html">Reconciliation⌄</a>
+<a href="/articles.html">GST Knowledge⌄</a>
+<a href="/questions.html">Questions & Answers</a>
+<a href="/gst-act.html" class="active">GST Legal Library</a>
+<a href="/#tools">GST Tools</a>
+<a href="/#ask">Ask GST AI</a>
+<a href="/#contact">Contact</a>
+<span class="ll-search-icon">⌕</span>
+</nav>
+</div>
+</header>
+
+<section class="ll-hero">
+<div class="ll-wrap ll-hero-inner">
+<div class="ll-eyebrow">▦ Comprehensive • Updated • Practical</div>
+<div class="ll-hero-grid">
+<div>
+<h1>GST Legal Library</h1>
+<p class="ll-hero-copy">A searchable, easy-to-understand reference to GST law — from the CGST Act to Rules, Schedules, Notifications, Circulars and Orders. Designed for professionals, businesses and students.</p>
+</div>
+<div class="ll-law-illustration" aria-hidden="true">
+<div class="ll-books">
+<div class="ll-book">CGST ACT</div>
+<div class="ll-book">GST RULES</div>
+<div class="ll-book">NOTIFICATIONS</div>
+<div class="ll-book">CIRCULARS</div>
+</div>
+<div class="ll-scale">⚖</div>
+<div class="ll-scale-label">LAW<br>MADE<br>SIMPLE</div>
+</div>
+</div>
+
+<div class="ll-stats">
+<div class="ll-stat"><div class="ll-stat-icon">▤</div><div><strong id="statAct">174</strong><span>CGST Act Sections</span></div></div>
+<div class="ll-stat"><div class="ll-stat-icon">▧</div><div><strong id="statRules">0</strong><span>GST Rules</span><small>(Coming Soon)</small></div></div>
+<div class="ll-stat"><div class="ll-stat-icon">▤</div><div><strong id="statNotifications">0</strong><span>Notifications</span><small>(Coming Soon)</small></div></div>
+<div class="ll-stat"><div class="ll-stat-icon">◌</div><div><strong id="statCirculars">0</strong><span>Circulars</span><small>(Coming Soon)</small></div></div>
+</div>
+
+<div class="ll-search-panel">
+<div class="ll-search-row">
+<input id="legalSearch" type="search" placeholder="Search section number, title, chapter, rule, notification, circular…" autocomplete="off">
+<button id="searchButton" type="button">Search</button>
+</div>
+<div class="ll-popular">
+<span>Popular searches:</span>
+<button class="ll-chip" data-q="Section 16">Section 16</button>
+<button class="ll-chip" data-q="Section 54">Section 54</button>
+<button class="ll-chip" data-q="input tax credit">Input tax credit</button>
+<button class="ll-chip" data-q="registration">Registration</button>
+<button class="ll-chip" data-q="refund">Refund</button>
+<button class="ll-chip" data-q="assessment">Assessment</button>
+<button class="ll-chip" data-q="e-invoice">E-invoice</button>
+<button class="ll-chip" data-q="composition">Composition</button>
+</div>
+</div>
+</div>
+</section>
+
+<main class="ll-main">
+<div class="ll-wrap">
+
+<div class="ll-heading">
+<div><h2>Explore GST Law</h2><p>Browse the available legal resources. New categories can be added without changing this page.</p></div>
+</div>
+
+<div class="ll-category-grid" id="categoryGrid"></div>
+
+<section class="ll-workspace">
+<aside class="ll-sidebar">
+<div class="ll-side-head"><strong>CGST Act Chapters</strong><small>Browse chapter by chapter</small></div>
+<div class="ll-chapters" id="chapterList"></div>
+<button class="ll-clear" id="clearChapter">All Chapters →</button>
+</aside>
+
+<div>
+<div class="ll-results-head">
+<div><h2 id="resultsTitle">CGST Act — Section Wise Guide</h2><p id="resultsSubtitle">All available sections, grouped by chapter. Click any section to read the detailed explanation.</p></div>
+<div class="ll-result-count" id="resultCount">174 sections</div>
+</div>
+<div id="legalResults"></div>
+
+<div class="ll-features">
+<div class="ll-feature"><div class="ll-feature-icon">💡</div><div><strong>Easy to Understand</strong><p>Simplified explanations for practical use.</p></div></div>
+<div class="ll-feature"><div class="ll-feature-icon">◈</div><div><strong>Quick Navigation</strong><p>Browse by chapter or search directly.</p></div></div>
+<div class="ll-feature"><div class="ll-feature-icon">↻</div><div><strong>Always Updated</strong><p>Content can be updated as GST law changes.</p></div></div>
+<div class="ll-feature"><div class="ll-feature-icon">♟</div><div><strong>Built for Professionals</strong><p>Useful for CAs, tax teams, businesses and students.</p></div></div>
+</div>
+
+<div class="ll-info-grid">
+<div class="ll-info-card"><h3>How to use this guide</h3><p>Search for a section or topic, choose a chapter, and open the relevant section page for the detailed bare-act-based explanation, practical interpretation and related provisions.</p><ul><li>Use the search box for a section number or subject.</li><li>Use the chapter list to browse the Act systematically.</li><li>Open the individual section page for the full explanation.</li></ul></div>
+<div class="ll-info-card"><h3>GST Legal Resources</h3><p>This library is being expanded to include Rules, Schedules, Notifications, Circulars and Orders in the same searchable framework.</p></div>
+</div>
+
+<div class="ll-notice"><strong>Important:</strong> This website is for educational and workflow support. GST provisions may be amended or applied differently depending on the relevant tax period and facts. Verify the applicable Act, Rules, Notifications, Circulars and other official material before relying on any provision for compliance or decision-making.</div>
+</div>
+</section>
+</div>
+</main>
+
+<!-- FOOTER: designed to match the live reconciliation page footer structure -->
+<footer class="ll-footer">
+<div class="ll-wrap ll-footer-main">
+<div>
+<div class="ll-footer-brand"><div class="ll-footer-logo">GST</div><div><strong>GST Reconciliation</strong><span>SIMPLE • ACCURATE • COMPLIANT</span></div></div>
+<p class="ll-footer-description">Practical GST tools, guides and resources for businesses and professionals. Save time. Stay compliant.</p>
+<div class="ll-social"><a href="#" aria-label="LinkedIn">in</a><a href="#" aria-label="YouTube">▶</a><a href="mailto:uday@gstreconciliation.in" aria-label="Email">✉</a></div>
+</div>
+
+<div><h4>Quick Links</h4><div class="ll-footer-links">
+<a href="/">Home</a><a href="/reconciliation.html">Reconciliation Tool</a><a href="/articles.html">GST Knowledge</a><a href="/questions.html">Questions & Answers</a><a href="/gst-act.html">GST Legal Library</a><a href="/#tools">GST Tools</a><a href="/#ask">Ask GST AI</a><a href="/#contact">Contact</a>
+</div></div>
+
+<div><h4>Popular Resources</h4><div class="ll-footer-links">
+<a href="/reconciliation.html">GSTR-2B Reconciliation</a><a href="/articles.html">ITC Matching Guide</a><a href="/articles.html">GSTR-1 vs GSTR-3B</a><a href="/compliance.html">GST Compliance Checklist</a><a href="/gst-act.html">GST Act (Section-wise)</a><a href="/gst-act.html">Latest Notifications</a><a href="/gst-act.html">Important Circulars</a><a href="/articles.html">GST Updates</a>
+</div></div>
+
+<div class="ll-footer-tag">MAKING<br>GST COMPLIANCE<br>SIMPLER FOR EVERYONE</div>
+</div>
+
+<div class="ll-wrap ll-footer-bottom">
+<span>© 2026 GSTReconciliation.in. All rights reserved.</span>
+<span><a href="/privacy.html">Disclaimer</a> &nbsp;|&nbsp; <a href="/privacy.html">Privacy Policy</a> &nbsp;|&nbsp; <a href="/terms.html">Terms of Use</a></span>
+</div>
+</footer>
+
+<script>
+let LIBRARY={items:[],counts:{}};
+let activeCategory="GST Act";
+let activeChapter="";
+
+const categories=[
+ ["GST Act","gst_act","▤","Section-wise guide with explanations"],
+ ["GST Rules","gst_rules","▧","Rule-wise reference"],
+ ["Schedules","schedules","▥","All GST Schedules"],
+ ["Notifications","notifications","♟","Latest GST notifications"],
+ ["Circulars","circulars","◌","CBIC circulars & clarifications"],
+ ["Orders","orders","⚖","Important GST orders"]
+];
+
+const esc=s=>String(s??"").replace(/[&<>"']/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[m]));
+const norm=s=>String(s??"").toLowerCase().trim();
+const keyFor=n=>n==="GST Act"?"gst_act":n==="GST Rules"?"gst_rules":n.toLowerCase();
+
+function buildCategories(){
+ const c=LIBRARY.counts||{};
+ document.getElementById("categoryGrid").innerHTML=categories.map(([name,key,icon,desc])=>{
+   const count=Number(c[key]||0), active=name===activeCategory;
+   return `<button class="ll-category ${active?"active":""}" ${name==="GST Act"||count?`onclick="setCategory('${name}')"`:"disabled"}>
+    <div class="ll-cat-icon">${icon}</div><strong>${name}</strong><p>${desc}</p>
+    <div class="cat-bottom"><div><span class="cat-count">${count}</span> <span class="cat-label">${count?"Available":"Coming Soon"}</span></div><span class="cat-button">${count?"Browse →":"Coming Soon"}</span></div>
+   </button>`;
+ }).join("");
+}
+
+function categoryItems(){return LIBRARY.items.filter(x=>x.category===activeCategory)}
+
+function buildChapters(){
+ const box=document.getElementById("chapterList");
+ if(activeCategory!=="GST Act"){box.innerHTML='<div style="padding:12px;color:#718097;font-size:10px">Chapter navigation will appear when content is added to this category.</div>';return}
+ const map=new Map();categoryItems().forEach(x=>{const c=x.chapter||"Other";map.set(c,(map.get(c)||0)+1)});
+ box.innerHTML=[...map.entries()].map(([ch,n])=>`<button class="ll-chapter ${activeChapter===ch?"active":""}" onclick="setChapter(${JSON.stringify(ch)})"><span>${esc(ch)}</span><span>${n}</span></button>`).join("");
+}
+
+function filtered(){
+ const q=norm(document.getElementById("legalSearch").value);
+ return categoryItems().filter(x=>{
+  if(activeCategory==="GST Act"&&activeChapter&&(x.chapter||"Other")!==activeChapter)return false;
+  if(!q)return true;
+  return [x.number,x.title,x.chapter,x.subject,x.type,x.category].some(v=>norm(v).includes(q));
+ });
+}
+
+function render(){
+ const all=categoryItems(),items=filtered();
+ document.getElementById("resultCount").textContent=activeCategory==="GST Act"?`${items.length} of ${all.length} sections`:`${items.length} resources`;
+ const box=document.getElementById("legalResults");
+ if(!all.length){box.innerHTML=`<div class="ll-empty"><strong>${esc(activeCategory)} content is coming soon.</strong>Add HTML files to the relevant repository folder and regenerate the legal-library index.</div>`;return}
+ if(!items.length){box.innerHTML='<div class="ll-empty"><strong>No matching provisions found.</strong>Try another search term or clear the chapter filter.</div>';return}
+ if(activeCategory!=="GST Act"){box.innerHTML=`<div class="ll-empty"><strong>${esc(activeCategory)} resources</strong>${items.map(x=>`<div style="margin-top:8px"><a href="${esc(x.url)}" style="color:#1769e0;font-weight:800">${esc(x.title)}</a></div>`).join("")}</div>`;return}
+ const groups=new Map();items.forEach(x=>{const c=x.chapter||"Other / Chapter not specified";if(!groups.has(c))groups.set(c,[]);groups.get(c).push(x)});
+ box.innerHTML=[...groups.entries()].map(([ch,rows])=>`
+ <section class="ll-chapter-block">
+  <div class="ll-chapter-title"><strong>${esc(ch)}</strong><span>${rows.length} section${rows.length===1?"":"s"}</span></div>
+  <div class="ll-section-list">${rows.map(x=>{
+   const st=norm(x.status||"active"),hist=st.includes("histor")||st.includes("omit");
+   return `<a class="ll-section-row" href="${esc(x.url)}"><span class="ll-sec-no">SECTION ${esc(x.number||"")}</span><span class="ll-sec-title">${esc(x.title)}</span><span class="ll-status ${hist?"history":""}">${esc(x.status||"Active")}</span><span class="ll-read">Read Section →</span></a>`
+  }).join("")}</div>
+ </section>`).join("");
+}
+
+function setCategory(name){activeCategory=name;activeChapter="";document.getElementById("legalSearch").value="";document.getElementById("resultsTitle").textContent=name==="GST Act"?"CGST Act — Section Wise Guide":name;document.getElementById("resultsSubtitle").textContent=name==="GST Act"?"All available sections, grouped by chapter. Click any section to read the detailed explanation.":"Browse the resources currently available in this category.";buildCategories();buildChapters();render()}
+function setChapter(ch){activeChapter=activeChapter===ch?"":ch;buildChapters();render();document.getElementById("legalResults").scrollIntoView({behavior:"smooth",block:"start"})}
+
+async function init(){
+ try{
+  const r=await fetch("/data/legal-library.json",{cache:"no-store"});if(!r.ok)throw new Error();
+  LIBRARY=await r.json();
+  document.getElementById("statAct").textContent=LIBRARY.counts?.gst_act||0;
+  document.getElementById("statRules").textContent=LIBRARY.counts?.gst_rules||0;
+  document.getElementById("statNotifications").textContent=LIBRARY.counts?.notifications||0;
+  document.getElementById("statCirculars").textContent=LIBRARY.counts?.circulars||0;
+  buildCategories();buildChapters();render();
+ }catch(e){
+  document.getElementById("statAct").textContent="—";
+  document.getElementById("legalResults").innerHTML='<div class="ll-empty"><strong>Library index unavailable.</strong>Regenerate <code>data/legal-library.json</code> before deploying this page.</div>';
+ }
+}
+document.getElementById("legalSearch").addEventListener("input",render);
+document.getElementById("searchButton").addEventListener("click",render);
+document.getElementById("clearChapter").addEventListener("click",()=>{activeChapter="";buildChapters();render()});
+document.querySelectorAll(".ll-chip").forEach(b=>b.addEventListener("click",()=>{document.getElementById("legalSearch").value=b.dataset.q;render();document.getElementById("legalResults").scrollIntoView({behavior:"smooth",block:"start"})}));
+init();
+</script>
+</body>
+</html>
