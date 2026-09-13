@@ -1,0 +1,99 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>GST Reconciliation Exceptions: Mismatch, Missing Invoices & Duplicates | GSTReconciliation.in</title><meta name="description" content="Practical guide to GST reconciliation exceptions including partial matches, tax mismatches, invoices missing from GSTR-2B, records missing from the Purchase Register and duplicate invoices."><link rel="canonical" href="https://gstreconciliation.in/articles/gst-reconciliation-exceptions-mismatch-missing-invoices.html"><meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "Article", "headline": "GST Reconciliation Exceptions: Mismatch, Missing Invoices & Duplicates", "description": "Practical guide to GST reconciliation exceptions including partial matches, tax mismatches, invoices missing from GSTR-2B, records missing from the Purchase Register and duplicate invoices.", "url": "https://gstreconciliation.in/articles/gst-reconciliation-exceptions-mismatch-missing-invoices.html", "publisher": {"@type": "Organization", "name": "GSTReconciliation.in", "url": "https://gstreconciliation.in/"}}</script><style>/* Professional footer upgrade — visual only */
+.gstpro-footer{
+  margin-top:64px;
+  background:linear-gradient(135deg,#0b1f3a 0%,#123a68 58%,#0d5ea8 100%);
+  color:#fff;
+  border-top:1px solid rgba(255,255,255,.12);
+  font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+.gstpro-footer .ft-wrap{max-width:1180px;margin:0 auto;padding:44px 28px 22px}
+.gstpro-footer .ft-grid{display:grid;grid-template-columns:1.7fr 1fr 1fr 1.2fr;gap:38px}
+.gstpro-footer .ft-brand{display:flex;align-items:center;gap:11px;margin-bottom:15px}
+.gstpro-footer .ft-mark{width:38px;height:38px;border-radius:10px;background:linear-gradient(145deg,#fff,#dbeafe);display:grid;place-items:center;color:#1261a0;font-weight:900;font-size:15px;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.gstpro-footer .ft-name{font-size:20px;font-weight:800;letter-spacing:-.3px}
+.gstpro-footer .ft-tag{font-size:12px;color:#b9d4ee;margin-top:2px}
+.gstpro-footer .ft-desc{max-width:430px;color:#d8e7f5;line-height:1.7;font-size:13.5px;margin:0}
+.gstpro-footer h4{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#9ec9ed;margin:4px 0 15px;font-weight:800}
+.gstpro-footer a{color:#e8f3fc;text-decoration:none;font-size:13.5px;display:block;margin:10px 0;transition:color .18s,transform .18s}
+.gstpro-footer a:hover{color:#fff;transform:translateX(2px)}
+.gstpro-footer .ft-contact{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:16px 17px}
+.gstpro-footer .ft-contact p{margin:7px 0;color:#dcebf7;font-size:13px;line-height:1.55}
+.gstpro-footer .ft-contact strong{color:#fff}
+.gstpro-footer .ft-bottom{margin-top:34px;padding-top:18px;border-top:1px solid rgba(255,255,255,.13);display:flex;justify-content:space-between;align-items:center;gap:18px;color:#abc7df;font-size:12px}
+.gstpro-footer .ft-legal{display:flex;gap:18px;flex-wrap:wrap}
+.gstpro-footer .ft-legal a{display:inline;font-size:12px;color:#abc7df;margin:0}
+.gstpro-footer .ft-note{color:#9dbbd4}
+@media(max-width:850px){.gstpro-footer .ft-grid{grid-template-columns:1fr 1fr}.gstpro-footer .ft-bottom{align-items:flex-start;flex-direction:column}}
+@media(max-width:560px){.gstpro-footer .ft-grid{grid-template-columns:1fr}.gstpro-footer .ft-wrap{padding:34px 20px 18px}}
+</style>
+<style>
+:root{--navy:#123a68;--blue:#1769c2;--bg:#f5f8fc;--line:#dce7f2;--muted:#61758b;--ink:#183858}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;line-height:1.65}
+a{color:var(--blue)}
+.topbar{height:72px;background:#fff;border-bottom:1px solid #dfe8f1;display:flex;align-items:center;position:sticky;top:0;z-index:50;box-shadow:0 2px 14px rgba(18,58,104,.05)}
+.topbar-inner{width:min(1180px,calc(100% - 34px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:11px}.brandmark{width:40px;height:40px;border-radius:11px;background:linear-gradient(145deg,#0c4f9e,#2388ef);display:grid;place-items:center;color:#fff;font-weight:950;box-shadow:0 7px 18px rgba(22,119,232,.22)}.brandname{font-weight:950;letter-spacing:-.7px;color:#123a68;font-size:20px;line-height:1}.brandname span{color:#1677e8}.brandtag{font-size:10px;color:#718399;margin-top:4px}
+.nav{display:flex;gap:4px;background:#f7fafc;border:1px solid #e0e8f0;padding:4px;border-radius:12px}.nav a{padding:8px 11px;border-radius:8px;text-decoration:none;color:#315574;font-size:12px;font-weight:800}.nav a.active{background:#fff;color:#145a9e;box-shadow:0 1px 4px rgba(18,58,104,.08)}
+.breadcrumb{width:min(1180px,calc(100% - 34px));margin:14px auto 0;color:#6b7d90;font-size:12px}.breadcrumb a{text-decoration:none;color:#1769c2;font-weight:750}
+.page{width:min(1180px,calc(100% - 34px));margin:12px auto 40px}.hero{background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 7px 22px rgba(18,58,104,.055);padding:30px}.eyebrow{font-size:10px;font-weight:900;letter-spacing:.14em;text-transform:uppercase;color:#1769c2;margin-bottom:7px}.hero h1{font-size:34px;line-height:1.18;letter-spacing:-1px;color:#163d66;margin:0 0 9px}.hero p{max-width:900px;color:#60748a;margin:0}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.chip{border:1px solid #dce7f2;background:#f8fbfe;border-radius:999px;padding:6px 10px;color:#49657f;font-size:11px;font-weight:750}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:18px;margin-top:18px}.content,.toc{background:#fff;border:1px solid var(--line);border-radius:15px;box-shadow:0 4px 16px rgba(18,58,104,.04)}.content{padding:28px}.toc{padding:18px;height:max-content;position:sticky;top:88px}.toc h3{margin:0 0 10px;color:#163d66;font-size:14px}.toc a{display:block;text-decoration:none;color:#52708c;font-size:12px;padding:6px 0;border-bottom:1px solid #edf2f6}.toc a:last-child{border-bottom:0}
+.content h2{font-size:22px;line-height:1.3;color:#163d66;margin:28px 0 9px;padding-top:4px}.content h2:first-child{margin-top:0}.content h3{font-size:16px;color:#244b70;margin:21px 0 6px}.content p{color:#536b82;font-size:13.5px;margin:8px 0 12px}.content ul,.content ol{color:#536b82;font-size:13.5px;padding-left:22px}.content li{margin:5px 0}.callout{border:1px solid #cfe1f2;border-left:4px solid #1769c2;background:#eef6ff;border-radius:10px;padding:14px 16px;margin:16px 0;color:#4d667f;font-size:12.5px}.callout strong{color:#163d66}.warning{border-left-color:#e5a11a;background:#fff8e8;border-color:#f0dfb5}.success{border-left-color:#18a66a;background:#edf9f3;border-color:#c8ebd9}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}.step{border:1px solid var(--line);border-radius:12px;padding:13px;background:#fbfdff}.step b{display:block;color:#1769c2;font-size:11px;text-transform:uppercase;letter-spacing:.08em}.step strong{display:block;color:#244b70;font-size:13px;margin-top:3px}.table{width:100%;border-collapse:collapse;margin:14px 0;font-size:12px}.table th{background:#f1f6fa;color:#315574;text-align:left}.table th,.table td{border:1px solid #dce7f2;padding:9px;vertical-align:top}.related{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}.related a{display:block;text-decoration:none;border:1px solid var(--line);border-radius:12px;background:#fbfdff;padding:14px}.related strong{display:block;color:#163d66;font-size:14px}.related span{display:block;color:#6a7e92;font-size:11.5px;margin-top:5px}
+@media(max-width:850px){.layout{grid-template-columns:1fr}.toc{position:static}.steps{grid-template-columns:1fr 1fr}.related{grid-template-columns:1fr}}
+@media(max-width:560px){.nav{display:none}.page,.breadcrumb{width:calc(100% - 24px)}.hero{padding:22px 18px}.hero h1{font-size:28px}.content{padding:20px}.steps{grid-template-columns:1fr}}
+</style>
+</head><body>
+<header class="topbar"><div class="topbar-inner"><a href="/" class="brand" style="text-decoration:none"><div class="brandmark">GST</div><div><div class="brandname">GSTReconciliation<span>.in</span></div><div class="brandtag">GST ITC · Invoice Matching · Review</div></div></a><nav class="nav"><a href="/">Home</a><a href="/reconciliation.html">GST Tool</a><a class="active" href="/articles.html">GST Knowledge</a><a href="/compliance.html">Compliance</a></nav></div></header>
+<div class="breadcrumb"><a href="/">Home</a> › <a href="/articles.html">GST Knowledge</a> › GST Reconciliation Exceptions: Mismatch, Missing Invoices & Duplicates</div>
+<main class="page"><section class="hero"><div class="eyebrow">GST RECONCILIATION EXCEPTION GUIDE</div><h1>GST Reconciliation Exceptions: Mismatch, Missing Invoices & Duplicates</h1><p>A practical, review-focused resource from GSTReconciliation.in for accountants, tax teams, finance professionals and reviewers working with Purchase Register and GSTR-2B reconciliation.</p><div class="chips"><span class="chip">GST Reconciliation</span><span class="chip">GSTR-2B</span><span class="chip">Purchase Register</span><span class="chip">GST ITC Review</span></div></section>
+<div class="layout"><article class="content"><h2 id="exception">1. Why exception review matters</h2><p>A reconciliation is valuable only when the exceptions can be understood and acted upon. A red status should not be the end of the process. It should tell the accounts or tax team what evidence to collect and which source should be checked next.</p><p>The most common exception groups are partial matching, invoices in the Purchase Register but not in GSTR-2B, GSTR-2B records not found in the Purchase Register, review-required relationships and possible duplicates.</p><h2 id="partial">2. Partial Matching</h2><p>A Partial Matching result means a related document has been identified, but one or more comparison fields require review. Common differences include taxable value, IGST, CGST, SGST/UTGST, cess, invoice date or invoice-number formatting.</p><h3>What to check</h3><ul><li>Original supplier invoice.</li><li>Purchase Register accounting entry.</li><li>GSTR-2B document details.</li><li>Credit/debit note or amendment history where relevant.</li><li>Whether the difference is within the organisation's documented reconciliation tolerance.</li></ul><h2 id="not2b">3. Purchase Register invoice not in GSTR-2B</h2><p>This exception means that the uploaded GSTR-2B data did not contain a sufficiently reliable corresponding record. It does not by itself prove why the invoice is absent.</p><p>Check the supplier GSTIN, invoice number, document type and period. Confirm that the correct GSTR-2B workbook was downloaded and that the relevant transaction sheet was populated. Supplier filing timing, invoice amendments and period differences can also require investigation.</p><div class="warning callout"><strong>Do not use the exception label as the final ITC conclusion.</strong> The status is a reconciliation result. The tax team should separately evaluate the applicable ITC conditions and the current GST position.</div><h2 id="notpr">4. GSTR-2B invoice not in Purchase Register</h2><p>First determine whether the purchase was actually recorded in the books. Then check whether the document belongs to the GSTIN and period under review, whether the invoice was posted under another reference, and whether it is a duplicate or other exceptional transaction.</p><h2 id="tax">5. Taxable value or GST mismatch</h2><p>Value mismatches are easier to resolve when the comparison is split into components. Compare taxable value first, then IGST, CGST, SGST/UTGST and cess. A total GST difference without component-level analysis can hide the actual cause.</p><table class="table"><tr><th>Check</th><th>Question</th><th>Evidence</th></tr><tr><td>Taxable value</td><td>Do books and portal data report the same taxable base?</td><td>Invoice, ERP entry, 2B record</td></tr><tr><td>IGST</td><td>Does the IGST amount agree?</td><td>Invoice tax breakup, 2B</td></tr><tr><td>CGST/SGST</td><td>Do the split tax components agree?</td><td>Invoice, accounting entry, 2B</td></tr><tr><td>Cess</td><td>Is cess reported consistently?</td><td>Invoice and 2B source</td></tr><tr><td>Date</td><td>Is the difference a genuine period issue or formatting issue?</td><td>Invoice date and source data</td></tr></table><h2 id="duplicate">6. Duplicate and possible duplicate records</h2><p>Duplicate risks can arise when the same GSTIN and invoice reference appears more than once in a source file, or when a document is represented through amendments or multiple source rows. A controlled reconciliation should prevent one GSTR-2B row from being allocated to multiple Purchase Register records unless the underlying document structure supports that treatment.</p><h2 id="review">7. Review Required and ambiguous matches</h2><p>Manual review is preferable to an incorrect automatic match when more than one candidate record could explain the same invoice. Review the supplier GSTIN, normalized invoice number, document type, date and tax/value information together. Record the reason for the final classification.</p><h2 id="supplier">8. Supplier follow-up</h2><p>Supplier follow-up should be prioritised using materiality and recurrence. A supplier with repeated missing or materially mismatched invoices may need a structured follow-up rather than separate emails for every document. The reconciliation report can help group exceptions by supplier and GSTIN.</p><h2 id="close">9. Exception closure evidence</h2><p>For material exceptions, retain the conclusion and supporting evidence. Useful evidence can include a corrected ERP entry, supplier confirmation, amended invoice, portal record, reviewer comment or documented period explanation. The objective is to make the reconciliation understandable to a later reviewer.</p><div class="callout"><strong>Important:</strong> Reconciliation output is a working control. Final ITC eligibility, reversal, re-availment and filing decisions should be reviewed against the applicable GST law, current notifications/circulars, source documents and the taxpayer's facts.</div><h2>Continue with the GST Reconciliation Tool</h2><p>Use the browser-based reconciliation tool to upload your Purchase Register and GSTR-2B, compare invoice-level records and export the review workbook.</p><p><a href="/reconciliation.html" style="display:inline-block;background:#1769c2;color:#fff;text-decoration:none;padding:10px 15px;border-radius:9px;font-weight:800;font-size:12px">Open GST Reconciliation Tool →</a></p><h2>Related GST resources</h2><div class="related"><a href="/articles/gst-reconciliation-tool-complete-guide.html"><strong>Complete Practical Guide</strong><span>Understand the full reconciliation tool and its workflow.</span></a><a href="/articles/gstr-2b-vs-purchase-register-reconciliation.html"><strong>Step-by-Step Reconciliation</strong><span>Follow a monthly purchase-to-2B reconciliation process.</span></a><a href="/articles/gst-reconciliation-exceptions-mismatch-missing-invoices.html"><strong>Exception Review</strong><span>Understand mismatches, missing records and duplicates.</span></a><a href="/articles/gst-itc-reconciliation-workpaper-controls.html"><strong>Workpaper Controls</strong><span>Build a review trail around the reconciliation.</span></a></div></article><aside class="toc"><h3>On this page</h3><a href="#exception">Why exceptions matter</a><a href="#partial">Partial matching</a><a href="#not2b">Not in 2B</a><a href="#notpr">Not in Purchase Register</a><a href="#tax">Tax mismatches</a><a href="#duplicate">Duplicates</a><a href="#review">Review required</a><a href="#supplier">Supplier follow-up</a><a href="#close">Closure evidence</a></aside></div></main><footer class="gstpro-footer" aria-label="GST Reconciliation website footer">
+  <div class="ft-wrap">
+    <div class="ft-grid">
+      <section>
+        <div class="ft-brand">
+          <div class="ft-mark">GST</div>
+          <div>
+            <div class="ft-name">GSTReconciliation.in</div>
+            <div class="ft-tag">GST ITC Reconciliation &amp; Invoice Matching</div>
+          </div>
+        </div>
+        <p class="ft-desc">
+          A practical GST reconciliation workspace for matching Purchase Register data
+          with GSTR-2B, reviewing invoice-level exceptions and preparing a structured
+          reconciliation workpaper.
+        </p>
+      </section>
+
+      <nav aria-label="Tool navigation">
+        <h4>Tool</h4>
+        <a href="reconciliation.html">GST Reconciliation</a>
+        <a href="gst-reconciliation-tool.html">Reconciliation Tool</a>
+        <a href="compliance.html">GST Compliance</a>
+      </nav>
+
+      <nav aria-label="GST knowledge">
+        <h4>GST Knowledge</h4>
+        <a href="articles.html">GST Articles</a>
+        <a href="gst-act.html">GST Act &amp; Rules</a>
+        <a href="index.html">GST Resources</a>
+      </nav>
+
+      <section>
+        <h4>Contact</h4>
+        <div class="ft-contact">
+          <p><strong>Finance &amp; GST Support</strong></p>
+          <p><a href="mailto:uday@gstreconciliation.in">uday@gstreconciliation.in</a></p>
+          <p><a href="tel:+919052160079">+91 90521 60079</a></p>
+        </div>
+      </section>
+    </div>
+
+    <div class="ft-bottom">
+      <div>© 2026 GSTReconciliation.in. All rights reserved.</div>
+      <div class="ft-legal">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <span class="ft-note">GST information is for educational and workflow support.</span>
+      </div>
+    </div>
+  </div>
+</footer></body></html>
