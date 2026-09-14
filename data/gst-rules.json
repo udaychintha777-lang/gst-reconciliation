@@ -1,0 +1,1941 @@
+{
+  "schema_version": 1,
+  "type": "gst_rules_master",
+  "source": {
+    "name": "India Code 2.0",
+    "code_id": "R10-015",
+    "title": "Central Goods and Services Tax Rules, 2017",
+    "url": "https://india-code.vercel.app/R10-015",
+    "as_at": "14 September 2026",
+    "in_force_from": "22 June 2017",
+    "collection_count_reported": 214,
+    "individual_entries_listed": 213,
+    "count_note": "India Code reports 214 Rules in the collection heading, while 213 individual Rule entries are listed on the source page. This index uses only individually identifiable entries and does not invent an unverified additional Rule."
+  },
+  "counts": {
+    "rules": 213,
+    "source_reported": 214,
+    "individual_entries": 213,
+    "current_named": 196,
+    "omitted_historical": 17
+  },
+  "items": [
+    {
+      "type": "gst_rules",
+      "rule_number": "1",
+      "title": "Short title and commencement",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-1.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "2",
+      "title": "Definitions",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-2.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "3",
+      "title": "Intimation for composition levy",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-3.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "4",
+      "title": "Effective date for composition levy",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-4.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "5",
+      "title": "Conditions and restrictions for composition levy",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-5.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "6",
+      "title": "Validity of composition levy",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-6.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "7",
+      "title": "Rate of tax of the composition levy",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-7.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "8",
+      "title": "Application for registration",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-8.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "9",
+      "title": "Verification of the application and approval",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-9.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "9A",
+      "title": "Grant of registration electronically",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-9a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "10",
+      "title": "Issue of registration certificate",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-10.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "10A",
+      "title": "Furnishing of Bank Account Details",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-10a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "10B",
+      "title": "Aadhaar authentication for registered person",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-10b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "11",
+      "title": "Separate registration for multiple places of business within a State or a Union territory",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-11.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "12",
+      "title": "Grant of registration to persons required to deduct tax at source or to collect tax at source",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-12.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "13",
+      "title": "Grant of registration to non-resident taxable person",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-13.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "14",
+      "title": "Grant of registration to a person supplying online information and database access or retrieval services from a place outside India to a non-taxable online recipient or to a person supplying online money gaming from a place outside India to a person in India",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-14.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "14A",
+      "title": "Option for taxpayers having monthly output tax liability below threshold limit",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-14a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "15",
+      "title": "Extension in period of operation by casual taxable person and non-resident taxable person",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-15.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "16",
+      "title": "Suo moto registration",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-16.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "16A",
+      "title": "Grant of temporary identification number",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-16a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "17",
+      "title": "Assignment of Unique Identity Number to certain special entities",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-17.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "18",
+      "title": "Display of registration certificate and Goods and Services Tax Identification Number on the name board",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-18.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "19",
+      "title": "Amendment of registration",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-19.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "20",
+      "title": "Application for cancellation of registration",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-20.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "21",
+      "title": "Registration to be cancelled in certain cases",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-21.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "21A",
+      "title": "Suspension of registration",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-21a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "22",
+      "title": "Cancellation of registration",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-22.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "23",
+      "title": "Revocation of cancellation of registration",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-23.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "24",
+      "title": "Migration of persons registered under the existing law",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-24.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "25",
+      "title": "Physical verification of business premises in certain cases",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-25.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "26",
+      "title": "Method of authentication",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-26.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "27",
+      "title": "Value of supply of goods or services where the consideration is not wholly in money",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-27.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "28",
+      "title": "Value of supply of goods or services or both between distinct or related persons, other than through an agent",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-28.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "29",
+      "title": "Value of supply of goods made or received through an agent",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-29.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "30",
+      "title": "Value of supply of goods or services or both based on cost",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-30.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "31",
+      "title": "Residual method for determination of value of supply of goods or services or both",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-31.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "31A",
+      "title": "Value of supply in case of lottery, betting, gambling and horse racing",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-31a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "31B",
+      "title": "Value of supply in case of online gaming including online money gaming",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-31b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "31C",
+      "title": "Value of supply of actionable claims in case of casino",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-31c.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "31D",
+      "title": "Value of supply of goods on basis of retail sale price",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-31d.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "32",
+      "title": "Determination of value in respect of certain supplies",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-32.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "32A",
+      "title": "Value of supply in cases where Kerala Flood Cess is applicable",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-32a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "33",
+      "title": "Value of supply of services in case of pure agent",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-33.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "34",
+      "title": "Rate of exchange of currency, other than Indian rupees, for determination of value",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-34.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "35",
+      "title": "Value of supply inclusive of integrated tax, central tax, State tax, Union territory tax",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-35.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "36",
+      "title": "Documentary requirements and conditions for claiming input tax credit",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-36.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "37",
+      "title": "Reversal of input tax credit in the case of non-payment of consideration",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-37.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "37A",
+      "title": "Reversal of input tax credit in the case of non-payment of tax by the supplier and re-availment thereof",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-37a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "38",
+      "title": "Claim of credit by a banking company or a financial institution",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-38.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "39",
+      "title": "Procedure for distribution of input tax credit by Input Service Distributor",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-39.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "40",
+      "title": "Manner of claiming credit in special circumstances",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-40.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "41",
+      "title": "Transfer of credit on sale, merger, amalgamation, lease or transfer of a business",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-41.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "41A",
+      "title": "Transfer of credit on obtaining separate registration for multiple places of business within a State or Union territory",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-41a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "42",
+      "title": "Manner of determination of input tax credit in respect of inputs or input services and reversal thereof",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-42.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "43",
+      "title": "Manner of determination of input tax credit in respect of capital goods and reversal thereof in certain cases",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-43.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "44",
+      "title": "Manner of reversal of credit under special circumstances",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-44.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "44A",
+      "title": "Manner of reversal of credit of Additional duty of Customs in respect of Gold dore bar",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-44a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "45",
+      "title": "Conditions and restrictions in respect of inputs and capital goods sent to the job worker",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-45.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "46",
+      "title": "Tax invoice",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-46.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "46A",
+      "title": "Invoice-cum-bill of supply",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-46a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "47",
+      "title": "Time limit for issuing tax invoice",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-47.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "47A",
+      "title": "Time limit for issuing tax invoice in cases where recipient is required to issue invoice",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-47a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "48",
+      "title": "Manner of issuing invoice",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-48.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "49",
+      "title": "Bill of supply",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-49.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "50",
+      "title": "Receipt voucher",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-50.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "51",
+      "title": "Refund voucher",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-51.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "52",
+      "title": "Payment voucher",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-52.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "53",
+      "title": "Revised tax invoice and credit or debit notes",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-53.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "54",
+      "title": "Tax invoice in special cases",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-54.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "55",
+      "title": "Transportation of goods without issue of invoice",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-55.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "55A",
+      "title": "Tax Invoice or bill of supply to accompany transport of goods",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-55a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "56",
+      "title": "Maintenance of accounts by registered persons",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-56.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "57",
+      "title": "Generation and maintenance of electronic records",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-57.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "58",
+      "title": "Records to be maintained by owner or operator of go down or warehouse and transporters",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-58.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "59",
+      "title": "Form and manner of furnishing details of outward supplies",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-59.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "60",
+      "title": "Form and manner of ascertaining details of inward supplies",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-60.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "61",
+      "title": "Form and manner of furnishing of return",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-61.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "61A",
+      "title": "Manner of opting for furnishing quarterly return",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-61a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "62",
+      "title": "Form and manner of submission of statement and return",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-62.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "63",
+      "title": "Form and manner of submission of return by non-resident taxable person",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-63.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "64",
+      "title": "Form and manner of submission of return by persons providing online information and data base access or retrieval services and by persons supplying online money gaming from a place outside India to a person in India",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-64.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "65",
+      "title": "Form and manner of submission of return by an Input Service Distributor",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-65.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "66",
+      "title": "Form and manner of submission of return by a person required to deduct tax at source",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-66.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "67",
+      "title": "Form and manner of submission of statement of supplies through an e-commerce operator",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-67.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "67A",
+      "title": "Manner of furnishing of return or details of outward supplies by short messaging service facility",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-67a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "68",
+      "title": "Notice to non-filers of returns",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-68.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "69",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-69.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "70",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-70.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "71",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-71.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "72",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-72.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "73",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-73.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "74",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-74.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "75",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-75.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "76",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-76.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "77",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-77.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "78",
+      "title": "Matching of details furnished by the e-Commerce operator with the details furnished by the supplier",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-78.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "79",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-79.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "80",
+      "title": "Annual return",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-80.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "81",
+      "title": "Final return",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-81.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "82",
+      "title": "Details of inward supplies of persons having Unique Identity Number",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-82.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "83",
+      "title": "Provisions relating to a goods and services tax practitioner",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-83.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "83A",
+      "title": "Examination of Goods and Services Tax Practitioners",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-83a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "83B",
+      "title": "Surrender of enrolment of goods and services tax practitioner",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-83b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "84",
+      "title": "Conditions for purposes of appearance",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-84.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "85",
+      "title": "Electronic Liability Register",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-85.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "86",
+      "title": "Electronic Credit Ledger",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-86.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "86A",
+      "title": "Conditions of use of amount available in electronic credit ledger",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-86a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "86B",
+      "title": "Restrictions on use of amount available in electronic credit ledger",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-86b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "87",
+      "title": "Electronic Cash Ledger",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-87.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "88",
+      "title": "Identification number for each transaction",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-88.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "88A",
+      "title": "Order of utilization of input tax credit",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-88a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "88B",
+      "title": "Manner of calculating interest on delayed payment of tax",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-88b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "88C",
+      "title": "Manner of dealing with difference in liability reported in statement of outward supplies and that reported in return",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-88c.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "88D",
+      "title": "Manner of dealing with difference in input tax credit available in auto-generated statement containing the details of input tax credit and that availed in return",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-88d.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "89",
+      "title": "Application for refund of tax, interest, penalty, fees or any other amount",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-89.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "90",
+      "title": "Acknowledgement",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-90.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "91",
+      "title": "Grant of provisional refund",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-91.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "92",
+      "title": "Order sanctioning refund",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-92.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "93",
+      "title": "Credit of the amount of rejected refund claim",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-93.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "94",
+      "title": "Order sanctioning interest on delayed refunds",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-94.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "95",
+      "title": "Refund of tax to certain persons",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-95.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "95A",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-95a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "95B",
+      "title": "Refund of tax paid on inward supplies of goods received by Canteen Stores Department",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-95b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "96",
+      "title": "Refund of integrated tax paid on goods or services exported out of India",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-96.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "96A",
+      "title": "Export of goods or services under bond or Letter of Undertaking",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-96a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "96B",
+      "title": "Recovery of refund of unutilised input tax credit or integrated tax paid on export of goods where export proceeds not realised",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-96b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "96C",
+      "title": "Bank Account for credit of refund",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-96c.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "97",
+      "title": "Consumer Welfare Fund",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-97.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "97A",
+      "title": "Manual filing and processing",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-97a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "98",
+      "title": "Provisional Assessment",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-98.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "99",
+      "title": "Scrutiny of returns",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-99.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "100",
+      "title": "Assessment in certain cases",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-100.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "101",
+      "title": "Audit",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-101.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "102",
+      "title": "Special Audit",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-102.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "103",
+      "title": "Qualification and appointment of members of the Authority for Advance Ruling",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-103.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "104",
+      "title": "Form and manner of application to the Authority for Advance Ruling",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-104.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "105",
+      "title": "Certification of copies of advance rulings pronounced by the Authority",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-105.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "106",
+      "title": "Form and manner of appeal to the Appellate Authority for Advance Ruling",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-106.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "107",
+      "title": "Certification of copies of the advance rulings pronounced by the Appellate Authority",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-107.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "107A",
+      "title": "Manual filing and processing",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-107a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "108",
+      "title": "Appeal to the Appellate Authority",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-108.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "109",
+      "title": "Application to the Appellate Authority",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-109.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "109A",
+      "title": "Appointment of Appellate Authority",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-109a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "109B",
+      "title": "Notice to person and order of revisional authority in case of revision",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-109b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "109C",
+      "title": "Withdrawal of Appeal",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-109c.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "110",
+      "title": "Appeal to the Appellate Tribunal",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-110.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "110A",
+      "title": "Procedure for the Appeals to be heard by a single Member Bench",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-110a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "111",
+      "title": "Application to the Appellate Tribunal",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-111.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "112",
+      "title": "Production of additional evidence before the Appellate Authority or the Appellate Tribunal",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-112.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "113",
+      "title": "Order of Appellate Authority or Appellate Tribunal",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-113.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "113A",
+      "title": "Withdrawal of Appeal or Application filed before the Appellate Tribunal",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-113a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "114",
+      "title": "Appeal to the High Court",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-114.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "115",
+      "title": "Demand confirmed by the Court",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-115.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "116",
+      "title": "Disqualification for misconduct of an authorised representative",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-116.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "117",
+      "title": "Tax or duty credit carried forward under any existing law or on goods held in stock on the appointed day",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-117.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "118",
+      "title": "Declaration to be made under clause (c) of sub-section (11) of section142",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-118.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "119",
+      "title": "Declaration of stock held by a principal and job-worker",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-119.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "120",
+      "title": "Details of goods sent on approval basis",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-120.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "120A",
+      "title": "Revision of declaration in FORM GST TRAN-1",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-120a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "121",
+      "title": "Recovery of credit wrongly availed",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-121.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "122",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-122.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "123",
+      "title": "Constitution of the Standing Committee and Screening Committees",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-123.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "124",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-124.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "125",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-125.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "126",
+      "title": "Power to determine the methodology and procedure",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-126.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "127",
+      "title": "Functions of the Authority",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-127.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "128",
+      "title": "Examination of application by the Standing Committee and Screening Committee",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-128.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "129",
+      "title": "Initiation and conduct of proceedings",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-129.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "130",
+      "title": "Confidentiality of information",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-130.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "131",
+      "title": "Cooperation with other agencies or statutory authorities",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-131.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "132",
+      "title": "Power to summon persons to give evidence and produce documents",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-132.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "133",
+      "title": "Order of the Authority",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-133.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "134",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-134.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "135",
+      "title": "Compliance by the registered person",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-135.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "136",
+      "title": "Monitoring of the order",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-136.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "137",
+      "title": "Omitted / historical provision",
+      "status": "Omitted / historical",
+      "url": "/gst-rules/rule-137.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "138",
+      "title": "Information to be furnished prior to commencement of movement of goods and generation of e-way bill. - **",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-138.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "138A",
+      "title": "Documents and devices to be carried by a person-in-charge of a conveyance",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-138a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "138B",
+      "title": "Verification of documents and conveyances",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-138b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "138C",
+      "title": "Inspection and verification of goods",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-138c.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "138D",
+      "title": "Facility for uploading information regarding detention of vehicle",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-138d.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "138E",
+      "title": "Restriction on furnishing of information in PART A of FORM GST EWB-01",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-138e.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "138F",
+      "title": "Information to be furnished in case of intra-State movement of gold, precious stones, etc. and generation of e-way bills thereof",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-138f.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "139",
+      "title": "Inspection, search and seizure",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-139.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "140",
+      "title": "Bond and security for release of seized goods",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-140.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "141",
+      "title": "Procedure in respect of seized goods",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-141.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "142",
+      "title": "Notice and order for demand of amounts payable under the Act",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-142.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "142A",
+      "title": "Procedure for recovery of dues under existing laws",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-142a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "142B",
+      "title": "Intimation of certain amounts liable to be recovered under section 79 of the Act",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-142b.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "143",
+      "title": "Recovery by deduction from any money owed",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-143.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "144",
+      "title": "Recovery by sale of goods under the control of proper officer",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-144.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "144A",
+      "title": "Recovery of penalty by sale of goods or conveyance detained or seized in transit",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-144a.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "145",
+      "title": "Recovery from a third person",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-145.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "146",
+      "title": "Recovery through execution of a decree, etc",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-146.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "147",
+      "title": "Recovery by sale of movable or immovable property",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-147.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "148",
+      "title": "Prohibition against bidding or purchase by officer",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-148.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "149",
+      "title": "Prohibition against sale on holidays",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-149.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "150",
+      "title": "Assistance by police",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-150.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "151",
+      "title": "Attachment of debts and shares, etc",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-151.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "152",
+      "title": "Attachment of property in custody of courts or Public Officer",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-152.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "153",
+      "title": "Attachment of interest in partnership",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-153.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "154",
+      "title": "Disposal of proceeds of sale of goods or conveyance and movable or immovable property",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-154.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "155",
+      "title": "Recovery through land revenue authority",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-155.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "156",
+      "title": "Recovery through court",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-156.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "157",
+      "title": "Recovery from surety",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-157.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "158",
+      "title": "Payment of tax and other amounts in instalments",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-158.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "159",
+      "title": "Provisional attachment of property",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-159.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "160",
+      "title": "Recovery from company in liquidation",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-160.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "161",
+      "title": "Continuation of certain recovery proceedings",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-161.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "162",
+      "title": "Procedure for compounding of offences",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-162.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "163",
+      "title": "Consent based sharing of information",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-163.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    },
+    {
+      "type": "gst_rules",
+      "rule_number": "164",
+      "title": "Procedure and conditions for closure of proceedings under section 128A in respect of demands issued under section 73",
+      "status": "Current in India Code record",
+      "url": "/gst-rules/rule-164.html",
+      "source_id": "R10-015",
+      "chapter": ""
+    }
+  ]
+}

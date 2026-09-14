@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="GST Rules Legal Library — Central Goods and Services Tax Rules, 2017. Search and browse Rule-wise provisions, chapters and detailed Rule pages.">
+<title>GST Rules | GST Legal Library | GSTReconciliation.in</title>
+<link rel="stylesheet" href="/styles.css">
+<style>
+:root{
+  --ink:#172033;--muted:#65728a;--line:#e5eaf2;--blue:#1769e0;
+  --navy:#071a3a;--navy2:#0d2a57;--bg:#f6f8fc;--card:#fff;
+  --green:#16845b;--amber:#9a6500;
+}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+.site-header{background:#fff;border-bottom:1px solid var(--line)}
+.nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{color:var(--ink);text-decoration:none;font-weight:850;font-size:20px;letter-spacing:-.02em}
+.brand span{color:var(--blue)}
+.navlinks{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+.navlinks a{color:#4c5870;text-decoration:none;font-size:14px;font-weight:650}
+.navlinks a:hover,.navlinks a.active{color:var(--blue)}
+.hero{padding:58px 0 42px}
+.hero-box{background:linear-gradient(135deg,var(--navy),var(--navy2));border-radius:24px;padding:44px;color:#fff;box-shadow:0 16px 42px rgba(7,26,58,.14)}
+.eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:13px;font-weight:800;color:#b9ccef}
+h1{font-size:44px;line-height:1.08;letter-spacing:-.03em;margin:12px 0 14px}
+.hero-copy{max-width:820px;font-size:17px;line-height:1.7;color:#dce7f8;margin:0}
+.breadcrumb{margin-bottom:18px;font-size:14px}
+.breadcrumb a{color:#c9d8f3;text-decoration:none}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:28px}
+.stat{background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.14);border-radius:15px;padding:16px}
+.stat strong{display:block;font-size:26px;line-height:1.1}
+.stat span{display:block;margin-top:7px;font-size:12px;line-height:1.4;color:#cbd8ee}
+main{padding-bottom:64px}
+.section{margin-top:24px}
+.section-head{margin-bottom:16px}
+.section h2{font-size:25px;margin:0 0 7px;letter-spacing:-.02em}
+.section-sub{margin:0;color:var(--muted);font-size:15px;line-height:1.6}
+.search-panel{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:0 8px 28px rgba(16,33,63,.05)}
+.controls{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:12px}
+input,select{width:100%;box-sizing:border-box;padding:14px 15px;border:1px solid #d7dfeb;border-radius:11px;background:#fff;color:var(--ink);font-size:15px;outline:none}
+input:focus,select:focus{border-color:#8ab0ed;box-shadow:0 0 0 3px rgba(23,105,224,.08)}
+.results-head{display:flex;justify-content:space-between;gap:15px;align-items:center;margin:17px 0 0;color:var(--muted);font-size:13px}
+.results-head strong{color:var(--ink)}
+.chapter{margin-top:30px}
+.chapter-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:13px}
+.chapter-title h3{font-size:19px;margin:0}
+.chapter-title span{font-size:12px;color:var(--muted)}
+.rule-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
+.rule-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 7px 24px rgba(16,33,63,.05);text-decoration:none;color:var(--ink);display:block;transition:.15s}
+.rule-card:hover{border-color:#9dbcf0;transform:translateY(-2px);box-shadow:0 10px 28px rgba(16,33,63,.08)}
+.rule-card.disabled{cursor:default;opacity:.78}
+.rule-card.disabled:hover{transform:none;border-color:var(--line);box-shadow:0 7px 24px rgba(16,33,63,.05)}
+.rule-number{font-size:12px;color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:.03em}
+.rule-title{font-size:16px;font-weight:750;line-height:1.4;margin-top:7px}
+.rule-status{font-size:12px;margin-top:11px;color:var(--green);font-weight:650}
+.rule-status.historical{color:var(--amber)}
+.rule-status.pending{color:#6b7280}
+.rule-action{font-size:12px;margin-top:10px;color:var(--blue);font-weight:700}
+.disabled .rule-action{color:#7b8495}
+.notice{background:#fff;border:1px solid var(--line);border-left:4px solid #94a3b8;border-radius:12px;padding:18px;color:#59657a;font-size:13px;line-height:1.65}
+.info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
+.info-box{background:#fff;border:1px solid var(--line);border-radius:15px;padding:19px}
+.info-box h3{margin:0 0 7px;font-size:16px}
+.info-box p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+.empty{background:#fff;border:1px dashed #cbd4e2;padding:24px;border-radius:16px;color:var(--muted);margin-top:20px}
+.site-footer{background:#111827;color:#d1d5db;padding:38px 0 28px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:28px}
+.site-footer h2,.site-footer h3{color:#fff;margin:0 0 10px}
+.site-footer p{font-size:13px;line-height:1.65;margin:6px 0;color:#bfc7d4}
+.site-footer a{color:#dbeafe;text-decoration:none}
+.disclaimer{border-top:1px solid rgba(255,255,255,.12);margin-top:25px;padding-top:18px;color:#9ca3af;font-size:12px;line-height:1.6}
+@media(max-width:900px){
+  .navlinks{display:none}.stats{grid-template-columns:repeat(2,1fr)}
+  .rule-grid{grid-template-columns:repeat(2,1fr)}.info-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .hero{padding:35px 0}.hero-box{padding:30px 22px}h1{font-size:34px}
+  .stats,.rule-grid,.info-grid,.footer-grid{grid-template-columns:1fr}
+  .controls{grid-template-columns:1fr}.results-head{align-items:flex-start;flex-direction:column}
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="/">GST<span>Reconciliation</span></a>
+    <nav class="navlinks" aria-label="Main navigation">
+      <a href="/">Home</a>
+      <a href="/reconciliation.html">Reconciliation</a>
+      <a href="/articles.html">Articles</a>
+      <a href="/gst-act.html">GST Act</a>
+      <a class="active" href="/gst-rules.html">GST Rules</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-box">
+      <div class="breadcrumb"><a href="/gst-act.html">GST Legal Library</a> &nbsp;›&nbsp; GST Rules</div>
+      <div class="eyebrow">Comprehensive • Updated • Practical</div>
+      <h1>GST Rules</h1>
+      <p class="hero-copy">A searchable, Rule-wise reference to the Central Goods and Services Tax Rules, 2017. Browse chapter by chapter, search by Rule number or title, and open each available Rule's dedicated explanation.</p>
+
+      <div class="stats">
+        <div class="stat"><strong id="listedCount">213</strong><span>Individual Rule entries listed</span></div>
+        <div class="stat"><strong id="currentCount">196</strong><span>Current / named entries</span></div>
+        <div class="stat"><strong id="omittedCount">17</strong><span>Omitted / historical</span></div>
+        <div class="stat"><strong id="sourceCount">214</strong><span>Rules reported in source collection</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<main class="container">
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Explore GST Rules</h2>
+      <p class="section-sub">Search and browse the individually listed Rules of the Central Goods and Services Tax Rules, 2017.</p>
+    </div>
+
+    <div class="search-panel">
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search Rule number, title or chapter…" autocomplete="off">
+        <select id="chapter"><option value="">All chapters</option></select>
+      </div>
+      <div class="results-head">
+        <strong id="resultLabel">Loading Rules…</strong>
+        <span>Available Rule pages open directly; pages not yet created are marked accordingly.</span>
+      </div>
+    </div>
+
+    <div id="content"></div>
+    <div id="empty" class="empty" style="display:none">No matching Rule found.</div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>GST Rules — Rule Wise Guide</h2>
+      <p class="section-sub">Each Rule will have its own HTML page in the <code>gst-rules</code> folder. Adding a new Rule page and pushing it to GitHub will make it available through this library without changing the index.</p>
+    </div>
+    <div class="info-grid">
+      <div class="info-box"><h3>Rule-wise navigation</h3><p>Open an available Rule directly and move through the Rules using the dedicated pages.</p></div>
+      <div class="info-box"><h3>Chapter-wise research</h3><p>Filter the library by the chapter in which the Rule appears in the current master index.</p></div>
+      <div class="info-box"><h3>Search-friendly</h3><p>Search using a Rule number, lettered Rule number, title or chapter name.</p></div>
+      <div class="info-box"><h3>Automatic expansion</h3><p>New HTML Rule pages can be added to the folder, committed and pushed without redesigning this page.</p></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-head">
+      <h2>Source & Legal Notice</h2>
+    </div>
+    <div class="notice">
+      This library uses the individually identifiable Rule entries in the current India Code 2.0 record for the Central Goods and Services Tax Rules, 2017. The source collection currently reports 214 Rules while 213 individual Rule entries are listed on the page; this library does not invent an additional unverified Rule. Some listed entries are marked omitted/historical and are displayed with that status. Always verify the applicable Act, Rules, notifications, circulars and Gazette publications for the relevant tax period before relying on a provision.
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h2>GSTReconciliation.in</h2>
+        <p>Practical GST knowledge, reconciliation and compliance guidance for finance, accounts, tax professionals and businesses.</p>
+        <p><a href="/reconciliation.html">Try the GST Reconciliation Tool</a></p>
+      </div>
+      <div>
+        <h3>GST Tools</h3>
+        <p><a href="/reconciliation.html">GST Reconciliation Tool</a></p>
+        <p><a href="/gst-act.html">GST Act Guide</a></p>
+        <p><a href="/gst-rules.html">GST Rules</a></p>
+      </div>
+      <div>
+        <h3>GST Knowledge</h3>
+        <p><a href="/articles.html">GST Articles</a></p>
+        <p><a href="/gst-act.html">GST Legal Library</a></p>
+      </div>
+      <div>
+        <h3>Useful Links</h3>
+        <p><a href="/">Home</a></p>
+        <p><a href="/contact.html">Contact</a></p>
+      </div>
+    </div>
+    <div class="disclaimer">
+      Disclaimer: This library is for educational and practical reference. GST provisions, notifications, circulars, rulings and judicial decisions may change, and applicability depends on the relevant tax period and facts. It is not legal advice.
+    </div>
+  </div>
+</footer>
+
+<script>
+const FALLBACK = [{
+  type:"gst_rules",
+  number:"1",
+  title:"Short title and commencement",
+  status:"Current / named provision",
+  chapter:"I — Preliminary"
+}];
+
+let rules = [];
+let availablePages = new Map();
+
+function normalise(item){
+  const n = item.number ?? item.rule_number ?? item.id ?? "";
+  const title = item.title ?? item.name ?? item.heading ?? ("Rule " + n);
+  const chapter = item.chapter ?? "GST Rules";
+  const status = item.status ?? "Current in India Code record";
+  const clean = String(n).replace(/^rule[-_ ]?/i,"");
+  return {...item, number:clean, title:String(title), chapter:String(chapter), status:String(status)};
+}
+
+function fileNameForRule(number){
+  return "/gst-rules/rule-" + String(number).toLowerCase() + ".html";
+}
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g,c=>({
+    "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"
+  }[c]));
+}
+
+function isHistorical(status){
+  return /omitted|historical/i.test(String(status));
+}
+
+async function checkPage(url){
+  try{
+    const r = await fetch(url,{method:"HEAD",cache:"no-store"});
+    return r.ok;
+  }catch(e){
+    return false;
+  }
+}
+
+async function checkAvailablePages(){
+  const urls = rules.map(r=>[r.number,fileNameForRule(r.number)]);
+  const batch = 12;
+  for(let i=0;i<urls.length;i+=batch){
+    await Promise.all(urls.slice(i,i+batch).map(async ([n,url])=>{
+      availablePages.set(n,await checkPage(url));
+    }));
+    render();
+  }
+}
+
+function populateChapters(){
+  const select=document.getElementById("chapter");
+  const chapters=[...new Set(rules.map(r=>r.chapter).filter(Boolean))];
+  chapters.forEach(ch=>{
+    const opt=document.createElement("option");
+    opt.value=ch; opt.textContent=ch;
+    select.appendChild(opt);
+  });
+}
+
+function render(){
+  const q=document.getElementById("search").value.trim().toLowerCase();
+  const chapter=document.getElementById("chapter").value;
+
+  const filtered=rules.filter(r=>{
+    const hay=(r.number+" "+r.title+" "+r.chapter).toLowerCase();
+    return hay.includes(q) && (!chapter || r.chapter===chapter);
+  });
+
+  document.getElementById("resultLabel").textContent =
+    filtered.length+" Rule"+(filtered.length===1?"":"s")+" shown";
+
+  const empty=document.getElementById("empty");
+  const content=document.getElementById("content");
+
+  if(!filtered.length){
+    content.innerHTML="";
+    empty.style.display="block";
+    return;
+  }
+  empty.style.display="none";
+
+  const groups={};
+  filtered.forEach(r=>(groups[r.chapter]??=[]).push(r));
+
+  content.innerHTML=Object.entries(groups).map(([ch,items])=>{
+    return `
+      <section class="chapter">
+        <div class="chapter-title">
+          <h3>${escapeHtml(ch)}</h3>
+          <span>${items.length} entr${items.length===1?"y":"ies"}</span>
+        </div>
+        <div class="rule-grid">
+          ${items.map(r=>{
+            const historical=isHistorical(r.status);
+            const available=availablePages.get(r.number)===true;
+            const url=fileNameForRule(r.number);
+            const statusClass=historical?"historical":(!available?"pending":"");
+            const action=available
+              ?"Open detailed Rule →"
+              :"Detailed page being added";
+            const cardContent=`
+              <div class="rule-number">RULE ${escapeHtml(r.number)}</div>
+              <div class="rule-title">${escapeHtml(r.title)}</div>
+              <div class="rule-status ${statusClass}">${escapeHtml(r.status)}</div>
+              <div class="rule-action">${action}</div>`;
+            return available
+              ? `<a class="rule-card" href="${url}">${cardContent}</a>`
+              : `<div class="rule-card disabled" title="The dedicated HTML page has not been added yet.">${cardContent}</div>`;
+          }).join("")}
+        </div>
+      </section>`;
+  }).join("");
+}
+
+document.getElementById("search").addEventListener("input",render);
+document.getElementById("chapter").addEventListener("change",render);
+
+fetch("/data/gst-rules.json",{cache:"no-store"})
+.then(r=>r.ok?r.json():Promise.reject(new Error("Could not load gst-rules.json")))
+.then(data=>{
+  const raw=Array.isArray(data) ? data : (data.items || data.gst_rules || []);
+  rules=raw.map(normalise);
+
+  if(!rules.length) rules=FALLBACK.map(normalise);
+
+  const counts=data.counts || {};
+  document.getElementById("listedCount").textContent =
+    counts.individual_entries ?? rules.length;
+  document.getElementById("currentCount").textContent =
+    counts.current_named ?? rules.filter(r=>!isHistorical(r.status)).length;
+  document.getElementById("omittedCount").textContent =
+    counts.omitted_historical ?? rules.filter(r=>isHistorical(r.status)).length;
+  document.getElementById("sourceCount").textContent =
+    data.source?.collection_count_reported ?? data.counts?.source_reported ?? "214";
+
+  populateChapters();
+  render();
+  checkAvailablePages();
+})
+.catch(()=>{
+  rules=FALLBACK.map(normalise);
+  populateChapters();
+  render();
+});
+</script>
+</body>
+</html>
