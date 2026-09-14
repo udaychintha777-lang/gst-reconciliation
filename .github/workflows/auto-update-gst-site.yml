@@ -8,10 +8,17 @@ on:
       - "articles.html"
       - "gst-act.html"
       - "gst-act/**"
+      - "gst-rules.html"
       - "gst-rules/**"
+      - "schedules.html"
+      - "schedules/**"
+      - "notifications.html"
       - "notifications/**"
+      - "circulars.html"
       - "circulars/**"
+      - "orders.html"
       - "orders/**"
+      - "apply_gst_homepage_width_standard.py"
       - "scripts/generate_site.py"
       - "scripts/build_legal_library.py"
       - ".github/workflows/auto-update-gst-site.yml"
@@ -30,22 +37,34 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Apply homepage width standard to all legal HTML
+        run: python apply_gst_homepage_width_standard.py
+
       - name: Generate article index and sitemap
         run: python scripts/generate_site.py
 
       - name: Generate GST Legal Library index
         run: python scripts/build_legal_library.py
 
-      - name: Commit generated files
+      - name: Commit generated and standardized files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add articles.html sitemap.xml data/legal-library.json
+          git add \
+            articles.html \
+            sitemap.xml \
+            data/legal-library.json \
+            gst-act.html gst-act \
+            gst-rules.html gst-rules \
+            schedules.html schedules \
+            notifications.html notifications \
+            circulars.html circulars \
+            orders.html orders
 
           if git diff --cached --quiet; then
-            echo "No generated changes to commit."
+            echo "No generated or standardized changes to commit."
           else
-            git commit -m "Auto-update GST site indexes"
+            git commit -m "Auto-update GST legal pages and indexes"
             git push
           fi

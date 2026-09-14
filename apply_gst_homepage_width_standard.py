@@ -1,6 +1,5 @@
 from pathlib import Path
 import re
-from datetime import datetime, timezone
 
 ROOT = Path(__file__).resolve().parent
 
@@ -20,8 +19,9 @@ ADSENSE = """<!-- Google AdSense -->
   crossorigin="anonymous"></script>
 """
 
-WIDTH_CSS = """
+WIDTH_STYLE = """<style>
 /* GST Reconciliation site-wide width standard — matches homepage exactly. */
+.gst-site-width-standard,
 .wrap,
 .legal-wrap,
 .rule-wrap,
@@ -40,6 +40,28 @@ footer .container {
   margin-right: auto;
   box-sizing: border-box;
 }
+</style>
+"""
+
+NUMERIC_SORT_PATCH = r"""<script>
+/* gst-rules-numeric-sort-v2 */
+(function(){
+  function ruleSortValue(v){
+    const s=String(v ?? "").replace(/^rule[-_ ]?/i,"").trim().toUpperCase();
+    const m=s.match(/^(\d+)([A-Z]*)/);
+    if(!m) return [999999,s];
+    return [parseInt(m[1],10),m[2]||""];
+  }
+  window.gstSortRulesNumerically=function(arr){
+    return [...arr].sort((a,b)=>{
+      const av=ruleSortValue(a.number ?? a.rule_number ?? a.id);
+      const bv=ruleSortValue(b.number ?? b.rule_number ?? b.id);
+      if(av[0]!==bv[0]) return av[0]-bv[0];
+      return av[1].localeCompare(bv[1],undefined,{numeric:true});
+    });
+  };
+})();
+</script>
 """
 
 def add_tracking(html):
@@ -49,57 +71,33 @@ def add_tracking(html):
         html = html.replace("</head>", ADSENSE + "\n</head>", 1)
     return html
 
-def add_width_standard(html):
-    if "GST Reconciliation site-wide width standard" not in html:
-        html = html.replace("</head>", "<style>" + WIDTH_CSS + "</style>\n</head>", 1)
-
-    # Replace the known arbitrary outer widths used by the legal pages.
-    replacements = [
-        (r"\.rule-wrap\s*\{\s*max-width\s*:\s*1120px\s*;", ".rule-wrap{width:min(1400px,calc(100% - 64px));max-width:none;"),
-        (r"\.container\s*\{\s*max-width\s*:\s*1120px\s*;", ".container{width:min(1400px,calc(100% - 64px));max-width:none;"),
-        (r"\.container\s*\{\s*max-width\s*:\s*1180px\s*;", ".container{width:min(1400px,calc(100% - 64px));max-width:none;"),
-        (r"\.container\s*\{\s*width\s*:\s*min\(1180px,\s*calc\(100% - 40px\)\s*\);", ".container{width:min(1400px,calc(100% - 64px));"),
+def replace_container_widths(html):
+    # Fix common standalone legal-page container widths while preserving page design.
+    patterns = [
+        (r"(\.rule-wrap\s*\{[^}]*?)max-width\s*:\s*1120px\s*;?", r"\1"),
+        (r"(\.rule-wrap\s*\{[^}]*?)max-width\s*:\s*1180px\s*;?", r"\1"),
+        (r"(\.container\s*\{[^}]*?)max-width\s*:\s*1120px\s*;?", r"\1"),
+        (r"(\.container\s*\{[^}]*?)max-width\s*:\s*1180px\s*;?", r"\1"),
     ]
-    for pattern, repl in replacements:
-        html = re.sub(pattern, repl, html, flags=re.I)
+    for pattern, repl in patterns:
+        html = re.sub(pattern, repl, html, flags=re.I | re.S)
 
+    if "GST Reconciliation site-wide width standard" not in html:
+        html = html.replace("</head>", WIDTH_STYLE + "\n</head>", 1)
     return html
 
-def numeric_rule_sort_patch(html):
-    # Ensure rule index renders numerically, so Rule 9 comes before Rule 10,
-    # Rule 10A after Rule 10, etc.
-    if "gst-rules-numeric-sort-v1" in html:
+def add_numeric_rule_sort(html):
+    if "gst-rules-numeric-sort-v2" in html:
         return html
 
-    marker = "/* gst-rules-numeric-sort-v1 */"
-    patch = f"""
-<style>
-{marker}
-</style>
-<script>
-(function(){{
-  function gstRuleSortValue(v){{
-    const s=String(v ?? "").replace(/^rule[-_ ]?/i,"").trim().toUpperCase();
-    const m=s.match(/^(\\d+)([A-Z]*)/);
-    if(!m) return [999999,s];
-    const n=parseInt(m[1],10);
-    const suffix=m[2]||"";
-    return [n,suffix];
-  }}
-  window.gstSortRulesNumerically=function(arr){{
-    return [...arr].sort((a,b)=>{{
-      const av=gstRuleSortValue(a.number ?? a.rule_number ?? a.id);
-      const bv=gstRuleSortValue(b.number ?? b.rule_number ?? b.id);
-      if(av[0]!==bv[0]) return av[0]-bv[0];
-      return av[1].localeCompare(bv[1],undefined,{{numeric:true}});
-    }});
-  }};
-}})();
-</script>
-"""
-    html = html.replace("</head>", patch + "\n</head>", 1)
+    if "gst-rules-numeric-sort-v1" in html:
+        html = html.replace("gst-rules-numeric-sort-v1", "gst-rules-numeric-sort-v2", 1)
+        return html
 
-    # Patch the common rule-index assignment patterns.
+    # Add helper. Existing rule pages are unaffected; the index can use it if its
+    # data rendering code calls window.gstSortRulesNumerically.
+    html = html.replace("</head>", NUMERIC_SORT_PATCH + "\n</head>", 1)
+
     html = html.replace(
         "rules=raw.map(normalise);",
         "rules=gstSortRulesNumerically(raw.map(normalise));"
@@ -110,41 +108,52 @@ def numeric_rule_sort_patch(html):
     )
     return html
 
+def legal_html_files():
+    # All current and future legal-library folders.
+    folders = (
+        "gst-act",
+        "gst-rules",
+        "schedules",
+        "notifications",
+        "circulars",
+        "orders",
+    )
+
+    files = []
+    for folder in folders:
+        base = ROOT / folder
+        if base.exists():
+            files.extend(base.rglob("*.html"))
+
+    # Legal-library root pages.
+    for name in ("gst-act.html", "gst-rules.html", "schedules.html",
+                 "notifications.html", "circulars.html", "orders.html"):
+        p = ROOT / name
+        if p.exists():
+            files.append(p)
+
+    return sorted(set(files))
+
 def process_file(path):
     html = path.read_text(encoding="utf-8")
     original = html
 
     html = add_tracking(html)
-    html = add_width_standard(html)
+    html = replace_container_widths(html)
 
-    # Rule index sorting only applies to the root GST Rules page.
     if path.name.lower() == "gst-rules.html":
-        html = numeric_rule_sort_patch(html)
+        html = add_numeric_rule_sort(html)
 
     if html != original:
-        path.write_text(html, encoding="utf-8")
+        path.write_text(html, encoding="utf-8", newline="\n")
         return True
     return False
 
-targets = []
+targets = legal_html_files()
+changed = sum(process_file(p) for p in targets)
 
-for folder in ("gst-act", "gst-rules"):
-    base = ROOT / folder
-    if base.exists():
-        targets.extend(base.rglob("*.html"))
-
-for root_name in ("gst-act.html", "gst-rules.html"):
-    p = ROOT / root_name
-    if p.exists():
-        targets.append(p)
-
-changed = 0
-for p in sorted(set(targets)):
-    if process_file(p):
-        changed += 1
-
-print(f"GST homepage-width standard applied.")
-print(f"Files checked: {len(set(targets))}")
+print("GST homepage-width standard applied.")
+print(f"Files checked: {len(targets)}")
 print(f"Files changed: {changed}")
 print("Width standard: width:min(1400px,calc(100% - 64px));")
 print("GA4: G-NBKTXWJ20G")
