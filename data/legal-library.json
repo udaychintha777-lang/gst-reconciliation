@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-14T00:38:16+05:30",
+  "generated_at": "2026-09-14T07:33:49+00:00",
   "version": 1,
   "items": [
     {
@@ -1749,11 +1749,27 @@
       "source_file": "gst-rules/rule-1.html",
       "type": "gst-rule",
       "number": "1"
+    },
+    {
+      "title": "CGST Rule 2 — Definitions | GST Reconciliation",
+      "url": "/gst-rules/rule-2.html",
+      "category": "GST Rules",
+      "source_file": "gst-rules/rule-2.html",
+      "type": "gst-rule",
+      "number": "2"
+    },
+    {
+      "title": "CGST Rule 3 — Intimation for composition levy | GST Reconciliation",
+      "url": "/gst-rules/rule-3.html",
+      "category": "GST Rules",
+      "source_file": "gst-rules/rule-3.html",
+      "type": "gst-rule",
+      "number": "3"
     }
   ],
   "counts": {
     "gst_act": 174,
-    "gst_rules": 1,
+    "gst_rules": 3,
     "notifications": 0,
     "circulars": 0,
     "orders": 0,
