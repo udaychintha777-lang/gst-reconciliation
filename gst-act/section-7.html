@@ -1,31 +1,571 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/styles.css"><title>Section 7 — Scope of supply. | GST Reconciliation</title><meta name="description" content="Section 7 deals with scope of supply. The provision should be read with the connected rules, notifications and the facts of the transaction."><link rel="canonical" href="https://gstreconciliation.in/gst-act/section-7.html">
-<!-- Google Analytics 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section 7 — Scope of Supply | CGST Act | GST Reconciliation</title>
+<meta name="description" content="Detailed practical guide to Section 7 of the CGST Act, 2017 — scope of supply, consideration, business, Schedule I, Schedule II, Schedule III, amendments, mutuality, actionable claims and practical GST analysis.">
+<meta name="keywords" content="Section 7 CGST Act, scope of supply, GST supply, Schedule I, Schedule II, Schedule III, GST mutuality, Section 7(1)(aa), GST compliance">
+<meta name="author" content="GST Reconciliation">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://gstreconciliation.in/gst-act/section-7.html">
+
+<!-- Google tag (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NBKTXWJ20G');</script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NBKTXWJ20G');
+</script>
+
 <!-- Google AdSense -->
 <script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
-  crossorigin="anonymous"></script>
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
+crossorigin="anonymous"></script>
 
 <style>
-/* GST Reconciliation site-wide width standard — matches homepage exactly. */
-.wrap,
-.legal-wrap,
-.rule-wrap,
-.section-wrap,
-.section-page-wrap,
-.legal-container,
-.legal-page-wrap,
-.site-container,
-main.container,
-header .container,
-.hero .container,
-footer .container {
-  width: min(1400px, calc(100% - 64px));
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;background:#f6f8fb;color:#172033;line-height:1.72}
+a{color:#155eef;text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{width:min(1400px,calc(100% - 64px));margin:auto}
+.topbar{background:#0b1320;color:#cbd5e1;font-size:13px;padding:8px 0}
+.header{background:#fff;border-bottom:1px solid #e5eaf1;position:sticky;top:0;z-index:10}
+.header-inner{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{font-size:21px;font-weight:800;color:#111827;white-space:nowrap}
+.brand span{color:#2563eb}
+.nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap;font-size:14px}
+.nav a{color:#334155;font-weight:600}
+.breadcrumb{font-size:13px;color:#64748b;padding:22px 0 8px}
+.hero{background:linear-gradient(135deg,#0f172a,#172554);color:#fff;border-radius:16px;padding:38px 42px;margin:10px 0 28px;box-shadow:0 12px 35px rgba(15,23,42,.12)}
+.hero .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:#93c5fd;font-weight:800}
+.hero h1{font-size:42px;line-height:1.15;margin:10px 0 13px}
+.hero p{max-width:1000px;color:#dbeafe;margin:0;font-size:17px}
+.hero-meta{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.pill{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);border-radius:999px;padding:7px 12px;font-size:13px;color:#e2e8f0}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:26px;align-items:start}
+.card{background:#fff;border:1px solid #e1e7ef;border-radius:14px;padding:28px 30px;margin-bottom:22px;box-shadow:0 4px 18px rgba(15,23,42,.035)}
+.card h2{font-size:27px;line-height:1.25;color:#0f172a;margin:0 0 15px}
+.card h3{font-size:20px;color:#172554;margin:25px 0 9px}
+.card h4{font-size:17px;color:#334155;margin:20px 0 7px}
+.card p{margin:9px 0}
+.card ul,.card ol{padding-left:24px}
+.card li{margin:7px 0}
+.quick{position:sticky;top:92px}
+.quick .card{padding:20px}
+.quick h3{margin:0 0 10px}
+.quick a{display:block;padding:7px 0;border-bottom:1px solid #edf1f5;font-size:14px}
+.quote{background:#f8fafc;border-left:4px solid #2563eb;padding:18px 20px;margin:18px 0;border-radius:0 10px 10px 0}
+.statute{background:#0f172a;color:#e5e7eb;border-radius:12px;padding:22px 24px;font-family:Georgia,serif;line-height:1.8;overflow:auto}
+.statute strong{color:#fff}
+.table-wrap{overflow:auto}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px}
+th,td{border:1px solid #dfe5ec;text-align:left;vertical-align:top;padding:12px}
+th{background:#eef3f8;color:#0f172a}
+.note{background:#fff8e7;border:1px solid #f0d48b;border-radius:12px;padding:17px 19px;margin:17px 0}
+.success{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:12px;padding:17px 19px;margin:17px 0}
+.warning{background:#fff1f2;border:1px solid #fecdd3;border-radius:12px;padding:17px 19px;margin:17px 0}
+.timeline{border-left:3px solid #dbeafe;padding-left:20px}
+.timeline-item{margin:0 0 22px}
+.timeline-item .date{font-weight:800;color:#155eef}
+.example{background:#f8fbff;border:1px solid #dbe7f5;border-radius:12px;padding:18px 20px;margin:15px 0}
+.example strong{color:#0f3b82}
+.takeaways{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.takeaway{border:1px solid #dbe5f5;background:#f8fbff;border-radius:12px;padding:17px}
+.footer{background:#0f172a;color:#cbd5e1;margin-top:42px;padding:42px 0 22px}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:30px}
+.footer h3{color:#fff;margin:0 0 12px;font-size:16px}
+.footer a{color:#cbd5e1}
+.footer-brand{font-size:22px;font-weight:800;color:#fff}
+.footer-brand span{color:#60a5fa}
+.footer p{margin:8px 0;color:#94a3b8;font-size:14px}
+.footer-bottom{border-top:1px solid #263247;margin-top:28px;padding-top:18px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:13px;color:#94a3b8}
+.nextprev{display:flex;justify-content:space-between;gap:15px;margin:25px 0}
+.nextprev a{background:#fff;border:1px solid #dce3eb;border-radius:10px;padding:12px 16px;font-weight:700}
+@media(max-width:900px){
+.wrap{width:min(100% - 32px,1400px)}
+.layout{grid-template-columns:1fr}
+.quick{position:static}
+.takeaways,.footer-grid{grid-template-columns:1fr}
+.nav{display:none}
+.hero h1{font-size:33px}
+}
+@media(max-width:600px){
+.wrap{width:calc(100% - 24px)}
+.hero{padding:26px 22px}
+.hero h1{font-size:29px}
+.card{padding:22px 19px}
+.card h2{font-size:23px}
 }
 </style>
-</head><body><nav class="nav"><div class="wrap navin"><a class="brand" href="/"><div class="logo">GST</div><div><strong>GST Reconciliation</strong><small>KNOWLEDGE • TOOLS • SOLUTIONS</small></div></a><div class="links"><a href="/">Home</a><a href="/reconciliation.html">Reconciliation</a><a href="/articles.html">GST Knowledge</a><a href="/questions.html">Questions & Answers</a><a href="/gst-act.html">GST Act (Sections)</a><a href="/#tools">GST Tools</a><a href="/#ask">Ask GST AI</a><a href="/#contact">Contact</a></div></div></nav><main class="article"><div class="chip">GST Act • Section 7</div><h1>Section 7: Scope of supply.</h1><p class="lead">Section 7 deals with scope of supply. The provision should be read with the connected rules, notifications and the facts of the transaction.</p><div class="callout"><strong>In simple terms:</strong> The statutory subject is scope of supply. In practice, the section works with definitions, rules, forms and tax-period-specific changes. A business should therefore check the complete compliance chain rather than relying on the section title alone.</div><h2>What a business should understand</h2><ul><li>Understand the transaction before applying the tax treatment.</li><li>Check the applicable section, rule and tax-period-specific changes.</li><li>Match the accounting entry with the GST return and supporting documents.</li><li>Document the judgement where the treatment depends on facts or contractual terms.</li></ul><h2>Practical example</h2><div class="example">Example: A business identifies the transaction, checks the applicable treatment, records the tax correctly, reconciles it with the return and retains the supporting documents.</div><h2>Practical checklist</h2><ul class="checklist"><li>Identify the transaction and tax period</li><li>Check the applicable law and connected rules</li><li>Verify invoices, agreements, ledgers and portal data</li><li>Reconcile the working with the relevant return</li><li>Retain the final working and supporting evidence</li></ul><div class="notice">The content is for general knowledge and educational purposes. Verify the law, rules, notifications and circulars applicable to the relevant tax period before taking any action. It is not a substitute for professional advice.</div><div class="reference">Reference note: Prepared using GST statutory material and professional GST study material for knowledge purposes.</div></main><footer class="footer"><div class="wrap"><strong>GST Reconciliation</strong><p class="small">Free GST knowledge, practical tools and learning resources.</p><p class="small">Knowledge purpose only. Verify the law, rules, notifications and circulars applicable to the relevant tax period before taking any action.</p></div></footer></body></html>
+</head>
+
+<body>
+<div class="topbar"><div class="wrap">GST Knowledge &amp; Compliance Partner</div></div>
+
+<header class="header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/"><span>GST</span> Reconciliation</a>
+    <nav class="nav">
+      <a href="/gst-act.html">GST Legal Library</a>
+      <a href="/gst-rules.html">GST Rules</a>
+      <a href="/articles.html">GST Articles</a>
+      <a href="/reconciliation.html">GST Reconciliation Tool</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="breadcrumb">
+    <a href="/gst-act.html">GST Legal Library</a> &nbsp;›&nbsp;
+    <a href="/gst-act.html">CGST Act</a> &nbsp;›&nbsp; Section 7
+  </div>
+
+  <section class="hero">
+    <div class="eyebrow">Chapter III — Levy and Collection of Tax</div>
+    <h1>Section 7 — Scope of Supply</h1>
+    <p>Section 7 is the starting point for deciding whether a transaction enters the GST framework. It defines the breadth of “supply”, identifies transactions that can qualify even without ordinary consideration, separates classification from the existence of a supply, and expressly keeps specified activities outside the concept of supply.</p>
+    <div class="hero-meta">
+      <span class="pill">CGST Act, 2017</span>
+      <span class="pill">In force from 1 July 2017</span>
+      <span class="pill">Schedules I, II &amp; III linked</span>
+      <span class="pill">Detailed practical guide</span>
+    </div>
+  </section>
+
+  <div class="layout">
+    <article>
+      <section class="card" id="overview">
+        <h2>1. Why Section 7 is one of the most important GST provisions</h2>
+        <p>GST does not begin merely because money has moved from one person to another. The legal starting point is whether there is a <strong>supply</strong> within the meaning of the CGST Act. Section 9 is the charging provision, but Section 7 determines the transaction universe on which that charging architecture can operate.</p>
+        <p>For practical work, Section 7 should therefore be read as a structured decision framework rather than as a short definition. A transaction may enter the framework through an ordinary business supply for consideration, through import of services for consideration, or through specified activities in Schedule I even without consideration. Conversely, Schedule III transactions are expressly kept outside the supply concept, and Section 7(1A) makes clear that Schedule II is primarily a classification mechanism for activities that have already qualified as supply.</p>
+        <div class="success"><strong>Core principle:</strong> First establish whether a supply exists. Then determine whether it is goods or services. Only after that should the practitioner move to the applicable charging, rate, place-of-supply, valuation, time-of-supply and compliance provisions.</div>
+      </section>
+
+      <section class="card" id="text">
+        <h2>2. Statutory text — Section 7</h2>
+        <div class="statute">
+          <strong>7. Scope of supply.</strong><br><br>
+          <strong>(1)</strong> For the purposes of this Act, the expression “supply” includes—<br><br>
+          <strong>(a)</strong> all forms of supply of goods or services or both such as sale, transfer, barter, exchange, licence, rental, lease or disposal made or agreed to be made for a consideration by a person in the course or furtherance of business;<br><br>
+          <strong>(aa)</strong> the activities or transactions, by a person, other than an individual, to its members or constituents or vice-versa, for cash, deferred payment or other valuable consideration.<br><br>
+          <strong>Explanation.</strong>—For the purposes of this clause, it is hereby clarified that, notwithstanding anything contained in any other law for the time being in force or any judgment, decree or order of any Court, tribunal or authority, the person and its members or constituents shall be deemed to be two separate persons and the supply of activities or transactions inter se shall be deemed to take place from one such person to another;<br><br>
+          <strong>(b)</strong> import of services for a consideration whether or not in the course or furtherance of business; and<br><br>
+          <strong>(c)</strong> the activities specified in Schedule I, made or agreed to be made without a consideration;<br><br>
+          <strong>(1A)</strong> Where certain activities or transactions constitute a supply in accordance with the provisions of sub-section (1), they shall be treated either as supply of goods or supply of services as referred to in Schedule II.<br><br>
+          <strong>(2)</strong> Notwithstanding anything contained in sub-section (1),—<br>
+          <strong>(a)</strong> activities or transactions specified in Schedule III; or<br>
+          <strong>(b)</strong> such activities or transactions undertaken by the Central Government, a State Government or any local authority in which they are engaged as public authorities, as may be notified by the Government on the recommendations of the Council,<br>
+          shall be treated neither as a supply of goods nor a supply of services.<br><br>
+          <strong>(3)</strong> Subject to the provisions of sub-sections (1), (1A) and (2), the Government may, on the recommendations of the Council, specify, by notification, the transactions that are to be treated as—<br>
+          <strong>(a)</strong> a supply of goods and not as a supply of services; or<br>
+          <strong>(b)</strong> a supply of services and not as a supply of goods.
+        </div>
+        <p class="note"><strong>Important drafting point:</strong> The present text is materially different from the original 2017 architecture. Clause (d) of Section 7(1) was removed and sub-section (1A) was introduced so that Schedule II classifies a transaction that already qualifies as supply rather than independently creating the taxable event.</p>
+      </section>
+
+      <section class="card" id="structure">
+        <h2>3. How Section 7 works — the complete legal structure</h2>
+        <div class="table-wrap">
+        <table>
+          <thead><tr><th>Provision</th><th>What it does</th><th>Practical question</th></tr></thead>
+          <tbody>
+            <tr><td>7(1)(a)</td><td>Captures ordinary supplies of goods/services/both for consideration in the course or furtherance of business.</td><td>Is there a supply, consideration and a business nexus?</td></tr>
+            <tr><td>7(1)(aa)</td><td>Specifically covers qualifying transactions between a non-individual person and its members/constituents for consideration, with a statutory deeming fiction of separate persons.</td><td>Is an association/body/company providing something to members or vice-versa for consideration?</td></tr>
+            <tr><td>7(1)(b)</td><td>Covers import of services for consideration even when not in the course or furtherance of business.</td><td>Is a service imported for consideration?</td></tr>
+            <tr><td>7(1)(c)</td><td>Brings Schedule I activities within supply even without consideration.</td><td>Does a no-consideration transaction fall within Schedule I?</td></tr>
+            <tr><td>7(1A)</td><td>Uses Schedule II to classify a qualifying supply as goods or services.</td><td>Once supply exists, how should it be classified?</td></tr>
+            <tr><td>7(2)</td><td>Overrides sub-section (1) for Schedule III and specified public-authority activities.</td><td>Is the transaction expressly outside supply?</td></tr>
+            <tr><td>7(3)</td><td>Allows the Government, on Council recommendation, to specify whether particular transactions are goods or services.</td><td>Is there a specific notification affecting classification?</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="card" id="7a">
+        <h2>4. Section 7(1)(a) — ordinary business supply</h2>
+        <p>Section 7(1)(a) is the provision most frequently used in day-to-day GST analysis. It is deliberately broad: it says “all forms of supply” and then gives examples such as sale, transfer, barter, exchange, licence, rental, lease and disposal.</p>
+        <p>Three central elements must normally be examined together:</p>
+        <ol>
+          <li><strong>There must be goods, services or both.</strong> The subject matter must fall within the statutory framework.</li>
+          <li><strong>There must be consideration.</strong> Consideration may be monetary or non-monetary, subject to the definition and surrounding provisions.</li>
+          <li><strong>The activity must be by a person in the course or furtherance of business.</strong> A private or purely personal transaction is not automatically a GST supply merely because something has changed hands.</li>
+        </ol>
+
+        <h3>4.1 “All forms of supply” is wider than a conventional sale</h3>
+        <p>A common mistake is to equate supply with sale. GST deliberately covers a much wider range of commercial arrangements. For example, a lease of commercial premises, a licence to use an asset, a barter arrangement, or a service provided for a non-cash consideration may all require Section 7 analysis.</p>
+
+        <div class="example"><strong>Example — barter:</strong> A contractor provides construction services to another business and receives machinery-use rights instead of cash. The absence of a cash invoice does not automatically take the arrangement outside GST. The consideration and business nexus have to be examined under the Act.</div>
+
+        <h3>4.2 “Made or agreed to be made”</h3>
+        <p>The wording covers both an actual supply and an agreement to make a supply. This matters in contracts, framework arrangements, long-term service agreements, leases, construction contracts and other commercial arrangements where the legal and tax consequences can arise from the contractual structure even before every performance step has occurred.</p>
+
+        <h3>4.3 “In the course or furtherance of business”</h3>
+        <p>The expression connects Section 7 to the broad definition of “business” in Section 2(17). It is not restricted to the taxpayer's main line of business. Incidental, ancillary or supporting activities can also require examination where they have the necessary business nexus.</p>
+      </section>
+
+      <section class="card" id="7aa">
+        <h2>5. Section 7(1)(aa) — transactions between persons and their members or constituents</h2>
+        <p>Clause (aa) was inserted by the Finance Act, 2021 with retrospective effect from 1 July 2017. The provision specifically addresses activities or transactions by a person, other than an individual, to its members or constituents or vice-versa, for cash, deferred payment or other valuable consideration.</p>
+        <p>The accompanying Explanation creates a statutory deeming fiction: for this clause, the person and its members or constituents are deemed to be two separate persons, and the inter se supply is deemed to occur from one to the other.</p>
+        <div class="note"><strong>Why this matters:</strong> This amendment was aimed at the GST treatment of transactions involving clubs, associations and similar organisations and the doctrine of mutuality. It was not merely a rate amendment; it changed the statutory architecture used to analyse whether the association and its members can be treated as separate persons for this purpose.</div>
+
+        <h3>5.1 Retrospective operation and effective date</h3>
+        <p>The Finance Act, 2021 inserted clause (aa) with effect from 1 July 2017. Notification No. 39/2021-Central Tax dated 21 December 2021 brought the relevant Finance Act provisions into force from 1 January 2022. The distinction is important: the <em>legal amendment was given retrospective effect</em>, while the notification specified the date from which the enacted provision was brought into force administratively. citeturn2search0turn2search2</p>
+
+        <h3>5.2 Judicial development — mutuality</h3>
+        <p>The provision has been subject to constitutional litigation. In April 2025, the Kerala High Court in <em>Indian Medical Association, Kerala State Branch v. Union of India</em> declared Section 7(1)(aa), its Explanation and the corresponding provision under the Kerala GST law unconstitutional and void on the grounds stated in that judgment. That decision is an important part of the legal history of the provision, but it should not be treated as silently deleting the provision from the Central Act. The current statutory text available through India Code continued to show Section 7(1)(aa) as part of the Act as at September 2026. citeturn5search0turn5search4turn4search0</p>
+        <div class="warning"><strong>Professional caution:</strong> For an association/member dispute, do not rely only on a bare-text reading. Check the latest binding appellate position, the precise facts, the relevant State GST provision and the period involved before taking a tax position.</div>
+
+        <div class="example"><strong>Example — club membership:</strong> A non-individual association collects a membership amount and provides facilities to members. Section 7(1)(aa) requires the transaction to be examined under its specific wording, including the nature of the person, the member relationship and the consideration. The mutuality litigation must also be considered for the relevant period.</div>
+      </section>
+
+      <section class="card" id="7b">
+        <h2>6. Section 7(1)(b) — import of services for consideration</h2>
+        <p>This limb is intentionally broader than Section 7(1)(a) in one important respect. It covers <strong>import of services for a consideration whether or not in the course or furtherance of business</strong>.</p>
+        <p>Therefore, the ordinary business-nexus condition in clause (a) should not simply be copied into clause (b). The practitioner must instead analyse the statutory definition of import of services under the IGST Act, the recipient/supplier relationship, place of supply and the applicable reverse-charge provisions.</p>
+
+        <div class="example"><strong>Example:</strong> An Indian person receives a consultancy service from a foreign supplier for consideration. The analysis does not stop at asking whether the Indian recipient is carrying on business. The import-of-service framework under the IGST Act must be applied together with Section 7.</div>
+      </section>
+
+      <section class="card" id="7c">
+        <h2>7. Section 7(1)(c) — Schedule I supplies without consideration</h2>
+        <p>One of the most important practical points is that <strong>consideration is not universally required</strong>. Section 7(1)(c) expressly brings activities specified in Schedule I into the concept of supply even where they are made or agreed to be made without consideration.</p>
+        <p>Schedule I includes, subject to its own conditions, categories such as:</p>
+        <ul>
+          <li>Permanent transfer or disposal of business assets where input tax credit has been availed on those assets.</li>
+          <li>Supply between related persons or distinct persons in the course or furtherance of business.</li>
+          <li>Certain supplies of goods between principal and agent and agent and principal.</li>
+          <li>Import of services by a taxable person from a related person or from another establishment outside India in the course or furtherance of business.</li>
+        </ul>
+        <div class="note"><strong>Important:</strong> Do not write “no consideration means no GST” as a general rule. The correct question is whether the transaction is one of the no-consideration supplies specifically brought within Schedule I.</div>
+
+        <div class="example"><strong>Example — branch transfer:</strong> A company transfers goods from one GST registration to another registration of the same legal entity in another State. The parties may not negotiate a normal sale price, but the distinct-person provisions and Schedule I can bring the transaction within supply.</div>
+      </section>
+
+      <section class="card" id="7-1a">
+        <h2>8. Section 7(1A) — Schedule II classifies; it does not independently create supply</h2>
+        <p>This is one of the most important changes in the history of Section 7.</p>
+        <p>The original 2017 wording included Schedule II activities directly within Section 7(1). This drafting structure created an interpretational problem: it could appear that merely falling within Schedule II was enough to make an activity a supply.</p>
+        <p>The 28th GST Council process specifically considered this issue. The Council agenda records that Schedule II was intended to classify certain activities as goods or services where they already qualified as supply, and that the earlier drafting could create the unintended result of treating a Schedule II activity as supply even where the requirements of Section 7(1) were not otherwise satisfied. The Council therefore considered inserting Section 7(1A) and removing clause (d) of Section 7(1). citeturn0search1turn4search5</p>
+        <p>The result is the present architecture: <strong>first establish supply under Section 7(1); then use Schedule II to classify the qualifying supply as goods or services.</strong></p>
+
+        <div class="example"><strong>Example — works/contractual activity:</strong> If an activity is listed in Schedule II, that listing should not be treated as a shortcut that automatically creates a supply. The underlying Section 7(1) test must still be considered. Once a supply exists, Schedule II can determine whether the supply is treated as a supply of goods or services.</div>
+      </section>
+
+      <section class="card" id="7-2">
+        <h2>9. Section 7(2) — transactions treated as neither supply of goods nor supply of services</h2>
+        <p>Section 7(2) begins with a non-obstante clause: “Notwithstanding anything contained in sub-section (1)”. This is significant because it creates an express statutory override.</p>
+        <p>Two broad categories are covered:</p>
+        <ol>
+          <li><strong>Schedule III activities or transactions.</strong></li>
+          <li><strong>Specified activities of Central Government, State Government or local authorities acting as public authorities</strong>, where the Government notifies them on the recommendation of the GST Council.</li>
+        </ol>
+
+        <h3>9.1 Major Schedule III categories</h3>
+        <div class="table-wrap">
+        <table>
+          <thead><tr><th>Schedule III category</th><th>Practical significance</th></tr></thead>
+          <tbody>
+            <tr><td>Employee services to employer in course of or in relation to employment</td><td>Ordinary salary/wage relationship is kept outside supply. Separate transactions outside the employment relationship need independent analysis.</td></tr>
+            <tr><td>Services by courts or tribunals established under law</td><td>Specified judicial functions are kept outside supply.</td></tr>
+            <tr><td>Specified constitutional/public functions</td><td>Functions/duties of specified public office holders and bodies are excluded in the circumstances stated.</td></tr>
+            <tr><td>Funeral, burial, crematorium, mortuary services including transportation of deceased</td><td>Express statutory exclusion.</td></tr>
+            <tr><td>Sale of land and, subject to Schedule II, sale of building</td><td>These transactions are specifically carved out of supply.</td></tr>
+            <tr><td>Actionable claims other than specified actionable claims</td><td>The law now preserves the exclusion for actionable claims except the category defined as specified actionable claims.</td></tr>
+            <tr><td>Specified non-taxable-territory-to-non-taxable-territory supplies without entry into India</td><td>Added retrospectively to address offshore transactions without entry into the taxable territory.</td></tr>
+            <tr><td>Specified warehoused-goods and endorsement transactions before home consumption clearance</td><td>Added to address specified customs/warehousing transactions.</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="card" id="amendments">
+        <h2>10. Major amendment history of Section 7</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="date">1 July 2017 — original GST commencement</div>
+            <p>Section 7 came into force as part of the main CGST provisions from 1 July 2017. The original architecture included clause (d) in Section 7(1), linking Schedule II directly with the concept of supply.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2018 — restructuring of Section 7</div>
+            <p>The CGST Amendment Act, 2018 restructured Section 7 by introducing sub-section (1A) and removing the earlier clause (d) from Section 7(1), with retrospective effect from 1 July 2017 and operational commencement from 1 February 2019. The policy reason recorded in GST Council material was to make Schedule II a classification mechanism rather than an independent source of supply.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2021 — Section 7(1)(aa)</div>
+            <p>Finance Act, 2021 inserted clause (aa) dealing with transactions between a person other than an individual and its members or constituents, together with a separate-person deeming Explanation. The amendment was given retrospective effect from 1 July 2017; Notification No. 39/2021-Central Tax brought the relevant Finance Act provisions into force from 1 January 2022. citeturn2search0turn2search2</p>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2023 — Schedule III changes connected with Section 7</div>
+            <p>The 2023 amendments changed the actionable-claim framework by replacing the earlier Schedule III wording with the concept of “specified actionable claims”. The 2023 legislative package also inserted Schedule III paragraphs 7 and 8 with retrospective effect from 1 July 2017, dealing with specified offshore and warehoused-goods transactions. These changes were brought into operation through the 2023 notification framework.</p>
+          </div>
+          <div class="timeline-item">
+            <div class="date">2025–2026 — continuing judicial interpretation</div>
+            <p>Section 7 continues to be litigated because the meaning of supply affects charging, valuation, classification, exemptions, reverse charge, place of supply and the treatment of emerging transaction models. The statutory text available as at September 2026 continues to contain Section 7(1)(aa). Judicial decisions should therefore be tracked separately from the bare statutory text.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="council">
+        <h2>11. GST Council deliberations that shaped Section 7</h2>
+        <h3>11.1 28th GST Council Meeting — Schedule II architecture</h3>
+        <p>The 28th GST Council agenda contains a detailed proposal for Section 7. It records the concern that the old clause (d) could make Schedule II activities appear to be supplies even when the underlying Section 7(1) requirements were not met. The proposed solution was to insert Section 7(1A) and remove clause (d). This is the clearest policy history for understanding why the current statute separates <strong>existence of supply</strong> from <strong>classification of supply</strong>. citeturn0search1turn4search1</p>
+
+        <h3>11.2 39th GST Council Meeting — business nexus and consideration</h3>
+        <p>GST Council material from the 39th meeting illustrates the practical use of Section 7 in analysing contract manufacturing/bottling arrangements. The discussion identified consideration and the course or furtherance of business as central parameters under Section 7(1)(a). This demonstrates how the provision operates in real commercial contracts rather than only in textbook sale transactions. citeturn4search2</p>
+
+        <h3>11.3 2021 legislative response to member transactions</h3>
+        <p>The later insertion of Section 7(1)(aa) represents a separate legislative development aimed at transactions between associations and members. It should be analysed independently from the 2018 Schedule II restructuring.</p>
+      </section>
+
+      <section class="card" id="notifications">
+        <h2>12. Important notifications and subordinate legislation</h2>
+        <div class="table-wrap">
+        <table>
+          <thead><tr><th>Instrument</th><th>Relevance</th></tr></thead>
+          <tbody>
+            <tr><td>Notification No. 09/2017-Central Tax dated 28.06.2017</td><td>Section 7 was among the main CGST provisions brought into force from 1 July 2017.</td></tr>
+            <tr><td>Notification No. 02/2019-Central Tax dated 29.01.2019</td><td>Operationalised the relevant 2018 amendment framework from 1 February 2019, including the restructuring connected with Section 7 and Schedule II.</td></tr>
+            <tr><td>Notification No. 39/2021-Central Tax dated 21.12.2021</td><td>Notified 1 January 2022 as the date for specified provisions of the Finance Act, 2021, including the Section 7(1)(aa) amendment. citeturn2search0turn2search2</td></tr>
+            <tr><td>Notification No. 28/2023-Central Tax dated 31.07.2023</td><td>Part of the implementation framework for the Finance Act, 2023 amendments, including retrospective Schedule III changes that operate through Section 7(2).</td></tr>
+            <tr><td>Notification No. 48/2023-Central Tax dated 29.09.2023</td><td>Gave effect to the 2023 amendments concerning specified actionable claims and related GST provisions from 1 October 2023.</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="card" id="circulars">
+        <h2>13. Circulars and clarifications relevant to Section 7 analysis</h2>
+        <h3>Circular No. 172/04/2022-GST</h3>
+        <p>This circular is not a general rewrite of Section 7, but it contains an important clarification concerning employee perquisites. The circular addresses perquisites provided by employers to employees under contractual arrangements and is relevant when distinguishing transactions occurring in the employment relationship from independent supplies. The GST Council/CBIC circular record identifies the circular as dated 6 July 2022. citeturn2search1turn2search11</p>
+
+        <h3>Intermediary and other transaction-specific clarifications</h3>
+        <p>Section 7 often operates together with other provisions rather than in isolation. For example, a cross-border service transaction may require simultaneous analysis of Section 7, the IGST Act's import/export and place-of-supply provisions, and the definition of intermediary. The existence of a supply under Section 7 is therefore only the first stage of the overall GST analysis.</p>
+      </section>
+
+      <section class="card" id="practical">
+        <h2>14. Practical examples — how to apply Section 7</h2>
+
+        <div class="example">
+          <strong>Example 1 — Sale of goods for cash</strong>
+          <p>A manufacturer sells goods to a distributor for ₹10 lakh plus GST. There is a supply of goods, consideration, and the transaction is in the course of business. Section 7(1)(a) is satisfied. The practitioner then moves to classification, rate, time, place, valuation and invoicing provisions.</p>
+        </div>
+
+        <div class="example">
+          <strong>Example 2 — Lease of commercial premises</strong>
+          <p>A company leases a commercial building to another business for monthly rent. The arrangement is not a sale of goods, but Section 7(1)(a) expressly includes rental and lease within the forms of supply. The next steps are to determine the nature of service, place of supply, rate/exemption and compliance requirements.</p>
+        </div>
+
+        <div class="example">
+          <strong>Example 3 — Free transfer of business asset</strong>
+          <p>A registered business permanently transfers a business asset without charging the recipient. The absence of consideration does not end the analysis. Section 7(1)(c) must be read with Schedule I to determine whether the no-consideration transfer is deemed to be a supply.</p>
+        </div>
+
+        <div class="example">
+          <strong>Example 4 — Employer and employee</strong>
+          <p>An employee receives monthly salary for services under an employment contract. Schedule III excludes services by an employee to the employer in the course of or in relation to employment. The payment is therefore not treated as a GST supply merely because an economic benefit is received by the employee.</p>
+        </div>
+
+        <div class="example">
+          <strong>Example 5 — Branch transfer between distinct registrations</strong>
+          <p>A company transfers stock from its Telangana GST registration to its Karnataka GST registration. Even though the same legal entity is involved, distinct-person rules and Schedule I require the transaction to be examined as a potential supply. This is a classic case where “no sale invoice in the ordinary commercial sense” does not automatically mean “no GST supply”.</p>
+        </div>
+
+        <div class="example">
+          <strong>Example 6 — Import of service for consideration</strong>
+          <p>An Indian business obtains technical consultancy from a foreign supplier for a fee. Section 7(1)(b) specifically covers import of services for consideration whether or not in the course or furtherance of business. The IGST Act and reverse-charge provisions must then be considered.</p>
+        </div>
+
+        <div class="example">
+          <strong>Example 7 — Schedule II classification</strong>
+          <p>An activity appears in Schedule II. The correct approach is not to stop there. First ask whether the transaction constitutes supply under Section 7(1). If yes, Section 7(1A) and Schedule II determine whether it is treated as a supply of goods or services.</p>
+        </div>
+
+        <div class="example">
+          <strong>Example 8 — Land transaction</strong>
+          <p>A person sells land. Schedule III expressly keeps sale of land outside the concept of supply. Therefore, the transaction should not be analysed as an ordinary taxable supply merely because consideration is received.</p>
+        </div>
+      </section>
+
+      <section class="card" id="workflow">
+        <h2>15. Professional Section 7 decision workflow</h2>
+        <ol>
+          <li><strong>Identify the transaction.</strong> Record the parties, contract, goods/services, consideration and actual flow of value.</li>
+          <li><strong>Identify the supplier and recipient.</strong> Confirm legal identity, GST registration and whether distinct-person or related-person rules are relevant.</li>
+          <li><strong>Test Section 7(1)(a).</strong> Check supply, consideration and business nexus.</li>
+          <li><strong>Test Section 7(1)(aa).</strong> If a non-individual person and its members/constituents are involved, examine the special provision and the current judicial position.</li>
+          <li><strong>Test Section 7(1)(b).</strong> For imported services, apply the specific import-of-services framework.</li>
+          <li><strong>Test Schedule I.</strong> If there is no consideration, determine whether Schedule I creates a deemed supply.</li>
+          <li><strong>Test Section 7(2).</strong> Check Schedule III and any notified public-authority exclusions.</li>
+          <li><strong>Use Schedule II only after supply is established.</strong> Use it to classify the qualifying supply as goods or services.</li>
+          <li><strong>Check Section 7(3) notifications.</strong> Determine whether Government has specified a particular classification on Council recommendation.</li>
+          <li><strong>Only then move to the charging and compliance provisions.</strong> Consider Section 8, Section 9, exemptions, valuation, time/place of supply, invoicing, returns and payment.</li>
+        </ol>
+      </section>
+
+      <section class="card" id="documentation">
+        <h2>16. Documents a finance or tax team should retain</h2>
+        <ul>
+          <li>Executed agreement / purchase order / work order.</li>
+          <li>Commercial correspondence establishing the purpose of the transaction.</li>
+          <li>Evidence of consideration, including non-monetary consideration where applicable.</li>
+          <li>GST registrations of the parties and details of distinct registrations.</li>
+          <li>Related-party/member/constituent relationship documentation where relevant.</li>
+          <li>Accounting entries and ledger extracts.</li>
+          <li>Invoice, debit note, credit note or other tax document, as applicable.</li>
+          <li>Evidence supporting a Schedule I no-consideration transaction.</li>
+          <li>Evidence supporting a Schedule III exclusion.</li>
+          <li>Relevant notification, exemption or classification order relied upon.</li>
+          <li>Tax position paper where the transaction is unusual or potentially litigated.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="mistakes">
+        <h2>17. Common mistakes while applying Section 7</h2>
+        <ol>
+          <li><strong>“Every receipt is a supply.”</strong> Incorrect. The statutory conditions and exclusions must be tested.</li>
+          <li><strong>“No consideration means no GST.”</strong> Incorrect. Schedule I can create supplies without consideration.</li>
+          <li><strong>“Schedule II itself creates supply.”</strong> The current architecture requires the transaction to first qualify as supply under Section 7(1).</li>
+          <li><strong>“Same legal entity always means no supply.”</strong> Distinct-person rules can produce a supply between GST registrations.</li>
+          <li><strong>“Employee benefits are always taxable.”</strong> The employment relationship and Schedule III must be examined.</li>
+          <li><strong>“Schedule III is an exemption.”</strong> It is conceptually different: specified activities are treated as neither supply of goods nor supply of services.</li>
+          <li><strong>“Section 7 alone determines tax liability.”</strong> Supply is the starting point; levy, rate, exemption, place, time, valuation and payment provisions still have to be applied.</li>
+          <li><strong>“Old case law can be applied without checking amendments.”</strong> Section 7 has undergone material restructuring, and the member/association provisions have generated constitutional litigation.</li>
+        </ol>
+      </section>
+
+      <section class="card" id="related">
+        <h2>18. Provisions that should be read with Section 7</h2>
+        <div class="table-wrap">
+        <table>
+          <thead><tr><th>Provision</th><th>Why it matters</th></tr></thead>
+          <tbody>
+            <tr><td>Section 2(17)</td><td>Definition of “business” helps determine the business nexus under Section 7(1)(a).</td></tr>
+            <tr><td>Section 2(31)</td><td>Definition of “consideration” is central to Section 7(1)(a), (aa) and (b).</td></tr>
+            <tr><td>Section 2(52)</td><td>Defines goods.</td></tr>
+            <tr><td>Section 2(102)</td><td>Defines services.</td></tr>
+            <tr><td>Section 8</td><td>Determines tax liability for composite and mixed supplies after the supply analysis.</td></tr>
+            <tr><td>Section 9</td><td>Charging provision for CGST on intra-State supplies.</td></tr>
+            <tr><td>Section 15</td><td>Valuation of taxable supply.</td></tr>
+            <tr><td>Section 25</td><td>Registration and distinct-person framework relevant to branch/state registrations.</td></tr>
+            <tr><td>IGST Act Sections 7–13</td><td>Place-of-supply rules determine inter-State character and cross-border treatment.</td></tr>
+            <tr><td>Schedule I</td><td>Specified supplies without consideration.</td></tr>
+            <tr><td>Schedule II</td><td>Classification of qualifying supplies as goods or services.</td></tr>
+            <tr><td>Schedule III</td><td>Specified transactions treated neither as goods nor services.</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </section>
+
+      <section class="card" id="takeaways">
+        <h2>19. Key takeaways for management, accounts teams and auditors</h2>
+        <div class="takeaways">
+          <div class="takeaway"><strong>1. Supply is the gateway.</strong><br>Do not start with the GST rate. First establish whether the transaction is a supply.</div>
+          <div class="takeaway"><strong>2. Consideration is important but not universal.</strong><br>Section 7(1)(c) and Schedule I cover specified no-consideration supplies.</div>
+          <div class="takeaway"><strong>3. Schedule II is classification.</strong><br>It should not be used as a shortcut to create a supply independently of Section 7(1).</div>
+          <div class="takeaway"><strong>4. Schedule III is an exclusion.</strong><br>Specified transactions are treated as neither supply of goods nor supply of services.</div>
+          <div class="takeaway"><strong>5. Member transactions require special care.</strong><br>Section 7(1)(aa) contains a specific statutory fiction and has been the subject of constitutional litigation.</div>
+          <div class="takeaway"><strong>6. Read the Act with the IGST Act.</strong><br>Cross-border and inter-State questions cannot be answered from Section 7 alone.</div>
+        </div>
+      </section>
+
+      <section class="card" id="research">
+        <h2>20. Legal research trail</h2>
+        <p>This page has been prepared by reading the current statutory text together with the amendment history and official GST Council/CBIC material relevant to the architecture of Section 7.</p>
+        <ul>
+          <li>Current Section 7 text and status: India Code, current statutory database.</li>
+          <li>28th GST Council detailed agenda: restructuring of Section 7 and insertion of Section 7(1A).</li>
+          <li>Finance Act, 2021 / Notification No. 39/2021-Central Tax: Section 7(1)(aa).</li>
+          <li>2023 amendment and notification framework: Schedule III changes connected with actionable claims and specified offshore/warehoused transactions.</li>
+          <li>CBIC/GST Council circular database: transaction-specific clarifications relevant to the operation of Section 7.</li>
+          <li>Relevant judicial decisions should always be checked for the precise period and issue before being relied upon in an assessment, audit response or litigation.</li>
+        </ul>
+      </section>
+
+      <section class="card" id="disclaimer">
+        <h2>21. Practical disclaimer</h2>
+        <p>This article is intended as a professional educational and research aid. GST law changes through Acts, notifications, circulars, rules, rate notifications and judicial decisions. The statutory provision reproduced and discussed here should be read with the law applicable to the relevant tax period and the facts of the particular transaction.</p>
+        <p>For assessments, notices, litigation, high-value transactions, cross-border arrangements, member/association disputes or retrospective-period issues, the latest primary legal materials and binding judicial position should be verified before adopting a tax position.</p>
+      </section>
+
+      <div class="nextprev">
+        <a href="/gst-act/section-6.html">← Section 6</a>
+        <a href="/gst-act/section-8.html">Section 8 →</a>
+      </div>
+    </article>
+
+    <aside class="quick">
+      <div class="card">
+        <h3>Section 7 Contents</h3>
+        <a href="#overview">Why Section 7 matters</a>
+        <a href="#text">Statutory text</a>
+        <a href="#structure">Legal structure</a>
+        <a href="#7a">7(1)(a) — ordinary supply</a>
+        <a href="#7aa">7(1)(aa) — members</a>
+        <a href="#7b">7(1)(b) — import services</a>
+        <a href="#7c">7(1)(c) — Schedule I</a>
+        <a href="#7-1a">7(1A) — Schedule II</a>
+        <a href="#7-2">7(2) — Schedule III</a>
+        <a href="#amendments">Amendment history</a>
+        <a href="#council">GST Council history</a>
+        <a href="#notifications">Notifications</a>
+        <a href="#circulars">Circulars</a>
+        <a href="#practical">Practical examples</a>
+        <a href="#workflow">Decision workflow</a>
+        <a href="#mistakes">Common mistakes</a>
+        <a href="#related">Related provisions</a>
+        <a href="#takeaways">Key takeaways</a>
+      </div>
+
+      <div class="card">
+        <h3>Related GST Resources</h3>
+        <a href="/gst-act.html">GST Legal Library</a>
+        <a href="/gst-rules.html">GST Rules</a>
+        <a href="/articles.html">GST Articles</a>
+        <a href="/reconciliation.html">GSTR-2B Reconciliation Tool</a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand"><span>GST</span> Reconciliation</div>
+        <div class="tagline">GST Knowledge &amp; Compliance Partner</div>
+        <p>Free GST reconciliation and practical GST compliance resources for businesses, finance teams, accountants and tax professionals.</p>
+        <p>Reconcile purchase data with GSTR-2B, understand GST law and maintain a stronger compliance trail.</p>
+      </div>
+      <div>
+        <h3>GST Tools</h3>
+        <p><a href="/reconciliation.html">GSTR-2B Reconciliation</a></p>
+        <p><a href="/reconciliation.html">Purchase Register vs GSTR-2B</a></p>
+        <p><a href="/articles.html">GST Articles</a></p>
+        <p><a href="/gst-act.html">GST Legal Library</a></p>
+      </div>
+      <div>
+        <h3>GST Legal Resources</h3>
+        <p><a href="/gst-act.html">CGST Act</a></p>
+        <p><a href="/gst-rules.html">CGST Rules</a></p>
+        <p><a href="/gst-act.html">Section-wise Guide</a></p>
+        <p><a href="/gst-rules.html">Rule-wise Guide</a></p>
+      </div>
+      <div>
+        <h3>Information</h3>
+        <p><a href="/privacy-policy.html">Privacy Policy</a></p>
+        <p><a href="/terms.html">Terms &amp; Conditions</a></p>
+        <p><a href="/disclaimer.html">Disclaimer</a></p>
+        <p><a href="/">GST Reconciliation Home</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 GST Reconciliation. All rights reserved.</div>
+      <div>GST Knowledge &amp; Compliance Partner</div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
