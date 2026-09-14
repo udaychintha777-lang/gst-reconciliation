@@ -13,7 +13,7 @@
   --green:#16845b;--amber:#9a6500;
 }
 body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.container{max-width:1120px;margin:0 auto;padding:0 20px}
+.container{width:min(1400px,calc(100% - 64px));max-width:none;margin:0 auto;padding:0 20px}
 .site-header{background:#fff;border-bottom:1px solid var(--line)}
 .nav{min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{color:var(--ink);text-decoration:none;font-weight:850;font-size:20px;letter-spacing:-.02em}
@@ -82,6 +82,66 @@ input:focus,select:focus{border-color:#8ab0ed;box-shadow:0 0 0 3px rgba(23,105,2
   .controls{grid-template-columns:1fr}.results-head{align-items:flex-start;flex-direction:column}
 }
 </style>
+<!-- Google Analytics 4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date());
+gtag('config','G-NBKTXWJ20G');
+</script>
+
+<!-- Google AdSense -->
+<script async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
+  crossorigin="anonymous"></script>
+
+<style>
+/* GST Reconciliation site-wide width standard — matches homepage exactly. */
+.wrap,
+.legal-wrap,
+.rule-wrap,
+.section-wrap,
+.section-page-wrap,
+.legal-container,
+.legal-page-wrap,
+.site-container,
+main.container,
+header .container,
+.hero .container,
+footer .container {
+  width: min(1400px, calc(100% - 64px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+</style>
+
+<style>
+/* gst-rules-numeric-sort-v1 */
+</style>
+<script>
+(function(){
+  function gstRuleSortValue(v){
+    const s=String(v ?? "").replace(/^rule[-_ ]?/i,"").trim().toUpperCase();
+    const m=s.match(/^(\d+)([A-Z]*)/);
+    if(!m) return [999999,s];
+    const n=parseInt(m[1],10);
+    const suffix=m[2]||"";
+    return [n,suffix];
+  }
+  window.gstSortRulesNumerically=function(arr){
+    return [...arr].sort((a,b)=>{
+      const av=gstRuleSortValue(a.number ?? a.rule_number ?? a.id);
+      const bv=gstRuleSortValue(b.number ?? b.rule_number ?? b.id);
+      if(av[0]!==bv[0]) return av[0]-bv[0];
+      return av[1].localeCompare(bv[1],undefined,{numeric:true});
+    });
+  };
+})();
+</script>
+
 </head>
 <body>
 
@@ -321,7 +381,7 @@ fetch("/data/gst-rules.json",{cache:"no-store"})
 .then(r=>r.ok?r.json():Promise.reject(new Error("Could not load gst-rules.json")))
 .then(data=>{
   const raw=Array.isArray(data) ? data : (data.items || data.gst_rules || []);
-  rules=raw.map(normalise);
+  rules=gstSortRulesNumerically(raw.map(normalise));
 
   if(!rules.length) rules=FALLBACK.map(normalise);
 
