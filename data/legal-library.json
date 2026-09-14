@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-14T13:24:04+05:30",
-  "version": 2,
+  "generated_at": "2026-09-14T08:11:45+00:00",
+  "version": 1,
   "items": [
     {
       "title": "Section 1 — Short title, extent and commencement. | GST Reconciliation",
@@ -1743,2134 +1743,1708 @@
       "status": "active"
     },
     {
-      "title": "Rule 1 — Short title and commencement",
+      "title": "Rule 1 — Short title and commencement | GST Reconciliation",
       "url": "/gst-rules/rule-1.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-1.html",
       "type": "gst-rule",
-      "number": "1",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "1"
     },
     {
-      "title": "Rule 2 — Definitions",
+      "title": "Rule 2 — Definitions | GST Reconciliation",
       "url": "/gst-rules/rule-2.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-2.html",
       "type": "gst-rule",
-      "number": "2",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "2"
     },
     {
-      "title": "Rule 3 — Intimation for composition levy",
+      "title": "Rule 3 — Intimation for composition levy | GST Reconciliation",
       "url": "/gst-rules/rule-3.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-3.html",
       "type": "gst-rule",
-      "number": "3",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "3"
     },
     {
-      "title": "Rule 4 — Effective date for composition levy",
+      "title": "Rule 4 — Effective date for composition levy | GST Reconciliation",
       "url": "/gst-rules/rule-4.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-4.html",
       "type": "gst-rule",
-      "number": "4",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "4"
     },
     {
-      "title": "Rule 5 — Conditions and restrictions for composition levy",
+      "title": "Rule 5 — Conditions and restrictions for composition levy | GST Reconciliation",
       "url": "/gst-rules/rule-5.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-5.html",
       "type": "gst-rule",
-      "number": "5",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "5"
     },
     {
-      "title": "Rule 6 — Validity of composition levy",
+      "title": "Rule 6 — Validity of composition levy | GST Reconciliation",
       "url": "/gst-rules/rule-6.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-6.html",
       "type": "gst-rule",
-      "number": "6",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "6"
     },
     {
-      "title": "Rule 7 — Rate of tax of the composition levy",
+      "title": "Rule 7 — Rate of tax of the composition levy | GST Reconciliation",
       "url": "/gst-rules/rule-7.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-7.html",
       "type": "gst-rule",
-      "number": "7",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "7"
     },
     {
-      "title": "Rule 8 — Application for registration",
+      "title": "Rule 8 — Application for registration | GST Reconciliation",
       "url": "/gst-rules/rule-8.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-8.html",
       "type": "gst-rule",
-      "number": "8",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "8"
     },
     {
-      "title": "Rule 9 — Verification of the application and approval",
+      "title": "Rule 9 — Verification of the application and approval | GST Reconciliation",
       "url": "/gst-rules/rule-9.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-9.html",
       "type": "gst-rule",
-      "number": "9",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "9"
     },
     {
-      "title": "Rule 9A — Grant of registration electronically",
+      "title": "Rule 9A — Grant of registration electronically | GST Reconciliation",
       "url": "/gst-rules/rule-9a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-9a.html",
       "type": "gst-rule",
-      "number": "9A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "9a"
     },
     {
-      "title": "Rule 10 — Issue of registration certificate",
+      "title": "Rule 10 — Issue of registration certificate | GST Reconciliation",
       "url": "/gst-rules/rule-10.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-10.html",
       "type": "gst-rule",
-      "number": "10",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "10"
     },
     {
-      "title": "Rule 10A — Furnishing of Bank Account Details",
+      "title": "Rule 10A — Furnishing of Bank Account Details | GST Reconciliation",
       "url": "/gst-rules/rule-10a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-10a.html",
       "type": "gst-rule",
-      "number": "10A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "10a"
     },
     {
-      "title": "Rule 10B — Aadhaar authentication for registered person",
+      "title": "Rule 10B — Aadhaar authentication for registered person | GST Reconciliation",
       "url": "/gst-rules/rule-10b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-10b.html",
       "type": "gst-rule",
-      "number": "10B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "10b"
     },
     {
-      "title": "Rule 11 — Separate registration for multiple places of business within a State or a Union territory",
+      "title": "Rule 11 — Separate registration for multiple places of business within a State or a Union territory | GST Reconciliation",
       "url": "/gst-rules/rule-11.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-11.html",
       "type": "gst-rule",
-      "number": "11",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "11"
     },
     {
-      "title": "Rule 12 — Grant of registration to persons required to deduct tax at source or to collect tax at source",
+      "title": "Rule 12 — Grant of registration to persons required to deduct tax at source or to collect tax at source | GST Reconciliation",
       "url": "/gst-rules/rule-12.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-12.html",
       "type": "gst-rule",
-      "number": "12",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "12"
     },
     {
-      "title": "Rule 13 — Grant of registration to non-resident taxable person",
+      "title": "Rule 13 — Grant of registration to non-resident taxable person | GST Reconciliation",
       "url": "/gst-rules/rule-13.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-13.html",
       "type": "gst-rule",
-      "number": "13",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "13"
     },
     {
-      "title": "Rule 14 — Grant of registration to a person supplying online information and database access or retrieval services from a place outside India to a non-taxable online recipient or to a person supplying online money gaming from a place outside India to a person in India",
+      "title": "Rule 14 — Grant of registration to a person supplying online information and database access or retrieval services from a place outside India to a non-taxable online recipient or to a person supplying online money gaming from a place outside India to a person in India | GST Reconciliation",
       "url": "/gst-rules/rule-14.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-14.html",
       "type": "gst-rule",
-      "number": "14",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "14"
     },
     {
-      "title": "Rule 14A — Option for taxpayers having monthly output tax liability below threshold limit",
+      "title": "Rule 14A — Option for taxpayers having monthly output tax liability below threshold limit | GST Reconciliation",
       "url": "/gst-rules/rule-14a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-14a.html",
       "type": "gst-rule",
-      "number": "14A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "14a"
     },
     {
-      "title": "Rule 15 — Extension in period of operation by casual taxable person and non-resident taxable person",
+      "title": "Rule 15 — Extension in period of operation by casual taxable person and non-resident taxable person | GST Reconciliation",
       "url": "/gst-rules/rule-15.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-15.html",
       "type": "gst-rule",
-      "number": "15",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "15"
     },
     {
-      "title": "Rule 16 — Suo moto registration",
+      "title": "Rule 16 — Suo moto registration | GST Reconciliation",
       "url": "/gst-rules/rule-16.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-16.html",
       "type": "gst-rule",
-      "number": "16",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "16"
     },
     {
-      "title": "Rule 16A — Grant of temporary identification number",
+      "title": "Rule 16A — Grant of temporary identification number | GST Reconciliation",
       "url": "/gst-rules/rule-16a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-16a.html",
       "type": "gst-rule",
-      "number": "16A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "16a"
     },
     {
-      "title": "Rule 17 — Assignment of Unique Identity Number to certain special entities",
+      "title": "Rule 17 — Assignment of Unique Identity Number to certain special entities | GST Reconciliation",
       "url": "/gst-rules/rule-17.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-17.html",
       "type": "gst-rule",
-      "number": "17",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "17"
     },
     {
-      "title": "Rule 18 — Display of registration certificate and Goods and Services Tax Identification Number on the name board",
+      "title": "Rule 18 — Display of registration certificate and Goods and Services Tax Identification Number on the name board | GST Reconciliation",
       "url": "/gst-rules/rule-18.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-18.html",
       "type": "gst-rule",
-      "number": "18",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "18"
     },
     {
-      "title": "Rule 19 — Amendment of registration",
+      "title": "Rule 19 — Amendment of registration | GST Reconciliation",
       "url": "/gst-rules/rule-19.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-19.html",
       "type": "gst-rule",
-      "number": "19",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "19"
     },
     {
-      "title": "Rule 20 — Application for cancellation of registration",
+      "title": "Rule 20 — Application for cancellation of registration | GST Reconciliation",
       "url": "/gst-rules/rule-20.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-20.html",
       "type": "gst-rule",
-      "number": "20",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "20"
     },
     {
-      "title": "Rule 21 — Registration to be cancelled in certain cases",
+      "title": "Rule 21 — Registration to be cancelled in certain cases | GST Reconciliation",
       "url": "/gst-rules/rule-21.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-21.html",
       "type": "gst-rule",
-      "number": "21",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "21"
     },
     {
-      "title": "Rule 21A — Suspension of registration",
+      "title": "Rule 21A — Suspension of registration | GST Reconciliation",
       "url": "/gst-rules/rule-21a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-21a.html",
       "type": "gst-rule",
-      "number": "21A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "21a"
     },
     {
-      "title": "Rule 22 — Cancellation of registration",
+      "title": "Rule 22 — Cancellation of registration | GST Reconciliation",
       "url": "/gst-rules/rule-22.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-22.html",
       "type": "gst-rule",
-      "number": "22",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "22"
     },
     {
-      "title": "Rule 23 — Revocation of cancellation of registration",
+      "title": "Rule 23 — Revocation of cancellation of registration | GST Reconciliation",
       "url": "/gst-rules/rule-23.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-23.html",
       "type": "gst-rule",
-      "number": "23",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "23"
     },
     {
-      "title": "Rule 24 — Migration of persons registered under the existing law",
+      "title": "Rule 24 — Migration of persons registered under the existing law | GST Reconciliation",
       "url": "/gst-rules/rule-24.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-24.html",
       "type": "gst-rule",
-      "number": "24",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "24"
     },
     {
-      "title": "Rule 25 — Physical verification of business premises in certain cases",
+      "title": "Rule 25 — Physical verification of business premises in certain cases | GST Reconciliation",
       "url": "/gst-rules/rule-25.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-25.html",
       "type": "gst-rule",
-      "number": "25",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "25"
     },
     {
-      "title": "Rule 26 — Method of authentication",
+      "title": "Rule 26 — Method of authentication | GST Reconciliation",
       "url": "/gst-rules/rule-26.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-26.html",
       "type": "gst-rule",
-      "number": "26",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "26"
     },
     {
-      "title": "Rule 27 — Value of supply of goods or services where the consideration is not wholly in money",
+      "title": "Rule 27 — Value of supply of goods or services where the consideration is not wholly in money | GST Reconciliation",
       "url": "/gst-rules/rule-27.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-27.html",
       "type": "gst-rule",
-      "number": "27",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "27"
     },
     {
-      "title": "Rule 28 — Value of supply of goods or services or both between distinct or related persons, other than through an agent",
+      "title": "Rule 28 — Value of supply of goods or services or both between distinct or related persons, other than through an agent | GST Reconciliation",
       "url": "/gst-rules/rule-28.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-28.html",
       "type": "gst-rule",
-      "number": "28",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "28"
     },
     {
-      "title": "Rule 29 — Value of supply of goods made or received through an agent",
+      "title": "Rule 29 — Value of supply of goods made or received through an agent | GST Reconciliation",
       "url": "/gst-rules/rule-29.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-29.html",
       "type": "gst-rule",
-      "number": "29",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "29"
     },
     {
-      "title": "Rule 30 — Value of supply of goods or services or both based on cost",
+      "title": "Rule 30 — Value of supply of goods or services or both based on cost | GST Reconciliation",
       "url": "/gst-rules/rule-30.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-30.html",
       "type": "gst-rule",
-      "number": "30",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "30"
     },
     {
-      "title": "Rule 31 — Residual method for determination of value of supply of goods or services or both",
+      "title": "Rule 31 — Residual method for determination of value of supply of goods or services or both | GST Reconciliation",
       "url": "/gst-rules/rule-31.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-31.html",
       "type": "gst-rule",
-      "number": "31",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "31"
     },
     {
-      "title": "Rule 31A — Value of supply in case of lottery, betting, gambling and horse racing",
+      "title": "Rule 31A — Value of supply in case of lottery, betting, gambling and horse racing | GST Reconciliation",
       "url": "/gst-rules/rule-31a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-31a.html",
       "type": "gst-rule",
-      "number": "31A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "31a"
     },
     {
-      "title": "Rule 31B — Value of supply in case of online gaming including online money gaming",
+      "title": "Rule 31B — Value of supply in case of online gaming including online money gaming | GST Reconciliation",
       "url": "/gst-rules/rule-31b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-31b.html",
       "type": "gst-rule",
-      "number": "31B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "31b"
     },
     {
-      "title": "Rule 31C — Value of supply of actionable claims in case of casino",
+      "title": "Rule 31C — Value of supply of actionable claims in case of casino | GST Reconciliation",
       "url": "/gst-rules/rule-31c.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-31c.html",
       "type": "gst-rule",
-      "number": "31C",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "31c"
     },
     {
-      "title": "Rule 31D — Value of supply of goods on basis of retail sale price",
+      "title": "Rule 31D — Value of supply of goods on basis of retail sale price | GST Reconciliation",
       "url": "/gst-rules/rule-31d.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-31d.html",
       "type": "gst-rule",
-      "number": "31D",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "31d"
     },
     {
-      "title": "Rule 32 — Determination of value in respect of certain supplies",
+      "title": "Rule 32 — Determination of value in respect of certain supplies | GST Reconciliation",
       "url": "/gst-rules/rule-32.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-32.html",
       "type": "gst-rule",
-      "number": "32",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "32"
     },
     {
-      "title": "Rule 32A — Value of supply in cases where Kerala Flood Cess is applicable",
+      "title": "Rule 32A — Value of supply in cases where Kerala Flood Cess is applicable | GST Reconciliation",
       "url": "/gst-rules/rule-32a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-32a.html",
       "type": "gst-rule",
-      "number": "32A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "32a"
     },
     {
-      "title": "Rule 33 — Value of supply of services in case of pure agent",
+      "title": "Rule 33 — Value of supply of services in case of pure agent | GST Reconciliation",
       "url": "/gst-rules/rule-33.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-33.html",
       "type": "gst-rule",
-      "number": "33",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "33"
     },
     {
-      "title": "Rule 34 — Rate of exchange of currency, other than Indian rupees, for determination of value",
+      "title": "Rule 34 — Rate of exchange of currency, other than Indian rupees, for determination of value | GST Reconciliation",
       "url": "/gst-rules/rule-34.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-34.html",
       "type": "gst-rule",
-      "number": "34",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "34"
     },
     {
-      "title": "Rule 35 — Value of supply inclusive of integrated tax, central tax, State tax, Union territory tax",
+      "title": "Rule 35 — Value of supply inclusive of integrated tax, central tax, State tax, Union territory tax | GST Reconciliation",
       "url": "/gst-rules/rule-35.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-35.html",
       "type": "gst-rule",
-      "number": "35",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "35"
     },
     {
-      "title": "Rule 36 — Documentary requirements and conditions for claiming input tax credit",
+      "title": "Rule 36 — Documentary requirements and conditions for claiming input tax credit | GST Reconciliation",
       "url": "/gst-rules/rule-36.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-36.html",
       "type": "gst-rule",
-      "number": "36",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "36"
     },
     {
-      "title": "Rule 37 — Reversal of input tax credit in the case of non-payment of consideration",
+      "title": "Rule 37 — Reversal of input tax credit in the case of non-payment of consideration | GST Reconciliation",
       "url": "/gst-rules/rule-37.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-37.html",
       "type": "gst-rule",
-      "number": "37",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "37"
     },
     {
-      "title": "Rule 37A — Reversal of input tax credit in the case of non-payment of tax by the supplier and re-availment thereof",
+      "title": "Rule 37A — Reversal of input tax credit in the case of non-payment of tax by the supplier and re-availment thereof | GST Reconciliation",
       "url": "/gst-rules/rule-37a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-37a.html",
       "type": "gst-rule",
-      "number": "37A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "37a"
     },
     {
-      "title": "Rule 38 — Claim of credit by a banking company or a financial institution",
+      "title": "Rule 38 — Claim of credit by a banking company or a financial institution | GST Reconciliation",
       "url": "/gst-rules/rule-38.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-38.html",
       "type": "gst-rule",
-      "number": "38",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "38"
     },
     {
-      "title": "Rule 39 — Procedure for distribution of input tax credit by Input Service Distributor",
+      "title": "Rule 39 — Procedure for distribution of input tax credit by Input Service Distributor | GST Reconciliation",
       "url": "/gst-rules/rule-39.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-39.html",
       "type": "gst-rule",
-      "number": "39",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "39"
     },
     {
-      "title": "Rule 40 — Manner of claiming credit in special circumstances",
+      "title": "Rule 40 — Manner of claiming credit in special circumstances | GST Reconciliation",
       "url": "/gst-rules/rule-40.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-40.html",
       "type": "gst-rule",
-      "number": "40",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "40"
     },
     {
-      "title": "Rule 41 — Transfer of credit on sale, merger, amalgamation, lease or transfer of a business",
+      "title": "Rule 41 — Transfer of credit on sale, merger, amalgamation, lease or transfer of a business | GST Reconciliation",
       "url": "/gst-rules/rule-41.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-41.html",
       "type": "gst-rule",
-      "number": "41",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "41"
     },
     {
-      "title": "Rule 41A — Transfer of credit on obtaining separate registration for multiple places of business within a State or Union territory",
+      "title": "Rule 41A — Transfer of credit on obtaining separate registration for multiple places of business within a State or Union territory | GST Reconciliation",
       "url": "/gst-rules/rule-41a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-41a.html",
       "type": "gst-rule",
-      "number": "41A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "41a"
     },
     {
-      "title": "Rule 42 — Manner of determination of input tax credit in respect of inputs or input services and reversal thereof",
+      "title": "Rule 42 — Manner of determination of input tax credit in respect of inputs or input services and reversal thereof | GST Reconciliation",
       "url": "/gst-rules/rule-42.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-42.html",
       "type": "gst-rule",
-      "number": "42",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "42"
     },
     {
-      "title": "Rule 43 — Manner of determination of input tax credit in respect of capital goods and reversal thereof in certain cases",
+      "title": "Rule 43 — Manner of determination of input tax credit in respect of capital goods and reversal thereof in certain cases | GST Reconciliation",
       "url": "/gst-rules/rule-43.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-43.html",
       "type": "gst-rule",
-      "number": "43",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "43"
     },
     {
-      "title": "Rule 44 — Manner of reversal of credit under special circumstances",
+      "title": "Rule 44 — Manner of reversal of credit under special circumstances | GST Reconciliation",
       "url": "/gst-rules/rule-44.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-44.html",
       "type": "gst-rule",
-      "number": "44",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "44"
     },
     {
-      "title": "Rule 44A — Manner of reversal of credit of Additional duty of Customs in respect of Gold dore bar",
+      "title": "Rule 44A — Manner of reversal of credit of Additional duty of Customs in respect of Gold dore bar | GST Reconciliation",
       "url": "/gst-rules/rule-44a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-44a.html",
       "type": "gst-rule",
-      "number": "44A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "44a"
     },
     {
-      "title": "Rule 45 — Conditions and restrictions in respect of inputs and capital goods sent to the job worker",
+      "title": "Rule 45 — Conditions and restrictions in respect of inputs and capital goods sent to the job worker | GST Reconciliation",
       "url": "/gst-rules/rule-45.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-45.html",
       "type": "gst-rule",
-      "number": "45",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "45"
     },
     {
-      "title": "Rule 46 — Tax invoice",
+      "title": "Rule 46 — Tax invoice | GST Reconciliation",
       "url": "/gst-rules/rule-46.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-46.html",
       "type": "gst-rule",
-      "number": "46",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "46"
     },
     {
-      "title": "Rule 46A — Invoice-cum-bill of supply",
+      "title": "Rule 46A — Invoice-cum-bill of supply | GST Reconciliation",
       "url": "/gst-rules/rule-46a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-46a.html",
       "type": "gst-rule",
-      "number": "46A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "46a"
     },
     {
-      "title": "Rule 47 — Time limit for issuing tax invoice",
+      "title": "Rule 47 — Time limit for issuing tax invoice | GST Reconciliation",
       "url": "/gst-rules/rule-47.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-47.html",
       "type": "gst-rule",
-      "number": "47",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "47"
     },
     {
-      "title": "Rule 47A — Time limit for issuing tax invoice in cases where recipient is required to issue invoice",
+      "title": "Rule 47A — Time limit for issuing tax invoice in cases where recipient is required to issue invoice | GST Reconciliation",
       "url": "/gst-rules/rule-47a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-47a.html",
       "type": "gst-rule",
-      "number": "47A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "47a"
     },
     {
-      "title": "Rule 48 — Manner of issuing invoice",
+      "title": "Rule 48 — Manner of issuing invoice | GST Reconciliation",
       "url": "/gst-rules/rule-48.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-48.html",
       "type": "gst-rule",
-      "number": "48",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "48"
     },
     {
-      "title": "Rule 49 — Bill of supply",
+      "title": "Rule 49 — Bill of supply | GST Reconciliation",
       "url": "/gst-rules/rule-49.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-49.html",
       "type": "gst-rule",
-      "number": "49",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "49"
     },
     {
-      "title": "Rule 50 — Receipt voucher",
+      "title": "Rule 50 — Receipt voucher | GST Reconciliation",
       "url": "/gst-rules/rule-50.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-50.html",
       "type": "gst-rule",
-      "number": "50",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "50"
     },
     {
-      "title": "Rule 51 — Refund voucher",
+      "title": "Rule 51 — Refund voucher | GST Reconciliation",
       "url": "/gst-rules/rule-51.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-51.html",
       "type": "gst-rule",
-      "number": "51",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "51"
     },
     {
-      "title": "Rule 52 — Payment voucher",
+      "title": "Rule 52 — Payment voucher | GST Reconciliation",
       "url": "/gst-rules/rule-52.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-52.html",
       "type": "gst-rule",
-      "number": "52",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "52"
     },
     {
-      "title": "Rule 53 — Revised tax invoice and credit or debit notes",
+      "title": "Rule 53 — Revised tax invoice and credit or debit notes | GST Reconciliation",
       "url": "/gst-rules/rule-53.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-53.html",
       "type": "gst-rule",
-      "number": "53",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "53"
     },
     {
-      "title": "Rule 54 — Tax invoice in special cases",
+      "title": "Rule 54 — Tax invoice in special cases | GST Reconciliation",
       "url": "/gst-rules/rule-54.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-54.html",
       "type": "gst-rule",
-      "number": "54",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "54"
     },
     {
-      "title": "Rule 55 — Transportation of goods without issue of invoice",
+      "title": "Rule 55 — Transportation of goods without issue of invoice | GST Reconciliation",
       "url": "/gst-rules/rule-55.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-55.html",
       "type": "gst-rule",
-      "number": "55",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "55"
     },
     {
-      "title": "Rule 55A — Tax Invoice or bill of supply to accompany transport of goods",
+      "title": "Rule 55A — Tax Invoice or bill of supply to accompany transport of goods | GST Reconciliation",
       "url": "/gst-rules/rule-55a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-55a.html",
       "type": "gst-rule",
-      "number": "55A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "55a"
     },
     {
-      "title": "Rule 56 — Maintenance of accounts by registered persons",
+      "title": "Rule 56 — Maintenance of accounts by registered persons | GST Reconciliation",
       "url": "/gst-rules/rule-56.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-56.html",
       "type": "gst-rule",
-      "number": "56",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "56"
     },
     {
-      "title": "Rule 57 — Generation and maintenance of electronic records",
+      "title": "Rule 57 — Generation and maintenance of electronic records | GST Reconciliation",
       "url": "/gst-rules/rule-57.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-57.html",
       "type": "gst-rule",
-      "number": "57",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "57"
     },
     {
-      "title": "Rule 58 — Records to be maintained by owner or operator of go down or warehouse and transporters",
+      "title": "Rule 58 — Records to be maintained by owner or operator of go down or warehouse and transporters | GST Reconciliation",
       "url": "/gst-rules/rule-58.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-58.html",
       "type": "gst-rule",
-      "number": "58",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "58"
     },
     {
-      "title": "Rule 59 — Form and manner of furnishing details of outward supplies",
+      "title": "Rule 59 — Form and manner of furnishing details of outward supplies | GST Reconciliation",
       "url": "/gst-rules/rule-59.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-59.html",
       "type": "gst-rule",
-      "number": "59",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "59"
     },
     {
-      "title": "Rule 60 — Form and manner of ascertaining details of inward supplies",
+      "title": "Rule 60 — Form and manner of ascertaining details of inward supplies | GST Reconciliation",
       "url": "/gst-rules/rule-60.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-60.html",
       "type": "gst-rule",
-      "number": "60",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "60"
     },
     {
-      "title": "Rule 61 — Form and manner of furnishing of return",
+      "title": "Rule 61 — Form and manner of furnishing of return | GST Reconciliation",
       "url": "/gst-rules/rule-61.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-61.html",
       "type": "gst-rule",
-      "number": "61",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "61"
     },
     {
-      "title": "Rule 61A — Manner of opting for furnishing quarterly return",
+      "title": "Rule 61A — Manner of opting for furnishing quarterly return | GST Reconciliation",
       "url": "/gst-rules/rule-61a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-61a.html",
       "type": "gst-rule",
-      "number": "61A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "61a"
     },
     {
-      "title": "Rule 62 — Form and manner of submission of statement and return",
+      "title": "Rule 62 — Form and manner of submission of statement and return | GST Reconciliation",
       "url": "/gst-rules/rule-62.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-62.html",
       "type": "gst-rule",
-      "number": "62",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "62"
     },
     {
-      "title": "Rule 63 — Form and manner of submission of return by non-resident taxable person",
+      "title": "Rule 63 — Form and manner of submission of return by non-resident taxable person | GST Reconciliation",
       "url": "/gst-rules/rule-63.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-63.html",
       "type": "gst-rule",
-      "number": "63",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "63"
     },
     {
-      "title": "Rule 64 — Form and manner of submission of return by persons providing online information and data base access or retrieval services and by persons supplying online money gaming from a place outside India to a person in India",
+      "title": "Rule 64 — Form and manner of submission of return by persons providing online information and data base access or retrieval services and by persons supplying online money gaming from a place outside India to a person in India | GST Reconciliation",
       "url": "/gst-rules/rule-64.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-64.html",
       "type": "gst-rule",
-      "number": "64",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "64"
     },
     {
-      "title": "Rule 65 — Form and manner of submission of return by an Input Service Distributor",
+      "title": "Rule 65 — Form and manner of submission of return by an Input Service Distributor | GST Reconciliation",
       "url": "/gst-rules/rule-65.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-65.html",
       "type": "gst-rule",
-      "number": "65",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "65"
     },
     {
-      "title": "Rule 66 — Form and manner of submission of return by a person required to deduct tax at source",
+      "title": "Rule 66 — Form and manner of submission of return by a person required to deduct tax at source | GST Reconciliation",
       "url": "/gst-rules/rule-66.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-66.html",
       "type": "gst-rule",
-      "number": "66",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "66"
     },
     {
-      "title": "Rule 67 — Form and manner of submission of statement of supplies through an e-commerce operator",
+      "title": "Rule 67 — Form and manner of submission of statement of supplies through an e-commerce operator | GST Reconciliation",
       "url": "/gst-rules/rule-67.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-67.html",
       "type": "gst-rule",
-      "number": "67",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "67"
     },
     {
-      "title": "Rule 67A — Manner of furnishing of return or details of outward supplies by short messaging service facility",
+      "title": "Rule 67A — Manner of furnishing of return or details of outward supplies by short messaging service facility | GST Reconciliation",
       "url": "/gst-rules/rule-67a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-67a.html",
       "type": "gst-rule",
-      "number": "67A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "67a"
     },
     {
-      "title": "Rule 68 — Notice to non-filers of returns",
+      "title": "Rule 68 — Notice to non-filers of returns | GST Reconciliation",
       "url": "/gst-rules/rule-68.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-68.html",
       "type": "gst-rule",
-      "number": "68",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "68"
     },
     {
-      "title": "Rule 69 — Omitted / historical provision",
+      "title": "Rule 69 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-69.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-69.html",
       "type": "gst-rule",
-      "number": "69",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "69"
     },
     {
-      "title": "Rule 70 — Omitted / historical provision",
+      "title": "Rule 70 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-70.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-70.html",
       "type": "gst-rule",
-      "number": "70",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "70"
     },
     {
-      "title": "Rule 71 — Omitted / historical provision",
+      "title": "Rule 71 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-71.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-71.html",
       "type": "gst-rule",
-      "number": "71",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "71"
     },
     {
-      "title": "Rule 72 — Omitted / historical provision",
+      "title": "Rule 72 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-72.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-72.html",
       "type": "gst-rule",
-      "number": "72",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "72"
     },
     {
-      "title": "Rule 73 — Omitted / historical provision",
+      "title": "Rule 73 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-73.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-73.html",
       "type": "gst-rule",
-      "number": "73",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "73"
     },
     {
-      "title": "Rule 74 — Omitted / historical provision",
+      "title": "Rule 74 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-74.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-74.html",
       "type": "gst-rule",
-      "number": "74",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "74"
     },
     {
-      "title": "Rule 75 — Omitted / historical provision",
+      "title": "Rule 75 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-75.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-75.html",
       "type": "gst-rule",
-      "number": "75",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "75"
     },
     {
-      "title": "Rule 76 — Omitted / historical provision",
+      "title": "Rule 76 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-76.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-76.html",
       "type": "gst-rule",
-      "number": "76",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "76"
     },
     {
-      "title": "Rule 77 — Omitted / historical provision",
+      "title": "Rule 77 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-77.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-77.html",
       "type": "gst-rule",
-      "number": "77",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "77"
     },
     {
-      "title": "Rule 78 — Matching of details furnished by the e-Commerce operator with the details furnished by the supplier",
+      "title": "Rule 78 — Matching of details furnished by the e-Commerce operator with the details furnished by the supplier | GST Reconciliation",
       "url": "/gst-rules/rule-78.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-78.html",
       "type": "gst-rule",
-      "number": "78",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "78"
     },
     {
-      "title": "Rule 79 — Omitted / historical provision",
+      "title": "Rule 79 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-79.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-79.html",
       "type": "gst-rule",
-      "number": "79",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "79"
     },
     {
-      "title": "Rule 80 — Annual return",
+      "title": "Rule 80 — Annual return | GST Reconciliation",
       "url": "/gst-rules/rule-80.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-80.html",
       "type": "gst-rule",
-      "number": "80",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "80"
     },
     {
-      "title": "Rule 81 — Final return",
+      "title": "Rule 81 — Final return | GST Reconciliation",
       "url": "/gst-rules/rule-81.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-81.html",
       "type": "gst-rule",
-      "number": "81",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "81"
     },
     {
-      "title": "Rule 82 — Details of inward supplies of persons having Unique Identity Number",
+      "title": "Rule 82 — Details of inward supplies of persons having Unique Identity Number | GST Reconciliation",
       "url": "/gst-rules/rule-82.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-82.html",
       "type": "gst-rule",
-      "number": "82",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "82"
     },
     {
-      "title": "Rule 83 — Provisions relating to a goods and services tax practitioner",
+      "title": "Rule 83 — Provisions relating to a goods and services tax practitioner | GST Reconciliation",
       "url": "/gst-rules/rule-83.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-83.html",
       "type": "gst-rule",
-      "number": "83",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "83"
     },
     {
-      "title": "Rule 83A — Examination of Goods and Services Tax Practitioners",
+      "title": "Rule 83A — Examination of Goods and Services Tax Practitioners | GST Reconciliation",
       "url": "/gst-rules/rule-83a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-83a.html",
       "type": "gst-rule",
-      "number": "83A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "83a"
     },
     {
-      "title": "Rule 83B — Surrender of enrolment of goods and services tax practitioner",
+      "title": "Rule 83B — Surrender of enrolment of goods and services tax practitioner | GST Reconciliation",
       "url": "/gst-rules/rule-83b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-83b.html",
       "type": "gst-rule",
-      "number": "83B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "83b"
     },
     {
-      "title": "Rule 84 — Conditions for purposes of appearance",
+      "title": "Rule 84 — Conditions for purposes of appearance | GST Reconciliation",
       "url": "/gst-rules/rule-84.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-84.html",
       "type": "gst-rule",
-      "number": "84",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "84"
     },
     {
-      "title": "Rule 85 — Electronic Liability Register",
+      "title": "Rule 85 — Electronic Liability Register | GST Reconciliation",
       "url": "/gst-rules/rule-85.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-85.html",
       "type": "gst-rule",
-      "number": "85",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "85"
     },
     {
-      "title": "Rule 86 — Electronic Credit Ledger",
+      "title": "Rule 86 — Electronic Credit Ledger | GST Reconciliation",
       "url": "/gst-rules/rule-86.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-86.html",
       "type": "gst-rule",
-      "number": "86",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "86"
     },
     {
-      "title": "Rule 86A — Conditions of use of amount available in electronic credit ledger",
+      "title": "Rule 86A — Conditions of use of amount available in electronic credit ledger | GST Reconciliation",
       "url": "/gst-rules/rule-86a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-86a.html",
       "type": "gst-rule",
-      "number": "86A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "86a"
     },
     {
-      "title": "Rule 86B — Restrictions on use of amount available in electronic credit ledger",
+      "title": "Rule 86B — Restrictions on use of amount available in electronic credit ledger | GST Reconciliation",
       "url": "/gst-rules/rule-86b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-86b.html",
       "type": "gst-rule",
-      "number": "86B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "86b"
     },
     {
-      "title": "Rule 87 — Electronic Cash Ledger",
+      "title": "Rule 87 — Electronic Cash Ledger | GST Reconciliation",
       "url": "/gst-rules/rule-87.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-87.html",
       "type": "gst-rule",
-      "number": "87",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "87"
     },
     {
-      "title": "Rule 88 — Identification number for each transaction",
+      "title": "Rule 88 — Identification number for each transaction | GST Reconciliation",
       "url": "/gst-rules/rule-88.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-88.html",
       "type": "gst-rule",
-      "number": "88",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "88"
     },
     {
-      "title": "Rule 88A — Order of utilization of input tax credit",
+      "title": "Rule 88A — Order of utilization of input tax credit | GST Reconciliation",
       "url": "/gst-rules/rule-88a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-88a.html",
       "type": "gst-rule",
-      "number": "88A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "88a"
     },
     {
-      "title": "Rule 88B — Manner of calculating interest on delayed payment of tax",
+      "title": "Rule 88B — Manner of calculating interest on delayed payment of tax | GST Reconciliation",
       "url": "/gst-rules/rule-88b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-88b.html",
       "type": "gst-rule",
-      "number": "88B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "88b"
     },
     {
-      "title": "Rule 88C — Manner of dealing with difference in liability reported in statement of outward supplies and that reported in return",
+      "title": "Rule 88C — Manner of dealing with difference in liability reported in statement of outward supplies and that reported in return | GST Reconciliation",
       "url": "/gst-rules/rule-88c.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-88c.html",
       "type": "gst-rule",
-      "number": "88C",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "88c"
     },
     {
-      "title": "Rule 88D — Manner of dealing with difference in input tax credit available in auto-generated statement containing the details of input tax credit and that availed in return",
+      "title": "Rule 88D — Manner of dealing with difference in input tax credit available in auto-generated statement containing the details of input tax credit and that availed in return | GST Reconciliation",
       "url": "/gst-rules/rule-88d.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-88d.html",
       "type": "gst-rule",
-      "number": "88D",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "88d"
     },
     {
-      "title": "Rule 89 — Application for refund of tax, interest, penalty, fees or any other amount",
+      "title": "Rule 89 — Application for refund of tax, interest, penalty, fees or any other amount | GST Reconciliation",
       "url": "/gst-rules/rule-89.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-89.html",
       "type": "gst-rule",
-      "number": "89",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "89"
     },
     {
-      "title": "Rule 90 — Acknowledgement",
+      "title": "Rule 90 — Acknowledgement | GST Reconciliation",
       "url": "/gst-rules/rule-90.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-90.html",
       "type": "gst-rule",
-      "number": "90",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "90"
     },
     {
-      "title": "Rule 91 — Grant of provisional refund",
+      "title": "Rule 91 — Grant of provisional refund | GST Reconciliation",
       "url": "/gst-rules/rule-91.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-91.html",
       "type": "gst-rule",
-      "number": "91",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "91"
     },
     {
-      "title": "Rule 92 — Order sanctioning refund",
+      "title": "Rule 92 — Order sanctioning refund | GST Reconciliation",
       "url": "/gst-rules/rule-92.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-92.html",
       "type": "gst-rule",
-      "number": "92",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "92"
     },
     {
-      "title": "Rule 93 — Credit of the amount of rejected refund claim",
+      "title": "Rule 93 — Credit of the amount of rejected refund claim | GST Reconciliation",
       "url": "/gst-rules/rule-93.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-93.html",
       "type": "gst-rule",
-      "number": "93",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "93"
     },
     {
-      "title": "Rule 94 — Order sanctioning interest on delayed refunds",
+      "title": "Rule 94 — Order sanctioning interest on delayed refunds | GST Reconciliation",
       "url": "/gst-rules/rule-94.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-94.html",
       "type": "gst-rule",
-      "number": "94",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "94"
     },
     {
-      "title": "Rule 95 — Refund of tax to certain persons",
+      "title": "Rule 95 — Refund of tax to certain persons | GST Reconciliation",
       "url": "/gst-rules/rule-95.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-95.html",
       "type": "gst-rule",
-      "number": "95",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "95"
     },
     {
-      "title": "Rule 95A — Omitted / historical provision",
+      "title": "Rule 95A — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-95a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-95a.html",
       "type": "gst-rule",
-      "number": "95A",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "95a"
     },
     {
-      "title": "Rule 95B — Refund of tax paid on inward supplies of goods received by Canteen Stores Department",
+      "title": "Rule 95B — Refund of tax paid on inward supplies of goods received by Canteen Stores Department | GST Reconciliation",
       "url": "/gst-rules/rule-95b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-95b.html",
       "type": "gst-rule",
-      "number": "95B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "95b"
     },
     {
-      "title": "Rule 96 — Refund of integrated tax paid on goods or services exported out of India",
+      "title": "Rule 96 — Refund of integrated tax paid on goods or services exported out of India | GST Reconciliation",
       "url": "/gst-rules/rule-96.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-96.html",
       "type": "gst-rule",
-      "number": "96",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "96"
     },
     {
-      "title": "Rule 96A — Export of goods or services under bond or Letter of Undertaking",
+      "title": "Rule 96A — Export of goods or services under bond or Letter of Undertaking | GST Reconciliation",
       "url": "/gst-rules/rule-96a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-96a.html",
       "type": "gst-rule",
-      "number": "96A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "96a"
     },
     {
-      "title": "Rule 96B — Recovery of refund of unutilised input tax credit or integrated tax paid on export of goods where export proceeds not realised",
+      "title": "Rule 96B — Recovery of refund of unutilised input tax credit or integrated tax paid on export of goods where export proceeds not realised | GST Reconciliation",
       "url": "/gst-rules/rule-96b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-96b.html",
       "type": "gst-rule",
-      "number": "96B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "96b"
     },
     {
-      "title": "Rule 96C — Bank Account for credit of refund",
+      "title": "Rule 96C — Bank Account for credit of refund | GST Reconciliation",
       "url": "/gst-rules/rule-96c.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-96c.html",
       "type": "gst-rule",
-      "number": "96C",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "96c"
     },
     {
-      "title": "Rule 97 — Consumer Welfare Fund",
+      "title": "Rule 97 — Consumer Welfare Fund | GST Reconciliation",
       "url": "/gst-rules/rule-97.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-97.html",
       "type": "gst-rule",
-      "number": "97",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "97"
     },
     {
-      "title": "Rule 97A — Manual filing and processing",
+      "title": "Rule 97A — Manual filing and processing | GST Reconciliation",
       "url": "/gst-rules/rule-97a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-97a.html",
       "type": "gst-rule",
-      "number": "97A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "97a"
     },
     {
-      "title": "Rule 98 — Provisional Assessment",
+      "title": "Rule 98 — Provisional Assessment | GST Reconciliation",
       "url": "/gst-rules/rule-98.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-98.html",
       "type": "gst-rule",
-      "number": "98",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "98"
     },
     {
-      "title": "Rule 99 — Scrutiny of returns",
+      "title": "Rule 99 — Scrutiny of returns | GST Reconciliation",
       "url": "/gst-rules/rule-99.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-99.html",
       "type": "gst-rule",
-      "number": "99",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "99"
     },
     {
-      "title": "Rule 100 — Assessment in certain cases",
+      "title": "Rule 100 — Assessment in certain cases | GST Reconciliation",
       "url": "/gst-rules/rule-100.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-100.html",
       "type": "gst-rule",
-      "number": "100",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "100"
     },
     {
-      "title": "Rule 101 — Audit",
+      "title": "Rule 101 — Audit | GST Reconciliation",
       "url": "/gst-rules/rule-101.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-101.html",
       "type": "gst-rule",
-      "number": "101",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "101"
     },
     {
-      "title": "Rule 102 — Special Audit",
+      "title": "Rule 102 — Special Audit | GST Reconciliation",
       "url": "/gst-rules/rule-102.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-102.html",
       "type": "gst-rule",
-      "number": "102",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "102"
     },
     {
-      "title": "Rule 103 — Qualification and appointment of members of the Authority for Advance Ruling",
+      "title": "Rule 103 — Qualification and appointment of members of the Authority for Advance Ruling | GST Reconciliation",
       "url": "/gst-rules/rule-103.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-103.html",
       "type": "gst-rule",
-      "number": "103",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "103"
     },
     {
-      "title": "Rule 104 — Form and manner of application to the Authority for Advance Ruling",
+      "title": "Rule 104 — Form and manner of application to the Authority for Advance Ruling | GST Reconciliation",
       "url": "/gst-rules/rule-104.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-104.html",
       "type": "gst-rule",
-      "number": "104",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "104"
     },
     {
-      "title": "Rule 105 — Certification of copies of advance rulings pronounced by the Authority",
+      "title": "Rule 105 — Certification of copies of advance rulings pronounced by the Authority | GST Reconciliation",
       "url": "/gst-rules/rule-105.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-105.html",
       "type": "gst-rule",
-      "number": "105",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "105"
     },
     {
-      "title": "Rule 106 — Form and manner of appeal to the Appellate Authority for Advance Ruling",
+      "title": "Rule 106 — Form and manner of appeal to the Appellate Authority for Advance Ruling | GST Reconciliation",
       "url": "/gst-rules/rule-106.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-106.html",
       "type": "gst-rule",
-      "number": "106",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "106"
     },
     {
-      "title": "Rule 107 — Certification of copies of the advance rulings pronounced by the Appellate Authority",
+      "title": "Rule 107 — Certification of copies of the advance rulings pronounced by the Appellate Authority | GST Reconciliation",
       "url": "/gst-rules/rule-107.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-107.html",
       "type": "gst-rule",
-      "number": "107",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "107"
     },
     {
-      "title": "Rule 107A — Manual filing and processing",
+      "title": "Rule 107A — Manual filing and processing | GST Reconciliation",
       "url": "/gst-rules/rule-107a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-107a.html",
       "type": "gst-rule",
-      "number": "107A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "107a"
     },
     {
-      "title": "Rule 108 — Appeal to the Appellate Authority",
+      "title": "Rule 108 — Appeal to the Appellate Authority | GST Reconciliation",
       "url": "/gst-rules/rule-108.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-108.html",
       "type": "gst-rule",
-      "number": "108",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "108"
     },
     {
-      "title": "Rule 109 — Application to the Appellate Authority",
+      "title": "Rule 109 — Application to the Appellate Authority | GST Reconciliation",
       "url": "/gst-rules/rule-109.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-109.html",
       "type": "gst-rule",
-      "number": "109",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "109"
     },
     {
-      "title": "Rule 109A — Appointment of Appellate Authority",
+      "title": "Rule 109A — Appointment of Appellate Authority | GST Reconciliation",
       "url": "/gst-rules/rule-109a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-109a.html",
       "type": "gst-rule",
-      "number": "109A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "109a"
     },
     {
-      "title": "Rule 109B — Notice to person and order of revisional authority in case of revision",
+      "title": "Rule 109B — Notice to person and order of revisional authority in case of revision | GST Reconciliation",
       "url": "/gst-rules/rule-109b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-109b.html",
       "type": "gst-rule",
-      "number": "109B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "109b"
     },
     {
-      "title": "Rule 109C — Withdrawal of Appeal",
+      "title": "Rule 109C — Withdrawal of Appeal | GST Reconciliation",
       "url": "/gst-rules/rule-109c.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-109c.html",
       "type": "gst-rule",
-      "number": "109C",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "109c"
     },
     {
-      "title": "Rule 110 — Appeal to the Appellate Tribunal",
+      "title": "Rule 110 — Appeal to the Appellate Tribunal | GST Reconciliation",
       "url": "/gst-rules/rule-110.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-110.html",
       "type": "gst-rule",
-      "number": "110",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "110"
     },
     {
-      "title": "Rule 110A — Procedure for the Appeals to be heard by a single Member Bench",
+      "title": "Rule 110A — Procedure for the Appeals to be heard by a single Member Bench | GST Reconciliation",
       "url": "/gst-rules/rule-110a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-110a.html",
       "type": "gst-rule",
-      "number": "110A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "110a"
     },
     {
-      "title": "Rule 111 — Application to the Appellate Tribunal",
+      "title": "Rule 111 — Application to the Appellate Tribunal | GST Reconciliation",
       "url": "/gst-rules/rule-111.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-111.html",
       "type": "gst-rule",
-      "number": "111",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "111"
     },
     {
-      "title": "Rule 112 — Production of additional evidence before the Appellate Authority or the Appellate Tribunal",
+      "title": "Rule 112 — Production of additional evidence before the Appellate Authority or the Appellate Tribunal | GST Reconciliation",
       "url": "/gst-rules/rule-112.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-112.html",
       "type": "gst-rule",
-      "number": "112",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "112"
     },
     {
-      "title": "Rule 113 — Order of Appellate Authority or Appellate Tribunal",
+      "title": "Rule 113 — Order of Appellate Authority or Appellate Tribunal | GST Reconciliation",
       "url": "/gst-rules/rule-113.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-113.html",
       "type": "gst-rule",
-      "number": "113",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "113"
     },
     {
-      "title": "Rule 113A — Withdrawal of Appeal or Application filed before the Appellate Tribunal",
+      "title": "Rule 113A — Withdrawal of Appeal or Application filed before the Appellate Tribunal | GST Reconciliation",
       "url": "/gst-rules/rule-113a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-113a.html",
       "type": "gst-rule",
-      "number": "113A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "113a"
     },
     {
-      "title": "Rule 114 — Appeal to the High Court",
+      "title": "Rule 114 — Appeal to the High Court | GST Reconciliation",
       "url": "/gst-rules/rule-114.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-114.html",
       "type": "gst-rule",
-      "number": "114",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "114"
     },
     {
-      "title": "Rule 115 — Demand confirmed by the Court",
+      "title": "Rule 115 — Demand confirmed by the Court | GST Reconciliation",
       "url": "/gst-rules/rule-115.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-115.html",
       "type": "gst-rule",
-      "number": "115",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "115"
     },
     {
-      "title": "Rule 116 — Disqualification for misconduct of an authorised representative",
+      "title": "Rule 116 — Disqualification for misconduct of an authorised representative | GST Reconciliation",
       "url": "/gst-rules/rule-116.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-116.html",
       "type": "gst-rule",
-      "number": "116",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "116"
     },
     {
-      "title": "Rule 117 — Tax or duty credit carried forward under any existing law or on goods held in stock on the appointed day",
+      "title": "Rule 117 — Tax or duty credit carried forward under any existing law or on goods held in stock on the appointed day | GST Reconciliation",
       "url": "/gst-rules/rule-117.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-117.html",
       "type": "gst-rule",
-      "number": "117",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "117"
     },
     {
-      "title": "Rule 118 — Declaration to be made under clause (c) of sub-section (11) of section142",
+      "title": "Rule 118 — Declaration to be made under clause (c) of sub-section (11) of section142 | GST Reconciliation",
       "url": "/gst-rules/rule-118.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-118.html",
       "type": "gst-rule",
-      "number": "118",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "118"
     },
     {
-      "title": "Rule 119 — Declaration of stock held by a principal and job-worker",
+      "title": "Rule 119 — Declaration of stock held by a principal and job-worker | GST Reconciliation",
       "url": "/gst-rules/rule-119.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-119.html",
       "type": "gst-rule",
-      "number": "119",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "119"
     },
     {
-      "title": "Rule 120 — Details of goods sent on approval basis",
+      "title": "Rule 120 — Details of goods sent on approval basis | GST Reconciliation",
       "url": "/gst-rules/rule-120.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-120.html",
       "type": "gst-rule",
-      "number": "120",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "120"
     },
     {
-      "title": "Rule 120A — Revision of declaration in FORM GST TRAN-1",
+      "title": "Rule 120A — Revision of declaration in FORM GST TRAN-1 | GST Reconciliation",
       "url": "/gst-rules/rule-120a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-120a.html",
       "type": "gst-rule",
-      "number": "120A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "120a"
     },
     {
-      "title": "Rule 121 — Recovery of credit wrongly availed",
+      "title": "Rule 121 — Recovery of credit wrongly availed | GST Reconciliation",
       "url": "/gst-rules/rule-121.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-121.html",
       "type": "gst-rule",
-      "number": "121",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "121"
     },
     {
-      "title": "Rule 122 — Omitted / historical provision",
+      "title": "Rule 122 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-122.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-122.html",
       "type": "gst-rule",
-      "number": "122",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "122"
     },
     {
-      "title": "Rule 123 — Constitution of the Standing Committee and Screening Committees",
+      "title": "Rule 123 — Constitution of the Standing Committee and Screening Committees | GST Reconciliation",
       "url": "/gst-rules/rule-123.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-123.html",
       "type": "gst-rule",
-      "number": "123",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "123"
     },
     {
-      "title": "Rule 124 — Omitted / historical provision",
+      "title": "Rule 124 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-124.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-124.html",
       "type": "gst-rule",
-      "number": "124",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "124"
     },
     {
-      "title": "Rule 125 — Omitted / historical provision",
+      "title": "Rule 125 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-125.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-125.html",
       "type": "gst-rule",
-      "number": "125",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "125"
     },
     {
-      "title": "Rule 126 — Power to determine the methodology and procedure",
+      "title": "Rule 126 — Power to determine the methodology and procedure | GST Reconciliation",
       "url": "/gst-rules/rule-126.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-126.html",
       "type": "gst-rule",
-      "number": "126",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "126"
     },
     {
-      "title": "Rule 127 — Functions of the Authority",
+      "title": "Rule 127 — Functions of the Authority | GST Reconciliation",
       "url": "/gst-rules/rule-127.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-127.html",
       "type": "gst-rule",
-      "number": "127",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "127"
     },
     {
-      "title": "Rule 128 — Examination of application by the Standing Committee and Screening Committee",
+      "title": "Rule 128 — Examination of application by the Standing Committee and Screening Committee | GST Reconciliation",
       "url": "/gst-rules/rule-128.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-128.html",
       "type": "gst-rule",
-      "number": "128",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "128"
     },
     {
-      "title": "Rule 129 — Initiation and conduct of proceedings",
+      "title": "Rule 129 — Initiation and conduct of proceedings | GST Reconciliation",
       "url": "/gst-rules/rule-129.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-129.html",
       "type": "gst-rule",
-      "number": "129",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "129"
     },
     {
-      "title": "Rule 130 — Confidentiality of information",
+      "title": "Rule 130 — Confidentiality of information | GST Reconciliation",
       "url": "/gst-rules/rule-130.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-130.html",
       "type": "gst-rule",
-      "number": "130",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "130"
     },
     {
-      "title": "Rule 131 — Cooperation with other agencies or statutory authorities",
+      "title": "Rule 131 — Cooperation with other agencies or statutory authorities | GST Reconciliation",
       "url": "/gst-rules/rule-131.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-131.html",
       "type": "gst-rule",
-      "number": "131",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "131"
     },
     {
-      "title": "Rule 132 — Power to summon persons to give evidence and produce documents",
+      "title": "Rule 132 — Power to summon persons to give evidence and produce documents | GST Reconciliation",
       "url": "/gst-rules/rule-132.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-132.html",
       "type": "gst-rule",
-      "number": "132",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "132"
     },
     {
-      "title": "Rule 133 — Order of the Authority",
+      "title": "Rule 133 — Order of the Authority | GST Reconciliation",
       "url": "/gst-rules/rule-133.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-133.html",
       "type": "gst-rule",
-      "number": "133",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "133"
     },
     {
-      "title": "Rule 134 — Omitted / historical provision",
+      "title": "Rule 134 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-134.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-134.html",
       "type": "gst-rule",
-      "number": "134",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "134"
     },
     {
-      "title": "Rule 135 — Compliance by the registered person",
+      "title": "Rule 135 — Compliance by the registered person | GST Reconciliation",
       "url": "/gst-rules/rule-135.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-135.html",
       "type": "gst-rule",
-      "number": "135",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "135"
     },
     {
-      "title": "Rule 136 — Monitoring of the order",
+      "title": "Rule 136 — Monitoring of the order | GST Reconciliation",
       "url": "/gst-rules/rule-136.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-136.html",
       "type": "gst-rule",
-      "number": "136",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "136"
     },
     {
-      "title": "Rule 137 — Omitted / historical provision",
+      "title": "Rule 137 — Omitted / historical provision | GST Reconciliation",
       "url": "/gst-rules/rule-137.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-137.html",
       "type": "gst-rule",
-      "number": "137",
-      "chapter": "",
-      "status": "Omitted / historical"
+      "number": "137"
     },
     {
-      "title": "Rule 138 — Information to be furnished prior to commencement of movement of goods and generation of e-way bill. - **",
+      "title": "Rule 138 — Information to be furnished prior to commencement of movement of goods and generation of e-way bill. - ** | GST Reconciliation",
       "url": "/gst-rules/rule-138.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-138.html",
       "type": "gst-rule",
-      "number": "138",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "138"
     },
     {
-      "title": "Rule 138A — Documents and devices to be carried by a person-in-charge of a conveyance",
+      "title": "Rule 138A — Documents and devices to be carried by a person-in-charge of a conveyance | GST Reconciliation",
       "url": "/gst-rules/rule-138a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-138a.html",
       "type": "gst-rule",
-      "number": "138A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "138a"
     },
     {
-      "title": "Rule 138B — Verification of documents and conveyances",
+      "title": "Rule 138B — Verification of documents and conveyances | GST Reconciliation",
       "url": "/gst-rules/rule-138b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-138b.html",
       "type": "gst-rule",
-      "number": "138B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "138b"
     },
     {
-      "title": "Rule 138C — Inspection and verification of goods",
+      "title": "Rule 138C — Inspection and verification of goods | GST Reconciliation",
       "url": "/gst-rules/rule-138c.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-138c.html",
       "type": "gst-rule",
-      "number": "138C",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "138c"
     },
     {
-      "title": "Rule 138D — Facility for uploading information regarding detention of vehicle",
+      "title": "Rule 138D — Facility for uploading information regarding detention of vehicle | GST Reconciliation",
       "url": "/gst-rules/rule-138d.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-138d.html",
       "type": "gst-rule",
-      "number": "138D",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "138d"
     },
     {
-      "title": "Rule 138E — Restriction on furnishing of information in PART A of FORM GST EWB-01",
+      "title": "Rule 138E — Restriction on furnishing of information in PART A of FORM GST EWB-01 | GST Reconciliation",
       "url": "/gst-rules/rule-138e.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-138e.html",
       "type": "gst-rule",
-      "number": "138E",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "138e"
     },
     {
-      "title": "Rule 138F — Information to be furnished in case of intra-State movement of gold, precious stones, etc. and generation of e-way bills thereof",
+      "title": "Rule 138F — Information to be furnished in case of intra-State movement of gold, precious stones, etc. and generation of e-way bills thereof | GST Reconciliation",
       "url": "/gst-rules/rule-138f.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-138f.html",
       "type": "gst-rule",
-      "number": "138F",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "138f"
     },
     {
-      "title": "Rule 139 — Inspection, search and seizure",
+      "title": "Rule 139 — Inspection, search and seizure | GST Reconciliation",
       "url": "/gst-rules/rule-139.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-139.html",
       "type": "gst-rule",
-      "number": "139",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "139"
     },
     {
-      "title": "Rule 140 — Bond and security for release of seized goods",
+      "title": "Rule 140 — Bond and security for release of seized goods | GST Reconciliation",
       "url": "/gst-rules/rule-140.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-140.html",
       "type": "gst-rule",
-      "number": "140",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "140"
     },
     {
-      "title": "Rule 141 — Procedure in respect of seized goods",
+      "title": "Rule 141 — Procedure in respect of seized goods | GST Reconciliation",
       "url": "/gst-rules/rule-141.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-141.html",
       "type": "gst-rule",
-      "number": "141",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "141"
     },
     {
-      "title": "Rule 142 — Notice and order for demand of amounts payable under the Act",
+      "title": "Rule 142 — Notice and order for demand of amounts payable under the Act | GST Reconciliation",
       "url": "/gst-rules/rule-142.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-142.html",
       "type": "gst-rule",
-      "number": "142",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "142"
     },
     {
-      "title": "Rule 142A — Procedure for recovery of dues under existing laws",
+      "title": "Rule 142A — Procedure for recovery of dues under existing laws | GST Reconciliation",
       "url": "/gst-rules/rule-142a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-142a.html",
       "type": "gst-rule",
-      "number": "142A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "142a"
     },
     {
-      "title": "Rule 142B — Intimation of certain amounts liable to be recovered under section 79 of the Act",
+      "title": "Rule 142B — Intimation of certain amounts liable to be recovered under section 79 of the Act | GST Reconciliation",
       "url": "/gst-rules/rule-142b.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-142b.html",
       "type": "gst-rule",
-      "number": "142B",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "142b"
     },
     {
-      "title": "Rule 143 — Recovery by deduction from any money owed",
+      "title": "Rule 143 — Recovery by deduction from any money owed | GST Reconciliation",
       "url": "/gst-rules/rule-143.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-143.html",
       "type": "gst-rule",
-      "number": "143",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "143"
     },
     {
-      "title": "Rule 144 — Recovery by sale of goods under the control of proper officer",
+      "title": "Rule 144 — Recovery by sale of goods under the control of proper officer | GST Reconciliation",
       "url": "/gst-rules/rule-144.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-144.html",
       "type": "gst-rule",
-      "number": "144",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "144"
     },
     {
-      "title": "Rule 144A — Recovery of penalty by sale of goods or conveyance detained or seized in transit",
+      "title": "Rule 144A — Recovery of penalty by sale of goods or conveyance detained or seized in transit | GST Reconciliation",
       "url": "/gst-rules/rule-144a.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-144a.html",
       "type": "gst-rule",
-      "number": "144A",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "144a"
     },
     {
-      "title": "Rule 145 — Recovery from a third person",
+      "title": "Rule 145 — Recovery from a third person | GST Reconciliation",
       "url": "/gst-rules/rule-145.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-145.html",
       "type": "gst-rule",
-      "number": "145",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "145"
     },
     {
-      "title": "Rule 146 — Recovery through execution of a decree, etc",
+      "title": "Rule 146 — Recovery through execution of a decree, etc | GST Reconciliation",
       "url": "/gst-rules/rule-146.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-146.html",
       "type": "gst-rule",
-      "number": "146",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "146"
     },
     {
-      "title": "Rule 147 — Recovery by sale of movable or immovable property",
+      "title": "Rule 147 — Recovery by sale of movable or immovable property | GST Reconciliation",
       "url": "/gst-rules/rule-147.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-147.html",
       "type": "gst-rule",
-      "number": "147",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "147"
     },
     {
-      "title": "Rule 148 — Prohibition against bidding or purchase by officer",
+      "title": "Rule 148 — Prohibition against bidding or purchase by officer | GST Reconciliation",
       "url": "/gst-rules/rule-148.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-148.html",
       "type": "gst-rule",
-      "number": "148",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "148"
     },
     {
-      "title": "Rule 149 — Prohibition against sale on holidays",
+      "title": "Rule 149 — Prohibition against sale on holidays | GST Reconciliation",
       "url": "/gst-rules/rule-149.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-149.html",
       "type": "gst-rule",
-      "number": "149",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "149"
     },
     {
-      "title": "Rule 150 — Assistance by police",
+      "title": "Rule 150 — Assistance by police | GST Reconciliation",
       "url": "/gst-rules/rule-150.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-150.html",
       "type": "gst-rule",
-      "number": "150",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "150"
     },
     {
-      "title": "Rule 151 — Attachment of debts and shares, etc",
+      "title": "Rule 151 — Attachment of debts and shares, etc | GST Reconciliation",
       "url": "/gst-rules/rule-151.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-151.html",
       "type": "gst-rule",
-      "number": "151",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "151"
     },
     {
-      "title": "Rule 152 — Attachment of property in custody of courts or Public Officer",
+      "title": "Rule 152 — Attachment of property in custody of courts or Public Officer | GST Reconciliation",
       "url": "/gst-rules/rule-152.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-152.html",
       "type": "gst-rule",
-      "number": "152",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "152"
     },
     {
-      "title": "Rule 153 — Attachment of interest in partnership",
+      "title": "Rule 153 — Attachment of interest in partnership | GST Reconciliation",
       "url": "/gst-rules/rule-153.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-153.html",
       "type": "gst-rule",
-      "number": "153",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "153"
     },
     {
-      "title": "Rule 154 — Disposal of proceeds of sale of goods or conveyance and movable or immovable property",
+      "title": "Rule 154 — Disposal of proceeds of sale of goods or conveyance and movable or immovable property | GST Reconciliation",
       "url": "/gst-rules/rule-154.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-154.html",
       "type": "gst-rule",
-      "number": "154",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "154"
     },
     {
-      "title": "Rule 155 — Recovery through land revenue authority",
+      "title": "Rule 155 — Recovery through land revenue authority | GST Reconciliation",
       "url": "/gst-rules/rule-155.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-155.html",
       "type": "gst-rule",
-      "number": "155",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "155"
     },
     {
-      "title": "Rule 156 — Recovery through court",
+      "title": "Rule 156 — Recovery through court | GST Reconciliation",
       "url": "/gst-rules/rule-156.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-156.html",
       "type": "gst-rule",
-      "number": "156",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "156"
     },
     {
-      "title": "Rule 157 — Recovery from surety",
+      "title": "Rule 157 — Recovery from surety | GST Reconciliation",
       "url": "/gst-rules/rule-157.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-157.html",
       "type": "gst-rule",
-      "number": "157",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "157"
     },
     {
-      "title": "Rule 158 — Payment of tax and other amounts in instalments",
+      "title": "Rule 158 — Payment of tax and other amounts in instalments | GST Reconciliation",
       "url": "/gst-rules/rule-158.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-158.html",
       "type": "gst-rule",
-      "number": "158",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "158"
     },
     {
-      "title": "Rule 159 — Provisional attachment of property",
+      "title": "Rule 159 — Provisional attachment of property | GST Reconciliation",
       "url": "/gst-rules/rule-159.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-159.html",
       "type": "gst-rule",
-      "number": "159",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "159"
     },
     {
-      "title": "Rule 160 — Recovery from company in liquidation",
+      "title": "Rule 160 — Recovery from company in liquidation | GST Reconciliation",
       "url": "/gst-rules/rule-160.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-160.html",
       "type": "gst-rule",
-      "number": "160",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "160"
     },
     {
-      "title": "Rule 161 — Continuation of certain recovery proceedings",
+      "title": "Rule 161 — Continuation of certain recovery proceedings | GST Reconciliation",
       "url": "/gst-rules/rule-161.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-161.html",
       "type": "gst-rule",
-      "number": "161",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "161"
     },
     {
-      "title": "Rule 162 — Procedure for compounding of offences",
+      "title": "Rule 162 — Procedure for compounding of offences | GST Reconciliation",
       "url": "/gst-rules/rule-162.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-162.html",
       "type": "gst-rule",
-      "number": "162",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "162"
     },
     {
-      "title": "Rule 163 — Consent based sharing of information",
+      "title": "Rule 163 — Consent based sharing of information | GST Reconciliation",
       "url": "/gst-rules/rule-163.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-163.html",
       "type": "gst-rule",
-      "number": "163",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "163"
     },
     {
-      "title": "Rule 164 — Procedure and conditions for closure of proceedings under section 128A in respect of demands issued under section 73",
+      "title": "Rule 164 — Procedure and conditions for closure of proceedings under section 128A in respect of demands issued under section 73 | GST Reconciliation",
       "url": "/gst-rules/rule-164.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-164.html",
       "type": "gst-rule",
-      "number": "164",
-      "chapter": "",
-      "status": "Current in India Code record"
+      "number": "164"
     }
   ],
   "counts": {
