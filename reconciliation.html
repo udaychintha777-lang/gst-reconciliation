@@ -701,6 +701,33 @@ function gstAnalytics(eventName, params){ try{ if(window.GST_GA4_ID && typeof gt
 }
 </style>
 
+
+<style id="gst-recon-v6-upgrade">
+/* V6 presentation + reconciliation transparency upgrade */
+:root{--v6-blue:#0b67c2;--v6-deep:#0d2f55;--v6-green:#138a5b;--v6-amber:#b66a00}
+.v6-trust{margin:14px 0 0;padding:13px 15px;border:1px solid #cfe1f0;border-radius:12px;background:linear-gradient(90deg,#f5faff,#fbfdff);display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.v6-trust div{padding:9px 10px;border:1px solid #e0ebf4;border-radius:9px;background:#fff}
+.v6-trust b{display:block;color:#123a68;font-size:11px}.v6-trust span{display:block;color:#708197;font-size:10px;margin-top:3px}
+.v6-sheet-strip{margin-top:10px;display:flex;gap:7px;flex-wrap:wrap}.v6-sheet-chip{font-size:9px;font-weight:850;padding:5px 8px;border-radius:999px;border:1px solid #d5e3ef;background:#f7fbff;color:#365c7e}
+.v6-engine{margin-top:14px;border:1px solid #d7e5f1;border-radius:12px;background:#fff;overflow:hidden}
+.v6-engine-head{padding:15px 17px;border-bottom:1px solid #e4edf5;display:flex;justify-content:space-between;gap:15px;align-items:center}
+.v6-engine-head h3{margin:0;color:#123a68;font-size:16px}.v6-engine-head p{margin:3px 0 0;color:#708197;font-size:10.5px}
+.v6-engine-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:13px}
+.v6-rule{border:1px solid #e1eaf2;border-radius:10px;padding:11px;background:#fbfdff}.v6-rule .n{font-size:9px;font-weight:900;color:#1677e8}.v6-rule b{display:block;color:#173e62;font-size:11px;margin:3px 0}.v6-rule span{color:#6d8094;font-size:9.5px;line-height:1.45}
+.v6-seo{width:min(1180px,calc(100% - 34px));margin:24px auto 0}.v6-seo-card{background:#fff;border:1px solid #dce7f2;border-radius:13px;padding:22px;box-shadow:0 3px 13px rgba(18,58,104,.04)}
+.v6-seo h2{margin:0 0 8px;color:#123a68;font-size:22px}.v6-seo h3{color:#183d61;font-size:15px;margin:19px 0 6px}.v6-seo p,.v6-seo li{color:#5f7389;font-size:11.5px;line-height:1.7}.v6-seo ul{padding-left:20px}.v6-note{padding:11px 13px;border-left:3px solid #1677e8;background:#f5f9fd;border-radius:7px;color:#506b85;font-size:10.5px;margin-top:12px}
+.v6-audit{margin-top:12px;padding:11px 13px;border:1px solid #d9e7f2;background:#f9fcff;border-radius:9px;font-size:10px;color:#61758a}
+@media(max-width:850px){.v6-trust,.v6-engine-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:560px){.v6-trust,.v6-engine-grid{grid-template-columns:1fr}.v6-seo{width:calc(100% - 20px)}}
+</style>
+<script type="application/ld+json" id="gstReconV6Schema">
+{"@context":"https://schema.org","@type":"HowTo","name":"How to reconcile Purchase Register with GSTR-2B","description":"Step-by-step invoice-level GST reconciliation using Purchase Register and GSTR-2B portal data.","step":[
+{"@type":"HowToStep","name":"Upload","text":"Upload the Purchase Register and the GSTR-2B workbook downloaded from the GST Portal."},
+{"@type":"HowToStep","name":"Detect","text":"Review detected columns and portal transaction sheets before running reconciliation."},
+{"@type":"HowToStep","name":"Match","text":"The engine applies exact, normalized, fuzzy and corroborated invoice matching with one-to-one allocation."},
+{"@type":"HowToStep","name":"Review","text":"Review matched records, partial matches, records missing from either source, duplicates and review-required candidates."},
+{"@type":"HowToStep","name":"Export","text":"Download the Excel workpaper containing summary, detailed reconciliation, exceptions, data quality and matching logic."}]}
+</script>
+
 </head>
 <body style='box-sizing: border-box; margin: 0; background: linear-gradient(180deg,#f8fbff 0,#f3f8fd 100%); color: #183858; font-family: Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; font-size: 14px; line-height: 1.55; margin:0; background:#f5f9fd; color:#183858; font-family:Inter,Segoe UI,Arial,sans-serif;'>
 <header class="topbar" style="box-sizing:border-box;height:78px;background:rgba(255,255,255,.98);border-bottom:1px solid #d9e5f0;display:flex;align-items:center;position:sticky;top:0;z-index:50;box-shadow:0 3px 18px rgba(18,58,104,.07);backdrop-filter:blur(10px)"><div class="topbar-inner" style="box-sizing:border-box;width:min(1180px,calc(100% - 34px));margin:auto;display:flex;align-items:center;justify-content:space-between;gap:22px">
@@ -769,6 +796,22 @@ function gstAnalytics(eventName, params){ try{ if(window.GST_GA4_ID && typeof gt
 </div>
 </div>
 </div>
+
+<div class="v6-trust" aria-label="Reconciliation safeguards">
+  <div><b>🔐 Browser processing</b><span>Source workbooks are processed locally in your browser.</span></div>
+  <div><b>🔎 Multi-level matching</b><span>Exact identity, normalized invoice numbers, fuzzy similarity and corroboration.</span></div>
+  <div><b>1:1 allocation</b><span>A single GSTR-2B record is not silently matched to multiple purchase rows.</span></div>
+  <div><b>📊 Audit-ready output</b><span>Summary, detail, exceptions, data quality, review queue and logic sheets.</span></div>
+</div>
+<div class="v6-engine">
+  <div class="v6-engine-head"><div><h3>How the reconciliation engine decides a match</h3><p>The engine does not rely on invoice number alone. It combines identifiers and independent corroborating signals.</p></div><span class="mapping-badge" style="font-size:9px;padding:5px 8px;border-radius:999px;background:#e8f7ef;color:#167048;font-weight:900">Multi-rule engine</span></div>
+  <div class="v6-engine-grid">
+    <div class="v6-rule"><span class="n">01 · IDENTITY</span><b>GSTIN + document number</b><span>Normalized GSTIN, document type and invoice number are checked first.</span></div>
+    <div class="v6-rule"><span class="n">02 · FUZZY</span><b>Invoice similarity</b><span>Formatting changes, spaces, punctuation and small transcription differences are evaluated conservatively.</span></div>
+    <div class="v6-rule"><span class="n">03 · CORROBORATION</span><b>Tax + value + date</b><span>Taxable value, individual tax components and document date strengthen or weaken a candidate.</span></div>
+    <div class="v6-rule"><span class="n">04 · CONTROL</span><b>Ambiguity + duplicates</b><span>Close competing candidates remain Review Required instead of being forced into a match.</span></div>
+  </div>
+</div>
 <div class="card config" style="margin-top: 14px; box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 11px; box-shadow: 0 3px 13px rgba(18,58,104,.045); padding: 14px 16px"><div class="section-head" style="padding: 15px 18px; border-bottom: 1px solid #e5edf5; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 15px"><div style="box-sizing: border-box"><h2 style="box-sizing: border-box; margin: 0; color: #123a68; font-size: 19px; letter-spacing: -.3px">Matching Configuration</h2><p style="box-sizing: border-box; margin: 3px 0 0; color: #708197; font-size: 11px">Set the tolerance and date window used by the reconciliation engine.</p></div></div>
 <div class="config-row" style="box-sizing: border-box; display: grid; grid-template-columns: 1fr 1fr 1fr 1fr auto auto; gap: 10px; align-items: end">
 <div class="field" style="box-sizing: border-box"><label style="box-sizing: border-box; display: block; font-size: 10px; font-weight: 900; color: #34526f; margin-bottom: 4px">Tax amount tolerance (₹)</label><input id="v2DiffTol" min="0" step="0.01" style="box-sizing: border-box; font: inherit; width: 100%; height: 38px; border: 1px solid #cbd9e6; border-radius: 7px; background: #fff; padding: 0 9px; color: #183858" type="number" value="2"/></div>
@@ -781,7 +824,7 @@ function gstAnalytics(eventName, params){ try{ if(window.GST_GA4_ID && typeof gt
 </div>
 <div class="card results" id="v2Dashboard" style="box-sizing: border-box; background: #fff; border: 1px solid #dce7f2; border-radius: 11px; box-shadow: 0 3px 13px rgba(18,58,104,.045); margin-top: 17px; display: none">
 <div class="results-head" style="box-sizing: border-box; padding: 17px 18px 11px; display: flex; justify-content: space-between; align-items: flex-start; gap: 15px"><div style="box-sizing: border-box"><div class="eyebrow" style="margin-bottom: 9px; box-sizing: border-box; font-size: 11px; text-transform: uppercase; letter-spacing: .16em; color: #1677e8; font-weight: 900">RECONCILIATION SUMMARY</div><h2 style="box-sizing: border-box; margin: 0; color: #123a68; font-size: 21px">Reconciliation Results</h2><p style="box-sizing: border-box; margin: 4px 0 0; color: #6b7e93; font-size: 11px; max-width: 720px">Review the relationship between your Purchase Register and GSTR-2B records, then move from summary to invoice-level exceptions.</p></div><div class="scorebox" style="box-sizing: border-box; text-align: center; min-width: 90px"><div class="score" id="v4HealthScore" style="box-sizing: border-box; font-size: 28px; font-weight: 900; color: #123a68">0%</div><small id="v4HealthText" style="box-sizing: border-box; font-size: 9px; color: #74869a">Overall matched coverage</small></div></div>
-<div class="result-actions" style="box-sizing: border-box; display: flex; justify-content: space-between; gap: 10px; padding: 0 18px 12px; align-items: center"><div class="tip" style="box-sizing: border-box; font-size: 10px; color: #718399">Workpaper includes summary, invoice matching, exception queue, supplier analysis and data-quality controls.</div><div style="display: flex; gap: 7px; flex-wrap: wrap; box-sizing: border-box"><button class="btn btn-soft" id="v4Priority" style="box-sizing: border-box; font: inherit; cursor: pointer; height: 38px; border-radius: 7px; padding: 0 15px; border: 1px solid transparent; font-weight: 850; font-size: 11px; white-space: nowrap; background: #edf5ff; border-color: #cfe2f7; color: #155a9f" type="button">Prioritise Review Items</button><button class="btn btn-green" id="v4Download" style="box-sizing: border-box; font: inherit; cursor: pointer; height: 38px; border-radius: 7px; padding: 0 15px; border: 1px solid transparent; font-weight: 850; font-size: 11px; white-space: nowrap; background: #19a66b; color: #fff" type="button">⇩ Download Excel Workpaper</button></div></div>
+<div class="result-actions" style="box-sizing: border-box; display: flex; justify-content: space-between; gap: 10px; padding: 0 18px 12px; align-items: center"><div class="tip" style="box-sizing: border-box; font-size: 10px; color: #718399">Workpaper includes summary, invoice matching, exception queue, supplier analysis and data-quality controls.</div><div style="display: flex; gap: 7px; flex-wrap: wrap; box-sizing: border-box"><button class="btn btn-soft" id="v4Priority" style="box-sizing: border-box; font: inherit; cursor: pointer; height: 38px; border-radius: 7px; padding: 0 15px; border: 1px solid transparent; font-weight: 850; font-size: 11px; white-space: nowrap; background: #edf5ff; border-color: #cfe2f7; color: #155a9f" type="button">Prioritise Review Items</button><button class="btn btn-green" id="v4Download" style="box-sizing: border-box; font: inherit; cursor: pointer; height: 38px; border-radius: 7px; padding: 0 15px; border: 1px solid transparent; font-weight: 850; font-size: 11px; white-space: nowrap; background: #19a66b; color: #fff" type="button">⇩ Download Reconciled Report</button></div></div>
 <div class="priority-strip" id="v4PriorityStrip" style="box-sizing: border-box; margin: 0 18px 12px; border: 1px solid #dbe7f0; background: #f8fbfe; border-radius: 9px; padding: 9px 11px; display: grid; grid-template-columns: 1fr auto auto auto; gap: 16px; align-items: center"><div style="box-sizing: border-box"><b style="box-sizing: border-box; display: block; color: #183b63; font-size: 11px">Review queue</b><span style="box-sizing: border-box; color: #708297; font-size: 9px">Start with records most likely to require accounting or supplier follow-up.</span></div><div class="priority-stat" style="box-sizing: border-box; text-align: right"><strong id="v4HighPriority" style="box-sizing: border-box; display: block; color: #163b64; font-size: 16px">0</strong><small style="box-sizing: border-box; color: #77899b; font-size: 9px">High priority</small></div><div class="priority-stat" style="box-sizing: border-box; text-align: right"><strong id="v4ExceptionGST" style="box-sizing: border-box; display: block; color: #163b64; font-size: 16px">₹0</strong><small style="box-sizing: border-box; color: #77899b; font-size: 9px">Exception GST</small></div><div class="priority-stat" style="box-sizing: border-box; text-align: right"><strong id="v4ExceptionRate" style="box-sizing: border-box; display: block; color: #163b64; font-size: 16px">0%</strong><small style="box-sizing: border-box; color: #77899b; font-size: 9px">Exception rate</small></div></div>
 <div class="kpis" style="box-sizing: border-box; display: grid; grid-template-columns: repeat(8,1fr); gap: 8px; padding: 0 18px 14px">
 <div class="kpi" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff; min-height: 67px"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Purchase Register</div><div class="kpi-value" id="v4KPR" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #183a60; margin-top: 5px">0</div></div><div class="kpi" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff; min-height: 67px"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">GSTR-2B</div><div class="kpi-value" id="v4K2B" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #183a60; margin-top: 5px">0</div></div><div class="kpi green" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #ecfaf3; min-height: 67px; border-color: #c7ecd9"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Matched</div><div class="kpi-value" id="v4KMatched" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #0b8a56; margin-top: 5px">0</div></div><div class="kpi amber" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff8e7; min-height: 67px; border-color: #f4dfae"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Partial Matching</div><div class="kpi-value" id="v4KPartial" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #bd7900; margin-top: 5px">0</div></div><div class="kpi red" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff1f2; min-height: 67px; border-color: #f3c6c9"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Not in 2B</div><div class="kpi-value" id="v4KNot2B" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #d53a40; margin-top: 5px">0</div></div><div class="kpi blue" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #edf6ff; min-height: 67px; border-color: #cfe2f7"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Not in Purchase Register</div><div class="kpi-value" id="v4KNotPR" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #1c6ac5; margin-top: 5px">0</div></div><div class="kpi purple" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #f4efff; min-height: 67px; border-color: #ded2f7"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Review Required</div><div class="kpi-value" id="v4KReview" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #754ac5; margin-top: 5px">0</div></div><div class="kpi" style="box-sizing: border-box; border: 1px solid #dbe6ef; border-radius: 8px; padding: 9px; background: #fff; min-height: 67px"><div class="kpi-label" style="box-sizing: border-box; font-size: 9px; color: #708196; font-weight: 800; line-height: 1.25">Duplicate / Possible</div><div class="kpi-value" id="v4KDuplicate" style="box-sizing: border-box; font-size: 19px; font-weight: 900; color: #183a60; margin-top: 5px">0</div></div>
@@ -821,19 +864,14 @@ function gstAnalytics(eventName, params){ try{ if(window.GST_GA4_ID && typeof gt
 <h2 style="margin:0;color:#123a68;font-size:27px;line-height:1.2;">GST Reconciliation Tool — Purchase Register vs GSTR-2B</h2>
 <p style="margin:12px 0 0;color:#52677f;font-size:15px;max-width:900px;">Use this GST ITC reconciliation tool to compare your Purchase Register with the GSTR-2B data downloaded from the GST portal. The objective is not simply to mark invoices as matched or unmatched; it is to identify the documents and tax differences that require accounting, supplier or GST compliance review before ITC is relied upon.</p>
 </div>
-<div style="padding:26px 30px;display:grid;grid-template-columns:1.15fr .85fr;gap:24px;">
+<div style="padding:26px 30px;display:block;">
 <div>
 <h3 style="margin:0 0 10px;color:#173d68;font-size:20px;">What is GST reconciliation?</h3>
 <p style="margin:0 0 13px;color:#4d637a;">GST reconciliation is the process of comparing purchase and input-tax records maintained in the books with the tax information appearing in GSTR-2B. For each document, the reviewer checks supplier GSTIN, invoice number, invoice date, taxable value and GST amounts, then determines whether the record can be treated as matched or requires further investigation.</p>
 <p style="margin:0 0 13px;color:#4d637a;">GSTR-2B is a static, auto-drafted ITC statement. GSTN advises taxpayers to reconcile GSTR-2B with their own records and books, avoid duplicate ITC, make required reversals and ensure applicable reverse-charge tax is paid. This makes a structured purchase-register-to-GSTR-2B reconciliation an important control in monthly GST working.</p>
 <p style="margin:0;color:#4d637a;">This page is designed for CAs, accountants, tax teams, finance managers, internal auditors and businesses that need an invoice-level GST ITC matching workpaper rather than only a headline total.</p>
 </div>
-<div style="background:#f7fbff;border:1px solid #d9e8f7;border-radius:14px;padding:20px;">
-<h3 style="margin:0 0 12px;color:#173d68;font-size:18px;">Searches this tool is built to answer</h3>
-<ul style="margin:0;padding-left:19px;color:#536a81;line-height:1.9;">
-<li>GST reconciliation tool</li><li>GSTR-2B reconciliation tool</li><li>GSTR-2B vs purchase register matching</li><li>GST ITC reconciliation</li><li>Purchase register reconciliation</li><li>Invoice-level ITC matching</li><li>GSTR-2B Excel reconciliation</li><li>GST mismatch and missing invoice review</li>
-</ul>
-</div>
+
 </div>
 <div style="padding:0 30px 28px;">
 <h3 style="margin:0 0 14px;color:#173d68;font-size:20px;">How the GST reconciliation process works</h3>
@@ -1215,8 +1253,11 @@ function downloadExcelTemplate(){
   }
 
   function dateKey(v){
+    // Preserve the calendar date exactly. Excel dates are stored as serial
+    // numbers; parsing the serial directly avoids browser timezone shifts.
     if(v instanceof Date && !isNaN(v)) {
-      return `${v.getFullYear()}-${String(v.getMonth()+1).padStart(2,'0')}-${String(v.getDate()).padStart(2,'0')}`;
+      // SheetJS Date values are UTC-based; use UTC calendar components.
+      return `${v.getUTCFullYear()}-${String(v.getUTCMonth()+1).padStart(2,'0')}-${String(v.getUTCDate()).padStart(2,'0')}`;
     }
     if(typeof v==='number' && window.XLSX){
       const d=XLSX.SSF.parse_date_code(v);
@@ -1224,22 +1265,41 @@ function downloadExcelTemplate(){
     }
     const s=String(v??'').trim();
     if(!s)return '';
+
+    // Excel serial supplied as text (seen in some exported/custom files).
+    if(/^\d+(?:\.\d+)?$/.test(s) && window.XLSX){
+      const serial=Number(s);
+      if(serial>=1 && serial<=100000){
+        const d=XLSX.SSF.parse_date_code(serial);
+        if(d && d.y>=1900 && d.y<=2100){
+          return `${d.y}-${String(d.m).padStart(2,'0')}-${String(d.d).padStart(2,'0')}`;
+        }
+      }
+    }
+
+    // ISO/date-only strings are handled without Date() so timezone cannot alter them.
     let m=s.match(/^(\d{4})[-/.](\d{1,2})[-/.](\d{1,2})$/);
     if(m)return `${m[1]}-${String(m[2]).padStart(2,'0')}-${String(m[3]).padStart(2,'0')}`;
     m=s.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/);
     if(m)return `${m[3]}-${String(m[2]).padStart(2,'0')}-${String(m[1]).padStart(2,'0')}`;
-    const d=new Date(s);
-    if(!isNaN(d)) return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+
+    // ISO datetime: take the calendar date portion, not the browser-local date.
+    m=s.match(/^(\d{4})-(\d{2})-(\d{2})[T\s]/);
+    if(m)return `${m[1]}-${m[2]}-${m[3]}`;
+
     return s;
   }
 
   function displayDate(v){
     if(!v || v==='-') return '-';
-    const m=String(v).match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+    const s=String(v).trim();
+    let m=s.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
     if(m) return String(m[3]).padStart(2,'0')+'/'+String(m[2]).padStart(2,'0')+'/'+m[1];
-    const d=new Date(v);
-    if(!isNaN(d)) return String(d.getDate()).padStart(2,'0')+'/'+String(d.getMonth()+1).padStart(2,'0')+'/'+d.getFullYear();
-    return String(v);
+    m=s.match(/^(\d{1,2})[-/.](\d{1,2})[-/.](\d{4})$/);
+    if(m) return String(m[1]).padStart(2,'0')+'/'+String(m[2]).padStart(2,'0')+'/'+m[3];
+    m=s.match(/^(\d{4})-(\d{2})-(\d{2})[T\s]/);
+    if(m) return `${m[3]}/${m[2]}/${m[1]}`;
+    return s;
   }
 
   function dayDiff(a,b){
@@ -1264,8 +1324,18 @@ function downloadExcelTemplate(){
   }
 
   function similarity(a,b){
-    if(!a||!b)return 0;if(a===b)return 1;
-    return Math.max(0,1-levenshtein(a,b)/Math.max(a.length,b.length));
+    if(!a||!b)return 0;
+    a=String(a).toUpperCase(); b=String(b).toUpperCase();
+    if(a===b)return 1;
+    // Several conservative signals: edit similarity, token/order similarity,
+    // prefix/suffix agreement and numeric-token agreement.
+    const lev=1-levenshtein(a,b)/Math.max(a.length,b.length);
+    const tokenA=(a.match(/[A-Z]+|\d+/g)||[]), tokenB=(b.match(/[A-Z]+|\d+/g)||[]);
+    const tokenEq=tokenA.length&&tokenB.length ? tokenA.filter((x,i)=>tokenB[i]===x).length/Math.max(tokenA.length,tokenB.length):0;
+    const digitsA=(a.match(/\d+/g)||[]).join(''), digitsB=(b.match(/\d+/g)||[]).join('');
+    const digitSignal=digitsA&&digitsB ? (digitsA===digitsB?1:Math.max(0,1-levenshtein(digitsA,digitsB)/Math.max(digitsA.length,digitsB.length))) : 0;
+    const prefix=Math.min(4,a.length,b.length), prefixSignal=prefix? (a.slice(0,prefix)===b.slice(0,prefix)?1:0):0;
+    return Math.max(0,Math.min(1,lev*0.48+tokenEq*0.18+digitSignal*0.28+prefixSignal*0.06));
   }
 
   function findColumn(headers, field){
@@ -1595,10 +1665,10 @@ function downloadExcelTemplate(){
   }
 
   function getGstr2bSheetNames(wb){
-    // Ignore Read me and the four summary sheets. Every transaction/detail sheet
+    // Ignore Read me and summary sheets. Every supported transaction/detail sheet
     // in the portal workbook is considered, including B2B/B2BA, credit/debit notes,
     // ECO, ISD, imports and their reversal/rejected/amendment tables.
-    return wb.SheetNames.filter(n=>/^(B2B|ECO|ISD|IMPG)/i.test(String(n).trim()));
+    return wb.SheetNames.filter(n=>/^(B2B|CDNR|DNR|ECO|ISD|IMPG)/i.test(String(n).trim()));
   }
 
   function clearUploadedData(showToast=false){
@@ -1666,7 +1736,7 @@ function downloadExcelTemplate(){
     const reader=new FileReader();
     reader.onload=e=>{
       try{
-        const wb=XLSX.read(new Uint8Array(e.target.result),{type:'array',cellDates:true});
+        const wb=XLSX.read(new Uint8Array(e.target.result),{type:'array',cellDates:false});
         state.workbooks[type]=wb; state.files[type]=file;
         populateSheetChoice(type,wb,wb.SheetNames[0]);
         gstAnalytics(type==='PR'?'gst_purchase_register_uploaded':'gst_2b_uploaded',{file_type:ext,sheet_count:wb.SheetNames.length});
@@ -1719,6 +1789,7 @@ function downloadExcelTemplate(){
     const genericInvoiceType=t=>['INVOICE','TAX INVOICE','PURCHASE','PURCHASE INVOICE','REGULAR'].includes(t);
     const typeCompatible=(pr.docType===b.docType)||(genericInvoiceType(pr.docType)&&b.docType==='INVOICE')||(genericInvoiceType(b.docType)&&pr.docType==='INVOICE');
     if(!typeCompatible)return null;
+
     const invSim=similarity(pr.inv,b.inv);
     const d=dayDiff(pr.date,b.date);
     if(!validDate(d,settings))return null;
@@ -1728,15 +1799,18 @@ function downloadExcelTemplate(){
     const amountSignal=valueClose?1:Math.max(0,1-valDiff/Math.max(100,Math.abs(pr.taxable),Math.abs(b.taxable)));
     const taxSignal=taxClose?1:Math.max(0,1-taxDiff/Math.max(100,Math.abs(pr.totalTax),Math.abs(b.totalTax)));
     const dateSignal=!dateKnown?.55:(dateExact?1:Math.max(0,1-d/Math.max(settings.dateWindow,1)));
-    // GSTIN and invoice identity dominate. Amount/date provide corroboration, not identity by themselves.
+
+    // Independent evidence is deliberately weighted: GSTIN and invoice identity
+    // dominate; vendor/value/tax/date corroborate but cannot create a match alone.
     let score=0;
-    if(gst)score+=0.34; else if(party)score+=0.12;
+    if(gst)score+=0.38; else if(party)score+=0.16;
     score+=invSim*0.34;
-    score+=amountSignal*0.14;
+    score+=amountSignal*0.10;
     score+=taxSignal*0.10;
     score+=dateSignal*0.08;
     if(gst&&invSim>=0.98)score+=0.04;
     if(gst&&valueClose&&taxClose)score+=0.03;
+    if(party&&invSim>=0.95)score+=0.03;
     return {score:Math.min(1,score),confidence:Math.round(Math.min(1,score)*100),gst,party,invSim,d,valDiff,taxDiff,valueClose,taxClose,dateExact,dateKnown};
   }
   function findBest(pr,candidates,used,settings){
@@ -1745,7 +1819,8 @@ function downloadExcelTemplate(){
       if(used.has(b.idx))continue;
       const m=candidateMeta(pr,b,settings);if(!m)continue;
       const item={b,meta:m};
-      if(!best||m.score>best.meta.score){second=best;best=item}else if(!second||m.score>second.meta.score)second=item;
+      if(!best||m.score>best.meta.score){second=best;best=item}
+      else if(!second||m.score>second.meta.score)second=item;
     }
     return {best,second};
   }
@@ -1791,46 +1866,98 @@ function downloadExcelTemplate(){
     state.settings.dateWindow=Number($('v2DateWindow').value);
     try{
       const prRes=validateAndParse(state.prRaw,'PR'),bRes=validateAndParse(state.b2bRaw,'B2B');
-      state.pr=prRes.out.map((x,i)=>({...x,idx:i}));state.b2b=bRes.out.map((x,i)=>({...x,idx:i}));
+      state.pr=prRes.out.map((x,i)=>({...x,idx:i}));
+      state.b2b=bRes.out.map((x,i)=>({...x,idx:i}));
       const used=new Set(),report=[],duplicate2B=duplicateB2B(state.b2b);
-      // Pass 1: exact GSTIN + document type + normalized document number.
+
+      // Pass 1 — deterministic identity key.
       state.pr.forEach(pr=>{
         const candidates=exactKeyCandidates(pr,state.b2b,used);
         if(candidates.length){
-          const b=candidates.find(x=>!duplicate2B.has(x.idx))||candidates[0];used.add(b.idx);
-          const meta={gst:true,invSim:1,valueClose:amountClose(pr.taxable,b.taxable,state.settings.diffTol),taxClose:taxComponentsClose(pr,b,state.settings.diffTol),dateExact:dayDiff(pr.date,b.date)===0,dateKnown:dayDiff(pr.date,b.date)!==null,score:1,confidence:100};
+          const nonDup=candidates.find(x=>!duplicate2B.has(x.idx));
+          const b=nonDup||candidates[0]; used.add(b.idx);
+          const meta={gst:true,party:true,invSim:1,
+            valueClose:amountClose(pr.taxable,b.taxable,state.settings.diffTol),
+            taxClose:taxComponentsClose(pr,b,state.settings.diffTol),
+            dateExact:dayDiff(pr.date,b.date)===0,dateKnown:dayDiff(pr.date,b.date)!==null,
+            score:1,confidence:100};
           const cls=classifyCandidate(pr,b,meta,state.settings,false);
-          if(duplicate2B.has(b.idx))cls.status='REVIEW REQUIRED',cls.reason='Exact invoice key found, but duplicate GSTR-2B records exist for the same GSTIN + document type + invoice number.';
-          report.push(makeRow(pr,b,cls.status,100,cls.reason));
-        }else report.push({...makeRow(pr,null,'',0,''),_pending:true});
+          const finalStatus=duplicate2B.has(b.idx)?'REVIEW REQUIRED':cls.status;
+          const finalReason=duplicate2B.has(b.idx)?'Exact invoice key found, but duplicate GSTR-2B records exist for the same GSTIN + document type + invoice number.':cls.reason;
+          const row=makeRow(pr,b,finalStatus,100,finalReason);
+          row.matchMethod='EXACT KEY';
+          row.matchSignals='GSTIN + document type + normalized invoice number';
+          report.push(row);
+        }else{
+          const row=makeRow(pr,null,'',0,'');row._pending=true;report.push(row);
+        }
       });
-      // Pass 2: high-confidence identity matching using GSTIN + normalized invoice similarity.
+
+      // Pass 2 — high-confidence fuzzy identity: GSTIN + invoice similarity.
       for(const row of report.filter(r=>r._pending)){
         const pr=row.pr,pool=state.b2b.filter(b=>!used.has(b.idx));
         const {best,second}=findBest(pr,pool,used,state.settings);
         if(!best)continue;
         const gap=second?best.meta.score-second.meta.score:1;
-        const ambiguous=!!second&&gap<0.07&&best.meta.score<0.90;
+        const ambiguous=!!second&&gap<0.07&&best.meta.score<0.92;
         if(best.meta.gst&&best.meta.invSim>=0.90&&best.meta.score>=0.78&&!ambiguous){
-          used.add(best.b.idx);const cls=classifyCandidate(pr,best.b,best.meta,state.settings,false);row.status=cls.status;row.confidence=best.meta.confidence;row.reason=cls.reason;Object.assign(row,attach2B(best.b));delete row._pending;
+          used.add(best.b.idx);
+          const cls=classifyCandidate(pr,best.b,best.meta,state.settings,false);
+          row.status=cls.status;row.confidence=best.meta.confidence;row.reason=cls.reason;
+          row.matchMethod='FUZZY IDENTITY';row.matchSignals=`GSTIN match + invoice similarity ${Math.round(best.meta.invSim*100)}%`;
+          Object.assign(row,attach2B(best.b));delete row._pending;
         }
       }
-      // Pass 3: corroborated amount/date matching when invoice numbering is missing or materially formatted differently.
+
+      // Pass 3 — corroborated matching: GSTIN/vendor + tax/value/date when invoice
+      // number is unavailable or substantially different.
       for(const row of report.filter(r=>r._pending)){
         const pr=row.pr,pool=state.b2b.filter(b=>!used.has(b.idx));
         const {best,second}=findBest(pr,pool,used,state.settings);
         if(best){
           const gap=second?best.meta.score-second.meta.score:1;
           const corroborated=best.meta.gst&&best.meta.valueClose&&best.meta.taxClose&&best.meta.dateKnown&&best.meta.d<=state.settings.dateWindow&&best.meta.score>=0.70;
+          const vendorCorroborated=best.meta.party&&best.meta.invSim>=0.84&&best.meta.valueClose&&best.meta.taxClose&&best.meta.dateKnown&&best.meta.d<=state.settings.dateWindow&&best.meta.score>=0.72;
           const ambiguous=!!second&&gap<0.10;
-          if(corroborated&&!ambiguous){used.add(best.b.idx);const cls=classifyCandidate(pr,best.b,best.meta,state.settings,false);row.status=cls.status==='REVIEW REQUIRED'?'PARTIAL MATCHING':cls.status;row.confidence=best.meta.confidence;row.reason=cls.reason;Object.assign(row,attach2B(best.b));delete row._pending;continue;}
-          if(best.meta.score>=0.68){used.add(best.b.idx);row.status='REVIEW REQUIRED';row.confidence=best.meta.confidence;row.reason=ambiguous?'Multiple plausible candidates were found; manual selection is required.':'A possible candidate was found, but the evidence is not strong enough for an automatic match.';Object.assign(row,attach2B(best.b));delete row._pending;}
+          if((corroborated||vendorCorroborated)&&!ambiguous){
+            used.add(best.b.idx);
+            const cls=classifyCandidate(pr,best.b,best.meta,state.settings,false);
+            row.status=cls.status==='REVIEW REQUIRED'?'PARTIAL MATCHING':cls.status;
+            row.confidence=best.meta.confidence;
+            row.reason=cls.reason;
+            row.matchMethod=vendorCorroborated&&!best.meta.gst?'CORROBORATED VENDOR + VALUE/TAX/DATE':'CORROBORATED GSTIN + VALUE/TAX/DATE';
+            row.matchSignals=`Value ${best.meta.valueClose?'OK':'DIFF'} · Tax ${best.meta.taxClose?'OK':'DIFF'} · Date ${best.meta.dateKnown?(best.meta.d+' day(s)'):'not available'} · Invoice similarity ${Math.round(best.meta.invSim*100)}%`;
+            Object.assign(row,attach2B(best.b));delete row._pending;continue;
+          }
+          if(best.meta.score>=0.68){
+            used.add(best.b.idx);row.status='REVIEW REQUIRED';row.confidence=best.meta.confidence;
+            row.reason=ambiguous?'Multiple plausible candidates were found; manual selection is required.':'A possible candidate was found, but the evidence is not strong enough for an automatic match.';
+            row.matchMethod='REVIEW CANDIDATE';row.matchSignals=`Candidate score ${best.meta.confidence}% · invoice similarity ${Math.round(best.meta.invSim*100)}%`;
+            Object.assign(row,attach2B(best.b));delete row._pending;
+          }
         }
       }
-      report.filter(r=>r._pending).forEach(row=>{row.status='NOT IN 2B';row.confidence=0;row.reason='No sufficiently reliable GSTR-2B record was found after the available matching levels were checked.';delete row._pending});
-      state.b2b.forEach(b=>{if(!used.has(b.idx)){const status=duplicate2B.has(b.idx)?'DUPLICATE / POSSIBLE DUPLICATE':'NOT IN PURCHASE REGISTER';report.push(makeRow(null,b,status,0,duplicate2B.has(b.idx)?'Duplicate GSTR-2B key detected; review duplicate reporting.':'No corresponding Purchase Register record was found.'))}});
-      state.report=report;render(); gstAnalytics('gst_reconciliation_completed',{purchase_rows:state.pr.length,gstr2b_rows:state.b2b.length,matched:counts().exact,partial:counts().partial,not_in_2b:counts().missing2b,not_in_purchase_register:counts().missingpr,review_required:counts().review}); toast(`Reconciliation completed: ${report.length.toLocaleString()} result rows.`);
-    }catch(err){alert(err.message||String(err))}
+
+      // Unmatched PR records.
+      report.filter(r=>r._pending).forEach(row=>{
+        row.status='NOT IN 2B';row.confidence=0;row.reason='No sufficiently reliable GSTR-2B record was found after exact, fuzzy and corroborated matching levels were checked.';
+        row.matchMethod='NO MATCH';row.matchSignals='No eligible unused candidate';delete row._pending
+      });
+
+      // Remaining portal records.
+      state.b2b.forEach(b=>{
+        if(!used.has(b.idx)){
+          const status=duplicate2B.has(b.idx)?'DUPLICATE / POSSIBLE DUPLICATE':'NOT IN PURCHASE REGISTER';
+          report.push(makeRow(null,b,status,0,duplicate2B.has(b.idx)?'Duplicate GSTR-2B key detected; review duplicate reporting.':'No corresponding Purchase Register record was found.'));
+          report[report.length-1].matchMethod=duplicate2B.has(b.idx)?'DUPLICATE CONTROL':'NO MATCH';
+          report[report.length-1].matchSignals=duplicate2B.has(b.idx)?'Repeated GSTIN + document type + normalized document number':'No unused PR relationship';
+        }
+      });
+
+      state.report=report;render();
+      gstAnalytics('gst_reconciliation_completed',{purchase_rows:state.pr.length,gstr2b_rows:state.b2b.length,matched:counts().exact,partial:counts().partial,not_in_2b:counts().missing2b,not_in_purchase_register:counts().missingpr,review_required:counts().review});
+      toast(`Reconciliation completed: ${report.length.toLocaleString()} result rows.`);
+    }catch(err){console.error(err);alert(err.message||String(err))}
   }
 
   function attach2B(b){
@@ -2102,7 +2229,7 @@ function downloadExcelTemplate(){
       priorityRows.forEach(r=>{const key=(r.gstin||'')+'|'+(r.vendor||'Unknown');if(!supplierActions.has(key))supplierActions.set(key,{vendor:r.vendor||'Unknown',gstin:r.gstin||'',exceptions:0,high:0,prgst:0,bgst:0});const x=supplierActions.get(key);x.exceptions++;if(priorityScore(r)>=85)x.high++;x.prgst+=r.pr?.totalTax||0;x.bgst+=r.b2b?.totalTax||0});
       add('SUPPLIER ACTIONS',[['VENDOR','GSTIN','EXCEPTION RECORDS','HIGH PRIORITY','PR GST','2B GST','GST GAP','FOLLOW-UP'],...Array.from(supplierActions.values()).sort((a,b)=>b.prgst-a.prgst).map(x=>[x.vendor,x.gstin,x.exceptions,x.high,x.prgst,x.bgst,round2(x.prgst-x.bgst),'Review supplier/book exceptions and supporting documents'])]);
       add('CONTROL SUMMARY',[['CONTROL','RESULT'],['Reconciliation run date/time',generated],['Difference tolerance','₹'+money(state.settings.diffTol)],['Date matching window',state.settings.dateWindow+' day(s)'],['Purchase Register rows',state.pr.length],['GSTR-2B rows',state.b2b.length],['Matched rows',c.exact],['Exception rows',state.report.length-c.exact],['High-priority exception rows',priorityRows.filter(r=>priorityScore(r)>=85).length],['Exception GST','₹'+money(priorityRows.reduce((a,r)=>a+(r.pr?.totalTax||r.b2b?.totalTax||0),0))],['Browser processing','Source files processed locally in the browser'],['Important limitation','Reconciliation classification is a working control; verify invoices, tax treatment and applicable GST provisions before final ITC decisions.']]);
-      add('MATCH LOGIC',[['RULE','TREATMENT'],['Exact Match','Strong match using supplier GSTIN, document type, normalized invoice number and configured value/tax/date checks.'],['Partial Matching','A reliable related record is identified, but one or more compared details require review.'],['Invoice Normalization','Case, spaces and punctuation are normalized and leading zeros are removed.'],['Date Window','Configured date window is used for document date comparison.'],['Fuzzy Matching','Used conservatively as a review aid; ambiguous candidates remain for review.'],['Duplicate Protection','A GSTR-2B record is allocated only once.']]);
+      add('MATCH LOGIC',[['RULE','TREATMENT'],['Exact Match','Strong match using supplier GSTIN, document type, normalized invoice number and configured value/tax/date checks.'],['Partial Matching','A reliable related record is identified, but one or more compared details require review.'],['Invoice Normalization','Case, spaces and punctuation are normalized and leading zeros are removed.'],['Date Window','Configured date window is used for document date comparison.'],['Fuzzy Matching','Uses edit, token and numeric-token similarity; fuzzy evidence is corroborated by GSTIN/vendor and transaction values where applicable.'],['Corroborated Matching','GSTIN/vendor + taxable value + individual tax components + date can support a candidate when invoice numbering is unavailable or materially different.'],['One-to-One Allocation','Each GSTR-2B row can be allocated to at most one Purchase Register row.'],['Ambiguity Control','Close competing candidates remain Review Required instead of being forced into an automatic match.'],['Duplicate Protection','A GSTR-2B record is allocated only once.']]);
       const filename='GST_Reconciliation_Report.xlsx';
       let directWorked=false;
       if(typeof XLSX.writeFile==='function'){try{XLSX.writeFile(book,filename,{compression:true});directWorked=true}catch(e){console.warn('writeFile fallback',e)}}
