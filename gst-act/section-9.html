@@ -43,6 +43,29 @@ table{width:100%;border-collapse:collapse;margin:18px 0;font-size:15px}th,td{bor
 @media(max-width:900px){.wrap{width:min(100% - 32px,1400px)}.grid{grid-template-columns:1fr}.side{position:static}.footgrid{grid-template-columns:1fr 1fr}h1{font-size:36px}}
 @media(max-width:560px){.wrap{width:calc(100% - 24px)}.card{padding:21px}.footgrid{grid-template-columns:1fr}.top .wrap{align-items:flex-start;flex-direction:column}}
 </style>
+<style>
+/* GST Reconciliation site-wide width standard — matches homepage exactly. */
+.gst-site-width-standard,
+.wrap,
+.legal-wrap,
+.rule-wrap,
+.section-wrap,
+.section-page-wrap,
+.legal-container,
+.legal-page-wrap,
+.site-container,
+main.container,
+header .container,
+.hero .container,
+footer .container {
+  width: min(1400px, calc(100% - 64px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+</style>
+
 </head>
 <body>
 <header class="top">
