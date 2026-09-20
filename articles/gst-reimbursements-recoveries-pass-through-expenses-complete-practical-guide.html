@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GST on Reimbursements, Recoveries & Pass-Through Expenses – Complete Practical Guide</title>
+<meta name="description" content="Complete practical guide to GST on reimbursements, expense recoveries and pass-through expenses. Understand Section 15, Rule 33 pure agent conditions, ITC, invoicing, GSTR-1, GSTR-3B and practical business cases.">
+<link rel="canonical" href="https://gstreconciliation.in/articles/gst-reimbursements-recoveries-pass-through-expenses-complete-practical-guide.html">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NBKTXWJ20G');
+</script>
+
+<!-- Google AdSense -->
+<script async
+src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
+crossorigin="anonymous"></script>
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Article",
+ "headline":"GST on Reimbursements, Recoveries & Pass-Through Expenses – Complete Practical Guide",
+ "description":"Practical GST guide covering reimbursements, recoveries, pure agent under Rule 33, valuation under Section 15, ITC, invoicing and return treatment.",
+ "author":{"@type":"Organization","name":"GST Reconciliation"},
+ "publisher":{"@type":"Organization","name":"GST Reconciliation"},
+ "mainEntityOfPage":{"@type":"WebPage","@id":"https://gstreconciliation.in/articles/gst-reimbursements-recoveries-pass-through-expenses-complete-practical-guide.html"}
+}
+</script>
+
+<style>
+:root{--blue:#0b63ce;--blue2:#084b9a;--ink:#17324d;--muted:#5c6b7a;--bg:#f4f8fc;--card:#fff;--line:#dce7f2;--green:#16804b;--greenbg:#eaf8f0;--red:#c73535;--redbg:#fff0f0;--amber:#a96500;--amberbg:#fff7e8;--shadow:0 12px 32px rgba(20,60,100,.08)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;font-size:15.5px;line-height:1.72;color:var(--ink);background:var(--bg)}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1240px;margin:auto;padding:0 22px}
+.hero{background:linear-gradient(135deg,#084b9a,#0b63ce 60%,#1678e8);color:#fff;padding:54px 0 44px}
+.hero-grid{display:grid;grid-template-columns:1.7fr 1fr;gap:28px;align-items:center}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.28);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.5px}
+h1{font-size:42px;line-height:1.12;margin:14px 0 14px;letter-spacing:-1px}
+.hero p{font-size:17px;max-width:850px;margin:0;color:#eaf4ff}
+.hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);border-radius:15px;padding:16px}
+.stat strong{display:block;font-size:21px}
+.stat span{font-size:12px;color:#dbeaff}
+.layout{display:grid;grid-template-columns:270px 1fr;gap:24px;align-items:start;margin-top:28px}
+.toc{position:sticky;top:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}
+.toc h3{margin:0 0 10px;font-size:16px}
+.toc a{display:block;padding:7px 0;color:#38566f;font-size:13px;line-height:1.35}
+main{min-width:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--shadow);margin-bottom:22px}
+.card h2{margin:0 0 14px;font-size:28px;line-height:1.25}
+.card h3{font-size:20px;margin:24px 0 9px}
+.card h4{font-size:17px;margin:18px 0 8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.mini{border:1px solid var(--line);background:#f9fbfd;border-radius:14px;padding:18px}
+.mini h3{margin:0 0 8px;font-size:17px}
+.decision{border-radius:15px;padding:17px 18px;margin:16px 0;border-left:5px solid}
+.decision strong{display:block;margin-bottom:5px}
+.yes{background:var(--greenbg);border-color:var(--green)}
+.no{background:var(--redbg);border-color:var(--red)}
+.conditional{background:var(--amberbg);border-color:var(--amber)}
+.note{background:#eef6ff;border:1px solid #cfe3fa;border-radius:14px;padding:16px 18px;margin:16px 0}
+.warning{background:var(--amberbg);border:1px solid #f0d59c;border-radius:14px;padding:16px 18px;margin:16px 0}
+.success{background:var(--greenbg);border:1px solid #bfe6cf;border-radius:14px;padding:16px 18px;margin:16px 0}
+.flow{display:flex;flex-wrap:wrap;gap:8px;margin:15px 0}
+.flow span{background:#eef6ff;border:1px solid #cfe3fa;border-radius:999px;padding:8px 13px;font-weight:700;font-size:13px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
+th{background:#eef6ff;color:#17324d;text-align:left;padding:11px;border:1px solid var(--line)}
+td{padding:11px;border:1px solid var(--line);vertical-align:top}
+ul,ol{padding-left:22px}
+.faq{border-top:1px solid var(--line);padding:15px 0}
+.faq:first-of-type{border-top:0}
+.faq strong{display:block;font-size:16px;margin-bottom:5px}
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.resource-card{border:1px solid var(--line);border-radius:14px;padding:17px;background:#fbfdff}
+.resource-card strong{display:block;margin-bottom:5px}
+.next-step{background:linear-gradient(135deg,#eef6ff,#fff);border:1px solid #cfe3fa;border-radius:18px;padding:22px;margin-top:20px}
+footer{background:#102a43;color:#dce9f5;margin-top:34px;padding:38px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+footer h3{color:#fff;margin:0 0 10px}
+footer a{color:#dce9f5}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.14);margin-top:28px;padding:15px 0;font-size:13px}
+@media(max-width:900px){
+ .hero-grid,.layout{grid-template-columns:1fr}
+ .toc{position:relative;top:auto}
+ .grid3,.resource-grid{grid-template-columns:1fr 1fr}
+ h1{font-size:35px}
+}
+@media(max-width:620px){
+ .wrap{padding:0 14px}
+ .grid2,.grid3,.resource-grid,.hero-stats,.footer-grid{grid-template-columns:1fr}
+ .card{padding:20px}
+ h1{font-size:30px}
+ .card h2{font-size:24px}
+ table{display:block;overflow-x:auto;white-space:normal}
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+<div class="wrap">
+<div class="hero-grid">
+<div>
+<span class="badge">GST • VALUATION • REIMBURSEMENTS • RULE 33</span>
+<h1>GST on Reimbursements, Recoveries &amp; Pass-Through Expenses</h1>
+<p>When you pay an expense for your customer and recover it, GST does not automatically disappear just because the invoice says “reimbursement”. The real question is who received the supply, who was liable to pay, who used it, and whether the strict <strong>pure agent</strong> conditions are satisfied.</p>
+</div>
+<div class="hero-stats">
+<div class="stat"><strong>Section 15</strong><span>Value of taxable supply</span></div>
+<div class="stat"><strong>Rule 33</strong><span>Pure-agent exclusion</span></div>
+<div class="stat"><strong>8 Conditions</strong><span>Must be examined carefully</span></div>
+<div class="stat"><strong>GSTR-1 / 3B</strong><span>Reporting consequences</span></div>
+</div>
+</div>
+</div>
+</header>
+
+<div class="wrap">
+<div class="card" style="margin-top:28px">
+<h2>Quick Answer: Is GST payable on a reimbursement?</h2>
+<p><strong>Sometimes yes, sometimes no.</strong> Calling an amount “reimbursement”, “recovery”, “actuals”, “pass-through”, “out-of-pocket expense” or “disbursement” does not by itself decide the GST treatment.</p>
+<div class="grid3">
+<div class="mini"><h3>Business expense?</h3><p>If the expense is incurred by you for providing your own service, the recovery will generally form part of the value of your supply.</p></div>
+<div class="mini"><h3>Pure agent?</h3><p>If the strict conditions of Rule 33 are satisfied, the qualifying third-party expenditure can be excluded from the value.</p></div>
+<div class="mini"><h3>Markup added?</h3><p>A markup or service element generally makes it difficult to treat the entire recovery as a pure-agent disbursement.</p></div>
+</div>
+<div class="note"><strong>Golden rule:</strong> First identify the underlying supply and the person to whom the third-party supplier actually supplied the goods or services. Only then test Rule 33.</div>
+</div>
+
+<div class="layout">
+<aside class="toc">
+<h3>In this guide</h3>
+<a href="#real-question">1. The real GST question</a>
+<a href="#legal">2. Legal framework</a>
+<a href="#section15">3. Section 15 valuation</a>
+<a href="#pureagent">4. Rule 33 pure agent</a>
+<a href="#conditions">5. Eight conditions</a>
+<a href="#common">6. Common business recoveries</a>
+<a href="#travel">7. Travel &amp; hotel</a>
+<a href="#statutory">8. Statutory fees &amp; government charges</a>
+<a href="#freight">9. Freight &amp; courier</a>
+<a href="#intercompany">10. Inter-company recoveries</a>
+<a href="#markup">11. Markup vs actual recovery</a>
+<a href="#itc">12. ITC implications</a>
+<a href="#invoice">13. Invoice &amp; return treatment</a>
+<a href="#accounting">14. Accounting &amp; documentation</a>
+<a href="#cases">15. Practical cases</a>
+<a href="#audit">16. GST audit questions</a>
+<a href="#mistakes">17. Common mistakes</a>
+<a href="#framework">18. Decision framework</a>
+<a href="#faq">19. FAQs</a>
+<a href="#takeaway">20. Key takeaway</a>
+</aside>
+
+<main>
+
+<section class="card" id="real-question">
+<h2>1. The real GST question: what are you actually recovering?</h2>
+<p>Accounts teams often start with the wrong question: <em>“We are only recovering the exact amount, so should we charge GST?”</em></p>
+<p>The better question is:</p>
+<div class="decision conditional">
+<strong>🟠 What happened before the recovery?</strong>
+Was the third-party supply actually made to your customer, with you merely making the payment on the customer's behalf, or did the third party supply <strong>you</strong> and you used that input while providing your own service?
+</div>
+<p>That distinction is critical. If a consultant hires a hotel room for its own employee while travelling to perform a project, the hotel service is ordinarily an expense of the consultant's business. Recovering the hotel cost from the client does not automatically convert the hotel into a third-party supply to the client.</p>
+<p>On the other hand, if a professional service provider is contractually authorised to pay a government registration fee on behalf of its client, the client is liable for that fee, and all Rule 33 conditions are satisfied, the qualifying amount can be excluded from the value of the professional service.</p>
+
+<table>
+<tr><th>Question</th><th>Why it matters</th></tr>
+<tr><td>Who is named/liable on the third-party invoice?</td><td>Helps establish who received and is liable for the underlying supply.</td></tr>
+<tr><td>Who contracted with the third-party supplier?</td><td>Shows whether the supplier was acting for its own account or as a pure agent.</td></tr>
+<tr><td>Who used the goods/services?</td><td>Rule 33 specifically looks at whether the supplier uses the procured supply for its own interest.</td></tr>
+<tr><td>Was the customer authorised to incur the payment?</td><td>Authorisation is a core Rule 33 requirement.</td></tr>
+<tr><td>Was only the exact amount recovered?</td><td>Pure-agent treatment requires actual recovery, not an inflated or marked-up amount.</td></tr>
+<tr><td>Was the amount separately disclosed on the invoice?</td><td>Separate indication is expressly required for exclusion under Rule 33.</td></tr>
+</table>
+</section>
+
+<section class="card" id="legal">
+<h2>2. Legal framework you should know</h2>
+<p>The main provisions relevant to reimbursements and recoveries are:</p>
+<div class="grid2">
+<div class="mini"><h3>Section 15 of CGST Act</h3><p>Deals with the value of a supply and the amounts included in transaction value, subject to the statutory valuation provisions.</p></div>
+<div class="mini"><h3>Rule 33 of CGST Rules</h3><p>Provides a specific exclusion for expenditure or costs incurred by a supplier as a pure agent of the recipient.</p></div>
+</div>
+<p>CBIC's valuation guidance states that pure-agent expenditure can be excluded only when the prescribed conditions are satisfied. CBIC's sectoral FAQ also explains that statutory levies can fall within the value unless the Rule 33 pure-agent benefit is available.</p>
+<div class="note"><strong>Important:</strong> Rule 33 is not a general “reimbursement rule”. It is a narrow valuation exclusion with specific conditions.</div>
+</section>
+
+<section class="card" id="section15">
+<h2>3. Section 15: why “actual recovery” is not enough</h2>
+<p>Section 15 generally starts with the transaction value where the supplier and recipient are not related and price is the sole consideration, subject to the statutory rules. Certain amounts connected with the supply can form part of the value.</p>
+<p>Therefore, a contract saying <strong>“Client shall reimburse all expenses at actuals”</strong> does not automatically mean those expenses are outside GST.</p>
+<div class="grid2">
+<div class="decision no"><strong>🔴 Common misconception</strong><p>“There is no profit on the reimbursement, so GST is not payable.”</p><p>No. Profit margin is not the test for whether an amount forms part of taxable value.</p></div>
+<div class="decision yes"><strong>🟢 Correct approach</strong><p>Determine whether the expense is your own input/business expense or a qualifying payment made as pure agent of the recipient.</p></div>
+</div>
+<h3>Example: consultant's hotel expense</h3>
+<p>A consultant visits the customer's factory. Hotel bill: ₹12,000. Consultant pays hotel and later charges the customer ₹12,000 as “hotel reimbursement”.</p>
+<div class="decision conditional"><strong>🟠 Likely issue</strong><p>If the hotel supplied accommodation to the consultant/consultant's employee and the consultant is contractually responsible for the travel arrangement, the fact that exactly ₹12,000 is recovered does not by itself satisfy Rule 33.</p></div>
+</section>
+
+<section class="card" id="pureagent">
+<h2>4. Rule 33: what is a pure agent?</h2>
+<p>Rule 33 permits qualifying expenditure or costs incurred by a supplier as a pure agent of the recipient to be excluded from the value of supply, provided the prescribed conditions are satisfied.</p>
+<p>A pure agent is a person who, under a contractual arrangement with the recipient, incurs expenditure/costs for the recipient; does not hold title to the goods or services procured; does not use them for their own interest; and receives only the actual amount incurred in addition to its own service consideration.</p>
+
+<div class="success"><strong>Think of Rule 33 this way:</strong> “I am not buying this service for myself and reselling it to you. I am paying a third party because you are the person responsible for that third-party supply, and I am only facilitating the payment.”</div>
+
+<h3>Classic example</h3>
+<p>A corporate services firm handles company incorporation for a client. The client is liable for the statutory registration/name-approval fees. The firm pays those fees on the client's authorisation and recovers exactly the same amount separately. This is the type of arrangement Rule 33 is designed to address.</p>
+</section>
+
+<section class="card" id="conditions">
+<h2>5. The eight Rule 33 conditions — examine every one</h2>
+<p>Do not approve pure-agent treatment merely because the contract uses the words “reimbursement” or “pure agent”. Test the conditions one by one.</p>
+<table>
+<tr><th>#</th><th>Rule 33 condition</th><th>Practical question for accounts</th></tr>
+<tr><td>1</td><td>Supplier acts as pure agent when making payment to third party.</td><td>Are you paying because the customer is the person responsible for that third-party supply?</td></tr>
+<tr><td>2</td><td>Recipient uses the services procured through the pure agent.</td><td>Is the recipient the actual user/beneficiary of the third-party service?</td></tr>
+<tr><td>3</td><td>Recipient is liable to make payment to third party.</td><td>Would the customer be legally/contractually responsible for that third-party charge?</td></tr>
+<tr><td>4</td><td>Recipient authorises supplier to make payment.</td><td>Do you have written authorisation or a contractual clause?</td></tr>
+<tr><td>5</td><td>Recipient knows the third-party service will be provided.</td><td>Is the third-party procurement transparent to the customer?</td></tr>
+<tr><td>6</td><td>Payment is separately indicated in the invoice.</td><td>Is the disbursement separately shown rather than buried inside the service fee?</td></tr>
+<tr><td>7</td><td>Only the amount actually paid is recovered.</td><td>Is there no markup, rounding gain, administrative loading or excess recovery?</td></tr>
+<tr><td>8</td><td>Third-party supply is in addition to the supplier's own supply.</td><td>Is the third-party service separate from the service you provide on your own account?</td></tr>
+</table>
+<div class="warning"><strong>One failed condition can matter.</strong> Rule 33 says the exclusion applies when the prescribed conditions are satisfied. Therefore, maintain evidence for each condition instead of relying on a single “reimbursement” ledger.</div>
+</section>
+
+<section class="card" id="common">
+<h2>6. Common business recoveries: what should accounts examine?</h2>
+<table>
+<tr><th>Recovery</th><th>Typical issue</th><th>Rule 33 question</th></tr>
+<tr><td>Travel fare</td><td>Employee/consultant travels for supplier's own service.</td><td>Was the travel service procured for the supplier's own performance?</td></tr>
+<tr><td>Hotel</td><td>Supplier books hotel for its personnel.</td><td>Who received/used the accommodation?</td></tr>
+<tr><td>Courier</td><td>Documents sent to customer or government office.</td><td>Was courier an independent obligation of customer or part of supplier's service?</td></tr>
+<tr><td>Government fee</td><td>Registration/licence/statutory payment.</td><td>Was customer directly liable and did customer authorise payment?</td></tr>
+<tr><td>Stamp duty</td><td>Supplier pays and recovers from customer.</td><td>Can the supplier demonstrate pure-agent conditions?</td></tr>
+<tr><td>Freight</td><td>Transport paid and recovered from customer.</td><td>Who contracted for and received the transport service?</td></tr>
+<tr><td>Professional fee</td><td>One professional hires another specialist.</td><td>Was the specialist engaged for the principal's own service or as customer's agent?</td></tr>
+<tr><td>Bank charges</td><td>Bank fee recovered from customer.</td><td>Is the bank charge a customer liability or supplier's own cost?</td></tr>
+</table>
+</section>
+
+<section class="card" id="travel">
+<h2>7. Travel, hotel, food and conveyance recoveries</h2>
+<h3>Case A — Employee travels to perform supplier's service</h3>
+<p>A software company sends its employee to a customer's location. Air ticket ₹8,000 and hotel ₹6,000. The contract separately says the customer will reimburse travel expenses at actuals.</p>
+<div class="decision no"><strong>🔴 Do not assume pure-agent exclusion</strong><p>The supplier's employee is travelling to perform the supplier's own service. The fact that the customer contractually bears the cost does not automatically satisfy Rule 33.</p></div>
+
+<h3>Case B — Customer's travel is paid on customer's behalf</h3>
+<p>The supplier books a customer's flight at the customer's explicit request, the customer is the passenger and liable for the ticket, the supplier merely makes the payment, recovers the exact amount and separately discloses it.</p>
+<div class="decision conditional"><strong>🟠 Rule 33 may be available</strong><p>The documentation must establish the customer-side liability, authorisation, separate indication and actual recovery.</p></div>
+
+<h3>Case C — Fixed “travel allowance”</h3>
+<p>If the contract provides ₹50,000 per month as a travel allowance/recovery regardless of actual expense, this is not the same as recovery of an identified third-party payment at actuals. The accounting team should not label the fixed amount as pure-agent disbursement without analysing the underlying supply.</p>
+</section>
+
+<section class="card" id="statutory">
+<h2>8. Statutory fees, government charges and registration expenses</h2>
+<p>Government fees are a frequent area of confusion because businesses assume that “government fee” automatically means no GST on recovery.</p>
+<div class="decision conditional"><strong>🟠 Statutory does not automatically mean pure agent</strong><p>The relevant question is whether the payment qualifies under Rule 33. A statutory levy can be outside the supplier's taxable value where the pure-agent requirements are actually satisfied.</p></div>
+<h3>Example — ROC / registration fee</h3>
+<p>A professional firm charges ₹40,000 professional fees and pays ₹12,000 statutory registration fees on behalf of its client. The client is liable for the statutory fee, authorises the firm to pay it, the exact ₹12,000 is recovered separately, and all Rule 33 conditions are documented.</p>
+<div class="decision yes"><strong>🟢 Potential Rule 33 treatment</strong><p>The qualifying ₹12,000 may be excluded from the value of the professional service if the prescribed conditions are satisfied.</p></div>
+<p>CBIC's own pure-agent illustration uses a similar corporate-services/registration-fee example.</p>
+</section>
+
+<section class="card" id="freight">
+<h2>9. Freight, courier and logistics recoveries</h2>
+<p>Freight is especially important because the commercial contract can produce very different GST outcomes.</p>
+<table>
+<tr><th>Situation</th><th>Analysis</th></tr>
+<tr><td>Supplier sells goods and separately recovers freight paid for delivery</td><td>Do not automatically call it pure-agent freight. Analyse the principal supply, delivery obligation and valuation rules.</td></tr>
+<tr><td>Customer independently contracts with transporter; supplier merely pays transporter on customer authorisation</td><td>Rule 33 may be relevant if all conditions are satisfied.</td></tr>
+<tr><td>Supplier contracts with transporter and uses transport to fulfil its own delivery obligation</td><td>The transport cost is generally connected with the supplier's own supply; “reimbursement” wording alone is not enough.</td></tr>
+<tr><td>Freight recovered with markup</td><td>Pure-agent exclusion becomes difficult because Rule 33 requires recovery of only the amount paid.</td></tr>
+</table>
+</section>
+
+<section class="card" id="intercompany">
+<h2>10. Inter-company and project-site recoveries</h2>
+<p>Large groups frequently operate with head office, project offices, branches and multiple GST registrations. They may pay expenses centrally and recover them from another entity or project.</p>
+<div class="warning"><strong>Do not confuse accounting recovery with GST valuation.</strong> An internal debit note, journal entry, cost allocation or “at actuals” recovery does not by itself establish a pure-agent relationship.</div>
+<h3>Example — Head office pays project expense</h3>
+<p>Head office pays ₹1,00,000 for a service used by a project entity and subsequently recovers ₹1,00,000.</p>
+<p>The GST treatment depends on the legal relationship, supplier-recipient structure, distinct-person rules where applicable, the nature of the underlying service and the applicable valuation provisions. Rule 33 should not be used as a blanket exemption for every inter-company cost allocation.</p>
+<div class="decision conditional"><strong>🟠 Practical control</strong><p>Before booking a “reimbursement” between registrations, identify GSTIN of supplier, GSTIN of recipient, underlying vendor invoice, nature of service, ITC position and whether the transaction is actually a supply between the entities.</p></div>
+</section>
+
+<section class="card" id="markup">
+<h2>11. Actual recovery vs markup: why the difference matters</h2>
+<table>
+<tr><th>Scenario</th><th>Amount paid</th><th>Amount recovered</th><th>Pure-agent concern</th></tr>
+<tr><td>Exact actual</td><td>₹10,000</td><td>₹10,000</td><td>Still requires all Rule 33 conditions.</td></tr>
+<tr><td>5% handling markup</td><td>₹10,000</td><td>₹10,500</td><td>Actual-only recovery condition is not met for the full amount.</td></tr>
+<tr><td>Fixed monthly recovery</td><td>Variable</td><td>₹10,000 fixed</td><td>Not an actual third-party recovery if expenses vary.</td></tr>
+<tr><td>Rounded recovery</td><td>₹9,875</td><td>₹10,000</td><td>Difference requires examination; exact actual recovery is a Rule 33 requirement.</td></tr>
+</table>
+<div class="decision no"><strong>🔴 “No profit” is not the same as “pure agent”.</strong><p>The test is not whether the supplier earned a margin. The test is whether the legal and factual conditions for exclusion are satisfied.</p></div>
+</section>
+
+<section class="card" id="itc">
+<h2>12. ITC implications: do not stop at the reimbursement invoice</h2>
+<p>The supplier's ITC position and the GST treatment of the customer's recovery are separate questions.</p>
+<h3>Example</h3>
+<p>A consulting company incurs a hotel expense of ₹11,800 including GST while sending its employee to the customer's site. It later recovers ₹11,800 from the customer.</p>
+<ul>
+<li>First determine whether the hotel service was supplied to the consulting company and whether ITC is otherwise available.</li>
+<li>Separately determine whether the recovery forms part of the value of the consulting company's outward supply.</li>
+<li>Do not conclude “no GST on recovery” merely because the supplier is claiming ITC, or “GST on recovery” merely because the supplier did not claim ITC.</li>
+</ul>
+<div class="note"><strong>Important:</strong> ITC eligibility and outward valuation are different statutory questions. Document both independently.</div>
+</section>
+
+<section class="card" id="invoice">
+<h2>13. Invoice and GSTR-1 / GSTR-3B treatment</h2>
+<h3>When the recovery forms part of your taxable supply</h3>
+<p>If the expense is part of the value of your taxable supply, it should be included in the taxable value and tax invoice treatment should follow the applicable GST provisions.</p>
+
+<h3>When Rule 33 exclusion is genuinely available</h3>
+<p>The qualifying disbursement should be separately indicated on the invoice. Your own service fee remains taxable according to its applicable classification/rate, while the qualifying pure-agent amount is excluded from the value.</p>
+
+<table>
+<tr><th>Invoice structure</th><th>Illustrative amount</th></tr>
+<tr><td>Professional/service fee</td><td>₹40,000</td></tr>
+<tr><td>Qualifying pure-agent statutory fee, separately disclosed</td><td>₹12,000</td></tr>
+<tr><td>Taxable value, subject to Rule 33 conditions</td><td>₹40,000</td></tr>
+<tr><td>GST on ₹40,000</td><td>At applicable rate</td></tr>
+<tr><td>Total invoice</td><td>₹40,000 + GST + ₹12,000 disbursement</td></tr>
+</table>
+
+<div class="warning"><strong>Return control:</strong> Do not create a separate taxable outward supply merely because an amount appears on the commercial invoice. First determine whether it is part of taxable value or a qualifying pure-agent disbursement.</div>
+</section>
+
+<section class="card" id="accounting">
+<h2>14. Accounting and documentation: what should be maintained?</h2>
+<div class="grid2">
+<div>
+<h3>Contract</h3>
+<ul>
+<li>Customer authorisation</li>
+<li>Who is liable for third-party payment</li>
+<li>Whether payment is on behalf of customer</li>
+<li>Exact recovery mechanism</li>
+<li>No-markup requirement where Rule 33 is intended</li>
+</ul>
+</div>
+<div>
+<h3>Vendor evidence</h3>
+<ul>
+<li>Third-party invoice</li>
+<li>Name/GSTIN of recipient where relevant</li>
+<li>Proof of payment</li>
+<li>Customer instruction/authorisation</li>
+<li>Reconciliation of actual vs recovered amount</li>
+</ul>
+</div>
+</div>
+<h3>Recommended accounting control</h3>
+<div class="flow">
+<span>Vendor invoice</span><span>Identify recipient</span><span>Check contract</span><span>Test Rule 33</span><span>Record separately</span><span>Invoice disclosure</span><span>GSTR reconciliation</span>
+</div>
+<p>Maintain a reimbursement register containing: customer, invoice number, expense category, third-party supplier, third-party invoice amount, GST on third-party invoice, amount recovered, markup, Rule 33 status, supporting authorisation and outward invoice reference.</p>
+</section>
+
+<section class="card" id="cases">
+<h2>15. Practical business cases</h2>
+
+<h3>Case 1 — Legal firm pays court fee</h3>
+<p>Court fee is legally payable by the client. Client authorises the law firm to pay it. Firm pays ₹20,000 and recovers exactly ₹20,000 separately.</p>
+<div class="decision yes"><strong>🟢 Potential pure-agent exclusion</strong><p>Subject to all Rule 33 conditions and proper documentation.</p></div>
+
+<h3>Case 2 — CA firm travels for audit</h3>
+<p>Hotel ₹7,000. The engagement letter says “travel and accommodation shall be reimbursed at actuals”.</p>
+<div class="decision no"><strong>🔴 Do not automatically treat as pure agent</strong><p>The hotel expense may be an input used by the CA firm in providing its own audit service. Contractual reimbursement at actuals is not by itself enough.</p></div>
+
+<h3>Case 3 — Company pays customer’s statutory licence fee</h3>
+<p>Customer is liable for licence fee. Customer gives written authorisation. Company pays ₹15,000 directly to authority and recovers ₹15,000 separately.</p>
+<div class="decision conditional"><strong>🟠 Test all Rule 33 conditions</strong><p>If all conditions are satisfied, exclusion may be available.</p></div>
+
+<h3>Case 4 — ₹10,000 expense recovered as ₹11,000</h3>
+<div class="decision no"><strong>🔴 Not an exact pure-agent recovery</strong><p>The extra ₹1,000 needs separate valuation analysis and cannot simply be included under the heading “pure-agent reimbursement”.</p></div>
+
+<h3>Case 5 — Monthly “out-of-pocket” allowance</h3>
+<p>Contract provides ₹25,000 per month irrespective of actual expenses.</p>
+<div class="decision no"><strong>🔴 High-risk pure-agent position</strong><p>A fixed allowance is materially different from separately identified third-party expenditure recovered at actuals.</p></div>
+
+<h3>Case 6 — Customer's courier arranged at customer's request</h3>
+<p>Customer asks the service provider to pay courier charges. Courier invoice/payment is for the customer, exact amount is recovered and separately shown.</p>
+<div class="decision conditional"><strong>🟠 Potential Rule 33 treatment</strong><p>Retain evidence that the customer was liable and the supplier acted only as authorised payment facilitator.</p></div>
+</section>
+
+<section class="card" id="audit">
+<h2>16. GST audit questions you should be ready for</h2>
+<ol>
+<li>Why was this recovery excluded from taxable value?</li>
+<li>Show the underlying third-party invoice.</li>
+<li>Who was the recipient of the third-party supply?</li>
+<li>Who was contractually liable to pay?</li>
+<li>Where is the customer's authorisation?</li>
+<li>Why did the supplier make the payment?</li>
+<li>Was the expense used by the supplier itself?</li>
+<li>Was any markup charged?</li>
+<li>Where is the amount separately disclosed in the invoice?</li>
+<li>Does the ledger reconcile exactly to the third-party payment?</li>
+<li>Why was GST not charged on the recovery?</li>
+<li>Was ITC claimed on the underlying expense?</li>
+<li>Is the recovery repeated across customers? If so, is there a consistent contractual model?</li>
+</ol>
+<div class="success"><strong>Audit file tip:</strong> For every material excluded reimbursement, create a one-page Rule 33 checklist and attach the contract, third-party invoice, payment proof and outward invoice.</div>
+</section>
+
+<section class="card" id="mistakes">
+<h2>17. Common mistakes made by accounts teams</h2>
+<table>
+<tr><th>Mistake</th><th>Why it is risky</th></tr>
+<tr><td>Writing “reimbursement” on invoice</td><td>Commercial wording does not itself establish Rule 33 eligibility.</td></tr>
+<tr><td>Assuming no markup means no GST</td><td>Markup is only one part of the analysis.</td></tr>
+<tr><td>Treating every government fee as exempt recovery</td><td>Pure-agent conditions still need to be examined.</td></tr>
+<tr><td>Using one reimbursement ledger for everything</td><td>Different recoveries can have different GST treatments.</td></tr>
+<tr><td>Ignoring the third-party invoice recipient</td><td>Recipient/liability is central to the pure-agent analysis.</td></tr>
+<tr><td>Not separately showing disbursement</td><td>Separate invoice indication is an express Rule 33 condition.</td></tr>
+<tr><td>Claiming Rule 33 because contract says “at actuals”</td><td>Actual recovery alone does not satisfy every condition.</td></tr>
+<tr><td>Mixing ITC and outward GST analysis</td><td>Input credit eligibility and valuation are separate questions.</td></tr>
+</table>
+</section>
+
+<section class="card" id="framework">
+<h2>18. Practical decision framework</h2>
+<div class="flow">
+<span>1. Identify expense</span>
+<span>2. Identify third-party supplier</span>
+<span>3. Identify actual recipient</span>
+<span>4. Check contractual liability</span>
+<span>5. Check authorisation</span>
+<span>6. Check own use</span>
+<span>7. Check exact recovery</span>
+<span>8. Separately disclose</span>
+</div>
+
+<div class="decision yes"><strong>🟢 IT MAY BE EXCLUDED UNDER RULE 33</strong><p>The customer is liable for the third-party payment; customer authorises you; you do not use the supply for your own interest; only the actual amount is recovered; the amount is separately indicated; and all other Rule 33 conditions are satisfied.</p></div>
+
+<div class="decision no"><strong>🔴 INCLUDE IN TAXABLE VALUE / ANALYSE AS PART OF YOUR SUPPLY</strong><p>The third party supplied you for your own business, you used the service to perform your contract, the expense is your own input cost, the customer is not actually liable, or Rule 33 conditions are not satisfied.</p></div>
+
+<div class="decision conditional"><strong>🟠 CONDITIONAL — DOCUMENT BEFORE TAKING A POSITION</strong><p>The commercial arrangement is mixed or unclear, especially where the supplier pays third parties under a broad “expenses at actuals” clause. Obtain the contract, vendor invoice, authorisation and payment trail before deciding.</p></div>
+</section>
+
+<section class="card" id="faq">
+<h2>19. Frequently Asked Questions</h2>
+
+<div class="faq"><strong>1. Is GST payable on every reimbursement?</strong><p>No. Some qualifying pure-agent disbursements can be excluded under Rule 33. But ordinary business expenses recovered from customers may form part of taxable value.</p></div>
+<div class="faq"><strong>2. If I recover exactly the same amount, is GST automatically not payable?</strong><p>No. Exact recovery is only one requirement for pure-agent treatment.</p></div>
+<div class="faq"><strong>3. Does the word “reimbursement” on the invoice protect me?</strong><p>No. GST treatment follows the substance of the arrangement and statutory conditions.</p></div>
+<div class="faq"><strong>4. Are government fees always outside GST on recovery?</strong><p>No. The pure-agent conditions need to be tested. Government/statutory character alone is not the complete test.</p></div>
+<div class="faq"><strong>5. Can travel expenses qualify as pure agent?</strong><p>Potentially, but only where the facts satisfy Rule 33. Travel undertaken by your own employees to perform your own service should not automatically be treated as a pure-agent disbursement.</p></div>
+<div class="faq"><strong>6. Can I charge GST on my service fee and exclude the pure-agent amount?</strong><p>Yes, where the Rule 33 conditions are genuinely satisfied and the qualifying amount is separately indicated.</p></div>
+<div class="faq"><strong>7. What if I charge a handling fee on the reimbursement?</strong><p>The handling fee itself requires GST analysis, and a markup on the third-party amount can prevent the amount from qualifying as an exact pure-agent recovery.</p></div>
+<div class="faq"><strong>8. Is ITC availability relevant to whether the recovery is taxable?</strong><p>ITC and outward valuation are separate issues. Both should be analysed independently.</p></div>
+<div class="faq"><strong>9. Can an inter-company cost allocation be called reimbursement?</strong><p>Not merely because the accounting entry says “reimbursement”. The GST relationship, nature of supply, distinct-person provisions and valuation rules need to be examined.</p></div>
+<div class="faq"><strong>10. What is the safest practical approach?</strong><p>Classify every material recovery before invoicing: taxable recovery forming part of your supply, qualifying Rule 33 disbursement, or a case requiring specific legal/contractual analysis.</p></div>
+</section>
+
+<section class="card" id="resources">
+<h2>Continue Your GST Learning</h2>
+<div class="resource-grid">
+<div class="resource-card"><strong>GST Reconciliation Tool</strong><p>Compare Purchase Register with GSTR-2B and identify matching, mismatch and missing invoices.</p><a href="https://gstreconciliation.in/reconciliation.html">Open Reconciliation Tool →</a></div>
+<div class="resource-card"><strong>GST Knowledge Hub</strong><p>Explore practical GST articles covering compliance, ITC, valuation and reconciliations.</p><a href="https://gstreconciliation.in/articles.html">Explore GST Articles →</a></div>
+<div class="resource-card"><strong>GST Compliance</strong><p>Use practical compliance resources for accounts and finance teams.</p><a href="https://gstreconciliation.in/compliance.html">Explore Compliance →</a></div>
+</div>
+<div class="next-step">
+<strong>Next practical step:</strong> Review your reimbursement ledger for the last 12 months. Split every recovery into (1) own business expense, (2) potential Rule 33 pure-agent disbursement, and (3) unclear/mixed cases. Then reconcile each category to contracts, vendor invoices and outward invoices.
+</div>
+</section>
+
+<section class="card" id="takeaway">
+<h2>20. KEY TAKEAWAY</h2>
+<p><strong>“Reimbursement” is an accounting description, not a GST exemption.</strong></p>
+<p>The central GST question is whether you are recovering part of the value of your own supply or merely paying a third-party amount as a genuine pure agent of your customer.</p>
+<p>For Rule 33, check the complete chain:</p>
+<div class="flow">
+<span>Customer liability</span>
+<span>Customer authorisation</span>
+<span>Third-party supply</span>
+<span>No own use</span>
+<span>Actual recovery</span>
+<span>Separate invoice disclosure</span>
+<span>Documentary evidence</span>
+</div>
+<div class="success"><strong>For accounts teams:</strong> Never approve a “GST-free reimbursement” solely because the contract says “at actuals”. Apply the Rule 33 checklist to the underlying transaction and retain the evidence.</div>
+</section>
+
+</main>
+</div>
+</div>
+
+<footer>
+<div class="wrap">
+<div class="footer-grid">
+<div>
+<h3>GST Reconciliation</h3>
+<p>Practical GST, accounting, reconciliation and compliance resources for finance teams and businesses.</p>
+</div>
+<div>
+<h3>Useful Resources</h3>
+<p><a href="https://gstreconciliation.in/">Home</a></p>
+<p><a href="https://gstreconciliation.in/articles.html">GST Knowledge</a></p>
+<p><a href="https://gstreconciliation.in/reconciliation.html">GST Reconciliation Tool</a></p>
+<p><a href="https://gstreconciliation.in/compliance.html">GST Compliance</a></p>
+</div>
+<div>
+<h3>Contact</h3>
+<p>Email: gstreconciliation@gmail.com</p>
+<p>GST • Accounting • Reconciliation • Compliance</p>
+</div>
+</div>
+<div class="footer-bottom">GST • Accounting • Reconciliation • Compliance</div>
+</div>
+</footer>
+
+</body>
+</html>
