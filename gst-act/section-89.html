@@ -18,7 +18,30 @@
 .card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:32px;margin-bottom:22px;box-shadow:0 10px 28px #15406c0d}h2{font-size:29px;line-height:1.28;color:#123e68;margin:0 0 15px}h3{font-size:21px;line-height:1.4;color:#244e70;margin-top:27px}.lead{font-size:18px;color:#36536d}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}.grid>div{border:1px solid var(--line);border-radius:13px;padding:17px;background:#fbfdff}.callout{border-left:5px solid var(--b);background:#eef6ff;padding:18px 20px;border-radius:9px;margin:20px 0}.success{background:#eefaf5;border-left-color:var(--g)}.warn{background:#fff8e8;border-left-color:var(--o)}.danger{background:#fff1f0;border-left-color:var(--r)}
 table{width:100%;border-collapse:collapse;margin:20px 0;font-size:14px}th,td{border:1px solid var(--line);padding:11px;text-align:left;vertical-align:top}th{background:#eef5fb;color:#173f63}.formula{font-size:19px;font-weight:800;text-align:center;background:#f1f7ff;border:1px dashed #8db8e8;padding:20px;border-radius:12px;margin:22px 0}.check{display:grid;grid-template-columns:repeat(2,1fr);gap:9px}.check div{background:#f8fbfe;border:1px solid var(--line);border-radius:10px;padding:11px}.timeline{border-left:4px solid #8db8e8;padding-left:20px}.timeline div{margin:0 0 20px}.bottom{background:linear-gradient(135deg,var(--b),var(--b2));color:#fff;border-radius:20px;padding:35px}.bottom h2{color:#fff}footer{margin-top:30px;background:#102d49;color:#d9e7f5;padding:44px 20px}.foot{display:grid;grid-template-columns:2fr 1fr 1fr;gap:30px}footer a{color:#fff}.small{font-size:13px;color:#91a9bd}
 @media(max-width:900px){.layout{grid-template-columns:1fr}.toc{position:relative}.stats,.grid,.check,.foot{grid-template-columns:1fr 1fr}.hero h1{font-size:35px}}@media(max-width:600px){.wrap,.layout{width:calc(100% - 32px)}.stats,.grid,.check,.foot{grid-template-columns:1fr}}
-</style></head>
+</style><style>
+/* GST Reconciliation site-wide width standard — matches homepage exactly. */
+.gst-site-width-standard,
+.wrap,
+.legal-wrap,
+.rule-wrap,
+.section-wrap,
+.section-page-wrap,
+.legal-container,
+.legal-page-wrap,
+.site-container,
+main.container,
+header .container,
+.hero .container,
+footer .container {
+  width: min(1400px, calc(100% - 64px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+</style>
+
+</head>
 <body>
 <header class="hero"><div class="wrap"><span class="badge">GST ACT — SECTION 89</span>
 <h1>Section 89 CGST Act — Liability of Directors of a Private Company</h1>
