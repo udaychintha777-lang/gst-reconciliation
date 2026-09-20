@@ -57,7 +57,6 @@ jobs:
             data/legal-library.json \
             gst-act.html gst-act \
             gst-rules.html gst-rules \
-            schedules.html schedules \
             notifications.html notifications \
             circulars.html circulars \
             orders.html orders
