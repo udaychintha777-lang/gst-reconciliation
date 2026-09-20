@@ -1,31 +1,601 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="/styles.css"><title>Section 117 — Appeal to High Court. | GST Reconciliation</title><meta name="description" content="Section 117 deals with appeal to high court. The provision should be read with the connected rules, notifications and the facts of the transaction."><link rel="canonical" href="https://gstreconciliation.in/gst-act/section-117.html">
-<!-- Google Analytics 4 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CGST Section 117 – Appeal to High Court | GST Legal Library</title>
+<meta name="description" content="Detailed guide to Section 117 of the CGST Act, 2017 – Appeal to High Court. Understand the 180-day limitation, substantial question of law, scope of High Court powers, State Benches, APL-08, practical examples and compliance workflow.">
+<meta name="keywords" content="CGST Section 117, Section 117 CGST Act, Appeal to High Court GST, GST High Court appeal, substantial question of law GST, GST APL-08, GSTAT appeal High Court">
+<link rel="canonical" href="https://gstreconciliation.in/gst-act/section-117.html">
+
+<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-NBKTXWJ20G');</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-NBKTXWJ20G');
+</script>
+
 <!-- Google AdSense -->
 <script async
   src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
   crossorigin="anonymous"></script>
 
 <style>
-/* GST Reconciliation site-wide width standard — matches homepage exactly. */
-.wrap,
-.legal-wrap,
-.rule-wrap,
-.section-wrap,
-.section-page-wrap,
-.legal-container,
-.legal-page-wrap,
-.site-container,
-main.container,
-header .container,
-.hero .container,
-footer .container {
-  width: min(1400px, calc(100% - 64px));
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
+:root{
+  --blue:#0b63ce;--blue2:#1684e8;--ink:#172033;--muted:#667085;
+  --line:#e6eaf0;--bg:#f7f9fc;--soft:#eef6ff;--green:#087443;
+  --greenbg:#ecfdf3;--amber:#9a6700;--amberbg:#fff8e6;
+  --red:#b42318;--redbg:#fff1f0;--shadow:0 8px 28px rgba(20,45,90,.08);
+  --radius:16px
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.72}
+a{color:var(--blue);text-decoration:none}
+a:hover{text-decoration:underline}
+.nav{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+.nav-inner{max-width:1050px;margin:auto;padding:13px 18px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{font-size:20px;font-weight:800;color:#172033;white-space:nowrap}
+.brand span{color:var(--blue)}
+.nav-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:flex-end;font-size:14px;font-weight:650}
+.hero{background:linear-gradient(115deg,#075dc5 0%,#1684e8 55%,#36a2f4 100%);color:#fff}
+.hero-inner{max-width:1050px;margin:auto;padding:54px 18px 48px}
+.crumb{font-size:13px;opacity:.88;margin-bottom:15px}
+.crumb a{color:#fff}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.12;margin:0 0 14px;letter-spacing:-.8px}
+.hero p{max-width:850px;margin:0;color:#eaf5ff;font-size:17px}
+.tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:22px}
+.tag{padding:7px 11px;border:1px solid rgba(255,255,255,.3);background:rgba(255,255,255,.13);border-radius:999px;font-size:12px;font-weight:700}
+.wrap{max-width:1050px;margin:auto;padding:28px 18px 60px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:27px;margin:20px 0}
+.card h2{font-size:25px;line-height:1.25;margin:0 0 16px}
+.card h3{font-size:19px;line-height:1.35;margin:25px 0 9px}
+.card h4{font-size:16px;margin:19px 0 7px}
+.muted{color:var(--muted)}
+.toc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:22px 25px;box-shadow:var(--shadow)}
+.toc h2{font-size:20px;margin:0 0 10px}
+.toc ol{margin:8px 0 0;padding-left:22px}
+.toc li{margin:5px 0}
+.statute{background:#f8fafc;border-left:4px solid var(--blue);padding:19px 20px;border-radius:10px;margin:15px 0}
+.statute p{margin:8px 0}
+.plain{background:var(--greenbg);border:1px solid #b7e4cc;border-left:5px solid var(--green);padding:18px 20px;border-radius:10px}
+.note{background:var(--amberbg);border:1px solid #f0d98b;border-left:5px solid #d49a00;padding:17px 20px;border-radius:10px}
+.warning{background:var(--redbg);border:1px solid #f4c7c2;border-left:5px solid var(--red);padding:17px 20px;border-radius:10px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.mini{background:#fff;border:1px solid var(--line);border-radius:13px;padding:18px}
+.mini strong{display:block;margin-bottom:6px}
+.badge{display:inline-block;background:var(--soft);color:var(--blue);font-weight:800;border-radius:999px;padding:5px 10px;font-size:12px;margin-bottom:8px}
+table{width:100%;border-collapse:collapse;margin:15px 0;font-size:14px}
+th,td{border:1px solid var(--line);padding:11px 12px;vertical-align:top;text-align:left}
+th{background:#f4f7fb;font-weight:800}
+tr:nth-child(even) td{background:#fcfdff}
+.checklist{list-style:none;padding:0;margin:12px 0}
+.checklist li{padding:9px 0 9px 28px;position:relative;border-bottom:1px solid #f0f2f5}
+.checklist li:last-child{border-bottom:0}
+.checklist li:before{content:"✓";position:absolute;left:0;top:9px;color:var(--green);font-weight:900}
+.num{display:inline-flex;width:29px;height:29px;border-radius:50%;background:var(--soft);color:var(--blue);align-items:center;justify-content:center;font-weight:900;margin-right:8px}
+.faq{padding:16px 0;border-top:1px solid var(--line)}
+.faq:first-child{border-top:0}
+.faq h3{margin:0 0 7px;font-size:17px}
+.kicker{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue);font-weight:900;margin-bottom:7px}
+.flow{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:15px 0}
+.flow span{background:#f5f8fc;border:1px solid var(--line);padding:10px 13px;border-radius:10px;font-weight:700;font-size:13px}
+.flow b{color:var(--blue)}
+.prevnext{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pn{background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px}
+.pn small{display:block;color:var(--muted);margin-bottom:5px}
+.footer{background:#101828;color:#d0d5dd}
+.footer-inner{max-width:1050px;margin:auto;padding:32px 18px}
+.footer a{color:#b9dcff}
+.disclaimer{font-size:13px;color:#667085}
+@media(max-width:760px){
+  .nav-inner{align-items:flex-start;flex-direction:column}
+  .nav-links{gap:10px}
+  .hero-inner{padding-top:38px}
+  .card{padding:21px}
+  .grid,.prevnext{grid-template-columns:1fr}
+  table{display:block;overflow-x:auto;white-space:normal}
 }
 </style>
-</head><body><nav class="nav"><div class="wrap navin"><a class="brand" href="/"><div class="logo">GST</div><div><strong>GST Reconciliation</strong><small>KNOWLEDGE • TOOLS • SOLUTIONS</small></div></a><div class="links"><a href="/">Home</a><a href="/reconciliation.html">Reconciliation</a><a href="/articles.html">GST Knowledge</a><a href="/questions.html">Questions & Answers</a><a href="/gst-act.html">GST Act (Sections)</a><a href="/#tools">GST Tools</a><a href="/#ask">Ask GST AI</a><a href="/#contact">Contact</a></div></div></nav><main class="article"><div class="chip">GST Act • Section 117</div><h1>Section 117: Appeal to High Court.</h1><p class="lead">Section 117 deals with appeal to high court. The provision should be read with the connected rules, notifications and the facts of the transaction.</p><div class="callout"><strong>In simple terms:</strong> The statutory subject is appeal to high court. In practice, the section works with definitions, rules, forms and tax-period-specific changes. A business should therefore check the complete compliance chain rather than relying on the section title alone.</div><h2>What a business should understand</h2><ul><li>Understand the transaction before applying the tax treatment.</li><li>Check the applicable section, rule and tax-period-specific changes.</li><li>Match the accounting entry with the GST return and supporting documents.</li><li>Document the judgement where the treatment depends on facts or contractual terms.</li></ul><h2>Practical example</h2><div class="example">Example: A business identifies the transaction, checks the applicable treatment, records the tax correctly, reconciles it with the return and retains the supporting documents.</div><h2>Practical checklist</h2><ul class="checklist"><li>Identify the transaction and tax period</li><li>Check the applicable law and connected rules</li><li>Verify invoices, agreements, ledgers and portal data</li><li>Reconcile the working with the relevant return</li><li>Retain the final working and supporting evidence</li></ul><div class="notice">The content is for general knowledge and educational purposes. Verify the law, rules, notifications and circulars applicable to the relevant tax period before taking any action. It is not a substitute for professional advice.</div><div class="reference">Reference note: Prepared using GST statutory material and professional GST study material for knowledge purposes.</div></main><footer class="footer"><div class="wrap"><strong>GST Reconciliation</strong><p class="small">Free GST knowledge, practical tools and learning resources.</p><p class="small">Knowledge purpose only. Verify the law, rules, notifications and circulars applicable to the relevant tax period before taking any action.</p></div></footer></body></html>
+</head>
+
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="https://gstreconciliation.in/">GST<span>Reconciliation</span></a>
+    <div class="nav-links">
+      <a href="https://gstreconciliation.in/">Home</a>
+      <a href="https://gstreconciliation.in/reconciliation.html">Reconciliation</a>
+      <a href="https://gstreconciliation.in/gst-knowledge.html">GST Knowledge</a>
+      <a href="https://gstreconciliation.in/gst-act.html">GST Legal Library</a>
+      <a href="https://gstreconciliation.in/tools.html">GST Tools</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="crumb"><a href="https://gstreconciliation.in/">Home</a> › <a href="https://gstreconciliation.in/gst-act.html">GST Legal Library</a> › Chapter XVIII › Section 117</div>
+    <h1>CGST Section 117 – Appeal to High Court</h1>
+    <p>Section 117 explains when an aggrieved person can take a GST Appellate Tribunal order to the High Court, the 180-day filing period, the requirement of a substantial question of law, and the powers of the High Court while deciding the appeal.</p>
+    <div class="tags">
+      <span class="tag">CGST Act, 2017</span>
+      <span class="tag">Chapter XVIII – Appeals &amp; Revision</span>
+      <span class="tag">High Court Appeal</span>
+      <span class="tag">180 Days</span>
+      <span class="tag">Substantial Question of Law</span>
+      <span class="tag">FORM GST APL-08</span>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+<section class="toc">
+  <h2>On this page</h2>
+  <ol>
+    <li><a href="#statutory">Statutory text of Section 117</a></li>
+    <li><a href="#meaning">Section 117 in simple language</a></li>
+    <li><a href="#substantial">What is a “substantial question of law”?</a></li>
+    <li><a href="#timeline">180-day limitation period</a></li>
+    <li><a href="#powers">Powers and scope of the High Court</a></li>
+    <li><a href="#procedure">Practical filing workflow and APL-08</a></li>
+    <li><a href="#examples">Detailed practical examples</a></li>
+    <li><a href="#working">Finance / tax-team working paper</a></li>
+    <li><a href="#related">Related GST provisions</a></li>
+    <li><a href="#faq">Frequently asked questions</a></li>
+    <li><a href="#revision">Quick revision</a></li>
+  </ol>
+</section>
+
+<section class="card" id="statutory">
+  <div class="kicker">Bare Act</div>
+  <h2><span class="num">117</span> Appeal to High Court</h2>
+
+  <div class="statute">
+    <p><strong>(1)</strong> Any person aggrieved by any order passed by the <strong>State Benches</strong> of the Appellate Tribunal may file an appeal to the High Court and the High Court may admit such appeal, if it is satisfied that the case involves a <strong>substantial question of law</strong>.</p>
+
+    <p><strong>(2)</strong> An appeal under sub-section (1) shall be filed within a period of <strong>one hundred and eighty days</strong> from the date on which the order appealed against is received by the aggrieved person and it shall be in such form, verified in such manner as may be prescribed:</p>
+
+    <p><strong>Provided that</strong> the High Court may entertain an appeal after the expiry of the said period if it is satisfied that there was sufficient cause for not filing it within such period.</p>
+
+    <p><strong>(3)</strong> Where the High Court is satisfied that a substantial question of law is involved in any case, it shall formulate that question and the appeal shall be heard only on the question so formulated, and the respondents shall, at the hearing of the appeal, be allowed to argue that the case does not involve such question:</p>
+
+    <p><strong>Provided that</strong> nothing in this sub-section shall be deemed to take away or abridge the power of the court to hear, for reasons to be recorded, the appeal on any other substantial question of law not formulated by it, if it is satisfied that the case involves such question.</p>
+
+    <p><strong>(4)</strong> The High Court shall decide the question of law so formulated and deliver such judgment thereon containing the grounds on which such decision is founded and may award such cost as it deems fit.</p>
+
+    <p><strong>(5)</strong> The High Court may determine any issue which—</p>
+    <p style="margin-left:24px"><strong>(a)</strong> has not been determined by the State Benches; or</p>
+    <p style="margin-left:24px"><strong>(b)</strong> has been wrongly determined by the State Benches, by reason of a decision on such question of law as herein referred to in sub-section (3).</p>
+
+    <p><strong>(6)</strong> Where an appeal has been filed before the High Court, it shall be heard by a Bench of not less than <strong>two Judges</strong> of the High Court, and shall be decided in accordance with the opinion of such Judges or of the majority, if any, of such Judges.</p>
+
+    <p><strong>(7)</strong> Where there is no such majority, the Judges shall state the point of law upon which they differ and the case shall then be heard upon that point only by one or more of the other Judges of the High Court. The point shall be decided according to the opinion of the majority of the Judges who have heard the case, including those who first heard it.</p>
+
+    <p><strong>(8)</strong> Where the High Court delivers a judgment in an appeal filed before it under this section, effect shall be given to such judgment by either side on the basis of a <strong>certified copy</strong> of the judgment.</p>
+
+    <p><strong>(9)</strong> Save as otherwise provided in the CGST Act, the provisions of the <strong>Code of Civil Procedure, 1908</strong>, relating to appeals to the High Court shall, as far as may be, apply in the case of appeals under this section.</p>
+  </div>
+
+  <div class="note">
+    <strong>Current-law point:</strong> The CBIC GST Acts database records that the references to the Appellate Tribunal’s “State Benches” in Section 117 were substituted with effect from <strong>1 August 2023</strong> by section 152 of the Finance Act, 2023, brought into force through Notification No. 28/2023–CT dated 31 July 2023.
+  </div>
+</section>
+
+<section class="card" id="meaning">
+  <div class="kicker">Plain-language explanation</div>
+  <h2>What does Section 117 actually do?</h2>
+
+  <p>Section 117 is the GST appeal route from the specified order of the Appellate Tribunal to the High Court. It is not a general second opportunity to re-argue every factual dispute that was already considered by the Tribunal.</p>
+
+  <div class="plain">
+    <strong>In simple terms:</strong> If a person is aggrieved by an order of a State Bench of the GST Appellate Tribunal, the person can approach the High Court where the statutory requirements are satisfied. The central gateway is whether the case involves a <strong>substantial question of law</strong>.
+  </div>
+
+  <p>The section therefore creates an important distinction between an ordinary disagreement with the factual outcome and a legal issue that meets the threshold for High Court consideration.</p>
+
+  <div class="grid">
+    <div class="mini">
+      <span class="badge">Step 1</span>
+      <strong>Tribunal order</strong>
+      The starting point is an order passed by the relevant State Bench of the Appellate Tribunal.
+    </div>
+    <div class="mini">
+      <span class="badge">Step 2</span>
+      <strong>Aggrieved person</strong>
+      The person challenging the order must have a legal grievance arising from that order.
+    </div>
+    <div class="mini">
+      <span class="badge">Step 3</span>
+      <strong>Substantial question of law</strong>
+      The High Court must be satisfied that the case involves a substantial question of law before admitting the appeal.
+    </div>
+    <div class="mini">
+      <span class="badge">Step 4</span>
+      <strong>High Court decision</strong>
+      The Court decides the formulated question of law and may deal with connected issues within the limits provided by Section 117.
+    </div>
+  </div>
+</section>
+
+<section class="card" id="substantial">
+  <div class="kicker">Core legal concept</div>
+  <h2>What is a “substantial question of law”?</h2>
+
+  <p>Section 117 itself uses the expression but does not provide a one-line definition. Whether a particular issue amounts to a substantial question of law depends on the facts, the statutory provision involved, the Tribunal’s order and the legal issue raised before the High Court.</p>
+
+  <p>For a GST professional, the practical distinction can be understood like this:</p>
+
+  <table>
+    <thead>
+      <tr><th>Issue raised</th><th>Typical character</th><th>Why it matters</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pure dispute about whether a particular document was actually produced before the Tribunal</td>
+        <td>Primarily factual</td>
+        <td>The High Court route under Section 117 is not designed simply to re-try every factual dispute.</td>
+      </tr>
+      <tr>
+        <td>Dispute about interpretation of a GST statutory provision</td>
+        <td>Legal issue</td>
+        <td>May require High Court consideration if it satisfies the substantial-question threshold.</td>
+      </tr>
+      <tr>
+        <td>Tribunal applies a statutory provision in a manner alleged to be legally erroneous</td>
+        <td>Question of law</td>
+        <td>The legal proposition and its significance must be framed carefully in the appeal.</td>
+      </tr>
+      <tr>
+        <td>Two competing interpretations of an important statutory expression</td>
+        <td>Potential legal question</td>
+        <td>The appeal should identify the exact statutory provision and the legal interpretation in dispute.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="warning">
+    <strong>Do not label every disagreement as a substantial question of law.</strong>
+    A Section 117 appeal should clearly identify the legal question arising from the Tribunal’s order and explain why the question satisfies the statutory threshold. The final determination belongs to the High Court.
+  </div>
+
+  <h3>How a tax team can frame the issue</h3>
+  <p>A useful internal drafting approach is to write the issue as a question of law rather than as a general complaint.</p>
+
+  <div class="statute">
+    <strong>Weak internal description:</strong><br>
+    “The Tribunal’s order is wrong and the demand should be deleted.”
+  </div>
+
+  <div class="statute">
+    <strong>More useful legal framing:</strong><br>
+    “Whether, on the facts and statutory provisions identified in the Tribunal’s order, the Tribunal was legally correct in interpreting [specific CGST provision] in the manner adopted in the impugned order?”
+  </div>
+
+  <p>The exact wording should be settled by the advocate handling the High Court matter after reviewing the complete Tribunal order and record.</p>
+</section>
+
+<section class="card" id="timeline">
+  <div class="kicker">Limitation</div>
+  <h2>180-day filing period</h2>
+
+  <p>Section 117(2) provides that the appeal is to be filed within <strong>180 days from the date on which the order appealed against is received by the aggrieved person</strong>.</p>
+
+  <div class="grid">
+    <div class="mini">
+      <strong>Trigger</strong>
+      Record the actual date on which the Tribunal order is received by the aggrieved person.
+    </div>
+    <div class="mini">
+      <strong>Statutory period</strong>
+      180 days from receipt of the order.
+    </div>
+    <div class="mini">
+      <strong>Late filing</strong>
+      The High Court may entertain the appeal after 180 days if it is satisfied that sufficient cause existed for the delay.
+    </div>
+    <div class="mini">
+      <strong>Practical control</strong>
+      Do not wait until the end of the limitation period to start legal review and drafting.
+    </div>
+  </div>
+
+  <h3>Example – limitation tracking</h3>
+  <p>Assume a company receives a Tribunal order on <strong>10 September</strong>. The internal tax team should immediately record the receipt date, identify the last date under the applicable limitation computation, obtain legal advice and begin preparing the appeal. The exact filing date should be calculated by the legal team under the applicable procedural rules and court practice.</p>
+
+  <div class="note">
+    <strong>Evidence of receipt matters.</strong> Maintain the order, communication through which it was received, portal records where applicable, email records and an internal limitation sheet. Do not rely only on an employee’s memory of when the order was seen.
+  </div>
+
+  <h3>Internal limitation checklist</h3>
+  <ul class="checklist">
+    <li>Save the complete signed/certified Tribunal order.</li>
+    <li>Record the date of receipt in the litigation tracker.</li>
+    <li>Identify the statutory 180-day period.</li>
+    <li>Obtain counsel’s preliminary view on whether a substantial question of law arises.</li>
+    <li>Prepare the proposed questions of law and supporting grounds.</li>
+    <li>Keep sufficient time for approval, document collection, drafting and filing.</li>
+    <li>Track the actual High Court filing and case number separately from the internal approval date.</li>
+  </ul>
+</section>
+
+<section class="card" id="powers">
+  <div class="kicker">High Court scope</div>
+  <h2>What can the High Court decide?</h2>
+
+  <h3><span class="num">1</span>Formulate the substantial question of law</h3>
+  <p>Under Section 117(3), once satisfied that a substantial question of law is involved, the High Court formulates the question. The appeal is ordinarily heard on that formulated question.</p>
+
+  <h3><span class="num">2</span>Consider another substantial question of law</h3>
+  <p>The proviso to Section 117(3) preserves the Court’s ability to hear another substantial question of law not initially formulated, where the statutory conditions are satisfied and reasons are recorded.</p>
+
+  <h3><span class="num">3</span>Decide the formulated legal question</h3>
+  <p>Section 117(4) requires the High Court to decide the question of law and give a judgment containing the grounds for its decision. The Court may also award costs as it deems fit.</p>
+
+  <h3><span class="num">4</span>Deal with an issue not determined by the Tribunal</h3>
+  <p>Section 117(5)(a) allows the High Court to determine an issue which has not been determined by the State Benches, within the framework of the provision.</p>
+
+  <h3><span class="num">5</span>Deal with an issue wrongly determined because of the legal question</h3>
+  <p>Section 117(5)(b) allows the High Court to determine an issue wrongly determined by the State Benches by reason of a decision on the relevant question of law.</p>
+
+  <h3><span class="num">6</span>Bench of at least two Judges</h3>
+  <p>Section 117(6) provides that the appeal is heard by a Bench of not less than two Judges and decided according to the opinion of the Judges or the majority, where there is one.</p>
+
+  <h3><span class="num">7</span>Certified copy for giving effect to the judgment</h3>
+  <p>Section 117(8) states that effect is to be given to the High Court judgment by either side on the basis of a certified copy of the judgment.</p>
+
+  <h3><span class="num">8</span>Code of Civil Procedure</h3>
+  <p>Section 117(9) provides that, subject to the CGST Act, the provisions of the Code of Civil Procedure, 1908 relating to appeals to the High Court apply, as far as may be, to appeals under this section.</p>
+</section>
+
+<section class="card" id="procedure">
+  <div class="kicker">Practical procedure</div>
+  <h2>How to prepare a Section 117 High Court appeal</h2>
+
+  <div class="flow">
+    <span>Tribunal order</span><b>→</b>
+    <span>Receipt date</span><b>→</b>
+    <span>Legal review</span><b>→</b>
+    <span>Questions of law</span><b>→</b>
+    <span>APL-08</span><b>→</b>
+    <span>High Court filing</span>
+  </div>
+
+  <h3>FORM GST APL-08</h3>
+  <p>Rule 117 of the CGST Rules provides that an appeal to the High Court under Section 117(1) is to be filed in <strong>FORM GST APL-08</strong>. The grounds of appeal and verification in APL-08 are to be signed in the manner specified in the relevant registration/signing rule.</p>
+
+  <div class="grid">
+    <div class="mini">
+      <strong>Core document</strong>
+      Complete copy of the impugned Appellate Tribunal order.
+    </div>
+    <div class="mini">
+      <strong>Legal grounds</strong>
+      Clearly drafted substantial questions of law and grounds explaining the alleged legal error.
+    </div>
+    <div class="mini">
+      <strong>Record</strong>
+      Relevant pleadings, notices, replies, evidence and earlier appellate orders as required for the matter.
+    </div>
+    <div class="mini">
+      <strong>Limitation evidence</strong>
+      Documents establishing when the impugned order was received.
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Important:</strong> APL-08 is the GST Rules form reference. High Court filing can also involve court-specific filing systems, fees, formatting, affidavits, certified copies and procedural requirements. Those requirements should be checked with the concerned High Court and the advocate handling the matter.
+  </div>
+
+  <h3>Suggested company litigation workflow</h3>
+  <table>
+    <thead><tr><th>Stage</th><th>Responsible team</th><th>Output</th></tr></thead>
+    <tbody>
+      <tr><td>Receive Tribunal order</td><td>Tax / Legal</td><td>Order saved with receipt date</td></tr>
+      <tr><td>Commercial impact review</td><td>Finance / Tax</td><td>Tax, interest, penalty and cash-flow impact</td></tr>
+      <tr><td>Legal issue review</td><td>Tax counsel</td><td>Potential questions of law</td></tr>
+      <tr><td>Management approval</td><td>CFO / authorised management</td><td>Decision to pursue legal remedy</td></tr>
+      <tr><td>Drafting</td><td>Advocate</td><td>Appeal, grounds and documents</td></tr>
+      <tr><td>Filing</td><td>Advocate / filing team</td><td>High Court case details / filing acknowledgement</td></tr>
+      <tr><td>Post-filing tracking</td><td>Tax / Legal</td><td>Hearing and compliance tracker</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="card" id="examples">
+  <div class="kicker">Practical examples</div>
+  <h2>Section 117 examples for GST professionals</h2>
+
+  <h3>Example 1 – Tribunal order involving interpretation of a GST provision</h3>
+  <p>A company receives an Appellate Tribunal order interpreting a statutory provision in a way that the company believes conflicts with the language of the Act. The company does not merely state that the result is commercially unfavorable. Its counsel identifies the exact provision, the Tribunal’s interpretation and the legal proposition requiring examination.</p>
+  <p><strong>Section 117 relevance:</strong> The proposed appeal must address the substantial-question-of-law requirement and the 180-day period.</p>
+
+  <h3>Example 2 – Pure factual disagreement</h3>
+  <p>Suppose the Tribunal considers purchase records, invoices, payment records and other evidence and reaches a factual conclusion. A party simply stating “the Tribunal should have believed our evidence” does not, by itself, explain a substantial question of law.</p>
+  <p>The appeal strategy would need to identify the legal issue, if any, arising from the Tribunal’s treatment of the evidence or the statutory test applied.</p>
+
+  <h3>Example 3 – Tribunal did not decide an issue</h3>
+  <p>Suppose an issue connected with the legal dispute was not determined by the State Bench. Section 117(5)(a) specifically gives the High Court power to determine an issue which has not been determined by the State Bench, subject to the statutory framework.</p>
+
+  <h3>Example 4 – Legal error affects another issue</h3>
+  <p>Suppose the Tribunal’s decision on a statutory interpretation question led it to decide another issue in a particular way. Section 117(5)(b) addresses an issue wrongly determined by the State Bench by reason of its decision on the relevant question of law.</p>
+
+  <h3>Example 5 – Delay beyond 180 days</h3>
+  <p>A taxpayer does not file within the statutory 180-day period. Section 117(2) permits the High Court to entertain the appeal after the period if the Court is satisfied that sufficient cause existed for the delay. The existence and adequacy of the cause must be established before the Court.</p>
+</section>
+
+<section class="card" id="working">
+  <div class="kicker">Finance &amp; tax department</div>
+  <h2>Section 117 working paper format</h2>
+
+  <p>For a company maintaining a GST litigation register, the following fields can be maintained for every potential High Court appeal:</p>
+
+  <table>
+    <thead><tr><th>Field</th><th>Suggested entry</th></tr></thead>
+    <tbody>
+      <tr><td>GSTIN</td><td>Relevant registration</td></tr>
+      <tr><td>Tax period / FY</td><td>Period involved in dispute</td></tr>
+      <tr><td>Original order date</td><td>Order of adjudicating authority</td></tr>
+      <tr><td>Appellate Authority order</td><td>Date / reference</td></tr>
+      <tr><td>Tribunal order date</td><td>Impugned order date</td></tr>
+      <tr><td>Date order received</td><td>Evidence-backed receipt date</td></tr>
+      <tr><td>180-day limitation</td><td>Internal calculated deadline</td></tr>
+      <tr><td>Demand involved</td><td>Tax + interest + penalty/other amounts, as applicable</td></tr>
+      <tr><td>Primary legal issue</td><td>Exact statutory provision and interpretation issue</td></tr>
+      <tr><td>Proposed question of law</td><td>Drafted by counsel</td></tr>
+      <tr><td>APL-08 status</td><td>Draft / approved / filed</td></tr>
+      <tr><td>High Court case number</td><td>After filing</td></tr>
+      <tr><td>Next hearing</td><td>As per court record</td></tr>
+      <tr><td>Financial provision</td><td>Internal accounting assessment</td></tr>
+      <tr><td>Responsible person</td><td>Tax / legal owner</td></tr>
+    </tbody>
+  </table>
+
+  <div class="plain">
+    <strong>Useful control:</strong> Keep the litigation register linked to the underlying GST demand, Tribunal order and management approval. This prevents a High Court limitation date from being missed when the matter moves between accounts, tax and legal teams.
+  </div>
+</section>
+
+<section class="card" id="related">
+  <div class="kicker">Related provisions</div>
+  <h2>Section 117 in the GST appellate chain</h2>
+
+  <table>
+    <thead><tr><th>Provision</th><th>Subject</th><th>Connection with Section 117</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Section 107</strong></td><td>Appeal to Appellate Authority</td><td>Earlier appellate stage before the matter can progress through the GST appellate hierarchy.</td></tr>
+      <tr><td><strong>Section 112</strong></td><td>Appeal to Appellate Tribunal</td><td>Provides the Tribunal-level appellate route.</td></tr>
+      <tr><td><strong>Section 113</strong></td><td>Orders of Appellate Tribunal</td><td>The Tribunal order becomes the relevant order for a Section 117 appeal.</td></tr>
+      <tr><td><strong>Section 116</strong></td><td>Authorised representative</td><td>Deals with representation before specified GST authorities and the Tribunal; High Court representation follows applicable court rules.</td></tr>
+      <tr><td><strong>Section 118</strong></td><td>Appeal to Supreme Court</td><td>Provides the statutory Supreme Court appeal route in the circumstances specified there.</td></tr>
+      <tr><td><strong>Section 119</strong></td><td>Sums due notwithstanding appeal</td><td>Addresses payment of sums due despite an appeal to the High Court or Supreme Court, subject to the provision.</td></tr>
+      <tr><td><strong>Section 120</strong></td><td>Appeal not to be filed in certain cases</td><td>Concerns monetary limits and directions for departmental appeals/applications.</td></tr>
+      <tr><td><strong>Section 121</strong></td><td>Non-appealable decisions and orders</td><td>Identifies specified decisions/orders against which appeal is not available.</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Appeal-chain snapshot</h3>
+  <div class="flow">
+    <span>Adjudicating Authority</span><b>→</b>
+    <span>Section 107</span><b>→</b>
+    <span>Section 112 Tribunal</span><b>→</b>
+    <span>Section 117 High Court</span><b>→</b>
+    <span>Section 118 Supreme Court route</span>
+  </div>
+
+  <p class="muted">The exact route in an individual case depends on the nature of the order and the statutory provisions applicable to it.</p>
+</section>
+
+<section class="card" id="faq">
+  <div class="kicker">FAQs</div>
+  <h2>Frequently asked questions on Section 117</h2>
+
+  <div class="faq">
+    <h3>1. Is every GST Tribunal order automatically appealable to the High Court?</h3>
+    <p>No. Section 117 requires the High Court to be satisfied that the case involves a substantial question of law. The section therefore does not create an unrestricted appeal on every factual or legal disagreement.</p>
+  </div>
+
+  <div class="faq">
+    <h3>2. What is the time limit under Section 117?</h3>
+    <p>The statutory period is 180 days from the date on which the impugned order is received by the aggrieved person. The High Court may entertain a delayed appeal where it is satisfied that there was sufficient cause for the delay.</p>
+  </div>
+
+  <div class="faq">
+    <h3>3. Which form is prescribed for an appeal to the High Court?</h3>
+    <p>Rule 117 of the CGST Rules provides for <strong>FORM GST APL-08</strong> for an appeal to the High Court under Section 117(1).</p>
+  </div>
+
+  <div class="faq">
+    <h3>4. Can the High Court consider another substantial question of law?</h3>
+    <p>Yes. The proviso to Section 117(3) preserves the Court’s power to hear another substantial question of law not initially formulated, where the statutory conditions are met and reasons are recorded.</p>
+  </div>
+
+  <div class="faq">
+    <h3>5. Can the High Court decide an issue that the Tribunal did not decide?</h3>
+    <p>Section 117(5)(a) expressly permits the High Court to determine an issue which has not been determined by the State Bench, within the scope of the section.</p>
+  </div>
+
+  <div class="faq">
+    <h3>6. Can the High Court deal with an issue wrongly determined by the Tribunal?</h3>
+    <p>Section 117(5)(b) permits the High Court to determine an issue wrongly determined by the State Bench by reason of a decision on the relevant question of law.</p>
+  </div>
+
+  <div class="faq">
+    <h3>7. How many judges hear a Section 117 appeal?</h3>
+    <p>Section 117(6) provides for a Bench of not less than two Judges of the High Court.</p>
+  </div>
+
+  <div class="faq">
+    <h3>8. Does filing a High Court appeal automatically mean the GST demand is not payable?</h3>
+    <p>Section 119 specifically deals with sums due notwithstanding an appeal to the High Court or Supreme Court. Filing an appeal should therefore not be treated as an automatic stay of every consequence of the underlying order. Separate legal and procedural steps may be relevant.</p>
+  </div>
+
+  <div class="faq">
+    <h3>9. Does Section 117 itself prescribe the court fee?</h3>
+    <p>Section 117 sets the statutory appeal framework, but High Court filing can involve court-specific procedural and fee requirements. These should be verified for the concerned High Court and case.</p>
+  </div>
+
+  <div class="faq">
+    <h3>10. Can a CA represent the company in the High Court merely because Section 116 permits authorised representation?</h3>
+    <p>Section 116 concerns appearance before GST officers, the Appellate Authority and the Appellate Tribunal. Representation before a High Court is governed by the applicable court and legal-practice rules. Section 116 should not be read as a general High Court representation provision.</p>
+  </div>
+</section>
+
+<section class="card" id="revision">
+  <div class="kicker">Quick revision</div>
+  <h2>Section 117 at a glance</h2>
+
+  <table>
+    <thead><tr><th>Point</th><th>Remember</th></tr></thead>
+    <tbody>
+      <tr><td>Section</td><td>117</td></tr>
+      <tr><td>Subject</td><td>Appeal to High Court</td></tr>
+      <tr><td>Starting order</td><td>Order passed by the relevant State Bench of the Appellate Tribunal</td></tr>
+      <tr><td>Main gateway</td><td>Substantial question of law</td></tr>
+      <tr><td>Limitation</td><td>180 days from receipt of the order</td></tr>
+      <tr><td>Delayed appeal</td><td>May be entertained if sufficient cause is established to the satisfaction of the High Court</td></tr>
+      <tr><td>Prescribed GST form</td><td>FORM GST APL-08</td></tr>
+      <tr><td>Bench</td><td>Not less than two High Court Judges</td></tr>
+      <tr><td>Judgment implementation</td><td>Certified copy under Section 117(8)</td></tr>
+      <tr><td>Procedural reference</td><td>CPC provisions relating to High Court appeals apply, as far as may be, subject to the CGST Act</td></tr>
+    </tbody>
+  </table>
+
+  <div class="plain">
+    <strong>One-line memory aid:</strong> <em>Tribunal order → 180 days → substantial question of law → APL-08 → High Court.</em>
+  </div>
+</section>
+
+<section class="card">
+  <div class="kicker">Legal note</div>
+  <h2>Use of this page</h2>
+  <p class="disclaimer">This page is prepared for GST education, reference and professional workflow support. GST law and procedure can change through Acts, rules, notifications, circulars, judicial decisions and administrative directions. Court-specific filing procedure can also vary. Before taking action in an actual dispute, verify the law, amendments, applicable rules, limitation computation, court procedure and current judicial position for the relevant date and obtain professional legal advice where appropriate.</p>
+</section>
+
+<section class="prevnext">
+  <a class="pn" href="https://gstreconciliation.in/gst-act/section-116.html">
+    <small>← Previous section</small>
+    <strong>Section 116 – Appearance by authorised representative</strong>
+  </a>
+  <a class="pn" href="https://gstreconciliation.in/gst-act/section-118.html">
+    <small>Next section →</small>
+    <strong>Section 118 – Appeal to Supreme Court</strong>
+  </a>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <strong>GSTReconciliation.in</strong>
+    <p>GST reconciliation, compliance resources, practical GST knowledge and GST legal reference.</p>
+    <p><a href="https://gstreconciliation.in/">Home</a> · <a href="https://gstreconciliation.in/reconciliation.html">Reconciliation Tool</a> · <a href="https://gstreconciliation.in/gst-act.html">GST Legal Library</a></p>
+    <p class="disclaimer">Educational content only. Always verify the law and procedure applicable to the relevant date.</p>
+  </div>
+</footer>
+
+</body>
+</html>
