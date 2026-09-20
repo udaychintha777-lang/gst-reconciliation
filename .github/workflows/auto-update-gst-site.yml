@@ -57,9 +57,19 @@ jobs:
             data/legal-library.json \
             gst-act.html gst-act \
             gst-rules.html gst-rules \
-            notifications.html notifications \
             circulars.html circulars \
             orders.html orders
+
+          # Add optional legal-library sections only when they exist.
+          # This keeps the workflow from failing when a section is not yet present,
+          # while still publishing it automatically whenever its files are added.
+          if [ -e "schedules.html" ] || [ -d "schedules" ]; then
+            git add schedules.html schedules 2>/dev/null || true
+          fi
+
+          if [ -e "notifications.html" ] || [ -d "notifications" ]; then
+            git add notifications.html notifications 2>/dev/null || true
+          fi
 
           if git diff --cached --quiet; then
             echo "No generated or standardized changes to commit."
