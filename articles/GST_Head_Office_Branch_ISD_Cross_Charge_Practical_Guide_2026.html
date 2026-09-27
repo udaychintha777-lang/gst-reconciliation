@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GST on Head Office and Branch Transactions – ISD, Cross-Charge, Common ITC Allocation and Rule 28 Valuation: Complete Practical Guide</title>
+<meta name="description" content="Detailed practical guide to GST on head-office and branch transactions, mandatory ISD from April 2025, cross-charge, Rule 28 valuation, accounting entries, GSTR-6, RCM, reconciliation and controls.">
+<link rel="canonical" href="https://gstreconciliation.in/articles/gst_head_office_branch_isd_cross_charge_common_itc_rule_28_practical_guide.html">
+<meta name="robots" content="index,follow">
+<style>
+:root{--blue:#0b63ce;--blue2:#084b9a;--ink:#17324d;--muted:#5c6b7a;--bg:#f4f8fc;--card:#fff;--line:#dce7f2;--green:#16804b;--greenbg:#eaf8f0;--red:#c73535;--redbg:#fff0f0;--amber:#a96500;--amberbg:#fff7e8;--shadow:0 12px 32px rgba(20,60,100,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.72 Inter,Segoe UI,Arial,sans-serif}.wrap{max-width:1240px;margin:auto;padding:0 22px}
+.hero{background:linear-gradient(135deg,#084b9a,#0b63ce 60%,#1678e8);color:#fff;padding:54px 0 44px}.hero .wrap{display:grid;grid-template-columns:1.5fr .8fr;gap:28px;align-items:center}.badge{display:inline-block;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.13);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:.6px}.hero h1{font-size:42px;line-height:1.1;margin:16px 0 14px}.hero p{font-size:18px;max-width:850px;color:#eaf4ff}.hero-stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:16px;padding:18px}.stat b{display:block;font-size:26px}.stat span{font-size:12px;color:#e3efff}
+.layout{display:grid;grid-template-columns:270px 1fr;gap:24px;align-items:start;margin-top:28px}.toc{position:sticky;top:16px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow)}.toc h3{margin:0 0 10px}.toc a{display:block;color:#31536f;text-decoration:none;padding:7px 0;font-size:13px}.toc a:hover{color:var(--blue)}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;margin-bottom:20px;box-shadow:var(--shadow)}h2{font-size:27px;line-height:1.25;margin:0 0 14px}h3{font-size:19px;line-height:1.35;margin:20px 0 8px}p{margin:9px 0}.lead{font-size:17px}.muted{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.mini{border:1px solid var(--line);border-radius:14px;padding:16px;background:#fbfdff}
+.decision{border-radius:14px;padding:16px 18px;margin:14px 0;border:1px solid}.yes{background:var(--greenbg);border-color:#bce7cc}.no{background:var(--redbg);border-color:#f0c2c2}.conditional{background:var(--amberbg);border-color:#f1d49a}.decision b{display:block;margin-bottom:4px}.yes b{color:var(--green)}.no b{color:var(--red)}.conditional b{color:var(--amber)}
+table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}th,td{border:1px solid var(--line);padding:10px;vertical-align:top}th{background:#eef6ff;text-align:left;color:#204b70}.case-table td:first-child{font-weight:700;width:19%}.case-table td:nth-child(4){width:16%;font-weight:800}.case-yes{color:var(--green)}.case-no{color:var(--red)}.case-cond{color:var(--amber)}
+.note,.warning,.success{padding:16px 18px;border-radius:14px;margin:15px 0}.note{background:#eef6ff;border-left:4px solid var(--blue)}.warning{background:#fff5f5;border-left:4px solid var(--red)}.success{background:#eefaf3;border-left:4px solid var(--green)}
+ul,ol{padding-left:22px}.pill{display:inline-block;border-radius:999px;padding:4px 9px;font-size:11px;font-weight:800;margin-right:5px}.p-yes{background:#dff5e8;color:#147542}.p-no{background:#ffe0e0;color:#a52d2d}.p-cond{background:#fff0cf;color:#8b5900}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0}.flow span{background:#eef6ff;border:1px solid #cfe2f5;border-radius:999px;padding:8px 12px;font-weight:700;font-size:13px}.flow i{color:#6b7e91}
+.faq{border-top:1px solid var(--line);padding:12px 0}.faq:first-of-type{border-top:0}.faq h3{margin:0 0 5px;font-size:16px}
+.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:13px}.resource-card{display:flex;gap:12px;align-items:flex-start;text-decoration:none;color:var(--ink);border:1px solid var(--line);border-radius:14px;padding:15px;background:#fbfdff}.resource-card:hover{border-color:#9dc7ee;box-shadow:0 8px 20px rgba(20,70,110,.06)}.resource-card .icon{min-width:40px;height:40px;border-radius:11px;background:#eaf3ff;color:var(--blue);display:grid;place-items:center;font-weight:900;font-size:11px}.resource-card strong{display:block}.resource-card span{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+.next-step{margin-top:20px;padding:20px;border-radius:16px;background:linear-gradient(135deg,#edf6ff,#f8fbff);border:1px solid #cfe2f5;display:flex;justify-content:space-between;gap:18px;align-items:center}.next-step a{background:var(--blue);color:#fff;text-decoration:none;padding:11px 16px;border-radius:10px;font-weight:800;white-space:nowrap}
+.footer{margin-top:34px;background:#102a43;color:#dce9f5;padding:36px 0 16px}.footer-inner{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}.footer strong{color:#fff}.footer a{display:block;color:#dce9f5;text-decoration:none;margin-top:7px}.footer p,.footer span{color:#a9bed1;font-size:13px}.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:24px;padding-top:13px;display:flex;justify-content:space-between}
+@media(max-width:900px){.hero .wrap,.layout{grid-template-columns:1fr}.toc{position:relative;top:0}.grid3,.resource-grid{grid-template-columns:1fr 1fr}.hero h1{font-size:34px}.footer-inner{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.wrap{padding:0 14px}.grid2,.grid3,.resource-grid,.footer-inner{grid-template-columns:1fr}.hero{padding:38px 0}.hero h1{font-size:29px}.card{padding:20px}.next-step,.footer-bottom{display:block}.next-step a{display:inline-block;margin-top:12px}table{font-size:12px;display:block;overflow:auto}}
+
+.ad-page-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1120px) minmax(0,1fr);gap:18px;padding:24px 16px;align-items:start}
+.ad-rail{min-height:650px}
+.page-center{width:100%;max-width:1120px;min-width:0;margin:0 auto}
+@media(max-width:1250px){.ad-page-grid{grid-template-columns:minmax(0,1fr) minmax(0,1120px) minmax(0,1fr);gap:12px;padding-left:12px;padding-right:12px}}
+@media(max-width:900px){.ad-page-grid{display:block;padding:20px 16px}.ad-rail{display:none}.page-center{max-width:100%}}
+
+</style>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-NBKTXWJ20G');
+</script>
+
+<style id="contents-navigation-fix">
+/* Contents panel: explicit styling so it remains visible and usable across article templates */
+.toc{
+  display:block !important;
+  position:relative !important;
+  top:auto !important;
+  width:100%;
+  max-width:100%;
+  margin:24px auto 30px;
+  padding:24px 28px !important;
+  background:#fff !important;
+  border:1px solid #dce7f2 !important;
+  border-radius:16px !important;
+  box-shadow:0 12px 32px rgba(20,60,100,.08) !important;
+  overflow:visible !important;
+}
+.toc .toc-title{
+  display:block !important;
+  margin:0 0 14px !important;
+  padding:0 0 12px !important;
+  color:#084b9a !important;
+  font-size:23px !important;
+  line-height:1.3 !important;
+  border-bottom:1px solid #dce7f2;
+}
+.toc .toc-list{
+  display:grid !important;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:0 28px;
+  margin:0 !important;
+  padding:0 0 0 24px !important;
+  list-style:decimal !important;
+}
+.toc .toc-list li{
+  display:list-item !important;
+  min-width:0;
+  margin:0 !important;
+  padding:0 !important;
+  border-bottom:1px solid #edf2f7;
+  color:#0b63ce;
+}
+.toc .toc-list li::marker{color:#0b63ce;font-weight:800}
+.toc .toc-list a{
+  display:block !important;
+  visibility:visible !important;
+  opacity:1 !important;
+  color:#31536f !important;
+  text-decoration:none !important;
+  font-size:14px !important;
+  line-height:1.5 !important;
+  padding:10px 6px !important;
+  overflow-wrap:anywhere;
+  cursor:pointer;
+}
+.toc .toc-list a:hover,.toc .toc-list a:focus{
+  color:#0b63ce !important;
+  text-decoration:underline !important;
+  background:#f4f8fc;
+  outline-offset:2px;
+}
+article section[id]{scroll-margin-top:24px}
+@media(max-width:700px){
+  .toc{padding:18px 16px !important}
+  .toc .toc-list{grid-template-columns:minmax(0,1fr);gap:0}
+  .toc .toc-title{font-size:20px !important}
+}
+</style>
+
+</head><body>
+
+<header class="hero"><div class="wrap">
+<div><span class="badge">GST • ISD • CROSS-CHARGE • PRACTICAL GUIDE</span>
+<h1>GST on Head Office and Branch Transactions – ISD, Cross-Charge, Common ITC Allocation and Rule 28 Valuation: Complete Practical Guide</h1>
+<p>Head-office and branch GST explained through law, accounting entries, valuation, ITC distribution, returns, reconciliations and company-level controls.</p></div>
+<div class="hero-stats">
+<div class="stat"><b>2025–26</b><span>Amended ISD framework</span></div>
+<div class="stat"><b>Rule 28</b><span>Distinct-person valuation</span></div>
+<div class="stat"><b>Practical</b><span>Accounting & return workflows</span></div>
+<div class="stat"><b>18 Parts</b><span>Legal to implementation</span></div>
+</div></div></header>
+<div class="ad-page-grid"><aside class="ad-rail ad-rail-left" aria-label="Left ad column"></aside><main class="page-center">
+<div class="notice warn"><b>Important legal update:</b> From 1 April 2025, the amended ISD provisions apply. For qualifying third-party input services attributable to distinct persons, distribution of ITC is required through the ISD mechanism. Do not apply pre-April 2025 practices without checking the transaction period and the amended law.</div>
+
+<nav class="toc" aria-label="Table of contents">
+<h2 class="toc-title">In This Article</h2>
+<ol class="toc-list">
+<li><a href="#overview">1. Overview and business problem</a></li>
+<li><a href="#concepts">2. Understand the basic concepts</a></li>
+<li><a href="#law">3. Legal framework: sections, rules and amendments</a></li>
+<li><a href="#isd">4. ISD mechanism after 1 April 2025</a></li>
+<li><a href="#crosscharge">5. Cross-charge: what it is and when it applies</a></li>
+<li><a href="#decision">6. ISD vs cross-charge: transaction decision matrix</a></li>
+<li><a href="#valuation">7. Rule 28 valuation with worked examples</a></li>
+<li><a href="#accounting">8. Accounting entries and ledger procedure</a></li>
+<li><a href="#rcm">9. Common services under reverse charge</a></li>
+<li><a href="#returns">10. GST returns, documents and reconciliations</a></li>
+<li><a href="#example">11. Complete monthly company example</a></li>
+<li><a href="#controls">12. Company implementation and internal controls</a></li>
+<li><a href="#mistakes">13. Common mistakes and their consequences</a></li>
+<li><a href="#audit">14. Audit documentation and departmental queries</a></li>
+<li><a href="#caselaw">15. Case law and judicial position</a></li>
+<li><a href="#checklist">16. Monthly checklist and MIS formats</a></li>
+<li><a href="#faq">17. Frequently asked practical questions</a></li>
+<li><a href="#sources">18. Legal references and further study</a></li>
+</ol>
+</nav>
+
+<article>
+<section id="overview">
+<h2>1. Overview: why head-office and branch GST needs a system</h2>
+<p>Businesses operating in more than one State often have several GST registrations under the same PAN. The head office may centrally procure services such as audit, legal consultancy, ERP software, cloud hosting, security, advertising, insurance, recruitment, management consultancy and professional services. The benefit of these services may relate to one branch, several branches, or the entire organisation.</p>
+<p>At the same time, the head office may provide its own employees, finance team, HR support, procurement support, IT administration, management oversight and other internally generated services to branch offices. GST treatment of these two categories is not identical.</p>
+<div class="callout"><b>Core distinction:</b> ISD is a statutory mechanism for distributing eligible input tax credit on input services. Cross-charge is a taxable supply between distinct persons, where one GST registration supplies a service to another and issues a tax invoice. They are not interchangeable labels for the same accounting entry.</div>
+<p>From 1 April 2025, the law makes the ISD mechanism mandatory for distribution of qualifying common input-service credit, including the specified reverse-charge input services. Cross-charge remains relevant for genuine internally generated services and other supplies between distinct persons that are not merely distribution of third-party input tax credit.</p>
+<p>This guide is written for finance teams, GST practitioners, accountants, internal auditors and management. It explains the legal framework and then translates it into vendor master controls, invoice routing, accounting entries, GST returns, reconciliations and audit evidence.</p>
+</section>
+
+<section id="concepts">
+<h2>2. Understand the basic concepts</h2>
+<h3>2.1 Same PAN does not mean same GST registration</h3>
+<p>Under section 25(4) and section 25(5) of the CGST Act, registrations of the same person in different States, or separate registrations in the same State in the circumstances covered by the law, are treated as distinct persons. A supply between such distinct persons in the course or furtherance of business can be a supply even if no money is charged, because Schedule I covers specified supplies between distinct persons without consideration.</p>
+<p>Example: ABC Limited has a Telangana GSTIN for its head office and a Karnataka GSTIN for its branch. Both belong to the same legal entity and PAN, but for GST purposes they are distinct persons. An actual service supplied by the Telangana registration to the Karnataka registration must be analysed as an inter-State supply, including place-of-supply and IGST implications.</p>
+<h3>2.2 What is an Input Service Distributor?</h3>
+<p>Section 2(61), as amended, defines an Input Service Distributor (ISD) as an office of the supplier that receives tax invoices for input services, including invoices for services liable under section 9(3) or 9(4), for or on behalf of distinct persons referred to in section 25, and is liable to distribute the input tax credit in the manner provided in section 20.</p>
+<p>An ISD is a credit-distribution registration. It does not itself provide the underlying third-party service merely by distributing credit. It distributes the eligible credit through prescribed ISD documents and reports the distribution in Form GSTR-6.</p>
+<h3>2.3 What is cross-charge?</h3>
+<p>Cross-charge refers to an invoice raised by one GST registration of an entity to another distinct-person registration for a service supplied by the first registration. Typical examples may include centrally performed HR, finance, accounting, IT administration, management support or other services actually supplied by the head office to branches.</p>
+<p>Whether a particular activity is a supply, whether it is already covered by a third-party invoice to be distributed through ISD, and how it should be valued are separate questions. Merely allocating an expense in the books does not automatically establish a taxable service; equally, calling an actual service allocation a “cost allocation” does not by itself remove GST implications.</p>
+<h3>2.4 Three separate questions every accountant must ask</h3>
+<ol>
+<li><b>What was procured or supplied?</b> Identify the actual service and supplier/recipient.</li>
+<li><b>Is the transaction third-party input-service ITC distribution or an internally generated/inter-unit supply?</b> This determines whether ISD, cross-charge or another treatment is relevant.</li>
+<li><b>Who is entitled to the credit and how is it documented?</b> Confirm attribution, eligibility under sections 16 and 17, correct GSTIN, document type, place of supply and return reporting.</li>
+</ol>
+</section>
+
+<section id="law">
+<h2>3. Legal framework: sections, rules and amendments</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Provision</th><th>Practical relevance</th></tr></thead>
+<tbody>
+<tr><td>CGST Act section 2(61)</td><td>Definition of ISD, including the amended coverage of specified input services and reverse-charge invoices.</td></tr>
+<tr><td>Section 20</td><td>Distribution of eligible input tax credit by ISD and statutory manner of distribution.</td></tr>
+<tr><td>Section 24(viii)</td><td>Compulsory registration for an ISD, subject to the applicable statutory requirements.</td></tr>
+<tr><td>Section 25(4) and (5)</td><td>Distinct-person treatment for multiple registrations.</td></tr>
+<tr><td>Schedule I, paragraph 2</td><td>Specified supplies between related persons or distinct persons in the course or furtherance of business, even without consideration.</td></tr>
+<tr><td>Section 7</td><td>Meaning and scope of supply, read with Schedule I and other applicable provisions.</td></tr>
+<tr><td>Section 15 and Rule 28</td><td>Valuation of supplies between distinct or related persons.</td></tr>
+<tr><td>Section 31 and Rule 46</td><td>Tax invoice requirements for taxable cross-charge supplies.</td></tr>
+<tr><td>Rule 39</td><td>Procedure and formula for ISD credit distribution.</td></tr>
+<tr><td>Rule 54</td><td>Documents issued by ISD, including relevant special provisions.</td></tr>
+<tr><td>Rule 65 and Form GSTR-6</td><td>ISD return and reporting of credit distributed.</td></tr>
+<tr><td>Sections 16 and 17</td><td>Recipient's ITC eligibility, conditions, restrictions and blocked-credit considerations.</td></tr>
+<tr><td>Section 13 of IGST Act</td><td>Place of supply for services where the supplier or recipient is outside India, where relevant; domestic cross-charge also requires applying the relevant place-of-supply provision in section 12 or 13 as applicable.</td></tr>
+</tbody></table></div>
+<h3>3.1 Finance Act, 2024 amendments and effective date</h3>
+<p>The Finance Act, 2024 amended the ISD definition and section 20 framework. The relevant amendments were brought into force from 1 April 2025 through Notification No. 16/2024–Central Tax dated 6 August 2024, with related rules brought into effect through the applicable commencement notification, including Notification No. 09/2025–Central Tax dated 11 February 2025. Always verify the applicable State GST enactment/notification for the State registration concerned.</p>
+<p>The practical transition is important: before 1 April 2025, Circular No. 199/11/2023-GST explained the then-existing position that eligible common third-party input services could be handled through ISD or, subject to the circular's conditions, by issuing a tax invoice. From 1 April 2025, do not use that earlier flexibility to bypass the amended mandatory ISD provisions for services that fall within the amended ISD framework.</p>
+<h3>3.2 Circular No. 199/11/2023-GST dated 17 July 2023</h3>
+<p>This circular clarified issues concerning head-office and branch-office transactions under the law then in force. Among other things, it addressed third-party common input services, the option then available for ISD or invoice route, internally generated services, and Rule 28 valuation where the recipient was eligible for full ITC. It remains relevant for understanding and analysing earlier tax periods, but must be read with the statutory amendments effective 1 April 2025 for later periods.</p>
+<h3>3.3 Rule 39: key distribution principles</h3>
+<ul>
+<li>Credit attributable to a particular recipient is to be distributed only to that recipient.</li>
+<li>Credit attributable to more than one recipient is distributed among the relevant recipients on the prescribed pro-rata basis, generally using turnover of the relevant recipients for the relevant period as specified in Rule 39.</li>
+<li>Credit distributed cannot exceed the credit available for distribution.</li>
+<li>Tax character and recipient location determine whether the distributed credit is passed as CGST/SGST or IGST under the statutory mechanism.</li>
+<li>Credit that is ineligible or attributable to exempt/non-business activities must not be distributed as eligible ITC without applying the relevant restrictions and apportionment provisions.</li>
+</ul>
+<div class="callout"><b>Practical control:</b> Maintain a documented service-attribution matrix. Do not distribute every head-office vendor invoice across all GSTINs merely because all registrations share the same PAN.</div>
+</section>
+
+<section id="isd">
+<h2>4. ISD mechanism after 1 April 2025</h2>
+<h3>4.1 Which invoices should be reviewed for ISD?</h3>
+<p>Identify third-party input-service invoices received centrally by the entity, where the service is for or attributable to one or more distinct-person registrations. This can include professional fees, software and cloud subscriptions, common advertising, central security, common insurance or other services, depending on the contract, invoice, use and attribution.</p>
+<p>The test is not simply whether the invoice is booked at head office. Determine whether the service is an input service, whether it is procured for/on behalf of distinct persons, which GST registrations benefit, and whether it falls within the amended ISD provisions. Goods and capital goods are not converted into input services merely because they are centrally purchased; analyse them under the ordinary supply and ITC rules.</p>
+<h3>4.2 Registration and vendor invoicing</h3>
+<ol>
+<li>Obtain ISD registration for the relevant office as required by section 24(viii).</li>
+<li>Share the ISD GSTIN and invoice-routing instructions with vendors supplying common services.</li>
+<li>Where an invoice is issued to a regular registration rather than the ISD registration, review the applicable provisions, including Rule 54(1A), before deciding the compliant documentation route.</li>
+<li>For each invoice, record the service description, invoice number/date, taxable value, tax components, period, beneficiary GSTINs, attribution basis, eligible credit and distribution calculation.</li>
+</ol>
+<h3>4.3 Distribution formula in practice</h3>
+<p>For a common input service attributable to more than one recipient, Rule 39 prescribes distribution on a pro-rata basis using the turnover of the relevant recipients for the relevant period, as defined in the rule. The denominator and recipient population must be selected exactly as the rule requires; it is not automatically the turnover of every GST registration in the corporate group.</p>
+<p><b>Illustration:</b> A common software service invoice contains eligible GST credit of ₹1,20,000. It is attributable to three recipient registrations with relevant turnover of ₹6 crore, ₹3 crore and ₹1 crore. If all three are the proper recipients and the stated turnover figures are the relevant Rule 39 figures, the distribution ratio is 60:30:10.</p>
+<div class="table-wrap"><table><thead><tr><th>Recipient</th><th>Relevant turnover</th><th>Ratio</th><th>Credit distributed</th></tr></thead><tbody>
+<tr><td>Branch A</td><td>₹6 crore</td><td>60%</td><td>₹72,000</td></tr>
+<tr><td>Branch B</td><td>₹3 crore</td><td>30%</td><td>₹36,000</td></tr>
+<tr><td>Branch C</td><td>₹1 crore</td><td>10%</td><td>₹12,000</td></tr>
+<tr><td><b>Total</b></td><td><b>₹10 crore</b></td><td><b>100%</b></td><td><b>₹1,20,000</b></td></tr>
+</tbody></table></div>
+<p>This is an illustrative calculation, not a substitute for checking the exact Rule 39 turnover definition, relevant period, recipient eligibility, tax type and invoice attribution for the actual case.</p>
+<h3>4.4 ISD document and return process</h3>
+<p>The ISD issues the prescribed ISD invoice or credit note containing the required particulars, including ISD name/address/GSTIN, unique serial number, date, recipient details and GSTIN, and amount of credit distributed. The ISD reports the distribution in Form GSTR-6 within the applicable due date. The recipient verifies the distributed credit reflected in its records/auto-drafted statement and claims only eligible credit in its GSTR-3B, subject to sections 16 and 17.</p>
+<h3>4.5 Credit notes and corrections</h3>
+<p>Where the original vendor invoice is amended, a credit note is received, the recipient mapping was wrong or the distribution calculation requires correction, the ISD team should identify the original distribution document, determine the proper correction mechanism under the applicable rules and return period, issue the required ISD credit note or corrected document where permitted, and preserve the audit trail. Avoid correcting only the accounting ledger without correcting the statutory document/return where required.</p>
+</section>
+
+<section id="crosscharge">
+<h2>5. Cross-charge: what it is and when it applies</h2>
+<h3>5.1 Internally generated services</h3>
+<p>Cross-charge is generally examined where the head office or another registration provides its own service to a distinct-person branch. Examples include a central finance team performing branch accounting, HR recruitment and administration, IT support by internal staff, procurement management, or management support. Whether these activities constitute a supply and how to value them depends on the facts, contracts, functions, documentation and applicable law.</p>
+<p>For distinct-person supplies covered by Schedule I, absence of consideration does not automatically take the transaction outside GST. Therefore, companies should assess the underlying activity and not rely solely on whether the branch paid an amount to the head office.</p>
+<h3>5.2 Do not cross-charge a third-party invoice as a substitute for mandatory ISD</h3>
+<p>Where the transaction is distribution of ITC on a third-party common input service falling within the amended ISD provisions, use the mandatory ISD route. Raising a normal cross-charge tax invoice solely to pass on that third-party input tax credit should not be used to circumvent the amended section 20 and Rule 39 requirements.</p>
+<p>Where the head office separately supplies its own service, analyse that service independently. A vendor invoice for a software subscription distributed through ISD and a genuine internal IT support service supplied by head office are conceptually different transactions. The company should avoid charging the same underlying service twice or distributing the same credit twice.</p>
+<h3>5.3 Cross-charge documentation</h3>
+<p>For a taxable cross-charge supply, the supplier registration should issue a tax invoice complying with section 31 and Rule 46, report the outward supply in the applicable GSTR-1 and discharge tax in GSTR-3B. The recipient registration evaluates ITC under sections 16 and 17, including business use, document validity, receipt of service and blocked-credit restrictions.</p>
+</section>
+
+<section id="decision">
+<h2>6. ISD vs cross-charge: transaction decision matrix</h2>
+<div class="table-wrap"><table><thead><tr><th>Transaction pattern</th><th>Primary analysis</th><th>Typical route</th></tr></thead><tbody>
+<tr><td>Third-party consultancy invoice centrally received for several GSTINs</td><td>Input service for/on behalf of distinct persons; identify actual beneficiaries and eligible credit.</td><td>Mandatory ISD distribution where covered by amended section 20.</td></tr>
+<tr><td>Third-party common service subject to RCM</td><td>Determine who discharges RCM and apply amended ISD rules for eligible credit distribution.</td><td>Follow the statutory RCM payment and ISD distribution procedure; maintain linked documents.</td></tr>
+<tr><td>Head-office employees perform HR or accounting services for branches</td><td>Determine whether internally generated service is supplied between distinct persons and how it is valued.</td><td>Cross-charge tax invoice where taxable supply obligations apply.</td></tr>
+<tr><td>Head office buys office furniture and sends it to branch</td><td>This is goods/capital goods, not an input service merely because centrally procured.</td><td>Analyse goods movement/supply, tax invoice or delivery document, e-way bill and ITC separately.</td></tr>
+<tr><td>Expense solely attributable to head office's own activity</td><td>Check whether the head office is the sole recipient and whether credit is eligible.</td><td>No distribution to unrelated branches merely for convenience.</td></tr>
+<tr><td>One service benefits only one identified branch</td><td>Establish attribution and eligibility.</td><td>Distribute only to that recipient through the required ISD route if within scope.</td></tr>
+</tbody></table></div>
+<p>Use this table as a screening tool, not as a substitute for analysing the invoice, contract, recipient, place of supply and tax period.</p>
+</section>
+
+<section id="valuation">
+<h2>7. Rule 28 valuation with worked examples</h2>
+<h3>7.1 Rule 28 hierarchy</h3>
+<p>For supplies between distinct persons or related persons covered by Rule 28, the valuation rules generally refer to open market value; where that is not available, the prescribed like-kind-and-quality or cost-based methods may become relevant, subject to the exact rule wording and applicable options/provisos.</p>
+<p>The second proviso to Rule 28 provides that where the recipient is eligible for full input tax credit, the value declared in the invoice is deemed to be the open market value. Rule 28 also contains an option concerning 90% of the price charged for like-kind-and-quality supplies in the specified circumstances, and Rule 30 provides a cost-based method where applicable. Check the current consolidated rule text before applying a method to a specific transaction.</p>
+<h3>7.2 Example A: recipient eligible for full ITC</h3>
+<p>Head office provides an internally generated support service to Branch B. The invoice declares a value of ₹2,00,000 plus applicable GST. If Branch B is eligible for full ITC on the supply and the second proviso to Rule 28 applies, the declared invoice value is deemed to be open market value for the Rule 28 purpose, subject to the actual facts and other legal conditions.</p>
+<div class="table-wrap"><table><thead><tr><th>Particular</th><th>Amount</th></tr></thead><tbody><tr><td>Declared taxable value</td><td>₹2,00,000</td></tr><tr><td>Illustrative IGST at 18%</td><td>₹36,000</td></tr><tr><td>Invoice total</td><td>₹2,36,000</td></tr></tbody></table></div>
+<p>The 18% rate is used only as an illustration. The applicable rate must be determined from the actual service classification and rate notification.</p>
+<h3>7.3 Example B: recipient is not eligible for full ITC</h3>
+<p>If a branch makes exempt supplies or has restricted credit, do not automatically rely on the full-ITC proviso. Document the valuation method and supporting evidence under Rule 28 and the applicable valuation rules. Depending on the facts, this may require comparable market value, like-kind-and-quality value, or a prescribed cost-based approach.</p>
+<p>Example of a cost working: direct personnel cost ₹4,00,000; allocated support overhead ₹1,00,000; total cost ₹5,00,000. If Rule 30 is properly applicable and the 110% cost method is adopted, the illustrative value is ₹5,50,000. This is not a blanket rule that every cross-charge must always be at 110% of employee cost; first establish the applicable valuation method and whether a Rule 28 proviso or other method applies.</p>
+<h3>7.4 Employee salary and internal services</h3>
+<p>Circular No. 199/11/2023-GST clarified, under the then-applicable law, that salary cost of head-office employees involved in internally generated services was not mandatorily required to be included in the taxable value in the specified circumstances, including where full ITC was unavailable. Apply the circular carefully to its exact scope and relevant tax period, and read it with subsequent amendments and the actual nature of the transaction. Do not assume every employee cost is either automatically taxable or automatically excluded.</p>
+</section>
+
+<section id="accounting">
+<h2>8. Accounting entries and ledger procedure</h2>
+<p>Accounting should distinguish (a) vendor expense and input tax at the registration receiving the invoice, (b) credit distribution by the ISD, and (c) a separately supplied cross-charge service. The following entries are illustrative and should be mapped to the company's chart of accounts and accounting policy.</p>
+<h3>8.1 Vendor invoice received by ISD for common service</h3>
+<p>Assume vendor invoice: professional service ₹1,00,000 plus GST ₹18,000, fully eligible and to be distributed to branches.</p>
+<pre><code>Common Input Service / Clearing Expense Dr       1,00,000
+Input GST Credit Receivable Dr                       18,000
+    To Vendor Payable                              1,18,000</code></pre>
+<p>The exact expense/clearing ledger depends on whether the ISD registration is also the operating registration and the accounting system used. Maintain the original vendor invoice reference and do not treat ISD credit distribution as a second purchase expense.</p>
+<h3>8.2 ISD distribution in accounting records</h3>
+<p>At the ISD/central ledger level, record the transfer of credit to recipient GSTINs through an ISD distribution clearing account, with no second outward-service revenue or GST output liability merely because eligible ITC is distributed by an ISD document.</p>
+<pre><code>ISD Credit Distribution Clearing Dr               18,000
+    To Input GST Credit Available for Distribution 18,000</code></pre>
+<p>In the branch books, record the ISD credit receivable/ITC based on the prescribed ISD document and the company's accounting configuration. Avoid recognising the same vendor expense again in the branch if it was already booked centrally; use an agreed expense-allocation or management reporting approach that does not duplicate statutory credit.</p>
+<h3>8.3 Cross-charge invoice for internal service</h3>
+<p>Assume head office supplies taxable internal support to Branch B for a taxable value of ₹2,00,000 and illustrative IGST of ₹36,000.</p>
+<p><b>Head office books:</b></p>
+<pre><code>Branch B Inter-unit Receivable Dr                 2,36,000
+    To Inter-unit Service Recovery / Revenue      2,00,000
+    To Output IGST Payable                          36,000</code></pre>
+<p><b>Branch B books:</b></p>
+<pre><code>Internal Support Service Expense Dr               2,00,000
+Input IGST Credit Receivable Dr                      36,000
+    To Head Office Inter-unit Payable             2,36,000</code></pre>
+<p>Where registrations belong to the same legal entity, the company may use inter-unit clearing accounts for consolidation. Ensure the accounting system's statutory GST ledgers still record the outward liability and recipient ITC in the correct GSTIN books. Eliminate inter-unit income/expense on consolidation where appropriate, but do not eliminate GST statutory liabilities or credit in the GST returns.</p>
+<h3>8.4 GST payment and settlement</h3>
+<p>GST liability on cross-charge is discharged by the supplier registration through its normal electronic liability/cash/credit ledger as legally permitted. The recipient claims ITC only after meeting statutory conditions. ISD itself distributes credit; it does not issue a normal taxable supply invoice merely for the act of distributing credit.</p>
+</section>
+
+<section id="rcm">
+<h2>9. Common services under reverse charge</h2>
+<p>After the amendment, the ISD definition and section 20 cover input services liable to tax under section 9(3) or 9(4), subject to the applicable statutory conditions. A common legal service or other notified RCM service must be reviewed carefully: identify the recipient liable to pay RCM, the registration that pays it, and the procedure by which eligible credit is made available and distributed through the ISD mechanism.</p>
+<p>Do not assume an ISD registration can simply pay every RCM liability as though it were an ordinary operating GST registration. Coordinate the regular registration and ISD registration, follow Rule 39 and Rule 54 as amended, and link the RCM payment evidence, invoice/document, credit distribution document and recipient-wise allocation.</p>
+<div class="callout"><b>Control recommendation:</b> Maintain an RCM-to-ISD tracker with vendor, service category, RCM notification entry, liable GSTIN, tax payment period, proof of payment, eligible ITC, ISD document number and recipient GSTIN-wise distribution.</div>
+</section>
+
+<section id="returns">
+<h2>10. GST returns, documents and reconciliations</h2>
+<h3>10.1 ISD return – GSTR-6</h3>
+<p>The ISD reports credit received and distributed through Form GSTR-6 within the prescribed due date. Reconcile the vendor invoice register, eligible credit register, ISD distribution register, ISD documents issued and GSTR-6 before filing. Check the current portal utility and due-date notifications for the relevant tax period.</p>
+<h3>10.2 Operating GSTIN – GSTR-1 and GSTR-3B</h3>
+<p>A GSTIN issuing cross-charge tax invoices reports those outward supplies in GSTR-1 and discharges output tax through GSTR-3B. The recipient GSTIN reconciles the cross-charge invoice and claims eligible ITC in GSTR-3B. The ISD's credit distribution is not to be reported as a regular taxable outward supply merely because an ISD document is issued.</p>
+<h3>10.3 Monthly reconciliation files</h3>
+<ul>
+<li>Vendor invoice register vs GSTR-2B / available invoice data.</li>
+<li>Vendor GSTIN, invoice recipient GSTIN and service beneficiary mapping.</li>
+<li>ISD credit received vs credit distributed vs credit remaining undistributed.</li>
+<li>ISD distribution register vs GSTR-6 filed data and recipient GSTIN records.</li>
+<li>Cross-charge invoice register vs GSTR-1, GSTR-3B output liability and branch ITC claim.</li>
+<li>RCM register vs tax payment, ITC eligibility and ISD distribution trail.</li>
+<li>Inter-unit balances vs statutory GST returns and monthly trial balance.</li>
+</ul>
+</section>
+
+<section id="example">
+<h2>11. Complete monthly company example</h2>
+<p>XYZ Private Limited has a head office in Telangana and branches in Karnataka and Maharashtra, each with a separate GSTIN under the same PAN. During June, the following transactions occur:</p>
+<div class="table-wrap"><table><thead><tr><th>Transaction</th><th>Facts</th><th>Process</th></tr></thead><tbody>
+<tr><td>Cloud ERP subscription</td><td>Vendor invoice ₹3,00,000 plus GST; used by all three registrations.</td><td>Classify as third-party common input service; establish eligible recipients and distribute credit through ISD using prescribed allocation.</td></tr>
+<tr><td>Legal service under RCM</td><td>Central legal invoice used for HO and branches.</td><td>Identify RCM-liable regular registration, discharge RCM as prescribed, then follow amended ISD process for eligible credit distribution.</td></tr>
+<tr><td>Central HR work</td><td>HO employees recruit and administer branch staff.</td><td>Analyse internally generated service and distinct-person supply; determine documented valuation under Rule 28 and issue cross-charge invoice where required.</td></tr>
+<tr><td>Furniture purchased for Karnataka</td><td>Goods purchased by HO and moved to Karnataka branch.</td><td>Do not treat as ISD input service. Analyse goods supply/movement, tax invoice, e-way bill and ITC separately.</td></tr>
+</tbody></table></div>
+<p><b>Month-end sequence:</b> Accounts payable tags service invoices by category; tax team confirms recipients and credit eligibility; ISD team calculates and issues distribution documents; operating GSTINs reconcile ISD credits; HO tax team prepares cross-charge invoices for separately supplied internal services; return preparer reconciles GSTR-6, GSTR-1 and GSTR-3B; reviewer signs off the reconciliations and unresolved exceptions.</p>
+</section>
+
+<section id="controls">
+<h2>12. Company implementation and internal controls</h2>
+<h3>12.1 Master data to maintain</h3>
+<ul>
+<li>Company PAN and all GSTINs, State codes, registration type and return frequency.</li>
+<li>ISD GSTIN and responsible personnel; authorised signatory and filing calendar.</li>
+<li>Vendor master with service category, RCM applicability, standard billing GSTIN and beneficiary GSTIN mapping.</li>
+<li>Service attribution matrix: exclusive recipient, multiple recipients, allocation basis and supporting business rationale.</li>
+<li>Turnover data required for Rule 39, with source, period and reviewer approval.</li>
+<li>Cross-charge service catalogue, cost pools, allocation keys, valuation method and invoice frequency.</li>
+</ul>
+<h3>12.2 Suggested responsibility matrix</h3>
+<div class="table-wrap"><table><thead><tr><th>Role</th><th>Responsibility</th></tr></thead><tbody>
+<tr><td>Accounts payable</td><td>Capture invoice correctly, validate GSTIN, flag common service/RCM and attach contract or purchase order.</td></tr>
+<tr><td>Business/service owner</td><td>Confirm which GST registrations actually use or benefit from the service.</td></tr>
+<tr><td>ISD preparer</td><td>Check eligibility, calculate distribution, issue documents and prepare GSTR-6 workings.</td></tr>
+<tr><td>GST reviewer</td><td>Review attribution, Rule 39 ratio, tax type, amendments, duplicate credit and return reconciliation.</td></tr>
+<tr><td>Finance controller</td><td>Approve allocation policies, cost pools, cross-charge valuation and exception resolution.</td></tr>
+</tbody></table></div>
+<h3>12.3 Recommended file structure</h3>
+<p>Maintain a monthly folder with: vendor invoices, contracts/engagement letters, beneficiary confirmations, attribution working, turnover support, ISD calculation, ISD invoices/credit notes, GSTR-6 acknowledgement, RCM proof, cross-charge workings and invoices, GSTR-1/3B reconciliation, exception log and reviewer sign-off.</p>
+</section>
+
+<section id="mistakes">
+<h2>13. Common mistakes and their consequences</h2>
+<ol>
+<li><b>Continuing the old cross-charge option for third-party common input services after 1 April 2025.</b> This can create non-compliance with the amended mandatory ISD route and disputes over recipient ITC.</li>
+<li><b>Distributing all head-office credit to every GSTIN.</b> Credit must be attributable to the recipient(s); maintain a defensible mapping and do not allocate unrelated or exclusive-use services across all branches.</li>
+<li><b>Using total PAN turnover without applying Rule 39's exact recipient and period requirements.</b> A wrong denominator changes credit allocation and can lead to excess or deficient distribution.</li>
+<li><b>Confusing ISD distribution with cross-charge revenue.</b> An ISD document distributes credit; a cross-charge invoice records a taxable supply. Accounting and return reporting differ.</li>
+<li><b>Charging GST twice on the same service.</b> Separate the third-party input service distributed through ISD from any distinct internal service actually supplied by head office.</li>
+<li><b>Ignoring blocked or restricted ITC.</b> Distribution does not cure ineligibility under sections 16 and 17 or applicable apportionment rules.</li>
+<li><b>Failing to track RCM.</b> A credit claim without a correct RCM payment and statutory distribution trail may be challenged.</li>
+<li><b>Booking an inter-unit journal but not issuing/reporting the required tax invoice.</b> Accounting entries do not replace statutory documentation and return obligations.</li>
+<li><b>Using 110% of cost as an automatic cross-charge value.</b> Apply Rule 28 hierarchy and its provisos first; a cost-plus method is not a universal shortcut.</li>
+<li><b>Failing to reconcile ISD credit with branch GSTR-3B.</b> This can cause missed credit, duplicate claims or unexplained differences during audit.</li>
+</ol>
+</section>
+
+<section id="audit">
+<h2>14. Audit documentation and departmental queries</h2>
+<p>For audit readiness, a company should be able to explain why a vendor service was treated as common or exclusive, which GSTINs benefited, why a particular turnover or allocation basis was used, how the eligible credit was calculated, and how the credit reached the recipient's return.</p>
+<h3>Typical audit query</h3>
+<p><b>Query:</b> “The head office availed ITC on a common software invoice. Explain why the credit was not distributed to all branches / why it was distributed in the stated ratio / why a cross-charge invoice was issued.”</p>
+<p><b>Suggested response preparation:</b></p>
+<ol>
+<li>Identify the invoice, service contract, vendor GSTIN, invoice recipient GSTIN and tax period.</li>
+<li>Explain the service's actual use and beneficiary GSTINs, supported by business owner confirmation, user licences, location records or contract scope.</li>
+<li>State the applicable law for that period, distinguishing periods before and after 1 April 2025.</li>
+<li>Attach ISD registration details, Rule 39 calculation, ISD documents and GSTR-6 acknowledgement, where applicable.</li>
+<li>For cross-charge, attach the service description, internal service agreement/policy, valuation working, invoice, GSTR-1 and GSTR-3B evidence, and recipient ITC reconciliation.</li>
+<li>Disclose and explain any exceptions, corrections or credit reversals, with supporting documents.</li>
+</ol>
+<p>Do not use a generic explanation that “all branches belong to the same company.” The distinct-person framework makes GST registration-wise analysis essential.</p>
+</section>
+
+<section id="caselaw">
+<h2>15. Case law and judicial position</h2>
+<p>ISD and cross-charge are substantially governed by the statutory text, Rule 28/Rule 39 and CBIC clarifications. A judgment should be cited only after checking the actual decision, court, date, issue, operative order and subsequent appeal/stay status. A ruling concerning a foreign related-party service, employee secondment, valuation or a different tax period should not automatically be treated as deciding the domestic ISD distribution question.</p>
+<h3>15.1 Circular No. 199/11/2023-GST – administrative clarification, not a court judgment</h3>
+<p>This CBIC circular is not a case law. It is nevertheless a key interpretive reference for head-office/branch questions under the pre-amendment framework. It clarified the then-permissible options for third-party common input services and addressed valuation of internally generated services, including employee cost and the full-ITC proviso under Rule 28. For periods from 1 April 2025, read it alongside the amended law and do not rely on the earlier optional ISD position where the amended statute now mandates ISD.</p>
+<h3>15.2 How to evaluate a judgment before relying on it</h3>
+<ul>
+<li>Confirm whether it is a Supreme Court, jurisdictional High Court, other High Court, GST Appellate Tribunal, AAR or AAAR ruling.</li>
+<li>Confirm whether the issue actually concerns distinct-person supply, valuation, employee cost, ISD distribution or a different question.</li>
+<li>Check the tax period and the law in force on that date.</li>
+<li>Check whether the order is stayed, appealed, reversed or distinguished by a later judgment or statutory amendment.</li>
+<li>State the outcome narrowly and explain its practical relevance without extending the ratio beyond the facts and issue decided.</li>
+</ul>
+<p><b>Research note:</b> In the official sources reviewed for this article, I did not verify a final reported judicial decision directly deciding the post-1 April 2025 mandatory ISD regime. Rather than insert an unverified case name or overstate a related-party/employee-cost judgment, this guide identifies the official statutory and CBIC framework. A future update should add any directly relevant reported judgments only after checking the full text and subsequent status.</p>
+</section>
+
+<section id="checklist">
+<h2>16. Monthly checklist and MIS formats</h2>
+<h3>16.1 ISD monthly close checklist</h3>
+<ul class="checklist">
+<li>All centrally received service invoices identified and classified.</li>
+<li>Vendor GSTIN, recipient GSTIN and service period validated.</li>
+<li>Beneficiary GSTINs confirmed by business owners.</li>
+<li>Eligibility, blocked credit and apportionment reviewed.</li>
+<li>RCM services identified and payment responsibility confirmed.</li>
+<li>Rule 39 recipient set, turnover period and calculation independently checked.</li>
+<li>ISD invoices/credit notes issued with unique numbering and correct tax character.</li>
+<li>GSTR-6 reconciled to invoice and distribution registers and filed.</li>
+<li>Recipient GSTINs reconciled to distributed credit and GSTR-3B.</li>
+<li>Cross-charge services separately evaluated, valued, invoiced and reported.</li>
+<li>Differences and corrections logged with owner and closure date.</li>
+</ul>
+<h3>16.2 Suggested ISD distribution register columns</h3>
+<p>Financial year | Tax period | Vendor name | Vendor GSTIN | Original invoice no./date | Service description | Taxable value | IGST | CGST | SGST | RCM flag | Eligible ITC | Recipient GSTIN | Attribution basis | Relevant turnover | Distribution ratio | Credit distributed | ISD document no./date | GSTR-6 period | Recipient reconciliation status | Reviewer remarks.</p>
+<h3>16.3 Suggested cross-charge register columns</h3>
+<p>Supplier GSTIN | Recipient GSTIN | Service description | Period | Cost pool | Allocation key | Valuation method | Taxable value | GST rate | Tax amount | Invoice number/date | GSTR-1 period | GSTR-3B tax payment status | Recipient ITC status | Inter-unit balance | Supporting document link.</p>
+</section>
+
+<section id="faq">
+<h2>17. Frequently asked practical questions</h2>
+<h3>Q1. From when is ISD mandatory?</h3>
+<p>The relevant amendments to the ISD framework are effective from 1 April 2025. Identify whether the input service and credit distribution fall within the amended statutory scope and apply the law relevant to the tax period.</p>
+<h3>Q2. Can we still cross-charge after 1 April 2025?</h3>
+<p>Yes, cross-charge remains relevant for genuine taxable supplies of internally generated services and other distinct-person supplies. It should not be used as a substitute for mandatory ISD distribution of qualifying third-party input-service credit.</p>
+<h3>Q3. Does every head-office expense need to be distributed?</h3>
+<p>No. Determine whether it is an input service attributable to distinct persons, who actually benefits, and whether credit is eligible. Exclusive head-office expenses are not automatically distributed to branches.</p>
+<h3>Q4. Is employee salary always included in cross-charge value?</h3>
+<p>No blanket conclusion should be drawn. Apply Rule 28 and its provisos, relevant CBIC clarification, the actual service facts and the tax period. Maintain a defensible valuation methodology.</p>
+<h3>Q5. Can the branch claim all credit distributed by ISD?</h3>
+<p>No. ISD distribution does not override sections 16 and 17. The recipient must independently satisfy ITC eligibility, documentation, business-use and restriction requirements.</p>
+<h3>Q6. What if the vendor bills the regular GSTIN instead of the ISD GSTIN?</h3>
+<p>Do not simply ignore the invoice or pass it through a normal cross-charge without review. Examine the amended provisions, Rule 54(1A) and the applicable invoice/document route, and maintain a clear audit trail.</p>
+<h3>Q7. Should cross-charge be eliminated in consolidated financial statements?</h3>
+<p>Inter-unit income and expense may be eliminated for consolidation under the applicable accounting framework. That consolidation entry does not cancel GST invoice, output tax, recipient ITC or return obligations at the individual GSTIN level.</p>
+<h3>Q8. Is the same allocation ratio used for ISD and cross-charge?</h3>
+<p>Not necessarily. ISD distribution follows section 20 and Rule 39. Cross-charge valuation follows section 15 and Rule 28, based on the nature and value of the service. Do not use one calculation mechanically for both.</p>
+</section>
+
+<section id="sources">
+<h2>18. Legal references and further study</h2>
+<p>Use the following official materials to verify the consolidated law and amendments applicable to the relevant tax period:</p>
+<ul>
+<li><a href="https://taxinformation.cbic.gov.in/" target="_blank" rel="noopener">CBIC Tax Information Portal</a> – consolidated Acts, Rules, notifications, circulars and orders.</li>
+<li><a href="https://taxinformation.cbic.gov.in/view-pdf/1003173/ENG/Circulars" target="_blank" rel="noopener">CBIC Circular No. 199/11/2023-GST</a> – head-office/branch-office clarification dated 17 July 2023.</li>
+<li><a href="https://www.gstcouncil.gov.in/node/4974" target="_blank" rel="noopener">GST Council 52nd meeting material</a> – background to the proposed ISD amendment and policy rationale.</li>
+<li><a href="https://cbic-gst.gov.in/gst-invoice-rules.html" target="_blank" rel="noopener">CBIC GST invoice rules</a> – invoice and special ISD document requirements.</li>
+<li><a href="https://idtc.icai.org/" target="_blank" rel="noopener">ICAI Indirect Taxes Committee</a> – GST publications, background material, handbooks and topic-wise study resources. Refer to the current edition relevant to the subject.</li>
+</ul>
+<p><b>Disclaimer:</b> This article is for educational and professional reference. GST treatment depends on the transaction facts, applicable law, notifications, State enactments, tax period and subsequent judicial developments. Verify the current consolidated provisions and obtain professional advice for material or disputed transactions.</p>
+</section>
+</article>
+</main><aside class="ad-rail ad-rail-right" aria-label="Right ad column"></aside></div>
+<footer class="footer"><div class="wrap footer-inner">
+<div class="footer-brand"><strong>GST Reconciliation</strong><p>Practical GST knowledge, reconciliation methods and tools for accountants, finance teams, tax professionals and businesses.</p></div>
+<div class="footer-links"><strong>Useful Resources</strong><a href="https://gstreconciliation.in/">Home</a><a href="https://gstreconciliation.in/articles.html">GST Knowledge</a><a href="https://gstreconciliation.in/gst-act.html">GST Act</a><a href="https://gstreconciliation.in/compliance.html">GST Compliance</a></div>
+<div class="footer-contact"><strong>Contact</strong><span>For feedback and GST knowledge resources</span><a href="mailto:uday@gstreconciliation.in">uday@gstreconciliation.in</a><a href="tel:+919052160079">+91 90521 60079</a></div>
+</div><div class="wrap footer-bottom"><span>GST • Accounting • Reconciliation • Compliance</span><span>Practical GST knowledge resource</span></div></footer>
+</body></html>
