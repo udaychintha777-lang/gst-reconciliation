@@ -32,6 +32,29 @@ footer{background:#102a43;color:#d9e5ef;margin-top:40px;padding:42px 0 18px}.foo
 @media(max-width:900px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.hero h1{font-size:34px}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.wrap{padding:0 15px}.hero{padding:38px 0 32px}.hero h1{font-size:29px}.hero p{font-size:16px}.stats{grid-template-columns:1fr 1fr;gap:9px}.stat{padding:12px}.stat strong{font-size:17px}.card{padding:20px}.card h2{font-size:23px}table{font-size:13px;display:block;overflow-x:auto}.footer-grid{grid-template-columns:1fr}.page{padding-top:22px}}
 </style>
+<style>
+/* GST Reconciliation site-wide width standard — matches homepage exactly. */
+.gst-site-width-standard,
+.wrap,
+.legal-wrap,
+.rule-wrap,
+.section-wrap,
+.section-page-wrap,
+.legal-container,
+.legal-page-wrap,
+.site-container,
+main.container,
+header .container,
+.hero .container,
+footer .container {
+  width: min(1400px, calc(100% - 64px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+</style>
+
 </head>
 <body>
 <header class="hero"><div class="wrap">

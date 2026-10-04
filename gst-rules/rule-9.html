@@ -30,6 +30,29 @@ footer{background:#102a43;color:#d9e5ef;margin-top:40px;padding:42px 0 18px}.foo
 @media(max-width:900px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.sidebar{order:-1}.flow{grid-template-columns:1fr 1fr}.navlinks{display:none}}
 @media(max-width:620px){.wrap{padding:0 15px}.hero{padding:38px 0 32px}.hero h1{font-size:32px}.hero p{font-size:16px}.stats{grid-template-columns:1fr}.card{padding:19px}.footer-grid{grid-template-columns:1fr}.flow{grid-template-columns:1fr}table{font-size:13px;display:block;overflow-x:auto}}
 </style>
+<style>
+/* GST Reconciliation site-wide width standard — matches homepage exactly. */
+.gst-site-width-standard,
+.wrap,
+.legal-wrap,
+.rule-wrap,
+.section-wrap,
+.section-page-wrap,
+.legal-container,
+.legal-page-wrap,
+.site-container,
+main.container,
+header .container,
+.hero .container,
+footer .container {
+  width: min(1400px, calc(100% - 64px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+</style>
+
 </head>
 <body>
 <header><div class="wrap nav"><a class="brand" href="/">GST Reconciliation</a><nav class="navlinks"><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">Articles</a></nav></div></header>
