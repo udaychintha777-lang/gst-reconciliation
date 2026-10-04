@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Advanced Duplicate Invoice Checker | GSTReconciliation.in</title>
+<meta name="description" content="Advanced GST duplicate invoice checker. Upload purchase or sales Excel/CSV files and automatically detect exact duplicates, repeated invoice numbers, normalized invoice-number duplicates, near duplicates and same-supplier same-value suspicious records.">
+<link rel="canonical" href="https://gstreconciliation.in/tools/duplicate-invoice-checker.html">
+<meta name="google-adsense-account" content="ca-pub-8493595246856929">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/xlsx@0.18.5/dist/xlsx.full.min.js"></script>
+<script>
+window.GST_GA4_ID='G-NBKTXWJ20G';window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+if(window.GST_GA4_ID){var gas=document.createElement('script');gas.async=true;gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);document.head.appendChild(gas);gtag('js',new Date());gtag('config',window.GST_GA4_ID,{anonymize_ip:true});}
+function gstAnalytics(e,p){try{if(window.GST_GA4_ID&&typeof gtag==='function')gtag('event',e,p||{});}catch(x){}}
+</script>
+<style>
+:root{--navy:#09254b;--blue:#1769e0;--bg:#f5f9fe;--line:#d9e4f1;--text:#17304f;--muted:#61748c;--red:#c33b3b;--amber:#a76b00;--green:#147a54}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.55}a{text-decoration:none;color:inherit}.wrap{max-width:1240px;margin:auto;padding:0 20px}
+.nav{background:var(--navy);color:#fff}.navin{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:800}.logo{width:43px;height:43px;border-radius:11px;background:#2487ed;display:grid;place-items:center}.brand small{display:block;font-size:11px;color:#c7d7eb;font-weight:500}.links{display:flex;gap:22px;font-size:13px;font-weight:700}.menu{display:none;background:transparent;color:#fff;border:1px solid #56718f;border-radius:8px;padding:7px 9px}
+.hero{background:linear-gradient(135deg,#0a2a55,#1769d7);color:#fff;padding:48px 0}h1{font-size:39px;line-height:1.12;margin:5px 0 10px}.hero p{max-width:930px;color:#dbe9fb;margin:0}
+main{padding:28px 0 55px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 8px 26px rgba(30,70,120,.07);margin-bottom:18px}.upload{border:2px dashed #b9cbe0;text-align:center;padding:30px;border-radius:14px;background:#fbfdff}.upload input{display:none}.upload label{display:inline-block;background:#1769e0;color:#fff;padding:12px 18px;border-radius:9px;font-weight:800;cursor:pointer}.hint{font-size:11px;color:var(--muted);margin-top:8px}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center}button{border:0;border-radius:9px;padding:10px 14px;font-weight:800;cursor:pointer;background:#1769e0;color:#fff}button.secondary{background:#eef5ff;color:#1457ad}select,input[type=search]{border:1px solid #cbd8e8;border-radius:9px;padding:10px;background:#fff;font:inherit}.metrics{display:grid;grid-template-columns:repeat(5,1fr);gap:10px}.metric{border:1px solid var(--line);border-radius:10px;padding:12px;background:#f8fbff}.metric strong{display:block;font-size:21px}.metric span{font-size:10px;color:var(--muted)}.table-wrap{overflow:auto;max-height:650px;border:1px solid var(--line);border-radius:10px}table{border-collapse:collapse;width:100%;font-size:11px;white-space:nowrap}th,td{padding:8px;border-bottom:1px solid #e7edf4;text-align:left}th{position:sticky;top:0;background:#eef4fa;z-index:1}.severity-exact{color:var(--red);font-weight:900}.severity-near{color:var(--amber);font-weight:900}.severity-pattern{color:#6c5b00;font-weight:800}.ok{color:var(--green);font-weight:800}.note{background:#fff8e7;border:1px solid #f0d59d;border-radius:11px;padding:13px;font-size:11px;color:#6d5000}.footer{background:var(--navy);color:#cbd9e9;padding:28px 0;font-size:12px}
+@media(max-width:900px){.links{display:none}.menu{display:block}.metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.metrics{grid-template-columns:1fr 1fr}h1{font-size:31px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+<a class="brand" href="/"><span class="logo">GST</span><span>GST Reconciliation<small>Practical GST Tools &amp; Knowledge</small></span></a>
+<nav class="links"><a href="/">Home</a><a href="/reconciliation.html">Reconciliation Tool</a><a href="/articles.html">GST Knowledge</a><a href="/gst-act.html">GST Act</a><a href="/compliance.html">Compliance</a></nav>
+<button class="menu">☰</button>
+</div></header>
+
+<header class="hero"><div class="wrap">
+<div style="font-size:11px;font-weight:900;letter-spacing:.05em;color:#8cc5ff">GST TOOL • INVOICE CONTROL</div>
+<h1>Advanced Duplicate Invoice Checker</h1>
+<p>Upload an Excel or CSV purchase/sales register and let the tool automatically identify exact duplicates, repeated invoice numbers, normalized invoice-number duplicates, near-duplicate invoice numbers and suspicious same-supplier/same-value patterns.</p>
+</div></header>
+
+<main><div class="wrap">
+<section class="card">
+<h2>Upload invoice data</h2>
+<div class="upload">
+<input id="file" type="file" accept=".xlsx,.xls,.csv" multiple>
+<label for="file">Choose Excel / CSV file(s)</label>
+<div class="hint">Multiple files are supported. Processing happens in your browser. The files are not uploaded to this website by this page.</div>
+</div>
+</section>
+
+<section class="card" id="summary" style="display:none">
+<h2>Duplicate risk summary</h2>
+<div class="metrics">
+<div class="metric"><strong id="records">0</strong><span>Records scanned</span></div>
+<div class="metric"><strong id="exact">0</strong><span>Exact duplicate groups</span></div>
+<div class="metric"><strong id="near">0</strong><span>Near-duplicate groups</span></div>
+<div class="metric"><strong id="pattern">0</strong><span>Suspicious patterns</span></div>
+<div class="metric"><strong id="flagged">0</strong><span>Records flagged</span></div>
+</div>
+</section>
+
+<section class="card" id="results" style="display:none">
+<div class="toolbar">
+<select id="filter"><option value="ALL">All findings</option><option value="EXACT">Exact duplicate</option><option value="NEAR">Near duplicate</option><option value="PATTERN">Suspicious pattern</option></select>
+<input id="search" type="search" placeholder="Filter supplier GSTIN, invoice no., amount...">
+<button onclick="downloadReport()">Download findings CSV</button>
+<button class="secondary" onclick="clearResults()">Clear</button>
+</div>
+<div style="margin-top:14px" class="table-wrap"><table><thead><tr><th>Risk</th><th>Reason</th><th>Source file</th><th>Row</th><th>Supplier GSTIN</th><th>Invoice No.</th><th>Invoice Date</th><th>Taxable Value</th><th>Tax</th><th>Matched/related record</th></tr></thead><tbody id="tbody"></tbody></table></div>
+</section>
+
+<section class="card">
+<h2>How this checker saves manual review time</h2>
+<ul style="font-size:13px;color:#536981">
+<li><b>Exact duplicate:</b> same supplier GSTIN + normalized invoice number + invoice date + taxable value.</li>
+<li><b>Invoice-number duplicate:</b> same supplier and normalized invoice number even where dates/values differ.</li>
+<li><b>Near duplicate:</b> minor invoice-number variations such as spaces, hyphens, slashes or one-character changes can be surfaced for review.</li>
+<li><b>Cross-file duplicate:</b> the same invoice can be identified even when the register is split across several Excel/CSV files.</li>
+<li><b>Suspicious pattern:</b> same supplier + same invoice date + same taxable value/tax combination across different invoice numbers is flagged for human review.</li>
+</ul>
+<div class="note"><b>Important:</b> A duplicate flag is an exception, not a legal conclusion. Legitimate amended invoices, debit/credit notes, recurring billing, different branches, purchase orders and invoice series can create similar patterns. Always review the source document before deleting or reversing an entry.</div>
+</section>
+</div></main>
+
+<footer class="footer"><div class="wrap"><b>GST Reconciliation</b><p>Practical GST tools, reconciliation and compliance resources.</p><p>Verify source documents and the applicable GST rules before taking action.</p></div></footer>
+
+<script>
+let allRows=[], findings=[];
+const fileEl=document.getElementById('file');
+fileEl.addEventListener('change',async()=>{
+  allRows=[];findings=[];
+  for(const f of fileEl.files){
+    const buf=await f.arrayBuffer();
+    const wb=XLSX.read(buf,{type:'array',cellDates:true});
+    for(const sh of wb.SheetNames){
+      const rows=XLSX.utils.sheet_to_json(wb.Sheets[sh],{defval:'',raw:true});
+      rows.forEach((r,i)=>allRows.push({...r,__file:f.name,__sheet:sh,__row:i+2}));
+    }
+  }
+  analyze();render();
+});
+function key(v){return String(v??'').trim().toUpperCase().replace(/[^A-Z0-9]/g,'')}
+function textKey(v){return String(v??'').trim().toUpperCase().replace(/\\s+/g,'')}
+function num(v){if(typeof v==='number')return v;let x=String(v??'').replace(/[,₹ ]/g,'');return Number(x)||0}
+function pick(r,terms){
+ const ks=Object.keys(r);
+ for(const t of terms){const k=ks.find(x=>x.toLowerCase().replace(/[^a-z0-9]/g,'').includes(t));if(k)return r[k]}
+ return '';
+}
+function gst(r){return pick(r,['suppliergstin','vendorgstin','gstin','suppliergst'])}
+function inv(r){return pick(r,['invoicenumber','invoiceno','invoice','billno','billnumber','documentnumber','docno'])}
+function datev(r){return pick(r,['invoicedate','documentdate','billdate','date'])}
+function taxable(r){return num(pick(r,['taxablevalue','taxable','taxableamount','assessablevalue']))}
+function tax(r){return num(pick(r,['taxamount','totaltax','gstamount','gst']))}
+function lev(a,b){a=String(a);b=String(b);if(a===b)return 0;let d=Array.from({length:b.length+1},()=>Array(a.length+1).fill(0));for(let i=0;i<=b.length;i++)d[i][0]=i;for(let j=0;j<=a.length;j++)d[0][j]=j;for(let i=1;i<=b.length;i++)for(let j=1;j<=a.length;j++)d[i][j]=Math.min(d[i-1][j]+1,d[i][j-1]+1,d[i-1][j-1]+(b[i-1]===a[j-1]?0:1));return d[b.length][a.length]}
+function analyze(){
+ const exact=new Map(), byInv=new Map(), patterns=new Map();
+ allRows.forEach((r,i)=>{
+   const g=key(gst(r)), n=textKey(inv(r)), d=String(datev(r)), tv=taxable(r), tx=tax(r);
+   r.__i=i;r.__gst=g;r.__inv=n;r.__date=d;r.__taxable=tv;r.__tax=tx;
+   const ek=[g,n,d,tv.toFixed(2),tx.toFixed(2)].join('|');
+   const ik=[g,n].join('|');
+   const pk=[g,d,tv.toFixed(2),tx.toFixed(2)].join('|');
+   if(g&&n){if(!exact.has(ek))exact.set(ek,[]);exact.get(ek).push(r);if(!byInv.has(ik))byInv.set(ik,[]);byInv.get(ik).push(r)}
+   if(g&&d&&tv){if(!patterns.has(pk))patterns.set(pk,[]);patterns.get(pk).push(r)}
+ });
+ exact.forEach(arr=>{if(arr.length>1)arr.forEach((r,idx)=>findings.push(makeFinding('EXACT','Exact duplicate: same supplier, normalized invoice no., date, taxable value and tax',r,arr[(idx+1)%arr.length])))});
+ byInv.forEach(arr=>{if(arr.length>1){for(let i=0;i<arr.length;i++)for(let j=i+1;j<arr.length;j++){if(!same(arr[i],arr[j]))findings.push(makeFinding('NEAR','Same supplier + normalized invoice number; values/date differ — review amendment/duplicate',arr[i],arr[j]));}}});
+ // near invoice numbers within same supplier and date/value
+ const groups=new Map();allRows.forEach(r=>{const k=[r.__gst,r.__date,r.__taxable.toFixed(2)].join('|');if(r.__gst&&r.__inv&&r.__date){if(!groups.has(k))groups.set(k,[]);groups.get(k).push(r)}});
+ groups.forEach(arr=>{for(let i=0;i<arr.length;i++)for(let j=i+1;j<arr.length;j++){const a=arr[i].__inv,b=arr[j].__inv;const mx=Math.max(a.length,b.length);if(mx>=4&&lev(a,b)<=1)findings.push(makeFinding('NEAR','Very similar invoice numbers with same supplier/date/value',arr[i],arr[j]));}});
+ patterns.forEach(arr=>{if(arr.length>1)arr.forEach((r,i)=>findings.push(makeFinding('PATTERN','Same supplier/date/taxable value/tax appears on another invoice number',r,arr[(i+1)%arr.length])))});
+ // de-duplicate findings
+ const seen=new Set();findings=findings.filter(f=>{const k=[f.r.__i,f.rel?.__i,f.type,f.reason].sort().join('|');if(seen.has(k))return false;seen.add(k);return true});
+ document.getElementById('records').textContent=allRows.length;
+ document.getElementById('exact').textContent=new Set(findings.filter(x=>x.type==='EXACT').map(x=>x.r.__i)).size;
+ document.getElementById('near').textContent=new Set(findings.filter(x=>x.type==='NEAR').map(x=>x.r.__i)).size;
+ document.getElementById('pattern').textContent=new Set(findings.filter(x=>x.type==='PATTERN').map(x=>x.r.__i)).size;
+ document.getElementById('flagged').textContent=new Set(findings.map(x=>x.r.__i)).size;
+ document.getElementById('summary').style.display='block';document.getElementById('results').style.display='block';
+ gstAnalytics('duplicate_checker_scan',{records:allRows.length,findings:findings.length});
+}
+function same(a,b){return a.__i===b.__i}
+function makeFinding(type,reason,r,rel){return {type,reason,r,rel}}
+function render(){
+ const q=document.getElementById('search').value.toLowerCase(), f=document.getElementById('filter').value;
+ const arr=findings.filter(x=>(f==='ALL'||x.type===f)&&(!q||JSON.stringify(x).toLowerCase().includes(q)));
+ const tb=document.getElementById('tbody');tb.innerHTML='';
+ arr.slice(0,2000).forEach(x=>{
+   const r=x.r,rel=x.rel||{};
+   tb.insertAdjacentHTML('beforeend',`<tr><td class="severity-${x.type.toLowerCase()}">${x.type}</td><td>${esc(x.reason)}</td><td>${esc(r.__file)} / ${esc(r.__sheet)}</td><td>${r.__row}</td><td>${esc(gst(r))}</td><td>${esc(inv(r))}</td><td>${esc(datev(r))}</td><td>${r.__taxable.toLocaleString('en-IN',{maximumFractionDigits:2})}</td><td>${r.__tax.toLocaleString('en-IN',{maximumFractionDigits:2})}</td><td>${esc(rel.__file||'')} row ${rel.__row||''} — ${esc(inv(rel))}</td></tr>`);
+ });
+}
+function esc(s){return String(s??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
+document.getElementById('filter').addEventListener('change',render);document.getElementById('search').addEventListener('input',render);
+function clearResults(){allRows=[];findings=[];document.getElementById('summary').style.display='none';document.getElementById('results').style.display='none';fileEl.value=''}
+function downloadReport(){
+ let csv='Risk,Reason,File,Sheet,Row,Supplier GSTIN,Invoice No,Invoice Date,Taxable Value,Tax,Related File,Related Row,Related Invoice\\n';
+ findings.forEach(x=>{const r=x.r,rel=x.rel||{};csv += [x.type,x.reason,r.__file,r.__sheet,r.__row,gst(r),inv(r),datev(r),r.__taxable,r.__tax,rel.__file||'',rel.__row||'',inv(rel)].map(v=>`"${String(v??'').replace(/"/g,'""')}"`).join(',')+'\\n'});
+ const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([csv],{type:'text/csv'}));a.download='GST_Duplicate_Invoice_Findings.csv';a.click();URL.revokeObjectURL(a.href);
+}
+</script>
+</body>
+</html>

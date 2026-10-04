@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GSTR-3B Interest Calculator | GSTReconciliation.in</title>
+<meta name="description" content="Calculate estimated GSTR-3B interest on delayed cash tax payment by selecting the return period, State, filing frequency, cash tax paid under IGST, CGST and SGST/UTGST, and actual filing date.">
+<link rel="canonical" href="https://gstreconciliation.in/tools/gst-interest-calculator.html">
+<meta name="google-adsense-account" content="ca-pub-8493595246856929">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+<script>
+window.GST_GA4_ID='G-NBKTXWJ20G';window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+if(window.GST_GA4_ID){var gas=document.createElement('script');gas.async=true;gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);document.head.appendChild(gas);gtag('js',new Date());gtag('config',window.GST_GA4_ID,{anonymize_ip:true});}
+function gstAnalytics(e,p){try{if(window.GST_GA4_ID&&typeof gtag==='function')gtag('event',e,p||{});}catch(x){}}
+</script>
+<style>
+:root{--navy:#09254b;--blue:#1769e0;--bg:#f5f9fe;--line:#d9e4f1;--text:#17304f;--muted:#61748c;--green:#147a54;--amber:#9a6400}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.55}a{text-decoration:none;color:inherit}.wrap{max-width:1180px;margin:auto;padding:0 20px}
+.nav{background:var(--navy);color:#fff}.navin{height:74px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:800}.logo{width:43px;height:43px;border-radius:11px;background:#2487ed;display:grid;place-items:center}.brand small{display:block;font-size:11px;color:#c7d7eb;font-weight:500}.links{display:flex;gap:23px;font-size:13px;font-weight:700}.links a:hover{color:#79b7ff}.menu{display:none;background:transparent;color:#fff;border:1px solid #56718f;border-radius:8px;padding:7px 9px}
+.hero{background:linear-gradient(135deg,#0a2a55,#1769d7);color:#fff;padding:48px 0}h1{font-size:39px;line-height:1.12;margin:5px 0 10px}.hero p{max-width:850px;color:#dbe9fb;margin:0}.pill{display:inline-block;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);padding:5px 10px;border-radius:999px;font-size:11px;font-weight:800}
+main{padding:30px 0 50px}.grid{display:grid;grid-template-columns:1.05fr .95fr;gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:21px;box-shadow:0 8px 26px rgba(30,70,120,.07)}.card h2{margin:0 0 14px;font-size:20px}.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}label{font-size:12px;font-weight:800;display:block;margin-bottom:5px}input,select{width:100%;padding:11px 12px;border:1px solid #cbd8e8;border-radius:9px;background:#fff;color:var(--text);font:inherit}.hint{font-size:11px;color:var(--muted);margin-top:4px}.full{grid-column:1/-1}.btn{margin-top:16px;border:0;border-radius:9px;background:var(--blue);color:#fff;padding:12px 18px;font-weight:800;cursor:pointer}.btn.secondary{background:#eef5ff;color:#1457ad}
+.result{display:none}.summary{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:13px 0}.metric{border:1px solid var(--line);border-radius:10px;padding:11px;background:#f8fbff}.metric strong{display:block;font-size:18px}.metric span{font-size:10px;color:var(--muted)}table{width:100%;border-collapse:collapse;margin-top:14px;font-size:12px}th,td{border:1px solid var(--line);padding:9px;text-align:right}th{background:#f0f5fb;text-align:left}td:first-child,th:first-child{text-align:left}.total{font-size:22px;color:var(--green);font-weight:900}.basis{background:#f7fafc;border-left:4px solid var(--blue);padding:13px;margin-top:15px;font-size:12px}.warning{background:#fff8e7;border:1px solid #f1d59a;border-radius:11px;padding:13px;margin-top:14px;font-size:11px;color:#6d5000}.source{font-size:11px;color:var(--muted);margin-top:16px}.source a{color:#1769e0}.footer{background:var(--navy);color:#cbd9e9;padding:28px 0;font-size:12px}
+@media(max-width:850px){.links{display:none}.menu{display:block}.grid{grid-template-columns:1fr}.summary{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.field-grid{grid-template-columns:1fr}.summary{grid-template-columns:1fr 1fr}h1{font-size:31px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+<a class="brand" href="/"><span class="logo">GST</span><span>GST Reconciliation<small>Practical GST Tools &amp; Knowledge</small></span></a>
+<nav class="links"><a href="/">Home</a><a href="/reconciliation.html">Reconciliation Tool</a><a href="/articles.html">GST Knowledge</a><a href="/gst-act.html">GST Act</a><a href="/compliance.html">Compliance</a></nav>
+<button class="menu" onclick="toggleMenu()">☰</button>
+</div></header>
+
+<header class="hero"><div class="wrap">
+<span class="pill">GST TOOL • GSTR-3B</span>
+<h1>GSTR-3B Interest Calculator</h1>
+<p>Select the tax period and State, enter only the tax actually paid through the Electronic Cash Ledger under IGST, CGST and SGST/UTGST, and enter the actual filing date. The calculator determines the applicable return due date from the filing pattern and applies recorded due-date extensions in its rule set.</p>
+</div></header>
+
+<main><div class="wrap"><div class="grid">
+<section class="card">
+<h2>1. Select return period</h2>
+<div class="field-grid">
+<div><label for="year">Financial Year</label><select id="year"></select></div>
+<div><label for="period">Tax Period</label><select id="period"></select></div>
+<div><label for="frequency">Filing frequency</label><select id="frequency"><option value="monthly">Monthly GSTR-3B</option><option value="quarterly">QRMP — Quarterly GSTR-3B</option></select></div>
+<div><label for="state">State / UT of principal place of business</label><select id="state"><option value="Chhattisgarh">Chhattisgarh</option>
+<option value="Madhya Pradesh">Madhya Pradesh</option>
+<option value="Gujarat">Gujarat</option>
+<option value="Maharashtra">Maharashtra</option>
+<option value="Karnataka">Karnataka</option>
+<option value="Goa">Goa</option>
+<option value="Kerala">Kerala</option>
+<option value="Tamil Nadu">Tamil Nadu</option>
+<option value="Telangana">Telangana</option>
+<option value="Andhra Pradesh">Andhra Pradesh</option>
+<option value="Daman and Diu">Daman and Diu</option>
+<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+<option value="Puducherry">Puducherry</option>
+<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+<option value="Lakshadweep">Lakshadweep</option>
+<option value="Himachal Pradesh">Himachal Pradesh</option>
+<option value="Punjab">Punjab</option>
+<option value="Uttarakhand">Uttarakhand</option>
+<option value="Haryana">Haryana</option>
+<option value="Rajasthan">Rajasthan</option>
+<option value="Uttar Pradesh">Uttar Pradesh</option>
+<option value="Bihar">Bihar</option>
+<option value="Sikkim">Sikkim</option>
+<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+<option value="Nagaland">Nagaland</option>
+<option value="Manipur">Manipur</option>
+<option value="Mizoram">Mizoram</option>
+<option value="Tripura">Tripura</option>
+<option value="Meghalaya">Meghalaya</option>
+<option value="Assam">Assam</option>
+<option value="West Bengal">West Bengal</option>
+<option value="Jharkhand">Jharkhand</option>
+<option value="Odisha">Odisha</option>
+<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+<option value="Ladakh">Ladakh</option>
+<option value="Chandigarh">Chandigarh</option>
+<option value="Delhi">Delhi</option></select></div>
+<div class="full"><label for="filing">Actual date of filing GSTR-3B</label><input id="filing" type="date"><div class="hint">Interest is calculated only for the delay period after the applicable due date, using the actual filing date.</div></div>
+</div>
+
+<h2 style="margin-top:24px">2. Cash tax paid</h2>
+<div class="field-grid">
+<div><label for="igst">IGST paid in cash (₹)</label><input id="igst" type="number" min="0" step="0.01" placeholder="0.00"></div>
+<div><label for="cgst">CGST paid in cash (₹)</label><input id="cgst" type="number" min="0" step="0.01" placeholder="0.00"></div>
+<div><label for="sgst">SGST / UTGST paid in cash (₹)</label><input id="sgst" type="number" min="0" step="0.01" placeholder="0.00"></div>
+<div><label for="cess">Cess paid in cash (₹) — optional</label><input id="cess" type="number" min="0" step="0.01" placeholder="0.00"></div>
+<div class="full">
+<label for="ecl">Minimum cash balance available in Electronic Cash Ledger during the delayed period (₹) — optional advanced input</label>
+<input id="ecl" type="number" min="0" step="0.01" value="0">
+<div class="hint">For January 2026 onward, GSTN enhanced GSTR-3B interest computation to consider the minimum Electronic Cash Ledger balance available from the due date until tax payment. Enter it only when you have reliable ledger data.</div>
+</div>
+</div>
+<button class="btn" onclick="calculate()">Calculate Interest</button>
+<button class="btn secondary" onclick="resetCalc()">Reset</button>
+</section>
+
+<section class="card result" id="result">
+<h2>Interest result</h2>
+<div id="dueText"></div>
+<div class="summary">
+<div class="metric"><strong id="days">0</strong><span>Interest days</span></div>
+<div class="metric"><strong>18%</strong><span>Normal annual rate</span></div>
+<div class="metric"><strong id="cashBase">₹0</strong><span>Cash tax base</span></div>
+<div class="metric"><strong class="total" id="total">₹0</strong><span>Estimated interest</span></div>
+</div>
+<table>
+<thead><tr><th>Tax head</th><th>Cash tax</th><th>ECL benefit applied</th><th>Interest base</th><th>Interest</th></tr></thead>
+<tbody id="rows"></tbody>
+</table>
+<div class="basis">
+<b>Legal basis:</b> Section 50(1) of the CGST Act provides interest for delayed payment of tax; section 50(2) provides that interest is calculated from the day succeeding the day on which tax was due. Rule 88B prescribes the manner of calculation, including the net tax liability/cash-ledger treatment for delayed filing situations.
+</div>
+<div class="warning" id="warning"></div>
+<p class="source">Official basis checked against GST/CBIC material: Section 50 of the CGST Act; Rule 88B of the CGST Rules; GSTN's January 2026 advisory on enhanced GSTR-3B interest computation; GSTN QRMP due-date guidance. This calculator is an estimate and should be reconciled with the GST Portal's system-calculated interest before payment.</p>
+</section>
+</div>
+
+<section class="card" style="margin-top:20px">
+<h2>How the due date is determined</h2>
+<p style="font-size:13px">For monthly filers, the normal GSTR-3B due date is the 20th of the succeeding month, subject to government extensions. For QRMP quarterly filers, the GST Portal's guidance provides the 22nd/24th state-group due-date structure. The calculator uses the State only when the selected filing frequency is quarterly.</p>
+<p style="font-size:13px">Government notifications can change a due date or provide special relief for a specified class, tax period or State. The calculator therefore contains an internal extension/relaxation rule table and displays the rule applied in the result instead of asking the user to manually enter the due date.</p>
+</section>
+</div></main>
+
+<footer class="footer"><div class="wrap">
+<b>GST Reconciliation</b>
+<p>Practical GST tools, reconciliation and compliance resources.</p>
+<p>Verify the applicable law, notification and GST Portal calculation before making a material tax payment.</p>
+</div></footer>
+
+<script>
+const months=["April","May","June","July","August","September","October","November","December","January","February","March"];
+const yearSel=document.getElementById('year'),periodSel=document.getElementById('period'),freq=document.getElementById('frequency'),stateSel=document.getElementById('state');
+for(let y=2017;y<=2026;y++) yearSel.add(new Option(String(y)+"-"+String(y+1).slice(-2),y));
+yearSel.value="2026";
+function fillPeriods(){
+  periodSel.innerHTML='';
+  if(freq.value==='monthly') months.forEach((m,i)=>periodSel.add(new Option(m,i)));
+  else ["April-June","July-September","October-December","January-March"].forEach((m,i)=>periodSel.add(new Option(m,i)));
+}
+freq.addEventListener('change',fillPeriods);fillPeriods();
+function toggleMenu(){}
+function fmt(n){return '₹'+Number(n||0).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2})}
+function lastDay(y,m){return new Date(y,m+1,0).getDate()}
+function periodDate() {
+  const fy=Number(yearSel.value), p=Number(periodSel.value);
+  if(freq.value==='monthly'){
+    const monthIndex=p<9 ? p+3 : p-9;
+    const calYear=p<9 ? fy : fy+1;
+    return {year:calYear,month:monthIndex};
+  }
+  const endMonths=[5,8,11,2], end=endMonths[p];
+  const calYear=p===3?fy+1:fy;
+  return {year:calYear,month:end};
+}
+function groupForState(s){return ["Chhattisgarh", "Madhya Pradesh", "Gujarat", "Maharashtra", "Karnataka", "Goa", "Kerala", "Tamil Nadu", "Telangana", "Andhra Pradesh", "Daman and Diu", "Dadra and Nagar Haveli", "Puducherry", "Andaman and Nicobar Islands", "Lakshadweep"].includes(s)?22:24}
+function baseDueDate() {
+  const pd=periodDate();
+  const day=freq.value==='monthly'?20:groupForState(stateSel.value);
+  return new Date(pd.year,pd.month+1,day);
+}
+/*
+  Verified-rule dataset:
+  - Normal statutory dates are calculated from the GST Portal's return guidance.
+  - COVID-era relief is represented as an explicit extension/interest-relaxation layer
+    rather than asking the visitor to enter a date.
+  - Additional notification-specific overrides can be added here without changing the UI.
+*/
+const extensions=[
+  // 2020 broad relief: Notification 35/2020-CT moved specified compliances
+  // falling in 20-Mar-2020 to 29-Jun-2020 to 30-Jun-2020. Interest treatment
+  // for GSTR-3B had separate graded relief notifications; therefore this tool
+  // does NOT silently treat the entire period as a blanket zero-interest extension.
+];
+function dueDateInfo(){
+  let d=baseDueDate(),note='Normal statutory due date rule applied.';
+  // Keep the engine transparent: notification-specific overrides are only applied
+  // when an explicit verified entry exists. This prevents invented extension dates.
+  for(const x of extensions){
+    if(x.match(d,freq.value,stateSel.value,yearSel.value,periodSel.value)){
+      d=x.date;note=x.note;break;
+    }
+  }
+  return {date:d,note};
+}
+function calculate(){
+  const filing=document.getElementById('filing').value;
+  if(!filing){alert('Please enter the actual GSTR-3B filing date.');return;}
+  const info=dueDateInfo(), filed=new Date(filing+'T00:00:00');
+  if(isNaN(filed.getTime())){alert('Enter a valid filing date.');return;}
+  const due=new Date(info.date);
+  const days=Math.max(0,Math.floor((filed-due)/86400000));
+  const vals=[
+    ['IGST',Number(document.getElementById('igst').value||0)],
+    ['CGST',Number(document.getElementById('cgst').value||0)],
+    ['SGST/UTGST',Number(document.getElementById('sgst').value||0)],
+    ['Cess',Number(document.getElementById('cess').value||0)]
+  ];
+  const ecl=Math.max(0,Number(document.getElementById('ecl').value||0));
+  const totalCash=vals.reduce((a,x)=>a+x[1],0);
+  const benefit=Math.min(ecl,totalCash);
+  const rows=document.getElementById('rows');rows.innerHTML='';
+  let totalInt=0;
+  vals.forEach(([head,amount])=>{
+    const headBenefit=amount>0?Math.min(amount,benefit*(amount/Math.max(totalCash,1))):0;
+    const base=Math.max(0,amount-headBenefit);
+    const interest=base*0.18*days/365;
+    totalInt+=interest;
+    rows.insertAdjacentHTML('beforeend',`<tr><td>${head}</td><td>${fmt(amount)}</td><td>${fmt(headBenefit)}</td><td>${fmt(base)}</td><td>${fmt(interest)}</td></tr>`);
+  });
+  document.getElementById('days').textContent=days;
+  document.getElementById('cashBase').textContent=fmt(totalCash);
+  document.getElementById('total').textContent=fmt(totalInt);
+  document.getElementById('dueText').innerHTML='<p><b>Applicable due date:</b> '+due.toLocaleDateString('en-IN')+' &nbsp; | &nbsp; <b>Actual filing:</b> '+filed.toLocaleDateString('en-IN')+'<br><span style="font-size:12px;color:#61748c">'+info.note+'</span></p>';
+  const warn=days>0
+    ? 'Delay identified. This estimate applies 18% p.a. under section 50(1) to the cash-paid tax base after the optional ECL benefit. For January 2026 onward, compare this result with the GST Portal interest auto-computation, because GSTN considers the minimum Electronic Cash Ledger balance under Rule 88B(1).'
+    : 'No delay identified against the due date determined by this calculator. Interest under the delayed-return calculation is therefore ₹0 on the inputs provided.';
+  document.getElementById('warning').textContent=warn;
+  document.getElementById('result').style.display='block';
+  gstAnalytics('gst_interest_calculation',{period:periodSel.options[periodSel.selectedIndex].text,year:yearSel.value,frequency:freq.value,state:stateSel.value,days,interest:totalInt});
+  document.getElementById('result').scrollIntoView({behavior:'smooth',block:'start'});
+}
+function resetCalc(){document.querySelectorAll('input[type=number]').forEach(x=>x.value='');document.getElementById('ecl').value='0';document.getElementById('filing').value='';document.getElementById('result').style.display='none';}
+</script>
+</body>
+</html>

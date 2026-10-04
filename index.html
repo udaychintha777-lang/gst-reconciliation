@@ -45,8 +45,8 @@ a{text-decoration:none;color:inherit}
 .brand{display:flex;align-items:center;gap:11px;min-width:335px}
 .logo{width:43px;height:43px;border-radius:10px;background:#1676ee;display:grid;place-items:center;box-shadow:0 4px 10px rgba(0,0,0,.15)}
 .logo svg{width:27px;height:27px}
-.brand-title{display:block;font-weight:800;font-size:17px;letter-spacing:-.2px;line-height:1.05}
-.brand-sub{display:block;font-size:11.5px;color:#d9e6f8;margin-top:4px;line-height:1.2}
+.brand-title{font-weight:800;font-size:17px;letter-spacing:-.2px;line-height:1.05}
+.brand-sub{font-size:11.5px;color:#d9e6f8;margin-top:4px}
 .nav-links{display:flex;align-items:center;gap:30px;flex:1}
 .nav-links a{font-size:14px;font-weight:700;color:#f5f8ff;white-space:nowrap;height:72px;display:flex;align-items:center;position:relative}
 .nav-links a.active:after{content:"";position:absolute;left:-8px;right:-8px;bottom:5px;height:4px;border-radius:3px;background:#2381ff}
@@ -193,18 +193,18 @@ a{text-decoration:none;color:inherit}
 .recon-v13{margin:0 0 14px;background:linear-gradient(105deg,#061f45,#0b438d 62%,#1769e8);color:#fff;border-radius:16px;padding:25px 28px;box-shadow:0 12px 28px rgba(8,43,91,.16);border:1px solid #155aa9;position:relative;overflow:hidden}.recon-v13:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-95px;top:-125px;background:rgba(255,255,255,.07)}.recon-v13-top{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:flex-start;gap:20px}.recon-v13-badge{display:inline-block;border:1px solid rgba(255,255,255,.24);background:rgba(255,255,255,.1);border-radius:999px;padding:5px 10px;font-size:10px;font-weight:900;letter-spacing:.7px}.recon-v13 h2{font-size:28px;margin:10px 0 6px}.recon-v13 p{margin:0;color:#e7f0ff;line-height:1.55;max-width:900px}.recon-v13-free{background:#fff;color:#0b3b7b;border-radius:999px;padding:9px 13px;font-size:12px;font-weight:900;white-space:nowrap}.recon-v13-points{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin:17px 0;position:relative;z-index:1}.recon-v13-point{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:9px;padding:9px 11px;font-size:11px}.recon-v13-point b{display:block;font-size:12px;margin-bottom:2px}.recon-v13-actions{display:flex;gap:9px;flex-wrap:wrap;position:relative;z-index:1}.recon-v13-primary,.recon-v13-secondary{display:inline-flex;align-items:center;justify-content:center;border-radius:9px;padding:11px 17px;font-size:13px;font-weight:850}.recon-v13-primary{background:#fff;color:#0b3b7b}.recon-v13-secondary{border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.08);color:#fff}.recon-v13-primary:hover{background:#edf5ff}.recon-v13-secondary:hover{background:rgba(255,255,255,.17)}
 @media(max-width:700px){.recon-v13{padding:20px}.recon-v13-top{flex-direction:column}.recon-v13 h2{font-size:24px}.recon-v13-points{grid-template-columns:repeat(2,1fr)}}
 </style>
+
+<style>
+.tool-links a{transition:.15s ease}
+.tool-links a:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.08)}
+</style>
+
 </head>
 <body>
 
-<!--
-  SITE-WIDE BRAND HOME LINK:
-  Keep the GST RECONCILIATION logo/title/tagline linked to
-  https://gstreconciliation.in/ on every page.
-  Do not use Windows paths or file:/// links.
--->
 <header class="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="https://gstreconciliation.in/" aria-label="GST Reconciliation Home">
+    <a class="brand" href="/">
       <span class="logo">
         <svg viewBox="0 0 32 32" fill="none" aria-hidden="true">
           <rect x="7" y="4" width="18" height="24" rx="2.5" fill="white"/>
@@ -218,7 +218,6 @@ a{text-decoration:none;color:inherit}
       <a class="chev" href="/articles.html">GST Knowledge</a>
       <a class="chev" href="/gst-act.html">GST Act (Sections)</a>
       <a href="/compliance.html">Compliance</a>
-      <a href="/articles.html">GST Q&amp;A</a>
       <a class="chev" href="#tools">GST Tools</a>
       <a class="chev" href="/articles.html">Resources</a>
       <a href="#contact">Contact</a>
@@ -369,38 +368,13 @@ a{text-decoration:none;color:inherit}
 
 <section class="extra" id="tools">
   <div class="wrap"><div class="extra-card">
-    <h2>GST Reconciliation Tool</h2>
-    <p>Compare your Purchase Register with GSTR-2B invoice-by-invoice, identify matched and exception records, and download an Excel reconciliation report.</p>
+    <h2>GST Tools</h2>
+    <p>Practical browser-based utilities for GST reconciliation, invoice review and return compliance. Each tool is designed to reduce manual checking and show the relevant GST basis where applicable.</p>
     <div class="tool-links">
-      <a href="/reconciliation.html">Launch Reconciliation →</a>
-      <a href="/tools/gstr-2b-analyzer.html">GSTR-2B Analyzer</a>
-      <a href="/tools/purchase-register-analyzer.html">Purchase Register Analyzer</a>
-      <a href="/tools/duplicate-invoice-checker.html">Duplicate Invoice Checker</a>
-      <a href="/tools/gstr-3b-itc-working.html">GSTR-3B ITC Working</a>
-      <a href="/tools/gst-interest-calculator.html">GST Interest Calculator</a>
+      <a href="/reconciliation.html">GST ITC Reconciliation →</a>
+      <a href="/tools/duplicate-invoice-checker.html">Advanced Duplicate Invoice Checker</a>
+      <a href="/tools/gst-interest-calculator.html">GSTR-3B Interest Calculator</a>
     </div>
-  </div></div>
-</section>
-
-<section class="extra" id="resources">
-  <div class="wrap"><div class="extra-card">
-    <h2>GST Resources</h2>
-    <p>Practical calendars, checklists, templates, return workings and quick-reference material for day-to-day GST work.</p>
-    <div class="topic-grid" style="margin-top:18px">
-      <a class="topic" href="/resources.html#calendars"><strong>Compliance Calendars</strong><span>Monthly, quarterly and annual GST compliance planning.</span></a>
-      <a class="topic" href="/resources.html#checklists"><strong>GST Checklists</strong><span>Practical checklists for returns, ITC, reconciliation, audit and notices.</span></a>
-      <a class="topic" href="/resources.html#templates"><strong>Working Templates</strong><span>Useful formats for reconciliation and GST working papers.</span></a>
-      <a class="topic" href="/resources.html#reference"><strong>Quick Reference</strong><span>Forms, return types, common terms and practical reference material.</span></a>
-    </div>
-    <p style="margin-top:18px"><a class="btn btn-blue" href="/resources.html">Open GST Resources →</a></p>
-  </div></div>
-</section>
-
-<section class="extra" id="questions">
-  <div class="wrap"><div class="extra-card">
-    <h2>GST Questions &amp; Practical Guidance</h2>
-    <p>Find practical explanations for common GST questions covering registration, returns, input tax credit, reconciliation, refunds, compliance and related procedures.</p>
-    <p style="margin-top:18px"><a class="btn btn-blue" href="/articles.html">Browse GST Knowledge &amp; Q&amp;A →</a></p>
   </div></div>
 </section>
 
