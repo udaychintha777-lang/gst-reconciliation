@@ -47,18 +47,16 @@ input:focus,select:focus{border-color:#8ab0ed;box-shadow:0 0 0 3px rgba(23,105,2
 .chapter-title{display:flex;align-items:baseline;justify-content:space-between;gap:12px;margin-bottom:13px}
 .chapter-title h3{font-size:19px;margin:0}
 .chapter-title span{font-size:12px;color:var(--muted)}
-.rule-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}
-.rule-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:0 7px 24px rgba(16,33,63,.05);text-decoration:none;color:var(--ink);display:block;transition:.15s}
-.rule-card:hover{border-color:#9dbcf0;transform:translateY(-2px);box-shadow:0 10px 28px rgba(16,33,63,.08)}
-.rule-card.disabled{cursor:default;opacity:.78}
-.rule-card.disabled:hover{transform:none;border-color:var(--line);box-shadow:0 7px 24px rgba(16,33,63,.05)}
-.rule-number{font-size:12px;color:var(--blue);font-weight:850;text-transform:uppercase;letter-spacing:.03em}
-.rule-title{font-size:16px;font-weight:750;line-height:1.4;margin-top:7px}
-.rule-status{font-size:12px;margin-top:11px;color:var(--green);font-weight:650}
-.rule-status.historical{color:var(--amber)}
-.rule-status.pending{color:#6b7280}
-.rule-action{font-size:12px;margin-top:10px;color:var(--blue);font-weight:700}
-.disabled .rule-action{color:#7b8495}
+.rule-grid{background:var(--card);border:1px solid var(--line);border-radius:0 0 11px 11px;overflow:hidden}
+.rule-card{display:grid;grid-template-columns:92px minmax(0,1fr) 145px 145px;gap:10px;align-items:center;padding:11px 12px;border-top:1px solid #edf1f5;text-decoration:none;color:var(--ink);background:#fff;transition:.12s}
+.rule-card:first-child{border-top:0}.rule-card:hover{background:#f8fbff}.rule-card.disabled{cursor:default;opacity:.82}
+.rule-number{font-size:10px;color:#155fc7;font-weight:950;text-transform:uppercase;letter-spacing:.03em}
+.rule-title{font-size:11px;font-weight:700;line-height:1.35}
+.rule-status{justify-self:start;border-radius:999px;background:#e8faf2;color:#148051;padding:4px 7px;font-size:8px;font-weight:950;text-transform:uppercase}
+.rule-status.historical{background:#fff5d9;color:#86631c}.rule-status.pending{background:#eef2f7;color:#68778b}
+.rule-action{color:#1769e0;font-size:9px;font-weight:900;text-align:right}.disabled .rule-action{color:#7b8495}
+.chapter{margin-top:18px}.chapter-title{display:flex;justify-content:space-between;align-items:center;gap:10px;background:#eaf4ff;border:1px solid #d7e7f9;border-radius:11px 11px 8px 8px;padding:10px 13px;margin-bottom:0;color:#24496f}
+.chapter-title h3{font-family:Georgia,"Times New Roman",serif;font-size:14px;margin:0}.chapter-title span{font-size:9px;font-weight:900;color:#66809d}
 .notice{background:#fff;border:1px solid var(--line);border-left:4px solid #94a3b8;border-radius:12px;padding:18px;color:#59657a;font-size:13px;line-height:1.65}
 .info-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}
 .info-box{background:#fff;border:1px solid var(--line);border-radius:15px;padding:19px}
@@ -73,12 +71,13 @@ input:focus,select:focus{border-color:#8ab0ed;box-shadow:0 0 0 3px rgba(23,105,2
 .disclaimer{border-top:1px solid rgba(255,255,255,.12);margin-top:25px;padding-top:18px;color:#9ca3af;font-size:12px;line-height:1.6}
 @media(max-width:900px){
   .navlinks{display:none}.stats{grid-template-columns:repeat(2,1fr)}
-  .rule-grid{grid-template-columns:repeat(2,1fr)}.info-grid{grid-template-columns:repeat(2,1fr)}
+  .rule-card{grid-template-columns:80px minmax(0,1fr) 120px 115px}.info-grid{grid-template-columns:repeat(2,1fr)}
   .footer-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:600px){
   .hero{padding:35px 0}.hero-box{padding:30px 22px}h1{font-size:34px}
-  .stats,.rule-grid,.info-grid,.footer-grid{grid-template-columns:1fr}
+  .stats,.info-grid,.footer-grid{grid-template-columns:1fr}
+  .rule-card{grid-template-columns:70px minmax(0,1fr)}.rule-status,.rule-action{display:none}
   .controls{grid-template-columns:1fr}.results-head{align-items:flex-start;flex-direction:column}
 }
 </style>
@@ -147,9 +146,9 @@ footer .container {
 
 <header class="site-header">
   <div class="container nav">
-    <a class="brand" href="/">GST<span>Reconciliation</span></a>
+    <a class="brand" href="https://gstreconciliation.in/" aria-label="GST Reconciliation Home">GST<span>Reconciliation</span></a>
     <nav class="navlinks" aria-label="Main navigation">
-      <a href="/">Home</a>
+      <a href="https://gstreconciliation.in/">Home</a>
       <a href="/reconciliation.html">Reconciliation</a>
       <a href="/articles.html">Articles</a>
       <a href="/gst-act.html">GST Act</a>
@@ -186,7 +185,7 @@ footer .container {
 
     <div class="search-panel">
       <div class="controls">
-        <input id="search" type="search" placeholder="Search Rule number, title or chapter…" autocomplete="off">
+        <input id="search" type="search" placeholder="Search exact Rule number, title or chapter…" autocomplete="off">
         <select id="chapter"><option value="">All chapters</option></select>
       </div>
       <div class="results-head">
@@ -244,7 +243,7 @@ footer .container {
       </div>
       <div>
         <h3>Useful Links</h3>
-        <p><a href="/">Home</a></p>
+        <p><a href="https://gstreconciliation.in/">Home</a></p>
         <p><a href="/contact.html">Contact</a></p>
       </div>
     </div>
@@ -323,9 +322,13 @@ function render(){
   const q=document.getElementById("search").value.trim().toLowerCase();
   const chapter=document.getElementById("chapter").value;
 
+  const exactRuleQuery = q.match(/^rule\s*([0-9]+[a-z]*)$/i) || q.match(/^([0-9]+[a-z]*)$/i);
   const filtered=rules.filter(r=>{
-    const hay=(r.number+" "+r.title+" "+r.chapter).toLowerCase();
-    return hay.includes(q) && (!chapter || r.chapter===chapter);
+    if(chapter && r.chapter!==chapter) return false;
+    const rn=String(r.number).trim().toLowerCase();
+    if(exactRuleQuery) return rn===exactRuleQuery[1].toLowerCase();
+    const hay=(rn+" "+r.title+" "+r.chapter+" "+(r.subject||"")+" "+(r.keywords||"")).toLowerCase();
+    return !q || hay.includes(q);
   });
 
   document.getElementById("resultLabel").textContent =
@@ -377,33 +380,71 @@ function render(){
 document.getElementById("search").addEventListener("input",render);
 document.getElementById("chapter").addEventListener("change",render);
 
-fetch("/data/gst-rules.json",{cache:"no-store"})
-.then(r=>r.ok?r.json():Promise.reject(new Error("Could not load gst-rules.json")))
-.then(data=>{
-  const raw=Array.isArray(data) ? data : (data.items || data.gst_rules || []);
-  rules=gstSortRulesNumerically(raw.map(normalise));
+async function loadMasterRules(){
+  try{
+    const r=await fetch("/data/gst-rules.json",{cache:"no-store"});
+    if(!r.ok) throw new Error("gst-rules.json unavailable");
+    const data=await r.json();
+    const raw=Array.isArray(data) ? data : (data.items || data.gst_rules || []);
+    return {items:raw.map(normalise),data};
+  }catch(e){ return {items:[],data:{}}; }
+}
 
-  if(!rules.length) rules=FALLBACK.map(normalise);
+async function discoverRulePages(){
+  const api="https://api.github.com/repos/udaychintha777-lang/gst-reconciliation/contents/gst-rules?ref=main";
+  const r=await fetch(api,{cache:"no-store",headers:{Accept:"application/vnd.github+json"}});
+  if(!r.ok) throw new Error("GitHub folder discovery failed");
+  const files=await r.json();
+  return files.filter(x=>x.type==="file" && /^rule-\d+[a-z]*\.html$/i.test(x.name));
+}
 
-  const counts=data.counts || {};
-  document.getElementById("listedCount").textContent =
-    counts.individual_entries ?? rules.length;
-  document.getElementById("currentCount").textContent =
-    counts.current_named ?? rules.filter(r=>!isHistorical(r.status)).length;
-  document.getElementById("omittedCount").textContent =
-    counts.omitted_historical ?? rules.filter(r=>isHistorical(r.status)).length;
-  document.getElementById("sourceCount").textContent =
-    data.source?.collection_count_reported ?? data.counts?.source_reported ?? "214";
+async function enrichDiscoveredRule(file, existing){
+  const match=file.name.match(/^rule-(\d+[a-z]*)\.html$/i); if(!match)return null;
+  const number=match[1].toUpperCase();
+  const old=existing.get(number.toLowerCase());
+  if(old)return {...old,number,url:"/gst-rules/"+file.name};
+  let title="Rule "+number, chapter="GST Rules — Chapter not specified";
+  try{
+    const rawUrl="https://raw.githubusercontent.com/udaychintha777-lang/gst-reconciliation/main/gst-rules/"+file.name;
+    const response=await fetch(rawUrl,{cache:"no-store"});
+    if(response.ok){
+      const html=await response.text();
+      const tm=html.match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+      const cm=html.match(/<meta[^>]+name=["'](?:gst-chapter|rule-chapter)["'][^>]+content=["']([^"']+)["']/i);
+      if(tm){const t=tm[1].replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").trim();if(t)title=t.replace(/\s*\|.*$/," ").trim()||title;}
+      if(cm&&cm[1].trim())chapter=cm[1].trim();
+    }
+  }catch(e){}
+  return {number,title,chapter,status:"Current / page detected",url:"/gst-rules/"+file.name};
+}
 
-  populateChapters();
-  render();
-  checkAvailablePages();
-})
-.catch(()=>{
-  rules=FALLBACK.map(normalise);
-  populateChapters();
-  render();
-});
+(async function initRules(){
+  const master=await loadMasterRules();
+  const base=master.items;
+  const existing=new Map(base.map(x=>[String(x.number).toLowerCase(),x]));
+  try{
+    const files=await discoverRulePages();
+    availablePages.clear();
+    files.forEach(f=>{const m=f.name.match(/^rule-(\d+[a-z]*)\.html$/i);if(m)availablePages.set(m[1].toLowerCase(),true);});
+    const discovered=await Promise.all(files.map(f=>enrichDiscoveredRule(f,existing)));
+    const merged=new Map(base.map(x=>[String(x.number).toLowerCase(),x]));
+    discovered.filter(Boolean).forEach(x=>merged.set(String(x.number).toLowerCase(),x));
+    rules=gstSortRulesNumerically([...merged.values()]);
+    document.getElementById("listedCount").textContent=rules.length;
+    document.getElementById("currentCount").textContent=rules.filter(r=>!isHistorical(r.status)).length;
+    document.getElementById("omittedCount").textContent=rules.filter(r=>isHistorical(r.status)).length;
+    document.getElementById("sourceCount").textContent=rules.length;
+  }catch(e){
+    rules=gstSortRulesNumerically(base); if(!rules.length)rules=FALLBACK.map(normalise);
+    const counts=master.data?.counts||{};
+    document.getElementById("listedCount").textContent=counts.individual_entries??rules.length;
+    document.getElementById("currentCount").textContent=counts.current_named??rules.filter(r=>!isHistorical(r.status)).length;
+    document.getElementById("omittedCount").textContent=counts.omitted_historical??rules.filter(r=>isHistorical(r.status)).length;
+    document.getElementById("sourceCount").textContent=master.data?.source?.collection_count_reported??rules.length;
+    checkAvailablePages();
+  }
+  populateChapters(); render();
+})();
 </script>
 </body>
 </html>
