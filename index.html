@@ -197,6 +197,28 @@ a{text-decoration:none;color:inherit}
 <style>
 .tool-links a{transition:.15s ease}
 .tool-links a:hover{transform:translateY(-1px);box-shadow:0 4px 12px rgba(0,0,0,.08)}
+
+/* MOBILE HEADER / MENU FIX — only navigation and brand stacking */
+.brand-copy{display:flex;flex-direction:column;min-width:0}
+.brand-title,.brand-sub{display:block}
+
+@media(max-width:1050px){
+  .mobile-menu{
+    position:relative;
+    z-index:9999;
+    width:100%;
+  }
+  .mobile-menu.open{display:block !important}
+  .mobile-menu-inner{position:relative;z-index:10000}
+  .menu-toggle{position:relative;z-index:10001;min-width:82px}
+}
+
+@media(max-width:520px){
+  .brand-copy{min-width:0}
+  .brand-title{font-size:14px;line-height:1.05}
+  .brand-sub{font-size:9.5px;line-height:1.15;margin-top:3px;white-space:normal}
+}
+
 </style>
 
 </head>
@@ -211,7 +233,7 @@ a{text-decoration:none;color:inherit}
           <path d="M11 9h10M11 13h10M11 18h3M17 18h4M11 22h10" stroke="#2474E9" stroke-width="1.8" stroke-linecap="round"/>
         </svg>
       </span>
-      <span><span class="brand-title">GST RECONCILIATION</span><span class="brand-sub">Your GST Knowledge &amp; Compliance Partner</span></span>
+      <span class="brand-copy"><span class="brand-title">GST RECONCILIATION</span><span class="brand-sub">Your GST Knowledge &amp; Compliance Partner</span></span>
     </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a class="active" href="/">Home</a>
@@ -224,7 +246,7 @@ a{text-decoration:none;color:inherit}
     </nav>
     <div class="nav-actions">
       <button class="icon-btn" type="button" aria-label="Search" onclick="document.getElementById('homeSearch').focus()">⌕</button>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" onclick="toggleMobileMenu(this)">☰ Menu</button>
+      <button class="menu-toggle" id="mobileMenuToggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="mobileMenu">☰ Menu</button>
     </div>
   </div>
   <div class="mobile-menu" id="mobileMenu">
@@ -403,11 +425,49 @@ a{text-decoration:none;color:inherit}
 </footer>
 
 <script>
-function toggleMobileMenu(button){
-  const menu=document.getElementById('mobileMenu');
-  const open=menu.classList.toggle('open');
-  button.setAttribute('aria-expanded',open?'true':'false');
-}
+(function(){
+  function initMobileMenu(){
+    const button=document.getElementById('mobileMenuToggle');
+    const menu=document.getElementById('mobileMenu');
+    if(!button || !menu) return;
+
+    function setMenu(open){
+      menu.classList.toggle('open', open);
+      button.setAttribute('aria-expanded', open ? 'true' : 'false');
+      button.setAttribute('aria-label', open ? 'Close navigation' : 'Open navigation');
+      button.textContent = open ? '✕ Close' : '☰ Menu';
+    }
+
+    button.addEventListener('click', function(e){
+      e.preventDefault();
+      setMenu(!menu.classList.contains('open'));
+    });
+
+    menu.querySelectorAll('a').forEach(function(link){
+      link.addEventListener('click', function(){
+        setMenu(false);
+      });
+    });
+
+    document.addEventListener('click', function(e){
+      if(menu.classList.contains('open') &&
+         !menu.contains(e.target) &&
+         !button.contains(e.target)){
+        setMenu(false);
+      }
+    });
+
+    window.addEventListener('resize', function(){
+      if(window.innerWidth > 1050) setMenu(false);
+    });
+  }
+
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', initMobileMenu);
+  }else{
+    initMobileMenu();
+  }
+})();
 </script>
 
 <script>
