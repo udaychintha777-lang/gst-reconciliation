@@ -12,7 +12,30 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.72}.wrap{max-width:1240px;margin:auto;padding:0 22px}
 header{background:linear-gradient(135deg,var(--blue),var(--blue2),var(--blue3));color:#fff;padding:52px 0 42px}.badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;letter-spacing:.3px}h1{font-size:42px;line-height:1.12;margin:18px 0 14px;letter-spacing:-.8px}header p{max-width:920px;margin:0;font-size:18px;opacity:.96}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.stat{background:#fff;color:var(--dark);border-radius:14px;padding:18px;box-shadow:0 8px 22px rgba(0,0,0,.08)}.stat b{display:block;font-size:20px;margin-bottom:4px}.stat span{font-size:13px;color:var(--muted)}
 main{padding:30px 0 50px}.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin:18px 0;box-shadow:0 4px 14px rgba(16,42,67,.045)}h2{color:var(--blue);font-size:28px;line-height:1.25;margin:0 0 14px}h3{color:var(--dark);font-size:21px;margin:24px 0 8px}p{margin:10px 0}ul,ol{padding-left:24px}li{margin:7px 0}.toc{background:#eef5ff;border-left:5px solid var(--blue2)}.toc a{color:var(--blue);text-decoration:none;font-weight:600}.callout{border-radius:12px;padding:18px 20px;margin:18px 0}.info{background:#eef5ff;border-left:5px solid var(--blue2)}.warning{background:var(--warn);border-left:5px solid #d39e00}.danger{background:var(--danger);border-left:5px solid #c92a2a}.good{background:var(--good);border-left:5px solid #2f9e44}table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}th,td{border:1px solid var(--border);padding:12px 13px;vertical-align:top;text-align:left}th{background:#edf4fb;color:var(--dark)}.pill{display:inline-block;background:#e7f1ff;color:var(--blue);padding:3px 9px;border-radius:999px;font-size:12px;font-weight:700}.nextprev{display:grid;grid-template-columns:1fr 1fr;gap:14px}.nextprev a{display:block;text-decoration:none;color:var(--blue);font-weight:700;background:#f2f7fd;border:1px solid var(--border);border-radius:12px;padding:15px}.small{font-size:13px;color:var(--muted)}footer{background:var(--dark);color:#d9e2ec;padding:38px 0}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}footer a{color:#fff;text-decoration:none}footer h3{color:#fff;margin-top:0}@media(max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}.footgrid{grid-template-columns:1fr 1fr}}@media(max-width:620px){.wrap{padding:0 15px}header{padding:38px 0 32px}h1{font-size:31px}.stats{grid-template-columns:1fr 1fr;gap:10px}.stat{padding:14px}main{padding-top:18px}.card{padding:20px}h2{font-size:24px}.nextprev,.footgrid{grid-template-columns:1fr}table{font-size:13px;display:block;overflow-x:auto}}
-</style></head><body>
+</style><style>
+/* GST Reconciliation site-wide width standard — matches homepage exactly. */
+.gst-site-width-standard,
+.wrap,
+.legal-wrap,
+.rule-wrap,
+.section-wrap,
+.section-page-wrap,
+.legal-container,
+.legal-page-wrap,
+.site-container,
+main.container,
+header .container,
+.hero .container,
+footer .container {
+  width: min(1400px, calc(100% - 64px));
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+</style>
+
+</head><body>
 <header><div class="wrap"><span class="badge">GST RULES • REGISTRATION</span>
 <h1>Rule 23 – Revocation of Cancellation of Registration</h1>
 <p>A practical guide to restoring a GST registration cancelled by the proper officer, including FORM GST REG-21, return and payment conditions, REG-22 notice, REG-23 reply and the consequences of revocation.</p>
