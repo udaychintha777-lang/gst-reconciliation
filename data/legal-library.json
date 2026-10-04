@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T07:54:37+00:00",
+  "generated_at": "2026-10-04T11:36:13+00:00",
   "version": 1,
   "items": [
     {
@@ -1743,7 +1743,7 @@
       "status": "active"
     },
     {
-      "title": "Rule 1 — Short title and commencement | GST Reconciliation",
+      "title": "CGST Rule 1 — Short title and commencement | GST Reconciliation",
       "url": "/gst-rules/rule-1.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-1.html",
@@ -1751,7 +1751,7 @@
       "number": "1"
     },
     {
-      "title": "Rule 2 — Definitions | GST Reconciliation",
+      "title": "CGST Rule 2 — Definitions | Practical Explanation & GST Compliance Guide",
       "url": "/gst-rules/rule-2.html",
       "category": "GST Rules",
       "source_file": "gst-rules/rule-2.html",
