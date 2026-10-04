@@ -1,76 +1,206 @@
-<!doctype html>
-<html lang="en"><head>
+
+<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rule 21A — Suspension of registration | GST Reconciliation</title>
-<meta name="description" content="Rule 21A of the Central Goods and Services Tax Rules, 2017 — Suspension of registration.">
+<title>Rule 21A – Suspension of Registration under GST | Practical Guide</title>
+<meta name="description" content="Rule 21A of the CGST Rules explained practically: suspension of GST registration, REG-31, GSTR-1 and GSTR-3B anomalies, Rule 10A, effects of suspension, revocation and compliance response.">
+<meta name="keywords" content="Rule 21A GST, suspension of registration, GST REG-31, GST registration suspension, GSTR-1 GSTR-3B mismatch, Rule 10A GST">
+<link rel="canonical" href="https://gstreconciliation.in/gst-rules/rule-21a.html">
+<meta name="google-adsense-account" content="ca-pub-8493595246856929">
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+<script>window.GST_GA4_ID='G-NBKTXWJ20G';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}if(window.GST_GA4_ID){var gas=document.createElement('script');gas.async=true;gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);document.head.appendChild(gas);gtag('js',new Date());gtag('config',window.GST_GA4_ID,{anonymize_ip:true});}</script>
 <style>
-:root{--bg:#f5f7fb;--navy:#10233f;--blue:#2563eb;--line:#dfe5ee;--muted:#667085}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#172033;font-family:Arial,sans-serif}
-.nav{background:var(--navy);color:#fff;padding:16px 24px}.navin{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:13px}.brand{font-weight:800;margin:0!important}
-.hero{background:linear-gradient(135deg,#10233f,#173d69);color:#fff;padding:55px 24px}
-.wrap{max-width:1180px;margin:auto}.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;opacity:.75}
-h1{font-family:Georgia,serif;font-size:42px;line-height:1.12;margin:12px 0}.hero p{max-width:850px;color:#d9e5f5;line-height:1.7}
-.grid{max-width:1180px;margin:28px auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,2fr) 320px;gap:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #10233f0b}
-h2{margin-top:0;font-family:Georgia,serif}p,li{line-height:1.7}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-size:12px;font-weight:700}
-.source a,.side-link{color:var(--blue);text-decoration:none}.side-link{display:block;padding:9px 0}
-.notice{background:#f8fafc;border-left:4px solid #94a3b8;padding:15px;border-radius:8px;color:#475467}
-.footer{max-width:1180px;margin:20px auto;padding:30px 24px;color:#667085;border-top:1px solid var(--line);font-size:13px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}h1{font-size:32px}.navin{display:block}.nav a{margin:10px 12px 0 0;display:inline-block}}
-</style><!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
-<script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-NBKTXWJ20G');
-</script>
+:root{--blue:#084b9a;--blue2:#0b63ce;--blue3:#1678e8;--dark:#102a43;--ink:#243b53;--muted:#627d98;--bg:#f5f8fc;--card:#fff;--border:#d9e2ec;--good:#e3f9e5;--warn:#fff3cd;--danger:#fde8e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.72}.wrap{max-width:1240px;margin:auto;padding:0 22px}
+header{background:linear-gradient(135deg,var(--blue),var(--blue2),var(--blue3));color:#fff;padding:52px 0 42px}.badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;letter-spacing:.3px}h1{font-size:42px;line-height:1.12;margin:18px 0 14px;letter-spacing:-.8px}header p{max-width:900px;margin:0;font-size:18px;opacity:.96}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.stat{background:#fff;color:var(--dark);border-radius:14px;padding:18px;box-shadow:0 8px 22px rgba(0,0,0,.08)}.stat b{display:block;font-size:20px;margin-bottom:4px}.stat span{font-size:13px;color:var(--muted)}
+main{padding:30px 0 50px}.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin:18px 0;box-shadow:0 4px 14px rgba(16,42,67,.045)}h2{color:var(--blue);font-size:28px;line-height:1.25;margin:0 0 14px}h3{color:var(--dark);font-size:21px;margin:24px 0 8px}h4{margin:18px 0 6px;color:var(--blue)}p{margin:10px 0}ul,ol{padding-left:24px}li{margin:7px 0}.toc{background:#eef5ff;border-left:5px solid var(--blue2)}.toc a{color:var(--blue);text-decoration:none;font-weight:600}.callout{border-radius:12px;padding:18px 20px;margin:18px 0}.info{background:#eef5ff;border-left:5px solid var(--blue2)}.warning{background:var(--warn);border-left:5px solid #d39e00}.danger{background:var(--danger);border-left:5px solid #c92a2a}.good{background:var(--good);border-left:5px solid #2f9e44}table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}th,td{border:1px solid var(--border);padding:12px 13px;vertical-align:top;text-align:left}th{background:#edf4fb;color:var(--dark)}code{background:#edf2f7;border-radius:5px;padding:2px 5px}.pill{display:inline-block;background:#e7f1ff;color:var(--blue);padding:3px 9px;border-radius:999px;font-size:12px;font-weight:700}.nextprev{display:grid;grid-template-columns:1fr 1fr;gap:14px}.nextprev a{display:block;text-decoration:none;color:var(--blue);font-weight:700;background:#f2f7fd;border:1px solid var(--border);border-radius:12px;padding:15px}.small{font-size:13px;color:var(--muted)}footer{background:var(--dark);color:#d9e2ec;padding:38px 0}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}footer a{color:#fff;text-decoration:none}footer h3{color:#fff;margin-top:0}@media(max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}.footgrid{grid-template-columns:1fr 1fr}}@media(max-width:620px){.wrap{padding:0 15px}header{padding:38px 0 32px}h1{font-size:31px}.stats{grid-template-columns:1fr 1fr;gap:10px}.stat{padding:14px}main{padding-top:18px}.card{padding:20px}h2{font-size:24px}.nextprev,.footgrid{grid-template-columns:1fr}table{font-size:13px;display:block;overflow-x:auto;white-space:normal}}
+</style></head><body>
+<header><div class="wrap">
+<span class="badge">GST RULES • REGISTRATION</span>
+<h1>Rule 21A – Suspension of Registration</h1>
+<p>A practical, current guide to when a GST registration can be suspended, what REG-31 means, what the taxpayer can and cannot do during suspension, and how the suspension can be revoked.</p>
+<div class="stats">
+<div class="stat"><b>Rule 21A</b><span>Suspension of registration</span></div>
+<div class="stat"><b>REG-31</b><span>Intimation for specified analytical discrepancies</span></div>
+<div class="stat"><b>30 days</b><span>Explanation period specified in Rule 21A(2A)</span></div>
+<div class="stat"><b>Rule 22</b><span>Cancellation proceedings linked to suspension</span></div>
+</div></div></header>
+<main><div class="wrap">
 
-<!-- Google AdSense -->
-<script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
-  crossorigin="anonymous"></script>
+<div class="card toc"><h2>On this page</h2><ol>
+<li><a href="#overview">Rule 21A at a glance</a></li>
+<li><a href="#triggers">When registration can be suspended</a></li>
+<li><a href="#application">Suspension after cancellation application</a></li>
+<li><a href="#officer">Suspension by proper officer</a></li>
+<li><a href="#analytics">Analytical suspension and REG-31</a></li>
+<li><a href="#effect">What suspension means for the taxpayer</a></li>
+<li><a href="#revocation">How suspension is revoked</a></li>
+<li><a href="#practical">Practical business examples</a></li>
+<li><a href="#response">How to respond to a suspension/REG-31 communication</a></li>
+<li><a href="#controls">Finance and ERP controls</a></li>
+<li><a href="#compare">Rule 21A vs Rule 21 vs Rule 22</a></li>
+<li><a href="#faq">FAQs</a></li>
+</ol></div>
 
-<style>
-/* GST Reconciliation site-wide width standard — matches homepage exactly. */
-.wrap,
-.legal-wrap,
-.rule-wrap,
-.section-wrap,
-.section-page-wrap,
-.legal-container,
-.legal-page-wrap,
-.site-container,
-main.container,
-header .container,
-.hero .container,
-footer .container {
-  width: min(1400px, calc(100% - 64px));
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
-</style>
-</head><body>
-<header class="nav"><div class="navin"><a class="brand" href="/gst-act.html">GST Reconciliation · GST Legal Library</a>
-<nav><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">Articles</a></nav></div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Central Goods and Services Tax Rules, 2017</div>
-<h1>Rule 21A — Suspension of registration</h1><p>CGST Rules · Current in India Code record</p></div></section>
-<main class="grid"><div>
-<section class="card"><h2>Rule reference</h2>
-<p><strong>Rule:</strong> 21A</p><p><strong>Subject:</strong> Suspension of registration</p><p><strong>Chapter:</strong> CGST Rules</p>
-<span class="badge">Current in India Code record</span></section>
-<section class="card"><h2>Legal text and verification</h2>
-<p>This is the Rule-wise reference page in the GSTReconciliation.in legal library. The statutory wording should be checked against the applicable consolidated Rules and amendment notifications for the relevant tax period.</p>
-<div class="notice"><strong>Primary source:</strong> India Code 2.0 — Central Goods and Services Tax Rules, 2017. This automatically generated page does not invent or reproduce unverified statutory wording.</div>
-<p class="source"><a href="https://india-code.vercel.app/R10-015" target="_blank" rel="noopener">Open Central Goods and Services Tax Rules on India Code →</a></p></section>
-<section class="card"><h2>Practical note</h2>
-<p>GST Rules are amended through notifications. For professional or compliance use, verify the version applicable to the relevant date and the corresponding Gazette notification.</p></section>
+<section class="card"><h2>Rule 21A at a glance</h2>
+<div id="overview"></div>
+<p><strong>Rule 21A of the CGST Rules, 2017 deals with suspension of GST registration.</strong> Suspension is different from cancellation. In a suspension situation, the registration is temporarily put into an inactive state while the relevant cancellation proceedings or compliance issue is being dealt with.</p>
+<div class="callout info"><strong>Important:</strong> Suspension should not automatically be treated as a final cancellation. Rule 21A links the suspension process with the proceedings under Rule 22, and the current rule also contains specific mechanisms for revocation in certain situations.</div>
+<p>The current Rule 21A covers three broad routes: suspension following the taxpayer's cancellation application, suspension by the proper officer where cancellation appears warranted, and suspension triggered by specified analytical differences/anomalies or contravention of Rule 10A.</p>
+</section>
+<section class="card"><h2>When can GST registration be suspended?</h2>
+<div id="triggers"></div>
+<table><thead><tr><th>Route</th><th>Trigger</th><th>What happens</th></tr></thead><tbody>
+<tr><td>Rule 21A(1)</td><td>Registered person applies for cancellation under Rule 20</td><td>Registration is deemed suspended from the later of the application date or the requested cancellation effective date, pending Rule 22 proceedings.</td></tr>
+<tr><td>Rule 21A(2)</td><td>Proper officer has reasons to believe registration is liable to cancellation under Section 29 or Rule 21</td><td>The officer may suspend the registration from a date determined by the officer, pending Rule 22 proceedings.</td></tr>
+<tr><td>Rule 21A(2A)(a)</td><td>Significant differences/anomalies are identified from specified return/supply comparisons or other Council-recommended analysis indicating contravention leading to cancellation</td><td>Registration is suspended and the person is intimated in REG-31 with the identified differences/anomalies and asked to explain.</td></tr>
+<tr><td>Rule 21A(2A)(b)</td><td>Contravention of Rule 10A</td><td>Registration is suspended and the person is intimated through REG-31 and asked to explain why registration should not be cancelled.</td></tr>
+</tbody></table>
+<p><strong>Key point:</strong> Rule 21A is a suspension mechanism; it does not itself represent the final cancellation order.</p>
+</section>
+<section class="card"><h2>1. Suspension after the taxpayer applies for cancellation</h2>
+<div id="application"></div>
+<p>Under Rule 21A(1), where a registered person has applied for cancellation under Rule 20, the registration is deemed to be suspended from the date of submission of the cancellation application or the date from which cancellation is sought, <strong>whichever is later</strong>, pending completion of cancellation proceedings under Rule 22.</p>
+<div class="callout good"><strong>Example:</strong> If a business submits a cancellation application on 10 October but requests cancellation from 1 November, the deemed suspension starts from 1 November because that is the later date.</div>
+<p>This route is therefore particularly relevant when a business has voluntarily decided that it is no longer required to remain registered and has filed the cancellation application.</p>
+</section>
+<section class="card"><h2>2. Suspension by the proper officer</h2>
+<div id="officer"></div>
+<p>Under Rule 21A(2), where the proper officer has reasons to believe that the registration is liable to cancellation under <strong>Section 29 of the CGST Act or Rule 21</strong>, the officer may suspend the registration from a date determined by the officer while cancellation proceedings under Rule 22 are pending.</p>
+<p>Rule 21A therefore operates as an important bridge between a suspected cancellation ground and the formal cancellation proceedings. For businesses, this means that a registration status showing “suspended” should be investigated immediately rather than waiting for the matter to become a final cancellation.</p>
+<div class="callout warning"><strong>Do not confuse:</strong> Rule 21 identifies circumstances in which registration is liable to cancellation; Rule 21A provides for suspension; Rule 22 deals with the cancellation proceedings and order.</div>
+</section>
+<section class="card"><h2>3. Analytical suspension and FORM GST REG-31</h2>
+<div id="analytics"></div>
+<p>Rule 21A(2A) addresses cases where system-based or other prescribed analysis identifies significant differences, anomalies or non-compliance indicating a contravention that can lead to cancellation.</p>
+<h3>Return and supply comparisons</h3>
+<p>The current wording covers comparison of returns furnished under Section 39 with outward supplies reported in <strong>FORM GSTR-1, including GSTR-1A where applicable</strong>, and details of inward supplies derived from outward supplies reported by suppliers in their GSTR-1 or applicable GSTR-1A of the previous tax period. The rule also permits other analysis carried out on the recommendations of the GST Council.</p>
+<h3>Rule 10A compliance</h3>
+<p>Contravention of Rule 10A is separately included in Rule 21A(2A). Rule 10A concerns furnishing bank account details within the prescribed framework after registration, so businesses should treat bank-account compliance as a registration-control item rather than an administrative afterthought.</p>
+<h3>What is REG-31?</h3>
+<p><strong>FORM GST REG-31</strong> is the electronic intimation used under Rule 21A(2A). The communication highlights the differences, anomalies or non-compliances and asks the taxpayer to explain why the registration should not be cancelled. The current rule specifies a <strong>thirty-day period</strong> for the explanation.</p>
+<div class="callout info"><strong>Practical response:</strong> A REG-31 communication should be reconciled line-by-line against books, GSTR-1, GSTR-1A where relevant, GSTR-3B, purchase/ITC records, supplier data and registration master data before submitting the explanation.</div>
+</section>
+<section class="card"><h2>4. What happens during suspension?</h2>
+<div id="effect"></div>
+<p>Rule 21A(3) states that a registered person whose registration has been suspended under Rule 21A(1), 21A(2) or 21A(2A) <strong>shall not make any taxable supply during the period of suspension</strong> and is not required to furnish a return under Section 39 during that period.</p>
+<p>The Explanation to Rule 21A(3) clarifies that “shall not make any taxable supply” means the registered person shall <strong>not issue a tax invoice and, accordingly, not charge tax</strong> on supplies made during the suspension period.</p>
+<p>For suspension under Rule 21A(2) or 21A(2A), Rule 21A(3A) also provides that a refund under Section 54 shall not be granted during the suspension period.</p>
+<div class="callout danger"><strong>Operational warning:</strong> Once a GST registration is suspended, the finance team should immediately verify the registration status before issuing tax invoices. Continuing normal invoicing without addressing the suspension can create significant tax, contractual and reconciliation problems.</div>
+</section>
+<section class="card"><h2>5. How is the suspension revoked?</h2>
+<div id="revocation"></div>
+<p>Under Rule 21A(4), suspension is generally deemed to be revoked upon completion of the proceedings by the proper officer under Rule 22, and the revocation takes effect from the date on which the suspension came into effect.</p>
+<p>The rule also allows the proper officer to revoke the suspension during the pendency of cancellation proceedings where the officer considers it appropriate.</p>
+<h3>Special revocation routes</h3>
+<ul>
+<li>Where suspension under Rule 21A(2A) relates to specified contraventions under Section 29(2)(b) or Section 29(2)(c), and registration has not already been cancelled under Rule 22, the suspension is deemed revoked upon furnishing all pending returns.</li>
+<li>Where suspension under Rule 21A(2A) relates to contravention of Rule 10A and registration has not already been cancelled under Rule 22, the suspension is deemed revoked upon compliance with Rule 10A.</li>
+</ul>
+<p>Therefore, the correct remedy depends on <strong>why the registration was suspended</strong>. A taxpayer should not use a generic reply when the underlying trigger is a specific return, registration or compliance failure.</p>
+</section>
+<section class="card"><h2>6. What about supplies made during the suspension period?</h2>
+<p>Rule 21A(5) provides that where an order having the effect of revocation of suspension has been passed, the provisions of <strong>Section 31(3)(a)</strong> and <strong>Section 40</strong>, and the procedure specified thereunder, apply in respect of supplies made during the suspension period.</p>
+<p>This is important for accounting and tax teams because the eventual restoration of registration can require appropriate documentation and reporting treatment for supplies falling within the relevant period.</p>
+<div class="callout warning"><strong>Do not simply back-date invoices without professional review.</strong> The exact treatment should be determined from the suspension dates, nature of supply, documents already issued, tax charged, books, and the applicable statutory procedure.</div>
+</section>
+<section class="card"><h2>7. Practical business examples</h2>
+<div id="practical"></div>
+<h3>Example A – GSTR-1 and GSTR-3B mismatch</h3>
+<p>A construction company reports ₹10 crore of taxable outward supplies in GSTR-1 but only ₹7.5 crore in its corresponding Section 39 return. A system analysis identifies a significant anomaly. If the facts indicate a contravention capable of leading to cancellation, Rule 21A(2A) may become relevant and the taxpayer may receive REG-31.</p>
+<p>The finance team should reconcile invoice-level data, amendments, credit notes, advances, place-of-supply classification, period differences and tax liability before responding.</p>
+<h3>Example B – ITC and supplier-data anomaly</h3>
+<p>A registered person claims substantial ITC while supplier-reported outward supplies and the recipient's inward-supply data produce a significant inconsistency. The business should identify whether the difference is a timing issue, amendment, supplier filing issue, duplicate booking, wrong GSTIN or an actual unsupported claim.</p>
+<h3>Example C – Rule 10A issue</h3>
+<p>A registered person has not complied with the applicable bank-account furnishing requirement. If the non-compliance falls within Rule 21A(2A)(b), suspension can arise and the taxpayer should promptly complete the Rule 10A requirement and preserve evidence of compliance.</p>
+<h3>Example D – Construction-company premises</h3>
+<p>A contractor operates projects at multiple sites but its declared principal/additional places of business are not properly maintained. If the facts ultimately fall within a cancellation ground under Rule 21, the officer may use Rule 21A as part of the suspension/cancellation process. The business should maintain registration records, lease/ownership documents, site records and project documentation consistently.</p>
+</section>
+<section class="card"><h2>8. How to respond to REG-31 or suspension</h2>
+<div id="response"></div>
+<ol>
+<li><strong>Confirm the exact suspension date</strong> and identify whether it arose under Rule 21A(1), (2) or (2A).</li>
+<li><strong>Download and preserve the communication</strong> and list every discrepancy mentioned.</li>
+<li><strong>Reconcile the tax ledger</strong> with GSTR-1/GSTR-1A, GSTR-3B, e-invoices where applicable, credit/debit notes and books.</li>
+<li><strong>Check supplier/recipient data</strong> where the communication is based on inward-supply or outward-supply analytics.</li>
+<li><strong>Check Rule 10A compliance</strong> where the suspension reason refers to bank-account furnishing.</li>
+<li><strong>Prepare documentary evidence</strong> rather than giving only a narrative explanation.</li>
+<li><strong>Submit the explanation within the prescribed period</strong> and retain proof of submission.</li>
+<li><strong>Track the registration status</strong> until the suspension is revoked or cancellation proceedings are completed.</li>
+</ol>
+<div class="callout good"><strong>Best practice:</strong> Make the response “observation → reconciliation → reason for difference → supporting document → corrective action” rather than simply stating that the mismatch is a technical error.</div>
+</section>
+<section class="card"><h2>9. Finance, MIS and ERP controls</h2>
+<div id="controls"></div>
+<p>Businesses with multiple GST registrations should build Rule 21A prevention into their monthly closing process.</p>
+<table><thead><tr><th>Control</th><th>Recommended check</th></tr></thead><tbody>
+<tr><td>Sales reconciliation</td><td>Invoice register ↔ GSTR-1/GSTR-1A ↔ GSTR-3B ↔ e-invoice data, wherever applicable.</td></tr>
+<tr><td>ITC reconciliation</td><td>Purchase register ↔ supplier data/2B ↔ books ↔ GSTR-3B, with timing and amendment reasons documented.</td></tr>
+<tr><td>GST master data</td><td>GSTIN, legal name, principal/additional places, bank details and authorised-user records should be reviewed periodically.</td></tr>
+<tr><td>Return controls</td><td>Before filing, compare outward liability and taxable turnover across all relevant reports.</td></tr>
+<tr><td>Exception dashboard</td><td>Flag large GSTR-1 vs GSTR-3B differences, missing invoices, duplicate invoices and unusual ITC movements.</td></tr>
+<tr><td>Suspension tracker</td><td>Maintain communication date, reason, response deadline, documents submitted and status of revocation/cancellation proceedings.</td></tr>
+</tbody></table>
+</section>
+<section class="card"><h2>10. Rule 21A vs Rule 21 vs Rule 22</h2>
+<div id="compare"></div>
+<table><thead><tr><th>Provision</th><th>Main function</th><th>Practical meaning</th></tr></thead><tbody>
+<tr><td><strong>Rule 21</strong></td><td>Registration to be cancelled in specified cases</td><td>Identifies specified cancellation grounds.</td></tr>
+<tr><td><strong>Rule 21A</strong></td><td>Suspension of registration</td><td>Temporarily suspends the registration while specified cancellation/compliance proceedings are dealt with.</td></tr>
+<tr><td><strong>Rule 22</strong></td><td>Cancellation proceedings</td><td>Provides the procedural route for notice, reply and cancellation order in applicable cases.</td></tr>
+<tr><td><strong>Rule 23</strong></td><td>Revocation of cancellation</td><td>Deals with revocation where a registration has actually been cancelled and the statutory conditions for revocation are met.</td></tr>
+</tbody></table>
+<div class="callout info"><strong>Simple memory aid:</strong> <span class="pill">Rule 21</span> “Why can cancellation arise?” → <span class="pill">Rule 21A</span> “Suspend registration” → <span class="pill">Rule 22</span> “Conduct cancellation proceedings” → <span class="pill">Rule 23</span> “Revocation after cancellation, where applicable.”</div>
+</section>
+<section class="card"><h2>11. Common mistakes businesses should avoid</h2>
+<ul>
+<li>Treating suspension as if the GST registration has already been finally cancelled.</li>
+<li>Continuing to issue tax invoices after the registration has been suspended.</li>
+<li>Ignoring a REG-31 communication because the taxpayer believes the mismatch is “only technical”.</li>
+<li>Explaining a GSTR-1/GSTR-3B difference without an invoice-level reconciliation.</li>
+<li>Failing to check GSTR-1A or amendment effects where applicable.</li>
+<li>Not checking whether the suspension relates to Rule 10A.</li>
+<li>Submitting a reply without preserving supporting documents and filing evidence.</li>
+<li>Failing to monitor the registration status after submitting the explanation.</li>
+</ul>
+</section>
+<section class="card"><h2>12. FAQs</h2>
+<div id="faq"></div>
+<h3>Is suspension the same as cancellation?</h3><p>No. Suspension is a temporary status under Rule 21A. Cancellation proceedings and the final cancellation decision are dealt with through the applicable provisions, including Rule 22.</p>
+<h3>Can I issue a GST tax invoice while registration is suspended?</h3><p>Rule 21A(3) states that a person whose registration is suspended shall not make taxable supplies during the suspension. Its Explanation states that this means the person shall not issue a tax invoice and accordingly not charge tax on supplies made during the suspension period.</p>
+<h3>Does REG-31 always mean the GST registration is permanently cancelled?</h3><p>No. REG-31 is an intimation under Rule 21A(2A) asking the taxpayer to explain why registration should not be cancelled. The subsequent outcome depends on the proceedings and compliance.</p>
+<h3>How long does a REG-31 taxpayer have to explain?</h3><p>Rule 21A(2A) currently specifies a period of thirty days for the explanation.</p>
+<h3>Can suspension be revoked before cancellation proceedings finish?</h3><p>Yes. Rule 21A(4) expressly permits the proper officer to revoke suspension during the pendency of cancellation proceedings if the officer deems fit, apart from the deemed-revocation mechanisms specified in the rule.</p>
+<h3>What if the suspension was due to Rule 10A?</h3><p>Where the suspension is under Rule 21A(2A) for contravention of Rule 10A and registration has not already been cancelled under Rule 22, the rule provides for deemed revocation upon compliance with Rule 10A.</p>
+<h3>What should a company do immediately after suspension?</h3><p>Confirm the suspension reason and date, stop normal taxable invoicing while suspended, reconcile the identified discrepancies, complete the required compliance and submit the explanation within the applicable period.</p>
+</section>
+<section class="card"><h2>13. Compliance checklist</h2>
+<ul>
+<li>☐ Check GST portal registration status daily when a suspension issue is active.</li>
+<li>☐ Record the exact suspension effective date.</li>
+<li>☐ Identify the relevant Rule 21A sub-rule.</li>
+<li>☐ Reconcile GSTR-1/GSTR-1A and GSTR-3B differences.</li>
+<li>☐ Reconcile supplier-derived inward data and ITC records where relevant.</li>
+<li>☐ Verify Rule 10A compliance where relevant.</li>
+<li>☐ Preserve invoices, ledgers, return workings and reconciliation statements.</li>
+<li>☐ Submit a fact-based explanation within the prescribed time.</li>
+<li>☐ Track revocation/cancellation outcome and update ERP controls.</li>
+</ul>
+</section>
+<div class="card">
+<h2>Related GST Rules</h2>
+<div class="nextprev">
+<a href="rule-20.html">← Rule 20 – Application for Cancellation</a>
+<a href="rule-21.html">← Rule 21 – Registration to be Cancelled in Certain Cases</a>
+<a href="rule-22.html">Rule 22 – Cancellation of Registration →</a>
+<a href="rule-23.html">Rule 23 – Revocation of Cancellation →</a>
 </div>
-<aside><section class="card"><h3>GST Rules navigation</h3>
-<a class="side-link" href="/gst-act.html">← GST Legal Library</a><a class="side-link" href="/gst-rules.html">GST Rules index</a><a class="side-link" href="/gst-rules/rule-21.html">← Previous Rule</a><a class="side-link" href="/gst-rules/rule-22.html">Next Rule →</a></section>
-<section class="card"><h3>Disclaimer</h3><p>This is an educational and practical reference. It is not a substitute for the applicable statute, notifications, circulars, Gazette publications or professional advice.</p></section></aside></main>
-<footer class="footer">GSTReconciliation.in · GST Legal Library · Educational reference</footer>
+<p style="margin-top:18px"><a href="../gst-act.html">GST Act</a> &nbsp;|&nbsp; <a href="../articles.html">GST Articles</a> &nbsp;|&nbsp; <a href="rule-24.html">Next Rule – Rule 24</a></p>
+</div>
+<div class="card small"><strong>Editorial verification:</strong> This page is prepared from the current Rule 21A text published by the CBIC tax-information portal, including amendments reflected in the rule text. For a particular notice or disputed transaction, apply the exact facts, dates and statutory provisions applicable to the taxpayer.</div>
+</div></main>
+<footer><div class="wrap footgrid">
+<div><h3>GST Reconciliation</h3><p>Practical GST compliance, reconciliation, accounting and finance knowledge for businesses and professionals.</p></div>
+<div><h3>GST Rules</h3><p><a href="rule-20.html">Rule 20</a><br><a href="rule-21.html">Rule 21</a><br><a href="rule-21a.html">Rule 21A</a><br><a href="rule-22.html">Rule 22</a></p></div>
+<div><h3>Explore</h3><p><a href="../gst-act.html">GST Act</a><br><a href="../articles.html">Articles</a><br><a href="../index.html">Home</a></p></div>
+</div></footer>
 </body></html>

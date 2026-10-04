@@ -1,76 +1,176 @@
-<!doctype html>
-<html lang="en"><head>
+<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rule 26 — Method of authentication | GST Reconciliation</title>
-<meta name="description" content="Rule 26 of the Central Goods and Services Tax Rules, 2017 — Method of authentication.">
+<title>Rule 26 – Methods of Authentication under GST | Practical Guide</title>
+<meta name="description" content="Rule 26 of the CGST Rules explained practically: electronic submission, digital signature certificate, e-signature, Board-notified verification modes, authorised signatories and entity-wise GST authentication requirements.">
+<meta name="keywords" content="Rule 26 GST, method of authentication GST, GST DSC, GST e-signature, GST authorised signatory, GST EVC, GST returns authentication">
+<link rel="canonical" href="https://gstreconciliation.in/gst-rules/rule-26.html">
+<meta name="google-adsense-account" content="ca-pub-8493595246856929">
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+<script>window.GST_GA4_ID='G-NBKTXWJ20G';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}if(window.GST_GA4_ID){var gas=document.createElement('script');gas.async=true;gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);document.head.appendChild(gas);gtag('js',new Date());gtag('config',window.GST_GA4_ID,{anonymize_ip:true});}</script>
 <style>
-:root{--bg:#f5f7fb;--navy:#10233f;--blue:#2563eb;--line:#dfe5ee;--muted:#667085}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#172033;font-family:Arial,sans-serif}
-.nav{background:var(--navy);color:#fff;padding:16px 24px}.navin{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:13px}.brand{font-weight:800;margin:0!important}
-.hero{background:linear-gradient(135deg,#10233f,#173d69);color:#fff;padding:55px 24px}
-.wrap{max-width:1180px;margin:auto}.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;opacity:.75}
-h1{font-family:Georgia,serif;font-size:42px;line-height:1.12;margin:12px 0}.hero p{max-width:850px;color:#d9e5f5;line-height:1.7}
-.grid{max-width:1180px;margin:28px auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,2fr) 320px;gap:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #10233f0b}
-h2{margin-top:0;font-family:Georgia,serif}p,li{line-height:1.7}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-size:12px;font-weight:700}
-.source a,.side-link{color:var(--blue);text-decoration:none}.side-link{display:block;padding:9px 0}
-.notice{background:#f8fafc;border-left:4px solid #94a3b8;padding:15px;border-radius:8px;color:#475467}
-.footer{max-width:1180px;margin:20px auto;padding:30px 24px;color:#667085;border-top:1px solid var(--line);font-size:13px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}h1{font-size:32px}.navin{display:block}.nav a{margin:10px 12px 0 0;display:inline-block}}
-</style><!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
-<script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-NBKTXWJ20G');
-</script>
+:root{--blue:#084b9a;--blue2:#0b63ce;--blue3:#1678e8;--dark:#102a43;--ink:#243b53;--muted:#627d98;--bg:#f5f8fc;--card:#fff;--border:#d9e2ec;--good:#e3f9e5;--warn:#fff3cd;--danger:#fde8e8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.72}.wrap{max-width:1240px;margin:auto;padding:0 22px}
+header{background:linear-gradient(135deg,var(--blue),var(--blue2),var(--blue3));color:#fff;padding:52px 0 42px}.badge{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);border-radius:999px;padding:7px 14px;font-size:13px;font-weight:700;letter-spacing:.3px}h1{font-size:42px;line-height:1.12;margin:18px 0 14px;letter-spacing:-.8px}header p{max-width:930px;margin:0;font-size:18px;opacity:.96}.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.stat{background:#fff;color:var(--dark);border-radius:14px;padding:18px;box-shadow:0 8px 22px rgba(0,0,0,.08)}.stat b{display:block;font-size:20px;margin-bottom:4px}.stat span{font-size:13px;color:var(--muted)}
+main{padding:30px 0 50px}.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:28px;margin:18px 0;box-shadow:0 4px 14px rgba(16,42,67,.045)}h2{color:var(--blue);font-size:28px;line-height:1.25;margin:0 0 14px}h3{color:var(--dark);font-size:21px;margin:24px 0 8px}p{margin:10px 0}ul,ol{padding-left:24px}li{margin:7px 0}.toc{background:#eef5ff;border-left:5px solid var(--blue2)}.toc a{color:var(--blue);text-decoration:none;font-weight:600}.callout{border-radius:12px;padding:18px 20px;margin:18px 0}.info{background:#eef5ff;border-left:5px solid var(--blue2)}.warning{background:var(--warn);border-left:5px solid #d39e00}.danger{background:var(--danger);border-left:5px solid #c92a2a}.good{background:var(--good);border-left:5px solid #2f9e44}table{width:100%;border-collapse:collapse;margin:16px 0;font-size:14px}th,td{border:1px solid var(--border);padding:12px 13px;vertical-align:top;text-align:left}th{background:#edf4fb;color:var(--dark)}.pill{display:inline-block;background:#e7f1ff;color:var(--blue);padding:3px 9px;border-radius:999px;font-size:12px;font-weight:700}.nextprev{display:grid;grid-template-columns:1fr 1fr;gap:14px}.nextprev a{display:block;text-decoration:none;color:var(--blue);font-weight:700;background:#f2f7fd;border:1px solid var(--border);border-radius:12px;padding:15px}.small{font-size:13px;color:var(--muted)}footer{background:var(--dark);color:#d9e2ec;padding:38px 0}.footgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:28px}footer a{color:#fff;text-decoration:none}footer h3{color:#fff;margin-top:0}@media(max-width:900px){.stats{grid-template-columns:repeat(2,1fr)}.footgrid{grid-template-columns:1fr 1fr}}@media(max-width:620px){.wrap{padding:0 15px}header{padding:38px 0 32px}h1{font-size:31px}.stats{grid-template-columns:1fr 1fr;gap:10px}.stat{padding:14px}main{padding-top:18px}.card{padding:20px}h2{font-size:24px}.nextprev,.footgrid{grid-template-columns:1fr}table{font-size:13px;display:block;overflow-x:auto}}
+</style></head><body>
+<header><div class="wrap"><span class="badge">GST RULES • AUTHENTICATION</span>
+<h1>Rule 26 – Methods of Authentication</h1>
+<p>A practical guide to how GST applications, returns, replies, appeals and other documents are electronically submitted and authenticated, including DSC, e-signature and entity-wise authorised-signatory requirements.</p>
+<div class="stats">
+<div class="stat"><b>Rule 26</b><span>Method of authentication</span></div>
+<div class="stat"><b>DSC</b><span>Digital Signature Certificate</span></div>
+<div class="stat"><b>E-signature</b><span>Electronic signature route</span></div>
+<div class="stat"><b>EVC / notified modes</b><span>Where specifically permitted</span></div>
+</div></div></header>
+<main><div class="wrap"><div class="card toc"><h2>On this page</h2><ol>
+<li><a href="#overview">Rule 26 at a glance</a></li>
+<li><a href="#submission">Electronic submission and authentication</a></li>
+<li><a href="#signatures">Who must sign or verify</a></li>
+<li><a href="#company">Companies and authorised signatories</a></li>
+<li><a href="#firm">Firms, HUFs, trusts and other entities</a></li>
+<li><a href="#officer">Notices, certificates and orders</a></li>
+<li><a href="#practical">Practical examples</a></li>
+<li><a href="#mistakes">Common authentication mistakes</a></li>
+<li><a href="#controls">Finance and ERP controls</a></li>
+<li><a href="#compare">Rule 26 vs DSC/e-signature/EVC</a></li>
+<li><a href="#faq">FAQs</a></li>
+</ol></div>
 
-<!-- Google AdSense -->
-<script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
-  crossorigin="anonymous"></script>
+<section class="card"><h2>1. Rule 26 at a glance</h2><div id="overview"></div>
+<p><strong>Rule 26 of the CGST Rules, 2017 deals with the method of authentication of documents submitted under the GST Rules.</strong> It is the rule that connects electronic filing with the legally recognised signature or verification mechanism.</p>
+<p>Rule 26 is important because GST compliance is heavily portal-based. Filing a return, replying to a notice, submitting an application or filing an appeal is not complete merely because information has been entered into the portal; the prescribed authentication/verification requirement must also be satisfied.</p>
+<div class="callout info"><strong>Core principle:</strong> Documents covered by the rule are submitted electronically using a <strong>digital signature certificate, e-signature, or another mode of signature/verification notified by the Board</strong>.</div>
+</section>
 
-<style>
-/* GST Reconciliation site-wide width standard — matches homepage exactly. */
-.wrap,
-.legal-wrap,
-.rule-wrap,
-.section-wrap,
-.section-page-wrap,
-.legal-container,
-.legal-page-wrap,
-.site-container,
-main.container,
-header .container,
-.hero .container,
-footer .container {
-  width: min(1400px, calc(100% - 64px));
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
-</style>
-</head><body>
-<header class="nav"><div class="navin"><a class="brand" href="/gst-act.html">GST Reconciliation · GST Legal Library</a>
-<nav><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">Articles</a></nav></div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Central Goods and Services Tax Rules, 2017</div>
-<h1>Rule 26 — Method of authentication</h1><p>CGST Rules · Current in India Code record</p></div></section>
-<main class="grid"><div>
-<section class="card"><h2>Rule reference</h2>
-<p><strong>Rule:</strong> 26</p><p><strong>Subject:</strong> Method of authentication</p><p><strong>Chapter:</strong> CGST Rules</p>
-<span class="badge">Current in India Code record</span></section>
-<section class="card"><h2>Legal text and verification</h2>
-<p>This is the Rule-wise reference page in the GSTReconciliation.in legal library. The statutory wording should be checked against the applicable consolidated Rules and amendment notifications for the relevant tax period.</p>
-<div class="notice"><strong>Primary source:</strong> India Code 2.0 — Central Goods and Services Tax Rules, 2017. This automatically generated page does not invent or reproduce unverified statutory wording.</div>
-<p class="source"><a href="https://india-code.vercel.app/R10-015" target="_blank" rel="noopener">Open Central Goods and Services Tax Rules on India Code →</a></p></section>
-<section class="card"><h2>Practical note</h2>
-<p>GST Rules are amended through notifications. For professional or compliance use, verify the version applicable to the relevant date and the corresponding Gazette notification.</p></section>
-</div>
-<aside><section class="card"><h3>GST Rules navigation</h3>
-<a class="side-link" href="/gst-act.html">← GST Legal Library</a><a class="side-link" href="/gst-rules.html">GST Rules index</a><a class="side-link" href="/gst-rules/rule-25.html">← Previous Rule</a><a class="side-link" href="/gst-rules/rule-27.html">Next Rule →</a></section>
-<section class="card"><h3>Disclaimer</h3><p>This is an educational and practical reference. It is not a substitute for the applicable statute, notifications, circulars, Gazette publications or professional advice.</p></section></aside></main>
-<footer class="footer">GSTReconciliation.in · GST Legal Library · Educational reference</footer>
+<section class="card"><h2>2. Electronic submission and authentication</h2><div id="submission"></div>
+<p>Rule 26(1) provides that applications, replies to notices, returns including details of outward and inward supplies, appeals and other documents required under the GST Rules are to be submitted electronically with the prescribed authentication.</p>
+<table><thead><tr><th>Authentication route</th><th>Meaning in practice</th></tr></thead><tbody>
+<tr><td><strong>Digital Signature Certificate (DSC)</strong></td><td>Cryptographic digital signature used by eligible taxpayers/authorised signatories for portal filings where DSC is prescribed or selected.</td></tr>
+<tr><td><strong>E-signature</strong></td><td>Electronic signature mechanism recognised under the Information Technology Act framework and enabled for the relevant GST transaction.</td></tr>
+<tr><td><strong>Other notified mode</strong></td><td>Another signature or verification method specifically notified by the Board for the relevant filing or taxpayer category.</td></tr>
+</tbody></table>
+<p>The exact authentication screen and permitted method can depend on the taxpayer type, filing and portal process. Therefore, a business should not assume that one authentication method is universally available for every GST action.</p>
+</section>
+
+<section class="card"><h2>3. Who must sign or verify?</h2><div id="signatures"></div>
+<p>Rule 26(2) sets out who is responsible for signing or verifying documents furnished online. The authorised person depends on the legal constitution of the taxpayer.</p>
+<table><thead><tr><th>Taxpayer type</th><th>Person who signs/verifies</th></tr></thead><tbody>
+<tr><td><strong>Individual</strong></td><td>The individual himself; where the rule permits, an authorised person may act in the specified circumstances.</td></tr>
+<tr><td><strong>Hindu Undivided Family (HUF)</strong></td><td>The Karta, subject to the rule's provisions for absence from India or incapacity.</td></tr>
+<tr><td><strong>Company</strong></td><td>The Chief Executive Officer or an authorised signatory.</td></tr>
+<tr><td><strong>Government / Government agency / local authority</strong></td><td>An officer authorised for this purpose.</td></tr>
+<tr><td><strong>Firm</strong></td><td>A partner who is not a minor or an authorised signatory, as permitted by the rule.</td></tr>
+<tr><td><strong>Other association</strong></td><td>A member of the association or an authorised signatory.</td></tr>
+<tr><td><strong>Trust</strong></td><td>The trustee or an authorised signatory.</td></tr>
+<tr><td><strong>Other person</strong></td><td>A competent person or a person authorised in accordance with Section 48, as applicable.</td></tr>
+</tbody></table>
+</section>
+
+<section class="card"><h2>4. Companies and authorised signatories</h2><div id="company"></div>
+<p>For a company, Rule 26 specifically recognises the <strong>Chief Executive Officer or authorised signatory</strong> for signing/verification. In practical GST administration, this makes maintenance of the authorised-signatory master particularly important.</p>
+<h3>Finance-team checks</h3>
+<ul>
+<li>Confirm the authorised signatory is correctly reflected in the GST registration profile.</li>
+<li>Ensure DSC ownership and validity are monitored where DSC is used.</li>
+<li>Remove or update former employees/directors/signatories when authority changes.</li>
+<li>Maintain internal approval evidence for high-value or sensitive filings.</li>
+<li>Do not share DSC credentials or private keys between employees.</li>
+</ul>
+<div class="callout danger"><strong>Security point:</strong> A DSC is not simply a username/password. It is a legally significant digital-signature credential. Keep the private key/token and PIN under controlled access.</div>
+</section>
+
+<section class="card"><h2>5. Firms, HUFs, trusts and other entities</h2><div id="firm"></div>
+<p>The entity-wise provisions matter when a GST registration is held by a partnership firm, HUF, trust, association or other legal/person category.</p>
+<p>For example, a partnership firm's GST filing should be linked to an eligible partner or properly authorised signatory rather than an employee who has no authority to represent the firm.</p>
+<div class="callout warning"><strong>Practical issue:</strong> An employee may prepare the return, reconciliation or reply, but preparation and legal authentication are separate functions. The authorised person must complete the prescribed verification/signature.</div>
+</section>
+
+<section class="card"><h2>6. Notices, certificates and orders</h2><div id="officer"></div>
+<p>Rule 26(3) deals with notices, certificates and orders issued under the relevant GST Rules. These are issued electronically by the proper officer or other authorised officer through the prescribed digital-signature, e-signature or other notified verification mechanism.</p>
+<p>This is important when a taxpayer downloads a GST notice, certificate or order from the portal. The electronic document and its authentication should be preserved as part of the statutory record.</p>
+<h3>For audit files</h3>
+<ul>
+<li>Keep the original downloaded notice/order/certificate.</li>
+<li>Record the date and time of download where your document-control policy requires it.</li>
+<li>Preserve the communication/reference number.</li>
+<li>Keep the corresponding reply and acknowledgement together.</li>
+</ul>
+</section>
+
+<section class="card"><h2>7. Practical examples</h2><div id="practical"></div>
+<h3>Example 1 — Company filing a GST return</h3>
+<p>The accounts team prepares the return and management reviews the workings. The authorised signatory then completes the prescribed electronic authentication. Preparation by the accountant does not replace the legal verification requirement.</p>
+<h3>Example 2 — Reply to a GST notice</h3>
+<p>A tax consultant drafts a response to a departmental notice. The taxpayer can use professional assistance for preparation, but the reply must be submitted using the prescribed authentication by the person authorised to act for the taxpayer.</p>
+<h3>Example 3 — Partnership firm</h3>
+<p>A partner authorises a responsible employee to prepare GST filings. The employee may perform the operational work, but the filing should be authenticated through the partner/authorised-signatory arrangement recognised in the GST registration and Rule 26.</p>
+<h3>Example 4 — Change of authorised signatory</h3>
+<p>A company replaces its finance head. The GST master should be updated where the change affects the authorised-signatory structure, and DSC access belonging to the former employee should be disabled according to the company's security policy.</p>
+</section>
+
+<section class="card"><h2>8. Common authentication mistakes</h2><div id="mistakes"></div>
+<ul>
+<li>Using a DSC belonging to a person who is no longer authorised.</li>
+<li>Allowing an employee to control another person's private DSC credentials.</li>
+<li>Assuming return preparation and return authentication are the same responsibility.</li>
+<li>Failing to update authorised-signatory details after a management change.</li>
+<li>Ignoring DSC expiry or token/driver issues until the filing deadline.</li>
+<li>Assuming EVC or another verification mode is available for every taxpayer and every filing.</li>
+<li>Not retaining filing acknowledgements and electronically issued notices/orders.</li>
+</ul>
+</section>
+
+<section class="card"><h2>9. Finance and ERP controls</h2><div id="controls"></div>
+<table><thead><tr><th>Control</th><th>Recommended practice</th></tr></thead><tbody>
+<tr><td>Authorised-signatory master</td><td>Maintain GSTIN-wise authorised person, role, effective date and approval status.</td></tr>
+<tr><td>DSC register</td><td>Track holder, expiry, token location and renewal responsibility.</td></tr>
+<tr><td>Maker-checker</td><td>Separate return/reply preparation from final legal authentication wherever practical.</td></tr>
+<tr><td>Access control</td><td>Do not share DSC PIN/private credentials; restrict portal access by role.</td></tr>
+<tr><td>Filing evidence</td><td>Store ARN/acknowledgement, filed document and relevant portal communication.</td></tr>
+<tr><td>Change management</td><td>Trigger GST authentication review when directors, partners, authorised signatories or key finance staff change.</td></tr>
+</tbody></table>
+</section>
+
+<section class="card"><h2>10. Rule 26 vs DSC, e-signature and EVC</h2><div id="compare"></div>
+<table><thead><tr><th>Concept</th><th>What it is</th><th>Rule 26 relevance</th></tr></thead><tbody>
+<tr><td><strong>Rule 26</strong></td><td>Legal rule specifying how GST documents are authenticated.</td><td>Provides the framework.</td></tr>
+<tr><td><strong>DSC</strong></td><td>Digital Signature Certificate-based signing.</td><td>One recognised authentication route.</td></tr>
+<tr><td><strong>E-signature</strong></td><td>Electronic signature mechanism recognised under the IT Act framework.</td><td>One recognised authentication route.</td></tr>
+<tr><td><strong>EVC / other notified verification</strong></td><td>Electronic verification mechanism where specifically enabled/notified.</td><td>Available only where the relevant GST process permits it.</td></tr>
+</tbody></table>
+<div class="callout info"><strong>Important:</strong> Do not state that “EVC can be used for all GST filings.” The availability of a particular verification mode depends on the applicable law, notification and GST portal process.</div>
+</section>
+
+<section class="card"><h2>11. FAQs</h2><div id="faq"></div>
+<h3>What is Rule 26 of the CGST Rules?</h3><p>Rule 26 prescribes the methods by which applications, replies, returns, appeals and other documents covered by the GST Rules are electronically authenticated.</p>
+<h3>Is DSC mandatory for every GST filing?</h3><p>Not necessarily. Rule 26 recognises DSC, e-signature and other modes of signature or verification notified by the Board. The applicable method depends on the taxpayer and the particular GST process.</p>
+<h3>Who can sign for a company?</h3><p>Rule 26 recognises the Chief Executive Officer or an authorised signatory of the company.</p>
+<h3>Who can sign for a partnership firm?</h3><p>The rule recognises a partner who is not a minor or an authorised signatory, subject to the applicable GST registration and portal process.</p>
+<h3>Can an accountant prepare a GST return?</h3><p>Yes, preparation and authentication can be separate functions. The return must ultimately be authenticated in the prescribed manner by the person authorised under the applicable rules.</p>
+<h3>What happens if the authorised signatory leaves the company?</h3><p>The company should update its GST registration/authorised-signatory records where required and ensure the former person's DSC and portal access are no longer used for the company's filings.</p>
+<h3>Are GST notices also electronically authenticated?</h3><p>Rule 26(3) provides for notices, certificates and orders under the relevant Rules to be issued electronically through the prescribed authentication mechanism.</p>
+</section>
+
+<section class="card"><h2>12. Compliance checklist</h2><ul>
+<li>☐ Maintain GSTIN-wise authorised-signatory records.</li>
+<li>☐ Ensure the correct person authenticates filings.</li>
+<li>☐ Track DSC validity where DSC is used.</li>
+<li>☐ Protect DSC private keys and PINs.</li>
+<li>☐ Review signatory access when employees/directors/partners change.</li>
+<li>☐ Do not assume EVC is universally available.</li>
+<li>☐ Preserve filing acknowledgements and electronically issued notices/orders.</li>
+<li>☐ Maintain maker-checker controls for important GST submissions.</li>
+</ul></section>
+
+<div class="card"><h2>Related GST Rules</h2><div class="nextprev">
+<a href="rule-25.html">← Rule 25 – Physical Verification of Business Premises</a>
+<a href="rule-27.html">Rule 27 – Value of Supply of Goods or Services Where Consideration is Not Wholly in Money →</a>
+<a href="rule-8.html">Rule 8 – Application for Registration</a>
+<a href="rule-9.html">Rule 9 – Verification of Application and Approval of Registration</a>
+</div><p style="margin-top:18px"><a href="../gst-act.html">GST Act</a> &nbsp;|&nbsp; <a href="../articles.html">GST Articles</a> &nbsp;|&nbsp; <a href="../index.html">Home</a></p></div>
+<div class="card small"><strong>Editorial verification:</strong> This page follows the Rule 26 authentication framework published by CBIC. Specific filing screens and permitted verification methods can vary by taxpayer category and GST portal process; where a notification specifically prescribes another mode, that specific provision should be checked.</div>
+</div></main>
+<footer><div class="wrap footgrid"><div><h3>GST Reconciliation</h3><p>Practical GST compliance, reconciliation, accounting and finance knowledge for businesses and professionals.</p></div>
+<div><h3>GST Rules</h3><p><a href="rule-24.html">Rule 24</a><br><a href="rule-25.html">Rule 25</a><br><a href="rule-26.html">Rule 26</a><br><a href="rule-27.html">Rule 27</a></p></div>
+<div><h3>Explore</h3><p><a href="../gst-act.html">GST Act</a><br><a href="../articles.html">Articles</a><br><a href="../index.html">Home</a></p></div></div></footer>
 </body></html>

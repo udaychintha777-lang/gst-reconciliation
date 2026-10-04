@@ -1,76 +1,372 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rule 17 — Assignment of Unique Identity Number to certain special entities | GST Reconciliation</title>
-<meta name="description" content="Rule 17 of the Central Goods and Services Tax Rules, 2017 — Assignment of Unique Identity Number to certain special entities.">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GST Rule 17 – Unique Identity Number (UIN) | Complete Practical Guide</title>
+<meta name="description" content="Complete practical guide to CGST Rule 17 on Unique Identity Number (UIN) for UN bodies, embassies and other notified entities. Understand REG-13, REG-06, UIN eligibility, refunds, examples, compliance and audit relevance.">
+<meta name="keywords" content="GST Rule 17, CGST Rule 17, Unique Identity Number, UIN GST, REG-13, REG-06, UN bodies GST, embassy GST, GST refund UIN">
+<link rel="canonical" href="https://gstreconciliation.in/gst-rules/rule-17.html">
 <style>
-:root{--bg:#f5f7fb;--navy:#10233f;--blue:#2563eb;--line:#dfe5ee;--muted:#667085}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#172033;font-family:Arial,sans-serif}
-.nav{background:var(--navy);color:#fff;padding:16px 24px}.navin{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:13px}.brand{font-weight:800;margin:0!important}
-.hero{background:linear-gradient(135deg,#10233f,#173d69);color:#fff;padding:55px 24px}
-.wrap{max-width:1180px;margin:auto}.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;opacity:.75}
-h1{font-family:Georgia,serif;font-size:42px;line-height:1.12;margin:12px 0}.hero p{max-width:850px;color:#d9e5f5;line-height:1.7}
-.grid{max-width:1180px;margin:28px auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,2fr) 320px;gap:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #10233f0b}
-h2{margin-top:0;font-family:Georgia,serif}p,li{line-height:1.7}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-size:12px;font-weight:700}
-.source a,.side-link{color:var(--blue);text-decoration:none}.side-link{display:block;padding:9px 0}
-.notice{background:#f8fafc;border-left:4px solid #94a3b8;padding:15px;border-radius:8px;color:#475467}
-.footer{max-width:1180px;margin:20px auto;padding:30px 24px;color:#667085;border-top:1px solid var(--line);font-size:13px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}h1{font-size:32px}.navin{display:block}.nav a{margin:10px 12px 0 0;display:inline-block}}
-</style><!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
-<script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-NBKTXWJ20G');
-</script>
-
-<!-- Google AdSense -->
-<script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
-  crossorigin="anonymous"></script>
-
-<style>
-/* GST Reconciliation site-wide width standard — matches homepage exactly. */
-.wrap,
-.legal-wrap,
-.rule-wrap,
-.section-wrap,
-.section-page-wrap,
-.legal-container,
-.legal-page-wrap,
-.site-container,
-main.container,
-header .container,
-.hero .container,
-footer .container {
-  width: min(1400px, calc(100% - 64px));
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#243447;background:#f5f8fb;line-height:1.7}
+a{color:#075ec7;text-decoration:none}.wrap{max-width:1240px;margin:auto;padding:0 22px}
+.hero{background:linear-gradient(135deg,#084b9a,#0b63ce 60%,#1678e8);color:#fff;padding:54px 0 44px}
+.badge{display:inline-block;background:rgba(255,255,255,.15);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:700;letter-spacing:.3px}
+.hero h1{font-size:42px;line-height:1.15;margin:18px 0 14px}.hero p{font-size:18px;max-width:930px;margin:0;color:#eaf3ff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.stat{background:#fff;color:#17324d;padding:18px;border-radius:12px;box-shadow:0 5px 18px rgba(0,0,0,.12)}.stat b{display:block;font-size:23px;color:#075ec7}.stat span{font-size:13px;color:#536779}
+main{padding:34px 0}.layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:26px}
+.card{background:#fff;border:1px solid #e2eaf2;border-radius:14px;padding:27px;margin-bottom:22px;box-shadow:0 3px 12px rgba(24,55,85,.05)}
+h2{font-size:28px;color:#123d68;margin:0 0 15px}h3{font-size:21px;color:#164f82;margin:24px 0 10px}
+.note{border-left:5px solid #1678e8;background:#eef6ff;padding:16px 18px;border-radius:8px;margin:18px 0}
+.warning{border-left:5px solid #e09a16;background:#fff8e8;padding:16px 18px;border-radius:8px;margin:18px 0}
+.success{border-left:5px solid #24965a;background:#eefaf3;padding:16px 18px;border-radius:8px;margin:18px 0}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px}th,td{border:1px solid #dbe4ed;padding:11px;text-align:left;vertical-align:top}th{background:#edf4fb;color:#143f67}
+ul,ol{padding-left:24px}.toc{position:sticky;top:18px}.toc h3{margin-top:0}.toc a{display:block;padding:7px 0;border-bottom:1px solid #edf1f5}
+footer{background:#102a43;color:#d9e5ef;margin-top:40px;padding:42px 0 18px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}.footer-grid h3{color:#fff}.footer-grid a{color:#d9e5ef}.bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:16px;font-size:13px}
+.small{font-size:14px;color:#607386}.pill{display:inline-block;background:#eef5fb;border:1px solid #d7e4f0;border-radius:999px;padding:4px 9px;margin:3px;font-size:12px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.toc{position:static}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.wrap{padding:0 15px}.hero{padding:38px 0 30px}.hero h1{font-size:31px}.hero p{font-size:16px}.stats{grid-template-columns:1fr}.card{padding:20px}h2{font-size:24px}.footer-grid{grid-template-columns:1fr}}
 </style>
-</head><body>
-<header class="nav"><div class="navin"><a class="brand" href="/gst-act.html">GST Reconciliation · GST Legal Library</a>
-<nav><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">Articles</a></nav></div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Central Goods and Services Tax Rules, 2017</div>
-<h1>Rule 17 — Assignment of Unique Identity Number to certain special entities</h1><p>CGST Rules · Current in India Code record</p></div></section>
-<main class="grid"><div>
-<section class="card"><h2>Rule reference</h2>
-<p><strong>Rule:</strong> 17</p><p><strong>Subject:</strong> Assignment of Unique Identity Number to certain special entities</p><p><strong>Chapter:</strong> CGST Rules</p>
-<span class="badge">Current in India Code record</span></section>
-<section class="card"><h2>Legal text and verification</h2>
-<p>This is the Rule-wise reference page in the GSTReconciliation.in legal library. The statutory wording should be checked against the applicable consolidated Rules and amendment notifications for the relevant tax period.</p>
-<div class="notice"><strong>Primary source:</strong> India Code 2.0 — Central Goods and Services Tax Rules, 2017. This automatically generated page does not invent or reproduce unverified statutory wording.</div>
-<p class="source"><a href="https://india-code.vercel.app/R10-015" target="_blank" rel="noopener">Open Central Goods and Services Tax Rules on India Code →</a></p></section>
-<section class="card"><h2>Practical note</h2>
-<p>GST Rules are amended through notifications. For professional or compliance use, verify the version applicable to the relevant date and the corresponding Gazette notification.</p></section>
+<script>
+window.GST_GA4_ID='G-NBKTXWJ20G';window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments)}
+if(window.GST_GA4_ID){var gas=document.createElement('script');gas.async=true;gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);document.head.appendChild(gas);gtag('js',new Date());gtag('config',window.GST_GA4_ID,{anonymize_ip:true});}
+</script>
+<meta name="google-adsense-account" content="ca-pub-8493595246856929">
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
+</head>
+<body id="top">
+<header class="hero">
+<div class="wrap">
+<span class="badge">CGST RULES • GST REGISTRATION</span>
+<h1>Rule 17 – Assignment of Unique Identity Number to Certain Special Entities</h1>
+<p>A practical guide to GST Unique Identity Numbers for UN bodies, embassies and other notified special entities. Understand FORM GST REG-13, UIN, REG-06, the three-working-day process, refund relevance and the controls needed for proper GST documentation.</p>
+<div class="stats">
+<div class="stat"><b>Rule 17</b><span>UIN for certain special entities</span></div>
+<div class="stat"><b>REG-13</b><span>Application for UIN</span></div>
+<div class="stat"><b>REG-06</b><span>UIN certificate</span></div>
+<div class="stat"><b>3 Working Days</b><span>Prescribed issue period</span></div>
 </div>
-<aside><section class="card"><h3>GST Rules navigation</h3>
-<a class="side-link" href="/gst-act.html">← GST Legal Library</a><a class="side-link" href="/gst-rules.html">GST Rules index</a><a class="side-link" href="/gst-rules/rule-16a.html">← Previous Rule</a><a class="side-link" href="/gst-rules/rule-18.html">Next Rule →</a></section>
-<section class="card"><h3>Disclaimer</h3><p>This is an educational and practical reference. It is not a substitute for the applicable statute, notifications, circulars, Gazette publications or professional advice.</p></section></aside></main>
-<footer class="footer">GSTReconciliation.in · GST Legal Library · Educational reference</footer>
+</div>
+</header>
+
+<main><div class="wrap"><div class="layout"><article>
+
+<section class="card">
+<h2>1. What is Rule 17?</h2>
+<p>Rule 17 deals with the assignment of a <strong>Unique Identity Number (UIN)</strong> to certain special entities referred to in section 25(9) of the CGST Act.</p>
+<p>Unlike an ordinary GST registration, a UIN is designed for specified entities that require a special identification mechanism under GST. The principal examples include certain United Nations bodies, embassies, consulates and other persons or classes of persons covered by the statutory framework.</p>
+<div class="note"><strong>Simple meaning:</strong> UIN is not an ordinary GSTIN for carrying on taxable business. It is a special GST identification mechanism used by eligible entities for the purposes prescribed under GST law, particularly where the law provides special treatment such as refund of eligible taxes.</div>
+</section>
+
+<section class="card" id="statutory">
+<h2>2. Statutory structure of Rule 17</h2>
+<table>
+<tr><th>Provision</th><th>Practical meaning</th></tr>
+<tr><td>Rule 17(1)</td><td>Eligible persons required to receive a UIN under section 25(9) may apply electronically in FORM GST REG-13.</td></tr>
+<tr><td>Rule 17(1A)</td><td>A UIN granted to a person covered by section 25(9)(a) applies to the territory of India.</td></tr>
+<tr><td>Rule 17(2)</td><td>The proper officer may assign the UIN and issue FORM GST REG-06 within three working days from submission of the application; the rule also permits action after filling the form or receiving a recommendation from the Ministry of External Affairs where applicable.</td></tr>
+</table>
+<p>The important point is that Rule 17 operates together with <strong>section 25(9)</strong>. Therefore, the first question is always whether the entity falls within the statutory category eligible for UIN.</p>
+</section>
+
+<section class="card">
+<h2>3. Who can obtain a UIN?</h2>
+<p>Section 25(9) is the starting point for identifying eligible entities. Broadly, the UIN framework covers specified special organisations and diplomatic or consular entities, including:</p>
+<ul>
+<li>a specialised agency of the United Nations Organisation or a multilateral financial institution and organisation notified under the United Nations (Privileges and Immunities) Act, 1947;</li>
+<li>consulates or embassies of foreign countries; and</li>
+<li>other persons or classes of persons as may be notified by the Government.</li>
+</ul>
+<div class="warning"><strong>Eligibility must not be assumed merely because an organisation is foreign or diplomatic.</strong> The entity should first be mapped to the relevant statutory category and supporting notification/documentation.</div>
+</section>
+
+<section class="card">
+<h2>4. UIN is different from a normal GST registration</h2>
+<table>
+<tr><th>Point</th><th>Normal GST registration</th><th>UIN under Rule 17</th></tr>
+<tr><td>Primary purpose</td><td>Registration of a taxable person for GST compliance</td><td>Special identification for eligible entities covered by section 25(9)</td></tr>
+<tr><td>Application</td><td>Generally FORM GST REG-01</td><td>FORM GST REG-13</td></tr>
+<tr><td>Certificate</td><td>FORM GST REG-06</td><td>FORM GST REG-06 is also used for the UIN certificate</td></tr>
+<tr><td>Taxpayer return model</td><td>Depends on registration category and supplies</td><td>Not the same as an ordinary taxable-person registration</td></tr>
+<tr><td>Typical relevance</td><td>Tax payment, invoicing, ITC and GST reporting</td><td>Special statutory identification and eligible refund mechanisms</td></tr>
+</table>
+</section>
+
+<section class="card" id="forms">
+<h2>5. FORM GST REG-13 – Application for UIN</h2>
+<p>The prescribed application is <strong>FORM GST REG-13</strong>. It is submitted electronically and is duly signed or verified through the prescribed electronic verification mechanism.</p>
+<p>The form is specifically titled as the application/form for grant of UIN to <strong>UN Bodies / Embassies / others</strong>.</p>
+<h3>Typical information captured</h3>
+<ul>
+<li>Name of the entity;</li>
+<li>PAN, where applicable;</li>
+<li>authorised signatory details;</li>
+<li>contact information;</li>
+<li>type of entity;</li>
+<li>country;</li>
+<li>Ministry of External Affairs recommendation details, where applicable.</li>
+</ul>
+<div class="note"><strong>Practical control:</strong> The legal name, entity category and supporting diplomatic/organisational documentation should be consistent across REG-13, invoices, refund claims and internal records.</div>
+</section>
+
+<section class="card">
+<h2>6. Rule 17(2) – Assignment of UIN</h2>
+<p>After submission of REG-13, the proper officer may assign the UIN. The rule also contemplates assignment after the officer fills the prescribed form or after receiving a recommendation from the Ministry of External Affairs, Government of India, where applicable.</p>
+<p>The prescribed certificate is <strong>FORM GST REG-06</strong>.</p>
+<div class="success"><strong>Timeline:</strong> Rule 17(2) provides for issuance of the UIN certificate within <strong>three working days from the date of submission of the application</strong>.</div>
+</section>
+
+<section class="card">
+<h2>7. What is the purpose of a UIN in practical GST compliance?</h2>
+<p>The UIN allows an eligible special entity to be identified in the GST ecosystem without treating it simply as an ordinary taxable business.</p>
+<p>One of the most important practical areas is the mechanism for claiming refund of eligible taxes paid on specified inward supplies, subject to the applicable statutory conditions and refund rules.</p>
+<p>Therefore, finance teams dealing with UIN entities should maintain a clear audit trail from:</p>
+<ol>
+<li>supplier invoice;</li>
+<li>supplier GSTIN;</li>
+<li>UIN of the recipient entity;</li>
+<li>payment proof;</li>
+<li>nature of goods/services;</li>
+<li>eligibility of the tax for refund; and</li>
+<li>refund application and supporting documentation.</li>
+</ol>
+</section>
+
+<section class="card">
+<h2>8. Example – UN organisation</h2>
+<p>A qualifying UN-related organisation operating in India purchases office equipment and professional services on which GST is charged.</p>
+<p>The organisation should not simply assume that the supplier invoice automatically becomes refundable. Its finance team should verify:</p>
+<ul>
+<li>whether the organisation is covered by section 25(9);</li>
+<li>whether it has the appropriate UIN;</li>
+<li>whether the supplier has correctly reported the relevant transaction;</li>
+<li>whether the inward supply qualifies under the applicable refund framework;</li>
+<li>whether the invoice contains the required particulars; and</li>
+<li>whether the refund claim is supported by payment and other prescribed records.</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>9. Example – Embassy / Consulate</h2>
+<p>A foreign embassy in India obtains a UIN and receives services from an Indian registered supplier. GST is charged on the service invoice.</p>
+<p>The embassy's finance team should maintain a separate UIN-controlled ledger for eligible purchases. It should not mix UIN transactions with ordinary commercial transactions of another entity merely because the supplier is the same.</p>
+<div class="warning"><strong>Supplier-side control:</strong> The supplier should verify the recipient's correct legal name and UIN documentation rather than relying only on an email instruction to treat the transaction as eligible for special treatment.</div>
+</section>
+
+<section class="card">
+<h2>10. UIN and GST refund – why documentation matters</h2>
+<p>For eligible entities, refund claims can involve a large volume of supplier invoices. A weak invoice trail can create reconciliation problems even when the underlying eligibility is genuine.</p>
+<h3>Recommended UIN refund register</h3>
+<table>
+<tr><th>Field</th><th>Why it matters</th></tr>
+<tr><td>Supplier GSTIN</td><td>Identifies the supplier and supports GST-system reconciliation.</td></tr>
+<tr><td>Invoice number/date</td><td>Core document identification.</td></tr>
+<tr><td>Taxable value</td><td>Supports refund computation and review.</td></tr>
+<tr><td>CGST/SGST/IGST</td><td>Identifies the tax component claimed.</td></tr>
+<tr><td>Nature of supply</td><td>Helps test eligibility under the applicable refund framework.</td></tr>
+<tr><td>Payment reference</td><td>Supports transaction-level audit trail.</td></tr>
+<tr><td>Refund claim period</td><td>Prevents duplicate or missed claims.</td></tr>
+<tr><td>Claim status</td><td>Tracks filed, acknowledged, sanctioned or disputed amounts.</td></tr>
+</table>
+</section>
+
+<section class="card">
+<h2>11. Rule 17(1A) – Territorial application</h2>
+<p>Rule 17(1A) specifically provides that the UIN granted under Rule 17 to a person covered by section 25(9)(a) shall be applicable to the territory of India.</p>
+<p>This is relevant for qualifying entities with activities or purchases across different locations in India. The organisation should nevertheless maintain location-wise records where required for invoice, refund and internal control purposes.</p>
+</section>
+
+<section class="card">
+<h2>12. UIN does not automatically make every GST expense refundable</h2>
+<p>This is one of the most important practical points for finance teams.</p>
+<p>Having a UIN is an identification condition; it does not by itself establish that every GST amount appearing on every invoice can be refunded.</p>
+<p>The refund claim must still be tested against the applicable law, refund rules, notifications and conditions governing the particular eligible entity and supply.</p>
+<div class="warning"><strong>Common misconception:</strong> “We have UIN, therefore all GST paid is refundable.” This is not a safe compliance conclusion.</div>
+</section>
+
+<section class="card">
+<h2>13. Supplier-side practical checklist</h2>
+<p>When supplying goods or services to a UIN entity, the supplier's accounts team should consider:</p>
+<ul>
+<li>Confirm the recipient's legal name.</li>
+<li>Obtain and verify the UIN details.</li>
+<li>Apply the correct GST treatment based on the actual supply and applicable exemption/refund framework.</li>
+<li>Ensure invoice particulars are accurate.</li>
+<li>Report the transaction correctly where GST reporting is required.</li>
+<li>Retain supporting documents.</li>
+<li>Avoid treating a UIN as if it were an ordinary GSTIN of a taxable business.</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>14. Finance-team / ERP controls</h2>
+<p>A UIN entity handling significant procurement should ideally maintain a separate GST workflow.</p>
+<table>
+<tr><th>Control</th><th>Recommended practice</th></tr>
+<tr><td>Vendor master</td><td>Store supplier GSTIN and legal name.</td></tr>
+<tr><td>UIN master</td><td>Store UIN, entity category and validity/supporting documentation.</td></tr>
+<tr><td>Invoice capture</td><td>Capture invoice number, date, taxable value and tax components.</td></tr>
+<tr><td>Eligibility flag</td><td>Mark whether the invoice is potentially eligible for refund, subject to review.</td></tr>
+<tr><td>Duplicate control</td><td>Prevent the same invoice from being included in multiple refund periods.</td></tr>
+<tr><td>Reconciliation</td><td>Reconcile books, supplier data and GST portal information wherever applicable.</td></tr>
+<tr><td>Approval workflow</td><td>Require review before including invoices in a refund claim.</td></tr>
+</table>
+</section>
+
+<section class="card">
+<h2>15. Audit and departmental relevance</h2>
+<p>UIN-related transactions can involve high-value procurement and refund claims. Therefore, documentation quality is important even though the entity is not operating like an ordinary taxable supplier.</p>
+<h3>Keep an audit file containing</h3>
+<ul>
+<li>REG-13 application;</li>
+<li>REG-06 UIN certificate;</li>
+<li>entity eligibility/supporting documentation;</li>
+<li>supplier invoices;</li>
+<li>payment records;</li>
+<li>refund applications;</li>
+<li>refund sanction/rejection communications;</li>
+<li>invoice-wise reconciliation;</li>
+<li>internal approval records; and</li>
+<li>clarifications submitted to the department.</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>16. Common mistakes under Rule 17</h2>
+<ol>
+<li>Confusing UIN with an ordinary GSTIN.</li>
+<li>Applying without first confirming section 25(9) eligibility.</li>
+<li>Incorrect legal name in REG-13 and supplier invoices.</li>
+<li>Using outdated entity or authorised-signatory information.</li>
+<li>Assuming every GST-paid invoice is automatically refundable.</li>
+<li>Failing to reconcile invoices before refund filing.</li>
+<li>Duplicate inclusion of invoices across refund claims.</li>
+<li>Poor retention of diplomatic/organisational supporting documents.</li>
+<li>Not maintaining a dedicated UIN register.</li>
+</ol>
+</section>
+
+<section class="card">
+<h2>17. Rule 17 versus Rule 16</h2>
+<table>
+<tr><th>Point</th><th>Rule 16</th><th>Rule 17</th></tr>
+<tr><td>Subject</td><td>Suo moto registration</td><td>Unique Identity Number</td></tr>
+<tr><td>Trigger</td><td>Department identifies a person liable for registration but not registered</td><td>Eligible special entity requires UIN under section 25(9)</td></tr>
+<tr><td>Initial mechanism</td><td>Temporary registration through REG-12</td><td>Application through REG-13</td></tr>
+<tr><td>Certificate</td><td>Registration certificate after prescribed process</td><td>UIN certificate in REG-06</td></tr>
+<tr><td>Typical entity</td><td>Unregistered taxable person</td><td>Specified UN bodies, embassies and other notified entities</td></tr>
+</table>
+</section>
+
+<section class="card">
+<h2>18. Management decision framework</h2>
+<table>
+<tr><th>Question</th><th>Management action</th></tr>
+<tr><td>Are we covered by section 25(9)?</td><td>Document the exact eligibility category.</td></tr>
+<tr><td>Do we need a UIN?</td><td>Assess the entity's GST/refund requirements.</td></tr>
+<tr><td>Has REG-13 been filed?</td><td>Track ARN/application status and supporting documents.</td></tr>
+<tr><td>Has REG-06 been received?</td><td>Record the UIN and circulate it to procurement and finance teams.</td></tr>
+<tr><td>Are supplier invoices correctly captured?</td><td>Run invoice-level GST reconciliation before refund claims.</td></tr>
+<tr><td>Are refund claims being prepared?</td><td>Test eligibility invoice by invoice under the applicable provisions.</td></tr>
+</table>
+</section>
+
+<section class="card">
+<h2>19. Practical compliance checklist</h2>
+<ul>
+<li>☐ Entity eligibility under section 25(9) established.</li>
+<li>☐ REG-13 completed electronically.</li>
+<li>☐ Authorised signatory details verified.</li>
+<li>☐ Supporting entity/diplomatic documentation preserved.</li>
+<li>☐ UIN certificate in REG-06 received.</li>
+<li>☐ UIN recorded in the finance/vendor master where relevant.</li>
+<li>☐ Supplier invoices captured in a dedicated UIN register.</li>
+<li>☐ Eligible and non-eligible expenses separated.</li>
+<li>☐ Duplicate invoice controls applied.</li>
+<li>☐ Refund claims reconciled before submission.</li>
+<li>☐ Complete audit trail retained.</li>
+</ul>
+</section>
+
+<section class="card" id="faq">
+<h2>20. Frequently Asked Questions</h2>
+<h3>What is UIN under GST?</h3>
+<p>UIN is a Unique Identity Number assigned under the GST registration framework to specified special entities covered by section 25(9).</p>
+<h3>Which form is used to apply for UIN?</h3>
+<p>FORM GST REG-13.</p>
+<h3>Which certificate is issued?</h3>
+<p>FORM GST REG-06 is used for the certificate.</p>
+<h3>How quickly can UIN be assigned?</h3>
+<p>Rule 17(2) provides for assignment and issue of the certificate within three working days from submission of the application, subject to the prescribed process.</p>
+<h3>Is UIN the same as GSTIN?</h3>
+<p>No. UIN is a special identification mechanism for eligible entities and should not be treated as an ordinary taxable-person GSTIN.</p>
+<h3>Does having UIN make every GST payment refundable?</h3>
+<p>No. Refund eligibility depends on the applicable statutory provisions, rules, notifications and conditions governing the entity and the particular supply.</p>
+<h3>Can an embassy apply for UIN?</h3>
+<p>Eligible embassies and consulates fall within the special-entity framework, subject to the requirements of section 25(9) and the prescribed procedure.</p>
+</section>
+
+<section class="card">
+<h2>21. Related GST provisions</h2>
+<p>
+<span class="pill">Section 25(9) – UIN</span>
+<span class="pill">Rule 8 – Application for registration</span>
+<span class="pill">Rule 9 – Verification</span>
+<span class="pill">Rule 10 – Registration certificate</span>
+<span class="pill">Rule 18 – Display of registration certificate</span>
+<span class="pill">Refund provisions</span>
+</p>
+<p>Continue with <a href="rule-18.html">Rule 18 – Display of Registration Certificate and GSTIN on the Name Board</a>.</p>
+</section>
+
+<section class="card">
+<h2>22. Important numbering clarification</h2>
+<div class="note"><strong>Do not confuse Rule 17 with physical verification.</strong> Older GST material and some older online pages may show physical verification under Rule 17. The current numbering places the physical-verification framework under <strong>Rule 25</strong>. Current Rule 17 deals with UIN assignment.</div>
+<p>This distinction is important when preparing legal opinions, compliance manuals, GST notices or website content because quoting the old rule number can create an avoidable legal-reference error.</p>
+</section>
+
+<section class="card">
+<h2>23. Practical takeaway</h2>
+<div class="success"><strong>Rule 17 provides the GST mechanism for assigning a Unique Identity Number to specified special entities.</strong> The process begins with eligibility under section 25(9), followed by electronic application in REG-13 and assignment of UIN through REG-06. For finance teams, the most important practical area is maintaining a clean invoice-wise trail and not assuming that UIN status automatically makes every GST expense refundable.</div>
+</section>
+
+<section class="card">
+<h2>24. Source & verification</h2>
+<p class="small">This page explains the current CGST Rule 17 framework and is intended as a practical compliance guide. The rule should be read together with section 25(9), the prescribed GST forms, applicable refund provisions, notifications and other provisions relevant to the particular special entity.</p>
+<p class="small">Last reviewed: 4 October 2026.</p>
+</section>
+
+</article>
+
+<aside class="toc">
+<div class="card">
+<h3>On this page</h3>
+<a href="#top">Rule 17 overview</a>
+<a href="#statutory">Statutory structure</a>
+<a href="#forms">REG-13</a>
+<a href="#faq">FAQs</a>
+<a href="#top">UIN vs GSTIN</a>
+<a href="#top">Refund relevance</a>
+</div>
+<div class="card">
+<h3>GST Rules</h3>
+<a href="rule-14.html">Rule 14 – OIDAR / Online Money Gaming</a>
+<a href="rule-15.html">Rule 15 – Extension of CTP/NRTP</a>
+<a href="rule-16.html">Rule 16 – Suo Moto Registration</a>
+<a href="rule-18.html">Rule 18 – Display of Registration</a>
+<a href="rule-25.html">Rule 25 – Physical Verification</a>
+<a href="../gst-act.html">GST Act</a>
+<a href="../articles.html">GST Articles</a>
+</div>
+</aside>
+</div></div></main>
+
+<footer>
+<div class="wrap"><div class="footer-grid">
+<div><h3>GST Reconciliation</h3><p>Practical GST compliance, reconciliation, legal explanations and business-focused tax resources.</p></div>
+<div><h3>GST Rules</h3><p><a href="rule-14.html">Rule 14</a></p><p><a href="rule-15.html">Rule 15</a></p><p><a href="rule-16.html">Rule 16</a></p><p><a href="rule-18.html">Rule 18</a></p></div>
+<div><h3>Resources</h3><p><a href="../gst-act.html">GST Act</a></p><p><a href="../articles.html">GST Knowledge Hub</a></p><p><a href="../index.html">Home</a></p></div>
+</div><div class="bottom">© 2026 GST Reconciliation. Practical GST knowledge for businesses and professionals.</div></div>
+</footer>
 </body></html>
