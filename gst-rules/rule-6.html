@@ -1,76 +1,305 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rule 6 — Validity of composition levy | GST Reconciliation</title>
-<meta name="description" content="Rule 6 of the Central Goods and Services Tax Rules, 2017 — Validity of composition levy.">
-<style>
-:root{--bg:#f5f7fb;--navy:#10233f;--blue:#2563eb;--line:#dfe5ee;--muted:#667085}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#172033;font-family:Arial,sans-serif}
-.nav{background:var(--navy);color:#fff;padding:16px 24px}.navin{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:13px}.brand{font-weight:800;margin:0!important}
-.hero{background:linear-gradient(135deg,#10233f,#173d69);color:#fff;padding:55px 24px}
-.wrap{max-width:1180px;margin:auto}.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;opacity:.75}
-h1{font-family:Georgia,serif;font-size:42px;line-height:1.12;margin:12px 0}.hero p{max-width:850px;color:#d9e5f5;line-height:1.7}
-.grid{max-width:1180px;margin:28px auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,2fr) 320px;gap:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #10233f0b}
-h2{margin-top:0;font-family:Georgia,serif}p,li{line-height:1.7}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-size:12px;font-weight:700}
-.source a,.side-link{color:var(--blue);text-decoration:none}.side-link{display:block;padding:9px 0}
-.notice{background:#f8fafc;border-left:4px solid #94a3b8;padding:15px;border-radius:8px;color:#475467}
-.footer{max-width:1180px;margin:20px auto;padding:30px 24px;color:#667085;border-top:1px solid var(--line);font-size:13px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}h1{font-size:32px}.navin{display:block}.nav a{margin:10px 12px 0 0;display:inline-block}}
-</style><!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GST Rule 6 – Validity of Composition Levy | Practical Guide</title>
+<meta name="description" content="CGST Rule 6 explained in practical language. Learn how long composition levy remains valid, when a taxpayer must exit, CMP-04 requirements, regular GST transition, and audit controls.">
+<meta name="keywords" content="GST Rule 6, CGST Rule 6, validity of composition levy, CMP-04, withdrawal from composition scheme, composition scheme cancellation, GST composition exit">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gstreconciliation.in/gst-rules/rule-6.html">
+<meta name="google-adsense-account" content="ca-pub-8493595246856929">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
 <script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-NBKTXWJ20G');
+window.GST_GA4_ID='G-NBKTXWJ20G';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+if(window.GST_GA4_ID){var gas=document.createElement('script');gas.async=true;gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);document.head.appendChild(gas);gtag('js',new Date());gtag('config',window.GST_GA4_ID,{anonymize_ip:true});}
 </script>
-
-<!-- Google AdSense -->
-<script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
-  crossorigin="anonymous"></script>
-
 <style>
-/* GST Reconciliation site-wide width standard — matches homepage exactly. */
-.wrap,
-.legal-wrap,
-.rule-wrap,
-.section-wrap,
-.section-page-wrap,
-.legal-container,
-.legal-page-wrap,
-.site-container,
-main.container,
-header .container,
-.hero .container,
-footer .container {
-  width: min(1400px, calc(100% - 64px));
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:#243447;background:#f5f8fc;line-height:1.7}
+a{color:#0b63ce;text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1240px;margin:auto;padding:0 22px}
+.hero{background:linear-gradient(135deg,#084b9a,#0b63ce 60%,#1678e8);color:#fff;padding:54px 0 44px}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.24);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:700}
+.hero h1{font-size:42px;line-height:1.16;margin:17px 0 14px;max-width:980px}.hero p{font-size:18px;max-width:920px;margin:0;color:#eaf3ff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:16px;border-radius:14px}
+.stat strong{display:block;font-size:20px;color:#fff}.stat span{font-size:13px;color:#dbeaff}
+.page{padding:34px 0}.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:28px}
+.card{background:#fff;border:1px solid #dce6f0;border-radius:16px;padding:28px;margin-bottom:22px;box-shadow:0 5px 18px rgba(20,55,90,.05)}
+.card h2{font-size:27px;color:#123b68;margin:0 0 14px;line-height:1.3}.card h3{font-size:20px;color:#174f84;margin:25px 0 9px}.lead{font-size:17px;color:#425466}
+.note{background:#eef6ff;border-left:5px solid #1678e8;padding:17px 18px;border-radius:10px;margin:18px 0}
+.warning{background:#fff7e8;border-left:5px solid #f0a400;padding:17px 18px;border-radius:10px;margin:18px 0}
+.success{background:#eefaf3;border-left:5px solid #2d9b62;padding:17px 18px;border-radius:10px;margin:18px 0}
+.danger{background:#fff0f0;border-left:5px solid #d9534f;padding:17px 18px;border-radius:10px;margin:18px 0}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px}th,td{border:1px solid #d9e3ec;padding:12px 13px;vertical-align:top;text-align:left}th{background:#edf4fb;color:#153f67}
+ul,ol{padding-left:23px}li{margin:7px 0}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#66829b;font-weight:800}
+.toc{background:#f7faff;border:1px solid #dbe8f5;border-radius:13px;padding:18px}.toc strong{display:block;margin-bottom:8px;color:#123b68}.toc a{display:block;padding:5px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mini{background:#f8fbfe;border:1px solid #e0eaf3;border-radius:12px;padding:17px}.mini strong{color:#174f84}
+.faq{border-top:1px solid #e0e7ef;padding:17px 0}.faq:first-child{border-top:0}.faq h3{margin-top:0;font-size:18px}
+.sidebar .card{padding:22px}.side-title{font-size:19px!important}
+footer{background:#102a43;color:#d9e5ef;margin-top:40px;padding:42px 0 18px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}.footer-grid h3{color:#fff}.footer-grid a{color:#d9e5ef}.bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:16px;font-size:13px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.hero h1{font-size:34px}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.wrap{padding:0 15px}.hero{padding:38px 0 32px}.hero h1{font-size:29px}.hero p{font-size:16px}.stats{grid-template-columns:1fr 1fr;gap:9px}.stat{padding:12px}.stat strong{font-size:17px}.card{padding:20px}.card h2{font-size:23px}table{font-size:13px;display:block;overflow-x:auto}.footer-grid{grid-template-columns:1fr}.page{padding-top:22px}}
 </style>
-</head><body>
-<header class="nav"><div class="navin"><a class="brand" href="/gst-act.html">GST Reconciliation · GST Legal Library</a>
-<nav><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">Articles</a></nav></div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Central Goods and Services Tax Rules, 2017</div>
-<h1>Rule 6 — Validity of composition levy</h1><p>CGST Rules · Current in India Code record</p></div></section>
-<main class="grid"><div>
-<section class="card"><h2>Rule reference</h2>
-<p><strong>Rule:</strong> 6</p><p><strong>Subject:</strong> Validity of composition levy</p><p><strong>Chapter:</strong> CGST Rules</p>
-<span class="badge">Current in India Code record</span></section>
-<section class="card"><h2>Legal text and verification</h2>
-<p>This is the Rule-wise reference page in the GSTReconciliation.in legal library. The statutory wording should be checked against the applicable consolidated Rules and amendment notifications for the relevant tax period.</p>
-<div class="notice"><strong>Primary source:</strong> India Code 2.0 — Central Goods and Services Tax Rules, 2017. This automatically generated page does not invent or reproduce unverified statutory wording.</div>
-<p class="source"><a href="https://india-code.vercel.app/R10-015" target="_blank" rel="noopener">Open Central Goods and Services Tax Rules on India Code →</a></p></section>
-<section class="card"><h2>Practical note</h2>
-<p>GST Rules are amended through notifications. For professional or compliance use, verify the version applicable to the relevant date and the corresponding Gazette notification.</p></section>
+</head>
+<body>
+
+<header class="hero">
+<div class="wrap">
+<span class="badge">CGST RULES • COMPOSITION LEVY</span>
+<h1>Rule 6 – Validity of Composition Levy</h1>
+<p>Understand when the composition option continues, when it automatically stops, what happens from the date eligibility is lost, and how to manage withdrawal and transition to the regular GST scheme.</p>
+<div class="stats">
+<div class="stat"><strong>Condition-based</strong><span>Validity continues while statutory conditions remain satisfied</span></div>
+<div class="stat"><strong>Section 9(1)</strong><span>Regular GST liability begins when composition eligibility ceases</span></div>
+<div class="stat"><strong>7 days</strong><span>CMP-04 intimation after an event causing cessation</span></div>
+<div class="stat"><strong>CMP-04</strong><span>Withdrawal / exit application or intimation as applicable</span></div>
 </div>
-<aside><section class="card"><h3>GST Rules navigation</h3>
-<a class="side-link" href="/gst-act.html">← GST Legal Library</a><a class="side-link" href="/gst-rules.html">GST Rules index</a><a class="side-link" href="/gst-rules/rule-5.html">← Previous Rule</a><a class="side-link" href="/gst-rules/rule-7.html">Next Rule →</a></section>
-<section class="card"><h3>Disclaimer</h3><p>This is an educational and practical reference. It is not a substitute for the applicable statute, notifications, circulars, Gazette publications or professional advice.</p></section></aside></main>
-<footer class="footer">GSTReconciliation.in · GST Legal Library · Educational reference</footer>
+</div>
+</header>
+
+<main class="page"><div class="wrap"><div class="layout"><section>
+
+<div class="card">
+<div class="kicker">At a glance</div>
+<h2>What Rule 6 does</h2>
+<p class="lead">Rule 6 is the continuation-and-exit rule for the composition levy. The composition option does not remain valid merely because it was once selected. It remains valid only while the taxpayer continues to satisfy the conditions in Section 10 and the composition chapter of the CGST Rules.</p>
+<div class="note"><strong>Core principle:</strong> Composition status is conditional. If a taxpayer ceases to satisfy an applicable condition, the taxpayer must move to the regular GST mechanism from the legally relevant date and complete the prescribed withdrawal and compliance steps.</div>
+<p>This makes Rule 6 especially important for finance teams. A composition taxpayer should continuously monitor turnover, nature of supplies, registration status, business locations and other eligibility conditions rather than reviewing eligibility only once a year.</p>
+</div>
+
+<div class="card" id="statutory-text">
+<h2>1. Rule 6 — statutory framework</h2>
+<p><strong>Rule 6(1):</strong> The option exercised by a registered person to pay tax under Section 10 remains valid so long as the person satisfies all the conditions mentioned in Section 10 and under the relevant rules.</p>
+<p><strong>Rule 6(2):</strong> When the person ceases to satisfy any applicable condition in Section 10 or the composition chapter, the person becomes liable to pay tax under Section 9(1) from the day of such cessation, must issue tax invoices for taxable supplies made thereafter, and must furnish the prescribed CMP-04 intimation within seven days of the occurrence of the event.</p>
+<p><strong>Rule 6(3):</strong> A registered person who intends to withdraw from the composition scheme must, before the intended withdrawal date, electronically file an application in Form GST CMP-04, duly signed or verified as prescribed.</p>
+<div class="warning"><strong>Important distinction:</strong> There are two different situations: <strong>voluntary withdrawal</strong>, where the taxpayer decides to leave composition, and <strong>cessation of eligibility</strong>, where an event causes the taxpayer to no longer satisfy the legal conditions. The compliance timeline and tax consequences should be analysed accordingly.</div>
+</div>
+
+<div class="card" id="simple">
+<h2>2. What Rule 6 means in simple language</h2>
+<p>Think of composition levy as a status that has to be continuously maintained.</p>
+<div class="grid2">
+<div class="mini"><strong>At the time of opting</strong><br>The taxpayer meets the eligibility requirements and chooses composition treatment.</div>
+<div class="mini"><strong>During the year</strong><br>The taxpayer must continue complying with the conditions. A later change in business can affect eligibility.</div>
+<div class="mini"><strong>If eligibility is lost</strong><br>Composition treatment cannot simply continue until the next financial year. Regular GST consequences arise from the legally relevant date.</div>
+<div class="mini"><strong>If withdrawal is planned</strong><br>The taxpayer should file CMP-04 before the intended withdrawal date and plan the accounting and invoicing transition.</div>
+</div>
+<p><strong>Practical message:</strong> The biggest risk is not the original composition application. It is failing to identify the date on which the business stopped satisfying the conditions.</p>
+</div>
+
+<div class="card" id="triggers">
+<h2>3. Events that can put composition validity at risk</h2>
+<p>Rule 6 refers back to the conditions in Section 10 and the composition chapter. Therefore, the finance team should monitor changes that can affect eligibility, including:</p>
+<ul>
+<li>Crossing the applicable statutory turnover threshold.</li>
+<li>Starting a category of supply that is not permitted under the chosen composition route.</li>
+<li>Making supplies or undertaking activities inconsistent with the conditions applicable to the taxpayer.</li>
+<li>Changes in the nature or structure of the business.</li>
+<li>Changes affecting the taxpayer's registration or places of business.</li>
+<li>Changes that cause the taxpayer to fall outside the applicable composition provisions.</li>
+<li>Any other event that causes a condition under Section 10 or the relevant rules to cease being satisfied.</li>
+</ul>
+<div class="danger"><strong>Do not wait for the GST portal to tell you that eligibility has ended.</strong> The legal consequence can arise from the underlying business event itself. A monthly compliance review is therefore safer than relying only on return filing.</div>
+</div>
+
+<div class="card" id="date">
+<h2>4. Why the date of loss of eligibility matters</h2>
+<p>The date is one of the most important parts of Rule 6. Under Rule 6(2), when the taxpayer ceases to satisfy an applicable condition, regular GST liability under Section 9(1) applies from the day of cessation.</p>
+<table>
+<thead><tr><th>Event</th><th>Finance action</th><th>Why it matters</th></tr></thead>
+<tbody>
+<tr><td>Eligibility condition remains satisfied</td><td>Continue composition compliance</td><td>No exit is triggered merely by the passage of time.</td></tr>
+<tr><td>Condition ceases to be satisfied</td><td>Identify exact event/date and switch tax treatment</td><td>Regular GST liability begins from the relevant day.</td></tr>
+<tr><td>Taxable supply after cessation</td><td>Issue tax invoice and charge/apply regular GST as required</td><td>Composition bill-of-supply treatment is no longer appropriate for those taxable supplies.</td></tr>
+<tr><td>Withdrawal is planned voluntarily</td><td>File CMP-04 before withdrawal and prepare transition controls</td><td>ERP, invoicing, returns and tax masters must change together.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card" id="examples">
+<h2>5. Practical business examples</h2>
+
+<h3>Example 1 — Eligibility is lost during the year</h3>
+<p>A composition taxpayer is eligible at the beginning of the year. During the year, an event occurs that makes the taxpayer cease to satisfy a condition of Section 10. The taxpayer should not continue treating all later supplies as composition supplies merely because the composition option was originally selected.</p>
+<p>The finance team should identify the date of the event, determine the regular GST consequences from that date, issue appropriate tax invoices for taxable supplies thereafter, and complete the prescribed CMP-04 compliance.</p>
+
+<h3>Example 2 — Business expansion</h3>
+<p>A small trader under composition opens a new business activity and starts making a category of supply that is not compatible with its composition eligibility. The correct question is not “Can we continue because our old GST registration is still active?” The correct question is “Do we still satisfy every applicable condition of Section 10 and the composition rules?”</p>
+
+<h3>Example 3 — Planned voluntary withdrawal</h3>
+<p>A taxpayer expects its customer profile and business model to change and decides that the regular GST scheme will be commercially preferable from a future date. Instead of waiting for a compliance failure, the taxpayer can plan an orderly withdrawal using CMP-04 and align the effective date, invoicing, tax masters and return reporting.</p>
+
+<div class="success"><strong>Management practice:</strong> Whenever a business changes its product mix, service mix, customer base, locations or turnover profile, include a “composition eligibility check” in the approval process.</div>
+</div>
+
+<div class="card" id="cmp04">
+<h2>6. Form GST CMP-04 — why it matters</h2>
+<p>CMP-04 is the prescribed form used for withdrawal from the composition levy. Rule 6 makes it relevant both to planned withdrawal and to circumstances where the taxpayer ceases to satisfy the composition conditions.</p>
+<table>
+<thead><tr><th>Situation</th><th>Action</th><th>Timing focus</th></tr></thead>
+<tbody>
+<tr><td>Taxpayer voluntarily intends to withdraw</td><td>File CMP-04 electronically</td><td>Before the intended withdrawal date</td></tr>
+<tr><td>Eligibility is lost because a condition ceases to be satisfied</td><td>Move to regular GST treatment and furnish the prescribed CMP-04 intimation</td><td>Within seven days of occurrence of the event under Rule 6(2)</td></tr>
+</tbody>
+</table>
+<div class="note"><strong>Recordkeeping tip:</strong> Keep a copy of CMP-04, acknowledgement/reference, the internal withdrawal calculation and the management approval supporting the effective date in one compliance folder.</div>
+</div>
+
+<div class="card" id="regular">
+<h2>7. Transition from composition to regular GST</h2>
+<p>Exit from composition is not just a portal activity. It is an accounting and operational transition.</p>
+<ol>
+<li><strong>Identify the effective date.</strong></li>
+<li><strong>Freeze the old composition tax configuration</strong> from the applicable date.</li>
+<li><strong>Activate regular GST tax codes</strong> for taxable supplies.</li>
+<li><strong>Switch from bill of supply to tax invoice</strong> wherever required.</li>
+<li><strong>Review input tax credit eligibility</strong> under the provisions applicable on transition.</li>
+<li><strong>Reconcile sales from the transition date</strong> separately so that composition and regular-scheme transactions are not mixed.</li>
+<li><strong>Update return workings and tax ledgers</strong> consistently.</li>
+</ol>
+<div class="warning"><strong>ERP risk:</strong> If the tax status is changed in the GST portal but the billing software remains configured as composition, invoices, tax ledgers and GST returns can become inconsistent.</div>
+</div>
+
+<div class="card" id="audit">
+<h2>8. Audit and GST notice relevance</h2>
+<p>Rule 6 can become important during departmental verification because the department may examine not only whether CMP-04 was filed, but also whether the taxpayer correctly identified the date from which composition eligibility ceased.</p>
+<h3>Documents to maintain</h3>
+<ul>
+<li>Original composition option and registration records.</li>
+<li>Monthly turnover and eligibility workings.</li>
+<li>Business-change approvals and supporting agreements where relevant.</li>
+<li>Sales register around the date of the event.</li>
+<li>Stock and inventory records where transition affects ITC or tax treatment.</li>
+<li>CMP-04 filing acknowledgement.</li>
+<li>Invoices issued immediately before and after the transition.</li>
+<li>GST return reconciliation for the transition period.</li>
+</ul>
+<div class="danger"><strong>Common notice issue:</strong> A delayed exit can create a mismatch between the date the taxpayer claims to have ceased composition and the date the underlying event actually occurred. Maintain evidence supporting the precise date.</div>
+</div>
+
+<div class="card" id="erp">
+<h2>9. Practical ERP and accounting controls</h2>
+<table>
+<thead><tr><th>Control</th><th>Recommended practice</th></tr></thead>
+<tbody>
+<tr><td>Composition status master</td><td>Store the status and effective date separately from the GSTIN master.</td></tr>
+<tr><td>Eligibility review</td><td>Run a monthly exception check for turnover and business changes.</td></tr>
+<tr><td>Invoice series</td><td>Maintain a controlled transition between bill-of-supply and tax-invoice series.</td></tr>
+<tr><td>Tax master</td><td>Do not leave composition rates active after the effective exit date.</td></tr>
+<tr><td>Return reconciliation</td><td>Separate pre-exit and post-exit transactions in the working papers.</td></tr>
+<tr><td>Document retention</td><td>Store CMP-04 and supporting evidence with the GST compliance records.</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="card" id="common">
+<h2>10. Common mistakes under Rule 6</h2>
+<ol>
+<li><strong>Assuming composition continues automatically for the whole financial year.</strong> Validity depends on continuing eligibility.</li>
+<li><strong>Identifying the exit date only when the return is prepared.</strong> The underlying event may have occurred earlier.</li>
+<li><strong>Filing CMP-04 but continuing to issue bills of supply.</strong> Operational systems must change with the tax status.</li>
+<li><strong>Changing the GST portal status without changing ERP tax masters.</strong></li>
+<li><strong>Not separately reconciling transactions around the transition date.</strong></li>
+<li><strong>Ignoring customer communication.</strong> Customers may need proper tax invoices once regular GST treatment begins.</li>
+<li><strong>Not documenting why the business remained eligible.</strong> A simple monthly eligibility working can be valuable during an audit.</li>
+</ol>
+</div>
+
+<div class="card" id="decision">
+<h2>11. Management decision framework</h2>
+<p>For a composition taxpayer, management should ask these questions every month:</p>
+<div class="grid2">
+<div class="mini"><strong>1. Are we still eligible?</strong><br>Review Section 10 and the relevant composition conditions.</div>
+<div class="mini"><strong>2. Has the business changed?</strong><br>Review new products, services, customers, locations and contracts.</div>
+<div class="mini"><strong>3. Has any trigger occurred?</strong><br>Identify the exact date of any event affecting eligibility.</div>
+<div class="mini"><strong>4. Has the ERP changed?</strong><br>Ensure billing, tax masters and ledgers match the legal status.</div>
+</div>
+</div>
+
+<div class="card" id="related">
+<h2>12. Related GST provisions</h2>
+<ul>
+<li><a href="/gst-act.html">CGST Act</a> — Section 10: composition levy framework and eligibility.</li>
+<li><a href="/gst-rules/rule-3.html">Rule 3</a> — Intimation for composition levy.</li>
+<li><a href="/gst-rules/rule-4.html">Rule 4</a> — Effective date for composition levy.</li>
+<li><a href="/gst-rules/rule-5.html">Rule 5</a> — Conditions and restrictions for composition levy.</li>
+<li><a href="/gst-rules/rule-7.html">Rule 7</a> — Rate of tax of the composition levy.</li>
+<li><a href="/gst-rules.html">GST Rules Index</a> — Browse the complete rules.</li>
+<li><a href="/articles.html">GST Articles</a> — Practical GST explanations and compliance guides.</li>
+</ul>
+</div>
+
+<div class="card" id="faqs">
+<h2>13. Frequently asked questions</h2>
+<div class="faq"><h3>What is GST Rule 6?</h3><p>Rule 6 of the CGST Rules deals with the validity of the composition levy. The composition option remains valid while the taxpayer continues to satisfy the conditions in Section 10 and the relevant rules.</p></div>
+<div class="faq"><h3>Does composition levy remain valid for the entire financial year?</h3><p>Not necessarily. Its validity is conditional. If the taxpayer ceases to satisfy an applicable condition, Rule 6 provides for regular GST treatment from the relevant date of cessation.</p></div>
+<div class="faq"><h3>What happens when a composition taxpayer becomes ineligible?</h3><p>The taxpayer becomes liable to pay tax under Section 9(1) from the day the applicable condition ceases to be satisfied, must issue tax invoices for taxable supplies made thereafter, and must complete the prescribed CMP-04 compliance.</p></div>
+<div class="faq"><h3>What is CMP-04 in GST?</h3><p>Form GST CMP-04 is the prescribed form for withdrawal from the composition levy. Rule 6 specifies its use in voluntary withdrawal and in the circumstances covered by cessation of eligibility.</p></div>
+<div class="faq"><h3>How quickly must CMP-04 be filed after loss of eligibility?</h3><p>Rule 6(2) specifies an intimation in Form GST CMP-04 within seven days of the occurrence of the event causing cessation of eligibility.</p></div>
+<div class="faq"><h3>Can a composition taxpayer voluntarily withdraw?</h3><p>Yes. Rule 6(3) provides for a registered person who intends to withdraw to file CMP-04 before the date of withdrawal.</p></div>
+<div class="faq"><h3>Why is the exact date of withdrawal important?</h3><p>The date controls when the taxpayer moves from composition treatment to regular GST treatment and therefore affects invoicing, tax calculation, accounting, return reporting and transition controls.</p></div>
+</div>
+
+<div class="card" id="checklist">
+<h2>14. Practical Rule 6 compliance checklist</h2>
+<ul>
+<li>Review composition eligibility every month.</li>
+<li>Monitor turnover and all statutory conditions.</li>
+<li>Review new business activities before launch.</li>
+<li>Document any event that may affect eligibility.</li>
+<li>Determine the exact date of cessation, if applicable.</li>
+<li>File CMP-04 within the applicable timeline.</li>
+<li>Switch to regular GST invoicing from the relevant date.</li>
+<li>Update ERP and accounting tax masters.</li>
+<li>Reconcile pre- and post-exit transactions separately.</li>
+<li>Retain evidence supporting the eligibility and transition decision.</li>
+</ul>
+</div>
+
+<div class="card" id="takeaway">
+<h2>15. Practical takeaway</h2>
+<p>Rule 6 establishes a simple but very important principle: <strong>composition is valid only while the taxpayer remains eligible.</strong> The compliance team should therefore treat composition status as a monitored condition, not as a permanent registration setting.</p>
+<div class="note"><strong>Best control sequence:</strong> Monitor eligibility → identify event → determine exact date → file CMP-04 → switch invoicing → update ERP → reconcile transition → preserve evidence.</div>
+<p>This approach reduces the risk of continuing composition treatment after eligibility has ended and gives management a clear audit trail for the transition to the regular GST scheme.</p>
+</div>
+
+<div class="card" id="source">
+<h2>16. Source &amp; verification</h2>
+<p><strong>Primary legal basis:</strong> Rule 6 of the Central Goods and Services Tax Rules, 2017, read with Section 10 of the CGST Act and the applicable provisions governing withdrawal and regular GST liability.</p>
+<p>This page is a practical educational explanation. GST provisions and forms can be amended. For a filing, notice response or commercial decision, verify the law applicable to the relevant tax period.</p>
+</div>
+
+</section>
+
+<aside class="sidebar">
+<div class="card"><h2 class="side-title">Rule 6 Quick Navigation</h2>
+<div class="toc">
+<a href="#statutory-text">Statutory framework</a><a href="#simple">Simple meaning</a><a href="#triggers">Eligibility triggers</a><a href="#date">Why date matters</a><a href="#examples">Examples</a><a href="#cmp04">CMP-04</a><a href="#regular">Regular GST transition</a><a href="#audit">Audit relevance</a><a href="#erp">ERP controls</a><a href="#common">Common mistakes</a><a href="#decision">Management framework</a><a href="#faqs">FAQs</a><a href="#checklist">Checklist</a><a href="#takeaway">Practical takeaway</a>
+</div></div>
+
+<div class="card"><h2 class="side-title">Composition Rule Series</h2>
+<ul>
+<li><a href="/gst-rules/rule-1.html">Rule 1 — Short title &amp; commencement</a></li>
+<li><a href="/gst-rules/rule-2.html">Rule 2 — Definitions</a></li>
+<li><a href="/gst-rules/rule-3.html">Rule 3 — Intimation</a></li>
+<li><a href="/gst-rules/rule-4.html">Rule 4 — Effective date</a></li>
+<li><a href="/gst-rules/rule-5.html">Rule 5 — Conditions &amp; restrictions</a></li>
+<li><strong>Rule 6 — Validity</strong></li>
+<li><a href="/gst-rules/rule-7.html">Rule 7 — Rate of tax</a></li>
+</ul></div>
+
+<div class="card"><h2 class="side-title">For Finance Teams</h2>
+<p>Review composition eligibility whenever turnover, products, services, customers or business structure changes. Do not wait until annual return preparation to identify a possible exit event.</p>
+<a href="/gst-rules.html">View all GST Rules →</a></div>
+
+<div class="card"><h2 class="side-title">Important Note</h2>
+<p>This page is intended for practical GST education and compliance planning. It is not a substitute for checking the provisions applicable to a particular tax period or transaction.</p></div>
+</aside>
+
+</div></div></main>
+
+<footer><div class="wrap"><div class="footer-grid">
+<div><h3>GST Reconciliation</h3><p>Practical GST knowledge, reconciliation tools and compliance guidance for businesses and finance teams.</p></div>
+<div><h3>Useful Resources</h3><p><a href="/">Home</a></p><p><a href="/articles.html">GST Knowledge</a></p><p><a href="/gst-rules.html">GST Rules Index</a></p><p><a href="/gst-act.html">GST Act</a></p></div>
+<div><h3>Composition Levy</h3><p><a href="/gst-rules/rule-5.html">Rule 5 — Conditions</a></p><p><a href="/gst-rules/rule-6.html">Rule 6 — Validity</a></p><p><a href="/gst-rules/rule-7.html">Rule 7 — Rate</a></p></div>
+</div><div class="bottom">© GST Reconciliation. Practical GST information and tools for businesses and finance professionals.</div></div></footer>
 </body></html>

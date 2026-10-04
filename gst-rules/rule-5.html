@@ -1,76 +1,329 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rule 5 — Conditions and restrictions for composition levy | GST Reconciliation</title>
-<meta name="description" content="Rule 5 of the Central Goods and Services Tax Rules, 2017 — Conditions and restrictions for composition levy.">
-<style>
-:root{--bg:#f5f7fb;--navy:#10233f;--blue:#2563eb;--line:#dfe5ee;--muted:#667085}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#172033;font-family:Arial,sans-serif}
-.nav{background:var(--navy);color:#fff;padding:16px 24px}.navin{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:13px}.brand{font-weight:800;margin:0!important}
-.hero{background:linear-gradient(135deg,#10233f,#173d69);color:#fff;padding:55px 24px}
-.wrap{max-width:1180px;margin:auto}.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;opacity:.75}
-h1{font-family:Georgia,serif;font-size:42px;line-height:1.12;margin:12px 0}.hero p{max-width:850px;color:#d9e5f5;line-height:1.7}
-.grid{max-width:1180px;margin:28px auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,2fr) 320px;gap:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #10233f0b}
-h2{margin-top:0;font-family:Georgia,serif}p,li{line-height:1.7}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-size:12px;font-weight:700}
-.source a,.side-link{color:var(--blue);text-decoration:none}.side-link{display:block;padding:9px 0}
-.notice{background:#f8fafc;border-left:4px solid #94a3b8;padding:15px;border-radius:8px;color:#475467}
-.footer{max-width:1180px;margin:20px auto;padding:30px 24px;color:#667085;border-top:1px solid var(--line);font-size:13px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}h1{font-size:32px}.navin{display:block}.nav a{margin:10px 12px 0 0;display:inline-block}}
-</style><!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GST Rule 5 – Conditions and Restrictions for Composition Levy | Practical Guide</title>
+<meta name="description" content="CGST Rule 5 explained in simple practical language. Understand all conditions and restrictions for GST composition levy, stock restrictions, reverse charge, bill of supply wording, display requirements, continuing validity and audit risks.">
+<meta name="keywords" content="GST Rule 5, CGST Rule 5, conditions and restrictions composition levy, GST composition scheme conditions, composition dealer rules, bill of supply composition taxable person, GST composition eligibility">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gstreconciliation.in/gst-rules/rule-5.html">
+<meta name="google-adsense-account" content="ca-pub-8493595246856929">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
 <script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-NBKTXWJ20G');
+window.GST_GA4_ID='G-NBKTXWJ20G';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+if(window.GST_GA4_ID){var gas=document.createElement('script');gas.async=true;gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);document.head.appendChild(gas);gtag('js',new Date());gtag('config',window.GST_GA4_ID,{anonymize_ip:true});}
 </script>
-
-<!-- Google AdSense -->
-<script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
-  crossorigin="anonymous"></script>
-
 <style>
-/* GST Reconciliation site-wide width standard — matches homepage exactly. */
-.wrap,
-.legal-wrap,
-.rule-wrap,
-.section-wrap,
-.section-page-wrap,
-.legal-container,
-.legal-page-wrap,
-.site-container,
-main.container,
-header .container,
-.hero .container,
-footer .container {
-  width: min(1400px, calc(100% - 64px));
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:#243447;background:#f5f8fc;line-height:1.7}
+a{color:#0b63ce;text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1240px;margin:auto;padding:0 22px}
+.hero{background:linear-gradient(135deg,#084b9a,#0b63ce 60%,#1678e8);color:#fff;padding:54px 0 44px}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.24);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:700}
+.hero h1{font-size:42px;line-height:1.16;margin:17px 0 14px;max-width:980px}.hero p{font-size:18px;max-width:920px;margin:0;color:#eaf3ff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:16px;border-radius:14px}.stat strong{display:block;font-size:20px}.stat span{font-size:13px;color:#dbeaff}
+.page{padding:34px 0}.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:28px}.card{background:#fff;border:1px solid #dce6f0;border-radius:16px;padding:28px;margin-bottom:22px;box-shadow:0 5px 18px rgba(20,55,90,.05)}
+.card h2{font-size:27px;color:#123b68;margin:0 0 14px;line-height:1.3}.card h3{font-size:20px;color:#174f84;margin:25px 0 9px}.lead{font-size:17px;color:#425466}
+.note{background:#eef6ff;border-left:5px solid #1678e8;padding:17px 18px;border-radius:10px;margin:18px 0}.warning{background:#fff7e8;border-left:5px solid #f0a400;padding:17px 18px;border-radius:10px;margin:18px 0}.success{background:#eefaf3;border-left:5px solid #2d9b62;padding:17px 18px;border-radius:10px;margin:18px 0}.danger{background:#fff0f0;border-left:5px solid #d9534f;padding:17px 18px;border-radius:10px;margin:18px 0}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px}th,td{border:1px solid #d9e3ec;padding:12px 13px;vertical-align:top;text-align:left}th{background:#edf4fb;color:#153f67}
+ul,ol{padding-left:23px}li{margin:7px 0}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#66829b;font-weight:800}
+.toc{background:#f7faff;border:1px solid #dbe8f5;border-radius:13px;padding:18px}.toc strong{display:block;margin-bottom:8px;color:#123b68}.toc a{display:block;padding:5px 0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mini{background:#f8fbfe;border:1px solid #e0eaf3;border-radius:12px;padding:17px}.mini strong{color:#174f84}
+.faq{border-top:1px solid #e0e7ef;padding:17px 0}.faq:first-child{border-top:0}.faq h3{margin-top:0;font-size:18px}.sidebar .card{padding:22px}.side-title{font-size:19px!important}
+.condition{border:1px solid #dbe7f1;border-radius:14px;padding:20px;margin:17px 0;background:#fbfdff}.condition .num{display:inline-block;background:#0b63ce;color:#fff;border-radius:50%;width:31px;height:31px;text-align:center;line-height:31px;font-weight:800;margin-right:8px}
+footer{background:#102a43;color:#d9e5ef;margin-top:40px;padding:42px 0 18px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}.footer-grid h3{color:#fff}.footer-grid a{color:#d9e5ef}.bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:16px;font-size:13px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.hero h1{font-size:34px}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.wrap{padding:0 15px}.hero{padding:38px 0 32px}.hero h1{font-size:29px}.hero p{font-size:16px}.stats{grid-template-columns:1fr 1fr;gap:9px}.stat{padding:12px}.stat strong{font-size:17px}.card{padding:20px}.card h2{font-size:23px}table{font-size:13px;display:block;overflow-x:auto}.footer-grid{grid-template-columns:1fr}.page{padding-top:22px}}
 </style>
-</head><body>
-<header class="nav"><div class="navin"><a class="brand" href="/gst-act.html">GST Reconciliation · GST Legal Library</a>
-<nav><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">Articles</a></nav></div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Central Goods and Services Tax Rules, 2017</div>
-<h1>Rule 5 — Conditions and restrictions for composition levy</h1><p>CGST Rules · Current in India Code record</p></div></section>
-<main class="grid"><div>
-<section class="card"><h2>Rule reference</h2>
-<p><strong>Rule:</strong> 5</p><p><strong>Subject:</strong> Conditions and restrictions for composition levy</p><p><strong>Chapter:</strong> CGST Rules</p>
-<span class="badge">Current in India Code record</span></section>
-<section class="card"><h2>Legal text and verification</h2>
-<p>This is the Rule-wise reference page in the GSTReconciliation.in legal library. The statutory wording should be checked against the applicable consolidated Rules and amendment notifications for the relevant tax period.</p>
-<div class="notice"><strong>Primary source:</strong> India Code 2.0 — Central Goods and Services Tax Rules, 2017. This automatically generated page does not invent or reproduce unverified statutory wording.</div>
-<p class="source"><a href="https://india-code.vercel.app/R10-015" target="_blank" rel="noopener">Open Central Goods and Services Tax Rules on India Code →</a></p></section>
-<section class="card"><h2>Practical note</h2>
-<p>GST Rules are amended through notifications. For professional or compliance use, verify the version applicable to the relevant date and the corresponding Gazette notification.</p></section>
+</head>
+<body>
+
+<header class="hero"><div class="wrap">
+<span class="badge">CGST RULES • COMPOSITION LEVY</span>
+<h1>Rule 5 – Conditions and Restrictions for Composition Levy</h1>
+<p>A practical explanation of the conditions a composition taxpayer must satisfy, including stock restrictions, reverse charge obligations, prohibited manufacturer categories, bill-of-supply wording and display requirements.</p>
+<div class="stats">
+<div class="stat"><strong>7 conditions</strong><span>Specific operational conditions under Rule 5(1)</span></div>
+<div class="stat"><strong>RCM</strong><span>Specified inward supplies remain subject to applicable reverse-charge rules</span></div>
+<div class="stat"><strong>Bill of Supply</strong><span>Mandatory composition wording on the document</span></div>
+<div class="stat"><strong>PAN-wide</strong><span>Read Rule 5 together with the composition framework for all registrations</span></div>
 </div>
-<aside><section class="card"><h3>GST Rules navigation</h3>
-<a class="side-link" href="/gst-act.html">← GST Legal Library</a><a class="side-link" href="/gst-rules.html">GST Rules index</a><a class="side-link" href="/gst-rules/rule-4.html">← Previous Rule</a><a class="side-link" href="/gst-rules/rule-6.html">Next Rule →</a></section>
-<section class="card"><h3>Disclaimer</h3><p>This is an educational and practical reference. It is not a substitute for the applicable statute, notifications, circulars, Gazette publications or professional advice.</p></section></aside></main>
-<footer class="footer">GSTReconciliation.in · GST Legal Library · Educational reference</footer>
+</div></header>
+
+<main class="page"><div class="wrap"><div class="layout"><section>
+
+<div class="card">
+<div class="kicker">At a glance</div>
+<h2>What Rule 5 does</h2>
+<p class="lead">Rule 5 lays down the conditions and restrictions that a person exercising the composition option under Section 10 must follow. It is one of the most important operational rules for a composition taxpayer because it converts the broad statutory scheme into day-to-day compliance requirements.</p>
+<div class="note"><strong>Key idea:</strong> Choosing composition is not enough. The taxpayer must continue to satisfy the applicable conditions and follow the required invoicing, reverse-charge and display requirements.</div>
+<p>The current CBIC composition-rules page lists seven conditions in Rule 5(1) and then provides that a registered person paying tax under Section 10 does not need to file a fresh intimation every year merely to continue under the scheme, subject to the Act and Rules.</p>
+</div>
+
+<div class="card" id="statutory">
+<h2>1. Rule 5 — statutory framework</h2>
+<p>Rule 5(1) requires a person exercising the composition option under Section 10 to comply with the following conditions:</p>
+
+<div class="condition"><span class="num">1</span><strong>Not a casual taxable person or non-resident taxable person.</strong><p>A person exercising composition cannot be a casual taxable person or a non-resident taxable person.</p></div>
+<div class="condition"><span class="num">2</span><strong>Specified stock must satisfy the prescribed source conditions.</strong><p>For the option exercised through the route covered by Rule 3(1), the goods held in stock on the appointed day must not have been purchased through inter-State trade or commerce, imported from outside India, or received from a branch, agent or principal outside the State, as covered by the rule.</p></div>
+<div class="condition"><span class="num">3</span><strong>Stock purchased from unregistered persons.</strong><p>The prescribed condition requires that goods held in stock have not been purchased from an unregistered person and, where such purchase has occurred in the circumstances covered by the rule, the applicable tax under Section 9(4) is to be paid.</p></div>
+<div class="condition"><span class="num">4</span><strong>Tax on specified inward supplies.</strong><p>The composition taxpayer must pay applicable tax under Section 9(3) or Section 9(4) on inward supplies of goods or services or both received from unregistered persons, as prescribed.</p></div>
+<div class="condition"><span class="num">5</span><strong>Specified manufacturers.</strong><p>The person must not have been engaged during the preceding financial year in manufacturing goods notified under Section 10(2)(e), which are excluded from the composition benefit.</p></div>
+<div class="condition"><span class="num">6</span><strong>Bill of supply wording.</strong><p>The words <strong>“composition taxable person, not eligible to collect tax on supplies”</strong> must be mentioned at the top of the bill of supply issued by the taxpayer.</p></div>
+<div class="condition"><span class="num">7</span><strong>Display at business premises.</strong><p>The words <strong>“composition taxable person”</strong> must be displayed on every notice or signboard at a prominent place at the principal place of business and every additional place or places of business.</p></div>
+
+<div class="warning"><strong>Important legal reading:</strong> Rule 5 conditions should not be read in isolation. The taxpayer must also satisfy the requirements of Section 10 and the other applicable composition provisions.</div>
+</div>
+
+<div class="card" id="simple">
+<h2>2. Rule 5 in simple language</h2>
+<p>In everyday terms, Rule 5 says: <strong>“If you want to use composition, your business and your compliance behaviour must fit the composition model.”</strong></p>
+<div class="grid2">
+<div class="mini"><strong>Who can use it?</strong><br>The person must not fall into the excluded registration categories such as casual or non-resident taxable person.</div>
+<div class="mini"><strong>What about old stock?</strong><br>Certain stock-source restrictions apply, particularly to the stock covered by the specified transition route.</div>
+<div class="mini"><strong>What if reverse charge applies?</strong><br>Composition status does not automatically remove separate reverse-charge liabilities under Section 9.</div>
+<div class="mini"><strong>What must customers see?</strong><br>The bill of supply must carry the prescribed composition wording and the business premises must display the required status.</div>
+</div>
+</div>
+
+<div class="card" id="conditions">
+<h2>3. Clause-by-clause practical explanation</h2>
+
+<h3>Condition 1 — Casual taxable person / non-resident taxable person</h3>
+<p>A casual taxable person and a non-resident taxable person are outside the composition option. Therefore, a business should not assume that obtaining temporary or non-resident registration can be combined with composition treatment.</p>
+<div class="note"><strong>Business decision:</strong> Before selecting composition, confirm the registration status and nature of the taxable person, not merely the turnover.</div>
+
+<h3>Condition 2 — Inter-State/imported/foreign-branch stock restriction</h3>
+<p>This condition is particularly important when a business is moving into composition with opening inventory. The rule addresses certain goods held in stock and restricts the source of that stock for the specified option route.</p>
+<p>Finance teams should therefore prepare an opening-stock statement identifying major purchases, source State, import status and branch/agent/principal arrangements before switching to composition.</p>
+
+<h3>Condition 3 — Purchases from unregistered persons</h3>
+<p>The rule deals with goods purchased from unregistered persons and links the applicable tax treatment to Section 9(4). The correct approach is not to treat every purchase from an unregistered supplier as automatically taxable; the relevant statutory conditions and the supplies to which Section 9(4) applies must be checked.</p>
+
+<h3>Condition 4 — Reverse charge on inward supplies</h3>
+<p>Composition status does not mean “no GST on purchases.” Where Section 9(3) or the applicable Section 9(4) provision creates reverse-charge liability, the composition taxpayer has to discharge that liability separately.</p>
+<div class="warning"><strong>Common misunderstanding:</strong> “I am a composition dealer, so I never pay GST on purchases.” This is incorrect. Composition status changes the normal output-tax mechanism; it does not erase applicable reverse-charge obligations.</div>
+
+<h3>Condition 5 — Notified manufacturers</h3>
+<p>Certain categories of manufacturers are excluded from the composition benefit. Therefore, a manufacturer must identify the nature of goods manufactured and check the notified exclusions before opting for composition.</p>
+
+<h3>Condition 6 — Bill of supply declaration</h3>
+<p>The prescribed wording is not optional decoration. It communicates to the recipient that the supplier is a composition taxable person and is not eligible to collect tax on supplies in the normal manner.</p>
+
+<h3>Condition 7 — Display at business premises</h3>
+<p>The required words must be displayed prominently at the principal place of business and every additional place of business. A finance team should coordinate this with administration and branch/site teams rather than treating it as an accounting-only requirement.</p>
+</div>
+
+<div class="card" id="stock">
+<h2>4. Opening-stock review before composition</h2>
+<p>For businesses switching into composition, opening stock deserves special attention. A practical stock review should contain:</p>
+<table><thead><tr><th>Check</th><th>What finance should record</th></tr></thead><tbody>
+<tr><td>Supplier status</td><td>Registered / unregistered and GST details where applicable.</td></tr>
+<tr><td>Purchase location</td><td>State of purchase and whether the transaction involved inter-State movement.</td></tr>
+<tr><td>Import status</td><td>Whether goods were imported from outside India.</td></tr>
+<tr><td>Branch / agent / principal</td><td>Whether stock was received through an outside-State branch, agent or principal arrangement.</td></tr>
+<tr><td>Tax treatment</td><td>Whether any applicable reverse-charge liability needs separate consideration.</td></tr>
+<tr><td>Evidence</td><td>Invoices, stock records, purchase register and supporting documents.</td></tr>
+</tbody></table>
+<div class="success"><strong>Recommended control:</strong> Do a one-time “composition opening-stock audit” before the option becomes effective. This is much safer than trying to reconstruct the stock position during a future departmental audit.</div>
+</div>
+
+<div class="card" id="rcm">
+<h2>5. Reverse charge — practical understanding</h2>
+<p>One of the most important practical aspects of Rule 5 is that composition does not eliminate reverse-charge obligations.</p>
+<table><thead><tr><th>Situation</th><th>What to check</th></tr></thead><tbody>
+<tr><td>Specified service/goods covered by Section 9(3)</td><td>Determine whether reverse charge applies and discharge the applicable tax.</td></tr>
+<tr><td>Purchase from unregistered person</td><td>Check whether the particular supply is within the applicable Section 9(4) framework.</td></tr>
+<tr><td>Normal registered supplier invoice</td><td>Composition taxpayer generally pays the supplier's GST as part of the purchase cost and does not use normal ITC in the composition scheme.</td></tr>
+</tbody></table>
+<p>Maintain a separate reverse-charge register. This prevents composition output-tax workings from obscuring purchase-side tax liabilities.</p>
+</div>
+
+<div class="card" id="invoice">
+<h2>6. Bill of supply and business communication</h2>
+<p>A composition taxpayer issues a <strong>bill of supply</strong> rather than collecting GST through a normal tax invoice for its taxable outward supplies under composition treatment.</p>
+<div class="note"><strong>Mandatory wording:</strong> “composition taxable person, not eligible to collect tax on supplies” must appear at the top of the bill of supply as prescribed by Rule 5.</div>
+<h3>ERP implementation</h3>
+<ul>
+<li>Create a dedicated composition bill-of-supply template.</li>
+<li>Lock the prescribed declaration into the template rather than relying on users to type it manually.</li>
+<li>Prevent normal GST tax-invoice templates from being selected for composition outward supplies.</li>
+<li>Review sample invoices after every ERP change.</li>
+</ul>
+<div class="danger"><strong>Practical risk:</strong> An otherwise eligible composition taxpayer can create avoidable compliance problems if its ERP continues generating normal tax invoices or omits the prescribed composition declaration.</div>
+</div>
+
+<div class="card" id="display">
+<h2>7. Display requirement at business premises</h2>
+<p>The rule requires the words <strong>“composition taxable person”</strong> to be displayed prominently at the principal place of business and at every additional place or places of business.</p>
+<p>This is particularly relevant for businesses with multiple branches, warehouses, project offices or additional places of business. The responsibility should be assigned to an administration or branch-control owner, with evidence retained.</p>
+<div class="grid2">
+<div class="mini"><strong>Principal place</strong><br>Display the required composition status prominently.</div>
+<div class="mini"><strong>Additional places</strong><br>Repeat the display requirement at every applicable additional place of business.</div>
+</div>
+</div>
+
+<div class="card" id="continuation">
+<h2>8. Do you need to file a fresh composition intimation every year?</h2>
+<p>Rule 5(2) provides that a registered person paying tax under Section 10 may continue to pay tax under that section without filing a fresh intimation every year, subject to the Act and Rules.</p>
+<div class="success"><strong>Practical meaning:</strong> Annual continuation is not the same as automatic eligibility. The taxpayer still has to satisfy the statutory conditions throughout the period.</div>
+<p>Therefore, the finance team should not create an annual process that merely asks “Did we file CMP-02 again?” The better control is “Are we still legally eligible and compliant?”</p>
+</div>
+
+<div class="card" id="examples">
+<h2>9. Practical business examples</h2>
+<h3>Example 1 — Manufacturer switching to composition</h3>
+<p>A manufacturer plans to opt for composition from the beginning of a financial year. Before doing so, the finance team reviews the nature of manufactured goods, opening stock and purchase sources. If the goods manufactured fall into a notified excluded category, the business cannot simply proceed because its turnover is within the threshold.</p>
+
+<h3>Example 2 — Composition taxpayer receives reverse-charge supply</h3>
+<p>A composition dealer receives a supply on which Section 9(3) requires the recipient to pay tax. The composition status does not remove that reverse-charge liability. The business should record and pay the applicable tax separately and maintain supporting documentation.</p>
+
+<h3>Example 3 — ERP generates a normal tax invoice</h3>
+<p>A composition dealer's ERP is accidentally configured as a regular taxpayer and generates an invoice showing GST separately. This is an operational control failure. The tax master, invoice template and GST registration status should be corrected immediately and the affected transactions reviewed.</p>
+
+<h3>Example 4 — Multiple branches</h3>
+<p>A business has a principal place of business and three additional registered places. The prescribed composition display requirement should be implemented at all applicable locations, not just at headquarters.</p>
+</div>
+
+<div class="card" id="audit">
+<h2>10. Audit and GST notice relevance</h2>
+<p>Rule 5 is highly relevant during an audit because many of its requirements are documentary and operational. An officer can examine whether the taxpayer actually complied with the conditions rather than merely checking whether composition tax was paid.</p>
+<h3>Maintain these records</h3>
+<ul>
+<li>Composition option/intimation and registration records.</li>
+<li>Opening-stock statement and purchase-source analysis.</li>
+<li>Purchase register and reverse-charge working.</li>
+<li>Evidence supporting the nature of manufactured goods.</li>
+<li>Sample bills of supply showing the mandatory declaration.</li>
+<li>Photographic/internal compliance evidence of required business-premises display where appropriate.</li>
+<li>Monthly composition eligibility review.</li>
+<li>ERP tax-master configuration and change logs.</li>
+</ul>
+<div class="danger"><strong>Notice risk:</strong> If a condition was not satisfied, the issue can extend beyond a missing disclosure. It may affect the taxpayer's eligibility for composition and can lead to regular GST liability from the relevant date under the connected validity provisions.</div>
+</div>
+
+<div class="card" id="erp">
+<h2>11. Practical ERP and accounting controls</h2>
+<table><thead><tr><th>Control</th><th>Recommended setup</th></tr></thead><tbody>
+<tr><td>GST status master</td><td>Store “Composition” status and effective date separately from the GSTIN.</td></tr>
+<tr><td>Invoice template</td><td>Lock the bill-of-supply format and mandatory declaration.</td></tr>
+<tr><td>Reverse charge</td><td>Maintain a separate RCM ledger and monthly review.</td></tr>
+<tr><td>Purchase controls</td><td>Flag purchases from unregistered suppliers for statutory review.</td></tr>
+<tr><td>Manufacturer controls</td><td>Maintain product classification and excluded-category review.</td></tr>
+<tr><td>Branch compliance</td><td>Track composition display requirements for each registered place.</td></tr>
+<tr><td>Eligibility review</td><td>Perform monthly or quarterly management review rather than relying only on annual filing.</td></tr>
+</tbody></table>
+</div>
+
+<div class="card" id="mistakes">
+<h2>12. Common mistakes under Rule 5</h2>
+<ol>
+<li><strong>Thinking turnover alone determines eligibility.</strong> Rule 5 contains additional conditions.</li>
+<li><strong>Ignoring opening-stock source restrictions.</strong></li>
+<li><strong>Assuming composition means no reverse-charge tax.</strong></li>
+<li><strong>Using a normal tax invoice instead of the appropriate bill of supply.</strong></li>
+<li><strong>Missing the mandatory composition declaration on bills of supply.</strong></li>
+<li><strong>Displaying the composition status only at the head office while ignoring additional places.</strong></li>
+<li><strong>Assuming a fresh annual intimation is the only compliance control.</strong></li>
+<li><strong>Failing to review the nature of manufactured goods.</strong></li>
+<li><strong>Not documenting continuing eligibility.</strong></li>
+</ol>
+</div>
+
+<div class="card" id="decision">
+<h2>13. Management decision framework</h2>
+<p>Before opting for or continuing composition, management should answer these questions:</p>
+<div class="grid2">
+<div class="mini"><strong>1. Are we an eligible person?</strong><br>Check the taxpayer category and Section 10.</div>
+<div class="mini"><strong>2. Does our stock satisfy the applicable conditions?</strong><br>Review purchase sources, imports and branch/agent/principal movements.</div>
+<div class="mini"><strong>3. Do we have reverse-charge exposure?</strong><br>Map purchases and services against Section 9.</div>
+<div class="mini"><strong>4. Are our products eligible?</strong><br>Review notified manufacturing exclusions.</div>
+<div class="mini"><strong>5. Is the ERP correct?</strong><br>Test bills of supply and tax masters.</div>
+<div class="mini"><strong>6. Are all locations compliant?</strong><br>Check display requirements and branch controls.</div>
+</div>
+</div>
+
+<div class="card" id="related">
+<h2>14. Related GST provisions</h2>
+<ul>
+<li><a href="/gst-act.html">CGST Act</a> — Section 10: composition levy.</li>
+<li><a href="/gst-rules/rule-3.html">Rule 3</a> — Intimation for composition levy.</li>
+<li><a href="/gst-rules/rule-4.html">Rule 4</a> — Effective date for composition levy.</li>
+<li><a href="/gst-rules/rule-5.html">Rule 5</a> — Conditions and restrictions for composition levy.</li>
+<li><a href="/gst-rules/rule-6.html">Rule 6</a> — Validity of composition levy.</li>
+<li><a href="/gst-rules/rule-7.html">Rule 7</a> — Rate of tax of composition levy.</li>
+<li><a href="/gst-rules.html">GST Rules Index</a> — Browse the complete GST Rules.</li>
+<li><a href="/articles.html">GST Articles</a> — Practical GST explanations.</li>
+</ul>
+</div>
+
+<div class="card" id="faqs">
+<h2>15. Frequently asked questions</h2>
+<div class="faq"><h3>What is GST Rule 5?</h3><p>Rule 5 of the CGST Rules contains conditions and restrictions that a person exercising the composition option under Section 10 must comply with.</p></div>
+<div class="faq"><h3>Can a casual taxable person opt for composition?</h3><p>No. Rule 5 specifically requires that the person exercising the option is neither a casual taxable person nor a non-resident taxable person.</p></div>
+<div class="faq"><h3>Does a composition taxpayer pay reverse-charge GST?</h3><p>Yes, where an applicable supply attracts reverse charge under Section 9(3) or the applicable Section 9(4) framework. Composition status does not by itself remove reverse-charge liability.</p></div>
+<div class="faq"><h3>What wording must appear on a composition bill of supply?</h3><p>The prescribed wording is “composition taxable person, not eligible to collect tax on supplies” and Rule 5 requires it to be mentioned at the top of the bill of supply.</p></div>
+<div class="faq"><h3>What must a composition taxpayer display at its business premises?</h3><p>The words “composition taxable person” must be displayed at a prominent place at the principal place of business and every additional place or places of business.</p></div>
+<div class="faq"><h3>Does a composition taxpayer need to file a fresh option every year?</h3><p>Rule 5(2) provides that a registered person paying tax under Section 10 may continue without filing a fresh intimation every year, subject to the Act and Rules.</p></div>
+<div class="faq"><h3>Does Rule 5 itself determine all composition eligibility?</h3><p>No. Rule 5 contains important conditions and restrictions, but the complete eligibility analysis requires Section 10 and the other applicable composition provisions.</p></div>
+<div class="faq"><h3>Why is Rule 5 important for an audit?</h3><p>Because several Rule 5 requirements are operational and documentary: stock source, reverse charge, invoice wording, product eligibility and business-premises display can all require evidence.</p></div>
+</div>
+
+<div class="card" id="checklist">
+<h2>16. Practical Rule 5 compliance checklist</h2>
+<ul>
+<li>Confirm the taxpayer is not a casual or non-resident taxable person.</li>
+<li>Review opening stock and applicable source restrictions.</li>
+<li>Review purchases from unregistered persons under the applicable Section 9 framework.</li>
+<li>Maintain a reverse-charge register.</li>
+<li>Check whether manufactured goods fall within notified exclusions.</li>
+<li>Configure the bill-of-supply declaration in ERP.</li>
+<li>Verify the composition wording on actual bills of supply.</li>
+<li>Display “composition taxable person” at the required business locations.</li>
+<li>Review continuing eligibility periodically.</li>
+<li>Retain evidence for audit and GST notice response.</li>
+</ul>
+</div>
+
+<div class="card" id="takeaway">
+<h2>17. Practical takeaway</h2>
+<p>Rule 5 is the operational backbone of the composition scheme. A taxpayer can have turnover within the applicable limit and still face a problem if it fails one of the relevant conditions.</p>
+<div class="note"><strong>Best compliance sequence:</strong> Check eligibility → review stock → map reverse charge → check product restrictions → configure bill of supply → complete location display → monitor continuing compliance.</div>
+<p>For management, the most useful control is a documented periodic composition checklist. For finance teams, the most important controls are the opening-stock review, reverse-charge reconciliation, invoice configuration and evidence of continuing eligibility.</p>
+</div>
+
+<div class="card" id="source">
+<h2>18. Source &amp; verification</h2>
+<p><strong>Primary legal basis:</strong> Rule 5 of the Central Goods and Services Tax Rules, 2017, read with Section 10 and the other applicable provisions governing composition levy.</p>
+<p>The current CBIC Composition Rules page lists Rule 5 as “Conditions and restrictions for composition levy” and sets out the seven conditions and the continuing-option provision described on this page.</p>
+<p>CBIC material also identifies the practical requirements concerning the composition declaration on bills of supply and display at business premises.</p>
+<p>This page is a practical educational explanation. GST provisions, notifications and forms can change. For a filing, notice response or commercial decision, verify the law applicable to the relevant tax period.</p>
+</div>
+
+</section>
+
+<aside class="sidebar">
+<div class="card"><h2 class="side-title">Rule 5 Quick Navigation</h2><div class="toc">
+<a href="#statutory">Statutory framework</a><a href="#simple">Simple meaning</a><a href="#conditions">Seven conditions</a><a href="#stock">Opening stock</a><a href="#rcm">Reverse charge</a><a href="#invoice">Bill of supply</a><a href="#display">Display requirement</a><a href="#continuation">Annual continuation</a><a href="#examples">Examples</a><a href="#audit">Audit relevance</a><a href="#erp">ERP controls</a><a href="#mistakes">Common mistakes</a><a href="#decision">Management framework</a><a href="#faqs">FAQs</a><a href="#checklist">Checklist</a><a href="#takeaway">Practical takeaway</a>
+</div></div>
+
+<div class="card"><h2 class="side-title">Composition Rule Series</h2><ul>
+<li><a href="/gst-rules/rule-3.html">Rule 3 — Intimation</a></li>
+<li><a href="/gst-rules/rule-4.html">Rule 4 — Effective date</a></li>
+<li><strong>Rule 5 — Conditions &amp; restrictions</strong></li>
+<li><a href="/gst-rules/rule-6.html">Rule 6 — Validity</a></li>
+<li><a href="/gst-rules/rule-7.html">Rule 7 — Rate of tax</a></li>
+</ul></div>
+
+<div class="card"><h2 class="side-title">For Finance Teams</h2><p>Rule 5 should be converted into recurring controls covering stock, reverse charge, product eligibility, invoices and business-premises compliance.</p><a href="/gst-rules.html">View all GST Rules →</a></div>
+
+<div class="card"><h2 class="side-title">Important Note</h2><p>This page is intended for practical GST education and compliance planning. It is not a substitute for checking the provisions applicable to a particular tax period or transaction.</p></div>
+</aside>
+
+</div></div></main>
+
+<footer><div class="wrap"><div class="footer-grid">
+<div><h3>GST Reconciliation</h3><p>Practical GST knowledge, reconciliation tools and compliance guidance for businesses and finance teams.</p></div>
+<div><h3>Useful Resources</h3><p><a href="/">Home</a></p><p><a href="/articles.html">GST Knowledge</a></p><p><a href="/gst-rules.html">GST Rules Index</a></p><p><a href="/gst-act.html">GST Act</a></p></div>
+<div><h3>Composition Levy</h3><p><a href="/gst-rules/rule-3.html">Rule 3</a></p><p><a href="/gst-rules/rule-4.html">Rule 4</a></p><p><a href="/gst-rules/rule-5.html">Rule 5 — Conditions</a></p><p><a href="/gst-rules/rule-6.html">Rule 6</a></p><p><a href="/gst-rules/rule-7.html">Rule 7 — Rate</a></p></div>
+</div><div class="bottom">© GST Reconciliation. Practical GST information and tools for businesses and finance professionals.</div></div></footer>
 </body></html>

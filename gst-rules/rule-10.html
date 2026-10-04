@@ -1,76 +1,253 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rule 10 — Issue of registration certificate | GST Reconciliation</title>
-<meta name="description" content="Rule 10 of the Central Goods and Services Tax Rules, 2017 — Issue of registration certificate.">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>CGST Rule 10 – Issue of Registration Certificate & GSTIN | Practical Guide</title>
+<meta name="description" content="Detailed practical guide to CGST Rule 10 covering FORM GST REG-06, GSTIN structure, effective date of registration, late applications, deemed approval and registration certificate compliance.">
+<meta name="keywords" content="CGST Rule 10, GST registration certificate, REG-06, GSTIN, effective date of registration, GST registration effective date, deemed GST registration">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://gstreconciliation.in/gst-rules/rule-10.html">
+<meta name="google-adsense-account" content="ca-pub-8493595246856929">
+<script async src="https://pagead2.googlesyndication.com/pagead/js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
 <style>
-:root{--bg:#f5f7fb;--navy:#10233f;--blue:#2563eb;--line:#dfe5ee;--muted:#667085}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#172033;font-family:Arial,sans-serif}
-.nav{background:var(--navy);color:#fff;padding:16px 24px}.navin{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:13px}.brand{font-weight:800;margin:0!important}
-.hero{background:linear-gradient(135deg,#10233f,#173d69);color:#fff;padding:55px 24px}
-.wrap{max-width:1180px;margin:auto}.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;opacity:.75}
-h1{font-family:Georgia,serif;font-size:42px;line-height:1.12;margin:12px 0}.hero p{max-width:850px;color:#d9e5f5;line-height:1.7}
-.grid{max-width:1180px;margin:28px auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,2fr) 320px;gap:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #10233f0b}
-h2{margin-top:0;font-family:Georgia,serif}p,li{line-height:1.7}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-size:12px;font-weight:700}
-.source a,.side-link{color:var(--blue);text-decoration:none}.side-link{display:block;padding:9px 0}
-.notice{background:#f8fafc;border-left:4px solid #94a3b8;padding:15px;border-radius:8px;color:#475467}
-.footer{max-width:1180px;margin:20px auto;padding:30px 24px;color:#667085;border-top:1px solid var(--line);font-size:13px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}h1{font-size:32px}.navin{display:block}.nav a{margin:10px 12px 0 0;display:inline-block}}
-</style><!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
-<script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-NBKTXWJ20G');
-</script>
-
-<!-- Google AdSense -->
-<script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
-  crossorigin="anonymous"></script>
-
-<style>
-/* GST Reconciliation site-wide width standard — matches homepage exactly. */
-.wrap,
-.legal-wrap,
-.rule-wrap,
-.section-wrap,
-.section-page-wrap,
-.legal-container,
-.legal-page-wrap,
-.site-container,
-main.container,
-header .container,
-.hero .container,
-footer .container {
-  width: min(1400px, calc(100% - 64px));
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#172b4d;background:#f6f8fb;line-height:1.72}
+a{color:#0b63ce;text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1240px;margin:auto;padding:0 22px}
+header{background:#fff;border-bottom:1px solid #e6ebf2;position:sticky;top:0;z-index:20}.nav{display:flex;align-items:center;justify-content:space-between;min-height:66px;gap:20px}
+.brand{font-size:20px;font-weight:800;color:#084b9a}.navlinks{display:flex;gap:20px;flex-wrap:wrap}.navlinks a{font-weight:700;color:#31455f}
+.hero{background:linear-gradient(135deg,#084b9a,#0b63ce 60%,#1678e8);color:#fff;padding:54px 0 44px}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.25);padding:6px 12px;border-radius:999px;font-size:13px;font-weight:700}
+.hero h1{font-size:42px;line-height:1.15;margin:14px 0 12px;max-width:920px}.hero p{font-size:18px;max-width:900px;margin:0;color:#eef6ff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:28px}.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:15px;border-radius:12px}.stat b{display:block;font-size:20px}.stat span{font-size:13px;color:#eaf3ff}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:28px;padding-top:30px}.card{background:#fff;border:1px solid #e4eaf1;border-radius:14px;padding:26px;margin-bottom:22px;box-shadow:0 5px 18px rgba(25,50,80,.05)}
+h2{font-size:27px;color:#102a43;margin:0 0 14px}h3{font-size:20px;color:#173f6b;margin:24px 0 9px}h4{font-size:17px;margin:18px 0 7px;color:#244e78}
+.note,.example,.warning,.success{border-left:4px solid #0b63ce;background:#eef6ff;padding:15px 17px;border-radius:8px;margin:16px 0}.warning{border-left-color:#c98200;background:#fff7e5}.success{border-left-color:#16845b;background:#edf9f4}.example{border-left-color:#7357c7;background:#f5f1ff}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:15px}th,td{padding:12px;border:1px solid #dfe6ee;vertical-align:top;text-align:left}th{background:#eef5fd;color:#153e68}
+ul,ol{padding-left:22px}.toc a{display:block;padding:7px 0;border-bottom:1px dashed #dbe3ec}.sidebar .card{padding:20px}.pill{display:inline-block;padding:4px 9px;border-radius:999px;background:#eaf3ff;color:#0759ad;font-size:12px;font-weight:700;margin:3px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:18px 0}.step{background:#f2f7fd;border:1px solid #d9e8f8;border-radius:10px;padding:12px;text-align:center;font-size:13px}.step b{display:block;color:#0759ad;margin-bottom:5px}
+.faq details{border-top:1px solid #e1e7ef;padding:13px 0}.faq summary{font-weight:700;cursor:pointer;color:#173f6b}
+footer{background:#102a43;color:#d9e5ef;margin-top:40px;padding:42px 0 18px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}.footer-grid h3{color:#fff;margin-top:0}.footer-grid a{color:#d9e5ef;display:block;margin:7px 0}.bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:16px;font-size:13px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.sidebar{order:-1}.navlinks{display:none}.flow{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.wrap{padding:0 15px}.hero{padding:38px 0 32px}.hero h1{font-size:32px}.hero p{font-size:16px}.stats{grid-template-columns:1fr}.card{padding:19px}.footer-grid{grid-template-columns:1fr}.flow{grid-template-columns:1fr}table{font-size:13px;display:block;overflow-x:auto}}
 </style>
-</head><body>
-<header class="nav"><div class="navin"><a class="brand" href="/gst-act.html">GST Reconciliation · GST Legal Library</a>
-<nav><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">Articles</a></nav></div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Central Goods and Services Tax Rules, 2017</div>
-<h1>Rule 10 — Issue of registration certificate</h1><p>CGST Rules · Current in India Code record</p></div></section>
-<main class="grid"><div>
-<section class="card"><h2>Rule reference</h2>
-<p><strong>Rule:</strong> 10</p><p><strong>Subject:</strong> Issue of registration certificate</p><p><strong>Chapter:</strong> CGST Rules</p>
-<span class="badge">Current in India Code record</span></section>
-<section class="card"><h2>Legal text and verification</h2>
-<p>This is the Rule-wise reference page in the GSTReconciliation.in legal library. The statutory wording should be checked against the applicable consolidated Rules and amendment notifications for the relevant tax period.</p>
-<div class="notice"><strong>Primary source:</strong> India Code 2.0 — Central Goods and Services Tax Rules, 2017. This automatically generated page does not invent or reproduce unverified statutory wording.</div>
-<p class="source"><a href="https://india-code.vercel.app/R10-015" target="_blank" rel="noopener">Open Central Goods and Services Tax Rules on India Code →</a></p></section>
-<section class="card"><h2>Practical note</h2>
-<p>GST Rules are amended through notifications. For professional or compliance use, verify the version applicable to the relevant date and the corresponding Gazette notification.</p></section>
+</head>
+<body>
+<header><div class="wrap nav"><a class="brand" href="/">GST Reconciliation</a><nav class="navlinks"><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">Articles</a></nav></div></header>
+
+<section class="hero"><div class="wrap">
+<span class="badge">CGST Rules • Registration Chapter</span>
+<h1>CGST Rule 10 – Issue of Registration Certificate</h1>
+<p>A practical guide to FORM GST REG-06, GSTIN assignment, the effective date of registration, late applications, deemed approval and the controls businesses should complete after registration is granted.</p>
+<div class="stats">
+<div class="stat"><b>REG-06</b><span>Registration certificate</span></div>
+<div class="stat"><b>GSTIN</b><span>Unique 15-character tax identity</span></div>
+<div class="stat"><b>30 Days</b><span>Key filing rule for effective date</span></div>
+<div class="stat"><b>Rule 9 → 10</b><span>Approval → certificate</span></div>
+</div></div></section>
+
+<main class="wrap layout">
+<article>
+<section class="card">
+<h2>1. What Rule 10 Means</h2>
+<p><strong>Rule 10 is the stage at which an approved GST registration becomes formally documented through FORM GST REG-06 and a GSTIN is assigned.</strong> It follows the verification and approval process under Rule 9.</p>
+<div class="success"><strong>Simple meaning:</strong> Rule 9 answers whether the application is approved. Rule 10 deals with the registration certificate, GSTIN and the effective date of registration.</div>
+<p>This distinction is important because a business should not confuse the application reference number or an application being under process with the final registration certificate and GSTIN.</p>
+</section>
+
+<section class="card">
+<h2>2. Rule 10 – Clause-by-Clause Practical Explanation</h2>
+<h3>Rule 10(1) – REG-06 and GSTIN</h3>
+<p>Once the registration application has been approved under Rule 9, the registration certificate in <strong>FORM GST REG-06</strong> is made available on the common portal. The certificate shows the principal place of business and additional place or places of business, as applicable.</p>
+<p>A <strong>Goods and Services Tax Identification Number (GSTIN)</strong> is assigned to the registered person.</p>
+
+<h3>GSTIN structure</h3>
+<p>The GSTIN is structured using:</p>
+<ul>
+<li><strong>2 characters</strong> representing the State or Union Territory code;</li>
+<li><strong>10 characters</strong> representing PAN or, where applicable, TAN;</li>
+<li><strong>2 characters</strong> representing the entity code; and</li>
+<li><strong>1 checksum character</strong>.</li>
+</ul>
+
+<div class="note"><strong>Practical point:</strong> GSTIN is not merely an accounting master code. It identifies the registration in a particular State/UT and should be correctly reflected across invoices, returns, e-invoicing/e-way bill systems where applicable, contracts, customer/vendor masters and statutory records.</div>
+
+<h3>Rule 10(2) – Application filed within 30 days</h3>
+<p>Where the application for registration is submitted within <strong>30 days from the date on which the person becomes liable to registration</strong>, the registration is effective from the date on which the person became liable to registration, subject to the statutory framework.</p>
+
+<div class="example"><strong>Example:</strong> A business becomes liable for registration on 10 October and submits its registration application within the prescribed 30-day period. If registration is subsequently granted, the effective date can be 10 October rather than merely the date on which the certificate becomes available.</div>
+
+<h3>Rule 10(3) – Application filed after 30 days</h3>
+<p>Where the application is filed after the 30-day period from the date of becoming liable to registration, the effective date is generally the <strong>date on which registration is granted</strong> under the applicable Rule 9 provision.</p>
+
+<div class="warning"><strong>Business consequence:</strong> Delaying the application can change the effective date of registration. This can affect the period for which the business is treated as registered and therefore needs to be analysed together with the taxable supplies, tax liability, invoicing and return obligations for the relevant period.</div>
+
+<h3>Rule 10(4) – Authentication of certificate</h3>
+<p>The registration certificate is duly signed or verified through the prescribed electronic verification mechanism by the proper officer.</p>
+
+<h3>Rule 10(5) – Certificate following deemed approval</h3>
+<p>Where registration is granted through the deemed-approval mechanism under Rule 9(5), the applicant is communicated the registration number and the certificate is made available on the common portal within the period prescribed by Rule 10 after expiry of the relevant Rule 9 period.</p>
+</section>
+
+<section class="card">
+<h2>3. Registration Timeline – From Application to Certificate</h2>
+<div class="flow">
+<div class="step"><b>1. Rule 8</b>REG-01 application</div>
+<div class="step"><b>2. Rule 9</b>Verification / clarification</div>
+<div class="step"><b>3. Approval</b>Registration granted</div>
+<div class="step"><b>4. Rule 10</b>REG-06 + GSTIN</div>
 </div>
-<aside><section class="card"><h3>GST Rules navigation</h3>
-<a class="side-link" href="/gst-act.html">← GST Legal Library</a><a class="side-link" href="/gst-rules.html">GST Rules index</a><a class="side-link" href="/gst-rules/rule-9a.html">← Previous Rule</a><a class="side-link" href="/gst-rules/rule-10a.html">Next Rule →</a></section>
-<section class="card"><h3>Disclaimer</h3><p>This is an educational and practical reference. It is not a substitute for the applicable statute, notifications, circulars, Gazette publications or professional advice.</p></section></aside></main>
-<footer class="footer">GSTReconciliation.in · GST Legal Library · Educational reference</footer>
-</body></html>
+<p>The actual workflow can vary depending on the verification route and whether clarification, Aadhaar authentication or additional verification is involved. The applicant should therefore monitor the portal rather than relying only on an expected number of days.</p>
+</section>
+
+<section class="card">
+<h2>4. Why the Effective Date Is More Important Than the Certificate Date</h2>
+<p>A common business mistake is to look only at the date on which REG-06 becomes downloadable. Rule 10 requires the business to distinguish between:</p>
+<table>
+<tr><th>Concept</th><th>Meaning</th><th>Why it matters</th></tr>
+<tr><td>Application date</td><td>Date the registration application is submitted.</td><td>Helps determine whether the 30-day requirement was met.</td></tr>
+<tr><td>Grant date</td><td>Date registration is granted through the registration process.</td><td>Relevant especially where application was filed after the liability deadline.</td></tr>
+<tr><td>Effective date</td><td>Date from which registration legally operates under Rule 10.</td><td>Important for tax, invoicing, returns and related compliance.</td></tr>
+<tr><td>Certificate availability date</td><td>Date the REG-06 certificate becomes available on the portal.</td><td>May differ from the effective date.</td></tr>
+</table>
+<div class="success"><strong>Key lesson:</strong> Always check the “effective from” date on the final registration record/certificate and do not assume it equals the download date.</div>
+</section>
+
+<section class="card">
+<h2>5. Practical Examples on Effective Date</h2>
+<h3>Example A – Timely application</h3>
+<p>A proprietor becomes liable for GST registration on 1 August and applies within 30 days. Registration is approved on 12 August. If the statutory conditions are satisfied, the registration can be effective from 1 August.</p>
+
+<h3>Example B – Late application</h3>
+<p>A company becomes liable on 1 August but applies after the 30-day period. Registration is granted on 20 September. Under Rule 10(3), the effective date is generally linked to the date of grant rather than automatically backdating to 1 August.</p>
+
+<h3>Example C – Construction project</h3>
+<p>A construction contractor becomes liable for registration in a new State because of its taxable activities there. Management delays registration while waiting for project documents. If the application crosses the statutory period, the effective date analysis can change. The finance team should therefore build GST registration into project mobilisation rather than treating it as an administrative task after work has already commenced.</p>
+
+<h3>Example D – Multiple State registrations</h3>
+<p>A company with registrations in Telangana, Karnataka and Maharashtra should treat each GSTIN as a separate registration identity for operational purposes. The finance team should verify the correct GSTIN before assigning invoices, returns, bank/customer masters and project codes.</p>
+</section>
+
+<section class="card">
+<h2>6. What to Check Immediately After Receiving REG-06</h2>
+<ol>
+<li>Verify the <strong>GSTIN</strong>.</li>
+<li>Verify the <strong>legal name</strong>.</li>
+<li>Check the <strong>trade name</strong>, where applicable.</li>
+<li>Check the <strong>principal place of business</strong>.</li>
+<li>Check all <strong>additional places of business</strong>.</li>
+<li>Check the <strong>effective date of registration</strong>.</li>
+<li>Check the registration type and other relevant particulars.</li>
+<li>Save the final REG-06 certificate in the company's statutory GST folder.</li>
+<li>Update the ERP/accounting master only after the certificate is verified.</li>
+<li>Communicate the correct GSTIN to customers, vendors, banks and internal teams wherever required.</li>
+</ol>
+</section>
+
+<section class="card">
+<h2>7. GSTIN Controls for Finance & ERP Teams</h2>
+<table>
+<tr><th>Control</th><th>Recommended practice</th></tr>
+<tr><td>GST master</td><td>Maintain one master for each State/UT registration with legal name and effective date.</td></tr>
+<tr><td>Invoice series</td><td>Map invoice numbering and tax configuration to the correct GSTIN.</td></tr>
+<tr><td>Customer/vendor master</td><td>Validate the GSTIN before activating tax-sensitive transactions.</td></tr>
+<tr><td>Returns</td><td>Ensure the return filing account and books correspond to the same GSTIN.</td></tr>
+<tr><td>Projects</td><td>For multi-State businesses, map projects to the appropriate registration before billing.</td></tr>
+<tr><td>Document retention</td><td>Keep REG-06 and the application/verification trail in the permanent GST file.</td></tr>
+</table>
+</section>
+
+<section class="card">
+<h2>8. What If the Effective Date Is Earlier Than the Certificate Date?</h2>
+<p>This can occur where registration is effective from the liability date but the certificate becomes available later. The business should not simply ignore supplies made between those dates.</p>
+<p>The tax and invoicing treatment for the intervening period should be analysed under the applicable provisions, including the rules dealing with invoices issued after registration where registration has been granted with an earlier effective date.</p>
+<p>For example, the GST invoice rules contain provisions permitting revised tax invoices in specified circumstances for supplies made during the period from the effective date of registration to the date of issue of the registration certificate.</p>
+<div class="note"><strong>Practical approach:</strong> Freeze the transaction list for the intervening period, identify taxable supplies, determine the applicable tax treatment, and document the invoice/return treatment rather than allowing the period to disappear from the books.</div>
+</section>
+
+<section class="card">
+<h2>9. Common Mistakes Under Rule 10</h2>
+<ul>
+<li>Assuming the certificate date is always the effective date.</li>
+<li>Using the wrong State GSTIN on invoices.</li>
+<li>Failing to check the registered principal/additional places of business.</li>
+<li>Not preserving the final REG-06 certificate.</li>
+<li>Activating ERP tax configuration before verifying the certificate.</li>
+<li>Ignoring supplies made between the effective date and certificate availability date.</li>
+<li>Assuming that one GSTIN can be used for all States of a business.</li>
+<li>Giving customers/vendors an incorrect GSTIN because the application ARN was mistaken for the final registration number.</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>10. Audit & GST Department Notice Relevance</h2>
+<p>During GST audit or departmental verification, the department can compare the GST registration particulars with the actual business operations. Differences in registered addresses, project locations, legal name, constitution or effective date can create questions.</p>
+<p>For this reason, a company should preserve a complete registration trail: REG-01, ARN, REG-03/REG-04 where applicable, approval communication, REG-06 and subsequent amendment applications.</p>
+<div class="example"><strong>Audit example:</strong> If books show taxable supplies from a State from 1 April but the GSTIN for that State was obtained later, the auditor may ask when the liability arose, when the application was filed, what effective date was granted and how the intervening supplies were treated. Rule 10 documentation becomes important evidence for answering that question.</div>
+</section>
+
+<section class="card">
+<h2>11. Management Decision Checklist</h2>
+<table>
+<tr><th>Question</th><th>Management action</th></tr>
+<tr><td>When did the liability to register arise?</td><td>Document the event/date before filing.</td></tr>
+<tr><td>Was REG-01 filed within 30 days?</td><td>Preserve ARN and filing evidence.</td></tr>
+<tr><td>What effective date appears on REG-06?</td><td>Use it for the compliance timeline.</td></tr>
+<tr><td>Are all business locations correctly reflected?</td><td>Compare certificate with actual operations.</td></tr>
+<tr><td>Has ERP been mapped to the correct GSTIN?</td><td>Complete master-data controls.</td></tr>
+<tr><td>Were supplies made before certificate availability?</td><td>Analyse invoice and return treatment.</td></tr>
+</table>
+</section>
+
+<section class="card faq">
+<h2>12. Frequently Asked Questions</h2>
+<details open><summary>What is FORM GST REG-06?</summary><p>REG-06 is the GST registration certificate made available after registration is approved. It contains the registration particulars and is associated with the GSTIN.</p></details>
+<details><summary>What is a GSTIN?</summary><p>GSTIN is the Goods and Services Tax Identification Number assigned to a registered person. Its structure contains the State/UT code, PAN/TAN component, entity code and checksum character.</p></details>
+<details><summary>Is the GST registration effective from the certificate download date?</summary><p>Not necessarily. If the application is filed within 30 days of becoming liable, Rule 10 provides for effectiveness from the date the person became liable, subject to the applicable statutory conditions. Late applications generally operate from the grant date.</p></details>
+<details><summary>What happens if the application is filed after 30 days?</summary><p>Under Rule 10(3), the effective date is generally the date of grant of registration under the applicable Rule 9 provision.</p></details>
+<details><summary>Can the GSTIN be used immediately after approval?</summary><p>The business should verify the registration status, GSTIN, effective date and certificate particulars before operational use. The precise invoicing and tax treatment depends on the effective date and the nature/timing of supplies.</p></details>
+<details><summary>What should a company do if the GSTIN is wrong?</summary><p>Do not casually overwrite the registration master. Verify the certificate and applicable amendment/correction procedure, and ensure invoices and returns are mapped to the legally correct registration.</p></details>
+<details><summary>What is the next rule?</summary><p><a href="/gst-rules/rule-11.html">Rule 11</a> deals with separate registration for multiple business verticals within a State or Union territory under the applicable framework.</p></details>
+</section>
+
+<section class="card">
+<h2>13. Related Provisions</h2>
+<p><a href="/gst-rules/rule-8.html"><strong>Rule 8</strong> – Application for Registration</a></p>
+<p><a href="/gst-rules/rule-9.html"><strong>Rule 9</strong> – Verification of Application and Approval</a></p>
+<p><a href="/gst-rules/rule-11.html"><strong>Rule 11</strong> – Separate Registration for Multiple Business Verticals</a></p>
+<p><a href="/gst-act.html"><strong>CGST Act</strong> – Registration provisions including Section 25</a></p>
+<p><a href="/gst-rules.html"><strong>GST Rules Index</strong> – Browse all practical rule-wise explanations</a></p>
+</section>
+
+<section class="card">
+<h2>14. Source & Verification Note</h2>
+<p>This page is based on the CGST Rules framework for issue of the registration certificate, including Rule 10, FORM GST REG-06 and the related registration provisions. The practical explanations are intended to help businesses understand how the statutory dates and registration documents affect accounting, invoicing and compliance decisions.</p>
+<p>GST registration procedures can be amended from time to time. For a disputed or highly fact-specific matter, the applicable law, notifications and procedural requirements for the relevant date should be checked separately.</p>
+</section>
+
+<section class="card">
+<h2>15. Practical Takeaway</h2>
+<p><strong>Rule 10 is not merely about downloading a GST certificate.</strong> It determines the formal registration identity, GSTIN and, importantly, the effective date of registration. Finance teams should always reconcile the liability date, application date, grant date and effective date before finalising tax, invoicing and return treatment.</p>
+</section>
+</article>
+
+<aside class="sidebar">
+<div class="card toc"><h3>On this page</h3>
+<a href="#overview">What Rule 10 means</a><a href="#statutory">Clause-by-clause explanation</a><a href="#timeline">Registration timeline</a><a href="#effective">Effective date</a><a href="#checks">Post-registration checks</a><a href="#erp">ERP controls</a><a href="#examples">Practical examples</a><a href="#audit">Audit relevance</a><a href="#faq">FAQs</a>
+</div>
+<div class="card"><h3>Quick Facts</h3><span class="pill">REG-06</span><span class="pill">GSTIN</span><span class="pill">Effective Date</span><span class="pill">30 Days</span><p><strong>Previous:</strong><br><a href="/gst-rules/rule-9.html">Rule 9 – Verification & Approval</a></p><p><strong>Next:</strong><br><a href="/gst-rules/rule-11.html">Rule 11 – Separate Registration</a></p></div>
+<div class="card"><h3>For Finance Teams</h3><p>Keep the REG-06 certificate, ARN, approval trail and effective-date analysis together. This file can become important during GST audit, departmental verification and future amendments.</p></div>
+</aside>
+</main>
+
+<footer><div class="wrap"><div class="footer-grid">
+<div><h3>GST Reconciliation</h3><p>Practical GST knowledge, reconciliation guidance and compliance explanations designed for Indian businesses, finance teams and tax professionals.</p></div>
+<div><h3>GST Knowledge</h3><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">GST Articles</a></div>
+<div><h3>Rule Navigation</h3><a href="/gst-rules/rule-9.html">Previous: Rule 9</a><a href="/gst-rules/rule-11.html">Next: Rule 11</a><a href="/gst-rules.html">All GST Rules</a></div>
+</div><div class="bottom">© GSTReconciliation.in • Practical GST knowledge and reconciliation resources.</div></div></footer>
+
+<script>
+window.GST_GA4_ID='G-NBKTXWJ20G';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+if(window.GST_GA4_ID){var gas=document.createElement('script');gas.async=true;gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);document.head.appendChild(gas);gtag('js',new Date());gtag('config',window.GST_GA4_ID,{anonymize_ip:true});}
+</script>
+</body>
+</html>

@@ -1,76 +1,215 @@
-<!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Rule 7 — Rate of tax of the composition levy | GST Reconciliation</title>
-<meta name="description" content="Rule 7 of the Central Goods and Services Tax Rules, 2017 — Rate of tax of the composition levy.">
-<style>
-:root{--bg:#f5f7fb;--navy:#10233f;--blue:#2563eb;--line:#dfe5ee;--muted:#667085}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:#172033;font-family:Arial,sans-serif}
-.nav{background:var(--navy);color:#fff;padding:16px 24px}.navin{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:20px;align-items:center}
-.nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:13px}.brand{font-weight:800;margin:0!important}
-.hero{background:linear-gradient(135deg,#10233f,#173d69);color:#fff;padding:55px 24px}
-.wrap{max-width:1180px;margin:auto}.eyebrow{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;opacity:.75}
-h1{font-family:Georgia,serif;font-size:42px;line-height:1.12;margin:12px 0}.hero p{max-width:850px;color:#d9e5f5;line-height:1.7}
-.grid{max-width:1180px;margin:28px auto;padding:0 24px;display:grid;grid-template-columns:minmax(0,2fr) 320px;gap:22px}
-.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px;box-shadow:0 4px 16px #10233f0b}
-h2{margin-top:0;font-family:Georgia,serif}p,li{line-height:1.7}.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#dcfce7;color:#166534;font-size:12px;font-weight:700}
-.source a,.side-link{color:var(--blue);text-decoration:none}.side-link{display:block;padding:9px 0}
-.notice{background:#f8fafc;border-left:4px solid #94a3b8;padding:15px;border-radius:8px;color:#475467}
-.footer{max-width:1180px;margin:20px auto;padding:30px 24px;color:#667085;border-top:1px solid var(--line);font-size:13px}
-@media(max-width:800px){.grid{grid-template-columns:1fr}h1{font-size:32px}.navin{display:block}.nav a{margin:10px 12px 0 0;display:inline-block}}
-</style><!-- Google Analytics 4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBKTXWJ20G"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GST Rule 7 – Rate of Tax of Composition Levy | Practical Guide</title>
+<meta name="description" content="CGST Rule 7 explained simply: composition levy tax rates for manufacturers, specified restaurant suppliers, other eligible suppliers and Section 10(2A) taxpayers, with practical calculations, examples, audit points and ERP controls.">
+<meta name="keywords" content="GST Rule 7, CGST Rule 7, composition levy rate, composition scheme GST rate, Section 10(2A), composition tax calculation, GST composition rate">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://gstreconciliation.in/gst-rules/rule-7.html">
+<meta name="google-adsense-account" content="ca-pub-8493595246856929">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929" crossorigin="anonymous"></script>
 <script>
-window.dataLayer=window.dataLayer||[];
-function gtag(){dataLayer.push(arguments);}
-gtag('js',new Date());
-gtag('config','G-NBKTXWJ20G');
+window.GST_GA4_ID='G-NBKTXWJ20G';window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+if(window.GST_GA4_ID){var gas=document.createElement('script');gas.async=true;gas.src='https://www.googletagmanager.com/gtag/js?id='+encodeURIComponent(window.GST_GA4_ID);document.head.appendChild(gas);gtag('js',new Date());gtag('config',window.GST_GA4_ID,{anonymize_ip:true});}
 </script>
-
-<!-- Google AdSense -->
-<script async
-  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8493595246856929"
-  crossorigin="anonymous"></script>
-
 <style>
-/* GST Reconciliation site-wide width standard — matches homepage exactly. */
-.wrap,
-.legal-wrap,
-.rule-wrap,
-.section-wrap,
-.section-page-wrap,
-.legal-container,
-.legal-page-wrap,
-.site-container,
-main.container,
-header .container,
-.hero .container,
-footer .container {
-  width: min(1400px, calc(100% - 64px));
-  max-width: none;
-  margin-left: auto;
-  margin-right: auto;
-  box-sizing: border-box;
-}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:#243447;background:#f5f8fc;line-height:1.7}
+a{color:#0b63ce;text-decoration:none}a:hover{text-decoration:underline}.wrap{max-width:1240px;margin:auto;padding:0 22px}
+.hero{background:linear-gradient(135deg,#084b9a,#0b63ce 60%,#1678e8);color:#fff;padding:54px 0 44px}
+.badge{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.24);padding:7px 13px;border-radius:999px;font-size:13px;font-weight:700}
+.hero h1{font-size:42px;line-height:1.16;margin:17px 0 14px;max-width:980px}.hero p{font-size:18px;max-width:920px;margin:0;color:#eaf3ff}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:30px}.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);padding:16px;border-radius:14px}.stat strong{display:block;font-size:20px}.stat span{font-size:13px;color:#dbeaff}
+.page{padding:34px 0}.layout{display:grid;grid-template-columns:minmax(0,1fr) 310px;gap:28px}.card{background:#fff;border:1px solid #dce6f0;border-radius:16px;padding:28px;margin-bottom:22px;box-shadow:0 5px 18px rgba(20,55,90,.05)}
+.card h2{font-size:27px;color:#123b68;margin:0 0 14px;line-height:1.3}.card h3{font-size:20px;color:#174f84;margin:25px 0 9px}.lead{font-size:17px;color:#425466}
+.note{background:#eef6ff;border-left:5px solid #1678e8;padding:17px 18px;border-radius:10px;margin:18px 0}.warning{background:#fff7e8;border-left:5px solid #f0a400;padding:17px 18px;border-radius:10px;margin:18px 0}.success{background:#eefaf3;border-left:5px solid #2d9b62;padding:17px 18px;border-radius:10px;margin:18px 0}.danger{background:#fff0f0;border-left:5px solid #d9534f;padding:17px 18px;border-radius:10px;margin:18px 0}
+table{width:100%;border-collapse:collapse;margin:18px 0;font-size:14px}th,td{border:1px solid #d9e3ec;padding:12px 13px;vertical-align:top;text-align:left}th{background:#edf4fb;color:#153f67}
+ul,ol{padding-left:23px}li{margin:7px 0}.kicker{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:#66829b;font-weight:800}.rate{font-size:24px;font-weight:800;color:#0b63ce}
+.toc{background:#f7faff;border:1px solid #dbe8f5;border-radius:13px;padding:18px}.toc strong{display:block;margin-bottom:8px;color:#123b68}.toc a{display:block;padding:5px 0}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px}.mini{background:#f8fbfe;border:1px solid #e0eaf3;border-radius:12px;padding:17px}.mini strong{color:#174f84}
+.faq{border-top:1px solid #e0e7ef;padding:17px 0}.faq:first-child{border-top:0}.faq h3{margin-top:0;font-size:18px}.sidebar .card{padding:22px}.side-title{font-size:19px!important}
+footer{background:#102a43;color:#d9e5ef;margin-top:40px;padding:42px 0 18px}.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}.footer-grid h3{color:#fff}.footer-grid a{color:#d9e5ef}.bottom{border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:16px;font-size:13px}
+@media(max-width:900px){.layout{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}.grid2{grid-template-columns:1fr}.hero h1{font-size:34px}.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.wrap{padding:0 15px}.hero{padding:38px 0 32px}.hero h1{font-size:29px}.hero p{font-size:16px}.stats{grid-template-columns:1fr 1fr;gap:9px}.stat{padding:12px}.stat strong{font-size:17px}.card{padding:20px}.card h2{font-size:23px}table{font-size:13px;display:block;overflow-x:auto}.footer-grid{grid-template-columns:1fr}.page{padding-top:22px}}
 </style>
-</head><body>
-<header class="nav"><div class="navin"><a class="brand" href="/gst-act.html">GST Reconciliation · GST Legal Library</a>
-<nav><a href="/gst-act.html">GST Act</a><a href="/gst-rules.html">GST Rules</a><a href="/articles.html">Articles</a></nav></div></header>
-<section class="hero"><div class="wrap"><div class="eyebrow">Central Goods and Services Tax Rules, 2017</div>
-<h1>Rule 7 — Rate of tax of the composition levy</h1><p>CGST Rules · Current in India Code record</p></div></section>
-<main class="grid"><div>
-<section class="card"><h2>Rule reference</h2>
-<p><strong>Rule:</strong> 7</p><p><strong>Subject:</strong> Rate of tax of the composition levy</p><p><strong>Chapter:</strong> CGST Rules</p>
-<span class="badge">Current in India Code record</span></section>
-<section class="card"><h2>Legal text and verification</h2>
-<p>This is the Rule-wise reference page in the GSTReconciliation.in legal library. The statutory wording should be checked against the applicable consolidated Rules and amendment notifications for the relevant tax period.</p>
-<div class="notice"><strong>Primary source:</strong> India Code 2.0 — Central Goods and Services Tax Rules, 2017. This automatically generated page does not invent or reproduce unverified statutory wording.</div>
-<p class="source"><a href="https://india-code.vercel.app/R10-015" target="_blank" rel="noopener">Open Central Goods and Services Tax Rules on India Code →</a></p></section>
-<section class="card"><h2>Practical note</h2>
-<p>GST Rules are amended through notifications. For professional or compliance use, verify the version applicable to the relevant date and the corresponding Gazette notification.</p></section>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<span class="badge">CGST RULES • COMPOSITION LEVY</span>
+<h1>Rule 7 – Rate of Tax of the Composition Levy</h1>
+<p>Understand the current composition-tax rate table, which taxpayer category each rate applies to, how the calculation works, and why the rate must never be selected without first checking eligibility.</p>
+<div class="stats">
+<div class="stat"><strong>0.5%</strong><span>Specified manufacturers under Sections 10(1) and 10(2)</span></div>
+<div class="stat"><strong>2.5%</strong><span>Suppliers covered by Schedule II paragraph 6(b)</span></div>
+<div class="stat"><strong>0.5%</strong><span>Other eligible suppliers under Sections 10(1) and 10(2)</span></div>
+<div class="stat"><strong>3%</strong><span>Section 10(2A) category</span></div>
 </div>
-<aside><section class="card"><h3>GST Rules navigation</h3>
-<a class="side-link" href="/gst-act.html">← GST Legal Library</a><a class="side-link" href="/gst-rules.html">GST Rules index</a><a class="side-link" href="/gst-rules/rule-6.html">← Previous Rule</a><a class="side-link" href="/gst-rules/rule-8.html">Next Rule →</a></section>
-<section class="card"><h3>Disclaimer</h3><p>This is an educational and practical reference. It is not a substitute for the applicable statute, notifications, circulars, Gazette publications or professional advice.</p></section></aside></main>
-<footer class="footer">GSTReconciliation.in · GST Legal Library · Educational reference</footer>
+</div></header>
+
+<main class="page"><div class="wrap"><div class="layout"><section>
+
+<div class="card"><div class="kicker">At a glance</div><h2>What Rule 7 does</h2>
+<p class="lead">Rule 7 prescribes the rate at which eligible registered persons pay tax under the composition levy under Section 10 and the composition chapter of the CGST Rules.</p>
+<div class="note"><strong>Important:</strong> The rate must be read together with the taxpayer's eligibility under Section 10 and the other composition provisions. Rule 7 tells you <strong>the rate after the legal category has been established</strong>; it does not independently grant eligibility.</div>
+<p>The current CBIC rules show four categories: specified manufacturers, suppliers making supplies covered by paragraph 6(b) of Schedule II, other eligible suppliers under Sections 10(1)/(2), and the special Section 10(2A) category.</p>
+</div>
+
+<div class="card" id="statutory"><h2>1. Statutory rate table</h2>
+<table><thead><tr><th>Sl.</th><th>Section</th><th>Category</th><th>CGST rate under Rule 7</th></tr></thead><tbody>
+<tr><td>1</td><td>Sections 10(1) &amp; 10(2)</td><td>Manufacturers, other than manufacturers of goods notified by the Government</td><td><span class="rate">0.5%</span> of turnover in the State/UT</td></tr>
+<tr><td>2</td><td>Sections 10(1) &amp; 10(2)</td><td>Suppliers making supplies referred to in clause (b) of paragraph 6 of Schedule II</td><td><span class="rate">2.5%</span> of turnover in the State/UT</td></tr>
+<tr><td>3</td><td>Sections 10(1) &amp; 10(2)</td><td>Any other supplier eligible for composition levy under those subsections</td><td><span class="rate">0.5%</span> of turnover of taxable supplies of goods and services in the State/UT</td></tr>
+<tr><td>4</td><td>Section 10(2A)</td><td>Registered persons not eligible under Sections 10(1)/(2), but eligible under Section 10(2A)</td><td><span class="rate">3%</span> of turnover of supplies of goods and services in the State/UT</td></tr>
+</tbody></table>
+<p>The four-category structure and the prescribed percentages are reflected in the CBIC version of the CGST Rules.</p>
+</div>
+
+<div class="card" id="meaning"><h2>2. Rule 7 in simple language</h2>
+<p>Rule 7 answers one practical question: <strong>“Once I am legally eligible for composition, what percentage applies to my category?”</strong></p>
+<div class="grid2">
+<div class="mini"><strong>Manufacturer</strong><br>Ordinary eligible manufacturer category: 0.5% CGST on the prescribed turnover base.</div>
+<div class="mini"><strong>Schedule II paragraph 6(b)</strong><br>The specified category carries a 2.5% CGST rate.</div>
+<div class="mini"><strong>Other eligible supplier</strong><br>Ordinary eligible supplier category carries 0.5% CGST on the prescribed taxable-supply turnover base.</div>
+<div class="mini"><strong>Section 10(2A)</strong><br>Special category carries 3% of turnover of supplies of goods and services in the State/UT.</div>
+</div>
+<div class="warning"><strong>Do not choose the rate first.</strong> A business cannot say “I will use 0.5% because it is lower.” The legal category and eligibility must be established first.</div>
+</div>
+
+<div class="card" id="calculation"><h2>3. How to calculate composition tax</h2>
+<h3>Step 1 — Identify the Section 10 route</h3><p>Determine whether the taxpayer is using Sections 10(1)/(2) or the special Section 10(2A) route.</p>
+<h3>Step 2 — Identify the Rule 7 category</h3><p>Classify the taxpayer as the specified manufacturer, Schedule II paragraph 6(b) supplier, other eligible supplier, or Section 10(2A) taxpayer.</p>
+<h3>Step 3 — Establish the correct turnover base</h3><p>Read the exact wording of the applicable row. The table does not use identical wording for every category.</p>
+<h3>Step 4 — Apply the rate</h3><p>Apply the prescribed composition rate to the relevant base and separately consider the corresponding State/UT component for intra-State supplies.</p>
+<div class="success"><strong>Finance control:</strong> Maintain a monthly Rule 7 working showing the category, turnover base, CGST composition tax and corresponding State/UT liability.</div>
+</div>
+
+<div class="card" id="examples"><h2>4. Practical examples</h2>
+<h3>Example 1 — Eligible manufacturer</h3>
+<table><tr><th>Particular</th><th>Amount</th></tr><tr><td>Relevant turnover</td><td>₹60,00,000</td></tr><tr><td>CGST rate</td><td>0.5%</td></tr><tr><td>CGST composition tax</td><td>₹30,000</td></tr></table>
+<p>The corresponding State/UT component is considered separately where applicable.</p>
+
+<h3>Example 2 — Supplier covered by Schedule II paragraph 6(b)</h3>
+<table><tr><th>Particular</th><th>Amount</th></tr><tr><td>Relevant turnover</td><td>₹40,00,000</td></tr><tr><td>CGST rate</td><td>2.5%</td></tr><tr><td>CGST composition tax</td><td>₹1,00,000</td></tr></table>
+
+<h3>Example 3 — Other eligible supplier</h3>
+<table><tr><th>Particular</th><th>Amount</th></tr><tr><td>Relevant taxable-supply turnover</td><td>₹30,00,000</td></tr><tr><td>CGST rate</td><td>0.5%</td></tr><tr><td>CGST composition tax</td><td>₹15,000</td></tr></table>
+
+<h3>Example 4 — Section 10(2A)</h3>
+<table><tr><th>Particular</th><th>Amount</th></tr><tr><td>Relevant turnover</td><td>₹35,00,000</td></tr><tr><td>CGST rate</td><td>3%</td></tr><tr><td>CGST composition tax</td><td>₹1,05,000</td></tr></table>
+<div class="warning">These examples demonstrate the percentage calculation only. They do not establish eligibility or determine every component of the final GST liability.</div>
+</div>
+
+<div class="card" id="eligibility"><h2>5. Rule 7 rate versus composition eligibility</h2>
+<table><thead><tr><th>Question</th><th>Provision to examine</th></tr></thead><tbody>
+<tr><td>Can the taxpayer opt for composition?</td><td><a href="/gst-act.html">Section 10</a> and connected conditions</td></tr>
+<tr><td>When does composition become effective?</td><td><a href="/gst-rules/rule-4.html">Rule 4</a></td></tr>
+<tr><td>What conditions and restrictions apply?</td><td><a href="/gst-rules/rule-5.html">Rule 5</a></td></tr>
+<tr><td>How long does the option remain valid?</td><td><a href="/gst-rules/rule-6.html">Rule 6</a></td></tr>
+<tr><td>What rate applies once eligible?</td><td><strong>Rule 7</strong></td></tr>
+</tbody></table>
+<p>CBIC's composition-rules page separately identifies the provisions on conditions, validity and rate, which is useful when reading the rules as a sequence rather than treating Rule 7 as a standalone provision.</p>
+</div>
+
+<div class="card" id="business"><h2>6. Business impact of the rate</h2>
+<div class="grid2">
+<div class="mini"><strong>Pricing</strong><br>Composition treatment affects how the business presents its prices because the taxpayer generally does not collect GST as a normal registered supplier.</div>
+<div class="mini"><strong>ITC economics</strong><br>Composition status changes the input-tax-credit position, so management should compare the total tax cost rather than only the output percentage.</div>
+<div class="mini"><strong>Customer profile</strong><br>A B2B customer that expects input tax credit may view composition status differently from a final consumer.</div>
+<div class="mini"><strong>Business changes</strong><br>New products, services or activities can change eligibility and therefore the applicable tax treatment.</div>
+</div>
+</div>
+
+<div class="card" id="mistakes"><h2>7. Common mistakes</h2>
+<ol>
+<li><strong>Using 0.5% for every composition taxpayer.</strong> Rule 7 has different categories.</li>
+<li><strong>Confusing CGST with the complete intra-State tax.</strong> The State/UT component must also be considered.</li>
+<li><strong>Applying the rate before checking eligibility.</strong></li>
+<li><strong>Ignoring the different turnover wording between rows.</strong></li>
+<li><strong>Mixing ordinary Section 10(1)/(2) taxpayers with Section 10(2A) taxpayers.</strong></li>
+<li><strong>Failing to update ERP rates after a change in status.</strong></li>
+<li><strong>Comparing composition only on output tax and ignoring ITC and commercial impact.</strong></li>
+</ol>
+</div>
+
+<div class="card" id="audit"><h2>8. Audit and GST notice relevance</h2>
+<p>In an audit, the rate calculation should be capable of being traced from the legal category to the turnover working and finally to the tax paid.</p>
+<ul>
+<li>Document the taxpayer's composition category.</li>
+<li>Keep the Rule 7 rate determination working.</li>
+<li>Reconcile turnover with books and GST records.</li>
+<li>Keep separate workings for different business activities where classification matters.</li>
+<li>Preserve the effective-date and eligibility analysis under <a href="/gst-rules/rule-4.html">Rules 4–6</a>.</li>
+<li>Reconcile composition tax paid with the relevant returns and accounting ledgers.</li>
+</ul>
+<div class="danger"><strong>Notice risk:</strong> An incorrect category can make an otherwise mathematically correct percentage calculation legally incorrect. The strongest defence is a clear category-and-turnover trail.</div>
+</div>
+
+<div class="card" id="erp"><h2>9. Practical ERP / accounting setup</h2>
+<table><thead><tr><th>Control</th><th>Recommended setup</th></tr></thead><tbody>
+<tr><td>Composition category</td><td>Store the Rule 7 category separately in the GST master.</td></tr>
+<tr><td>Rate master</td><td>Maintain CGST and corresponding State/UT components separately.</td></tr>
+<tr><td>Turnover base</td><td>Map the sales ledgers/accounts included in the relevant Rule 7 calculation.</td></tr>
+<tr><td>Effective date</td><td>Link tax treatment to the composition effective date under <a href="/gst-rules/rule-4.html">Rule 4</a>.</td></tr>
+<tr><td>Monthly reconciliation</td><td>Compare ERP turnover with the GST composition working before return/payment finalisation.</td></tr>
+</tbody></table>
+</div>
+
+<div class="card" id="related"><h2>10. Related GST provisions</h2>
+<ul>
+<li><a href="/gst-act.html">CGST Act</a> — Section 10, composition levy.</li>
+<li><a href="/gst-rules/rule-3.html">Rule 3</a> — Conditions and restrictions for composition levy.</li>
+<li><a href="/gst-rules/rule-4.html">Rule 4</a> — Validity of composition levy.</li>
+<li><a href="/gst-rules/rule-5.html">Rule 5</a> — Conditions and restrictions for composition levy.</li>
+<li><a href="/gst-rules/rule-6.html">Rule 6</a> — Validity of composition levy.</li>
+<li><a href="/gst-rules.html">GST Rules Index</a> — Browse the complete GST Rules.</li>
+<li><a href="/articles.html">GST Articles</a> — Practical GST explanations.</li>
+</ul>
+</div>
+
+<div class="card" id="faqs"><h2>11. Frequently asked questions</h2>
+<div class="faq"><h3>What is GST Rule 7?</h3><p>Rule 7 of the CGST Rules prescribes the rates of tax for eligible composition taxpayers under Section 10 and the composition provisions.</p></div>
+<div class="faq"><h3>What is the composition rate for manufacturers?</h3><p>The Rule 7 table prescribes 0.5% for the specified manufacturer category under Sections 10(1) and 10(2), subject to the applicable eligibility conditions.</p></div>
+<div class="faq"><h3>What is the 2.5% composition rate?</h3><p>The 2.5% CGST rate applies to suppliers making supplies referred to in clause (b) of paragraph 6 of Schedule II, subject to the applicable composition provisions.</p></div>
+<div class="faq"><h3>What is the Rule 7 rate for other eligible suppliers?</h3><p>The table prescribes 0.5% of the turnover of taxable supplies of goods and services in the State or Union territory for the specified other-supplier category under Sections 10(1) and 10(2).</p></div>
+<div class="faq"><h3>What is the rate under Section 10(2A)?</h3><p>Rule 7 prescribes 3% of turnover of supplies of goods and services in the State or Union territory for the Section 10(2A) category.</p></div>
+<div class="faq"><h3>Does Rule 7 itself make a business eligible for composition?</h3><p>No. Eligibility must first be established under Section 10 and the applicable composition conditions and restrictions.</p></div>
+<div class="faq"><h3>Is 0.5% the total GST payable?</h3><p>Rule 7 prescribes the composition tax rate in the CGST Rules. For intra-State supplies, the corresponding State/UT component also needs to be considered.</p></div>
+</div>
+
+<div class="card" id="checklist"><h2>12. Practical Rule 7 checklist</h2>
+<ul>
+<li>Confirm composition eligibility.</li><li>Identify the correct Section 10 route.</li><li>Identify the exact Rule 7 category.</li><li>Determine the correct turnover base.</li><li>Apply the prescribed rate.</li><li>Consider the corresponding State/UT component.</li><li>Reconcile the working with books and GST records.</li><li>Document the rate determination for audit purposes.</li>
+</ul></div>
+
+<div class="card" id="takeaway"><h2>13. Practical takeaway</h2>
+<p>Rule 7 is best understood as the <strong>rate-selection stage</strong> of the composition process.</p>
+<div class="note"><strong>Correct sequence:</strong> Eligibility → Section 10 route → Rule 7 category → Turnover base → Rate → CGST/State or UT component → Reconciliation.</div>
+<p>If the category is wrong, the calculation can be wrong even when the arithmetic is perfect. For finance teams, the safest approach is to document the category and turnover base and maintain a monthly reconciliation.</p>
+</div>
+
+<div class="card" id="source"><h2>14. Source &amp; verification</h2>
+<p><strong>Primary legal basis:</strong> Rule 7 of the Central Goods and Services Tax Rules, 2017, read with Section 10 of the CGST Act and the applicable composition provisions.</p>
+<p>The current CBIC composition-rules material identifies Rule 7 as the rate-of-tax provision and sets out the four categories and rates described on this page.</p>
+<p>This page is a practical educational explanation. GST provisions and rates can be amended. For a filing, notice response or commercial decision, verify the law applicable to the relevant tax period.</p>
+</div>
+
+</section>
+
+<aside class="sidebar">
+<div class="card"><h2 class="side-title">Rule 7 Quick Navigation</h2><div class="toc">
+<a href="#statutory">Statutory rate table</a><a href="#meaning">Simple meaning</a><a href="#calculation">Calculation</a><a href="#examples">Examples</a><a href="#eligibility">Eligibility vs rate</a><a href="#business">Business impact</a><a href="#mistakes">Common mistakes</a><a href="#audit">Audit relevance</a><a href="#erp">ERP controls</a><a href="#related">Related provisions</a><a href="#faqs">FAQs</a><a href="#checklist">Checklist</a><a href="#takeaway">Practical takeaway</a>
+</div></div>
+<div class="card"><h2 class="side-title">Composition Rule Series</h2><ul>
+<li><a href="/gst-rules/rule-3.html">Rule 3 — Conditions</a></li><li><a href="/gst-rules/rule-4.html">Rule 4 — Validity</a></li><li><a href="/gst-rules/rule-5.html">Rule 5 — Conditions</a></li><li><a href="/gst-rules/rule-6.html">Rule 6 — Validity</a></li><li><strong>Rule 7 — Rate of tax</strong></li>
+</ul></div>
+<div class="card"><h2 class="side-title">For Finance Teams</h2><p>Never configure a composition rate from the percentage alone. First establish the Section 10 route, eligibility and Rule 7 category.</p><a href="/gst-rules.html">View all GST Rules →</a></div>
+<div class="card"><h2 class="side-title">Important Note</h2><p>This page is intended for practical GST education and compliance planning. It is not a substitute for checking the provisions applicable to a particular tax period or transaction.</p></div>
+</aside>
+</div></div></main>
+
+<footer><div class="wrap"><div class="footer-grid">
+<div><h3>GST Reconciliation</h3><p>Practical GST knowledge, reconciliation tools and compliance guidance for businesses and finance teams.</p></div>
+<div><h3>Useful Resources</h3><p><a href="/">Home</a></p><p><a href="/articles.html">GST Knowledge</a></p><p><a href="/gst-rules.html">GST Rules Index</a></p><p><a href="/gst-act.html">GST Act</a></p></div>
+<div><h3>Composition Levy</h3><p><a href="/gst-rules/rule-5.html">Rule 5</a></p><p><a href="/gst-rules/rule-6.html">Rule 6</a></p><p><a href="/gst-rules/rule-7.html">Rule 7 — Rate</a></p></div>
+</div><div class="bottom">© GST Reconciliation. Practical GST information and tools for businesses and finance professionals.</div></div></footer>
 </body></html>
