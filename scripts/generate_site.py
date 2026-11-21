@@ -62,6 +62,36 @@ def article_card(a):
   <span class="read">Read guide →</span>
 </a>'''
 
+
+def upsert_jsonld_script(document, script_id, script_markup):
+    """Insert or replace one JSON-LD script regardless of attribute order.
+
+    Older pages may contain duplicate script IDs; retain exactly one updated block.
+    """
+    escaped_id = re.escape(script_id)
+    pattern = (
+        r'<script\b(?=[^>]*\bid=["\']' + escaped_id + r'["\'])'
+        r'(?=[^>]*\btype=["\']application/ld\+json["\'])'
+        r'[^>]*>.*?</script>'
+    )
+    matches = list(re.finditer(pattern, document, flags=re.I | re.S))
+    if matches:
+        first = True
+
+        def replace_matches(match):
+            nonlocal first
+            if first:
+                first = False
+                return script_markup
+            return ""
+
+        return re.sub(pattern, replace_matches, document, flags=re.I | re.S)
+
+    if "</head>" not in document:
+        raise RuntimeError("Cannot insert JSON-LD: document has no closing head tag.")
+    return document.replace("</head>", script_markup + "\n</head>", 1)
+
+
 def update_index(articles):
     text=INDEX_FILE.read_text(encoding="utf-8")
     start="<!-- AUTO_ARTICLES_START -->";end="<!-- AUTO_ARTICLES_END -->"
@@ -74,8 +104,7 @@ def update_index(articles):
               "itemListElement":[{"@type":"ListItem","position":i+1,"name":a["title"],
               "url":SITE+"/"+a["path"].relative_to(ROOT).as_posix()} for i,a in enumerate(articles)]}
     schema='<script type="application/ld+json" id="articleListSchema">\n'+json.dumps(itemlist,ensure_ascii=False,indent=2)+'\n</script>'
-    pattern=r'<script type="application/ld\+json" id="articleListSchema">.*?</script>'
-    text=re.sub(pattern,schema,text,flags=re.S) if re.search(pattern,text,flags=re.S) else text.replace("</head>",schema+"\n</head>")
+    text=upsert_jsonld_script(text, "articleListSchema", schema)
     INDEX_FILE.write_text(text,encoding="utf-8")
     return len(articles)
 
