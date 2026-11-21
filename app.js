@@ -5,6 +5,7 @@ function toks(s){return String(s||"").toLowerCase().replace(/[^a-z0-9]+/g," ").s
 function score(q,t){let qs=toks(q),ts=new Set(toks(t));let n=0;for(const x of qs)if(ts.has(x))n++;return n}
 function esc(s){return String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#039;"}[c]))}
 async function loadData(){[ARTICLES,QA,SECTIONS]=await Promise.all([fetch("/data/articles.json").then(r=>r.json()),fetch("/data/questions.json").then(r=>r.json()),fetch("/data/sections.json").then(r=>r.json())])}
+async function loadQAData(){const response=await fetch("/data/questions.json");if(!response.ok)throw new Error("Unable to load GST questions.");QA=await response.json()}
 function articleResults(q){return ARTICLES.map(a=>({...a,_s:score(q,a.title+" "+a.intro+" "+a.category)})).sort((a,b)=>b._s-a._s).slice(0,20).filter(a=>!q||a._s>0)}
 function qaResults(q){return QA.map(a=>({...a,_s:score(q,a.question+" "+a.answer)})).sort((a,b)=>b._s-a._s).slice(0,20).filter(a=>!q||a._s>0)}
 function renderArticles(items,target="articleResults"){document.getElementById(target).innerHTML=items.map(a=>`<div class="result"><div class="chip">${esc(a.category)}</div><h3><a href="/articles/${esc(a.slug)}.html">${esc(a.title)}</a></h3><p>${esc(a.intro)}</p><p style="margin-top:10px"><a class="btn btn-blue" href="/articles/${esc(a.slug)}.html">Read article →</a></p></div>`).join("")||'<div class="result"><p>No matching article found. Try a broader topic.</p></div>'}
