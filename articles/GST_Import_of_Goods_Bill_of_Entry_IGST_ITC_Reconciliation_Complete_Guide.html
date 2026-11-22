@@ -29,7 +29,18 @@
 table{width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px}th,td{border:1px solid var(--line);padding:10px;vertical-align:top}th{background:#eef6ff;text-align:left;color:#204b70}.case-table td:first-child{font-weight:700;width:19%}
 .note,.warning,.success{padding:16px 18px;border-radius:14px;margin:15px 0}.note{background:#eef6ff;border-left:4px solid var(--blue)}.warning{background:#fff5f5;border-left:4px solid var(--red)}.success{background:#eefaf3;border-left:4px solid var(--green)}
 ul,ol{padding-left:22px}.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:16px 0}.flow span{background:#eef6ff;border:1px solid #cfe2f5;border-radius:999px;padding:8px 12px;font-weight:700;font-size:13px}.flow i{color:#6b7e91}
-.faq{border-top:1px solid var(--line);padding:12px 0}.faq:first-of-type{border-top:0}.faq h3{margin:0 0 5px;font-size:16px}.footer{margin-top:34px;background:#102a43;color:#dce9f5;padding:30px 0 16px}.footer a{color:#dce9f5;text-decoration:none}.footer-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:18px;padding-top:13px;color:#a9bed1;font-size:12px}
+.faq{border-top:1px solid var(--line);padding:12px 0}.faq:first-of-type{border-top:0}.faq h3{margin:0 0 5px;font-size:16px}.site-footer{margin-top:48px;background:linear-gradient(135deg,#071a35 0%,#0b2b52 58%,#103c68 100%);color:#dce8f5;position:relative;overflow:hidden}
+.site-footer:before{content:"";display:block;height:4px;background:linear-gradient(90deg,#28a5ff,#37c6a0,#28a5ff)}
+.footer-wrap{max-width:1240px;margin:auto;padding:42px 22px 18px}
+.footer-main{display:grid;grid-template-columns:1.55fr 1fr 1fr 1fr;gap:34px;padding-bottom:32px}
+.footer-brand{max-width:360px}.footer-brandmark{display:inline-flex;align-items:center;justify-content:center;width:43px;height:43px;border-radius:12px;background:linear-gradient(135deg,#39b8ff,#1769d2);color:#fff;font-weight:900;letter-spacing:-1px;box-shadow:0 8px 22px rgba(0,0,0,.2);margin-bottom:13px}
+.footer-brand h2{font-size:19px;line-height:1.3;color:#fff;margin:0 0 9px}.footer-brand p{font-size:13px;line-height:1.75;color:#b7c9dd;margin:0}
+.footer-col h3{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:#fff;margin:5px 0 14px}
+.footer-links{display:grid;gap:10px}.footer-links a{font-size:13px;color:#c2d2e3;text-decoration:none;transition:color .18s ease}.footer-links a:hover{color:#65c5ff}
+.footer-note{border-top:1px solid rgba(255,255,255,.13);padding:16px 0 0;display:flex;justify-content:space-between;align-items:center;gap:18px;color:#9fb4ca;font-size:12px}
+.footer-note p{margin:0}.footer-legal{display:flex;gap:16px;flex-wrap:wrap}.footer-legal a{color:#b8c9da;text-decoration:none}.footer-legal a:hover{color:#65c5ff}
+@media(max-width:850px){.footer-main{grid-template-columns:1.4fr 1fr 1fr;gap:25px}.footer-brand{grid-column:1/-1;max-width:620px}}
+@media(max-width:600px){.footer-wrap{padding:32px 16px 16px}.footer-main{grid-template-columns:1fr 1fr;gap:25px 18px}.footer-brand{grid-column:1/-1}.footer-note{display:grid;gap:10px}.footer-legal{gap:12px}}
 @media(max-width:900px){.hero .wrap,.layout{grid-template-columns:1fr}.toc{position:relative;top:0}.grid3{grid-template-columns:1fr 1fr}.hero h1{font-size:34px}}
 @media(max-width:620px){.wrap{padding:0 14px}.grid2,.grid3{grid-template-columns:1fr}.hero{padding:38px 0}.hero h1{font-size:29px}.card{padding:20px}table{font-size:12px;display:block;overflow:auto}}
 </style>
@@ -72,5 +83,50 @@ ul,ol{padding-left:22px}.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:ce
 </section>
 <section class="card" id="law"><h2>Legal references and official guidance</h2><ul><li>Section 7(2) of the Integrated Goods and Services Tax Act, 2017 – import of goods treated as inter-State supply.</li><li>Section 16 of the Central Goods and Services Tax Act, 2017 – eligibility and conditions for input tax credit.</li><li>Section 17 of the Central Goods and Services Tax Act, 2017 – apportionment and blocked credits.</li><li>Section 16(3) of the CGST Act – depreciation on the tax component and ITC.</li><li>Rule 36(1)(d) of the Central Goods and Services Tax Rules, 2017 – Bill of Entry as prescribed ITC document.</li><li>Rule 36(2) and other applicable ITC rules – document particulars and conditions.</li><li>Section 3(7) of the Customs Tariff Act, 1975 – IGST on imported goods.</li><li>GST Portal advisory dated 30 October 2025 – Introduction of Import of Goods section in IMS and treatment of Bill of Entry records and amendments.</li><li>GST Portal GSTR-2B user guidance – import of goods data from ICEGATE and Bill of Entry search/self-service functionality.</li></ul><div class="warning"><strong>Disclaimer:</strong> This article is for general information and practical learning. GST and customs treatment depends on the facts, current statutory provisions, notifications, exemptions, customs assessment and portal advisories. Verify the law and the final Bill of Entry before taking credit. This article is not a substitute for professional advice on a specific transaction.</div></section>
 </main></div></div>
-<footer class="footer"><div class="wrap"><strong>GST Reconciliation – Practical GST Knowledge</strong><p>Practical guides for accountants, tax professionals and businesses.</p><div class="footer-bottom">© 2026 GST Reconciliation. All rights reserved. <span>For educational purposes; verify current law before acting.</span></div></div></footer>
+<footer class="site-footer">
+  <div class="footer-wrap">
+    <div class="footer-main">
+      <div class="footer-brand">
+        <div class="footer-brandmark" aria-hidden="true">GST</div>
+        <h2>GST Reconciliation</h2>
+        <p>Practical GST knowledge, reconciliation resources and compliance tools for finance professionals, accountants and businesses across India.</p>
+      </div>
+      <nav class="footer-col" aria-label="Explore">
+        <h3>Explore</h3>
+        <div class="footer-links">
+          <a href="https://gstreconciliation.in/">Home</a>
+          <a href="https://gstreconciliation.in/articles.html">GST Knowledge Hub</a>
+          <a href="https://gstreconciliation.in/reconciliation.html">GST Reconciliation Tool</a>
+          <a href="https://gstreconciliation.in/resources.html">Resources</a>
+        </div>
+      </nav>
+      <nav class="footer-col" aria-label="GST resources">
+        <h3>GST Resources</h3>
+        <div class="footer-links">
+          <a href="https://gstreconciliation.in/gst-act.html">CGST Act</a>
+          <a href="https://gstreconciliation.in/gst-rules.html">GST Rules</a>
+          <a href="https://gstreconciliation.in/compliance.html">Compliance Calendar</a>
+          <a href="https://gstreconciliation.in/questions.html">GST Questions</a>
+        </div>
+      </nav>
+      <nav class="footer-col" aria-label="About and policies">
+        <h3>About &amp; Policies</h3>
+        <div class="footer-links">
+          <a href="https://gstreconciliation.in/about.html">About Us</a>
+          <a href="https://gstreconciliation.in/privacy-policy.html">Privacy Policy</a>
+          <a href="https://gstreconciliation.in/terms.html">Terms of Use</a>
+          <a href="https://gstreconciliation.in/disclaimer.html">Disclaimer</a>
+        </div>
+      </nav>
+    </div>
+    <div class="footer-note">
+      <p>© 2026 GST Reconciliation. All rights reserved.</p>
+      <div class="footer-legal">
+        <a href="https://gstreconciliation.in/privacy-policy.html">Privacy</a>
+        <a href="https://gstreconciliation.in/terms.html">Terms</a>
+        <a href="https://gstreconciliation.in/disclaimer.html">Disclaimer</a>
+      </div>
+    </div>
+  </div>
+</footer>
 </body></html>
